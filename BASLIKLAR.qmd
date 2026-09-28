@@ -1,0 +1,425 @@
+---
+title: "Ders İçeriği Başlıkları"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 14 Hafta"
+format:
+  pdf:
+    toc: true
+    toc-depth: 1
+---
+
+<!-- Bu dosya araclar/basliklari-uret.py ile üretilir; elle düzenlemeyin. -->
+
+::: {.callout-note}
+## Bu belge nedir?
+
+14 haftanın **ders notlarındaki** bölüm başlıklarının bir arada görünümüdür; dersin içerik haritası olarak kullanılır. Sunum ve alıştırma için hafta başına yalnızca sayı verilir. Notlardaki kutu (callout) başlıkları bölüm sayılmadığı için buraya alınmaz.
+
+**Otomatik üretilir, elle düzenlenmez.** İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra betiği çalıştırıp belgeyi yeniden derleyin: `python3 araclar/basliklari-uret.py` ve `quarto render BASLIKLAR.qmd`.
+:::
+
+# 1. Hafta — Bilgi Toplumu, Dijital Okuryazarlık ve Temel Kavramlar
+
+*Sunum: 19 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Veri, Enformasyon ve Bilgi
+- Bilgi Toplumu ve Dijital Dönüşüm
+  - Bilgi toplumunun belirgin özellikleri
+- Dijital Okuryazarlık
+  - Bileşenleri
+  - Bilginin doğruluğunu değerlendirmek: beş soru
+- Bilgisayarın Kısa Tarihi
+  - Hesaplama araçlarından elektronik bilgisayara
+  - Bilgisayar nesilleri
+- Dersin Kapsamı ve İzlenceden Notlar
+- Uygulama: Kendi Dijital Alışkanlıklarımızı İnceleyelim
+  - Adım 1 — Günlük dijital kullanımınızı listeleyin
+  - Adım 2 — Veri, enformasyon ve bilgi ayrımını uygulayın
+  - Adım 3 — Bir haber kaynağını değerlendirin
+  - Adım 4 — Kısa bir değerlendirme yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 2. Hafta — Bilgisayar Donanımı
+
+*Sunum: 29 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Girdi–İşlem–Çıktı–Depolama Döngüsü
+- Ana Donanım Bileşenleri
+  - Anakart
+  - İşlemci (CPU)
+  - İşlemcinin iç yapısı
+  - Ekran kartı ve grafik işlemci (GPU)
+  - Bellek: RAM, ROM ve ön bellek
+  - Bellek ile depolama ayrımı
+  - Depolama: HDD ve SSD
+- Çevre Birimleri ve Bağlantı Noktaları
+  - Sık karşılaşılan çevre birimleri
+  - Bağlantı noktaları
+- Bit, Bayt ve Ölçü Birimleri
+- Bilgisayar Türleri
+- Günlük Hayatta Donanım
+- Uygulama: Kendi Cihazınızı Tanıyın
+  - Adım 1 — Cihazınızın özelliklerini bulun
+  - Adım 2 — Bellek ve depolamayı doğrulayın
+  - Adım 3 — Bir satın alma senaryosu çözün
+  - Adım 4 — Kısa değerlendirme yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 3. Hafta — Yazılım ve İşletim Sistemleri
+
+*Sunum: 24 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Yazılım Nedir?
+  - Sistem yazılımı ve uygulama yazılımı
+- Açık Kaynak ve Kapalı Kaynak Yazılım
+- İşletim Sistemi
+  - Görevleri
+  - İşletim sistemi aileleri
+- İşletim Sistemi Türleri
+- Dosya Sistemi
+- Basit Sorunlara İlk Bakış
+- Uygulama: Kendi Sisteminizi Tanıyın
+  - Adım 1 — İşletim sisteminizi belirleyin
+  - Adım 2 — Bir yazılımı sınıflandırın
+  - Adım 3 — Dosya sistemini inceleyin
+  - Adım 4 — Kısa değerlendirme yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 4. Hafta — Dosya Yönetimi, Depolama ve Bulut
+
+*Sunum: 28 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Dosya ve Klasör İşlemleri
+  - Dosya adlandırma alışkanlıkları
+- Dosya Uzantıları
+- Sıkıştırma
+- Depolama Aygıtları
+  - Çıkarılabilir depolama
+  - Disk bölümleme ve biçimlendirme
+- Bulut Depolama
+- Çevrimiçi İşbirliği ve Ortak Çalışma Araçları
+- Yedekleme
+  - 3-2-1 kuralı
+  - Yedek almayı alışkanlık hâline getirmek
+- Uygulama: Kendi Yedekleme Planınızı Kurun
+  - Adım 1 — Dosyalarınızı gruplayın
+  - Adım 2 — Yedek planınızı yazın
+  - Adım 3 — Bir klasör yapısı kurun
+  - Adım 4 — Kısa değerlendirme yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 5. Hafta — Bilgisayar Ağları ve İnternet
+
+*Sunum: 29 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Ağ Nedir?
+  - Ağ türleri
+  - Ağ bileşenleri
+- WiFi: Kullanım ve Güvenlik
+  - WiFi nasıl çalışır?
+  - WiFi güvenliği
+  - WiFi kullanımında pratik noktalar
+  - eduroam: kurumlar arası kablosuz ağ
+- Bluetooth: Kullanım ve Güvenlik
+  - Kullanım alanları
+  - Bluetooth güvenliği
+- IP ve DNS
+- Tarayıcı ve Web
+- Güvenli İnternet
+  - Aile filtresi
+- Uygulama: Bağlantılarınızı Denetleyin
+  - Adım 1 — Ev ağınızı inceleyin
+  - Adım 2 — Kayıtlı ağlarınızı gözden geçirin
+  - Adım 3 — Bluetooth durumunuzu kontrol edin
+  - Adım 4 — Kısa değerlendirme yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 6. Hafta — İnternet Pratikleri, E-posta ve Dijital Kamu Hizmetleri
+
+*Sunum: 26 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Etkili Arama
+  - Aramayı daraltma yolları
+  - Kaynak değerlendirme
+- Dezenformasyon ve Sahte Haber
+- Elektronik Posta
+  - Adresin yapısı
+  - Bir e-postanın bölümleri
+  - Kurumsal yazışma kuralları
+- E-posta Güvenliği
+  - E-posta gizli değildir
+  - İstenmeyen posta (spam)
+- Dijital Kamu Hizmetleri ve e-Devlet
+  - Güvenli kullanım
+- e-imza ve İlgili Kavramlar
+- Uygulama: Bir Araştırmayı Doğrulayın
+  - Adım 1 — Bir iddia seçin
+  - Adım 2 — Arama tekniklerini kullanın
+  - Adım 3 — Kaynağı değerlendirin
+  - Adım 4 — Bir kurumsal e-posta yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 7. Hafta — Kelime İşlemci
+
+*Sunum: 28 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Temel Kavramlar
+  - Masaüstü sürüm, çevrimiçi sürüm
+- Metin ve Paragraf Biçimlendirme
+- Stiller ve Başlık Hiyerarşisi
+  - Neden stiller?
+- Tablo ve Görsel Ekleme
+  - Tablolar
+  - Görseller
+- Sayfa Düzeni
+- Uzun Belge Yönetimi
+  - İçindekiler tablosu
+  - Dipnot
+  - Kaynakça
+  - Değişiklikleri izleme
+- Akademik Dürüstlük ve Kaynak Gösterme
+  - İntihal nedir?
+  - Kaynak nasıl gösterilir?
+  - Kaynak yönetimi araçları
+- Erişilebilir Belge Hazırlama
+- Uygulama: Kendi Ödevinizi Biçimlendirin
+  - Adım 1 — Kısa bir belge yazın
+  - Adım 2 — Yapıyı tamamlayın
+  - Adım 3 — İçindekiler oluşturun
+  - Adım 4 — Kaynak gösterin
+  - Adım 5 — Erişilebilirliği kontrol edin
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 8. Hafta — Elektronik Tablo ve Grafik Okuma
+
+*Sunum: 31 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Elektronik Tablo Nedir?
+- Temel Kavramlar
+- Veri Girişi ve Veri Türleri
+- Veri Alışverişi: CSV
+- Formüller ve Hücre Başvuruları
+  - Formül nasıl yazılır
+  - Göreli ve mutlak başvuru
+  - Yüzde hesabı: yüzde değişim ve yüzde puan
+- Temel Fonksiyonlar
+  - Ortalama ve ortanca: hangisi ne zaman
+- Biçimlendirme
+- Sıralama ve Filtreleme
+- Grafik Oluşturma
+  - Hangi veri için hangi grafik
+- Grafiklerin Doğru Okunması
+  - Yanıltma taktikleri
+  - Kontrol listesi
+- Uygulama: Aynı Veri, İki Grafik
+  - Etkinliğin verisi
+  - Adım 1 — İki grafiği karşılaştırın
+  - Adım 2 — Farkı teşhis edin
+  - Adım 3 — Kendiniz üretin
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 9. Hafta — Sunum Uygulamaları
+
+*Sunum: 22 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Bir Sunumun Yapısı
+  - Açılış
+  - Gövde
+  - Kapanış
+- Slayt Tasarımı
+  - Metin yoğunluğu
+  - Tasarım tutarlılığı
+- Görsel Kullanımı ve Telif
+  - Görsel seçimi
+  - Telif ve lisans
+- Tablo ve Grafik Yerleştirme
+- Etkili Sunum Teknikleri
+  - Sunmadan önce
+  - Sunarken
+  - Soru-cevap
+- Erişilebilir Sunum
+- Uygulama: Kısa Bir Sunum Hazırlayın
+  - Adım 1 — Konu ve mesaj seçin
+  - Adım 2 — Yapıyı kurun
+  - Adım 3 — Slaytları hazırlayın
+  - Adım 4 — Prova yapın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 10. Hafta — Bilgi Güvenliği
+
+*Sunum: 26 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Bilgi Güvenliğinin Üç Temeli
+- Parola Yönetimi
+  - Güçlü parola nasıl olur?
+  - Parola yöneticisi
+  - İki adımlı doğrulama (2FA)
+- Sosyal Mühendislik
+- Oltalama (Phishing)
+  - En sık görülen biçimler
+- Zararlı Yazılımlar
+  - Zombi bilgisayarlar
+  - Nasıl bulaşır?
+- Güncelleme ve Yedekleme
+  - Güncellemeler neden önemli?
+  - Yedekleme: fidye yazılımına karşı en iyi savunma
+- Cihaz ve Hesap Güvenliği
+  - Güvenlik duvarı ve varsayılan ayarlar
+- Güvenli Alışveriş ve Ödeme
+- Doğru Bilinen Yanlışlar
+- Uygulama: Kendi Güvenliğinizi Denetleyin
+  - Adım 1 — Parola alışkanlığınızı değerlendirin
+  - Adım 2 — İki adımlı doğrulamayı açın
+  - Adım 3 — Bir oltalama e-postasını inceleyin
+  - Adım 4 — Güncelleme durumunuzu kontrol edin
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 11. Hafta — Kişisel Veriler ve Dijital Etik
+
+*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Kişisel Veri Nedir?
+- KVKK: Kişisel Verilerin Korunması
+  - İlkeler
+  - İlgili kişinin hakları
+- Dijital Ayak İzi
+- Gizlilik Ayarları ve İzinler
+  - Uygulama izinleri
+  - Sosyal medya gizlilik ayarları
+- Telif Hakkı ve Lisanslar
+- Dijital Etik ve Sorumlu Davranış
+  - Çevrimiçi nezaket (netiket)
+  - Dijital etiğin ilkeleri
+- Uygulama: Dijital Ayak İzinizi İnceleyin
+  - Adım 1 — Arama motorunda kendinizi arayın
+  - Adım 2 — Uygulama izinlerini gözden geçirin
+  - Adım 3 — Sosyal medya gizliliğini düzenleyin
+  - Adım 4 — Bir lisansı inceleyin
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 12. Hafta — Yapay Zekâ Okuryazarlığı
+
+*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Yapay Zekâ Nedir?
+- Günlük Hayatta Yapay Zekâ
+- Algoritma: Adım Adım Tanımlamak
+- Yapay Zekâ Nasıl Öğrenir?
+  - Derin öğrenme ve GPU bağlantısı
+  - Büyük veri
+- Yapay Zekânın Sınırları
+  - Yanılgı (halüsinasyon)
+  - Diğer sınırlar
+  - Etik sorular
+- Uygulama: Yapay Zekâyı Sorgulayın
+  - Adım 1 — Günlük kullanımınızı listeleyin
+  - Adım 2 — Bir yanılgı örneği bulun
+  - Adım 3 — Bir etik soru üzerine düşünün
+  - Adım 4 — Veri ilişkisini değerlendirin
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 13. Hafta — Üretken Yapay Zekâ Araçları
+
+*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Üretken Yapay Zekâ Nedir?
+- İstem (Prompt) Yazımı
+  - İyi bir istemin bileşenleri
+  - Zayıf ve güçlü istem
+- Çıktıyı Doğrulama
+  - Dört adım
+- Akademik Dürüstlük
+  - Sınır nerede?
+  - Dürüst kullanım
+- Gizlilik: Araca Ne Verilmez
+- Yapay Zekâyı Araç Olarak Kullanmak
+- Uygulama: Bir İstemi İyileştirin
+  - Adım 1 — Zayıf bir istem yazın
+  - Adım 2 — İstemi güçlendirin
+  - Adım 3 — İki cevabı karşılaştırın
+  - Adım 4 — Bir çıktıyı doğrulayın
+  - Adım 5 — Dürüstlük sınırını yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+# 14. Hafta — Mobil Cihazlar, Giyilebilir Teknolojiler ve Toplumsal Etki
+
+*Sunum: 26 slayt başlığı · Alıştırma: 10 soru*
+
+- Giriş
+- Bu Haftanın Öğrenme Çıktıları
+- Mobil Cihazlar ve Ekosistem
+- Uygulama İzinleri
+  - Üç soru
+- Senkronizasyon ve Bulut
+- Mobil Cihaz Güvenliği
+- Giyilebilir Teknolojiler
+  - Hangi veriler toplanır?
+  - Sağlık verisi ve gizlilik
+- Nesnelerin İnterneti (IoT)
+  - Faydaları
+  - Riskleri
+- Dijital İyi Olma Hali
+- Teknolojinin Toplumsal Etkileri
+  - Dijital uçurum
+  - Diğer alanlar
+- Uygulama: Kendi Dijital Dengenizi Değerlendirin
+  - Adım 1 — Ekran sürenizi inceleyin
+  - Adım 2 — Bildirimlerinizi düzenleyin
+  - Adım 3 — Bir cihazınızın izinlerini gözden geçirin
+  - Adım 4 — Kısa bir değerlendirme yazın
+- Özet
+- Kendini Sınama Soruları
+- Kaynaklar
+
+<!-- Bu dosya araclar/basliklari-uret.py ile üretilir; elle düzenlemeyin. -->

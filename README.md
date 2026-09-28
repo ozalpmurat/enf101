@@ -10,6 +10,7 @@ Materyal [Quarto](https://quarto.org) ile üretilir. Depoda hem kaynak (`.qmd`, 
 ## İçerik
 
 - **`izlence.qmd` / `izlence.pdf`** — ders izlencesi.
+- **`BASLIKLAR.qmd` / `BASLIKLAR.pdf`** — 14 haftanın **ders notu** başlıklarının bir arada görünümü (içerik haritası). Elle düzenlenmez; `araclar/basliklari-uret.py` betiğiyle üretilir.
 - **`hafta-NN/`** — her haftanın paketi: `ders-notu.qmd`+`.pdf`, `sunum.qmd`+`.pdf`,
   `alistirma.qmd`+`.pdf` ve `gorseller/` klasörü (NN = 01 … 14).
 - **`tema/notlar.tex` ve `tema/sunum.tex`** — ders notu ve sunumun ortak görünüm dosyaları.

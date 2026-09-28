@@ -38,6 +38,9 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 │  ├─ quarto-ozellikleri-sunum.qmd + .pdf          aynı içeriğin sunum sürümü
 │  └─ gorseller/
 ├─ izlence.qmd + .pdf            ders izlencesi
+├─ BASLIKLAR.qmd + .pdf          ders içeriği başlıkları (betikle üretilir)
+├─ araclar/
+│  └─ basliklari-uret.py         BASLIKLAR.qmd'yi ders notlarından üretir
 ├─ KILAVUZ_Quarto_...qmd + .pdf  hocalar için Quarto kurulum/kullanım kılavuzu
 └─ hafta-NN/                     NN = 01 … 14
    ├─ ders-notu.qmd + .pdf       8–12 sayfa
@@ -61,6 +64,18 @@ quarto render izlence.qmd       # tek dosya
 
 **Dikkat:** `quarto render` yalnızca **tek yol** alır. `quarto render hafta-01 hafta-03` çalışmaz.
 Tam projeyi tek komutta derlemek 3 dakikayı aştığı için uzun işlerde hafta hafta derlemek gerekir.
+
+**`BASLIKLAR.qmd` elle düzenlenmez.** `araclar/basliklari-uret.py` betiği bu dosyayı `hafta-*/ders-notu.qmd`
+başlıklarından üretir. İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra — izlenceyi
+güncellediğiniz gibi — betiği çalıştırıp belgeyi yeniden derleyin:
+
+```bash
+python3 araclar/basliklari-uret.py
+quarto render BASLIKLAR.qmd
+```
+
+Betik yalnızca standart kütüphane kullanır, ek kurulum gerektirmez. Notlardaki kutu (callout) başlıkları
+bölüm sayılmadığı için anahatta yer almaz; böylece belge, notların kendi içindekiler tablosuyla birebir örtüşür.
 
 PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan geçici dosyalar
 (`.quarto/`, `*.log`, `*.tex`, `*_files/`) teslim edilmez; klasör temiz tutulur.
