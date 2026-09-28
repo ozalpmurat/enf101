@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bilgi güvenliğinin üç temel ilkesi hangileridir?
-
-A) Hız, doğruluk, güvenilirlik
-
-B) Gizlilik, bütünlük, erişilebilirlik
-
-C) Donanım, yazılım, ağ
-
+**1.** Bilgi güvenliğinin üç temel ilkesi hangileridir?\
+A) Hız, doğruluk, güvenilirlik\
+B) Gizlilik, bütünlük, erişilebilirlik\
+C) Donanım, yazılım, ağ\
 D) Parola, kullanıcı adı, kimlik
 
-**2.** Aşağıdaki parolalardan hangisi en güçlüdür?
-
-A) `123456`
-
-B) `Ahmet2010!`
-
-C) `mavi-kahve-sandalye-41`
-
+**2.** Aşağıdaki parolalardan hangisi en güçlüdür?\
+A) `123456`\
+B) `Ahmet2010!`\
+C) `mavi-kahve-sandalye-41`\
 D) `parola`
 
-**3.** Parola yöneticisi kullanmanın temel faydası nedir?
-
-A) Parolaları internette paylaşması
-
-B) Her hesap için farklı ve güçlü parola üretip güvenle saklaması
-
-C) Parolayı unutmanızı engellemek için ekrana yazması
-
+**3.** Parola yöneticisi kullanmanın temel faydası nedir?\
+A) Parolaları internette paylaşması\
+B) Her hesap için farklı ve güçlü parola üretip güvenle saklaması\
+C) Parolayı unutmanızı engellemek için ekrana yazması\
 D) Parolaları kısaltması
 
-**4.** İki adımlı doğrulama ne sağlar?
-
-A) Parolayı daha kısa yapar
-
-B) Parola çalınsa bile hesabı korur
-
-C) İnternet hızını artırır
-
+**4.** İki adımlı doğrulama ne sağlar?\
+A) Parolayı daha kısa yapar\
+B) Parola çalınsa bile hesabı korur\
+C) İnternet hızını artırır\
 D) E-postaları siler
 
-**5.** İki adımlı doğrulamanın mutlaka açık olması gereken hesap hangisidir?
-
-A) Oyun hesabı
-
-B) E-posta hesabı
-
-C) Alışveriş sitesi üyeliği
-
+**5.** İki adımlı doğrulamanın mutlaka açık olması gereken hesap hangisidir?\
+A) Oyun hesabı\
+B) E-posta hesabı\
+C) Alışveriş sitesi üyeliği\
 D) Haber sitesi aboneliği
 
-**6.** Bir e-postada "hesabınız 24 saat içinde kapatılacak" yazıyor ve bir bağlantı veriliyor. İlk yapılması gereken nedir?
-
-A) Bağlantıya tıklayıp durumu görmek
-
-B) E-postayı yanıtlayıp bilgi istemek
-
-C) Bağlantıya tıklamadan göndereni başka kanaldan doğrulamak
-
+**6.** Bir e-postada "hesabınız 24 saat içinde kapatılacak" yazıyor ve bir bağlantı veriliyor. İlk yapılması gereken nedir?\
+A) Bağlantıya tıklayıp durumu görmek\
+B) E-postayı yanıtlayıp bilgi istemek\
+C) Bağlantıya tıklamadan göndereni başka kanaldan doğrulamak\
 D) E-postayı silmek ve unutmak
 
-**7.** Yararlı bir program gibi görünüp arka kapı açan zararlı yazılım türü hangisidir?
-
-A) Virüs
-
-B) Solucan
-
-C) Truva atı
-
+**7.** Yararlı bir program gibi görünüp arka kapı açan zararlı yazılım türü hangisidir?\
+A) Virüs\
+B) Solucan\
+C) Truva atı\
 D) Fidye yazılımı
 
-**8.** Fidye yazılımına karşı en etkili savunma nedir?
-
-A) Daha güçlü parola kullanmak
-
-B) Düzenli yedekleme yapmak
-
-C) Tarayıcıyı gizli modda kullanmak
-
+**8.** Fidye yazılımına karşı en etkili savunma nedir?\
+A) Daha güçlü parola kullanmak\
+B) Düzenli yedekleme yapmak\
+C) Tarayıcıyı gizli modda kullanmak\
 D) Bilgisayarı sık sık kapatmak
 
-**9.** Gizli modda gezinmek kullanıcıyı tamamen anonim yapar. *(Doğru / Yanlış)*
-
+**9.** Gizli modda gezinmek kullanıcıyı tamamen anonim yapar. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Korsan (kırılmış) yazılımlar, zararlı yazılım bulaşma yollarından biridir. *(Doğru / Yanlış)*
-
+**10.** Korsan (kırılmış) yazılımlar, zararlı yazılım bulaşma yollarından biridir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

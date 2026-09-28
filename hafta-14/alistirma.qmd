@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Mobil uygulamaları yüklerken en güvenli yol hangisidir?
-
-A) Arama motorundan bulup indirmek
-
-B) Resmî uygulama mağazasını kullanmak
-
-C) Kırılmış sürümleri indirmek
-
+**1.** Mobil uygulamaları yüklerken en güvenli yol hangisidir?\
+A) Arama motorundan bulup indirmek\
+B) Resmî uygulama mağazasını kullanmak\
+C) Kırılmış sürümleri indirmek\
 D) E-posta ekiyle gelen dosyayı kurmak
 
-**2.** Bir fener uygulamasının konum ve kişiler izni istemesi ne anlama gelir?
-
-A) Uygulamanın çok kapsamlı olduğunu
-
-B) İzinlerin işlevle orantısız olduğunu
-
-C) İzinlerin zorunlu olduğunu
-
+**2.** Bir fener uygulamasının konum ve kişiler izni istemesi ne anlama gelir?\
+A) Uygulamanın çok kapsamlı olduğunu\
+B) İzinlerin işlevle orantısız olduğunu\
+C) İzinlerin zorunlu olduğunu\
 D) Uygulamanın güvenli olduğunu
 
-**3.** Senkronizasyon ile yedekleme arasındaki fark nedir?
-
-A) İkisi aynı şeydir
-
-B) Senkronizasyon veriyi her yerde eşitler, yedekleme ayrı bir kopya saklar
-
-C) Yedekleme yalnızca telefondan yapılır
-
+**3.** Senkronizasyon ile yedekleme arasındaki fark nedir?\
+A) İkisi aynı şeydir\
+B) Senkronizasyon veriyi her yerde eşitler, yedekleme ayrı bir kopya saklar\
+C) Yedekleme yalnızca telefondan yapılır\
 D) Senkronizasyon her zaman ücretlidir
 
-**4.** Telefonunuzda ekran kilidi ve SIM PIN'i neden önemlidir?
-
-A) Pili uzattığı için
-
-B) Telefon numarası birçok hesabın kurtarma yolu olduğu için
-
-C) İnternet hızını artırdığı için
-
+**4.** Telefonunuzda ekran kilidi ve SIM PIN'i neden önemlidir?\
+A) Pili uzattığı için\
+B) Telefon numarası birçok hesabın kurtarma yolu olduğu için\
+C) İnternet hızını artırdığı için\
 D) Uygulama güncellemelerini hızlandırdığı için
 
-**5.** Giyilebilir cihazlar aşağıdakilerden hangisini toplamaz?
-
-A) Adım sayısı
-
-B) Kalp atışı
-
-C) Uyku düzeni
-
+**5.** Giyilebilir cihazlar aşağıdakilerden hangisini toplamaz?\
+A) Adım sayısı\
+B) Kalp atışı\
+C) Uyku düzeni\
 D) Banka hesap bakiyesi
 
-**6.** Sağlık verisi hangi kategoridedir?
-
-A) Sıradan veri
-
-B) Özel nitelikli kişisel veri
-
-C) Kamuya açık veri
-
+**6.** Sağlık verisi hangi kategoridedir?\
+A) Sıradan veri\
+B) Özel nitelikli kişisel veri\
+C) Kamuya açık veri\
 D) Ticari veri
 
-**7.** Akıllı ev cihazları için alınması gereken temel önlem hangisidir?
-
-A) Cihazı hiç güncellememek
-
-B) Varsayılan parolayı değiştirmek
-
-C) Cihazı sürekli açık bırakmak
-
+**7.** Akıllı ev cihazları için alınması gereken temel önlem hangisidir?\
+A) Cihazı hiç güncellememek\
+B) Varsayılan parolayı değiştirmek\
+C) Cihazı sürekli açık bırakmak\
 D) Kamerayı her zaman çalıştırmak
 
-**8.** "Dijital uçurum" kavramı neyi ifade eder?
-
-A) İnternet hızındaki dalgalanmaları
-
-B) Erişim, cihaz ve beceri bakımından bireyler arasındaki eşitsizliği
-
-C) Yazılım sürümleri arasındaki farkı
-
+**8.** "Dijital uçurum" kavramı neyi ifade eder?\
+A) İnternet hızındaki dalgalanmaları\
+B) Erişim, cihaz ve beceri bakımından bireyler arasındaki eşitsizliği\
+C) Yazılım sürümleri arasındaki farkı\
 D) Ekran çözünürlüğündeki farkı
 
-**9.** Senkronizasyon, yedeklemenin yerini tamamen alır. *(Doğru / Yanlış)*
-
+**9.** Senkronizasyon, yedeklemenin yerini tamamen alır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Teknoloji kendi başına iyi ya da kötü değildir; nasıl kullanıldığı belirleyicidir. *(Doğru / Yanlış)*
-
+**10.** Teknoloji kendi başına iyi ya da kötü değildir; nasıl kullanıldığı belirleyicidir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

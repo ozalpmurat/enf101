@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bir kampüs içindeki ağ hangi tür ağdır?
-
-A) PAN
-
-B) LAN
-
-C) WAN
-
+**1.** Bir kampüs içindeki ağ hangi tür ağdır?\
+A) PAN\
+B) LAN\
+C) WAN\
 D) DNS
 
-**2.** Ağdaki cihazların birbirine ve İnternet'e bağlanmasını yöneten cihaz hangisidir?
-
-A) Modem
-
-B) Yazıcı
-
-C) Yönlendirici
-
+**2.** Ağdaki cihazların birbirine ve İnternet'e bağlanmasını yöneten cihaz hangisidir?\
+A) Modem\
+B) Yazıcı\
+C) Yönlendirici\
 D) Ağ kartı
 
-**3.** Kablosuz ağlarda kullanılan güncel şifreleme standartları hangileridir?
-
-A) WEP ve WPA
-
-B) WPA2 ve WPA3
-
-C) HTTP ve HTTPS
-
+**3.** Kablosuz ağlarda kullanılan güncel şifreleme standartları hangileridir?\
+A) WEP ve WPA\
+B) WPA2 ve WPA3\
+C) HTTP ve HTTPS\
 D) LAN ve WAN
 
-**4.** Bluetooth ile ilgili aşağıdakilerden hangisi doğrudur?
-
-A) Şehirler arası bağlantı sağlar
-
-B) Kısa mesafeli kablosuz bağlantı teknolojisidir
-
-C) Yalnızca kablolu çalışır
-
+**4.** Bluetooth ile ilgili aşağıdakilerden hangisi doğrudur?\
+A) Şehirler arası bağlantı sağlar\
+B) Kısa mesafeli kablosuz bağlantı teknolojisidir\
+C) Yalnızca kablolu çalışır\
 D) İnternet'e bağlanmak için zorunludur
 
-**5.** Tarayıcıya `siteadi.edu.tr` yazdığınızda bunu IP adresine çeviren sistem hangisidir?
-
-A) WiFi
-
-B) Bluetooth
-
-C) DNS
-
+**5.** Tarayıcıya `siteadi.edu.tr` yazdığınızda bunu IP adresine çeviren sistem hangisidir?\
+A) WiFi\
+B) Bluetooth\
+C) DNS\
 D) HTTPS
 
-**6.** `.gov.tr` uzantılı bir alan adı neyi gösterir?
-
-A) Ticari bir şirketi
-
-B) Bir kamu kurumunu
-
-C) Bir üniversiteyi
-
+**6.** `.gov.tr` uzantılı bir alan adı neyi gösterir?\
+A) Ticari bir şirketi\
+B) Bir kamu kurumunu\
+C) Bir üniversiteyi\
 D) Bir kişisel blogu
 
-**7.** Tarayıcının gizli modu hakkında hangisi doğrudur?
-
-A) Kullanıcıyı tamamen anonim yapar
-
-B) Yalnızca cihazdaki geçmiş kaydını tutmaz
-
-C) İnternet hızını artırır
-
+**7.** Tarayıcının gizli modu hakkında hangisi doğrudur?\
+A) Kullanıcıyı tamamen anonim yapar\
+B) Yalnızca cihazdaki geçmiş kaydını tutmaz\
+C) İnternet hızını artırır\
 D) Virüsleri engeller
 
-**8.** Halka açık ve şifresiz bir kablosuz ağda aşağıdakilerden hangisini yapmak en risklidir?
-
-A) Hava durumuna bakmak
-
-B) Haber okumak
-
-C) Bankacılık işlemi yapmak
-
+**8.** Halka açık ve şifresiz bir kablosuz ağda aşağıdakilerden hangisini yapmak en risklidir?\
+A) Hava durumuna bakmak\
+B) Haber okumak\
+C) Bankacılık işlemi yapmak\
 D) Harita uygulaması açmak
 
-**9.** Aynı anda hem kullanıcı adı hem de parola isteyen sahte bir kablosuz ağ, "sahte erişim noktası" saldırısına örnektir. *(Doğru / Yanlış)*
-
+**9.** Aynı anda hem kullanıcı adı hem de parola isteyen sahte bir kablosuz ağ, "sahte erişim noktası" saldırısına örnektir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Bluetooth'u kullanmadığınız zamanlarda kapatmak hem pili korur hem de güvenliği artırır. *(Doğru / Yanlış)*
-
+**10.** Bluetooth'u kullanmadığınız zamanlarda kapatmak hem pili korur hem de güvenliği artırır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

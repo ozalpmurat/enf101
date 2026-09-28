@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bir metni seçip kalın yapmak ve puntosunu büyütmek ne sağlar?
-
-A) Metni gerçek bir başlık hâline getirir
-
-B) Metin başlık gibi görünür ama gerçek başlık olmaz
-
-C) İçindekiler tablosuna eklenir
-
+**1.** Bir metni seçip kalın yapmak ve puntosunu büyütmek ne sağlar?\
+A) Metni gerçek bir başlık hâline getirir\
+B) Metin başlık gibi görünür ama gerçek başlık olmaz\
+C) İçindekiler tablosuna eklenir\
 D) Belge otomatik kaydedilir
 
-**2.** İçindekiler tablosunun otomatik oluşması için ne gereklidir?
-
-A) Belgenin PDF olarak kaydedilmesi
-
-B) Başlıklara stil uygulanmış olması
-
-C) Sayfa numarası eklenmiş olması
-
+**2.** İçindekiler tablosunun otomatik oluşması için ne gereklidir?\
+A) Belgenin PDF olarak kaydedilmesi\
+B) Başlıklara stil uygulanmış olması\
+C) Sayfa numarası eklenmiş olması\
 D) Belgenin yazdırılmış olması
 
-**3.** Ödev tesliminde genellikle hangi dosya biçimi tercih edilir?
-
-A) `.docx`
-
-B) `.txt`
-
-C) `.pdf`
-
+**3.** Ödev tesliminde genellikle hangi dosya biçimi tercih edilir?\
+A) `.docx`\
+B) `.txt`\
+C) `.pdf`\
 D) `.pptx`
 
-**4.** Aşağıdakilerden hangisi intihal sayılır?
-
-A) Alıntıyı tırnak içinde gösterip kaynak belirtmek
-
-B) Bir kaynağı kendi cümlelerinizle anlatıp kaynak göstermek
-
-C) Bir cümleyi birkaç kelimesini değiştirip kaynak göstermeden kullanmak
-
+**4.** Aşağıdakilerden hangisi intihal sayılır?\
+A) Alıntıyı tırnak içinde gösterip kaynak belirtmek\
+B) Bir kaynağı kendi cümlelerinizle anlatıp kaynak göstermek\
+C) Bir cümleyi birkaç kelimesini değiştirip kaynak göstermeden kullanmak\
 D) Kaynakçayı belge sonuna eklemek
 
-**5.** Kaynak gösterirken aşağıdakilerden hangisi bulunmak zorunda değildir?
-
-A) Yazar adı
-
-B) Eser adı
-
-C) Yayın yılı
-
+**5.** Kaynak gösterirken aşağıdakilerden hangisi bulunmak zorunda değildir?\
+A) Yazar adı\
+B) Eser adı\
+C) Yayın yılı\
 D) Yazıldığı bilgisayarın markası
 
-**6.** Kaynak yönetimi araçlarının (örneğin Zotero) temel faydası nedir?
-
-A) Belgeyi otomatik yazması
-
-B) Kaynak göstermeyi kolaylaştırarak intihali önlemesi
-
-C) Belgeyi PDF'e çevirmesi
-
+**6.** Kaynak yönetimi araçlarının (örneğin Zotero) temel faydası nedir?\
+A) Belgeyi otomatik yazması\
+B) Kaynak göstermeyi kolaylaştırarak intihali önlemesi\
+C) Belgeyi PDF'e çevirmesi\
 D) Yazım hatalarını düzeltmesi
 
-**7.** Bir görsele "alternatif metin" eklemek kimin için önemlidir?
-
-A) Belgeyi yazdıran kişi için
-
-B) Ekran okuyucu kullanan kişiler için
-
-C) Belgeyi PDF'e çeviren program için
-
+**7.** Bir görsele "alternatif metin" eklemek kimin için önemlidir?\
+A) Belgeyi yazdıran kişi için\
+B) Ekran okuyucu kullanan kişiler için\
+C) Belgeyi PDF'e çeviren program için\
 D) Yalnızca öğretim elemanı için
 
-**8.** Belgeye sayfa numarası eklemenin temel amacı nedir?
-
-A) Belgeyi güzel göstermek
-
-B) Belgenin boyutunu artırmak
-
-C) Belgeyi başvurulabilir kılmak
-
+**8.** Belgeye sayfa numarası eklemenin temel amacı nedir?\
+A) Belgeyi güzel göstermek\
+B) Belgenin boyutunu artırmak\
+C) Belgeyi başvurulabilir kılmak\
 D) Yazdırmayı hızlandırmak
 
-**9.** Stiller kullanmak, elle biçimlendirmeye göre daha tutarlı ve hızlıdır. *(Doğru / Yanlış)*
-
+**9.** Stiller kullanmak, elle biçimlendirmeye göre daha tutarlı ve hızlıdır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Bir fikri kendi cümlelerinizle anlatıyorsanız kaynak göstermenize gerek yoktur. *(Doğru / Yanlış)*
-
+**10.** Bir fikri kendi cümlelerinizle anlatıyorsanız kaynak göstermenize gerek yoktur. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

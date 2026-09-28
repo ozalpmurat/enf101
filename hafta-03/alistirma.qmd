@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Aşağıdakilerden hangisi sistem yazılımına örnektir?
-
-A) Kelime işlemci
-
-B) İşletim sistemi
-
-C) Tarayıcı
-
+**1.** Aşağıdakilerden hangisi sistem yazılımına örnektir?\
+A) Kelime işlemci\
+B) İşletim sistemi\
+C) Tarayıcı\
 D) Sunum programı
 
-**2.** Kaynak kodu herkese açık olan ve isteyen herkesin inceleyip değiştirebildiği yazılım türü hangisidir?
-
-A) Kapalı kaynak yazılım
-
-B) Açık kaynak yazılım
-
-C) Ücretsiz deneme yazılımı
-
+**2.** Kaynak kodu herkese açık olan ve isteyen herkesin inceleyip değiştirebildiği yazılım türü hangisidir?\
+A) Kapalı kaynak yazılım\
+B) Açık kaynak yazılım\
+C) Ücretsiz deneme yazılımı\
 D) Sistem yazılımı
 
-**3.** Donanım ile kullanıcı arasındaki aracı olan yazılım hangisidir?
-
-A) Uygulama yazılımı
-
-B) Sürücü
-
-C) İşletim sistemi
-
+**3.** Donanım ile kullanıcı arasındaki aracı olan yazılım hangisidir?\
+A) Uygulama yazılımı\
+B) Sürücü\
+C) İşletim sistemi\
 D) Tarayıcı
 
-**4.** Aşağıdakilerden hangisi işletim sisteminin görevlerinden biri değildir?
-
-A) Donanım kaynaklarını yönetmek
-
-B) Dosya sistemini düzenlemek
-
-C) Bir belgenin yazım hatalarını düzeltmek
-
+**4.** Aşağıdakilerden hangisi işletim sisteminin görevlerinden biri değildir?\
+A) Donanım kaynaklarını yönetmek\
+B) Dosya sistemini düzenlemek\
+C) Bir belgenin yazım hatalarını düzeltmek\
 D) Kullanıcı erişimini denetlemek
 
-**5.** TÜBİTAK bünyesinde geliştirilen, Debian tabanlı yerli ve açık kaynak işletim sistemi hangisidir?
-
-A) Ubuntu
-
-B) Windows
-
-C) macOS
-
+**5.** TÜBİTAK bünyesinde geliştirilen, Debian tabanlı yerli ve açık kaynak işletim sistemi hangisidir?\
+A) Ubuntu\
+B) Windows\
+C) macOS\
 D) Pardus
 
-**6.** Aşağıdakilerden hangisi gömülü işletim sistemine örnektir?
-
-A) Dizüstü bilgisayarda çalışan sistem
-
-B) Modemin içindeki sistem
-
-C) Sunucu işletim sistemi
-
+**6.** Aşağıdakilerden hangisi gömülü işletim sistemine örnektir?\
+A) Dizüstü bilgisayarda çalışan sistem\
+B) Modemin içindeki sistem\
+C) Sunucu işletim sistemi\
 D) Sanal makine sistemi
 
-**7.** Yazılım katmanları alttan üste doğru hangi sırayla dizilir?
-
-A) Uygulamalar → işletim sistemi → donanım
-
-B) Donanım → işletim sistemi → uygulamalar
-
-C) İşletim sistemi → donanım → uygulamalar
-
+**7.** Yazılım katmanları alttan üste doğru hangi sırayla dizilir?\
+A) Uygulamalar → işletim sistemi → donanım\
+B) Donanım → işletim sistemi → uygulamalar\
+C) İşletim sistemi → donanım → uygulamalar\
 D) Donanım → uygulamalar → işletim sistemi
 
-**8.** Bir program yanıt vermediğinde izlenecek ilk adım nedir?
-
-A) Bilgisayarı hemen yeniden başlatmak
-
-B) Programı kapatıp yeniden açmak
-
-C) Diski biçimlendirmek
-
+**8.** Bir program yanıt vermediğinde izlenecek ilk adım nedir?\
+A) Bilgisayarı hemen yeniden başlatmak\
+B) Programı kapatıp yeniden açmak\
+C) Diski biçimlendirmek\
 D) İşletim sistemini yeniden kurmak
 
-**9.** Açık kaynak yazılımlar her zaman ücretsizdir ve ticari destek almazlar. *(Doğru / Yanlış)*
-
+**9.** Açık kaynak yazılımlar her zaman ücretsizdir ve ticari destek almazlar. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Android ve iOS, mobil işletim sistemlerine örnektir. *(Doğru / Yanlış)*
-
+**10.** Android ve iOS, mobil işletim sistemlerine örnektir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

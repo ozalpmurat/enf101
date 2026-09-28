@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bir dosyayı başka bir klasöre taşımak için hangi işlem kullanılır?
-
-A) Kopyala / Yapıştır
-
-B) Kes / Yapıştır
-
-C) Yeniden adlandır
-
+**1.** Bir dosyayı başka bir klasöre taşımak için hangi işlem kullanılır?\
+A) Kopyala / Yapıştır\
+B) Kes / Yapıştır\
+C) Yeniden adlandır\
 D) Sıkıştır
 
-**2.** Aşağıdakilerden hangisi bir elektronik tablo dosyasının uzantısıdır?
-
-A) `.docx`
-
-B) `.pptx`
-
-C) `.xlsx`
-
+**2.** Aşağıdakilerden hangisi bir elektronik tablo dosyasının uzantısıdır?\
+A) `.docx`\
+B) `.pptx`\
+C) `.xlsx`\
 D) `.pdf`
 
-**3.** `rapor.docx` dosyasının adını `rapor.jpg` olarak değiştirirseniz ne olur?
-
-A) Dosya resme dönüşür
-
-B) Dosya bozulur ve açılmaz hâle gelir
-
-C) Dosyanın türü değişmez, yalnızca yanlış programla açılmaya çalışılır
-
+**3.** `rapor.docx` dosyasının adını `rapor.jpg` olarak değiştirirseniz ne olur?\
+A) Dosya resme dönüşür\
+B) Dosya bozulur ve açılmaz hâle gelir\
+C) Dosyanın türü değişmez, yalnızca yanlış programla açılmaya çalışılır\
 D) Dosya sıkıştırılmış olur
 
-**4.** Sıkıştırma hangi dosya türlerinde belirgin boyut kazancı sağlar?
-
-A) Video dosyaları
-
-B) Metin tabanlı belgeler
-
-C) Yüksek çözünürlüklü fotoğraflar
-
+**4.** Sıkıştırma hangi dosya türlerinde belirgin boyut kazancı sağlar?\
+A) Video dosyaları\
+B) Metin tabanlı belgeler\
+C) Yüksek çözünürlüklü fotoğraflar\
 D) Müzik dosyaları
 
-**5.** Bir USB belleği çıkarmadan önce ne yapılmalıdır?
-
-A) Bilgisayarı kapatmak
-
-B) Doğrudan kabloyu çekmek
-
-C) İşletim sisteminin "güvenle çıkar" seçeneğini kullanmak
-
+**5.** Bir USB belleği çıkarmadan önce ne yapılmalıdır?\
+A) Bilgisayarı kapatmak\
+B) Doğrudan kabloyu çekmek\
+C) İşletim sisteminin "güvenle çıkar" seçeneğini kullanmak\
 D) Dosyaları sıkıştırmak
 
-**6.** Bir bölümdeki tüm veriyi silen işlem hangisidir?
-
-A) Bölümleme
-
-B) Biçimlendirme
-
-C) Sıkıştırma
-
+**6.** Bir bölümdeki tüm veriyi silen işlem hangisidir?\
+A) Bölümleme\
+B) Biçimlendirme\
+C) Sıkıştırma\
 D) Kopyalama
 
-**7.** 3-2-1 yedekleme kuralına göre kaç kopya bulundurulmalıdır?
-
-A) 1
-
-B) 2
-
-C) 3
-
+**7.** 3-2-1 yedekleme kuralına göre kaç kopya bulundurulmalıdır?\
+A) 1\
+B) 2\
+C) 3\
 D) 5
 
-**8.** Aşağıdakilerden hangisi bulut depolamanın bir sınırıdır?
-
-A) Her cihazdan erişilebilmesi
-
-B) Paylaşım kolaylığı sağlaması
-
-C) İnternet bağlantısı gerektirmesi
-
+**8.** Aşağıdakilerden hangisi bulut depolamanın bir sınırıdır?\
+A) Her cihazdan erişilebilmesi\
+B) Paylaşım kolaylığı sağlaması\
+C) İnternet bağlantısı gerektirmesi\
 D) Sürüm geçmişi tutması
 
-**9.** Dosyayı aynı bilgisayarın başka bir klasörüne kopyalamak yeterli bir yedeklemedir. *(Doğru / Yanlış)*
-
+**9.** Dosyayı aynı bilgisayarın başka bir klasörüne kopyalamak yeterli bir yedeklemedir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** `fatura.pdf.exe` gibi çift uzantılı bir dosya, göründüğü gibi bir belge değil çalıştırılabilir bir program olabilir. *(Doğru / Yanlış)*
-
+**10.** `fatura.pdf.exe` gibi çift uzantılı bir dosya, göründüğü gibi bir belge değil çalıştırılabilir bir program olabilir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

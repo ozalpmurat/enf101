@@ -140,7 +140,48 @@ Makale (PDF) biçiminde Mermaid **doğrudan ve sorunsuz** çalışır; ölçek s
 
 ---
 
-## 7. Görsel üretimi
+## 7. Alıştırma yazım kuralları
+
+Her hafta 10 soru: **8 çoktan seçmeli + 2 doğru–yanlış**. Cevap anahtarı `{{< pagebreak >}}` ile ayrı
+sayfaya alınır ve her soru için kısa gerekçe içerir.
+
+**Soru ile şıklar arasında paragraf boşluğu olmaz.** Soru metni, A) B) C) D) şıkları ve doğru–yanlış
+sorularındaki `(   ) Doğru        (   ) Yanlış` satırı tek bir blok hâlinde **bitişik** yazılır;
+paragraf boşluğu yalnızca **bir sonraki soruya geçerken** verilir. Amaç, soruyu ve şıklarını gözle
+tek bir birim olarak takip edebilmektir; her şık ayrı paragraf olunca blok dağılır.
+
+Kural şöyle uygulanır: blok içindeki her satırın sonuna `\` (pandoc sert satır sonu) konur, satırlar
+arasına **boş satır konmaz**; blokların arasına bir boş satır bırakılır.
+
+```markdown
+**1.** Soru metni?\
+A) Birinci şık\
+B) İkinci şık\
+C) Üçüncü şık\
+D) Dördüncü şık
+
+**2.** Sonraki soru?\
+A) ...
+```
+
+Blok içindeki satırlar böylece aynı LaTeX paragrafına girer ve aralarında paragraf aralığı oluşmaz.
+Boş satır bırakılırsa her şık ayrı paragraf olur ve blok dağılır. **Son satıra `\` konmaz**; blok
+normal paragraf sonuyla kapanır.
+
+Bu kural **yalnızca alıştırmalar** içindir; ders notunda paragraflar normal biçimde ayrılır.
+28.09.2026'da 14 haftanın tamamına uygulandı; her alıştırma 4 sayfadan 3 sayfaya indi.
+
+**Boş satır yalnızca aralık sorunu değildir.** Her şık kendi paragrafı olduğunda pandoc, `A)`, `B)`,
+`C)`, `D)` ile başlayan satırları **sıralı liste** olarak çözer. Şık metni tek başına anlamlı bir
+işaret olduğunda içerik bozulur: 8. haftanın "formül hangi işaretle başlar?" sorusunda `A) #`
+şıkkı **boş** basılmış, `D) +` şıkkı ise madde imine (`•`) dönüşmüştü; liste ayrıca sayfa
+sınırından bölünmüştü. Satırlar bitişik yazılınca bu satırlar düz metin olarak kalır ve sorun
+kendiliğinden ortadan kalkar. Çoktan seçmeli şıkların harf etiketleri bu yüzden her zaman
+`A)` biçiminde ve soruya bitişik yazılır.
+
+---
+
+## 8. Görsel üretimi
 
 Mevcut 38 diyagramın tamamı **matplotlib** ile üretildi (kaynak betikler ayrı bir çalışma alanında tutuldu).
 Tema renkleri: lacivert `#1F3864`, mavi `#2E74B5`, açık zemin `#EDF2F9`, gri `#595959`.
@@ -181,7 +222,7 @@ kurumsal palete çekmek için ayrıca tema ayarı gerekir.
 
 ---
 
-## 8. İçerik ilkeleri
+## 9. İçerik ilkeleri
 
 - **Platformdan bağımsız.** Belirli bir işletim sistemi, ofis sürümü veya marka öğretilmez;
   menü yolları yerine kavramlar anlatılır. Açık ve kapalı kaynak yazılımlar birlikte tanıtılır.
@@ -198,7 +239,7 @@ kurumsal palete çekmek için ayrıca tema ayarı gerekir.
 
 ---
 
-## 9. Haftalık paket standardı
+## 10. Haftalık paket standardı
 
 Her hafta için üç belge:
 
@@ -216,7 +257,7 @@ alıştırmayla karıştırılmamalıdır.
 
 ---
 
-## 10. Teslim öncesi doğrulama
+## 11. Teslim öncesi doğrulama
 
 ```bash
 # 1. Derleme — klasörü kopyalayıp sıfırdan derleyin (kaynak klasörde artık bırakmasın)
@@ -238,11 +279,17 @@ grep -rn "{.block}" hafta-*/sunum.qmd
 #    (desenli arama "bilinçli" gibi kelimelere takılmaz, "inçe" gibi ekleri yakalar;
 #     *.md dışarıda: bu dosyanın kendi kural metni inç kelimesini içeriyor)
 grep -rnE '[^[:alpha:]]inç|^inç' --include="*.qmd" --include="*.tex" .
+
+# 6. Alıştırmada soru ile şıklar bitişik mi?
+#    (soru satırından hemen sonra boş satır varsa blok dağılmış demektir — bkz. §7)
+awk 'p ~ /^\*\*[0-9]+\.\*\*/ && $0=="" {print FILENAME": "NR". satır — sorudan sonra boş satır"} {p=$0}' hafta-*/alistirma.qmd
+#    Çıktı boş olmalı. Sonuç varsa ilgili soru bloğundaki boş satırlar kaldırılıp
+#    satır sonlarına `\` eklenir.
 ```
 
 ---
 
-## 11. Bekleyen işler
+## 12. Bekleyen işler
 
 - **4. ve 7. hafta sunuları kalabalık** (38'er slayt). Sadeleştirme önerildi, karar bekliyor.
 - **4. ve 5. hafta sunularında 2'şer uyarı kutusu var**, diğer 12 sunuda yok. Tutarlılık için
@@ -252,7 +299,7 @@ grep -rnE '[^[:alpha:]]inç|^inç' --include="*.qmd" --include="*.tex" .
 
 ---
 
-## 12. Sürüm ve kaynak notu
+## 13. Sürüm ve kaynak notu
 
 - PDF motoru **XeLaTeX**. **Sürüm sabitlenmez:** güncel Quarto ve güncel TeX Live kullanılır.
   Belirli bir sürüme bağlı kalınmaz; hangi sürüm kuruluysa onun çıktısı esas alınır.

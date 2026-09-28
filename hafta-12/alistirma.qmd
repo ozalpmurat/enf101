@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Yapay zekâ için aşağıdakilerden hangisi doğrudur?
-
-A) İnsanlar gibi düşünür ve anlar
-
-B) Verilerdeki desenleri bulur ancak anlamaz
-
-C) Her zaman doğru cevap verir
-
+**1.** Yapay zekâ için aşağıdakilerden hangisi doğrudur?\
+A) İnsanlar gibi düşünür ve anlar\
+B) Verilerdeki desenleri bulur ancak anlamaz\
+C) Her zaman doğru cevap verir\
 D) Yaptığı işin sorumluluğunu taşır
 
-**2.** Makine öğrenmesini geleneksel programlamadan ayıran temel özellik nedir?
-
-A) Daha hızlı çalışması
-
-B) Kuralları yazmak yerine örneklerden öğrenmesi
-
-C) Daha az enerji harcaması
-
+**2.** Makine öğrenmesini geleneksel programlamadan ayıran temel özellik nedir?\
+A) Daha hızlı çalışması\
+B) Kuralları yazmak yerine örneklerden öğrenmesi\
+C) Daha az enerji harcaması\
 D) Yalnızca internette çalışması
 
-**3.** Yapay zekâ eğitiminde GPU'nun tercih edilmesinin nedeni nedir?
-
-A) Daha ucuz olması
-
-B) Az yer kaplaması
-
-C) Binlerce basit işi aynı anda yapabilmesi
-
+**3.** Yapay zekâ eğitiminde GPU'nun tercih edilmesinin nedeni nedir?\
+A) Daha ucuz olması\
+B) Az yer kaplaması\
+C) Binlerce basit işi aynı anda yapabilmesi\
 D) Sessiz çalışması
 
-**4.** "Büyük veri" kavramı neyi ifade eder?
-
-A) Çok büyük boyutlu dosyaları
-
-B) Geleneksel yöntemlerle işlenemeyecek kadar çok, hızlı ve çeşitli veriyi
-
-C) Yalnızca sayısal verileri
-
+**4.** "Büyük veri" kavramı neyi ifade eder?\
+A) Çok büyük boyutlu dosyaları\
+B) Geleneksel yöntemlerle işlenemeyecek kadar çok, hızlı ve çeşitli veriyi\
+C) Yalnızca sayısal verileri\
 D) Yalnızca devlet kurumlarının verisini
 
-**5.** Yapay zekânın "halüsinasyon" (yanılgı) yapması ne demektir?
-
-A) Sistemin çökmesi
-
-B) Kendinden emin bir tonda yanlış bilgi üretmesi
-
-C) Çok yavaş çalışması
-
+**5.** Yapay zekânın "halüsinasyon" (yanılgı) yapması ne demektir?\
+A) Sistemin çökmesi\
+B) Kendinden emin bir tonda yanlış bilgi üretmesi\
+C) Çok yavaş çalışması\
 D) İnternete bağlanamaması
 
-**6.** Yapay zekâ neden yanılgı üretebilir?
-
-A) Bilerek yanlış yapmak istediği için
-
-B) Doğruyu aramayıp bir sonraki kelimeyi tahmin ettiği için
-
-C) Donanımı yetersiz olduğu için
-
+**6.** Yapay zekâ neden yanılgı üretebilir?\
+A) Bilerek yanlış yapmak istediği için\
+B) Doğruyu aramayıp bir sonraki kelimeyi tahmin ettiği için\
+C) Donanımı yetersiz olduğu için\
 D) Kullanıcı yanlış sorduğu için
 
-**7.** Bir yapay zekâ aracına kişisel belge yüklemek neden sakıncalıdır?
-
-A) Dosya boyutu sınırı olduğu için
-
-B) Yüklenen içerik hizmet koşullarına bağlı olarak model geliştirmede kullanılabildiği için
-
-C) Yükleme her zaman başarısız olduğu için
-
+**7.** Bir yapay zekâ aracına kişisel belge yüklemek neden sakıncalıdır?\
+A) Dosya boyutu sınırı olduğu için\
+B) Yüklenen içerik hizmet koşullarına bağlı olarak model geliştirmede kullanılabildiği için\
+C) Yükleme her zaman başarısız olduğu için\
 D) Yalnızca İngilizce belgeler kabul edildiği için
 
-**8.** Aşağıdakilerden hangisi yapay zekâ ile ilgili bir etik sorudur?
-
-A) Yapay zekâ ne kadar elektrik harcıyor?
-
-B) Model, eğitim verisindeki önyargıyı yansıtır mı?
-
-C) Model kaç parametre içeriyor?
-
+**8.** Aşağıdakilerden hangisi yapay zekâ ile ilgili bir etik sorudur?\
+A) Yapay zekâ ne kadar elektrik harcıyor?\
+B) Model, eğitim verisindeki önyargıyı yansıtır mı?\
+C) Model kaç parametre içeriyor?\
 D) Model hangi programlama dilinde yazıldı?
 
-**9.** Yapay zekâ, eğitildiği verideki önyargıları yansıtabilir. *(Doğru / Yanlış)*
-
+**9.** Yapay zekâ, eğitildiği verideki önyargıları yansıtabilir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Yapay zekâdan alınan sayı, tarih ve kaynak bilgileri doğrulanmadan kullanılabilir. *(Doğru / Yanlış)*
-
+**10.** Yapay zekâdan alınan sayı, tarih ve kaynak bilgileri doğrulanmadan kullanılabilir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

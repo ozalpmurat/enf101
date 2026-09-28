@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bir sunumun bölümleri ve süre payları hangisinde doğru verilmiştir?
-
-A) Açılış %50 – Gövde %30 – Kapanış %20
-
-B) Açılış %10 – Gövde %80 – Kapanış %10
-
-C) Açılış %30 – Gövde %50 – Kapanış %20
-
+**1.** Bir sunumun bölümleri ve süre payları hangisinde doğru verilmiştir?\
+A) Açılış %50 – Gövde %30 – Kapanış %20\
+B) Açılış %10 – Gövde %80 – Kapanış %10\
+C) Açılış %30 – Gövde %50 – Kapanış %20\
 D) Açılış %20 – Gövde %40 – Kapanış %40
 
-**2.** "Slayt bir vitrindir, depo değil" ifadesi ne anlatır?
-
-A) Slaytlara çok bilgi koyulması gerektiğini
-
-B) Slaytta anahtar kelimeler olması, ayrıntının konuşmacı tarafından anlatılması gerektiğini
-
-C) Slaytların renkli olması gerektiğini
-
+**2.** "Slayt bir vitrindir, depo değil" ifadesi ne anlatır?\
+A) Slaytlara çok bilgi koyulması gerektiğini\
+B) Slaytta anahtar kelimeler olması, ayrıntının konuşmacı tarafından anlatılması gerektiğini\
+C) Slaytların renkli olması gerektiğini\
 D) Slaytların yazdırılması gerektiğini
 
-**3.** Bir sunumda dinleyicinin genellikle hatırlayabildiği ana mesaj sayısı kaç kabul edilir?
-
-A) 1
-
-B) 3
-
-C) 7
-
+**3.** Bir sunumda dinleyicinin genellikle hatırlayabildiği ana mesaj sayısı kaç kabul edilir?\
+A) 1\
+B) 3\
+C) 7\
 D) 10
 
-**4.** Slayt hazırlarken satır başına önerilen kelime sayısı hangisidir?
-
-A) 6–8
-
-B) 15–20
-
-C) 25–30
-
+**4.** Slayt hazırlarken satır başına önerilen kelime sayısı hangisidir?\
+A) 6–8\
+B) 15–20\
+C) 25–30\
 D) Sınır yoktur
 
-**5.** Sunumun kapanış bölümünde ne yapılmalıdır?
-
-A) Yalnızca "Teşekkürler" denmelidir
-
-B) Yeni bilgiler eklenmelidir
-
-C) Ana mesajlar özetlenip ne yapılması gerektiği söylenmelidir
-
+**5.** Sunumun kapanış bölümünde ne yapılmalıdır?\
+A) Yalnızca "Teşekkürler" denmelidir\
+B) Yeni bilgiler eklenmelidir\
+C) Ana mesajlar özetlenip ne yapılması gerektiği söylenmelidir\
 D) Sorular hemen alınmalıdır
 
-**6.** Creative Commons lisanslı bir görseli kullanırken genellikle ne gerekir?
-
-A) Hiçbir şey
-
-B) Görselin rengini değiştirmek
-
-C) Lisans şartlarına uymak ve genellikle atıf yapmak
-
+**6.** Creative Commons lisanslı bir görseli kullanırken genellikle ne gerekir?\
+A) Hiçbir şey\
+B) Görselin rengini değiştirmek\
+C) Lisans şartlarına uymak ve genellikle atıf yapmak\
 D) Görseli küçültmek
 
-**7.** Bir görselin altına kaynak yazmak ne sağlar?
-
-A) Görseli kullanma hakkı verir
-
-B) Telif sorununu çözer
-
-C) Yalnızca kaynağı belirtir; kullanım hakkı vermez
-
+**7.** Bir görselin altına kaynak yazmak ne sağlar?\
+A) Görseli kullanma hakkı verir\
+B) Telif sorununu çözer\
+C) Yalnızca kaynağı belirtir; kullanım hakkı vermez\
 D) Görselin lisansını değiştirir
 
-**8.** Sunum öncesi yapılması gerekenlerden hangisi değildir?
-
-A) Yüksek sesle prova yapmak
-
-B) Süreyi ölçmek
-
-C) Teknik kontrol yapmak
-
+**8.** Sunum öncesi yapılması gerekenlerden hangisi değildir?\
+A) Yüksek sesle prova yapmak\
+B) Süreyi ölçmek\
+C) Teknik kontrol yapmak\
 D) Slaytlara daha fazla metin eklemek
 
-**9.** Sunum sırasında slaytta yazanı kelimesi kelimesine okumak, dinleyicinin dikkatini artırır. *(Doğru / Yanlış)*
-
+**9.** Sunum sırasında slaytta yazanı kelimesi kelimesine okumak, dinleyicinin dikkatini artırır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Soru-cevap bölümünde bilmediğiniz bir soruya "bilmiyorum" demek, uydurmaktan daha iyidir. *(Doğru / Yanlış)*
-
+**10.** Soru-cevap bölümünde bilmediğiniz bir soruya "bilmiyorum" demek, uydurmaktan daha iyidir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Yalnızca resmî kamu kurumu sitelerinde arama yapmak için hangi ifade kullanılır?
-
-A) `filetype:pdf`
-
-B) `site:gov.tr`
-
-C) `"tam ifade"`
-
+**1.** Yalnızca resmî kamu kurumu sitelerinde arama yapmak için hangi ifade kullanılır?\
+A) `filetype:pdf`\
+B) `site:gov.tr`\
+C) `"tam ifade"`\
 D) `-kelime`
 
-**2.** Arama ifadesinin başına konan eksi işareti (`-kelime`) ne yapar?
-
-A) Kelimeyi sonuçlara ekler
-
-B) Yalnızca o kelimeyi arar
-
-C) O kelimeyi sonuçlardan çıkarır
-
+**2.** Arama ifadesinin başına konan eksi işareti (`-kelime`) ne yapar?\
+A) Kelimeyi sonuçlara ekler\
+B) Yalnızca o kelimeyi arar\
+C) O kelimeyi sonuçlardan çıkarır\
 D) Aramayı hızlandırır
 
-**3.** Yanıltmak amacıyla kasıtlı olarak üretilmiş yanlış bilgiye ne denir?
-
-A) Yanlış bilgi
-
-B) Dezenformasyon
-
-C) Sansür
-
+**3.** Yanıltmak amacıyla kasıtlı olarak üretilmiş yanlış bilgiye ne denir?\
+A) Yanlış bilgi\
+B) Dezenformasyon\
+C) Sansür\
 D) Algoritma
 
-**4.** E-postada adresleri diğer alıcılara görünmeyecek kişiler hangi alana yazılır?
-
-A) To (Alıcı)
-
-B) CC (Bilgi)
-
-C) BCC (Gizli)
-
+**4.** E-postada adresleri diğer alıcılara görünmeyecek kişiler hangi alana yazılır?\
+A) To (Alıcı)\
+B) CC (Bilgi)\
+C) BCC (Gizli)\
 D) Konu
 
-**5.** Kurumsal bir e-postada aşağıdakilerden hangisi bulunmaz?
-
-A) Konu satırı
-
-B) Hitap ve kapanış
-
-C) Emoji ve kısaltmalar
-
+**5.** Kurumsal bir e-postada aşağıdakilerden hangisi bulunmaz?\
+A) Konu satırı\
+B) Hitap ve kapanış\
+C) Emoji ve kısaltmalar\
 D) İmza
 
-**6.** Oltalama (phishing) e-postalarının en belirgin ortak özelliği nedir?
-
-A) Uzun ve ayrıntılı olmaları
-
-B) Görseller içermeleri
-
-C) Aciliyet duygusu yaratarak acele ettirmeleri
-
+**6.** Oltalama (phishing) e-postalarının en belirgin ortak özelliği nedir?\
+A) Uzun ve ayrıntılı olmaları\
+B) Görseller içermeleri\
+C) Aciliyet duygusu yaratarak acele ettirmeleri\
 D) Yalnızca sabah gönderilmeleri
 
-**7.** e-Devlet şifresi ile e-imza arasındaki temel fark nedir?
-
-A) e-Devlet şifresi ücretlidir, e-imza ücretsizdir
-
-B) e-Devlet şifresi kimliği doğrular ancak imza yerine geçmez; e-imza hukuki bir imzadır
-
-C) İkisi tamamen aynı işlevi görür
-
+**7.** e-Devlet şifresi ile e-imza arasındaki temel fark nedir?\
+A) e-Devlet şifresi ücretlidir, e-imza ücretsizdir\
+B) e-Devlet şifresi kimliği doğrular ancak imza yerine geçmez; e-imza hukuki bir imzadır\
+C) İkisi tamamen aynı işlevi görür\
 D) e-imza yalnızca kurumlar tarafından kullanılır
 
-**8.** Öğrenciye gönderilmiş ve "hemen ödeme yapılmazsa hesabınız kapatılacak" diyen bir e-posta aldınız. İlk yapılması gereken nedir?
-
-A) Bağlantıya tıklayıp durumu kontrol etmek
-
-B) E-postayı yanıtlayıp bilgi istemek
-
-C) Bağlantıya tıklamadan göndereni başka bir kanaldan doğrulamak
-
+**8.** Öğrenciye gönderilmiş ve "hemen ödeme yapılmazsa hesabınız kapatılacak" diyen bir e-posta aldınız. İlk yapılması gereken nedir?\
+A) Bağlantıya tıklayıp durumu kontrol etmek\
+B) E-postayı yanıtlayıp bilgi istemek\
+C) Bağlantıya tıklamadan göndereni başka bir kanaldan doğrulamak\
 D) E-postayı arkadaşlara iletmek
 
-**9.** Bir içeriği paylaşmadan önce kaynağa gidip gitmediğinizi kontrol etmek, yanlış bilginin yayılmasını önler. *(Doğru / Yanlış)*
-
+**9.** Bir içeriği paylaşmadan önce kaynağa gidip gitmediğinizi kontrol etmek, yanlış bilginin yayılmasını önler. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Halka açık ve şifresiz bir kablosuz ağda e-Devlet işlemi yapmak güvenlidir. *(Doğru / Yanlış)*
-
+**10.** Halka açık ve şifresiz bir kablosuz ağda e-Devlet işlemi yapmak güvenlidir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

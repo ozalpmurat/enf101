@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Aşağıdakilerden hangisi tek başına "veri" kavramına örnektir?
-
-A) "Bugün hava sıcaklığı 23,5 °C ölçüldü."
-
-B) 23,5
-
-C) "Nem yüksek olduğu için öğle vakti koşu yapmak uygun değil."
-
+**1.** Aşağıdakilerden hangisi tek başına "veri" kavramına örnektir?\
+A) "Bugün hava sıcaklığı 23,5 °C ölçüldü."\
+B) 23,5\
+C) "Nem yüksek olduğu için öğle vakti koşu yapmak uygun değil."\
 D) "Yarın yağmur bekleniyor."
 
-**2.** Enformasyonu veriden ayıran temel özellik aşağıdakilerden hangisidir?
-
-A) Sayısal değerlerden oluşması
-
-B) Mutlaka bilgisayarda saklanması
-
-C) Bağlam içine yerleştirilerek anlam kazanması
-
+**2.** Enformasyonu veriden ayıran temel özellik aşağıdakilerden hangisidir?\
+A) Sayısal değerlerden oluşması\
+B) Mutlaka bilgisayarda saklanması\
+C) Bağlam içine yerleştirilerek anlam kazanması\
 D) Yalnızca uzmanlar tarafından üretilmesi
 
-**3.** "Bilgi" kavramının en uygun tanımı hangisidir?
-
-A) İşlenmemiş ham gerçekler ve semboller
-
-B) Bağlam kazandırılmış ancak yorumlanmamış veri
-
-C) Yorumlanan, deneyimle birleşen ve karar vermede kullanılan enformasyon
-
+**3.** "Bilgi" kavramının en uygun tanımı hangisidir?\
+A) İşlenmemiş ham gerçekler ve semboller\
+B) Bağlam kazandırılmış ancak yorumlanmamış veri\
+C) Yorumlanan, deneyimle birleşen ve karar vermede kullanılan enformasyon\
 D) İnternette paylaşılan her türlü içerik
 
-**4.** Bilgi toplumunu sanayi toplumundan ayıran temel özellik nedir?
-
-A) Tarımsal üretimin artması
-
-B) Ekonomik değerin bilginin üretimi ve paylaşımıyla oluşması
-
-C) Fabrika sayısının hızla çoğalması
-
+**4.** Bilgi toplumunu sanayi toplumundan ayıran temel özellik nedir?\
+A) Tarımsal üretimin artması\
+B) Ekonomik değerin bilginin üretimi ve paylaşımıyla oluşması\
+C) Fabrika sayısının hızla çoğalması\
 D) Nüfusun kırsal alanda yoğunlaşması
 
-**5.** Dijital dönüşüm kavramıyla ilgili doğru ifade hangisidir?
-
-A) Yalnızca yeni cihaz satın alınmasıdır.
-
-B) Süreçlerin dijital ortama taşınması ve kararların veriye dayandırılmasıdır.
-
-C) Kâğıt kullanımının tümüyle yasaklanmasıdır.
-
+**5.** Dijital dönüşüm kavramıyla ilgili doğru ifade hangisidir?\
+A) Yalnızca yeni cihaz satın alınmasıdır.\
+B) Süreçlerin dijital ortama taşınması ve kararların veriye dayandırılmasıdır.\
+C) Kâğıt kullanımının tümüyle yasaklanmasıdır.\
 D) Yalnızca büyük kurumları ilgilendiren bir süreçtir.
 
-**6.** "Dijital uçurum" kavramı neyi ifade eder?
-
-A) İnternet hızındaki teknik dalgalanmaları
-
-B) Dijital oyunlardaki beceri farklılıklarını
-
-C) Erişim, cihaz ve dijital beceri bakımından bireyler arasındaki eşitsizlikleri
-
+**6.** "Dijital uçurum" kavramı neyi ifade eder?\
+A) İnternet hızındaki teknik dalgalanmaları\
+B) Dijital oyunlardaki beceri farklılıklarını\
+C) Erişim, cihaz ve dijital beceri bakımından bireyler arasındaki eşitsizlikleri\
 D) Yazılım sürümleri arasındaki uyumsuzlukları
 
-**7.** Aşağıdakilerden hangisi dijital okuryazarlığın bileşenleri arasında yer almaz?
-
-A) Bilgi okuryazarlığı
-
-B) Dijital güvenlik ve gizlilik
-
-C) Dijital etik
-
+**7.** Aşağıdakilerden hangisi dijital okuryazarlığın bileşenleri arasında yer almaz?\
+A) Bilgi okuryazarlığı\
+B) Dijital güvenlik ve gizlilik\
+C) Dijital etik\
 D) Belirli bir işletim sistemini ileri düzeyde yönetebilmek
 
-**8.** Bir internet kaynağının güvenilirliğini değerlendirirken aşağıdakilerden hangisi en az ilgilidir?
-
-A) İçeriği kimin yazdığı ve uzmanlığı
-
-B) İçeriğin ne zaman yayımlandığı
-
-C) Sayfa tasarımının renkli olup olmadığı
-
+**8.** Bir internet kaynağının güvenilirliğini değerlendirirken aşağıdakilerden hangisi en az ilgilidir?\
+A) İçeriği kimin yazdığı ve uzmanlığı\
+B) İçeriğin ne zaman yayımlandığı\
+C) Sayfa tasarımının renkli olup olmadığı\
 D) İddianın bir kanıta dayanıp dayanmadığı
 
-**9.** Bilgi toplumunda birey yalnızca içerik tüketicisidir; içerik üretme rolü yoktur. *(Doğru / Yanlış)*
-
+**9.** Bilgi toplumunda birey yalnızca içerik tüketicisidir; içerik üretme rolü yoktur. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Aynı veri kümesi, farklı bağlamlarda farklı enformasyona dönüşebilir. *(Doğru / Yanlış)*
-
+**10.** Aynı veri kümesi, farklı bağlamlarda farklı enformasyona dönüşebilir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}

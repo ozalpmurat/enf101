@@ -17,92 +17,58 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Aşağıdakilerden hangisi kişisel veri değildir?
-
-A) Telefon numarası
-
-B) TC kimlik numarası
-
-C) Hava durumu tahmini
-
+**1.** Aşağıdakilerden hangisi kişisel veri değildir?\
+A) Telefon numarası\
+B) TC kimlik numarası\
+C) Hava durumu tahmini\
 D) E-posta adresi
 
-**2.** Aşağıdakilerden hangisi "özel nitelikli kişisel veri" kapsamındadır?
-
-A) Ad ve soyad
-
-B) Sağlık bilgisi
-
-C) Telefon numarası
-
+**2.** Aşağıdakilerden hangisi "özel nitelikli kişisel veri" kapsamındadır?\
+A) Ad ve soyad\
+B) Sağlık bilgisi\
+C) Telefon numarası\
 D) Doğum yılı
 
-**3.** KVKK kapsamında "ilgili kişi" kimdir?
-
-A) Veriyi işleyen kurum
-
-B) Verisi işlenen kişi
-
-C) Veriyi denetleyen kurul
-
+**3.** KVKK kapsamında "ilgili kişi" kimdir?\
+A) Veriyi işleyen kurum\
+B) Verisi işlenen kişi\
+C) Veriyi denetleyen kurul\
 D) Yazılımı geliştiren firma
 
-**4.** Dijital ayak izinin "pasif" kısmına hangisi girer?
-
-A) Yazdığınız bir yorum
-
-B) Paylaştığınız bir fotoğraf
-
-C) Tarayıcı çerezleri ve konum kaydı
-
+**4.** Dijital ayak izinin "pasif" kısmına hangisi girer?\
+A) Yazdığınız bir yorum\
+B) Paylaştığınız bir fotoğraf\
+C) Tarayıcı çerezleri ve konum kaydı\
 D) Üye olduğunuz bir site
 
-**5.** Bir fener uygulamasının konum izni istemesi neyi gösterir?
-
-A) Uygulamanın çok gelişmiş olduğunu
-
-B) İznin işlevle orantılı olmadığını
-
-C) İznin zorunlu olduğunu
-
+**5.** Bir fener uygulamasının konum izni istemesi neyi gösterir?\
+A) Uygulamanın çok gelişmiş olduğunu\
+B) İznin işlevle orantılı olmadığını\
+C) İznin zorunlu olduğunu\
 D) Uygulamanın ücretsiz olduğunu
 
-**6.** Creative Commons lisanslı bir eser için genellikle ne gerekir?
-
-A) Hiçbir şey
-
-B) İzin için ücret ödemek
-
-C) Lisans şartlarına uymak, çoğunlukla atıf yapmak
-
+**6.** Creative Commons lisanslı bir eser için genellikle ne gerekir?\
+A) Hiçbir şey\
+B) İzin için ücret ödemek\
+C) Lisans şartlarına uymak, çoğunlukla atıf yapmak\
 D) Eseri değiştirmeden kullanmak
 
-**7.** Bir görselin altına kaynak yazmak ne sağlar?
-
-A) Görseli kullanma hakkı verir
-
-B) Telif sorununu ortadan kaldırır
-
-C) Yalnızca kaynağı belirtir; kullanım hakkı vermez
-
+**7.** Bir görselin altına kaynak yazmak ne sağlar?\
+A) Görseli kullanma hakkı verir\
+B) Telif sorununu ortadan kaldırır\
+C) Yalnızca kaynağı belirtir; kullanım hakkı vermez\
 D) Görseli kamu malı yapar
 
-**8.** Aşağıdakilerden hangisi dijital etiğe uygun bir davranıştır?
-
-A) Başkasının hesabına izinsiz girmek
-
-B) Yanlış bilgiyi düzeltmek
-
-C) Bir kişiyi hedef göstererek paylaşım yapmak
-
+**8.** Aşağıdakilerden hangisi dijital etiğe uygun bir davranıştır?\
+A) Başkasının hesabına izinsiz girmek\
+B) Yanlış bilgiyi düzeltmek\
+C) Bir kişiyi hedef göstererek paylaşım yapmak\
 D) Başkasının fotoğrafını izinsiz paylaşmak
 
-**9.** Dijital ayak izi silinen bir paylaşımla birlikte tamamen ortadan kalkar. *(Doğru / Yanlış)*
-
+**9.** Dijital ayak izi silinen bir paylaşımla birlikte tamamen ortadan kalkar. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Verisi işlenen kişi, verisinin silinmesini veri sorumlusundan talep edebilir. *(Doğru / Yanlış)*
-
+**10.** Verisi işlenen kişi, verisinin silinmesini veri sorumlusundan talep edebilir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}
