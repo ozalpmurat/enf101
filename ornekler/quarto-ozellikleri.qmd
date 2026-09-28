@@ -17,7 +17,7 @@ Her bölümde önce **kaynak kod**, ardından o kodun **ürettiği sonuç** yer 
 ::: callout-note
 ## Bu belge ders içeriğinin parçası değildir
 
-`ornekler/` klasörü yalnızca başvuru amaçlıdır. Öğrencilere dağıtılan malzeme `hafta-NN/` klasörlerinde durur.
+`ornekler/` klasörü yalnızca başvuru amaçlıdır. Öğrencilere dağıtılan malzeme `hafta-NN-konu/` klasörlerinde durur.
 :::
 
 # Metin biçimlendirme
@@ -140,7 +140,7 @@ print(f"Ortalama: {ortalama:.1f}")
 ```
 
 ``` bash
-quarto render hafta-03
+quarto render hafta-03-yazilim-isletim-sistemleri
 ```
 
 # Matematik
@@ -339,7 +339,7 @@ Birkaç nokta:
 
 ::: callout-tip
 ## Görseller nereden gelir?
-Ders malzemesindeki diyagramlar çizim betikleriyle üretilir ve `hafta-NN/gorseller/` klasöründe saklanır.
+Ders malzemesindeki diyagramlar çizim betikleriyle üretilir ve `hafta-NN-konu/gorseller/` klasöründe saklanır.
 Fotoğraf veya ekran görüntüsü kullanılacaksa telif durumuna dikkat edilmelidir: kaynak göstermek
 kullanım hakkı vermez, lisansın uygun olması gerekir.
 :::
@@ -401,4 +401,4 @@ Bu belgede gösterilenler:
 | TikZ                | Kurumsal görünümlü şemalar        |
 | Görseller           | Fotoğraf, ekran görüntüsü, grafik |
 
-Hangisini nerede kullanacağınızdan emin değilseniz, benzer bir örneği ders malzemesinde bulabilirsiniz: `hafta-NN/` klasörlerindeki dosyalar bu özelliklerin gerçek kullanımını içerir.
+Hangisini nerede kullanacağınızdan emin değilseniz, benzer bir örneği ders malzemesinde bulabilirsiniz: `hafta-NN-konu/` klasörlerindeki dosyalar bu özelliklerin gerçek kullanımını içerir.

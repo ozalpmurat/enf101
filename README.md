@@ -16,7 +16,8 @@ Bütün PDF'ler tek bir ZIP dosyasında toplanır. ZIP **elle çıkarılan sür�
 İçinde 14 haftanın ders notu, sunum ve alıştırma PDF'leri; ayrıca izlence ve başlık listesi.
 (`ornekler/` klasöründeki Quarto başvuru belgeleri ile hocalar için hazırlanan Quarto kurulum kılavuzu
 ders içeriği sayılmadığı için ZIP'e alınmaz.) Dosyalar hafta klasörlerine göre düzenlenmiştir, yani ZIP'i
-açtığınızda `hafta-01/ders-notu.pdf` gibi bir yapı görürsünüz. Git, terminal veya hesap gerekmez.
+açtığınızda `hafta-01-giris-temel-kavramlar/ders-notu.pdf` gibi bir yapı görürsünüz. Git, terminal
+veya hesap gerekmez.
 
 Yalnızca PDF'leri git ile indirmek isterseniz (klasör yapısı korunur):
 
@@ -30,8 +31,9 @@ git sparse-checkout set --no-cone '*.pdf'
 
 - **`izlence.qmd` / `izlence.pdf`** — ders izlencesi.
 - **`BASLIKLAR.qmd` / `BASLIKLAR.pdf`** — 14 haftanın **ders notu** başlıklarının bir arada görünümü (içerik haritası). Elle düzenlenmez; `araclar/basliklari-uret.py` betiğiyle üretilir.
-- **`hafta-NN/`** — her haftanın paketi: `ders-notu.qmd`+`.pdf`, `sunum.qmd`+`.pdf`,
-  `alistirma.qmd`+`.pdf` ve `gorseller/` klasörü (NN = 01 … 14).
+- **`hafta-NN-konu/`** — her haftanın paketi: `ders-notu.qmd`+`.pdf`, `sunum.qmd`+`.pdf`,
+  `alistirma.qmd`+`.pdf` ve `gorseller/` klasörü. `NN` hafta numarası (01 … 14), `konu` o haftanın
+  kısa adıdır (örn. `hafta-10-bilgi-guvenligi`). Adlar ASCII'dir; Türkçe karakter kullanılmaz.
 - **`tema/notlar.tex` ve `tema/sunum.tex`** — ders notu ve sunumun ortak görünüm dosyaları.
 - **`ornekler/`** — Quarto özelliklerine ilişkin başvuru belgeleri (ders içeriği değildir).
 - **`KILAVUZ_Quarto_Kurulum_ve_Kullanim.qmd` / `.pdf`** — Quarto kurulum ve kullanım kılavuzu.
@@ -59,11 +61,12 @@ bu kadarı sorun sayılmaz.
 Proje kökünde:
 
 ```bash
-quarto render hafta-03        # bir haftanın üç belgesini üretir
-quarto render izlence.qmd     # tek dosya
+quarto render hafta-03-yazilim-isletim-sistemleri   # bir haftanın üç belgesini üretir
+quarto render izlence.qmd                           # tek dosya
 ```
 
-`quarto render` yalnızca **tek yol** alır; `quarto render hafta-01 hafta-03` çalışmaz. Tüm projeyi
+`quarto render` yalnızca **tek yol** alır; `quarto render hafta-01-giris-temel-kavramlar
+hafta-03-yazilim-isletim-sistemleri` çalışmaz. Tüm projeyi
 tek komutta derlemek uzun sürdüğü için hafta hafta derlemek gerekir. Ayrıntı: `AGENTS.md`.
 
 ## PDF'ler hakkında

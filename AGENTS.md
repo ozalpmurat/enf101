@@ -44,12 +44,16 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 ├─ .github/workflows/
 │  └─ pdf-paketi.yml             PDF'leri ZIP'leyip sürüme yükler (elle tetiklenir)
 ├─ KILAVUZ_Quarto_...qmd + .pdf  hocalar için Quarto kurulum/kullanım kılavuzu
-└─ hafta-NN/                     NN = 01 … 14
+└─ hafta-NN-konu/                NN = 01 … 14, konu = kısa konu adı
    ├─ ders-notu.qmd + .pdf       8–12 sayfa
    ├─ sunum.qmd + .pdf           25–38 slayt (hedef ~30)
    ├─ alistirma.qmd + .pdf        4 sayfa · 10 soru + cevap anahtarı
    └─ gorseller/*.png            o haftanın diyagramları
 ```
+
+Klasör adları `hafta-NN-konu` kalıbındadır: hafta numarası **başta** durur (klasör sıralaması ve
+`araclar/basliklari-uret.py`'nin `split("-")[1]` çözümlemesi buna bağlıdır), `konu` ise ASCII
+(Türkçe karaktersiz) kısa addır — örn. `hafta-10-bilgi-guvenligi`.
 
 Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz) · 40 diyagram.
 
@@ -60,11 +64,12 @@ Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz) · 40 diyagram.
 Her şey **Quarto** ile üretilir. Proje kökünde:
 
 ```bash
-quarto render hafta-03          # tek haftanın üç belgesini üretir
+quarto render hafta-03-yazilim-isletim-sistemleri   # tek haftanın üç belgesini üretir
 quarto render izlence.qmd       # tek dosya
 ```
 
-**Dikkat:** `quarto render` yalnızca **tek yol** alır. `quarto render hafta-01 hafta-03` çalışmaz.
+**Dikkat:** `quarto render` yalnızca **tek yol** alır. `quarto render hafta-01-giris-temel-kavramlar
+hafta-03-yazilim-isletim-sistemleri` çalışmaz.
 Tam projeyi tek komutta derlemek 3 dakikayı aştığı için uzun işlerde hafta hafta derlemek gerekir.
 
 **`BASLIKLAR.qmd` elle düzenlenmez.** `araclar/basliklari-uret.py` betiği bu dosyayı `hafta-*/ders-notu.qmd`
@@ -289,7 +294,7 @@ alıştırmayla karıştırılmamalıdır.
 
 ```bash
 # 1. Derleme — klasörü kopyalayıp sıfırdan derleyin (kaynak klasörde artık bırakmasın)
-cp -r . /tmp/kontrol && cd /tmp/kontrol && rm -f *.pdf hafta-*/*.pdf && quarto render hafta-01
+cp -r . /tmp/kontrol && cd /tmp/kontrol && rm -f *.pdf hafta-*/*.pdf && quarto render hafta-01-giris-temel-kavramlar
 
 # 2. Boş/bozuk sayfa taraması
 for f in hafta-*/*.pdf; do
