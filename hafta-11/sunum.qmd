@@ -123,7 +123,7 @@ Kurum sitelerinde "Aydınlatma Metni" ve "Başvuru Formu" bulunur.
 |:---|:---|
 | Telifli | İzin gerekir |
 | Creative Commons | Şartlara uyarak kullanım |
-| Kamu malı / açık | Serbest |
+| Kamu malı (CC0) | Serbest, atıf gerekmez |
 
 ## Sık Yapılan Telif Hataları
 

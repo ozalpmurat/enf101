@@ -47,11 +47,11 @@ B) Kendinden emin bir tonda yanlış bilgi üretmesi\
 C) Çok yavaş çalışması\
 D) İnternete bağlanamaması
 
-**6.** Yapay zekâ neden yanılgı üretebilir?\
-A) Bilerek yanlış yapmak istediği için\
-B) Doğruyu aramayıp bir sonraki kelimeyi tahmin ettiği için\
-C) Donanımı yetersiz olduğu için\
-D) Kullanıcı yanlış sorduğu için
+**6.** Bir algoritmanın üç temel öğesi aşağıdakilerden hangisidir?\
+A) Veri, model, eğitim\
+B) Sıra, karar, tekrar\
+C) Girdi, işlem, çıktı\
+D) Desen, tahmin, sınıflandırma
 
 **7.** Bir yapay zekâ aracına kişisel belge yüklemek neden sakıncalıdır?\
 A) Dosya boyutu sınırı olduğu için\
@@ -82,7 +82,7 @@ D) Model hangi programlama dilinde yazıldı?
 | 3 | C | GPU, binlerce basit işlemi aynı anda yapabildiği için yapay zekâ eğitiminde kullanılır. |
 | 4 | B | Büyük veri; hacim, hız ve çeşitlilik bakımından geleneksel araçlarla işlenemeyecek veri kütlesidir. |
 | 5 | B | Yanılgı, modelin akla yatkın ama yanlış bilgiyi kendinden emin bir tonla üretmesidir. |
-| 6 | B | Model doğruluğu aramaz; olasılığa dayalı olarak bir sonraki kelimeyi tahmin eder. |
+| 6 | B | Algoritmanın üç öğesi sıra, karar ve tekrardır; akış diyagramında kutular işi, baklava dilimi kararı, oklar sırayı gösterir. |
 | 7 | B | Hizmet koşullarına bağlı olarak yüklenen içerik model geliştirmede kullanılabilir; bu bir gizlilik riskidir. |
 | 8 | B | Önyargı, yapay zekânın başlıca etik sorularından biridir. Diğer seçenekler teknik ayrıntıdır. |
 | 9 | Doğru | Model, eğitildiği verinin istatistiksel özelliklerini öğrenir; veride önyargı varsa çıktıya da yansır. |

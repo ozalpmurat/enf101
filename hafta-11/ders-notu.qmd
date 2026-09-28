@@ -140,7 +140,7 @@ Bir eser üretildiği anda **telif hakkı** doğar. Bu hak, eseri kimin hangi ko
 |:---|:---|
 | **Telifli** (izin verilmemiş) | Kullanamazsınız; izin almanız gerekir |
 | **Creative Commons** | Lisans şartlarına uyarak kullanabilirsiniz (genellikle atıf) |
-| **Kamu malı / açık lisans** | Serbestçe kullanabilirsiniz |
+| **Kamu malı (CC0)** | Serbestçe kullanabilirsiniz; atıf gerekmez |
 
 ::: {.callout-warning}
 ## Sık yapılan telif hataları
@@ -203,7 +203,7 @@ Bu uygulama notla değerlendirilmez. Amacı, dijital ayak iziniz ve gizlilik aya
 - **KVKK** kapsamında ilgili kişi olarak **haklarınız** vardır: öğrenme, düzeltme, silme, tazminat.
 - **Dijital ayak izi** kalıcı, aranabilir ve birleştirilebilir; aktif ve pasif iz olarak ikiye ayrılır.
 - **Uygulama izinleri** ve **gizlilik ayarları** düzenli olarak gözden geçirilmelidir.
-- **Telif hakkı** eserle birlikte doğar; **Creative Commons** ve açık lisanslar şartlı kullanım sağlar.
+- **Telif hakkı** eserle birlikte doğar; **Creative Commons** lisansları şartlı kullanım sağlar.
 - **Kaynak göstermek**, kullanım hakkı vermez; lisans ayrı bir konudur.
 - **Dijital etik**: kaynağı belirtmek, izinsiz erişmemek, zarar vermemek, gizliliğe saygı.
 

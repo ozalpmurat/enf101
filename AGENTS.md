@@ -300,17 +300,25 @@ grep -rnE '[^[:alpha:]]inç|^inç' --include="*.qmd" --include="*.tex" .
 awk 'p ~ /^\*\*[0-9]+\.\*\*/ && $0=="" {print FILENAME": "NR". satır — sorudan sonra boş satır"} {p=$0}' hafta-*/alistirma.qmd
 #    Çıktı boş olmalı. Sonuç varsa ilgili soru bloğundaki boş satırlar kaldırılıp
 #    satır sonlarına `\` eklenir.
+
+# 7. İçerik başlıkları güncel mi? (betik çalıştırıldıktan sonra fark çıkmamalı)
+python3 araclar/basliklari-uret.py && git diff --quiet BASLIKLAR.qmd \
+  && echo "BASLIKLAR güncel" || echo "BASLIKLAR GÜNCELLENMELİ"
 ```
 
 ---
 
 ## 12. Bekleyen işler
 
-- **4. ve 7. hafta sunuları kalabalık** (38'er slayt). Sadeleştirme önerildi, karar bekliyor.
-- **4. ve 5. hafta sunularında 2'şer uyarı kutusu var**, diğer 12 sunuda yok. Tutarlılık için
-  ya kaldırılmalı ya diğerlerine yaygınlaştırılmalı.
-- **Yapay zekâ yeterliliği (K9)** ve izlencedeki diğer çıktı güncellemeleri yapıldı; ancak ders
-  izlencesi ile haftalık belgeler arasında çıktı kodları (K1–K9) eşlemesi gözden geçirilebilir.
+Şu an bekleyen bir iş yok. Kapatılan başlıklar ve kararları:
+
+- **Sunu kalabalığı:** 4. hafta 38, 7. hafta 39 slayt. Kullanıcı bu yoğunluğu kabul etti (hedef ~30,
+  kabul edilen üst sınır 38; 39 onaylı). Yeni bir konu eklenirse başka bir yerden yer açmak gerekir.
+- **Uyarı kutuları:** 4. ve 5. haftada ikişer olan `callout-warning` kutuları 14 sununun tamamına
+  yaygınlaştırıldı; artık her sunuda en az bir kutu var.
+- **Çıktı eşlemesi (K1–K9):** izlence ile haftalık belgeler arasındaki eşleme gözden geçirildi.
+  4. haftaya K4 eklendi (bulut ve işbirliği araçları), 3. haftadaki K2 bağlantısı kaldırıldı
+  (donanım çıktısı, yazılım haftasına bağlıydı), K3'e işletim sistemi aileleri eklendi.
 
 ---
 

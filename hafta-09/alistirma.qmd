@@ -47,17 +47,17 @@ B) Yeni bilgiler eklenmelidir\
 C) Ana mesajlar özetlenip ne yapılması gerektiği söylenmelidir\
 D) Sorular hemen alınmalıdır
 
-**6.** Creative Commons lisanslı bir görseli kullanırken genellikle ne gerekir?\
-A) Hiçbir şey\
-B) Görselin rengini değiştirmek\
-C) Lisans şartlarına uymak ve genellikle atıf yapmak\
-D) Görseli küçültmek
+**6.** Bir sunumda "üç ana mesaj" kuralının amacı nedir?\
+A) Slayt sayısını artırmak\
+B) Dinleyicinin hatırlayabildiği mesaj sayısı sınırlı olduğu için\
+C) Sunum süresini uzatmak\
+D) Görsel sayısını azaltmak
 
-**7.** Bir görselin altına kaynak yazmak ne sağlar?\
-A) Görseli kullanma hakkı verir\
-B) Telif sorununu çözer\
-C) Yalnızca kaynağı belirtir; kullanım hakkı vermez\
-D) Görselin lisansını değiştirir
+**7.** Erişilebilir bir sunum hazırlarken aşağıdakilerden hangisi yapılmalıdır?\
+A) Bilgiyi yalnızca renkle vermek\
+B) Küçük punto kullanmak\
+C) Görsellere alternatif metin eklemek\
+D) Slayt başlıklarını "Slayt 5" biçiminde yazmak
 
 **8.** Sunum öncesi yapılması gerekenlerden hangisi değildir?\
 A) Yüksek sesle prova yapmak\
@@ -82,8 +82,8 @@ D) Slaytlara daha fazla metin eklemek
 | 3 | B | Dinleyici genellikle üçten fazla ana mesajı hatırlamaz; bu yüzden sunum üç mesaj etrafında kurulmalıdır. |
 | 4 | A | Satır başına 6–8 kelime, slayt başına 6 madde iyi bir ölçüdür. |
 | 5 | C | Kapanış, ana mesajları hatırlatır ve ne yapılması gerektiğini söyler. Yalnızca teşekkür etmek kapanış sayılmaz. |
-| 6 | C | Creative Commons lisansları kullanıma izin verir ancak şartları vardır; en yaygını atıf yapmaktır. |
-| 7 | C | Kaynak gösterme, kaynağı belirtir ama kullanım hakkı vermez. Kullanım hakkı lisansla ilgilidir. |
+| 6 | B | Dinleyici genellikle üçten fazla ana mesajı hatırlamaz; bu yüzden sunum üç mesaja odaklanmalıdır. |
+| 7 | C | Erişilebilir sunumda görsellere alternatif metin eklenir; punto büyük olmalı, bilgi yalnızca renkle verilmemeli ve başlıklar anlamlı yazılmalıdır. |
 | 8 | D | Slaytlara daha fazla metin eklemek bir hazırlık değil, yapılan bir hatadır. |
 | 9 | Yanlış | Slaytı okumak dinleyicinin dikkatini dağıtır; dinleyici okumaya başlar ve konuşmacıyı dinlemeyi bırakır. |
 | 10 | Doğru | Bilmediğini söylemek dürüst ve güven verici bir davranıştır; uydurma cevap ise güveni zedeler. |

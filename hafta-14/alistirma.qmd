@@ -23,11 +23,11 @@ B) Resmî uygulama mağazasını kullanmak\
 C) Kırılmış sürümleri indirmek\
 D) E-posta ekiyle gelen dosyayı kurmak
 
-**2.** Bir fener uygulamasının konum ve kişiler izni istemesi ne anlama gelir?\
-A) Uygulamanın çok kapsamlı olduğunu\
-B) İzinlerin işlevle orantısız olduğunu\
-C) İzinlerin zorunlu olduğunu\
-D) Uygulamanın güvenli olduğunu
+**2.** Bir oyun uygulamasının mikrofon izni istemesi ne anlama gelir?\
+A) Oyunun çok kapsamlı olduğunu\
+B) İznin işlevle orantısız olduğunu\
+C) İznin zorunlu olduğunu\
+D) Oyunun güvenli olduğunu
 
 **3.** Senkronizasyon ile yedekleme arasındaki fark nedir?\
 A) İkisi aynı şeydir\
@@ -78,7 +78,7 @@ D) Ekran çözünürlüğündeki farkı
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | Resmî mağazalar bir denetimden geçer ve uygulamalar gerektiğinde kaldırılabilir. Mağaza dışı kurulumlar en yaygın zararlı yazılım kaynağıdır. |
-| 2 | B | Fener uygulamasının işini yapmak için konuma veya kişilere ihtiyacı yoktur; izinler işlevle orantısızdır. |
+| 2 | B | Oyunun işini yapmak için mikrofona ihtiyacı yoktur; izin işlevle orantılı değildir. |
 | 3 | B | Senkronizasyon aynı veriyi bütün cihazlarda eşitler; yedekleme ise verinin ayrı bir kopyasını saklar. |
 | 4 | B | Telefon numarası birçok hesabın şifre sıfırlama ve doğrulama yoludur; telefon ele geçirilirse hesaplar risk altına girer. |
 | 5 | D | Giyilebilir cihazlar hareket, nabız, oksijen ve konum gibi veriler toplar; banka bakiyesine erişemez. |
