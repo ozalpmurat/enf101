@@ -1,0 +1,129 @@
+---
+title: "Haftalık Alıştırma"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 3. Hafta"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+---
+
+::: {.callout-note}
+## Yönerge
+
+Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
+
+Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
+
+Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
+:::
+
+**1.** Aşağıdakilerden hangisi sistem yazılımına örnektir?
+
+A) Kelime işlemci
+
+B) İşletim sistemi
+
+C) Tarayıcı
+
+D) Sunum programı
+
+**2.** Kaynak kodu herkese açık olan ve isteyen herkesin inceleyip değiştirebildiği yazılım türü hangisidir?
+
+A) Kapalı kaynak yazılım
+
+B) Açık kaynak yazılım
+
+C) Ücretsiz deneme yazılımı
+
+D) Sistem yazılımı
+
+**3.** Donanım ile kullanıcı arasındaki aracı olan yazılım hangisidir?
+
+A) Uygulama yazılımı
+
+B) Sürücü
+
+C) İşletim sistemi
+
+D) Tarayıcı
+
+**4.** Aşağıdakilerden hangisi işletim sisteminin görevlerinden biri değildir?
+
+A) Donanım kaynaklarını yönetmek
+
+B) Dosya sistemini düzenlemek
+
+C) Bir belgenin yazım hatalarını düzeltmek
+
+D) Kullanıcı erişimini denetlemek
+
+**5.** TÜBİTAK bünyesinde geliştirilen, Debian tabanlı yerli ve açık kaynak işletim sistemi hangisidir?
+
+A) Ubuntu
+
+B) Windows
+
+C) macOS
+
+D) Pardus
+
+**6.** Aşağıdakilerden hangisi gömülü işletim sistemine örnektir?
+
+A) Dizüstü bilgisayarda çalışan sistem
+
+B) Modemin içindeki sistem
+
+C) Sunucu işletim sistemi
+
+D) Sanal makine sistemi
+
+**7.** Yazılım katmanları alttan üste doğru hangi sırayla dizilir?
+
+A) Uygulamalar → işletim sistemi → donanım
+
+B) Donanım → işletim sistemi → uygulamalar
+
+C) İşletim sistemi → donanım → uygulamalar
+
+D) Donanım → uygulamalar → işletim sistemi
+
+**8.** Bir program yanıt vermediğinde izlenecek ilk adım nedir?
+
+A) Bilgisayarı hemen yeniden başlatmak
+
+B) Programı kapatıp yeniden açmak
+
+C) Diski biçimlendirmek
+
+D) İşletim sistemini yeniden kurmak
+
+**9.** Açık kaynak yazılımlar her zaman ücretsizdir ve ticari destek almazlar. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+**10.** Android ve iOS, mobil işletim sistemlerine örnektir. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+{{< pagebreak >}}
+
+# Cevap Anahtarı
+
+| Soru | Cevap | Kısa gerekçe |
+|:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
+| 1 | B | İşletim sistemi, donanımı yöneten sistem yazılımıdır. Diğer üç seçenek kullanıcının işini yapan uygulama yazılımlarıdır. |
+| 2 | B | Açık kaynak yazılımda kaynak kodu herkese açıktır; incelenebilir, değiştirilebilir ve paylaşılabilir. |
+| 3 | C | İşletim sistemi, donanım ile kullanıcı ve uygulamalar arasındaki aracı yazılımdır. |
+| 4 | C | Yazım hatası düzeltmek bir kelime işlemci uygulamasının işidir. Diğer üçü işletim sisteminin görevlerindendir. |
+| 5 | D | Pardus, TÜBİTAK bünyesinde geliştirilen Debian tabanlı yerli ve açık kaynak işletim sistemidir. |
+| 6 | B | Modem tek bir amaca özel bir cihazdır ve içinde gömülü işletim sistemi çalışır. |
+| 7 | B | En altta donanım, ortada işletim sistemi, en üstte uygulamalar bulunur. |
+| 8 | B | Önce programı kapatıp yeniden açmak denenir. Yeniden başlatma daha ileri bir adımdır ve öncesinde veri kaydedilmelidir. |
+| 9 | Yanlış | Açık kaynak yazılımların çoğu ücretsizdir ancak ticari destek hizmeti de sunulabilir. Ayrıca "açık kaynak" bir ücret modeli değil, bir lisanslama modelidir. |
+| 10 | Doğru | Android ve iOS, günümüzün iki yaygın mobil işletim sistemidir. |
+
+::: {.callout-tip}
+## Nasıl kullanılır?
+
+Yanlış yanıtladığınız soruların gerekçesini okuyup ilgili bölümü ders notundan tekrar edin. Bu haftanın konuları, ara sınav ve dönem sonu sınavında karşınıza çıkacaktır.
+:::

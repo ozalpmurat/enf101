@@ -1,0 +1,216 @@
+---
+title: "Bilgisayar Donanımı"
+subtitle: "2. Hafta"
+author: "ENF101 · Temel Bilgi Teknolojileri"
+format: beamer
+---
+
+# Bu Haftanın Çerçevesi
+
+## Öğrenme Çıktıları
+
+- Girdi–işlem–çıktı–depolama döngüsünü açıklar.
+- İşlemci, bellek, depolama ve ekran kartının görevlerini ayırt eder.
+- Bellek ile depolama arasındaki farkı açıklar.
+- HDD ile SSD arasındaki farkı ve günlük etkisini değerlendirir.
+- GPU'nun işlemciden farkını ve kullanım alanlarını açıklar.
+- Bit, byte ve ölçü birimlerini doğru kullanır.
+- Bilgisayar türlerini ayırt eder.
+
+# Girdi–İşlem–Çıktı–Depolama
+
+## Dört Temel İş
+
+Bilgisayar dört iş yapar: veriyi **alır, işler, verir ve saklar**.
+
+![](gorseller/diagram-ipos.png){width=70%}
+
+## Döngüyü Bir Örneğe Uygulayın
+
+Müzik dinleme:
+
+1. **Girdi:** Dosya ve ses girişi
+2. **İşlem:** İşlemci ses verisini işler
+3. **Çıktı:** Hoparlörden ses çıkar
+4. **Depolama:** Müzik dosyası diskte durur
+
+Her donanım bileşeni bu döngünün bir aşamasında görev alır.
+
+# Ana Donanım Bileşenleri
+
+## Anakart: Sistemin Omurgası
+
+İşlemci, bellek, ekran kartı ve depolama; hepsi anakart üzerinde birleşir ve bu kart üzerinden birbiriyle konuşur.
+
+![](gorseller/diagram-anakart.png){width=70%}
+
+## İşlemci: Bilgisayarın Beyni
+
+- Programlardaki komutları tek tek yürütür.
+- Hesapları yapar, diğer bileşenleri yönetir.
+
+İki özellik yeter:
+
+| Özellik | Anlamı |
+|:---|:---|
+| Çekirdek | Aynı anda kaç iş yapabildiği |
+| Hız | Saniyede kaç işlem yapabildiği (GHz) |
+
+## İşlemci Hakkında Yeterli Bilgi
+
+"İşlemci ne kadar güçlü" = "aynı anda ne kadar çok ve ne kadar hızlı iş yapabildiği".
+
+- Mimari ve saat hızı ayrıntıları bu dersin dışındadır.
+- Günlük kullanımda orta seviye bir işlemci çoğu işi görür.
+
+## Ekran Kartı ve GPU
+
+- **Ekran kartı:** görüntüyü ekrana çizer.
+- **GPU:** ekran kartının üzerindeki işlemci.
+
+İşlemci az sayıda karmaşık işi, GPU **binlerce basit işi aynı anda** yapar.
+
+## GPU'nun Kullanım Alanları
+
+- Oyunlarda üç boyutlu görüntü
+- Video düzenleme ve görüntü işleme
+- Bilimsel hesaplamalar ve benzetimler
+- **Yapay zekâ modeli eğitimi**
+
+12. haftada yapay zekâyı işlerken "GPU binlerce işi aynı anda yapar" özelliğine geri döneceğiz.
+
+## Bellek: RAM
+
+- **Çalışma belleğidir.**
+- Açık programları ve anlık veriyi tutar.
+- Elektrik kesilince **silinir** (geçici).
+
+Benzetme: **masa** — üzerinde çalıştığınız şeyler.
+
+## Bellek: ROM ve Ön Bellek
+
+- **ROM:** Kalıcı, yalnızca okunur; açılıştaki temel yazılımı barındırır.
+- **Ön bellek (cache):** Çok küçük ama çok hızlı; sık kullanılan veriyi tutar, sistemi hızlandırır.
+
+"Ön bellek vardır ve hızlandırır" bilgisi yeter.
+
+## Bellek mi, Depolama mı?
+
+![](gorseller/diagram-ram-depolama.png){width=70%}
+
+## En Sık Kavram Karışıklığı
+
+"Bilgisayarım yavaş" denilince diski suçlarız; oysa yavaşlığın en sık nedeni **RAM'in yetmemesidir**.
+
+- Disk büyütmek bu sorunu çözmez.
+- RAM'i büyütmek çözebilir.
+
+## Depolama: HDD ve SSD
+
+![](gorseller/diagram-hdd-ssd.png){width=70%}
+
+- **HDD:** mekanik, yavaş, ucuz.
+- **SSD:** elektronik, çok hızlı, sessiz.
+
+## SSD'nin Günlük Farkı
+
+SSD'li bilgisayar hızlı açılır, uygulamalar saniyeler içinde yüklenir.
+
+- Yeni bir bilgisayarda **SSD, performans için ilk bakılacak özelliktir**.
+- HDD, büyük ve ucuz yedek alan için tercih edilir.
+
+# Çevre Birimleri
+
+## Çevre Birimleri Üç Türde
+
+| Tür | Görev | Örnek |
+|:---|:---|:---|
+| Giriş | Veriyi aktarır | Klavye, fare, mikrofon, tarayıcı |
+| Çıkış | Sonucu iletir | Monitör, yazıcı, hoparlör |
+| Hem giriş hem çıkış | İki yönde taşır | Dokunmatik ekran, USB bellek |
+
+## Bağlantı Noktaları
+
+- **USB:** Klavye, fare, bellek, yazıcı — en yaygın.
+- **USB-C:** Yeni nesil; küçük, çift yönlü; veri ve şarj.
+- **HDMI:** Monitör ve televizyon bağlantısı.
+- **Ethernet:** Kablolu ağ.
+
+Noktaları tanımak, "kablom uymuyor" sorununu çözer.
+
+# Veri ve Ölçü Birimleri
+
+## Bit ve Byte
+
+- **Bit:** 0 veya 1; en küçük bilgi birimi.
+- **Byte:** 8 bit; yaklaşık bir harf.
+
+Bilgisayar her şeyi bit olarak temsil eder.
+
+## Ölçü Birimleri
+
+| Birim | Yaklaşık değer |
+|:---|:---|
+| Kilobyte (KB) | 1.024 byte |
+| Megabyte (MB) | ~1 milyon byte |
+| Gigabyte (GB) | ~1 milyar byte |
+| Terabyte (TB) | ~1 trilyon byte |
+
+## Gerçek Nesnelerle İlişkilendirin
+
+- Fotoğraf: **2–5 MB**
+- Şarkı: **3–5 MB**
+- Film: **1–2 GB**
+- 1 TB disk: **yüzlerce film, binlerce fotoğraf**
+
+Birimleri ezberlemek yerine gerçek nesnelerle eşleştirin.
+
+# Bilgisayar Türleri
+
+## Bilgisayar Sadece Masaüstü Değil
+
+| Tür | Tipik kullanım |
+|:---|:---|
+| Masaüstü | Ofis, ev, oyun |
+| Dizüstü | Hareketlilik |
+| Tablet | Okuma, not, medya |
+| Sunucu | Ağ hizmetleri |
+| Gömülü sistemler | Modem, TV, araç |
+
+Telefonunuz da bir bilgisayardır; modeminiz de.
+
+# Günlük Hayatta Donanım
+
+## Satın Alırken Neye Bakmalı?
+
+- **RAM:** 8 GB çoğu işi görür; 16 GB rahatlık.
+- **Depolama:** Öncelik **SSD**.
+- **İşlemci:** Ağır iş yoksa orta seviye yeter.
+- **Ekran kartı:** Oyun ve video düzenleme için ayrı kart.
+
+## Bilgisayar Neden Yavaşlıyor?
+
+- **RAM yetmiyor:** Çok program açık.
+- **Disk dolu:** Depolama neredeyse tamamen dolu.
+- **Arka plan uygulamaları:** Kaynak tüketiyor.
+- **Donanım eskimiş:** Yeni yazılımlar zorluyor.
+
+## Uygulama: Kendi Cihazınızı Tanıyın
+
+1. Cihazınızın işlemci, RAM ve depolama bilgisini bulun.
+2. Hangisinin RAM, hangisinin depolama olduğunu doğrulayın.
+3. Üç senaryo için (öğrenci, içerik üreticisi, arşivci) önceliği belirleyin.
+
+Notla değerlendirilmez; donanımı kendi cihazınız üzerinden içselleştirmeniz içindir.
+
+## Özet
+
+- Bilgisayar veriyi **alır, işler, verir, saklar**.
+- **RAM** çalışma belleği (geçici), **depolama** kalıcıdır.
+- **SSD**, HDD'den çok daha hızlıdır.
+- **GPU** binlerce basit işi aynı anda yapar.
+- Boyutlar **KB → MB → GB → TB** büyür.
+
+## Gelecek Hafta
+
+**Yazılım ve işletim sistemleri** — açık/kapalı kaynak yazılım, Windows–Linux–macOS–Pardus, mobil ve gömülü işletim sistemleri.

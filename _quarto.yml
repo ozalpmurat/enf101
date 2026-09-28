@@ -1,0 +1,19 @@
+project:
+  type: default
+
+lang: tr
+date: ""
+
+format:
+  pdf:
+    pdf-engine: xelatex
+    include-in-header: tema/notlar.tex
+    colorlinks: true
+    fig-pos: "H"
+  beamer:
+    pdf-engine: xelatex
+    include-in-header: tema/sunum.tex
+    theme: Singapore
+    aspectratio: 169
+    slide-number: true
+    section-titles: true

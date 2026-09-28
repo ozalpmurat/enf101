@@ -1,0 +1,18 @@
+graph Ag {
+  rankdir=TB;
+  node [shape=box, style="rounded,filled", fillcolor="#EDF2F9",
+        color="#2E74B5", fontname="DejaVu Sans", fontsize=12,
+        fontcolor="#1F3864", penwidth=1.4, margin="0.20,0.12"];
+  edge [color="#2E74B5", penwidth=1.4];
+
+  Internet [label="İnternet"];
+  Modem    [label="Modem / Yönlendirici"];
+  AP       [label="Erişim Noktası"];
+  Kablo    [label="Kablolu Cihazlar"];
+  Kablosuz [label="Kablosuz Cihazlar"];
+
+  Internet -- Modem;
+  Modem -- AP;
+  Modem -- Kablo;
+  AP -- Kablosuz;
+}

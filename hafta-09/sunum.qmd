@@ -1,0 +1,183 @@
+---
+title: "Sunum Uygulamaları"
+subtitle: "9. Hafta"
+author: "ENF101 · Temel Bilgi Teknolojileri"
+format: beamer
+---
+
+# Bu Haftanın Çerçevesi
+
+## Öğrenme Çıktıları
+
+- Sunumun yapısını planlar.
+- Slaytta metin yoğunluğunu ayarlar.
+- Görselleri telif kurallarına uygun kullanır.
+- Tasarım tutarlılığını sağlar.
+- Tablo ve grafiği uygun yerleştirir.
+- Etkili sunum tekniklerini uygular.
+- Erişilebilir sunum hazırlar.
+
+# Sunumun Yapısı
+
+## Üç Bölüm
+
+![](gorseller/diagram-sunumyapi.png){width=74%}
+
+## Süre Payları
+
+| Bölüm | Ne yapar | Pay |
+|:---|:---|:---|
+| Açılış | Konu ve amaç, dikkat | ~%10 |
+| Gövde | Ana mesajlar | ~%80 |
+| Kapanış | Özet ve çağrı | ~%10 |
+
+## Açılış
+
+Dinleyici ilk **30 saniyede** karar verir: dinleyecek mi?
+
+İyi açılış: konuyu tanıtır, **neden önemli** olduğunu söyler.
+
+## Gövde
+
+Ana mesajlar burada işlenir. En sık hata: çok fazla mesaj.
+
+**Üç ana mesaj** kuralı: dinleyici üçten fazlasını hatırlamaz.
+
+## Kapanış
+
+Sunumun en çok atlanan ama en etkili kısmı.
+
+Ana mesajları hatırlatır ve **ne yapılması gerektiğini** söyler.
+
+"Teşekkürler" demek bir kapanış değildir.
+
+# Slayt Tasarımı
+
+## Metin Yoğunluğu
+
+![](gorseller/diagram-slaytanatomi.png){width=78%}
+
+## Slayt Kuralları
+
+- **Madde madde yazın**, paragraf yazmayın
+- **Anahtar kelimeler** kullanın
+- Satır başına **6–8 kelime**, slayt başına **6 madde**
+- **Punto büyük olsun** — arkadan okunmalı
+- **Boşluk bırakın**
+
+## Slaytı Okumayın
+
+Slaytta yazanı kelimesi kelimesine okumak, sunumun **en sık hatasıdır**.
+
+Dinleyici zaten okuyabiliyor. Konuşmacının işi **açıklamak**.
+
+**Ölçü:** Slayda bakmadan anlatabiliyor musunuz? "Hayır" ise fazla yazı var.
+
+## Tasarım Tutarlılığı
+
+- **Renk paleti:** en fazla iki üç renk
+- **Yazı tipi:** tüm slaytlarda aynı
+- **Yerleşim:** başlık hep aynı yerde
+- **Görsel dil:** aynı tür görseller
+
+**Şablon kullanın.** Renk ve yazı tipini değiştirmek yeterlidir.
+
+# Görsel Kullanımı
+
+## Görsel Seçimi
+
+- **İlgili olmalı** — süs değil
+- **Kaliteli olmalı** — bulanık görsel içeriği de zayıflatır
+- **Bir mesajı desteklemeli**
+- **Metni tekrarlamamalı**
+
+## Telif ve Lisans
+
+![](gorseller/diagram-telifsiz.png){width=74%}
+
+| Kaynak | Kullanım |
+|:---|:---|
+| Kamu malı | Serbest |
+| Creative Commons | Lisans şartı; genellikle atıf |
+| Telifli | İzin gerekir |
+
+## Kaynak Göstermek Telifi Çözmez
+
+Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez.
+
+**Lisansı uygun olan** görselleri seçin.
+
+# Tablo ve Grafik
+
+## Slayt İçin Basitleştirin
+
+- **Tabloda az satır:** yalnızca vurgulamak istedikleriniz
+- **Grafikte büyük punto:** eksenler arkadan okunmalı
+- **Tek mesaj:** her grafik bir şey göstersin
+- **Vurgulama:** istediğiniz değeri belirtin
+
+Geçen haftanın **yanıltıcı grafikler** konusunu hatırlayın — kendi grafiğiniz de yanıltıcı olabilir.
+
+# Etkili Sunum Teknikleri
+
+## Sunmadan Önce
+
+- **Prova yapın:** yüksek sesle, ayakta, süre tutarak
+- **Süreyi ölçün:** aşmak en sık hatadır
+- **Teknik kontrol:** projeksiyon, ses, dosya biçimi
+- **Yedek kopya:** PDF olarak da taşıyın
+
+## Sunarken
+
+- **Dinleyiciye bakın**, slayta değil
+- **Yavaş ve net** konuşun
+- **Sesiniz arka sıradan** duyulsun
+- **Slaytı okumayın**
+- **Geçişleri planlayın:** "bir sonraki slaytta…"
+
+## Soru-Cevap
+
+- **"Bilmiyorum" demekten çekinmeyin** — uydurmaktan iyidir
+- **Soruyu tekrar edin:** herkes duyar, siz düşünürsünüz
+- **Kısa yanıtlayın**
+
+## En İyi Prova Duyulmaktır
+
+Sunumu bir arkadaşınıza yapın.
+
+Nerede takıldığınızı en iyi o zaman görürsünüz.
+
+# Erişilebilirlik
+
+## Sunumunuz Herkes İçin
+
+- **Okunabilir punto**
+- **Yeterli kontrast**
+- **Yalnızca renkle anlatmayın**
+- **Görsellere alternatif metin**
+- **Anlamlı slayt başlıkları:** "Slayt 5" değil, "Sonuçlar"
+
+# Kapanış
+
+## Uygulama: Kısa Bir Sunum Hazırlayın
+
+1. Konu seçin, **üç ana mesaj** yazın
+2. Açılış–gövde–kapanış planı yapın
+3. Slaytları hazırlayın: az metin, bir görsel (lisansı uygun), altyazı + alt metin
+4. Yüksek sesle, süre tutarak **prova** yapın
+
+Notla değerlendirilmez.
+
+## Özet
+
+- **Açılış – gövde – kapanış**: %10 – %80 – %10
+- **Slayt vitrindir, depo değil**
+- Slaytı okumak en sık hatadır
+- **Tasarım tutarlılığı**: renk, yazı tipi, yerleşim
+- Görsellerde **lisans** kontrolü; kaynak göstermek yetmez
+- Tablo ve grafikler **basitleştirilmeli**
+- Etkili sunum **prova** ister
+
+## Gelecek Hafta
+
+**Bilgi güvenliği** — parola yönetimi, iki adımlı doğrulama, oltalama, zararlı yazılımlar, güvenlik pratikleri.

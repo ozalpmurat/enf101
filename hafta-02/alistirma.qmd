@@ -1,0 +1,131 @@
+---
+title: "Haftalık Alıştırma"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 2. Hafta"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+---
+
+::: {.callout-note}
+## Yönerge
+
+Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
+
+Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
+
+Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
+:::
+
+**1.** Aşağıdakilerden hangisi bir çıkış birimidir?
+
+A) Klavye
+
+B) Fare
+
+C) Yazıcı
+
+D) Mikrofon
+
+**2.** Elektrik kesildiğinde içindeki bilgiler silinen bellek hangisidir?
+
+A) ROM
+
+B) RAM
+
+C) SSD
+
+D) HDD
+
+**3.** Bilgisayarda "çalışma belleği" olarak görev yapan bileşen hangisidir?
+
+A) Depolama (disk)
+
+B) RAM
+
+C) İşlemci
+
+D) Ekran kartı
+
+**4.** SSD'nin HDD'ye göre en belirgin günlük avantajı nedir?
+
+A) Daha ucuz olması
+
+B) Daha sessiz ve çok daha hızlı olması
+
+C) Daha fazla hareketli parça içermesi
+
+D) Daha az enerjiyle ısınması
+
+**5.** Ekran kartının üzerindeki işlemciye ne ad verilir?
+
+A) CPU
+
+B) RAM
+
+C) GPU
+
+D) ROM
+
+**6.** İşlemci ile GPU arasındaki temel fark nedir?
+
+A) İşlemci binlerce basit işi aynı anda, GPU az sayıda karmaşık işi yapar
+
+B) İşlemci az sayıda karmaşık işi, GPU binlerce basit işi aynı anda yapar
+
+C) İkisi tamamen aynı görevi yapar
+
+D) GPU yalnızca bellek yönetiminden sorumludur
+
+**7.** Aşağıdaki ölçü birimleri küçükten büyüğe hangi sırayla dizilir?
+
+A) KB → MB → GB → TB
+
+B) MB → KB → GB → TB
+
+C) GB → MB → KB → TB
+
+D) TB → GB → MB → KB
+
+**8.** Bir byte kaç bittir?
+
+A) 2
+
+B) 4
+
+C) 8
+
+D) 16
+
+**9.** "Bilgisayarım yavaş" şikâyetinde diski büyütmek her zaman sorunu çözer. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+**10.** RAM, bilgisayarın kalıcı depolama birimidir. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+{{< pagebreak >}}
+
+# Cevap Anahtarı
+
+Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir.
+
+| Soru | Cevap | Kısa gerekçe |
+|:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
+| 1 | C | Yazıcı, sonucu kullanıcıya iletir; çıkış birimidir. Klavye, fare ve mikrofon giriş birimleridir. |
+| 2 | B | RAM geçicidir; elektrik kesilince içeriği silinir. ROM kalıcıdır; SSD ve HDD ise kalıcı depolama birimleridir. |
+| 3 | B | RAM, açık programları ve anlık veriyi tutan çalışma belleğidir. Depolama ise dosyaları kalıcı saklar. |
+| 4 | B | SSD hareketli parça içermez, sessizdir ve çok daha hızlıdır. Daha ucuz olmak HDD'nin avantajıdır. |
+| 5 | C | Ekran kartının üzerindeki işlemciye GPU (grafik işlemci) denir. CPU genel amaçlı işlemcidir. |
+| 6 | B | İşlemci az sayıda karmaşık işi sırayla, GPU binlerce basit işi aynı anda yapar. |
+| 7 | A | Boyutlar kilobyte'tan terabyte'a doğru KB → MB → GB → TB sırasıyla büyür. |
+| 8 | C | Sekiz bit bir byte eder; bir byte yaklaşık bir harfi temsil eder. |
+| 9 | Yanlış | Yavaşlığın en sık nedeni RAM'in yetmemesidir. Diski büyütmek bu sorunu çözmez; RAM'i büyütmek çözebilir. |
+| 10 | Yanlış | RAM kalıcı değildir; elektrik kesilince silinir. Kalıcı depolama disk (HDD/SSD) ile yapılır. |
+
+::: {.callout-tip}
+## Nasıl kullanılır?
+
+Yanlış yanıtladığınız soruların gerekçesini okuyup ilgili bölümü ders notundan tekrar edin. Bu haftanın konuları, ara sınav ve dönem sonu sınavında karşınıza çıkacaktır.
+:::

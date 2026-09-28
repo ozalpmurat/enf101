@@ -1,0 +1,276 @@
+---
+title: "Dosya Yönetimi, Depolama ve Bulut"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 4. Hafta Ders Notu"
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+# Giriş
+
+Bir bilgisayarda ürettiğiniz her şey — yazdığınız ödev, çektiğiniz fotoğraf, indirdiğiniz belge — bir **dosya** olarak saklanır. Dosyalarınızı düzenli tutmak, bulmak ve kaybetmemek; günlük hayatta en sık ihtiyaç duyacağınız beceridir. Nitekim "ödevimi kaydettim ama bulamıyorum" ya da "flash bellek bozuldu, her şey gitti" cümlelerini çok duymuşsunuzdur.
+
+Bu hafta üç konuyu birlikte ele alıyoruz: **dosyaları yönetmek**, **depolama aygıtlarını tanımak** ve **veriyi güvende tutmak** — yani yedekleme. Son bölümde ise verinin bilgisayarınızın dışında, internet üzerinden nasıl saklandığını (bulut) ve ortak çalışma araçlarını göreceğiz.
+
+::: {.callout-note}
+## Bu haftanın temel fikri
+
+Dosya kaybolmaz — **yanlış yerde** durur ya da **hiç yedeklenmemiştir**. Bu hafta, ikisini de önlemenin yollarını öğreniyoruz.
+:::
+
+# Bu Haftanın Öğrenme Çıktıları
+
+- Dosya ve klasör işlemlerini güvenli biçimde yürütür.
+- Dosya uzantılarını tanır ve dosya türünü uzantısından anlar.
+- Sıkıştırmanın ne işe yaradığını ve ne zaman kullanılacağını açıklar.
+- Çıkarılabilir depolama aygıtlarını tanır ve güvenli çıkarma alışkanlığı gösterir.
+- Disk bölümleme ve biçimlendirmenin ne olduğunu bilir; veri kaybı riskini açıklar.
+- Bulut depolamanın olanaklarını ve sınırlarını değerlendirir.
+- Yedeklemenin önemini açıklar ve basit bir yedekleme planı kurar.
+
+# Dosya ve Klasör İşlemleri
+
+**Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, geçen hafta gördüğümüz **ağaç yapısı** içinde yer alır.
+
+En sık kullanacağınız dosya işlemleri şunlardır:
+
+| İşlem | Ne yapar | Dikkat |
+|:---|:---|:---|
+| Kopyala / Yapıştır | Dosyanın bir kopyasını oluşturur; aslı yerinde kalır | İki kopya olur, karışıklık yaratabilir |
+| Kes / Yapıştır (Taşı) | Dosyayı başka yere taşır; aslı kalkar | Yerinden emin olun |
+| Yeniden adlandır | Dosyanın adını değiştirir | **Uzantıyı değiştirmeyin** |
+| Sil | Dosyayı geri dönüşüm kutusuna gönderir | Kutu boşaltılmadıkça kurtarılabilir |
+| Geri dönüşüm kutusundan geri al | Yanlışlıkla silinen dosyayı kurtarır | Kutu boşaltıldıysa kurtarılamaz |
+
+## Dosya adlandırma alışkanlıkları
+
+Dosya kaybetmenin en yaygın nedeni, kötü adlandırmadır. Şu alışkanlıklar hayat kurtarır:
+
+- **Anlamlı adlar kullanın:** `odev.docx` yerine `enf101-veri-analizi-odevi.docx`.
+- **Tarih kullanın:** `2026-10-15-proje-taslak.docx` gibi; tarih başa yazıldığında dosyalar kendiliğinden kronolojik sıralanır.
+- **Boşluk yerine tire kullanın:** Boşluk bazı sistemlerde sorun çıkarır; `-` veya `_` daha güvenlidir.
+- **Sürüm belirtin:** `proje-v1`, `proje-v2` gibi. Eski sürümü silmek yerine saklamak, çoğu zaman işe yarar.
+
+::: {.callout-warning}
+## Aynı klasörde iki aynı ad olamaz
+
+Bir dosyayı aynı klasöre kopyalarsanız sistem adının sonuna "kopya" ekler. Bu dosyalar çoğalınca hangisinin güncel olduğunu anlamak zorlaşır. Kopyalama yerine **sürüm numarası** kullanmak daha temizdir.
+:::
+
+# Dosya Uzantıları
+
+**Uzantı**, dosya adının sonundaki noktadan sonra gelen kısa harf grubudur ve dosyanın **türünü** belirtir. İşletim sistemi uzantıya bakarak dosyayı hangi programla açacağını anlar.
+
+| Uzantı | Tür | Açan program |
+|:---|:---|:---|
+| `.docx` | Metin belgesi | Kelime işlemci |
+| `.xlsx` | Elektronik tablo | Tablo programı |
+| `.pptx` | Sunum | Sunum programı |
+| `.pdf` | Taşınabilir belge | PDF görüntüleyici |
+| `.jpg`, `.png` | Görsel | Fotoğraf görüntüleyici |
+| `.mp4` | Video | Video oynatıcı |
+| `.mp3` | Ses | Müzik oynatıcı |
+| `.zip` | Sıkıştırılmış arşiv | Arşiv programı |
+| `.exe` | Çalıştırılabilir program | — (**dikkat**, aşağıya bakın) |
+
+::: {.callout-warning}
+## Uzantıyı değiştirmeyin
+
+Bir dosyanın uzantısını değiştirmek, türünü değiştirmez; yalnızca onu açacak programın yanlış seçilmesine yol açar. `rapor.docx` dosyasını `rapor.jpg` yapmak onu resim yapmaz — sadece açılmaz hâle getirir.
+
+Bu ayrıca önemli bir güvenlik konusudur: Bir e-postayla gelen `fatura.pdf.exe` gibi çift uzantılı dosyalar, göründüğü belge değil **çalıştırılabilir bir programdır**. Tanımadığınız kaynaklardan gelen `.exe` dosyalarını açmayın.
+:::
+
+# Sıkıştırma
+
+**Sıkıştırma**, bir veya birden çok dosyanın boyutunu küçültme, ya da çok sayıda dosyayı tek bir arşivde toplama işlemidir.
+
+Neden kullanılır:
+
+- **Boyut küçültme:** Özellikle metin ve belgeler belirgin biçimde küçülür; böylece e-postayla göndermek kolaylaşır.
+- **Toplama:** Onlarca dosyayı tek bir `.zip` dosyasına çevirmek, göndermeyi ve saklamayı kolaylaştırır.
+- **Düzen:** İlgili dosyaları bir arada tutar.
+
+Sıkıştırılmış dosyaların türü **arşiv** olarak adlandırılır. En yaygın biçim `.zip`'tir; `.rar` ve `.7z` de karşınıza çıkar. Arşivi açmak için üzerine çift tıklamak genellikle yeterlidir.
+
+::: {.callout-tip}
+## Sıkıştırma boyutu her zaman küçültmez
+
+Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır; bunları `.zip`'lemek neredeyse hiç küçültmez. Sıkıştırmanın asıl kazancı metin tabanlı belgelerde olur.
+:::
+
+# Depolama Aygıtları
+
+Geçen hafta HDD ve SSD'yi tanımıştık. Şimdi bunların **nasıl kullanıldığına** bakıyoruz.
+
+## Çıkarılabilir depolama
+
+**Çıkarılabilir depolama**, bilgisayara takılıp çıkarılabilen taşınabilir saklama ortamıdır.
+
+| Aygıt | Tipik kapasite | Kullanım |
+|:---|:---|:---|
+| USB bellek | 8–256 GB | Dosya taşıma, ödev teslimi |
+| SD kart | 16–512 GB | Fotoğraf makinesi, telefon |
+| Harici disk | 500 GB–4 TB | Büyük yedekleme, arşiv |
+
+::: {.callout-warning}
+## Güvenli çıkarma
+
+Bir USB belleği veya harici diski, üzerinde işlem yapılırken **kabloyu çekmeyin**. Özellikle yazma işlemi sürerken çıkarılan aygıtlarda veri bozulabilir ya da dosyalar yarım kalabilir. İşletim sisteminin "güvenle çıkar" seçeneğini kullanın; bu işlem, bekleyen yazma işlemlerinin tamamlanmasını sağlar.
+
+**Unutmayın:** çıkarılabilir aygıtlar kolay kaybolur ve kolay bozulur. **Üzerindeki tek kopya olmamalıdır.**
+:::
+
+## Disk bölümleme ve biçimlendirme
+
+Bir depolama aygıtı kullanılmadan önce iki aşamadan geçer:
+
+**Bölümleme**, bir diskin mantıksal olarak ayrı parçalara ayrılmasıdır. Böylece tek bir fiziksel disk, bilgisayarda birden çok sürücü gibi görünür. Örneğin bir dizüstü bilgisayarda sistem için bir bölüm, kişisel dosyalar için bir başka bölüm bulunabilir.
+
+**Biçimlendirme (formatlama)**, bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini boşaltır.
+
+| Dosya sistemi | Nerede kullanılır | Not |
+|:---|:---|:---|
+| NTFS | Windows sistem ve veri diskleri | Büyük dosya desteği, izinler |
+| ext4 | Linux sistemleri | Linux'un yaygın dosya sistemi |
+| exFAT | Taşınabilir bellekler | Hem Windows hem macOS/Linux ile uyumlu |
+| FAT32 | Eski aygıtlar | 4 GB'tan büyük tek dosyayı desteklemez |
+
+::: {.callout-warning}
+## Biçimlendirme veriyi siler
+
+Biçimlendirme, o bölümdeki **her şeyi siler**. Yanlış bölümü biçimlendirmek geri dönüşü olmayan veri kaybına yol açar.
+
+Bu yüzden iki kural: **Önce yedek alın.** Ve **hangi bölümü seçtiğinizden emin olun.** Sistem diskinizi biçimlendirmeye kalkmak, bilgisayarı açılmaz hâle getirebilir.
+
+Bu konu bu derste yalnızca **kavramsal** düzeyde kalacak; pratik uygulama beklenmiyor.
+:::
+
+# Bulut Depolama
+
+**Bulut depolama**, dosyalarınızı kendi bilgisayarınız yerine internet üzerinden erişilen uzak sunucularda saklamaktır. Dosyalar sizin diskinizde değil, hizmet sağlayıcının sunucularındadır; siz internet üzerinden erişirsiniz.
+
+Sağladığı olanaklar:
+
+- **Her cihazdan erişim:** Telefon, tablet, okul bilgisayarı — aynı dosyalara erişebilirsiniz.
+- **Otomatik yedekleme:** Cihazınız bozulsa bile dosyalar yerinde kalır.
+- **Paylaşım ve ortak çalışma:** Bir bağlantı göndererek dosya paylaşabilir, başkalarıyla aynı belge üzerinde çalışabilirsiniz.
+- **Sürüm geçmişi:** Birçok hizmet, dosyanın eski sürümlerine dönmenizi sağlar.
+
+Sınırlarını da bilmek gerekir:
+
+| Olanak | Sınır |
+|:---|:---|
+| Her yerden erişim | İnternet bağlantısı gerekir |
+| Ücretsiz kullanım | Depolama alanı sınırlıdır |
+| Şifreleme ve güvenlik | Veri sağlayıcının sunucusunda durur |
+| Paylaşım kolaylığı | Yanlış paylaşım veriyi herkese açar |
+
+::: {.callout-warning}
+## Bulut, yedeğin yerini tamamen almaz
+
+Bulut hizmetleri güvenilirdir ama hesabınıza erişimi kaybederseniz (parola, hesap kapanması) dosyalarınıza da erişemezsiniz. Ayrıca ücretsiz alan dolduğunda yeni dosya yüklenemez. **Önemli dosyalarınızın yerel bir kopyası da bulunmalıdır.**
+:::
+
+# Çevrimiçi İşbirliği ve Ortak Çalışma Araçları
+
+Bulutun en güçlü yanlarından biri, **aynı belge üzerinde birden çok kişinin aynı anda çalışabilmesidir**. Bu, grup ödevlerinde ve kurumsal işlerde büyük kolaylık sağlar.
+
+Bu araçların temel özellikleri:
+
+- **Aynı anda düzenleme:** Birden çok kişi belgeyi eşzamanlı düzenler; değişiklikler anında görünür.
+- **Sürüm geçmişi:** Kim ne zaman ne değiştirdi görülebilir; eski bir sürüme dönülebilir.
+- **Yorum ve öneri:** Metnin üzerine not bırakılabilir, öneri sunulabilir.
+- **Paylaşım izinleri:** Kim **görüntüleyebilir**, kim **yorum yapabilir**, kim **düzenleyebilir** — ayrı ayrı belirlenir.
+- **Bağlantıyla paylaşım:** Dosya bağlantısı gönderilir; indirmeye gerek kalmaz.
+
+::: {.callout-tip}
+## Paylaşım izni verirken iki saniye durun
+
+Bir dosyayı "bağlantıya sahip herkes düzenleyebilir" olarak paylaşmak, çoğu zaman istemediğiniz sonuçlar doğurur. Varsayılan olarak **görüntüleme** izni vermek, yalnızca gerektiğinde düzenleme açmak daha güvenlidir.
+:::
+
+# Yedekleme
+
+**Yedekleme**, verinizin bir kopyasını başka bir yerde bulundurmaktır. Bu, bu haftanın en önemli başlığıdır — çünkü diğer bütün konular veriyi **kullanmakla** ilgiliyken, yedekleme veriyi **korumakla** ilgilidir.
+
+## 3-2-1 kuralı
+
+Yedekleme için yaygın kabul gören basit bir kural vardır:
+
+- **3** kopya bulundurun (asıl + iki yedek)
+- **2** farklı ortamda saklayın (örneğin bilgisayar + harici disk)
+- **1** kopya bilgisayarınızın dışında olsun (örneğin bulut)
+
+![3-2-1 yedekleme kuralı](gorseller/diagram-yedekleme.png){width=68%}
+
+## Yedek almayı alışkanlık hâline getirmek
+
+Yedekleme, "bir gün yaparım" denilen ama yapılmayan bir iştir. İşe yaraması için **otomatik** ve **düzenli** olması gerekir.
+
+- **Otomatik yedekleme açın:** İşletim sistemleri ve bulut hizmetleri düzenli yedek alabilir.
+- **Önemli anlarda elle yedek alın:** Ödev teslimi öncesi, büyük bir düzenlemeden önce.
+- **Yedeği test edin:** Yedek aldığınızı sanmakla, gerçekten geri yükleyebilmek farklı şeylerdir. Ara sıra bir dosyayı geri yükleyip deneyin.
+- **Sürüm saklayın:** Yalnızca son hâli değil, önceki sürümleri de tutun.
+
+::: {.callout-warning}
+## Yedek, aynı diskte durmaz
+
+Dosyanızı aynı bilgisayarın başka bir klasörüne kopyalamak yedek değildir. Bilgisayar bozulduğunda, çalındığında veya disk arızalandığında iki kopya da gider. Yedek, **başka bir ortamda** olmalıdır.
+:::
+
+# Uygulama: Kendi Yedekleme Planınızı Kurun
+
+## Adım 1 — Dosyalarınızı gruplayın
+
+Bilgisayarınızdaki dosyaları üç gruba ayırın: **vazgeçilmez** (kaybı kabul edilemez), **önemli** (zahmet verir ama yeniden oluşturulabilir) ve **önemsiz**.
+
+## Adım 2 — Yedek planınızı yazın
+
+Vazgeçilmez dosyalarınız için 3-2-1 kuralını uygulayın: hangi üç kopyayı, hangi iki ortamda, hangi bir dış konumda tutacaksınız? Yazın.
+
+## Adım 3 — Bir klasör yapısı kurun
+
+Kendi dosyalarınız için basit bir klasör yapısı tasarlayın: ana klasör, alt klasörler, adlandırma kuralı. Yazın.
+
+## Adım 4 — Kısa değerlendirme yazın
+
+Bir paragraf yazın: *Bu haftaya kadar yedekleme konusunda ne yapıyordunuz; şimdi neyi değiştireceksiniz?*
+
+::: {.callout-tip}
+## Teslim ve değerlendirme
+
+Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir alışkanlık kazanmanızdır.
+:::
+
+# Özet
+
+- **Dosya** ve **klasör** işlemlerinde dikkat: silinen dosya geri dönüşüm kutusundan kurtarılabilir, ama kutu boşaltıldıysa kurtarılamaz.
+- Anlamlı adlandırma ve tarih kullanımı, dosya kaybetmeyi önler.
+- **Uzantı** dosyanın türünü belirtir; uzantıyı değiştirmek türü değiştirmez. Çift uzantılı dosyalara dikkat.
+- **Sıkıştırma** boyut küçültür ve dosyaları toplar; metin belgelerde daha etkilidir.
+- **Çıkarılabilir aygıtlar** güvenli çıkarılmalıdır ve üzerlerindeki tek kopya olmamalıdır.
+- **Bölümleme** diski parçalara ayırır; **biçimlendirme** dosya sistemini belirler ve **veriyi siler**.
+- **Bulut**, her yerden erişim ve paylaşım sağlar; ama yedeğin yerini tamamen almaz.
+- **Yedekleme** için 3-2-1 kuralı: 3 kopya, 2 ortam, 1 tanesi dışarıda.
+
+# Kendini Sınama Soruları
+
+1. "Kes" ile "kopyala" arasındaki fark nedir?
+2. Bir dosyanın uzantısını değiştirmek ne yapar; ne yapmaz?
+3. `fatura.pdf.exe` gibi çift uzantılı bir dosya neden tehlikelidir?
+4. Sıkıştırma hangi dosya türlerinde belirgin kazanç sağlar?
+5. USB belleği çıkarmadan önce neden "güvenle çıkar" yapmak gerekir?
+6. Bölümleme ile biçimlendirme arasındaki fark nedir? Hangisi veriyi siler?
+7. Bulut depolamanın iki olanağını ve iki sınırını yazın.
+8. 3-2-1 yedekleme kuralını açıklayın.
+
+# Kaynaklar
+
+- **İşletim sisteminizin resmî yardım sayfaları** — dosya yönetimi, yedekleme ve disk yönetimi konularında kullanıcı belgeleri.
+- **Bulut depolama hizmetlerinin resmî yardım sayfaları** — paylaşım izinleri ve sürüm geçmişi.
+- **USOM ve BTK farkındalık yayınları** — zararlı dosya ve güvenli indirme konularında. (usom.gov.tr, btk.gov.tr)
+
+Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

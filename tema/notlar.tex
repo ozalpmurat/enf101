@@ -1,0 +1,46 @@
+% ---- ENF101 ders notu ortak görünümü ----
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc}
+
+% pandoc'un listelerde kullandığı makro
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\definecolor{navy}{HTML}{1F3864}
+\definecolor{accentcol}{HTML}{2E74B5}
+\definecolor{greytext}{HTML}{595959}
+\definecolor{lightbg}{HTML}{EDF2F9}
+% sunum.tex ile uyumlu renk takma adları
+\definecolor{enfnavy}{HTML}{1F3864}
+\definecolor{enfaccent}{HTML}{2E74B5}
+\definecolor{enfgrey}{HTML}{595959}
+
+% bağlantı renkleri — yalnızca bu şablonu kullanan belgelerde tanımlı olduğu için
+% proje ayarında değil burada veriliyor
+\AtBeginDocument{%
+  \hypersetup{linkcolor=navy, urlcolor=accentcol, citecolor=accentcol}%
+}
+
+\titleformat{\section}{\color{navy}\Large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\color{navy}\large\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\color{accentcol}\normalsize\bfseries}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+\titlespacing*{\subsection}{0pt}{13pt}{6pt}
+
+\renewcommand{\arraystretch}{1.22}
+\setlist[itemize]{topsep=3pt,itemsep=3pt,parsep=0pt}
+\setlist[enumerate]{topsep=3pt,itemsep=3pt,parsep=0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\color{greytext} ENF101 \textperiodcentered{} Temel Bilgi Teknolojileri}
+\fancyfoot[C]{\small\color{greytext} Sayfa \thepage\ / \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}

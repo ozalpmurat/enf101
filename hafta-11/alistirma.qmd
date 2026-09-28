@@ -1,0 +1,129 @@
+---
+title: "Haftalık Alıştırma"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 11. Hafta"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+---
+
+::: {.callout-note}
+## Yönerge
+
+Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
+
+Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
+
+Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
+:::
+
+**1.** Aşağıdakilerden hangisi kişisel veri değildir?
+
+A) Telefon numarası
+
+B) TC kimlik numarası
+
+C) Hava durumu tahmini
+
+D) E-posta adresi
+
+**2.** Aşağıdakilerden hangisi "özel nitelikli kişisel veri" kapsamındadır?
+
+A) Ad ve soyad
+
+B) Sağlık bilgisi
+
+C) Telefon numarası
+
+D) Doğum yılı
+
+**3.** KVKK kapsamında "ilgili kişi" kimdir?
+
+A) Veriyi işleyen kurum
+
+B) Verisi işlenen kişi
+
+C) Veriyi denetleyen kurul
+
+D) Yazılımı geliştiren firma
+
+**4.** Dijital ayak izinin "pasif" kısmına hangisi girer?
+
+A) Yazdığınız bir yorum
+
+B) Paylaştığınız bir fotoğraf
+
+C) Tarayıcı çerezleri ve konum kaydı
+
+D) Üye olduğunuz bir site
+
+**5.** Bir fener uygulamasının konum izni istemesi neyi gösterir?
+
+A) Uygulamanın çok gelişmiş olduğunu
+
+B) İznin işlevle orantılı olmadığını
+
+C) İznin zorunlu olduğunu
+
+D) Uygulamanın ücretsiz olduğunu
+
+**6.** Creative Commons lisanslı bir eser için genellikle ne gerekir?
+
+A) Hiçbir şey
+
+B) İzin için ücret ödemek
+
+C) Lisans şartlarına uymak, çoğunlukla atıf yapmak
+
+D) Eseri değiştirmeden kullanmak
+
+**7.** Bir görselin altına kaynak yazmak ne sağlar?
+
+A) Görseli kullanma hakkı verir
+
+B) Telif sorununu ortadan kaldırır
+
+C) Yalnızca kaynağı belirtir; kullanım hakkı vermez
+
+D) Görseli kamu malı yapar
+
+**8.** Aşağıdakilerden hangisi dijital etiğe uygun bir davranıştır?
+
+A) Başkasının hesabına izinsiz girmek
+
+B) Yanlış bilgiyi düzeltmek
+
+C) Bir kişiyi hedef göstererek paylaşım yapmak
+
+D) Başkasının fotoğrafını izinsiz paylaşmak
+
+**9.** Dijital ayak izi silinen bir paylaşımla birlikte tamamen ortadan kalkar. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+**10.** Verisi işlenen kişi, verisinin silinmesini veri sorumlusundan talep edebilir. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+{{< pagebreak >}}
+
+# Cevap Anahtarı
+
+| Soru | Cevap | Kısa gerekçe |
+|:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
+| 1 | C | Hava durumu tahmini kişiye ilişkin bir bilgi değildir; kişisel veri sayılmaz. |
+| 2 | B | Sağlık bilgisi özel nitelikli kişisel veridir ve daha sıkı korunur. |
+| 3 | B | İlgili kişi, kişisel verisi işlenen gerçek kişidir. Veriyi işleyen taraf veri sorumlusudur. |
+| 4 | C | Çerezler ve konum kaydı kullanıcı bir şey yapmadan toplanır; bu pasif izdir. Diğerleri aktif izdir. |
+| 5 | B | Fener uygulamasının işini yapmak için konuma ihtiyacı yoktur; izin işlevle orantılı değildir. |
+| 6 | C | Creative Commons lisansları kullanıma izin verir ancak şartları vardır; en yaygını atıf yapmaktır. |
+| 7 | C | Kaynak gösterme kaynağı belirtir; kullanım hakkı lisans konusudur ve ayrıdır. |
+| 8 | B | Yanlış bilgiyi düzeltmek sorumlu davranıştır. Diğer üç seçenek etik dışı ve bazıları suçtur. |
+| 9 | Yanlış | Paylaşım silinse de kopyalanmış, arşivlenmiş veya ekran görüntüsü alınmış olabilir; iz tamamen kaybolmaz. |
+| 10 | Doğru | KVKK kapsamında ilgili kişinin verilerinin silinmesini veya yok edilmesini isteme hakkı vardır. |
+
+::: {.callout-tip}
+## Nasıl kullanılır?
+
+Yanlış yanıtladığınız soruların gerekçesini okuyup ilgili bölümü ders notundan tekrar edin. Bu haftanın konuları, ara sınav ve dönem sonu sınavında karşınıza çıkacaktır.
+:::

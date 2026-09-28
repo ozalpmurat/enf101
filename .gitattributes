@@ -1,0 +1,14 @@
+# Satır sonlarını depoda LF'e sabitle (Windows/macOS/Linux karışıklığını önler).
+* text=auto
+
+# İkili (binary) dosyalar — Git bunları metin sanıp satır satır fark almaya çalışmasın.
+# Bu satırlar yukarıdaki * kuralını geçersiz kılar (sonraki satır kazanır).
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.zip  binary
+*.docx binary
+*.pptx binary
+*.xlsx binary

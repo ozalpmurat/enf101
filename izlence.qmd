@@ -1,0 +1,111 @@
+---
+title: "Ders İzlencesi"
+subtitle: "ENF101 Temel Bilgi Teknolojileri"
+format:
+  pdf:
+    toc: true
+    toc-depth: 1
+    number-sections: true
+---
+
+# Dersin Tanımı ve Amacı
+
+ENF101 Temel Bilgi Teknolojileri, üniversitenin tüm bölümlerinden birinci sınıf öğrencilerine yönelik, alan önkoşulu olmayan bir temel derstir. Dersin amacı; öğrencinin bilgi teknolojilerine ilişkin temel kavramları özümsemesini, bilgisayarı ve İnternet'i günlük ve akademik yaşamda bilinçli, verimli ve güvenli biçimde kullanmasını sağlamaktır.
+
+Ders boyunca öğrencinin yalnızca bir yazılımı kullanmayı değil, aynı zamanda teknolojiyi değerlendirme, sorgulama ve sorumlu kullanma becerisi kazanması hedeflenir. Bu nedenle içerik; kavramsal bilgi ile uygulamalı beceriyi dengeli biçimde bir araya getirir. Ders, teknolojinin bugünkü durumunu tarihsel gelişimi içine yerleştirerek ele alır; böylece öğrenci, öğrendiği kavramların nereden geldiğini ve nereye evrildiğini görür.
+
+::: {.callout-note}
+## Dersin ayırt edici yaklaşımı
+
+İçerik belirli bir işletim sistemi, yazılım sürümü veya markaya bağlı değildir; kavramlar ve yöntemler her ortamda uygulanabilecek biçimde ele alınır. Hem kapalı kaynak hem açık kaynak yazılımlar tanıtılır; yerli ve açık kaynak işletim sistemi Pardus bu kapsamda ele alınır.
+
+Her hafta, çevrimiçi ortamda tek başına yapılabilecek kısa bir uygulama ile desteklenir.
+
+Konular yalnızca "nasıl kullanılır" sorusuna değil, "neden böyledir" ve "nelere dikkat edilmelidir" sorularına da yanıt arar.
+:::
+
+# Öğrenme Çıktıları
+
+Dersi başarıyla tamamlayan öğrenci aşağıdaki çıktılara ulaşır:
+
+- **K1 —** Bilgi teknolojilerine ilişkin temel kavramları (veri, enformasyon, bilgi; donanım, yazılım, ağ) tanımlar; bilgisayarın tarihsel gelişimini ve bilgi toplumuna geçişi açıklar.
+- **K2 —** Bilgisayarın donanım bileşenlerini ayırt eder; işlemci, bellek, depolama ve ekran kartı gibi birimlerin işlevlerini, kullanım alanlarını ve bilgisayar türlerini açıklar.
+- **K3 —** İşletim sistemlerinin görevlerini açıklar; masaüstü, mobil ve gömülü işletim sistemlerini ayırt eder; dosya ve klasör işlemlerini güvenli biçimde yürütür, veri yedekleme alışkanlığı geliştirir ve basit sorunlar karşısında doğru adımları uygular.
+- **K4 —** Bilgisayar ağlarının ve İnternet'in çalışma mantığını, kablolu ve kablosuz bağlantı teknolojilerini ve güvenli kullanım ilkelerini açıklar; elektronik posta, bulut ve ortak çalışma araçları ile dijital kamu hizmetlerini uygun biçimde kullanır; çevrimiçi bilgiyi değerlendirir ve dezenformasyonu fark eder.
+- **K5 —** Kelime işlemci yazılımıyla biçimli, düzenli, erişilebilir ve akademik ölçütlere uygun (kaynak göstermeli) belge üretir.
+- **K6 —** Elektronik tablo yazılımıyla veri girer, düzenler, temel fonksiyonlarla işler ve uygun grafiklerle görselleştirir; karşılaştığı grafikleri eleştirel biçimde okur.
+- **K7 —** Sunum yazılımıyla görsel iletişim ilkelerine uygun sunum materyali hazırlar ve etkili biçimde sunar.
+- **K8 —** Bilgi güvenliği, kişisel verilerin korunması ve dijital etik konularında farkındalık gösterir; dijital kaynakları sorumlu biçimde kullanır.
+- **K9 —** Yapay zekâ, mobil ve giyilebilir teknolojiler gibi güncel teknolojileri tanır; sundukları olanakları, sınırlarını ve gizlilik ile etik risklerini değerlendirir.
+
+# Haftalık Ders Planı
+
+Ders 14 hafta sürer. Ara sınav (vize), üniversitenin akademik takvimine göre 8. haftanın sonunda uygulanır ve ders haftasını kapsamaz.
+
+| Hafta | Konu ve içerik | İlgili çıktı |
+|:------|:-----------------------------------------------------------------------------------------------------|:-----------------------------|
+| 1 | Derse giriş: bilişim ve temel kavramlar, veri–enformasyon–bilgi, bilgi toplumu ve dijital dönüşüm, dijital okuryazarlık, bilgisayarın kısa tarihi ve nesilleri | K1 |
+| 2 | Bilgisayar donanımı: girdi–işlem–çıktı–depolama döngüsü, anakart, işlemci, ekran kartı ve grafik işlemci ile kullanım alanları, bellek, depolama, çevre birimleri, bit/byte ve ölçü birimleri, bilgisayar türleri | K2 |
+| 3 | Yazılım ve işletim sistemleri: sistem ve uygulama yazılımı, açık kaynak ve kapalı kaynak yazılım, işletim sisteminin görevleri, Windows–Linux–macOS–Pardus karşılaştırması, mobil ve gömülü işletim sistemleri, dosya sistemi, basit sorunlara ilk bakış | K2, K3 |
+| 4 | Dosya yönetimi, depolama ve bulut: dosya ve klasör işlemleri, uzantılar, sıkıştırma, çıkarılabilir depolama ve güvenli çıkarma, disk bölümleme ve biçimlendirme, bulut depolama, çevrimiçi işbirliği ve ortak çalışma araçları, yedekleme | K3 |
+| 5 | Bilgisayar ağları ve İnternet: ağ türleri ve bileşenleri, WiFi kullanımı ve güvenliği, Bluetooth kullanımı ve güvenliği, IP ve DNS, tarayıcı ve web, güvenli İnternet | K4 |
+| 6 | İnternet pratikleri, e-posta ve dijital kamu hizmetleri: etkili arama ve kaynak değerlendirme, dezenformasyon ve sahte haber, e-posta kullanımı ve kurumsal yazışma, e-posta güvenliği, dijital kamu hizmetleri ve e-Devlet, e-imza ve türleri | K4 |
+| 7 | Kelime işlemci: belge oluşturma ve kaydetme, metin ve paragraf biçimlendirme, stiller, tablo ve görsel ekleme, sayfa düzeni, uzun belge yönetimi (içindekiler, dipnot, kaynakça), akademik dürüstlük ve kaynak gösterme, kaynak yönetimi araçları, erişilebilirlik, PDF'e aktarma | K5 |
+| 8 | Elektronik tablo ve grafik okuma: hücre ve formül mantığı, göreli ve mutlak başvuru, temel fonksiyonlar, biçimlendirme, sıralama ve filtreleme, grafik oluşturma, grafiklerin doğru okunması ve yanıltıcı görseller | K6 |
+| 9 | Sunum uygulamaları: slayt yapısı, metin yoğunluğu ve okunabilirlik, erişilebilirlik, görsel kullanımı ve telifsiz kaynaklar, tasarım tutarlılığı, etkili sunum teknikleri | K7 |
+| 10 | Bilgi güvenliği: gizlilik–bütünlük–erişilebilirlik, parola yönetimi ve iki adımlı doğrulama, oltalama, zararlı yazılımlar, güncelleme ve yedekleme, cihaz ve hesap güvenliği, doğru bilinen yanlışlar | K8 |
+| 11 | Kişisel veriler ve dijital etik: kişisel veri nedir, KVKK farkındalığı ve ilgili kişinin hakları, dijital ayak izi ve gizlilik ayarları, telif hakkı ve lisanslar, açık kaynak ve kaynak gösterme, verinin etik kullanımı, dijital nezaket | K8 |
+| 12 | Yapay zekâ okuryazarlığı: yapay zekâ nedir ve ne değildir, günlük yaşamda kullanım alanları, nasıl öğrenir (veri–model–eğitim), büyük veri, sınırlar ve yanılgılar, etik sorular ve gizlilik | K9 |
+| 13 | Üretken yapay zekâ araçları: metin, görsel ve özetleme araçları, istem yazımı, çıktıların doğrulanması, akademik dürüstlük, araca verilmemesi gerekenler, yapay zekâyı araç olarak kullanma | K9 |
+| 14 | Mobil cihazlar, giyilebilir teknolojiler ve toplumsal etki: mobil işletim sistemleri ve uygulama ekosistemi, izinler, senkronizasyon, mobil cihaz güvenliği, giyilebilir cihazlar ve sensörler, sağlık verisi ve gizlilik, nesnelerin interneti, dijital iyi olma hali, teknolojinin toplumsal etkileri | K9 |
+
+# Öğretim Yöntemi ve Ortam
+
+Ders, uzaktan ve karma (blended) öğretim esasına göre yürütülür. Yöntem üç bileşene dayanır:
+
+- **Çevrimiçi ders oturumu:** Haftalık konunun anlatıldığı, soru-cevapla desteklenen; canlı izlenebilen ya da kayıttan erişilebilen oturum.
+- **Ders notu ve sunum:** Her hafta için hazırlanan yazılı ders notu ve slayt destesi.
+- **Haftalık alıştırma:** Konunun pekiştirilmesi amacıyla hazırlanan 10 soruluk alıştırma; notla değerlendirilmez.
+
+Uygulamalar, öğrencinin kendi cihazında (bilgisayar, tablet veya telefon) ve platformdan bağımsız olarak yapılabilecek biçimde tasarlanmıştır.
+
+# Ölçme ve Değerlendirme
+
+Dersin başarı notu; **ara sınav (vize)**, **kısa sınav** ve **dönem sonu sınavı (final)** notlarının ortalaması alınarak belirlenir.
+
+| Ölçme aracı | Kapsam |
+|:------------------------|:--------------------------------------------------|
+| Ara sınav (vize) | 1.–7. hafta konuları |
+| Kısa sınav | Dönem içi konular |
+| Dönem sonu sınavı (final) | Dönem boyunca işlenen tüm konular |
+
+Kısa sınav, zaman zaman *quiz* olarak da adlandırılır; haftalık alıştırmalarla karıştırılmamalıdır.
+
+::: {.callout-note}
+## Haftalık alıştırmalar hakkında
+
+Haftalık 10 soruluk alıştırmalar; konuyu pekiştirmek ve öğrencinin kendi öğrenmesini izlemesine yardımcı olmak amacıyla paylaşılır.
+
+Alıştırmalar başarı notuna doğrudan etki etmez; ancak sınav sorularının kapsamı ders notları ve alıştırmalarla örtüşür.
+:::
+
+# Kaynaklar ve Yararlanılabilecek Kurumsal Yayınlar
+
+Dersin temel materyali, her hafta paylaşılan ders notları ve sunumlardır. Bunları destekleyen, kamuya açık ve güncel kaynaklar şunlardır:
+
+- **Bilgi Teknolojileri ve İletişim Kurumu (BTK)** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayın ve rehberler. (btk.gov.tr)
+- **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunmasına yönelik farkındalık yayınları. (kvkk.gov.tr)
+- **Ulusal Siber Olaylara Müdahale Merkezi (USOM)** — güvenlik uyarıları ve farkındalık içerikleri. (usom.gov.tr)
+- **TÜBİTAK BİLGEM** — bilişim güvenliği ve siber güvenlik farkındalık yayınları. (tubitak.gov.tr)
+- **Pardus** — yerli ve açık kaynak işletim sistemi; kullanım kılavuzları. (pardus.org.tr)
+- **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
+- **Ofis yazılımlarının resmî kullanıcı kılavuzları** — kelime işlemci, elektronik tablo ve sunum uygulamalarının üretici belgeleri.
+
+Hafta bazında önerilen ek okuma ve bağlantılar, ilgili haftanın ders notunda ve dersin çevrimiçi ortamında ayrıca listelenir.
+
+# Öğrenciden Beklenenler
+
+- Her haftanın ders notunu ve sunumunu gözden geçirmek, haftalık alıştırmayı zamanında tamamlamak.
+- Uygulamaları kendi cihazında yaparak beceriyi pekiştirmek.
+- Ödev ve uygulamalarda kaynak gösterme kurallarına ve dijital etik ilkelerine uymak.
+- İnternet'ten alınan içeriği olduğu gibi kullanmamak; kaynağı belirtmek ve intihalden kaçınmak.

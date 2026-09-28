@@ -1,0 +1,35 @@
+% ---- ENF101 sunum ortak görünümü (beamer) ----
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc}
+\definecolor{lightbg}{HTML}{EDF2F9}
+% notlar.tex ile uyumlu renk takma adları
+\definecolor{navy}{HTML}{1F3864}
+\definecolor{accentcol}{HTML}{2E74B5}
+\definecolor{greytext}{HTML}{595959}
+\setbeamertemplate{navigation symbols}{}
+\definecolor{enfnavy}{HTML}{1F3864}
+\definecolor{enfaccent}{HTML}{2E74B5}
+\definecolor{enfgrey}{HTML}{595959}
+
+\setbeamercolor{structure}{fg=enfnavy}
+\setbeamercolor{frametitle}{fg=enfnavy}
+\setbeamercolor{title}{fg=enfnavy}
+\setbeamercolor{subtitle}{fg=enfaccent}
+\setbeamercolor{author}{fg=enfgrey}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{block title}{bg=enfaccent!18,fg=enfnavy}
+\setbeamercolor{block body}{bg=enfaccent!6}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\setbeamertemplate{itemize item}{\color{enfnavy}\textbullet}
+\setbeamertemplate{itemize subitem}{\color{enfaccent}\textendash}
+
+% ---- görseller slayt sınırlarını aşmasın ----
+% Quarto'nun makale şablonu görselleri metin genişliğine sığdırır; beamer şablonu
+% sığdırmaz ve geniş görseller (ör. Graphviz çıktıları) slaytı taşar.
+% Bu blok, açıkça genişlik verilmemiş görselleri kendiliğinden küçültür.
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}

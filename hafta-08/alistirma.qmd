@@ -1,0 +1,131 @@
+---
+title: "Haftalık Alıştırma"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 8. Hafta"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+---
+
+::: {.callout-note}
+## Yönerge
+
+Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
+
+Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
+
+Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
+:::
+
+**1.** Bir formülü bir satır aşağı kopyaladığınızda `A1` başvurusu ne olur?
+
+A) A1 olarak kalır
+
+B) A2 olur
+
+C) $A$1 olur
+
+D) B1 olur
+
+**2.** Aşağıdakilerden hangisi mutlak hücre başvurusudur?
+
+A) A1
+
+B) A1:A10
+
+C) $A$1
+
+D) =A1
+
+**3.** Elektronik tabloda bir formül hangi işaretle başlar?
+
+A) #
+
+B) =
+
+C) @
+
+D) +
+
+**4.** Bir sınıfta 9 öğrenci 40, 1 öğrenci 100 puan almıştır. Sınıfın genel başarısını anlatırken hangisi daha uygundur?
+
+A) ORTALAMA, çünkü tüm değerleri kapsar
+
+B) ORTANCA, çünkü uç değerden etkilenmez
+
+C) MAK, çünkü en yüksek puanı gösterir
+
+D) TOPLA, çünkü bütün puanları içerir
+
+**5.** `EĞERSAY` fonksiyonu ne yapar?
+
+A) Aralıktaki tüm sayıları toplar
+
+B) Koşulu sağlayan hücreleri sayar
+
+C) Aralıktaki bütün hücreleri sayar
+
+D) Aralıktaki en büyük değeri bulur
+
+**6.** Sıralama ile filtreleme arasındaki temel fark nedir?
+
+A) Sıralama veriyi kalıcı olarak yeniden düzenler, filtreleme yalnızca gösterir
+
+B) İkisi tamamen aynı işi yapar
+
+C) Filtreleme veriyi siler, sıralama silmez
+
+D) Sıralama yalnızca sayısal sütunlarda çalışır
+
+**7.** Bir oranın %20'den %25'e çıkması için aşağıdakilerden hangisi doğrudur?
+
+A) 5 yüzde puan artmıştır; göreli olarak %25 artış demektir
+
+B) %5 artmıştır; göreli değişim yoktur
+
+C) %25 puan artmıştır
+
+D) Bu verilerle değişim hesaplanamaz
+
+**8.** Dikey ekseni sıfırdan başlamayan bir sütun grafiğinde hangi yanıltma taktiği kullanılmıştır?
+
+A) Çift eksen
+
+B) Kesilmiş eksen
+
+C) Alan yanılsaması
+
+D) Seçilmiş zaman aralığı
+
+**9.** İki kat büyük bir değeri, hem eni hem boyu iki kat büyütülmüş bir şekille göstermek değeri dört kat büyük gösterir. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+**10.** Sıralama işlemi veriyi silmez, yalnızca koşulu sağlayan satırları gösterir. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+{{< pagebreak >}}
+
+# Cevap Anahtarı
+
+Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir.
+
+| Soru | Cevap | Kısa gerekçe |
+|:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
+| 1 | B | Göreli başvuru, kopyalandığı yöne göre kayar. Formül bir satır aşağı kopyalandığında A1, A2 olur. |
+| 2 | C | `$` işareti sütunu ve satırı kilitler. $A$1 mutlak başvurudur; kopyalansa bile değişmez. |
+| 3 | B | Tablo, eşittir işaretiyle başlayan girdiyi formül olarak yorumlar; aksi hâlde metin sayar. |
+| 4 | B | Tek bir uç değer ortalamayı yukarı çeker (ortalama 46, ortanca 40). Ortanca uç değerden etkilenmediği için grubu daha iyi temsil eder. |
+| 5 | B | EĞERSAY, belirtilen koşulu sağlayan hücreleri sayar. Koşulsuz sayım için SAY kullanılır. |
+| 6 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
+| 7 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |
+| 8 | B | Dikey eksenin sıfırdan başlamaması "kesilmiş eksen"dir; sütun yükseklikleri arasındaki farkı olduğundan büyük gösterir. |
+| 9 | Doğru | İki boyutta iki kat büyütme, alanı dört kat büyütür. Buna alan yanılsaması denir. |
+| 10 | Yanlış | Bu, filtrelemenin tanımıdır. Sıralama veriyi silmez ama satırların yerini kalıcı olarak değiştirir. |
+
+::: {.callout-tip}
+## Nasıl kullanılır?
+
+Yanlış yanıtladığınız soruların gerekçesini okuyup ilgili bölümü ders notundan tekrar edin. Bu haftanın konuları, ara sınav ve dönem sonu sınavında karşınıza çıkacaktır.
+:::

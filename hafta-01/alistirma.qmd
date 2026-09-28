@@ -1,0 +1,131 @@
+---
+title: "Haftalık Alıştırma"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 1. Hafta"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+---
+
+::: {.callout-note}
+## Yönerge
+
+Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
+
+Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
+
+Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
+:::
+
+**1.** Aşağıdakilerden hangisi tek başına "veri" kavramına örnektir?
+
+A) "Bugün hava sıcaklığı 23,5 °C ölçüldü."
+
+B) 23,5
+
+C) "Nem yüksek olduğu için öğle vakti koşu yapmak uygun değil."
+
+D) "Yarın yağmur bekleniyor."
+
+**2.** Enformasyonu veriden ayıran temel özellik aşağıdakilerden hangisidir?
+
+A) Sayısal değerlerden oluşması
+
+B) Mutlaka bilgisayarda saklanması
+
+C) Bağlam içine yerleştirilerek anlam kazanması
+
+D) Yalnızca uzmanlar tarafından üretilmesi
+
+**3.** "Bilgi" kavramının en uygun tanımı hangisidir?
+
+A) İşlenmemiş ham gerçekler ve semboller
+
+B) Bağlam kazandırılmış ancak yorumlanmamış veri
+
+C) Yorumlanan, deneyimle birleşen ve karar vermede kullanılan enformasyon
+
+D) İnternette paylaşılan her türlü içerik
+
+**4.** Bilgi toplumunu sanayi toplumundan ayıran temel özellik nedir?
+
+A) Tarımsal üretimin artması
+
+B) Ekonomik değerin bilginin üretimi ve paylaşımıyla oluşması
+
+C) Fabrika sayısının hızla çoğalması
+
+D) Nüfusun kırsal alanda yoğunlaşması
+
+**5.** Dijital dönüşüm kavramıyla ilgili doğru ifade hangisidir?
+
+A) Yalnızca yeni cihaz satın alınmasıdır.
+
+B) Süreçlerin dijital ortama taşınması ve kararların veriye dayandırılmasıdır.
+
+C) Kâğıt kullanımının tümüyle yasaklanmasıdır.
+
+D) Yalnızca büyük kurumları ilgilendiren bir süreçtir.
+
+**6.** "Dijital uçurum" kavramı neyi ifade eder?
+
+A) İnternet hızındaki teknik dalgalanmaları
+
+B) Dijital oyunlardaki beceri farklılıklarını
+
+C) Erişim, cihaz ve dijital beceri bakımından bireyler arasındaki eşitsizlikleri
+
+D) Yazılım sürümleri arasındaki uyumsuzlukları
+
+**7.** Aşağıdakilerden hangisi dijital okuryazarlığın bileşenleri arasında yer almaz?
+
+A) Bilgi okuryazarlığı
+
+B) Dijital güvenlik ve gizlilik
+
+C) Dijital etik
+
+D) Belirli bir işletim sistemini ileri düzeyde yönetebilmek
+
+**8.** Bir internet kaynağının güvenilirliğini değerlendirirken aşağıdakilerden hangisi en az ilgilidir?
+
+A) İçeriği kimin yazdığı ve uzmanlığı
+
+B) İçeriğin ne zaman yayımlandığı
+
+C) Sayfa tasarımının renkli olup olmadığı
+
+D) İddianın bir kanıta dayanıp dayanmadığı
+
+**9.** Bilgi toplumunda birey yalnızca içerik tüketicisidir; içerik üretme rolü yoktur. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+**10.** Aynı veri kümesi, farklı bağlamlarda farklı enformasyona dönüşebilir. *(Doğru / Yanlış)*
+
+(   ) Doğru        (   ) Yanlış
+
+{{< pagebreak >}}
+
+# Cevap Anahtarı
+
+Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir.
+
+| Soru | Cevap | Kısa gerekçe |
+|:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
+| 1 | B | Tek başına anlam taşımayan ham değer veridir. A ve D seçenekleri bağlam içerdikleri için enformasyon; C seçeneği ise yorum ve karar içerdiği için bilgi düzeyindedir. |
+| 2 | C | Veri bağlamla ilişkilendirildiğinde anlam kazanır ve enformasyona dönüşür. |
+| 3 | C | Bilgi, enformasyonun yorumlanması ve karar vermede kullanılmasıyla oluşur. |
+| 4 | B | Bilgi toplumunda değer, maddi üretimden çok bilginin üretilmesi ve işlenmesiyle oluşur. |
+| 5 | B | Dijital dönüşüm, teknoloji edinmenin ötesinde süreçlerin ve karar mekanizmalarının dönüşmesidir. |
+| 6 | C | Dijital uçurum, dijital olanaklara erişim ve kullanım bakımından ortaya çıkan toplumsal eşitsizlikleri anlatır. |
+| 7 | D | Dijital okuryazarlık belirli bir işletim sistemi, marka veya sürüme bağlı değildir. Tanımlı bileşenleri bilgi ve medya okuryazarlığı, güvenlik, iletişim ve etik alanlarını kapsar. |
+| 8 | C | Görsel tasarım içeriğin doğruluğunu göstermez; kaynağın kimliği, güncelliği ve kanıtı belirleyicidir. |
+| 9 | Yanlış | Bilgi toplumunda birey hem tüketici hem de içerik üreticisidir. |
+| 10 | Doğru | Verinin anlamı, içine yerleştirildiği bağlama ve sorulan soruya göre değişir. |
+
+::: {.callout-tip}
+## Nasıl kullanılır?
+
+Yanlış yanıtladığınız soruların gerekçesini okuyup ilgili bölümü ders notundan tekrar edin. Aynı konu, ara sınav ve dönem sonu sınavında karşınıza çıkacaktır.
+:::

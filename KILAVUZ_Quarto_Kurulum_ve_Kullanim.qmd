@@ -1,0 +1,198 @@
+---
+title: "Quarto Kurulum ve Kullanım Kılavuzu"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · ders notlarını üretmek için"
+lang: tr
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=2.5cm
+    fontsize: 11pt
+---
+
+# Bu kılavuz nedir?
+
+Ders malzemesini artık **düz metin** dosyaları hâlinde tutuyoruz. Metin dosyalarını herkes herhangi bir düzenleyiciyle açıp düzenleyebilir; Word, özel bir program ya da lisans gerekmez.
+
+Bu metinleri biçimli bir **PDF**'e çevirmek için **Quarto** adlı ücretsiz bir aracı kullanıyoruz. Quarto; Windows, macOS ve Linux'ta çalışır, açık kaynaklıdır ve tek bir kurulum dosyasıyla kurulur.
+
+Kılavuz üç bölümden oluşur: kurulum, ilk ayar ve günlük kullanım.
+
+::: callout-note
+## Kurulum bir kez yapılır
+
+Aşağıdaki kurulum adımlarını yalnızca bir kez yapmanız gerekir. Sonrasında her hafta yalnızca metni düzenleyip PDF üretirsiniz.
+:::
+
+# Kurulum
+
+## Ortak adım: Quarto'yu indirin
+
+Tarayıcıdan **quarto.org/docs/download** adresine gidin. Sayfa, işletim sisteminizi kendisi algılar ve doğru dosyayı önerir. Dosya boyutu yaklaşık 150–250 MB'tır.
+
+İndirilecek dosya işletim sistemine göre değişir:
+
+| İşletim sistemi | İndirilecek dosya | Not |
+|:-----------------------|:-----------------------|:-----------------------|
+| Windows | `quarto-...-win.msi` | Çift tıklayıp "Next" diyerek kurun |
+| macOS | `quarto-...-macos.pkg` | Çift tıklayıp kurulumu tamamlayın |
+| Linux (Debian/Ubuntu) | `quarto-...-linux-amd64.deb` | `sudo dpkg -i <dosya>.deb` |
+| Linux (Fedora/RHEL) | `quarto-...-linux-x86_64.rpm` | `sudo rpm -i <dosya>.rpm` |
+
+## Kurulumu doğrulayın
+
+Terminali (Windows'ta Komut İstemi veya PowerShell) açın ve şunu yazın:
+
+```         
+quarto --version
+```
+
+Ekranda `1.10.18` gibi bir sürüm numarası görüyorsanız kurulum tamamdır. "Komut bulunamadı" hatası alırsanız terminali kapatıp yeniden açın.
+
+::: callout-tip
+## Dosyayı doğrudan klasörden açmak
+
+Windows'ta notların bulunduğu klasörü Gezgin'de açın, adres çubuğuna `cmd` yazıp Enter'a basın. Komut istemi doğrudan o klasörde açılır; uzun yol yazmanız gerekmez.
+:::
+
+## PDF motorunu kurun
+
+PDF üretmek için Quarto'nun arkasında bir dizgi motoruna ihtiyaç vardır. Bunu ayrıca indirmenize gerek yok; Quarto ilk PDF üretiminizde gerekli motoru kendisi kurar. İsterseniz önceden de kurabilirsiniz:
+
+```         
+quarto install tinytex
+```
+
+Bu adım yaklaşık 100 MB indirir ve diskte 400–500 MB yer kaplar. Yalnızca bir kez yapılır.
+
+# Dosya biçimi: .qmd
+
+Ders notları **`.qmd`** uzantılı dosyalardır. Bu, Quarto'nun kendi belge biçimidir ve Markdown yazımına ek olarak kutu, çapraz başvuru gibi Quarto'ya özel özellikleri destekler.
+
+Quarto düz `.md` dosyalarını da okuyabilir; ancak notlar için `.qmd` kullanıyoruz. İki nedenle:
+
+- Düzenleyiciler `.qmd` dosyasını Quarto belgesi olarak tanır; kutu blokları ve başlıklar doğru renklendirilir.
+- `.md` dosyalarındaki `:::` blokları, Quarto'yu tanımayan bir düzenleyicide sade metin gibi görünür ve kafa karıştırır.
+
+::: callout-note
+## Yalnızca gövdeyi düzenleyin
+
+Dosyanın en başındaki üç çizgi arasında yer alan bölüm ayar satırlarıdır. İçeriği düzenlerken bu bölümü olduğu gibi bırakın.
+:::
+
+# Günlük kullanım
+
+## Bir ders notunu PDF'e çevirmek
+
+Notların bulunduğu klasörde şu komutu çalıştırın:
+
+```         
+quarto render not.qmd
+```
+
+Aynı klasörde `not.pdf` dosyası oluşur. Komut, dosyanın en başındaki ayarlara bakarak PDF üretileceğini anlar; ayrıca belirtmenize gerek yoktur.
+
+## Yazarken canlı önizleme
+
+Metni yazarken sonucu görmek için:
+
+```         
+quarto preview not.qmd
+```
+
+Tarayıcı açılır ve kaydettiğiniz her değişiklik önizlemeye anında yansır. İşiniz bitince terminalde `Ctrl + C` ile kapatın.
+
+::: callout-tip
+## Yeni başlayanlar için en kolay yol
+
+Bir kez `quarto preview not.qmd` çalıştırın, tarayıcı sekmesini açık bırakın. Metni kaydettikçe önizleme kendini yeniler. Bitince ayrıca `quarto render` çalıştırıp PDF'i alırsınız.
+:::
+
+## Hangi programla düzenleyebilirim?
+
+Herhangi bir metin düzenleyici yeterlidir. Not Defteri bile çalışır; ancak renkli ve düzenli bir yazım için ücretsiz şu seçenekler önerilir:
+
+- **VS Code** (ücretsiz, üç sistemde var) — Quarto eklentisiyle birlikte `.qmd` dosyalarını tanır ve önizleme sunar. En rahat seçenek.
+- **Notepad++** (Windows, ücretsiz).
+- **Zettlr** veya **Obsidian** (ücretsiz, Markdown'a uygun).
+
+Dosyayı Word ile açmayın; Word `.qmd` dosyasının biçimini bozar.
+
+# Metin biçimi
+
+Notlar **Markdown** adı verilen sade bir yazım kuralıyla yazılır. Günlük olarak ihtiyacınız olan birkaç kural yeterlidir.
+
+| Ne yazacaksınız | Nasıl yazılır                               |
+|:----------------|:--------------------------------------------|
+| Ana başlık      | `# Başlık`                                  |
+| Alt başlık      | `## Alt başlık`                             |
+| Kalın yazı      | `**kalın**`                                 |
+| Madde işareti   | Satır başına `-`                            |
+| Numaralı liste  | Satır başına `1.`                           |
+| Bağlantı        | `[metin](https://adres)`                    |
+| Tablo           | `\| Başlık \| Başlık \|` biçiminde satırlar |
+
+Başlıklara numara yazmanıza gerek yoktur; numaraları Quarto kendisi verir. Böylece bir bölümün yerini değiştirdiğinizde numaralar kendiliğinden düzelir.
+
+## Vurgu kutusu eklemek
+
+Önemli bir notu çerçeveli bir kutu içinde göstermek için:
+
+```         
+::: {.callout-note}
+## Kutunun başlığı
+
+Kutunun içeriği buraya yazılır.
+:::
+```
+
+Kutunun rengini değiştirmek için `note` yerine `tip`, `important`, `warning` veya `caution` yazabilirsiniz.
+
+## Dosyanın başındaki bölüm
+
+Her notun en başında üç çizgi arasında bir ayar bölümü bulunur:
+
+```         
+---
+title: "..."
+format:
+  pdf:
+    toc: true
+---
+```
+
+Bu bölüm kapak, içindekiler ve sayfa düzeni ayarlarını içerir. İçeriği düzenlerken bu bölümü olduğu gibi bırakın; yalnızca `title` satırını gerekiyorsa güncelleyin.
+
+# Sık karşılaşılan sorunlar
+
+**"quarto: command not found"** — Terminali kapatıp yeniden açın. Sorun sürerse kurulumu tekrar çalıştırın.
+
+**"metric data not found" veya font hatası** — LaTeX motoru eksik ya da yarım kurulmuş. `quarto install tinytex` komutunu çalıştırın.
+
+**PDF üretilmiyor, hata veriyor** — Metnin en başındaki `---` ile başlayan bölümün bozulmadığından emin olun. Bu bölümde bir tırnak veya girinti hatası olduğunda Quarto dosyayı okuyamaz.
+
+**Türkçe karakterli dosya adı sorun çıkarıyor** — Dosya ve klasör adlarını Türkçe karakter kullanmadan yazın (örneğin `hafta-01-ders-notu.qmd`). Metnin içinde Türkçe karakterler sorunsuz görünür; sorun yalnızca dosya adındadır.
+
+**İlk üretim çok uzun sürüyor** — İlk çalıştırmada gerekli paketler hazırlanır, bu birkaç dakika sürebilir. Sonraki üretimler saniyeler içinde tamamlanır.
+
+::: callout-warning
+## Dosya adlarında Türkçe karakter kullanmayın
+
+`Ödev şablonu.qmd` yerine `odev-sablonu.qmd` gibi adlar kullanın. Metnin içeriğinde Türkçe karakterler tamamen sorunsuzdur.
+:::
+
+# Özet akış
+
+1.  **Metni düzenleyin.** Notun `.qmd` dosyasını VS Code, Notepad++ veya benzeri bir programla açıp yazın.
+2.  **Önizleyin.** Komut satırında `quarto preview not.qmd` yazın; tarayıcıdaki görünüm kaydettikçe güncellenir.
+3.  **PDF üretin.** `quarto render not.qmd` komutu aynı klasörde PDF dosyasını oluşturur.
+4.  **Teslim edin.** Oluşan `.pdf` dosyasını paylaşın; kaynak `.qmd` dosyası düzenlenebilir kopya olarak kalır.
+
+::: callout-note
+## Yardım
+
+Kurulumda veya üretimde takıldığınız bir nokta olursa, aldığınız hata mesajının ekran görüntüsüyle birlikte iletin. Sorun büyük olasılıkla kısa sürede çözülür.
+:::

@@ -1,0 +1,228 @@
+---
+title: "Kişisel Veriler ve Dijital Etik"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 11. Hafta Ders Notu"
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+# Giriş
+
+Her gün, farkında olmadan çok sayıda veri bırakıyoruz: bir uygulamaya verilen konum izni, bir siteye bırakılan çerez, bir sosyal medya paylaşımı, bir alışveriş kaydı. Bunların bir kısmı sıradan görünür; ama bir araya geldiklerinde **kim olduğunuzu, ne yaptığınızı ve neyi tercih ettiğinizi** anlatan bir tablo oluşturur.
+
+Bu hafta iki soruya cevap arıyoruz: **Bu veriler kimin, nasıl korunur?** ve **çevrimiçi ortamda nasıl sorumlu davranılır?**
+
+::: {.callout-note}
+## Bu haftanın temel fikri
+
+İnternet'te ücretsiz görünen hizmetlerin çoğunda ödenen bedel paradır değil, **veridir**. Bunu bilmek, bilinçli kullanıcı olmanın ilk adımıdır.
+:::
+
+# Bu Haftanın Öğrenme Çıktıları
+
+- Kişisel veri kavramını ve hangi bilgilerin kişisel veri olduğunu açıklar.
+- KVKK'nın temel ilkelerini ve ilgili kişinin haklarını bilir.
+- Dijital ayak izini ve etkilerini açıklar.
+- Gizlilik ayarlarını ve uygulama izinlerini yönetir.
+- Telif hakkı ve lisans türlerini ayırt eder.
+- Kaynak göstermenin etik ve hukuki gerekliliğini açıklar.
+- Dijital ortamda sorumlu davranış ilkelerini uygular.
+
+# Kişisel Veri Nedir?
+
+**Kişisel veri**, kimliği belirli veya belirlenebilir bir kişiye ilişkin her türlü bilgidir. Önemli olan, o bilginin tek başına sizi tanımlaması değil; **başka bilgilerle birleştiğinde** sizi tanımlayabilmesidir.
+
+| Kişisel veri | Neden kişisel veri |
+|:---|:---|
+| Ad, soyad | Doğrudan kimlik |
+| TC kimlik numarası | Doğrudan kimlik |
+| Telefon, e-posta, adres | İletişim bilgisi |
+| Doğum tarihi, doğum yeri | Kimlikle birleşir |
+| Konum bilgisi | Nerede olduğunuzu gösterir |
+| IP adresi | Cihazınıza bağlanabilir |
+| Fotoğraf, ses kaydı | Biyometrik veri |
+| Sağlık ve banka bilgileri | **Özel nitelikli** kişisel veri |
+
+::: {.callout-warning}
+## Özel nitelikli kişisel veri
+
+Sağlık, din, etnik köken, biyometrik veri, ceza mahkûmiyeti gibi bilgiler **özel nitelikli** kişisel veridir ve daha sıkı korunur.
+
+Bu tür bilgileri çevrimiçi ortamda paylaşırken çok daha dikkatli olmak gerekir.
+:::
+
+# KVKK: Kişisel Verilerin Korunması
+
+**KVKK (6698 sayılı Kişisel Verilerin Korunması Kanunu)**, kişisel verilerin işlenmesine ilişkin kuralları belirler. Temel kavramlar:
+
+| Kavram | Anlamı |
+|:---|:---|
+| **Veri sorumlusu** | Veriyi işleyen kurum veya kişi (örneğin üniversiteniz) |
+| **İlgili kişi** | Verisi işlenen kişi — yani **siz** |
+| **Veri işleme** | Toplama, kaydetme, saklama, paylaşma, silme |
+
+## İlkeler
+
+Kişisel veriler işlenirken şu ilkelere uyulmalıdır: hukuka ve dürüstlük kurallarına uygunluk, belirli ve meşru amaç, ölçülülük, doğruluk ve güncellik, belirli süre saklama.
+
+## İlgili kişinin hakları
+
+Verisi işlenen kişi olarak **haklarınız** vardır:
+
+- Verilerinizin işlenip işlenmediğini **öğrenme**
+- İşlenmişse buna ilişkin **bilgi talep etme**
+- İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını **öğrenme**
+- Eksik veya yanlış işlenmişse **düzeltilmesini isteme**
+- Silinmesini veya yok edilmesini **isteme**
+- Aktarıldığı üçüncü kişileri **öğrenme**
+- Zarara uğramanız hâlinde **tazminat talep etme**
+
+::: {.callout-tip}
+## Hakkınızı nasıl kullanırsınız?
+
+Veri sorumlusuna (örneğin üniversitenize) yazılı başvurarak bu haklarınızı kullanabilirsiniz. Başvurunuz reddedilirse veya yanıt verilmezse **Kişisel Verileri Koruma Kurulu**'na şikâyet edebilirsiniz.
+
+Kurumsal web sitelerinde "Aydınlatma Metni" ve "Başvuru Formu" başlıkları altında bu bilgiler bulunur.
+:::
+
+# Dijital Ayak İzi
+
+**Dijital ayak izi**, çevrimiçi ortamda yaptığınız her şeyin bıraktığı izdir.
+
+![Dijital ayak izi](gorseller/diagram-ayakizi.png){width=76%}
+
+| Tür | Kapsam | Örnekler |
+|:---|:---|:---|
+| **Aktif iz** | Bilerek paylaştıklarınız | Paylaşımlar, yorumlar, üyelikler |
+| **Pasif iz** | Kendiliğinden toplananlar | Konum, çerezler, tarama geçmişi |
+
+Ayak izinin üç özelliği onu önemli kılar:
+
+- **Kalıcıdır:** Paylaştığınız şey silinse de kopyalanmış olabilir.
+- **Aranabilir:** Yıllar sonra bile bir arama sonucunda çıkabilir.
+- **Birleştirilebilir:** Farklı kaynaklardaki veriler birleştirilerek sizinle ilişkilendirilebilir.
+
+::: {.callout-warning}
+## Üniversite ve iş hayatında
+
+İşverenler ve kabul komiteleri, adaylar hakkında **açık kaynak araştırması** yapabilir. Sosyal medyadaki bir paylaşım, yıllar sonra bir iş başvurunuzu etkileyebilir.
+
+**Pratik ölçü:** Paylaşmadan önce şu soruyu sorun — *"Bunu beş yıl sonra işverenim görmesini ister miydim?"*
+:::
+
+# Gizlilik Ayarları ve İzinler
+
+## Uygulama izinleri
+
+Bir uygulama yüklediğinizde çeşitli izinler ister: konum, kamera, mikrofon, kişiler, dosyalar. Her izni sorgulayın:
+
+- **Gerekli mi?** Bu uygulama, işini yapmak için bu izne ihtiyaç duyuyor mu?
+- **Orantılı mı?** Bir fener uygulaması konumunuzu neden istiyor?
+- **Ne zaman?** "Yalnızca kullanırken" seçeneği, "her zaman"dan daha güvenlidir.
+
+## Sosyal medya gizlilik ayarları
+
+- Profilinizin **kimlere göründüğünü** belirleyin.
+- **Konum paylaşımını** kapatın; fotoğrafın çekildiği yer otomatik eklenmesin.
+- **Etiketleme onayı** isteyin; başkaları sizi izniniz olmadan etiketlemesin.
+- Eski paylaşımlarınızın görünürlüğünü **gözden geçirin**.
+- **Üçüncü taraf uygulamalara** verilen erişimleri kontrol edin ve gereksizleri kaldırın.
+
+# Telif Hakkı ve Lisanslar
+
+Bir eser üretildiği anda **telif hakkı** doğar. Bu hak, eseri kimin hangi koşullarla kullanabileceğini belirler.
+
+![Telif ve lisans](gorseller/diagram-lisans.png){width=76%}
+
+| Durum | Ne yapabilirsiniz |
+|:---|:---|
+| **Telifli** (izin verilmemiş) | Kullanamazsınız; izin almanız gerekir |
+| **Creative Commons** | Lisans şartlarına uyarak kullanabilirsiniz (genellikle atıf) |
+| **Kamu malı / açık lisans** | Serbestçe kullanabilirsiniz |
+
+::: {.callout-warning}
+## Sık yapılan telif hataları
+
+- **Görsel:** İnternetten bulunan fotoğrafı ödevde kullanmak — kaynak göstermek **kullanım hakkı vermez**.
+- **Metin:** Uzun bir bölümü alıntılayıp kaynak belirtmemek.
+- **Yazılım:** Korsan yazılım kullanmak — hem hukuka aykırı hem güvenlik riski.
+- **Müzik/video:** Sunumda telifli müzik kullanmak.
+
+**Doğru yol:** lisansı uygun kaynakları tercih etmek ve her zaman kaynak göstermek.
+:::
+
+# Dijital Etik ve Sorumlu Davranış
+
+Teknolojiyi kullanmak bir **sorumluluk** getirir.
+
+## Çevrimiçi nezaket (netiket)
+
+- **Yazdığınızı göndermeden okuyun.** Yazılı iletişimde ton kaybolur; şaka, hakaret gibi anlaşılabilir.
+- **Büyük harfle yazmayın.** Çevrimiçi ortamda bağırmak sayılır.
+- **Kişisel tartışmayı herkese açık yapmayın.** Özel mesaj kullanın.
+- **Başkasının fotoğrafını izinsiz paylaşmayın.**
+- **Yanlış bilgiyi düzeltin**, yaymayın.
+
+## Dijital etiğin ilkeleri
+
+- **Kaynağı belirtin.** Başkasının emeğini kendinizin gibi sunmayın.
+- **İzinsiz erişmeyin.** Başkasının hesabına, dosyasına, cihazına izinsiz girmek suçtur.
+- **Zarar vermeyin.** Kişileri hedef göstermek, taciz etmek, iftira etmek.
+- **Gizliliğe saygı gösterin.** Başkalarının özel bilgilerini paylaşmayın.
+- **Erişilebilirliği düşünün.** Hazırladığınız belge ve sunumlar herkes için erişilebilir olsun.
+
+# Uygulama: Dijital Ayak İzinizi İnceleyin
+
+## Adım 1 — Arama motorunda kendinizi arayın
+
+Kendi adınızı arama motorunda aratın. Çıkan sonuçları inceleyin: hangi bilgiler görünüyor? Beklediğiniz gibi mi?
+
+## Adım 2 — Uygulama izinlerini gözden geçirin
+
+Telefonunuzdaki uygulamaların izinlerini kontrol edin. Gereksiz bulduğunuz **en az iki izni** kapatın.
+
+## Adım 3 — Sosyal medya gizliliğini düzenleyin
+
+Bir hesabınızın gizlilik ayarlarını açın: profil görünürlüğü, konum paylaşımı, etiketleme onayı. En az bir ayarı değiştirin.
+
+## Adım 4 — Bir lisansı inceleyin
+
+Ödev ya da sunumda kullanmayı düşündüğünüz bir görsel bulun. Lisansını kontrol edin: kullanabilir misiniz? Atıf gerekli mi?
+
+::: {.callout-tip}
+## Teslim ve değerlendirme
+
+Bu uygulama notla değerlendirilmez. Amacı, dijital ayak iziniz ve gizlilik ayarlarınız üzerinde somut denetim yapmanızdır.
+:::
+
+# Özet
+
+- **Kişisel veri**, kimliği belirli veya belirlenebilir kişiye ilişkin her bilgidir; **özel nitelikli** veriler daha sıkı korunur.
+- **KVKK** kapsamında ilgili kişi olarak **haklarınız** vardır: öğrenme, düzeltme, silme, tazminat.
+- **Dijital ayak izi** kalıcı, aranabilir ve birleştirilebilir; aktif ve pasif iz olarak ikiye ayrılır.
+- **Uygulama izinleri** ve **gizlilik ayarları** düzenli olarak gözden geçirilmelidir.
+- **Telif hakkı** eserle birlikte doğar; **Creative Commons** ve açık lisanslar şartlı kullanım sağlar.
+- **Kaynak göstermek**, kullanım hakkı vermez; lisans ayrı bir konudur.
+- **Dijital etik**: kaynağı belirtmek, izinsiz erişmemek, zarar vermemek, gizliliğe saygı.
+
+# Kendini Sınama Soruları
+
+1. Kişisel veriyi tanımlayın ve üç örnek verin.
+2. Özel nitelikli kişisel veri nedir; hangi bilgiler girer?
+3. KVKK kapsamında ilgili kişinin üç hakkını yazın.
+4. Aktif ve pasif dijital ayak izi arasındaki fark nedir?
+5. Bir uygulama izni isterken hangi üç soruyu sormalısınız?
+6. Telifli bir görseli ödevde kullanmanın doğru yolu nedir?
+7. Kaynak göstermek neden kullanım hakkı vermez?
+8. Dijital etiğin üç ilkesini yazın.
+
+# Kaynaklar
+
+- **Kişisel Verileri Koruma Kurumu (KVKK)** — kanun metni, aydınlatma metinleri, başvuru formları. (kvkk.gov.tr)
+- **Creative Commons** — lisans türleri ve arama araçları. (creativecommons.org)
+- **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
+- **W3C Erişilebilirlik Girişimi** — erişilebilirlik ilkeleri. (w3.org/WAI)
+
+Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

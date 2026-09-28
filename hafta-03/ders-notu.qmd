@@ -1,0 +1,224 @@
+---
+title: "Yazılım ve İşletim Sistemleri"
+subtitle: "ENF101 Temel Bilgi Teknolojileri · 3. Hafta Ders Notu"
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+# Giriş
+
+Geçen hafta bilgisayarın **donanımını** — elle tutulur parçalarını — inceledik. Ama donanım tek başına hiçbir işe yaramaz; ne yapacağını söyleyen bir şey olmadan sadece ısınan bir metal yığınıdır. Ona ne yapacağını söyleyen şey **yazılımdır**.
+
+Bu hafta iki kavramı ele alıyoruz. Birincisi **yazılımın kendisi**: hangi türleri vardır, açık kaynak ile kapalı kaynak ne anlama gelir. İkincisi ise bilgisayarın bütün parçalarını yöneten temel yazılım: **işletim sistemi**. Hangi işletim sistemini kullandığınız günlük deneyiminizi doğrudan belirler — nitekim bu derste platformdan bağımsız çalışıyoruz ve bu hafta bunun neden mümkün olduğunu göreceksiniz.
+
+::: {.callout-note}
+## Bu haftanın temel fikri
+
+Donanım gövdedir, yazılım ise ona ne yapacağını söyleyen akıldır. İkisi arasındaki köprüyü kuran **işletim sistemi**dir.
+:::
+
+# Bu Haftanın Öğrenme Çıktıları
+
+- Sistem yazılımı ile uygulama yazılımını birbirinden ayırt eder.
+- Açık kaynak ve kapalı kaynak yazılım arasındaki farkı açıklar.
+- İşletim sisteminin temel görevlerini sıralar.
+- Windows, Linux, macOS ve Pardus'u temel özellikleri bakımından karşılaştırır.
+- Masaüstü, mobil ve gömülü işletim sistemlerini ayırt eder.
+- Dosya sistemi kavramını ve dizin yapısını açıklar.
+- Karşılaştığı basit sorunlarda izlenecek doğru adımları bilir.
+
+# Yazılım Nedir?
+
+**Yazılım**, bilgisayara ne yapacağını söyleyen komutlar ve veriler bütünüdür. Elle tutulmaz, görünmez — ama donanımı anlamlı kılan şey odur. Yazılımlar iki büyük gruba ayrılır.
+
+## Sistem yazılımı ve uygulama yazılımı
+
+**Sistem yazılımı**, bilgisayarın kendisini çalıştırmakla ilgilenir. İşletim sistemi bunun en bilinen örneğidir; donanımı yönetir, diğer yazılımlara zemin hazırlar.
+
+**Uygulama yazılımı** ise kullanıcının belirli bir işini yapmasını sağlar: belge yazmak, tablo hesaplamak, sunum hazırlamak, fotoğraf düzenlemek.
+
+| Tür | Ne yapar | Örnekler |
+|:---|:---|:---|
+| Sistem yazılımı | Donanımı yönetir, zemin hazırlar | İşletim sistemi, sürücüler, yardımcı programlar |
+| Uygulama yazılımı | Kullanıcının işini yapar | Kelime işlemci, tablo, tarayıcı, oyun |
+
+![Yazılım katmanları](gorseller/diagram-katmanlar.png){width=62%}
+
+Bu katmanlı yapıyı akılda tutmak önemlidir: en altta **donanım**, ortada **işletim sistemi**, en üstte **uygulamalar** bulunur. Bir uygulama doğrudan donanıma erişemez; isteğini işletim sistemine iletir, işletim sistemi de donanıma ulaşır.
+
+# Açık Kaynak ve Kapalı Kaynak Yazılım
+
+Yazılımları ayıran bir başka ölçüt, **kaynak kodunun** erişilebilir olup olmadığıdır.
+
+**Kapalı kaynak (proprietary) yazılımda** kaynak kodu gizlidir; yalnızca üretici şirket onu görüp değiştirebilir. Kullanıcı yazılımı kullanma hakkına sahiptir ama inceleyemez, değiştiremez, kopyalayıp dağıtamaz.
+
+**Açık kaynak (open source) yazılımda** kaynak kodu herkese açıktır. İsteyen inceleyebilir, değiştirebilir, geliştirebilir ve — lisansına bağlı olarak — paylaşabilir.
+
+| | Açık kaynak | Kapalı kaynak |
+|:---|:---|:---|
+| Kaynak kodu | Herkese açık | Gizli |
+| Ücret | Genellikle ücretsiz | Lisanslı, ücretli olabilir |
+| Değiştirme | Serbest | Genellikle yasak |
+| Güvenlik denetimi | Herkes inceleyebilir | Yalnızca üretici |
+| Destek | Topluluk veya ücretli destek | Üretici desteği |
+| Örnek | Linux, Pardus, LibreOffice, Firefox | Windows, macOS, ticari ofis paketleri |
+
+::: {.callout-tip}
+## Hangisi daha iyi?
+
+Bu bir tercih sorusudur, üstünlük sorusu değil. Açık kaynak yazılımlar denetlenebilirlik ve maliyet avantajı sağlar; kapalı kaynak yazılımlar genellikle daha cilalı bir kullanıcı deneyimi ve kurumsal destek sunar. Kurumlar çoğu zaman ikisini bir arada kullanır.
+:::
+
+# İşletim Sistemi
+
+**İşletim sistemi (OS)**, donanım ile kullanıcı arasındaki aracı yazılımdır. Bilgisayar açıldığında ilk o çalışır, kapanana kadar da arka planda çalışmaya devam eder.
+
+## Görevleri
+
+- **Donanım yönetimi:** İşlemci, bellek, depolama ve çevre birimlerini programlar arasında paylaştırır.
+- **Dosya sistemi yönetimi:** Dosyaların nerede ve nasıl saklanacağını düzenler.
+- **Süreç yönetimi:** Hangi programın ne zaman çalışacağını, ne kadar kaynak alacağını belirler.
+- **Kullanıcı arayüzü:** Kullanıcının bilgisayarla konuşmasını sağlar (grafik arayüz, komut satırı).
+- **Kullanıcı ve güvenlik yönetimi:** Kimin hangi dosyaya erişebileceğini denetler.
+- **Hata yönetimi:** Bir program çöktüğünde tüm sistemi değil, yalnızca o programı durdurur.
+
+![İşletim sisteminin görevleri](gorseller/diagram-os-gorev.png){width=62%}
+
+## İşletim sistemi aileleri
+
+| İşletim sistemi | Özelliği | Kaynak modeli |
+|:---|:---|:---|
+| **Windows** | En yaygın masaüstü sistemi; geniş yazılım ve donanım desteği | Kapalı kaynak, ücretli |
+| **Linux** | Açık kaynak; pek çok farklı dağıtımı vardır (Ubuntu, Fedora, Debian) | Açık kaynak, ücretsiz |
+| **macOS** | Yalnızca Apple cihazlarında çalışır; arayüz ve donanım uyumu bütünleşiktir | Kapalı kaynak, ücretli |
+| **Pardus** | TÜBİTAK bünyesinde geliştirilen yerli ve açık kaynak Linux dağıtımı | Açık kaynak, ücretsiz |
+
+::: {.callout-note}
+## Pardus
+
+Pardus, Debian tabanlı bir Linux dağıtımıdır ve TÜBİTAK bünyesinde geliştirilmektedir. Kamu kurumlarında ve eğitimde yaygınlaştırma çalışmaları sürmektedir — Millî Eğitim Bakanlığı ile yaygınlaştırma projesi imzalanmış, etkileşimli tahtalarda ve sağlık kurumlarında geçiş başlamıştır.
+
+Sizin için önemi şu: mezun olduktan sonra kamu kurumlarında çalışırsanız karşılaşabileceğiniz bir sistemdir ve aynı zamanda **açık kaynak kavramının somut bir örneğidir**. Güncel bilgi için pardus.org.tr adresine bakabilirsiniz.
+:::
+
+::: {.callout-tip}
+## Bu ders neden platformdan bağımsız?
+
+Farklı işletim sistemlerinde menüler ve düğmeler farklı yerlerde olabilir ama **kavramlar aynıdır**: her sistemde dosya vardır, klasör vardır, kullanıcı hesabı vardır, yazılım kurulur. Biz bu derste kavramları öğreniyoruz; bir sistemi öğrenen diğerine kolayca geçer.
+:::
+
+# Mobil ve Gömülü İşletim Sistemleri
+
+Masaüstü sistemler işletim sistemlerinin yalnızca bir türüdür. Cihazın amacı ve kaynakları değiştikçe işletim sistemi de değişir.
+
+- **Masaüstü işletim sistemleri** (Windows, Linux, macOS): Geniş kaynak, çok sayıda program, klavye-fare ile kullanım.
+- **Mobil işletim sistemleri** (Android, iOS): Dokunmatik arayüz, pil ve veri tasarrufu öncelikli, uygulama mağazası merkezli.
+- **Sunucu işletim sistemleri:** Kesintisiz çalışmaya ve çok kullanıcılı erişime göre tasarlanmış sistemler.
+- **Gömülü işletim sistemleri:** Tek bir amaca özel cihazların içinde çalışır — modem, akıllı televizyon, araç, endüstriyel makine, yazıcı.
+
+| Tür | Önceliği | Örnek cihaz |
+|:---|:---|:---|
+| Masaüstü | Güç ve çok yönlülük | Bilgisayar, dizüstü |
+| Mobil | Pil, dokunmatik, taşınabilirlik | Telefon, tablet |
+| Sunucu | Kesintisiz çalışma, çok kullanıcı | Web sunucusu, veri merkezi |
+| Gömülü | Tek amaç, düşük kaynak | Modem, akıllı TV, araç |
+
+::: {.callout-note}
+## 14. haftaya köprü
+
+Mobil işletim sistemlerini burada **işletim sistemi olarak** tanıdık: görevleri ve masaüstünden farkları. 14. haftada mobil cihazları **cihaz ve veri olarak** ele alacağız: uygulama izinleri, senkronizasyon, sağlık verisi ve gizlilik.
+:::
+
+# Dosya Sistemi
+
+**Dosya sistemi**, depolama aygıtındaki dosyaların nasıl düzenlendiğini belirleyen yapıdır. İşletim sistemi bu yapı sayesinde "hangi dosya nerede" sorusunu yanıtlar.
+
+Dosya sistemi **ağaç** biçiminde bir düzen kurar: tek bir kök dizinden başlar, altına klasörler, onların altına alt klasörler ve dosyalar yerleşir. Her dosyanın bir **adı**, bir **uzantısı** ve bir **yolu** vardır.
+
+```
+Belgeler/
+├── Dersler/
+│   ├── enf101-notlar.docx
+│   └── enf101-sunum.pptx
+└── Kişisel/
+    └── ozgecmis.pdf
+```
+
+Farklı işletim sistemleri farklı dosya sistemleri kullanır — örneğin Windows'ta NTFS, Linux'ta ext4, taşınabilir belleklerde sıklıkla exFAT. Bu konuyu gelecek hafta dosya yönetimi ve disk biçimlendirme başlığı altında ayrıntılı ele alacağız.
+
+# Basit Sorunlara İlk Bakış
+
+| Belirti | İlk akla gelen neden | İlk adım |
+|:---|:---|:---|
+| Bilgisayar açılmıyor | Güç kaynağı sorunu | Kablo ve prize bakın |
+| Çok yavaşladı | Bellek yetmiyor, çok program açık | Gereksiz programları kapatın |
+| Program yanıt vermiyor | Program takıldı | Programı kapatıp yeniden açın |
+| Cihaz aşırı ısınıyor | Havalandırma kapalı | Havalandırma deliklerini açın, temizleyin |
+| İnternet yok | Bağlantı sorunu | Modemi kapatıp açın, kablosuzu kontrol edin |
+| Ekran dondu | Sistem takıldı | Bekleyin; sürerse yeniden başlatın |
+
+::: {.callout-warning}
+## Üç altın kural
+
+**1. Panik yapmayın.** Bilgisayarın donması çoğu zaman geçicidir.
+**2. Veriyi kaydetmeyi düşünün.** Yeniden başlatmadan önce çalışmanızı kaydedin.
+**3. Yeniden başlatmak çoğu sorunu çözer.** Bu bir klişe değil, gerçekten işe yarar bir yöntemdir.
+:::
+
+Bunların dışında kalan, cihazın hiç açılmadığı veya veri kaybı riski olan durumlarda yapılacak en doğru şey **teknik desteğe başvurmaktır**. Deneme yanılma yoluyla müdahale sorunu büyütebilir.
+
+# Uygulama: Kendi Sisteminizi Tanıyın
+
+## Adım 1 — İşletim sisteminizi belirleyin
+
+Kullandığınız cihazın hangi işletim sistemini çalıştırdığını, sürümünü de belirterek yazın.
+
+## Adım 2 — Bir yazılımı sınıflandırın
+
+Günlük kullandığınız üç yazılım seçin. Her biri için şu iki soruyu yanıtlayın: Bu bir **sistem** yazılımı mı, **uygulama** yazılımı mı? **Açık** kaynak mı, **kapalı** kaynak mı?
+
+## Adım 3 — Dosya sistemini inceleyin
+
+Cihazınızda bir klasör açın ve dizin yapısını inceleyin: ana klasör, alt klasörler, dosyalar. Üç seviyeli bir yol örneği yazın.
+
+## Adım 4 — Kısa değerlendirme yazın
+
+Bir paragraf yazın: *Açık kaynak ve kapalı kaynak yazılım ayrımını öğrendikten sonra kullandığınız yazılımlar hakkındaki düşünceniz değişti mi? Nasıl?*
+
+::: {.callout-tip}
+## Teslim ve değerlendirme
+
+Bu uygulama notla değerlendirilmez. Amacı, yazılım ve işletim sistemi kavramlarını kendi cihazınız üzerinden somutlaştırmanızdır.
+:::
+
+# Özet
+
+- **Yazılım**, donanıma ne yapacağını söyleyen komutlar bütünüdür; **sistem** ve **uygulama** yazılımı olarak ikiye ayrılır.
+- **Açık kaynak** yazılımın kodu herkese açıktır; **kapalı kaynak** yazılımda kod gizlidir.
+- **İşletim sistemi**, donanım ile kullanıcı arasındaki aracıdır; donanımı, dosyaları, süreçleri ve güvenliği yönetir.
+- **Windows, Linux, macOS ve Pardus** başlıca masaüstü işletim sistemleridir.
+- İşletim sistemleri **masaüstü, mobil, sunucu ve gömülü** olarak sınıflandırılır.
+- **Dosya sistemi**, depolamadaki dosyaları ağaç biçiminde düzenler.
+- Basit sorunlarda doğru refleks: panik yapmamak, veriyi kaydetmek, gerekirse yeniden başlatmak.
+
+# Kendini Sınama Soruları
+
+1. Sistem yazılımı ile uygulama yazılımı arasındaki fark nedir? Birer örnek verin.
+2. Açık kaynak yazılımın kapalı kaynak yazılıma göre iki avantajını yazın.
+3. İşletim sisteminin üç görevini sıralayın.
+4. Pardus nedir ve neden önemlidir?
+5. Mobil işletim sistemini masaüstü işletim sisteminden ayıran iki özellik nedir?
+6. Gömülü işletim sistemine iki örnek verin.
+7. Dosya sistemindeki ağaç yapısını kısaca açıklayın.
+8. "Bilgisayar çok yavaşladı" sorununda izlenecek ilk iki adım nedir?
+
+# Kaynaklar
+
+- **Pardus** — yerli ve açık kaynak işletim sistemi; kullanım kılavuzları. (pardus.org.tr)
+- **İşletim sistemlerinin resmî yardım sayfaları** — Windows, Linux dağıtımları ve macOS için kullanıcı belgeleri.
+- **Özgür Yazılım Vakfı ve Açık Kaynak Girişimi** — açık kaynak lisansları ve felsefesi hakkında kaynaklar. (fsf.org, opensource.org)
+
+Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

@@ -1,0 +1,404 @@
+---
+title: "Quarto Özellikleri"
+subtitle: "ENF101 ders malzemesi için örnek belge"
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+# Bu belge nedir?
+
+Bu, ders malzemesi üretirken kullanabileceğimiz Quarto özelliklerinin örneklerini bir arada gösteren bir başvuru belgesidir. Amacı, "şu görünümü nasıl elde ederim?" sorusunun cevabını **kaynağıyla birlikte** göstermektir.
+
+Her bölümde önce **kaynak kod**, ardından o kodun **ürettiği sonuç** yer alır. Beğendiğiniz örneği kopyalayıp kendi dosyanıza taşıyabilirsiniz.
+
+::: callout-note
+## Bu belge ders içeriğinin parçası değildir
+
+`ornekler/` klasörü yalnızca başvuru amaçlıdır. Öğrencilere dağıtılan malzeme `hafta-NN/` klasörlerinde durur.
+:::
+
+# Metin biçimlendirme
+
+**Kalın**, *italik*, ***kalın italik***, `satır içi kod`, ~~üstü çizili~~, alt simge H~2~O, üst simge x^2^.
+
+Kaynak:
+
+``` markdown
+**Kalın**, *italik*, ***kalın italik***, `satır içi kod`, ~~üstü çizili~~,
+alt simge H~2~O, üst simge x^2^.
+```
+
+# Listeler
+
+## Madde işaretli
+
+- Birinci madde
+- İkinci madde
+  - Alt madde
+  - Başka bir alt madde
+- Üçüncü madde
+
+## Numaralı
+
+1.  Birinci adım
+2.  İkinci adım
+    1.  Alt adım
+    2.  Alt adım
+3.  Üçüncü adım
+
+## Görev listesi (kutucuklu)
+
+- [x] Tamamlanmış iş
+- [ ] Devam eden iş
+- [ ] Henüz başlanmamış iş
+
+## Tanım listesi
+
+**Veri**
+
+: İşlenmemiş ham gerçekler.
+
+**Enformasyon**
+
+: Bağlam içine yerleştirilmiş veri.
+
+# Çağrı kutuları
+
+Quarto'nun hazır kutu tipleri vardır. Her biri farklı bir amaç için renklendirilir.
+
+::: callout-note
+## Not
+
+Genel bilgi vermek için. En sık kullanılan kutu tipi.
+:::
+
+::: callout-tip
+## İpucu
+
+Pratik öneri veya kısayol vermek için.
+:::
+
+::: callout-important
+## Önemli
+
+Mutlaka bilinmesi gereken bilgi için.
+:::
+
+::: callout-warning
+## Uyarı
+
+Dikkat edilmezse sorun çıkaracak durumlar için.
+:::
+
+::: callout-caution
+## Dikkat
+
+Riskli işlemler için. En güçlü uyarı tipi.
+:::
+
+::: callout-note
+## Başlığı özelleştirebilirsiniz
+
+Başlığı değiştirmek için `##` satırına istediğinizi yazmanız yeterlidir.
+:::
+
+Kaynak:
+
+``` markdown
+::: {.callout-warning}
+## Uyarı
+Dikkat edilmezse sorun çıkaracak durumlar için.
+:::
+```
+
+# Tablolar
+
+| Kavram      | Tanım                   | Örnek               |
+|:------------|:------------------------|:--------------------|
+| Veri        | Ham gerçekler           | 23,5                |
+| Enformasyon | Bağlam kazanmış veri    | Hava 23,5 °C        |
+| Bilgi       | Yorumlanmış enformasyon | Öğle vakti koşulmaz |
+
+Sütun genişliği, ayırıcı satırdaki tire sayısıyla ayarlanır. Hizalamayı iki nokta belirler: `:---` sola, `:---:` ortaya, `---:` sağa.
+
+| Sola hizalı | Ortaya | Sağa |
+|:------------|:------:|-----:|
+| metin       | metin  | 1250 |
+| metin       | metin  |   48 |
+
+# Kod blokları
+
+Sözdizimi renklendirmesi otomatiktir.
+
+``` python
+sayilar = [48, 49, 50, 52, 51, 53, 54, 56]
+ortalama = sum(sayilar) / len(sayilar)
+print(f"Ortalama: {ortalama:.1f}")
+```
+
+``` bash
+quarto render hafta-03
+```
+
+# Matematik
+
+Satır içi ifade: $E = mc^2$ ve $\pi \approx 3{,}14$.
+
+Blok hâlinde:
+
+$$\int_{0}^{\infty} e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$$
+
+Toplam gösterimi:
+
+$$\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$$
+
+# Dipnotlar
+
+Metin içinde bir açıklama vermek için dipnot kullanılabilir[^1]. Dipnotlar sayfa altında görünür.
+
+[^1]: Dipnotun içeriği buraya yazılır. Sayfa altında numaralı olarak çıkar.
+
+# Çapraz başvurular
+
+Belge içindeki tablo, şekil ve bölümlere otomatik numarayla atıf yapılabilir. Örneğin yukarıdaki @tbl-kavramlar tablosuna ya da @sec-diagramlar bölümüne bakabilirsiniz.
+
+Tablo ve şekillerin otomatik numara alması için **etiket** verilir:
+
+| Kavram | Açıklama                      |
+|:-------|:------------------------------|
+| Etiket | `{#tbl-ad}` biçiminde yazılır |
+| Atıf   | `@tbl-ad` biçiminde çağrılır  |
+
+: Çapraz başvuru kullanımı {#tbl-kavramlar}
+
+# Sütun düzeni
+
+Sayfayı yan yana sütunlara bölmek mümkündür.
+
+::::: columns
+::: {.column width="50%"}
+### Sol sütun
+
+Bu tarafa bir liste koyabiliriz:
+
+- Birinci madde
+- İkinci madde
+- Üçüncü madde
+:::
+
+::: {.column width="50%"}
+### Sağ sütun
+
+Bu tarafa da tablo veya görsel:
+
+| Öğe | Değer |
+|:----|------:|
+| A   |    12 |
+| B   |    28 |
+:::
+:::::
+
+# Diyagramlar {#sec-diagramlar}
+
+Quarto, diyagramları **metin olarak** yazmamıza izin verir. Görsel dosyası üretmeye gerek kalmaz; diyagram belgenin içinde yaşar ve düzenlemesi kolaydır. Üç ayrı sistem desteklenir.
+
+::: callout-note
+## Tarayıcı gereksinimi
+
+Mermaid ve Graphviz, PDF üretilirken arka planda bir tarayıcı kullanır. Kurulu değilse Quarto şu komutu önerir: `quarto install chrome-headless-shell` (tek seferlik, yaklaşık 150 MB). TikZ böyle bir şeye ihtiyaç duymaz.
+:::
+
+## Mermaid — akış şeması
+
+Süreç adımları ve kararlar için en uygun araç.
+
+```{mermaid}
+flowchart TD
+    A[Güvenlik açığı fark edildi] --> B{Yama mevcut mu?}
+    B -->|Evet| C[Yamayı uygula]
+    B -->|Hayır| D[Geçici önlem al]
+    C --> E[Durumu bildir]
+    D --> E
+    E --> F[Kayıt altına al]
+```
+
+## Mermaid — sıra şeması
+
+İki taraf arasındaki adım adım etkileşimi gösterir.
+
+```{mermaid}
+sequenceDiagram
+    participant Öğrenci
+    participant Sistem
+    Öğrenci->>Sistem: Kullanıcı adı ve parola
+    Sistem->>Öğrenci: Doğrulama kodu ister
+    Öğrenci->>Sistem: Tek kullanımlık kod
+    Sistem-->>Öğrenci: Giriş başarılı
+```
+
+## Mermaid — zaman çizelgesi
+
+Dönem planı veya proje takvimi için.
+
+```{mermaid}
+gantt
+    title Dönem Planı
+    dateFormat YYYY-MM-DD
+    axisFormat %d %b
+    section İçerik
+    Ders notları      :a1, 2026-09-21, 40d
+    Sunumlar          :a2, after a1, 25d
+    section Kontrol
+    Gözden geçirme    :b1, after a2, 12d
+```
+
+## Mermaid — oran şeması
+
+```{mermaid}
+pie title 40 Dakikalık Oturumun Dağılımı
+    "Anlatım" : 20
+    "Etkinlik" : 12
+    "Soru-cevap" : 8
+```
+
+## Graphviz
+
+Düğüm-kenar ilişkisinin yoğun olduğu yapılarda, özellikle ağ şemalarında Mermaid'den daha güçlüdür.
+
+```{dot}
+graph Ag {
+  rankdir=TB;
+  node [shape=box, style=rounded, fontname="DejaVu Sans"];
+
+  Internet [label="İnternet"];
+  Modem    [label="Modem / Yönlendirici"];
+  AP       [label="Erişim Noktası"];
+  Kablo    [label="Kablolu Cihazlar"];
+  Kablosuz [label="Kablosuz Cihazlar"];
+
+  Internet -- Modem;
+  Modem -- AP;
+  Modem -- Kablo;
+  AP -- Kablosuz;
+}
+```
+
+## TikZ
+
+Diğer ikisi kendi görünümleriyle çizer; TikZ ise belgenin içinde çalıştığı için **tipografiyi ve renkleri aynen alır**. Kurumsal görünümün önemli olduğu şemalar için en uygun seçenek.
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  kutu/.style={draw=navy, rounded corners=3pt, fill=lightbg,
+               minimum width=3.2cm, minimum height=1cm, align=center,
+               font=\small\bfseries, text=navy},
+  ok/.style={-{Latex}, thick, color=accentcol}
+]
+\node[kutu] (a) at (0,0)    {GİRDİ};
+\node[kutu] (b) at (4.2,0)  {İŞLEM};
+\node[kutu] (c) at (8.4,0)  {ÇIKTI};
+\node[kutu] (d) at (4.2,-2) {DEPOLAMA};
+\draw[ok] (a) -- (b);
+\draw[ok] (b) -- (c);
+\draw[ok] (b) -- (d);
+\end{tikzpicture}
+\end{center}
+```
+
+::: callout-note
+## TikZ renkleri
+
+Yukarıdaki şema, ders malzemesinin kendi renklerini kullanır: `navy`, `accentcol`, `lightbg`. Bu renkler ortak tema dosyasında tanımlıdır, ayrıca belirtmeye gerek yoktur.
+:::
+
+# Görseller
+
+Sayfaya görsel eklemek için ünlem işaretiyle başlayan bir satır kullanılır. Köşeli parantez içindeki
+metin **altyazı** olur ve Quarto bunu otomatik olarak numaralar.
+
+Aşağıda 2. haftanın ders notundan alınmış gerçek bir diyagram var:
+
+![Girdi–işlem–çıktı–depolama döngüsü](gorseller/ornek-gorsel.png){#fig-ornek width=62%}
+
+Kaynak kodu şöyledir:
+
+``` markdown
+![Girdi–işlem–çıktı–depolama döngüsü](gorseller/ornek-gorsel.png){#fig-ornek width=62%}
+```
+
+Birkaç nokta:
+
+- **Etiket** (`{#fig-ornek}`) sayesinde görsele metin içinden atıf yapılabilir: bkz. @fig-ornek.
+- **Genişlik** yüzdeyle verildiğinde görsel sayfa genişliğine göre ölçeklenir. Sabit ölçü de verilebilir (`width=8cm`).
+- **Etiket verilmezse** görsel yine görünür, ancak numara almaz ve atıf yapılamaz.
+- Görsel dosyaları, belgenin yanındaki `gorseller/` klasöründe tutulur.
+
+::: callout-tip
+## Görseller nereden gelir?
+Ders malzemesindeki diyagramlar çizim betikleriyle üretilir ve `hafta-NN/gorseller/` klasöründe saklanır.
+Fotoğraf veya ekran görüntüsü kullanılacaksa telif durumuna dikkat edilmelidir: kaynak göstermek
+kullanım hakkı vermez, lisansın uygun olması gerekir.
+:::
+
+# Alıntı ve ayraç
+
+> Alıntı bloğu böyle görünür. Genellikle başka bir kaynaktan yapılan alıntılar veya vurgulanmak istenen ifadeler için kullanılır.
+
+------------------------------------------------------------------------
+
+Yukarıdaki yatay çizgi üç tire ile oluşturulur ve bölümler arasında ayraç görevi görür.
+
+# Numarasız başlık
+
+Bazı başlıkların numara almamasını istiyorsanız `{.unnumbered}` kullanın.
+
+## Bu başlık numara aldı
+
+## Bu başlık numarasız {.unnumbered}
+
+# Yalnızca HTML çıktısında çalışan özellikler
+
+Bu belge PDF olarak üretildi. Bazı Quarto özellikleri yalnızca HTML çıktısında anlamlıdır:
+
+| Özellik              | Ne yapar                                         |
+|:---------------------|:-------------------------------------------------|
+| Sekmeli içerik       | Aynı yerde sekmelerle birden çok içerik gösterir |
+| Kod katlama          | Uzun kod bloklarını katlanır hâle getirir        |
+| Etkileşimli tablolar | Sıralanabilir ve filtrelenebilir tablo           |
+| Belge içi arama      | Uzun belgelerde arama kutusu                     |
+
+Ders malzemesi PDF olarak dağıtıldığı için bu özellikler kullanılmıyor. Ancak malzemenin bir bölümünü web sayfası olarak yayımlamak istersek, **aynı `.qmd` dosyasından** HTML üretmek mümkündür — Quarto'da çıktı biçimi belgenin başındaki ayarla değişir:
+
+``` yaml
+format:
+  pdf: default
+  html: default
+```
+
+Bu satırlarla aynı belge hem PDF hem web sayfası olarak üretilir; içeriği ikinci kez yazmak gerekmez.
+
+# Özet
+
+Bu belgede gösterilenler:
+
+| Özellik             | Ne için                           |
+|:--------------------|:----------------------------------|
+| Metin biçimlendirme | Vurgu, kod, simge                 |
+| Listeler            | Sıralı ve sırasız içerik          |
+| Çağrı kutuları      | Not, ipucu, uyarı                 |
+| Tablolar            | Karşılaştırmalı bilgi             |
+| Kod blokları        | Örnek komut ve program            |
+| Matematik           | Formül ve gösterim                |
+| Dipnotlar           | Sayfa altı açıklama               |
+| Çapraz başvuru      | Tablo ve bölümlere atıf           |
+| Sütunlar            | Yan yana içerik                   |
+| Mermaid             | Akış, sıra, takvim, oran          |
+| Graphviz            | Ağ ve ilişki şemaları             |
+| TikZ                | Kurumsal görünümlü şemalar        |
+| Görseller           | Fotoğraf, ekran görüntüsü, grafik |
+
+Hangisini nerede kullanacağınızdan emin değilseniz, benzer bir örneği ders malzemesinde bulabilirsiniz: `hafta-NN/` klasörlerindeki dosyalar bu özelliklerin gerçek kullanımını içerir.

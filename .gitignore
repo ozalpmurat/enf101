@@ -1,0 +1,50 @@
+# ===============================================================
+# ENF101 ders materyali — git tarafından YOK SAYILAN dosyalar
+#
+# Kaynaklar (hafta-*/*.qmd, tema/*.tex, *.yml, *.md) sürüm takibinde kalır.
+# Burada yalnızca derleme sırasında oluşan geçici çıktılar listelenir.
+# Üretilen PDF'ler de bilinçli olarak takipte tutulur (bkz. README.md).
+# Kurallar ve ayrıntı: AGENTS.md
+# ===============================================================
+
+# --- Quarto ---
+.quarto/
+/_site/
+
+# --- Derleme yan ürünleri ---
+*_files/
+*_cache/
+*.log
+
+# --- LaTeX ara dosyaları ---
+*.aux
+*.toc
+*.out
+*.snm
+*.nav
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# --- Derleme sırasında üretilen .tex dosyaları ---
+# DİKKAT: tema/notlar.tex ve tema/sunum.tex KAYNAKTIR; silinirlerse hiçbir
+# belge derlenmez (AGENTS.md §4). Bu yüzden düz "*.tex" YAZILMAZ; yalnızca
+# derleme çıktısı olan .tex dosyaları yok sayılır.
+/hafta-*/*.tex
+/izlence.tex
+/KILAVUZ_*.tex
+/ornekler/*.tex
+
+# --- İşletim sistemi / editör artıkları ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# --- R / RStudio ---
+.Rproj.user/
+.Rhistory
+.RData

@@ -1,0 +1,181 @@
+---
+title: "Üretken Yapay Zekâ Araçları"
+subtitle: "13. Hafta"
+author: "ENF101 · Temel Bilgi Teknolojileri"
+format: beamer
+---
+
+# Bu Haftanın Çerçevesi
+
+## Öğrenme Çıktıları
+
+- Üretken yapay zekâ araç türlerini ayırt eder.
+- Etkili istem yazar.
+- Çıktıyı doğrulama adımlarını uygular.
+- Akademik dürüstlük sınırlarını bilir.
+- Araca verilmemesi gereken bilgileri ayırt eder.
+- Yapay zekâyı öğrenme aracı olarak kullanır.
+
+# Üretken Yapay Zekâ
+
+## Sınıflandırmaz, Üretir
+
+Yeni içerik üreten modellerdir: **metin, görsel, ses, video, kod**.
+
+| Tür | Ne üretir |
+|:---|:---|
+| Metin | Yazı, özet, liste |
+| Görsel | Fotoğraf, çizim |
+| Ses | Konuşma, müzik |
+| Video | Kısa video |
+| Kod | Program kodu |
+
+## "Üretir" ≠ "Doğrudur"
+
+Akıcı ve düzgün bir metin, **doğru** olduğu anlamına gelmez.
+
+Bu modeller **inandırıcı** çıktı üretmek üzere eğitilmiştir; doğruluk ikinci plandadır.
+
+Geçen haftanın **yanılgı** konusu burada kritik hâle gelir.
+
+# İstem Yazımı
+
+## İstemin Kalitesi Sonucu Belirler
+
+![](gorseller/diagram-istem.png){width=78%}
+
+## İyi İstemin Bileşenleri
+
+| Bileşen | Örnek |
+|:---|:---|
+| **Görev** | "Özetle", "Karşılaştır" |
+| **Bağlam** | "Birinci sınıf öğrencisi için" |
+| **Biçim** | "Madde madde", "tablo" |
+| **Uzunluk** | "En fazla 200 kelime" |
+| **Örnek** | "Şu tonda yaz: …" |
+
+## Zayıf ve Güçlü İstem
+
+**Zayıf:** *"Bana ödev yaz."*
+
+**Güçlü:** *"Lise son sınıf öğrencisine bilgi güvenliğini anlatan bir metin için üç ana başlık öner. Her başlık tek cümle, madde madde."*
+
+## Altı Kural
+
+1. **Net olun**
+2. **Bağlam verin**
+3. **Biçimi belirtin**
+4. **Tek adımda tek iş**
+5. **Örnek verin**
+6. **Yineleyin** — "daha kısa", "daha resmî"
+
+# Çıktıyı Doğrulama
+
+## Zorunlu Bir Adım
+
+![](gorseller/diagram-dogrulama.png){width=78%}
+
+## Dört Adım
+
+1. **Kaynak isteyin** — ama verdiği kaynak da uydurma olabilir
+2. **Bağımsız kaynakla karşılaştırın**
+3. **Sayı ve tarihleri kontrol edin**
+4. **Kendi cümlelerinizle yeniden yazın**
+
+## En Çok Yanlış Çıkanlar
+
+- **Kaynak künyeleri:** yazar, eser, yıl, sayfa
+- **Sayısal veriler:** istatistik, tarih, oran
+- **Atıflar:** "X şöyle demiştir"
+- **Hukuki ve tıbbi bilgiler**
+
+Bunları **doğrulamadan kullanmayın.**
+
+# Akademik Dürüstlük
+
+## Sınır Nerede?
+
+| Kullanım | Değerlendirme |
+|:---|:---|
+| Konuyu anlamak için sormak | ✔ Uygun |
+| Farklı açıklama istemek | ✔ Uygun |
+| Kendi metnini düzeltmek | ✔ Uygun |
+| Ödevi baştan sona yazdırmak | ✘ Uygun değil |
+| Üretileni kendi çalışmanız gibi sunmak | ✘ **İntihal** |
+
+## En Önemli Uyarı
+
+Bir metni yapay zekâya yazdırıp kendi adınıza teslim etmek **intihaldir** — üstelik kaynak da gösterilemez.
+
+Bölümünüzün politikası olabilir; **kurallarınızı bilin**.
+
+## Dürüst Kullanım
+
+- **Öğrenme için kullanın**
+- **Metni kendiniz yazın** — son sözü siz söyleyin
+- **Kullandıysanız belirtin**
+- **Yapay zekâ çıktısını kaynak olarak göstermeyin** — o bir araçtır, kaynak değil
+
+# Gizlilik
+
+## Araca Ne Verilmez
+
+- **Kişisel veriler:** TC kimlik no, adres, sağlık bilgisi
+- **Başkasına ait bilgiler**
+- **Kurumsal gizli belgeler:** sınav sorusu, sözleşme
+- **Parola ve erişim bilgileri** — hiçbir koşulda
+- **Ödev/tez metninizin tamamı**
+
+## Sorulacak Soru
+
+Bir bilgiyi araca yazmadan önce:
+
+**"Bunun internete açık olması sorun yaratır mı?"**
+
+Yanıt "evet" ise yazmayın.
+
+# Yapay Zekâyı Kullanmak
+
+## Yararlı Kullanımlar
+
+| İş | Nasıl yardımcı olur |
+|:---|:---|
+| Anlamadığınız konu | Farklı açıklama |
+| Özetleme | Uzun metni kısaltma |
+| Beyin fırtınası | Başlık, örnek, karşı argüman |
+| Dil düzeltme | Kendi metninizi düzeltme |
+| Alıştırma | Soru üretip kendinizi sınama |
+| Yabancı dil | Metni basitleştirme |
+
+## Cevap Makinesi Değil, Çalışma Arkadaşı
+
+**Kolaylaştırır:** anlamadığınız yeri hemen sorabilirsiniz.
+
+**Zorlaştırır:** cevabı düşünmeden alırsanız öğrenmezsiniz — **sınavda yalnız olacaksınız.**
+
+**Pratik kural:** Önce kendiniz düşünün, sonra sorun.
+
+# Kapanış
+
+## Uygulama: Bir İstemi İyileştirin
+
+1. **Zayıf bir istem** yazın
+2. Aynı isteği **görev, bağlam, biçim, uzunluk, örnek** ekleyerek yeniden yazın
+3. İki cevabı **karşılaştırın**
+4. Bir olgusal bilgiyi **bağımsız kaynaktan doğrulayın**
+5. Bir paragraf yazın: *Bu aracı hangi sınırlar içinde kullanacağım?*
+
+Notla değerlendirilmez.
+
+## Özet
+
+- **Üretken YZ** içerik üretir; doğru olması garanti değildir
+- **İstem**: görev, bağlam, biçim, uzunluk, örnek
+- **Doğrulama**: kaynak iste, karşılaştır, kontrol et, kendin yaz
+- **Ödevi yazdırmak intihaldir**
+- **Gizlilik**: kişisel veri, kurumsal belge, parola verilmez
+- **Cevap makinesi değil, çalışma arkadaşı**
+
+## Gelecek Hafta
+
+**Mobil cihazlar, giyilebilir teknolojiler ve toplumsal etki** — mobil ekosistem, izinler, senkronizasyon, giyilebilir cihazlar, sağlık verisi, nesnelerin interneti ve teknolojinin toplumsal etkileri.

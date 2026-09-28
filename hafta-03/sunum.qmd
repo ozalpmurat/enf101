@@ -1,0 +1,214 @@
+---
+title: "Yazılım ve İşletim Sistemleri"
+subtitle: "3. Hafta"
+author: "ENF101 · Temel Bilgi Teknolojileri"
+format: beamer
+---
+
+# Bu Haftanın Çerçevesi
+
+## Öğrenme Çıktıları
+
+- Sistem ve uygulama yazılımını ayırt eder.
+- Açık kaynak ve kapalı kaynak yazılımı karşılaştırır.
+- İşletim sisteminin görevlerini sıralar.
+- Windows, Linux, macOS ve Pardus'u ayırt eder.
+- Masaüstü, mobil ve gömülü işletim sistemlerini tanır.
+- Dosya sistemi kavramını açıklar.
+- Basit sorunlarda doğru adımı bilir.
+
+# Yazılım Nedir?
+
+## Donanım Gövde, Yazılım Akıl
+
+Donanım tek başına hiçbir işe yaramaz; ona ne yapacağını söyleyen şey **yazılımdır**.
+
+Elle tutulmaz, görünmez — ama donanımı anlamlı kılan odur.
+
+## İki Tür Yazılım
+
+| Tür | Ne yapar | Örnek |
+|:---|:---|:---|
+| **Sistem yazılımı** | Donanımı yönetir, zemin hazırlar | İşletim sistemi, sürücüler |
+| **Uygulama yazılımı** | Kullanıcının işini yapar | Kelime işlemci, tarayıcı, oyun |
+
+## Yazılım Katmanları
+
+![](gorseller/diagram-katmanlar.png){width=62%}
+
+Bir uygulama doğrudan donanıma erişemez; isteğini işletim sistemine iletir.
+
+# Açık Kaynak ve Kapalı Kaynak
+
+## İki Kaynak Modeli
+
+- **Kapalı kaynak:** Kaynak kodu gizli; yalnızca üretici görüp değiştirebilir.
+- **Açık kaynak:** Kaynak kodu herkese açık; incelenebilir, değiştirilebilir, paylaşılabilir.
+
+## Karşılaştırma
+
+| | Açık kaynak | Kapalı kaynak |
+|:---|:---|:---|
+| Kaynak kodu | Herkese açık | Gizli |
+| Ücret | Genellikle ücretsiz | Lisanslı |
+| Güvenlik denetimi | Herkes inceleyebilir | Yalnızca üretici |
+| Örnek | Linux, Pardus, Firefox | Windows, macOS |
+
+## Hangisi Daha İyi?
+
+Bu bir **tercih** sorusudur, üstünlük sorusu değil.
+
+- Açık kaynak: denetlenebilirlik ve maliyet avantajı
+- Kapalı kaynak: cilalı deneyim ve kurumsal destek
+
+Kurumlar çoğu zaman ikisini bir arada kullanır.
+
+# İşletim Sistemi
+
+## Donanım ile Kullanıcı Arasındaki Aracı
+
+İşletim sistemi bilgisayar açıldığında ilk çalışan, kapanana kadar arka planda kalan yazılımdır.
+
+## Görevleri
+
+- **Donanım yönetimi:** Kaynakları programlar arasında paylaştırır
+- **Dosya sistemi yönetimi:** Dosyaların yerini düzenler
+- **Süreç yönetimi:** Hangi program ne zaman çalışacak
+- **Kullanıcı arayüzü:** İnsan ile bilgisayar arasındaki dil
+- **Kullanıcı ve güvenlik yönetimi:** Kim neye erişebilir
+- **Hata yönetimi:** Bir program çökerse yalnızca o durur
+
+## Görevler Şeması
+
+![](gorseller/diagram-os-gorev.png){width=62%}
+
+# İşletim Sistemi Aileleri
+
+## Dört Masaüstü Sistemi
+
+| Sistem | Özelliği | Kaynak |
+|:---|:---|:---|
+| **Windows** | En yaygın; geniş yazılım desteği | Kapalı, ücretli |
+| **Linux** | Açık kaynak; çok dağıtımı var | Açık, ücretsiz |
+| **macOS** | Yalnızca Apple cihazlarda | Kapalı, ücretli |
+| **Pardus** | TÜBİTAK'ın yerli Linux dağıtımı | Açık, ücretsiz |
+
+## Pardus
+
+- Debian tabanlı Linux dağıtımı
+- TÜBİTAK bünyesinde geliştiriliyor
+- Kamu ve eğitimde yaygınlaştırma çalışmaları sürüyor
+- Açık kaynağın **somut ve yerli** örneği
+
+Kamuda çalışırsanız karşılaşabileceğiniz bir sistem.
+
+## Bu Ders Neden Platformdan Bağımsız?
+
+Farklı sistemlerde menüler farklı yerlerde olabilir ama **kavramlar aynıdır**:
+
+- Her sistemde dosya ve klasör vardır
+- Kullanıcı hesabı vardır
+- Yazılım kurulur, kaldırılır
+
+Bir sistemi öğrenen diğerine kolayca geçer.
+
+# İşletim Sistemi Türleri
+
+## Masaüstü Değil, Pek Çok Tür
+
+| Tür | Önceliği | Örnek cihaz |
+|:---|:---|:---|
+| Masaüstü | Güç ve çok yönlülük | Bilgisayar, dizüstü |
+| Mobil | Pil, dokunmatik | Telefon, tablet |
+| Sunucu | Kesintisiz, çok kullanıcı | Web sunucusu |
+| Gömülü | Tek amaç, düşük kaynak | Modem, akıllı TV |
+
+## Mobil İşletim Sistemleri
+
+- **Android:** Açık kaynak temelli, çok üreticili
+- **iOS:** Yalnızca Apple cihazlarda, kapalı ekosistem
+
+Ortak özellikler: dokunmatik arayüz, pil tasarrufu, uygulama mağazası.
+
+14. haftada mobil cihazları **cihaz ve veri olarak** ele alacağız.
+
+## Gömülü İşletim Sistemleri
+
+Tek bir amaca özel cihazların içinde çalışır:
+
+- Modem, yönlendirici
+- Akıllı televizyon
+- Araç bilgisayarı
+- Yazıcı, endüstriyel makine
+
+Kullanıcı bu sistemlerin varlığını çoğu zaman fark etmez.
+
+# Dosya Sistemi
+
+## Ağaç Biçiminde Düzen
+
+Dosya sistemi, depolamadaki dosyaların nasıl düzenlendiğini belirler. Tek bir **kök** dizinden başlar.
+
+```
+Belgeler/
+├── Dersler/
+│   ├── enf101-notlar.docx
+│   └── enf101-sunum.pptx
+└── Kisisel/
+    └── ozgecmis.pdf
+```
+
+Her dosyanın bir **adı**, bir **uzantısı** ve bir **yolu** vardır.
+
+## Dosya Sistemleri Farklıdır
+
+- **Windows:** NTFS
+- **Linux:** ext4
+- **Taşınabilir bellekler:** sıklıkla exFAT
+
+Farkı gelecek hafta disk biçimlendirme başlığında ayrıntılı göreceğiz.
+
+# Basit Sorunlara İlk Bakış
+
+## Sık Karşılaşılan Sorunlar
+
+| Belirti | İlk adım |
+|:---|:---|
+| Açılmıyor | Kablo ve prize bakın |
+| Çok yavaş | Gereksiz programları kapatın |
+| Program yanıt vermiyor | Kapatıp yeniden açın |
+| Aşırı ısınıyor | Havalandırmayı açın |
+| İnternet yok | Modemi kapatıp açın |
+
+## Üç Altın Kural
+
+- **Panik yapmayın.** Donma çoğu zaman geçicidir.
+- **Veriyi kaydedin.** Yeniden başlatmadan önce çalışmanızı kaydedin.
+- **Yeniden başlatın.** Bu gerçekten işe yarar.
+
+## Teknik Desteğe Başvurun
+
+Cihaz hiç açılmıyorsa ya da veri kaybı riski varsa deneme yanılma yapmayın; destek isteyin.
+
+# Kapanış
+
+## Uygulama: Kendi Sisteminizi Tanıyın
+
+1. İşletim sisteminizi ve sürümünü belirleyin.
+2. Üç yazılım seçin; her birini **sistem/uygulama** ve **açık/kapalı** olarak sınıflandırın.
+3. Bir klasör açıp üç seviyeli bir dizin yolu yazın.
+
+Notla değerlendirilmez.
+
+## Özet
+
+- **Yazılım**: sistem yazılımı ve uygulama yazılımı
+- **Açık kaynak** kod herkese açık, **kapalı kaynak** kod gizli
+- **İşletim sistemi** donanımı, dosyaları, süreçleri yönetir
+- **Windows, Linux, macOS, Pardus** masaüstü sistemleri
+- **Masaüstü, mobil, sunucu, gömülü** işletim sistemi türleri
+- Basit sorunda: panik yapma, kaydet, yeniden başlat
+
+## Gelecek Hafta
+
+**Dosya yönetimi, depolama ve bulut** — dosya işlemleri, uzantılar, sıkıştırma, çıkarılabilir depolama, disk biçimlendirme, bulut ve yedekleme.

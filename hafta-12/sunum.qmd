@@ -1,0 +1,159 @@
+---
+title: "Yapay Zekâ Okuryazarlığı"
+subtitle: "12. Hafta"
+author: "ENF101 · Temel Bilgi Teknolojileri"
+format: beamer
+---
+
+# Bu Haftanın Çerçevesi
+
+## Öğrenme Çıktıları
+
+- Yapay zekânın ne olduğunu açıklar.
+- Günlük kullanım alanlarını örneklendirir.
+- Nasıl öğrendiğini kavramsal düzeyde açıklar.
+- Büyük veri ile ilişkisini açıklar.
+- Sınırlarını ve yanılgılarını tanır.
+- Etik soruları tartışır.
+
+# Yapay Zekâ Nedir?
+
+## Desen Bulan Sistem
+
+İnsanların yaptığı bazı işleri — tanıma, sınıflandırma, tahmin, üretme — bilgisayarların yapabilmesini sağlayan yöntemler bütünü.
+
+**Önemli:** Bilinçli değildir. Düşünmez, anlamaz, niyet taşımaz.
+
+## Ne Yapabilir, Ne Yapamaz
+
+![](gorseller/diagram-yz-sinir.png){width=76%}
+
+## Doğru Zihinsel Model
+
+"Her şeyi bilen uzman" değil…
+
+**"Çok okuyup çok konuşan ama hiçbir şeyi gerçekten anlamayan asistan."**
+
+Bu benzetme, ne zaman güveneceğinizi gösterir.
+
+# Günlük Hayatta
+
+## Görünmez ama Her Yerde
+
+| Alan | Ne yapıyor |
+|:---|:---|
+| Öneri sistemleri | Beğenilere göre tahmin |
+| Sesli asistanlar | Ses tanıma, dil işleme |
+| Çeviri araçları | Dil modelleri |
+| Görüntü işleme | Yüz tanıma, düzenleme |
+| Navigasyon | Trafik tahmini |
+| Güvenlik | Spam filtresi |
+| Sağlık | Görüntüden tarama |
+| Metin üretimi | Sohbet, özetleme |
+
+## Siz de Kullanıyorsunuz
+
+Arama motorunuz, e-posta hesabınız, klavye önerileriniz — hepsi yapay zekâ içerir.
+
+Bunu **fark etmek**, teknolojiyle ilişkinizi değiştirir.
+
+# Nasıl Öğrenir?
+
+## Kuralları Yazmak Yerine Örneklerden Öğrenmek
+
+![](gorseller/diagram-yz-akis.png){width=78%}
+
+## Üç Adım
+
+1. **Veri:** Çok sayıda örnek verilir
+2. **Model:** Ortak desenler bulunur
+3. **Eğitim:** Yanlışlar düzeltilir, tekrarlanır
+
+Sonuçta model, **yeni** örnek görünce tahmin yapabilir.
+
+## GPU Bağlantısı
+
+2. haftada gördük: GPU "binlerce basit işi aynı anda yapar".
+
+İşte bu yüzden yapay zekâ **eğitiminde** kullanılan donanımın temelidir.
+
+## Büyük Veri
+
+Geleneksel yöntemlerle işlenemeyecek kadar **çok, hızlı ve çeşitli** veri kütlesi.
+
+**Döngü:**
+- Büyük veri → yapay zekâ *(eğitim için gerekli)*
+- Yapay zekâ → büyük veri *(kullanım yeni veri üretir)*
+
+## Veriniz Modelin Parçası Olabilir
+
+Bir yapay zekâ aracına yazdığınız metin, yüklediğiniz belge — hizmet koşullarına bağlı olarak **model geliştirmede kullanılabilir**.
+
+Kişisel veri veya özel belge yüklemeyin.
+
+# Sınırlar
+
+## Yanılgı (Halüsinasyon)
+
+Model, **kendinden emin bir tonda yanlış bilgi** üretebilir.
+
+Olmayan bir kitap, makale veya olaydan söz edebilir.
+
+## Neden Olur?
+
+Model **doğruyu aramaz**; bir sonraki kelimeyi **tahmin eder**.
+
+Bu tahmin çoğu zaman isabetlidir — bazen de akla yatkın ama yanlıştır.
+
+**Sonuç:** Her olgusal bilgi doğrulanmalıdır.
+
+## Diğer Sınırlar
+
+| Sınır | Ne demek |
+|:---|:---|
+| Önyargı | Eğitim verisindeki önyargıyı yansıtır |
+| Güncellik | Eğitim tarihinden sonrasını bilemez |
+| Bağlam | Sizin durumunuzu bilmez |
+| Kaynak | Verdiği kaynak uydurma olabilir |
+| Hesap | Uzun işlemlerde hata yapabilir |
+
+# Etik Sorular
+
+## Tartışılan Konular
+
+- **Önyargı:** Ayrımcılığı öğrenip yansıtır mı?
+- **Gizlilik:** Kullanıcı verisi nasıl kullanılıyor?
+- **Sorumluluk:** Hata yaptığında sorumlu kim?
+- **Şeffaflık:** Karar açıklanabiliyor mu?
+- **Emek ve telif:** Üretilen içerik kimin?
+- **İş hayatı:** Hangi beceriler değer kazanacak?
+
+## Kesin Cevap Yok
+
+Bu sorular toplum olarak tartışılıyor.
+
+Sizin için önemli olan: **bu soruların farkında olmak**.
+
+# Kapanış
+
+## Uygulama: Yapay Zekâyı Sorgulayın
+
+1. Son bir günde kullandığınız araçlardan **beşinde** yapay zekâ var mı?
+2. Bir yapay zekâ aracına **doğrulanabilir bir soru** sorun; cevabı güvenilir kaynaktan kontrol edin
+3. Bir etik soru seçip bir paragraf yazın: *Teşhis önerdiğinde sorumluluk kimde?*
+4. Bir aracın gizlilik koşullarını okuyun: veriniz model eğitiminde kullanılıyor mu?
+
+Notla değerlendirilmez.
+
+## Özet
+
+- YZ **desen bulur**, anlamaz; bilinçli değildir
+- Günlük hayatta **görünmez** biçimde her yerde
+- **Veri → model → eğitim**; GPU ve büyük veri temeli
+- **Yanılgı**: emin görünen yanlış bilgi → doğrulayın
+- **Önyargı, gizlilik, sorumluluk, telif** etik soruları
+- Araca yüklediğiniz veri **modelde kullanılabilir**
+
+## Gelecek Hafta
+
+**Üretken yapay zekâ araçları** — araç türleri, istem yazımı, çıktıların doğrulanması, akademik dürüstlük ve gizlilik.

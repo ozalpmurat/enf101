@@ -1,0 +1,255 @@
+---
+title: "Elektronik Tablo ve Grafik Okuma"
+subtitle: "8. Hafta"
+author: "ENF101 · Temel Bilgi Teknolojileri"
+format: beamer
+---
+
+# Bu Haftanın Çerçevesi
+
+## Öğrenme Çıktıları
+
+- Elektronik tablonun temel kavramlarını tanır.
+- Formül yazar; göreli ve mutlak başvuruyu ayırt eder.
+- Temel fonksiyonları amaca uygun kullanır.
+- Veriyi biçimlendirir, sıralar ve filtreler.
+- Veri türüne uygun grafiği seçip grafik oluşturur.
+- Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
+
+# Elektronik Tablo
+
+## Elektronik Tablo Nedir?
+
+Verinin hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** yazılımdır.
+
+- Bir hücreye yazılan formül, başka hücreleri girdi olarak kullanır.
+- Girdi değişince sonuç **kendiliğinden** güncellenir.
+- Aynı zamanda küçük bir veri tabanı ve görselleştirme aracıdır.
+
+Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok listeleri, ölçüm karşılaştırmaları.
+
+## Temel Kavramlar
+
+| Kavram | Ne demek | Örnek |
+|:---|:---|:---|
+| Hücre | Satır ve sütunun kesişimi | B3 |
+| Satır | Yatay sıra (numarayla) | 5. satır |
+| Sütun | Dikey sıra (harfle) | C sütunu |
+| Aralık | Birden çok hücre | A2:A20 |
+| Çalışma kitabı | Tablo dosyasının tamamı | `butce.xlsx` |
+
+## Veri Türleri
+
+| Tür | Örnek | Hizalama |
+|:---|:---|:---|
+| Metin | "Ankara" | Sola |
+| Sayı | 1250, 3.75 | Sağa |
+| Tarih / saat | 12.03.2026 | Sağa |
+| Mantıksal | DOĞRU / YANLIŞ | Ortaya |
+| Formül | `=A1+A2` | Sağa |
+
+Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılmaz**.
+
+## Formüller Nasıl Yazılır
+
+Formüller **eşittir işaretiyle** başlar; aksi hâlde tablo yazdığınızı metin sayar.
+
+| Yazım | Anlamı |
+|:---|:---|
+| `=A1+A2` | Toplar |
+| `=A1-B1` | Çıkarır |
+| `=A1*B1` | Çarpar |
+| `=A1/B1` | Böler |
+| `=(A1+A2)/2` | Parantez önce işlenir |
+
+Formüle sayı yazmak yerine **hücre adresi** yazın. Yoksa girdi değiştiğinde sonuç güncellenmez.
+
+## Göreli ve Mutlak Başvuru
+
+- **Göreli (`A1`):** Kopyalandığı yöne göre kayar. Bir satır aşağı → `A2`.
+- **Mutlak (`$A$1`):** Kopyalansa da sabit kalır. `$` sütunu veya satırı kilitler.
+
+Sabit bir değere göre oranlarken toplam hücresi mutlak yazılır: `=B2/$B$10`
+
+## Yüzde Değişim ve Yüzde Puan
+
+| Durum | Yüzde puan farkı | Göreli değişim |
+|:---|:---|:---|
+| %20 → %25 | 5 puan | %25 artış |
+| %2 → %3 | 1 puan | %50 artış |
+| %50 → %55 | 5 puan | %10 artış |
+
+Aynı "5 puan" artış, tabana göre %25, %50 ya da %10 olarak ifade edilir. "Yüzde 25 arttı" denince **neyin yüzde 25'i** diye sorun.
+
+## Küçük Taban Etkisi
+
+- Vaka sayısı 2'den 6'ya çıktı → "%200 arttı"
+- Matematiksel olarak doğru, anlatı olarak yanıltıcı.
+- **Küçük sayılarda oranlar hızla büyür.**
+
+Oran haberlerinde ilk soru: **taban sayı kaç?**
+
+# Fonksiyonlar
+
+## Sık Kullanılan Fonksiyonlar
+
+| Fonksiyon | Ne yapar |
+|:---|:---|
+| `TOPLA` | Aralıktaki sayıları toplar |
+| `ORTALAMA` | Aritmetik ortalamayı verir |
+| `ORTANCA` | Sıradaki ortadaki değeri verir |
+| `MAK` / `MİN` | En büyük ve en küçük değer |
+| `EĞERSAY` | Koşulu sağlayanları sayar |
+| `EĞER` | Koşula göre iki sonuç döndürür |
+| `SAY` | Sayı içeren hücreleri sayar |
+
+## Ortalama ve Ortanca
+
+9 öğrenci 40 puan, 1 öğrenci 100 puan aldı.
+
+- Aritmetik ortalama: **46**
+- Ortanca: **40**
+
+Tek bir uç değer ortalamayı yukarı çeker; ortanca etkilenmez. Gelir ve servet istatistiklerinde fark çok belirgindir.
+
+## Pratik Kural
+
+Veride uç değer olabileceğinden kuşkulanıyorsanız — gelir, harcama, hasılat, görüntülenme — ortalamayı tek başına kullanmayın.
+
+İkisini karşılaştırın. Aralarındaki büyük fark, dağılımın çarpık olduğunun işaretidir.
+
+# Biçimlendirme
+
+## Biçimlendirme Türleri
+
+- **Sayı biçimi:** ondalık, binlik ayırıcı, para birimi, yüzde
+- **Tarih biçimi:** görünüşü değişir, değeri değişmez
+- **Kenarlık ve dolgu:** başlıkları ayırmak için
+- **Koşullu biçimlendirme:** eşiğin altındakiler kendiliğinden renklenir
+- **Sütun genişliği:** hücrede `###` görüyorsanız sütun dardır
+
+## Birleştirilmiş Hücrelerden Kaçının
+
+Görsel olarak düzenli görünür ama **sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır.
+
+Başlığı ortalamak için hücre birleştirmek yerine **ortala** hizalamasını kullanın.
+
+# Sıralama ve Filtreleme
+
+## Aralarındaki Fark
+
+| | Sıralama | Filtreleme |
+|:---|:---|:---|
+| Ne yapar | Satırların yerini değiştirir | Uygun olanları gösterir |
+| Veriye etkisi | Kalıcı olarak düzenler | Silmez, geçici gizler |
+| Tipik kullanım | Büyükten küçüğe listeleme | Tek sınıfın kayıtları |
+
+Sıralarken **bütün satırı** seçin; yalnızca bir sütunu sıralarsanız satırlar arasındaki bağ kopar.
+
+# Grafik
+
+## Grafik Oluşturmanın Üç Adımı
+
+1. **Veriyi seçin** — başlık satırıyla birlikte.
+2. **Grafik türünü seçin** — verinin türüne göre.
+3. **Etiketleri ekleyin** — grafik başlığı, eksen etiketleri ve birimler, kaynak notu.
+
+Bu üçüncü adım, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" hâle getirir.
+
+## Hangi Veri İçin Hangi Grafik
+
+| Amaç | Uygun grafik |
+|:---|:---|
+| Kategorileri karşılaştırmak | Sütun veya çubuk |
+| Zaman içindeki değişim | Çizgi |
+| Bütün içindeki pay | Pasta veya yığılmış çubuk |
+| Dağılım | Histogram, kutu grafiği |
+| İki değişken arasındaki ilişki | Dağılım (saçılım) |
+| Coğrafi dağılım | Harita (alan ≠ değer) |
+
+## Pasta Grafik Uyarısı
+
+Yalnızca **az sayıda dilim** ve **belirgin biçimde farklı oranlar** olduğunda işe yarar.
+
+Altı yedi dilimli, oranları yakın pastalar okunamaz.
+
+# Grafiklerin Doğru Okunması
+
+## Grafik Tarafsız mı?
+
+Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**.
+
+Grafiği hazırlayan şu kararları verir: hangi veriyi alacağı, hangi aralığı göstereceği, ekseni nereden başlatacağı, neyi vurgulayacağı.
+
+## Yanıltma: Eksen Kaynaklı
+
+- **Kesilmiş eksen:** Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür.
+- **Ters çevrilmiş eksen:** Artış aşağı doğru gösterilir.
+- **Ölçek aralığı oynama:** Aynı veri iki farklı hikâye anlatır.
+
+## Yanıltma: Ölçek ve Oran
+
+- **Alan ve hacim yanılsaması:** İki kat büyük değer, iki boyutta büyütülünce **dört kat** görünür.
+- **Üç boyutlu efekt:** Perspektif uzaktaki dilimi küçültür.
+- **Çift eksen:** İlgisiz iki seri, olmayan bir ilişki varmış gibi görünür.
+
+## Yanıltma: Seçme ve Gizleme
+
+- **Seçilmiş zaman aralığı:** Başlangıç ve bitiş noktası özenle seçilir.
+- **Eksik veri ve "diğer" kovası:** Kayıp noktalar gizlenir.
+- **Seçilmiş karşılaştırma grubu:** Sonucu belirleyen, kiminle karşılaştırıldığıdır.
+
+## Yanıltma: Tasarım Kaynaklı
+
+- **Renk ve vurgu:** İstenen seri canlı, diğerleri soluk.
+- **Kalabalık gösterim:** Süsleme asıl veriyi görünmez kılar.
+- **Başlıkla verinin uyuşmaması:** En zor fark edileni.
+
+## Kontrol Listesi
+
+1. Eksen sıfırdan mı başlıyor?
+2. Birimler ve ölçek yazılı mı?
+3. Kaynak ve tarih var mı?
+4. Kaç veri noktası var; kayıp veri gizli mi?
+5. Başlık verinin söylediğiyle uyumlu mu?
+6. Karşılaştırma grubu adil mi?
+7. Renkler bir şey mi ima ediyor?
+8. Tam veri kümesine erişilebiliyor mu?
+9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
+
+## Uygulama: Aynı Veri, İki Grafik
+
+![](gorseller/karsilastirma.png)
+
+## Fark Nerede?
+
+- İki grafikteki sayılar **birebir aynı**.
+- Aylar, renkler ve kaynak notu da aynı.
+- Peki neden biri sakin bir eğilim, diğeri dik bir tırmanış gösteriyor?
+
+Dikey eksenlere bakın: **nereden başlıyorlar?**
+
+## Yanıt: Kesilmiş Eksen
+
+- **Grafik A:** dikey eksen 0'dan başlıyor.
+- **Grafik B:** dikey eksen 46'dan başlıyor.
+- Aynı %17'lik artış, B'de kat kat büyük görünüyor.
+
+Sütun yüksekliği değeri temsil eder. Dikey eksen sıfırdan başlamazsa okuma bozulur.
+
+## Kendiniz Üretin
+
+1. Küçük bir veri kümesi girin.
+2. Bir kez **kasten yanıltıcı**, bir kez **dürüst** grafik oluşturun.
+3. İkisini karşılaştırıp hangi kararları değiştirdiğinizi not edin.
+
+Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayacak biçimde öğretir.
+
+## Özet
+
+- Tablo, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır.
+- **Göreli** başvuru kopyalanınca kayar, **mutlak** (`$A$1`) sabit kalır.
+- **Yüzde puan** ile **göreli değişim** farklıdır.
+- **Ortalama** uç değerden etkilenir, **ortanca** etkilenmez.
+- **Sıralama** düzenler, **filtreleme** gösterir.
+- Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
