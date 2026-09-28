@@ -188,7 +188,6 @@ Kamu hizmetlerinde ve resmî işlemlerde karşınıza çıkacak üç farklı kav
 | **e-Devlet şifresi** | Kimliğinizi doğrular (giriş aracı) | İmza yerine geçmez |
 | **Mobil imza** | SIM kart üzerinden imzalar | Islak imza hükmündedir |
 | **e-imza (nitelikli elektronik imza)** | USB token veya akıllı kart ile imzalar | Islak imza hükmündedir |
-| **e-mühür** | Kurumların belge mühürlemesi | Kurumsal belgelerde kullanılır |
 
 ::: {.callout-note}
 ## En sık karışan ayrım
@@ -196,6 +195,8 @@ Kamu hizmetlerinde ve resmî işlemlerde karşınıza çıkacak üç farklı kav
 **e-Devlet şifresi bir imza değildir.** Sisteme giriş yapmanızı sağlayan bir kimlik doğrulama aracıdır.
 
 **e-imza ise hukuki bir imzadır.** Elektronik İmza Kanunu (5070) uyarınca ıslak imzayla aynı hukuki sonucu doğurur. Bir belgeyi e-imzayla imzaladığınızda, belgenin size ait olduğu ve sonradan değiştirilmediği doğrulanabilir.
+
+Kurumlar belgeleri için e-imzanın kurumsal karşılığı olan **e-mühür**'ü kullanır; bu, bireylerin konusu değildir.
 :::
 
 # Uygulama: Bir Araştırmayı Doğrulayın

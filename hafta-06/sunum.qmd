@@ -182,7 +182,6 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 | e-Devlet şifresi | Kimlik doğrular | İmza değildir |
 | Mobil imza | SIM üzerinden imzalar | Islak imza hükmünde |
 | e-imza | USB token / akıllı kart | Islak imza hükmünde |
-| e-mühür | Kurumsal mühürleme | Kurum belgelerinde |
 
 ## En Sık Karışan Ayrım
 
@@ -195,6 +194,8 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 ::: {.callout-warning}
 **e-Devlet şifresi imza yerine geçmez.** Şifre yalnızca kimliğinizi doğrular; bir belgeyi hukuken imzalamak için e-imza veya mobil imza gerekir.
 :::
+
+Kurumlar belgeleri için **e-mühür**'ü kullanır; bu, bireylerin konusu değildir.
 
 # Kapanış
 
