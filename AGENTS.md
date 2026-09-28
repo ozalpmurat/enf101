@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 22.09.2026
+Son güncelleme: 28.09.2026
 
 ---
 
@@ -254,7 +254,11 @@ grep -rnE '[^[:alpha:]]inç|^inç' --include="*.qmd" --include="*.tex" .
 
 ## 12. Sürüm ve kaynak notu
 
-- Quarto **1.10.18** ile üretildi; PDF motoru XeLaTeX.
+- PDF motoru **XeLaTeX**. **Sürüm sabitlenmez:** güncel Quarto ve güncel TeX Live kullanılır.
+  Belirli bir sürüme bağlı kalınmaz; hangi sürüm kuruluysa onun çıktısı esas alınır.
+- **Esas olan kaynaktır:** ölçüt, `.qmd` dosyalarının düzgün derlenmesidir. PDF'ler onlardan üretilen
+  çıktılardır; sürüm yükseltmesinde hepsini birden yenilemek gerekmez, sürüme bağlı ufak görsel
+  farklar (madde imi glifi gibi) kabul edilir.
 - Bu belgeler, `eski/` klasöründe bulunan ve önceki yıllarda farklı kişilerce hazırlanmış
   malzemeden **bilinçli olarak ayrılarak** yeniden yazılmıştır. Eski malzemedeki aşırı detaylı
   ve kapsam dışı bölümler (donanım arıza çözümleri, programlama, protokol ayrıntıları, mevzuat maddeleri)

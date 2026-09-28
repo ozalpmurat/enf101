@@ -29,7 +29,24 @@ Aşağıdaki kurulum adımlarını yalnızca bir kez yapmanız gerekir. Sonrası
 
 # Kurulum
 
-## Ortak adım: Quarto'yu indirin
+Bu bölümdeki adımlar yalnızca bir kez yapılır. Windows ile Ubuntu arasındaki tek fark Quarto'nun nasıl kurulduğudur (2. adım); diğer adımlar iki sistemde aynıdır.
+
+## 1. Depoyu bilgisayarınıza alın
+
+GitHub'daki depo sayfasında yeşil **Code** düğmesine basıp **Download ZIP**'i seçin ve indirdiğiniz dosyayı bir klasöre çıkarın. Yalnızca PDF'leri kullanacaksanız işiniz burada biter; klasördeki `.pdf` dosyalarını doğrudan açabilirsiniz.
+
+Metni düzenleyip PDF'i kendiniz üretecekseniz Git'e de ihtiyacınız olur. Git'i kurun:
+
+- **Windows:** **git-scm.com** adresinden Git for Windows'u indirip kurun.
+- **Ubuntu:** Git genelde kuruludur; değilse `sudo apt install git` komutunu çalıştırın.
+
+Ardından terminalde (Windows'ta Komut İstemi veya PowerShell) şunu çalıştırın — komut iki sistemde aynıdır:
+
+```
+git clone https://github.com/ozalpmurat/enf101.git
+```
+
+## 2. Quarto'yu kurun
 
 Tarayıcıdan **quarto.org/docs/download** adresine gidin. Sayfa, işletim sisteminizi kendisi algılar ve doğru dosyayı önerir. Dosya boyutu yaklaşık 150–250 MB'tır.
 
@@ -39,10 +56,12 @@ Tarayıcıdan **quarto.org/docs/download** adresine gidin. Sayfa, işletim siste
 |:-----------------------|:-----------------------|:-----------------------|
 | Windows | `quarto-...-win.msi` | Çift tıklayıp "Next" diyerek kurun |
 | macOS | `quarto-...-macos.pkg` | Çift tıklayıp kurulumu tamamlayın |
-| Linux (Debian/Ubuntu) | `quarto-...-linux-amd64.deb` | `sudo dpkg -i <dosya>.deb` |
+| Linux (Debian/Ubuntu) | `quarto-...-linux-amd64.deb` | `sudo apt install ./<dosya>.deb` |
 | Linux (Fedora/RHEL) | `quarto-...-linux-x86_64.rpm` | `sudo rpm -i <dosya>.rpm` |
 
-## Kurulumu doğrulayın
+Ubuntu'da komutun başındaki `./` önemlidir; olmadan `apt` paketi internetten aramaya çalışır.
+
+## 3. Kurulumu doğrulayın
 
 Terminali (Windows'ta Komut İstemi veya PowerShell) açın ve şunu yazın:
 
@@ -50,7 +69,7 @@ Terminali (Windows'ta Komut İstemi veya PowerShell) açın ve şunu yazın:
 quarto --version
 ```
 
-Ekranda `1.10.18` gibi bir sürüm numarası görüyorsanız kurulum tamamdır. "Komut bulunamadı" hatası alırsanız terminali kapatıp yeniden açın.
+Ekranda bir sürüm numarası görüyorsanız (örneğin `1.11.5`) kurulum tamamdır. "Komut bulunamadı" hatası alırsanız terminali kapatıp yeniden açın.
 
 ::: callout-tip
 ## Dosyayı doğrudan klasörden açmak
@@ -58,7 +77,7 @@ Ekranda `1.10.18` gibi bir sürüm numarası görüyorsanız kurulum tamamdır. 
 Windows'ta notların bulunduğu klasörü Gezgin'de açın, adres çubuğuna `cmd` yazıp Enter'a basın. Komut istemi doğrudan o klasörde açılır; uzun yol yazmanız gerekmez.
 :::
 
-## PDF motorunu kurun
+## 4. PDF motorunu kurun
 
 PDF üretmek için Quarto'nun arkasında bir dizgi motoruna ihtiyaç vardır. Bunu ayrıca indirmenize gerek yok; Quarto ilk PDF üretiminizde gerekli motoru kendisi kurar. İsterseniz önceden de kurabilirsiniz:
 
@@ -67,6 +86,44 @@ quarto install tinytex
 ```
 
 Bu adım yaklaşık 100 MB indirir ve diskte 400–500 MB yer kaplar. Yalnızca bir kez yapılır.
+
+## 5. Şemalar için Chrome (isteğe bağlı)
+
+`ornekler/` klasöründeki belgelerde Mermaid ve Graphviz şemaları bulunur; bunların PDF'e gömülmesi için Chrome gerekir:
+
+```
+quarto install chrome-headless-shell
+```
+
+14 haftanın belgeleri bu adıma ihtiyaç duymaz — diyagramlar hazır görsel olarak depoda durur.
+
+## 6. İlk derleme
+
+Depo klasörünün içinde:
+
+```
+quarto render hafta-01
+```
+
+Komut yalnızca tek bir yol alır; bir haftanın üç belgesini birden üretir. Tüm haftaları tek komutta derlemek çok uzun sürdüğü için hafta hafta çalışın.
+
+::: callout-note
+## Güncel sürümü kullanın
+
+Bu projede sürüm sabitlenmez. Quarto'yu ve TeX motorunu güncel tutun, yeni sürüm çıktığında geçmekten çekinmeyin: hangi sürüm kuruluysa onun ürettiği çıktı geçerlidir. Sürüme göre madde imi gibi ufak görsel farklar çıkabilir; bunlar sorun sayılmaz.
+
+Önemli olan `.qmd` dosyalarının düzgün derlenmesidir. PDF'ler onlardan üretilen çıktılardır; hepsini birden yenilemek gerekmez.
+:::
+
+::: callout-warning
+## Sisteme özgü tuzaklar
+
+**Dosya ve klasör adlarında Türkçe karakter kullanmayın.** İki sistemde de geçerlidir; depodaki adlar bu kurala zaten uygundur. Yeni bir dosya eklerken de `odev-sablonu.qmd` gibi yazın.
+
+**Windows:** Depoyu OneDrive'ın eşitlediği bir yere açmayın. Derleme sırasında dosyalar kilitlenebilir ve üretim yarıda kalabilir. Belgeler klasörü yerine eşitlenmeyen bir klasör seçin.
+
+**Ubuntu:** WSL kullanıyorsanız depoyu Windows tarafına (`/mnt/c/...`) değil Linux tarafına açın; `/mnt/c` üzerinde dosya işlemleri belirgin biçimde yavaşlar ve kilit sorunları çıkar.
+:::
 
 # Dosya biçimi: .qmd
 

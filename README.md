@@ -22,12 +22,17 @@ derlendiği, hangi dosyalara dokunulmaması gerektiği ve hangi tuzaklara düş�
 
 ## Gereksinimler
 
-- **Quarto 1.10.18** (materyal bu sürümle üretildi)
-- **XeLaTeX / TeX Live** (TeX Live 2026 ile üretildi)
+- **Quarto** — güncel sürüm ([quarto.org/docs/download](https://quarto.org/docs/download))
+- **XeLaTeX / TeX Live** — güncel sürüm (`quarto install tinytex`)
 - Mermaid veya Graphviz şemaları PDF'e gömülecekse **Chrome Headless**
+  (`quarto install chrome-headless-shell`)
 
-Sürümleri olabildiğince sabit tutun: PDF çıktısı TeX sürümüne göre ufak görsel farklar gösterebilir
-(örn. madde imi glifleri). Böylece herkesin ürettiği PDF aynı görünür.
+**Sürüm sabitlenmez.** Güncel Quarto ve TeX kullanılır; hangi sürüm kuruluysa onun ürettiği çıktı
+esas alınır. PDF çıktısı sürüme göre ufak görsel farklar gösterebilir (örneğin madde imi glifleri);
+bu kadarı sorun sayılmaz.
+
+**Esas olan kaynaktır:** ölçüt, `.qmd` dosyalarının düzgün derlenmesidir. PDF'ler onlardan üretilen
+çıktılardır ve gerektiğinde yeniden üretilir; sürüm yükseltmesinde hepsini birden yenilemek gerekmez.
 
 ## Derleme
 
@@ -45,7 +50,8 @@ tek komutta derlemek uzun sürdüğü için hafta hafta derlemek gerekir. Ayrın
 
 PDF'ler aslında birer derleme çıktısıdır, ama bu depoda bilinçli olarak takip edilir: böylece
 Quarto/TeX kurulu olmayan hocalar depoyu indirip PDF'leri doğrudan kullanabilir. Bir kaynağı
-düzenlediğinizde, yeniden ürettiğiniz PDF'i de aynı commit'te göndermeniz beklenir.
+düzenlediğinizde, yeniden ürettiğiniz PDF'i de aynı commit'te göndermeniz iyi olur — ama bu bir
+zorunluluk değil; kaynak her zaman esas alınır.
 `.gitattributes` PDF'leri ikili dosya olarak işaretler; Git bunlar üzerinde satır satır fark almaya çalışmaz.
 
 ## Katkı
