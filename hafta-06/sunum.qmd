@@ -33,13 +33,9 @@ format: beamer
 - **`filetype:pdf`:** Yalnızca PDF getir
 - **Tarih filtresi:** Güncel bilgi gerektiğinde
 
-## Kaynak Değerlendirme: Beş Soru
+## Kaynak Değerlendirme
 
-1. **Kim** yazdı?
-2. **Ne zaman** yayımlandı?
-3. **Kanıt** var mı?
-4. **Amaç** ne?
-5. **Başka kaynaklar** ne diyor?
+1. haftadaki beş soruyu hatırlayın: **kim, ne zaman, kanıt, amaç, başka kaynaklar.**
 
 ## Akademik Kaynak Önceliği
 

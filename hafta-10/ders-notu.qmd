@@ -205,7 +205,7 @@ Günlük hayatta uygulanacak pratik önlemler:
 
 Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan bir kullanıcı için genellikle **yeterlidir**. Yeni bir "güvenlik yazılımı" indirmeye gerek yoktur; gerekli olan açık olan korumayı kapatmamak ve güncel tutmaktır.
 
-# Güvenli Alışveriş ve Ödeme
+## Güvenli alışveriş ve ödeme
 
 İnternetten alışveriş ve bankacılık, bilgisayarınıza saldırılmasını gerektirmez: bilgilerinizi **siz** yanlış yere yazarsanız kaybolurlar.
 

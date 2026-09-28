@@ -51,9 +51,7 @@ Mağaza dışı uygulamalar (kırılmış, "ücretsiz premium") en yaygın **zar
 
 ## Üç Soru
 
-1. **Gerekli mi?** Bu izin olmadan çalışır mı?
-2. **Orantılı mı?** İşleviyle uyumlu mu?
-3. **Ne zaman?** "Yalnızca kullanırken" var mı?
+11. haftadan hatırlayın: **gerekli mi, orantılı mı, ne zaman** erişecek?
 
 ## Tipik Orantısız İzinler
 

@@ -184,8 +184,6 @@ Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifrele
 
 Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
 
-# Güvenli Alışveriş ve Ödeme
-
 ## İnternetten Alışveriş ve Bankacılık
 
 - **`https` ve kilit simgesini** kontrol edin

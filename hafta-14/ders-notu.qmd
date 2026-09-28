@@ -60,13 +60,7 @@ Her uygulama kurulurken izin ister: konum, kamera, mikrofon, kişiler, dosyalar,
 
 ![Uygulama izinleri](gorseller/diagram-izinler.png){width=78%}
 
-## Üç soru
-
-Her izin için şunları sorun:
-
-1. **Gerekli mi?** Uygulama bu izin olmadan işini yapabilir mi?
-2. **Orantılı mı?** İzin, uygulamanın işleviyle uyumlu mu?
-3. **Ne zaman?** "Yalnızca kullanırken" seçeneği var mı?
+Her izin için 11. haftada gördüğümüz üç soruyu sorun: **gerekli mi, orantılı mı, ne zaman** erişecek?
 
 ::: {.callout-tip}
 ## Tipik orantısız izinler
@@ -82,9 +76,11 @@ Her izin için şunları sorun:
 **Kural:** İzin istendiğinde "neden?" diye sorun; gereksizse reddedin.
 :::
 
-# Senkronizasyon ve Bulut
+# Senkronizasyon
 
 **Senkronizasyon**, aynı hesaba bağlı cihazlar arasında verinin eşitlenmesidir: telefonunuzda çektiğiniz fotoğraf bilgisayarınızda görünür.
+
+Bulut depolamanın ne olduğunu ve temel olanaklarını 4. haftada gördük; burada aynı verinin **cihazlar arası eşitlenmesine** odaklanıyoruz.
 
 **Faydaları:** Cihaz değiştirince veri taşınır, kayıp riski azalır, her cihazdan erişim.
 

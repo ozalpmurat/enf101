@@ -302,7 +302,7 @@ format:
   - Yedekleme: fidye yazılımına karşı en iyi savunma
 - Cihaz ve Hesap Güvenliği
   - Güvenlik duvarı ve varsayılan ayarlar
-- Güvenli Alışveriş ve Ödeme
+  - Güvenli alışveriş ve ödeme
 - Doğru Bilinen Yanlışlar
 - Uygulama: Kendi Güvenliğinizi Denetleyin
   - Adım 1 — Parola alışkanlığınızı değerlendirin
@@ -348,8 +348,8 @@ format:
 - Bu Haftanın Öğrenme Çıktıları
 - Yapay Zekâ Nedir?
 - Günlük Hayatta Yapay Zekâ
-- Algoritma: Adım Adım Tanımlamak
 - Yapay Zekâ Nasıl Öğrenir?
+  - Algoritma: adım adım tanımlamak
   - Derin öğrenme ve GPU bağlantısı
   - Büyük veri
 - Yapay Zekânın Sınırları
@@ -400,8 +400,7 @@ format:
 - Bu Haftanın Öğrenme Çıktıları
 - Mobil Cihazlar ve Ekosistem
 - Uygulama İzinleri
-  - Üç soru
-- Senkronizasyon ve Bulut
+- Senkronizasyon
 - Mobil Cihaz Güvenliği
 - Giyilebilir Teknolojiler
   - Hangi veriler toplanır?

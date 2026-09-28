@@ -74,7 +74,11 @@ Yapay zekâ çoğu zaman adı geçmeden karşımıza çıkar:
 Bu ders boyunca kullandığınız pek çok araç — arama motorunuz, e-posta hesabınız, klavye önerileriniz — yapay zekâ içerir. Bunu fark etmek, teknolojiyle ilişkinizi değiştirir.
 :::
 
-# Algoritma: Adım Adım Tanımlamak
+# Yapay Zekâ Nasıl Öğrenir?
+
+Yapay zekânın çoğu bugünkü biçimi **makine öğrenmesi**ne dayanır: programa kural yazmak yerine, **örneklerden öğrenmesi** sağlanır.
+
+## Algoritma: adım adım tanımlamak
 
 Bir işi bilgisayara yaptırmanın yolu, o işi **adım adım** tanımlamaktan geçer. Bu adım dizisine **algoritma** denir. Algoritmayı insan yazar; bilgisayar yalnızca yazılanı uygular.
 
@@ -99,10 +103,6 @@ Bu kurallar **programlama dilleri** denen özel dillerle yazılır; yapay zekâ 
 
 Algoritmayı burada, yapay zekânın neyi **farklı** yaptığını görebilmek için tanıdık. Geleneksel programlamada kuralları insan yazar; makine öğrenmesinde ise kurallar örneklerden çıkarılır. Bu ders boyunca kod yazmayacaksınız.
 :::
-
-# Yapay Zekâ Nasıl Öğrenir?
-
-Yapay zekânın çoğu bugünkü biçimi **makine öğrenmesi**ne dayanır: programa kural yazmak yerine, **örneklerden öğrenmesi** sağlanır.
 
 ![Yapay zekâ nasıl 'öğrenir'](gorseller/diagram-yz-akis.png){width=80%}
 
