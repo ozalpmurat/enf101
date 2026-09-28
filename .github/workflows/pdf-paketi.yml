@@ -18,7 +18,9 @@ jobs:
   paketle:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # v7: Node 24 çalışma zamanını hedefler; v4 artık kullanımdan kaldırılmış
+      # Node 20'yi hedefliyordu ve her çalıştırmada uyarı üretiyordu.
+      - uses: actions/checkout@v7
 
       - name: PDF'leri topla ve ZIP oluştur
         run: |
