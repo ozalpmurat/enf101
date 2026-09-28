@@ -7,6 +7,25 @@ Bilecik Şeyh Edebali Üniversitesi'nde tüm fakültelerin 1. sınıf öğrencil
 Materyal [Quarto](https://quarto.org) ile üretilir. Depoda hem kaynak (`.qmd`, `.tex`) hem de
 üretilmiş **PDF** çıktıları birlikte tutulur.
 
+## PDF'leri indirme (git gerekmez)
+
+Bütün PDF'ler tek bir ZIP dosyasında toplanır. ZIP **elle çıkarılan sürümlerle** yenilenir; aşağıdaki bağlantı her zaman en son çıkarılan sürümü gösterir:
+
+**[enf101-pdf.zip](https://github.com/ozalpmurat/enf101/releases/download/pdf/enf101-pdf.zip)**
+
+İçinde 14 haftanın ders notu, sunum ve alıştırma PDF'leri; ayrıca izlence, başlık listesi ve ders
+kılavuzu. (`ornekler/` klasöründeki Quarto başvuru belgeleri ders içeriği sayılmadığı için ZIP'e alınmaz.)
+Dosyalar hafta klasörlerine göre düzenlenmiştir, yani ZIP'i açtığınızda `hafta-01/ders-notu.pdf` gibi bir
+yapı görürsünüz. Git, terminal veya hesap gerekmez.
+
+Yalnızca PDF'leri git ile indirmek isterseniz (klasör yapısı korunur):
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/ozalpmurat/enf101.git
+cd enf101
+git sparse-checkout set --no-cone '*.pdf'
+```
+
 ## İçerik
 
 - **`izlence.qmd` / `izlence.pdf`** — ders izlencesi.

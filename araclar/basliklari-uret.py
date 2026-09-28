@@ -2,15 +2,18 @@
 """BASLIKLAR.qmd dosyasını hafta-*/ders-notu.qmd dosyalarından üretir.
 
 Kullanım (depo kökünde):
-    python3 araclar/basliklari-uret.py
+    python3 araclar/basliklari-uret.py            # dosyayı üretir
+    python3 araclar/basliklari-uret.py --kontrol  # yalnızca denetler (0: güncel, 1: güncellenmeli)
 
 Bağımlılık yoktur; yalnızca standart kütüphane kullanılır.
 Çıktı dosyasını elle düzenlemeyin — her çalıştırmada baştan yazılır.
+Kontrol kipi, dosyayı kaynaklarla karşılaştırır; commit beklemez.
 """
 
 import glob
 import os
 import re
+import sys
 
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASLIK_ISARETI = "<!-- Bu dosya araclar/basliklari-uret.py ile üretilir; elle düzenlemeyin. -->"
@@ -106,10 +109,21 @@ def main():
     parcalar.append("")
 
     hedef = os.path.join(KOK, "BASLIKLAR.qmd")
-    open(hedef, "w", encoding="utf-8").write("\n".join(parcalar))
+    yeni = "\n".join(parcalar)
+
+    if "--kontrol" in sys.argv:
+        eski = open(hedef, encoding="utf-8").read() if os.path.exists(hedef) else None
+        if eski == yeni:
+            print("BASLIKLAR.qmd güncel")
+            return 0
+        print("BASLIKLAR.qmd GÜNCELLENMELİ — `python3 araclar/basliklari-uret.py` çalıştırıp derleyin")
+        return 1
+
+    open(hedef, "w", encoding="utf-8").write(yeni)
     print(f"yazıldı: {hedef}")
     print(f"hafta: {sayac}, satır: {len(parcalar)}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

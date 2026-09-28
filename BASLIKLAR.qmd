@@ -282,7 +282,7 @@ format:
 
 # 10. Hafta — Bilgi Güvenliği
 
-*Sunum: 26 slayt başlığı · Alıştırma: 10 soru*
+*Sunum: 27 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları

@@ -36,6 +36,13 @@ Saldırıların büyük kısmı teknik değil, **ikna** yoluyla yapılır.
 
 # Parola Yönetimi
 
+## Parola mı, Şifreleme mi?
+
+- **Parola:** Erişim için girdiğiniz gizli dize
+- **Şifreleme:** Verinin okunamaz hâle getirilmesi
+
+Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
+
 ## Parola Gücü
 
 ![](gorseller/diagram-parola.png){width=76%}

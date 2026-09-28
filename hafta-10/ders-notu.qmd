@@ -46,6 +46,12 @@ Bu üç ilkeden biri bozulduğunda güvenlik ihlali vardır.
 
 Parola, hesabınızın kapısıdır. Ama çoğu kişi aynı parolayı birden çok yerde kullanır — ve bu, tek bir sızıntının **bütün hesaplarınızı** ele geçirmesi anlamına gelir.
 
+::: {.callout-note}
+## "Parola" ile "şifreleme" farkı
+
+Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise verinin okunamaz hâle getirilmesidir; parola yöneticinizin kasası ya da `https` bağlantısı gibi şeyler şifreleme ile korunur. Günlük dilde ikisine de "şifre" denir; bu metinde erişim için **parola**, verinin korunması için **şifreleme** sözcükleri kullanılır.
+:::
+
 ![Parola gücü](gorseller/diagram-parola.png){width=78%}
 
 ## Güçlü parola nasıl olur?

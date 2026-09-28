@@ -41,6 +41,8 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 ├─ BASLIKLAR.qmd + .pdf          ders içeriği başlıkları (betikle üretilir)
 ├─ araclar/
 │  └─ basliklari-uret.py         BASLIKLAR.qmd'yi ders notlarından üretir
+├─ .github/workflows/
+│  └─ pdf-paketi.yml             PDF'leri ZIP'leyip sürüme yükler (elle tetiklenir)
 ├─ KILAVUZ_Quarto_...qmd + .pdf  hocalar için Quarto kurulum/kullanım kılavuzu
 └─ hafta-NN/                     NN = 01 … 14
    ├─ ders-notu.qmd + .pdf       8–12 sayfa
@@ -76,6 +78,16 @@ quarto render BASLIKLAR.qmd
 
 Betik yalnızca standart kütüphane kullanır, ek kurulum gerektirmez. Notlardaki kutu (callout) başlıkları
 bölüm sayılmadığı için anahatta yer almaz; böylece belge, notların kendi içindekiler tablosuyla birebir örtüşür.
+
+**PDF paketi elle çıkarılır.** `.github/workflows/pdf-paketi.yml` **kendiliğinden çalışmaz**; sürüm
+çıkarmak bilinçli bir adımdır. Tetiklendiğinde `ornekler/` dışındaki bütün PDF'leri tek bir ZIP'te
+toplayıp **`pdf` etiketli sürüme** yükler (varsa üzerine yazar). `ornekler/` ders içeriği değil,
+Quarto başvuru belgesi olduğu için dışarıda tutulur. Bağlantı sabittir ve README'de duyurulur:
+`https://github.com/ozalpmurat/enf101/releases/download/pdf/enf101-pdf.zip`.
+Böylece git kullanmayan hocalar tek bağlantıdan bütün belgeleri indirir.
+
+Çalıştırmak için: **Actions → PDF paketi → Run workflow**. Depoya gönderilmiş commit'ten derlendiği için,
+yereldeki gönderilmemiş veya yarım değişiklikler sürüme girmez. Yerelde aynı iş `find` + `zip -@` ile yapılır.
 
 PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan geçici dosyalar
 (`.quarto/`, `*.log`, `*.tex`, `*_files/`) teslim edilmez; klasör temiz tutulur.
@@ -301,9 +313,8 @@ awk 'p ~ /^\*\*[0-9]+\.\*\*/ && $0=="" {print FILENAME": "NR". satır — soruda
 #    Çıktı boş olmalı. Sonuç varsa ilgili soru bloğundaki boş satırlar kaldırılıp
 #    satır sonlarına `\` eklenir.
 
-# 7. İçerik başlıkları güncel mi? (betik çalıştırıldıktan sonra fark çıkmamalı)
-python3 araclar/basliklari-uret.py && git diff --quiet BASLIKLAR.qmd \
-  && echo "BASLIKLAR güncel" || echo "BASLIKLAR GÜNCELLENMELİ"
+# 7. İçerik başlıkları kaynaklarla uyumlu mu? (commit beklemeye gerek yok)
+python3 araclar/basliklari-uret.py --kontrol
 ```
 
 ---

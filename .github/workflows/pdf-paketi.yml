@@ -1,0 +1,46 @@
+name: PDF paketi
+
+# Depodaki bütün PDF'leri tek bir ZIP'te toplayıp "pdf" etiketli sürüme yükler.
+# Git kullanmayan hocalar ve öğrenciler tek bağlantıdan indirebilir:
+#   https://github.com/ozalpmurat/enf101/releases/download/pdf/enf101-pdf.zip
+#
+# KENDİLİĞİNDEN ÇALIŞMAZ. Sürüm çıkarmak bilinçli bir adımdır; elle tetiklenir:
+#   Actions → PDF paketi → Run workflow
+# Her çalıştırmada ZIP aynı etiketin üzerine yazılır (--clobber); indirme bağlantısı değişmez.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  paketle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: PDF'leri topla ve ZIP oluştur
+        run: |
+          # ornekler/ ders içeriği değil, başvuru belgesi olduğu için ZIP'e alınmaz
+          find . \( -path ./.git -o -path ./ornekler \) -prune -o -name '*.pdf' -print \
+            | sed 's|^\./||' | sort > /tmp/liste.txt
+          echo "Toplanan PDF sayısı: $(wc -l < /tmp/liste.txt)"
+          zip -q enf101-pdf.zip -@ < /tmp/liste.txt
+          ls -lh enf101-pdf.zip
+
+      - name: Sürümü oluştur ya da güncelle
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="pdf"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" enf101-pdf.zip --clobber
+            echo "ZIP güncellendi: $TAG"
+          else
+            gh release create "$TAG" enf101-pdf.zip \
+              --title "Ders PDF'leri" \
+              --notes "Bütün haftaların ders notu, sunum ve alıştırma PDF'leri tek dosyada; ayrıca izlence, başlık listesi ve ders kılavuzu. Dosyalar hafta klasörlerine göre düzenlenmiştir. Bu ZIP, sürüm çıkarıldıkça elle yenilenir." \
+              --target main
+            echo "Sürüm oluşturuldu: $TAG"
+          fi

@@ -172,7 +172,7 @@ Kamu hizmetlerinin elektronik ortama taşınması, dijital dönüşümün en som
 ## Güvenli kullanım
 
 - **Adresin doğruluğundan emin olun.** Giriş yapmadan önce adres çubuğunu kontrol edin; resmî site `gov.tr` uzantılıdır ve `https` ile şifrelidir.
-- **Şifrenizi kimseyle paylaşmayın.** Hiçbir kurum e-posta veya telefonla şifre istemez.
+- **Parolanızı kimseyle paylaşmayın.** Hiçbir kurum e-posta veya telefonla parola istemez.
 - **Ortak bilgisayarda işiniz bitince çıkış yapın.** Yalnızca sekmeyi kapatmak yetmez.
 - **İşlem yaparken bağlantınıza dikkat edin.** Halka açık kablosuz ağlarda e-Devlet işlemi yapmayın; mobil veri kullanın.
 - **Şüpheli bildirimlere karşı dikkatli olun.** e-Devlet üzerinden geldiği söylenen bağlantılar sahte olabilir; her zaman kendiniz giriş yaparak kontrol edin.

@@ -203,7 +203,7 @@ Bunu bir güvenlik duvarı gibi düşünmemek gerekir: filtre yalnızca **erişi
 ::: {.callout-warning}
 ## Gerçek bir "ücretsiz WiFi" tuzağı
 
-Havalimanlarında "Ücretsiz WiFi" adıyla yayın yapan bir ağa bağlanıp e-posta şifrenizi girdiğinizi düşünün. Ağ saldırganın olsaydı, şifreniz eline geçerdi. Bu saldırı türü çok yaygındır ve fark edilmesi zordur.
+Havalimanlarında "Ücretsiz WiFi" adıyla yayın yapan bir ağa bağlanıp e-posta parolanızı girdiğinizi düşünün. Ağ saldırganın olsaydı, parolanız eline geçerdi. Bu saldırı türü çok yaygındır ve fark edilmesi zordur.
 
 **Pratik kural:** Halka açık bir ağda oturum açmanız gerekiyorsa, telefonunuzun mobil verisini kullanın.
 :::

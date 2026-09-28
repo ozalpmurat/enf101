@@ -80,7 +80,7 @@ D) Ekran çözünürlüğündeki farkı
 | 1 | B | Resmî mağazalar bir denetimden geçer ve uygulamalar gerektiğinde kaldırılabilir. Mağaza dışı kurulumlar en yaygın zararlı yazılım kaynağıdır. |
 | 2 | B | Oyunun işini yapmak için mikrofona ihtiyacı yoktur; izin işlevle orantılı değildir. |
 | 3 | B | Senkronizasyon aynı veriyi bütün cihazlarda eşitler; yedekleme ise verinin ayrı bir kopyasını saklar. |
-| 4 | B | Telefon numarası birçok hesabın şifre sıfırlama ve doğrulama yoludur; telefon ele geçirilirse hesaplar risk altına girer. |
+| 4 | B | Telefon numarası birçok hesabın parola sıfırlama ve doğrulama yoludur; telefon ele geçirilirse hesaplar risk altına girer. |
 | 5 | D | Giyilebilir cihazlar hareket, nabız, oksijen ve konum gibi veriler toplar; banka bakiyesine erişemez. |
 | 6 | B | Sağlık verisi özel nitelikli kişisel veridir ve daha sıkı korunur. |
 | 7 | B | Akıllı cihazlar genellikle varsayılan parolayla gelir ve bu parolalar internette listelenmiştir; değiştirilmelidir. |

@@ -164,7 +164,7 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 ## Güvenli Kullanım
 
 - **Adresi kontrol edin:** `gov.tr` uzantılı ve `https`
-- **Şifreyi paylaşmayın:** Hiçbir kurum istemez
+- **Parolayı paylaşmayın:** Hiçbir kurum istemez
 - **Ortak cihazda çıkış yapın:** Sekmeyi kapatmak yetmez
 - **Halka açık ağda işlem yapmayın:** Mobil veri kullanın
 - **Bildirimlere şüpheyle bakın:** Her zaman kendiniz giriş yapın
