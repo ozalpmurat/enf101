@@ -80,9 +80,10 @@ Betik yalnızca standart kütüphane kullanır, ek kurulum gerektirmez. Notlarda
 bölüm sayılmadığı için anahatta yer almaz; böylece belge, notların kendi içindekiler tablosuyla birebir örtüşür.
 
 **PDF paketi elle çıkarılır.** `.github/workflows/pdf-paketi.yml` **kendiliğinden çalışmaz**; sürüm
-çıkarmak bilinçli bir adımdır. Tetiklendiğinde `ornekler/` dışındaki bütün PDF'leri tek bir ZIP'te
-toplayıp **`pdf` etiketli sürüme** yükler (varsa üzerine yazar). `ornekler/` ders içeriği değil,
-Quarto başvuru belgesi olduğu için dışarıda tutulur. Bağlantı sabittir ve README'de duyurulur:
+çıkarmak bilinçli bir adımdır. Tetiklendiğinde ders içeriği olan PDF'leri tek bir ZIP'te toplayıp
+**`pdf` etiketli sürüme** yükler (varsa üzerine yazar). `ornekler/` (Quarto başvuru belgeleri) ve
+`KILAVUZ_*.pdf` (hocalar için kurulum kılavuzu) ders içeriği sayılmadığı için dışarıda tutulur; ZIP'te
+14 haftanın üç belgesi ile izlence ve başlık listesi bulunur. Bağlantı sabittir ve README'de duyurulur:
 `https://github.com/ozalpmurat/enf101/releases/download/pdf/enf101-pdf.zip`.
 Böylece git kullanmayan hocalar tek bağlantıdan bütün belgeleri indirir.
 
