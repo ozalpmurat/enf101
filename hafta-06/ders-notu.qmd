@@ -122,9 +122,12 @@ Bir kişi listesini **To** alanına yazmak, tanımadığınız kişilerin adresl
 - **Hitap ile başlayın, kapanış ile bitirin.** "Sayın Hocam," / "Merhaba," … "Saygılarımla," / "İyi çalışmalar,".
 - **Kısa ve net yazın.** Uzun paragraflar yerine madde madde.
 - **Tam cümle kullanın.** Kurumsal yazışmada kısaltma ve emoji kullanılmaz.
+- **Büyük harfle yazmayın.** Karşı taraf bunu bağırmak gibi algılar.
 - **Yanıtla / Yanıtla-hepsine ayrımına dikkat edin.** Yalnızca gönderene mi, tüm listeye mi yanıt veriyorsunuz?
 - **Ek gönderiyorsanız dosya adını düzeltin.** `belge1.docx` yerine `enf101-odev-ahmet-yilmaz.docx`.
+- **Büyük dosyaları ek olarak göndermeyin.** Posta sunucularının ek boyutu sınırı vardır (genellikle 20–25 MB); büyük bir dosyayı buluta yükleyip **bağlantısını** göndermek ya da sıkıştırmak daha güvenilirdir.
 - **Göndermeden okuyun.** Yazım hatası ve yanlış alıcı, en sık yapılan iki hatadır.
+- **İçeriğinden emin olmadığınız mesajı iletmeyin.** Zincirleme iletiler çoğu zaman yanlış bilgi taşır; iletirken alıcı listesini ve gereksiz ekleri temizleyin.
 
 ::: {.callout-tip}
 ## Yanıtlamadan önce düşünün
@@ -152,6 +155,21 @@ Ne eki açın ne de bağlantıya tıklayın. **Göndereni başka bir kanaldan ar
 
 Unutmayın: oltalama saldırıları (phishing) genellikle sizi acele ettirir. **Acele ettiren her mesaj şüphelidir.**
 :::
+
+## E-posta gizli değildir
+
+E-posta, yolda ve sunucularda **şifresiz** tutulabilir. Ağdaki biri ya da yanlış bir alıcı mesajınızı okuyabilir; kurumsal yazışmalar ayrıca **kayıt altındadır** ve sonradan silinse bile kurumda kalır.
+
+Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgileri e-postayla göndermeyin; böyle bir bilgi gerekiyorsa güvenli bir kanal kullanın (5. hafta) ve kişisel veri kurallarını hatırlayın (11. hafta).
+
+## İstenmeyen posta (spam)
+
+Adresiniz bir kez paylaşıldığında listelere girer ve istenmeyen toplu posta gelmeye başlar. Yapılacaklar basittir:
+
+- Mesajdaki bağlantılara **tıklamayın**, ekleri açmayın.
+- Postayı **istenmeyen olarak işaretleyip silin**.
+- "Listeden çık" bağlantısına **güvenmeyin**: tıklamanız adresinizin canlı olduğunu doğrular ve genellikle daha çok posta gelir.
+- Kurumsal adresinizi alışveriş sitelerine ve formlara vermeyin.
 
 # Dijital Kamu Hizmetleri ve e-Devlet
 

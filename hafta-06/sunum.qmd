@@ -107,9 +107,16 @@ Böylece herkes yalnızca kendi adresini görür.
 - **Hitap ve kapanış kullanın**
 - **Kısa ve net yazın**
 - **Tam cümle kurun** — kısaltma ve emoji olmaz
+- **Büyük harfle yazmayın** — bağırmak gibi algılanır
 - **Yanıtla / Yanıtla-hepsine** ayrımına dikkat
 - **Ek dosyayı adlandırın:** `belge1.docx` değil, `enf101-odev-ad-soyad.docx`
 - **Göndermeden önce okuyun**
+
+## Ekler ve İletme
+
+- **Büyük dosyayı ek olarak göndermeyin** — sınır genellikle 20–25 MB; bulut bağlantısı ya da sıkıştırma kullanın
+- **İçeriğinden emin olmadığınız mesajı iletmeyin** — zincirleme iletiler yanlış bilgi taşır
+- İletirken **alıcı listesini ve gereksiz ekleri** temizleyin
 
 ## Sinirliyken Yanıt Yazmayın
 
@@ -137,6 +144,20 @@ Kurumsal yazışma **kayıt altındadır** ve geri alınamaz.
 - Kurumunuzun bilgi işlem birimine bildirin
 
 **Acele ettiren her mesaj şüphelidir.**
+
+## E-posta Gizli Değildir
+
+- Yolda ve sunucularda **şifresiz** tutulabilir
+- Yanlış alıcı ya da ağdaki biri okuyabilir
+- Kurumsal yazışma **kayıt altındadır**
+
+Parola, kimlik numarası, sağlık bilgisi e-postayla gönderilmez.
+
+## İstenmeyen Posta (Spam)
+
+- Adresiniz listelere girdiğinde gelmeye başlar
+- Bağlantılara tıklamayın; **işaretleyip silin**
+- "Listeden çık" bağlantısına güvenmeyin: adresinizin **canlı olduğunu doğrular**
 
 # Dijital Kamu Hizmetleri
 
@@ -174,6 +195,10 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 **e-imza hukuki bir imzadır.** 5070 sayılı Elektronik İmza Kanunu uyarınca ıslak imzayla aynı sonucu doğurur.
 
 İmzalanan belgenin kime ait olduğu ve sonradan değiştirilmediği doğrulanabilir.
+
+::: {.callout-warning}
+**e-Devlet şifresi imza yerine geçmez.** Şifre yalnızca kimliğinizi doğrular; bir belgeyi hukuken imzalamak için e-imza veya mobil imza gerekir.
+:::
 
 # Kapanış
 

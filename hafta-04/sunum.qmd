@@ -58,7 +58,8 @@ Dosya adının sonundaki noktadan sonraki kısımdır. İşletim sistemi ona bak
 
 | Uzantı | Tür |
 |:---|:---|
-| `.docx` | Metin belgesi |
+| `.docx` | Metin belgesi (Word) |
+| `.odt` | Metin belgesi (açık kaynak) |
 | `.xlsx` | Elektronik tablo |
 | `.pptx` | Sunum |
 | `.pdf` | Taşınabilir belge |
@@ -174,6 +175,8 @@ Hesabınıza erişimi kaybederseniz dosyalarınıza da erişemezsiniz.
 # Çevrimiçi İşbirliği
 
 ## Aynı Belge Üzerinde Birlikte Çalışma
+
+Örnek: **Google Docs** gibi çevrimiçi ofis araçları.
 
 - **Aynı anda düzenleme:** Değişiklikler anında görünür
 - **Sürüm geçmişi:** Kim ne zaman ne değiştirdi

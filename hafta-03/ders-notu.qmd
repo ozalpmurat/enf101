@@ -80,7 +80,7 @@ Bu bir tercih sorusudur, üstünlük sorusu değil. Açık kaynak yazılımlar d
 
 - **Donanım yönetimi:** İşlemci, bellek, depolama ve çevre birimlerini programlar arasında paylaştırır.
 - **Dosya sistemi yönetimi:** Dosyaların nerede ve nasıl saklanacağını düzenler.
-- **Süreç yönetimi:** Hangi programın ne zaman çalışacağını, ne kadar kaynak alacağını belirler.
+- **Süreç yönetimi:** Hangi programın ne zaman çalışacağını, ne kadar kaynak alacağını belirler. Bu yüzden bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok program açıkken işlemci çok hızlı geçiş yaparak hepsini çalıştırıyormuş izlenimi verir.
 - **Kullanıcı arayüzü:** Kullanıcının bilgisayarla konuşmasını sağlar (grafik arayüz, komut satırı).
 - **Kullanıcı ve güvenlik yönetimi:** Kimin hangi dosyaya erişebileceğini denetler.
 - **Hata yönetimi:** Bir program çöktüğünde tüm sistemi değil, yalnızca o programı durdurur.
@@ -110,7 +110,7 @@ Sizin için önemi şu: mezun olduktan sonra kamu kurumlarında çalışırsanı
 Farklı işletim sistemlerinde menüler ve düğmeler farklı yerlerde olabilir ama **kavramlar aynıdır**: her sistemde dosya vardır, klasör vardır, kullanıcı hesabı vardır, yazılım kurulur. Biz bu derste kavramları öğreniyoruz; bir sistemi öğrenen diğerine kolayca geçer.
 :::
 
-# Mobil ve Gömülü İşletim Sistemleri
+# İşletim Sistemi Türleri
 
 Masaüstü sistemler işletim sistemlerinin yalnızca bir türüdür. Cihazın amacı ve kaynakları değiştikçe işletim sistemi de değişir.
 

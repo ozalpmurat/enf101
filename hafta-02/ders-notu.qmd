@@ -24,10 +24,12 @@ Bilgisayar, birlikte çalışan parçalar bütünüdür. Tek bir parçanın bile
 
 - Girdi–işlem–çıktı–depolama döngüsünü açıklar ve günlük hayattan örnekler verir.
 - İşlemci, bellek, depolama ve ekran kartının görevlerini birbirinden ayırt eder.
+- İşlemcinin iç birimlerini (kontrol birimi, ALU, kaydediciler, ön bellek) tanır.
 - Bellek (RAM) ile depolama (disk) arasındaki farkı açıklar.
 - HDD ile SSD arasındaki farkı açıklar ve günlük kullanıma etkisini değerlendirir.
 - Ekran kartının (GPU) işlemciden farkını ve kullanım alanlarını açıklar.
-- Bit, byte ve ölçü birimlerini (KB, MB, GB, TB) doğru kullanır.
+- Çevre birimlerini giriş ve çıkış işlevlerine göre ayırt eder.
+- Bit, bayt ve ölçü birimlerini (KB, MB, GB, TB) doğru kullanır.
 - Bilgisayar türlerini ve hangi amaçla kullanıldıklarını ayırt eder.
 
 # Girdi–İşlem–Çıktı–Depolama Döngüsü
@@ -53,6 +55,8 @@ Bilgisayarın içindeki bileşenler **kasa** içinde, genellikle tek bir devre k
 
 **Anakart** (motherboard), işlemci, bellek ve ekran kartı gibi bileşenlerin üzerine takıldığı ana devre kartıdır. Sistemin omurgasıdır: parçalar arasındaki iletişimi sağlar. Anakartı, üzerinde her şeyin bağlandığı bir **iskelet** gibi düşünebilirsiniz. Bileşenlerin birbiriyle konuşabilmesi için anakartın desteklediği bağlantı türlerinin uyumlu olması gerekir.
 
+Bileşenler arasındaki bu iletişim, anakart üzerindeki **veri yolu** (bus) denen ortak hatlar üzerinden yürür. Aşağıdaki şemadaki çift yönlü oklar, bileşenlerin bu hat üzerinden karşılıklı veri alıp verdiğini gösterir.
+
 ![Anakart ve üzerindeki bileşenler](gorseller/diagram-anakart.png){width=70%}
 
 ## İşlemci (CPU)
@@ -67,6 +71,21 @@ Bilgisayarın içindeki bileşenler **kasa** içinde, genellikle tek bir devre k
 
 "İşlemci ne kadar güçlü" sorusunun günlük hayattaki karşılığı, "aynı anda ne kadar çok ve ne kadar hızlı iş yapabildiği"dir. Detaylı mimari ve saat hızı karşılaştırmaları bu dersin kapsamı dışındadır.
 :::
+
+## İşlemcinin iç yapısı
+
+İşlemci tek bir parça gibi görünse de içinde görev paylaşımı vardır. Aşağıdaki şema, bu birimlerin birbiriyle nasıl çalıştığını gösterir.
+
+![İşlemcinin iç yapısı](gorseller/diagram-cpu-yapi.png){width=70%}
+
+- **Kontrol birimi:** Komutları okur, çözer ve hangi birimin ne zaman çalışacağını yönetir. İşlemcinin içindeki yöneticidir.
+- **Aritmetik ve mantık birimi (ALU):** Toplama, çıkarma gibi hesapları ve karşılaştırmaları ("büyük mü, eşit mi?") yapar.
+- **Kaydediciler:** İşlemcinin elinin altında tuttuğu, üzerinde çalıştığı veriyi saklayan çok küçük ve en hızlı saklama alanlarıdır.
+- **Ön bellek:** Bir sonraki bölümde göreceğimiz gibi, sık kullanılan veriyi tutarak işlemcinin belleğe gitme sayısını azaltır.
+
+Bu birimler tek başına çalışmaz; kontrol birimi hepsini sırayla işe koşar. Günlük hayatta "işlemci şu an şunu yapıyor" dediğimiz şey, aslında bu birimlerin birlikte yürüttüğü bir döngüdür.
+
+**Mimari:** Masaüstü ve sunucularda x86, telefon ve tabletlerde ise ARM mimarisi yaygındır; ikisi de aynı işi farklı komut kümeleriyle yapar.
 
 ## Ekran kartı ve grafik işlemci (GPU)
 
@@ -89,7 +108,7 @@ GPU ile işlemci arasındaki fark, işin **türünde** yatar: İşlemci az sayı
 
 **RAM**, bilgisayarın çalışma belleğidir. O anda açık olan programları ve işlenen veriyi tutar. Elektrik kesildiğinde ya da bilgisayar kapandığında RAM'in içindekiler **silinir**; yani RAM geçicidir.
 
-**ROM**, üzerindeki bilgiyi kalıcı olarak saklayan, yalnızca okunabilen bellektir. Bilgisayarın açılışında çalışan temel yazılımı (donanım yazılımı) barındırır. Kullanıcı bu içeriği değiştirmez.
+**ROM**, üzerindeki bilgiyi kalıcı olarak saklayan, yalnızca okunabilen bellektir. Bilgisayarın açılışında çalışan temel yazılımı (donanım yazılımı) barındırır; bu yazılıma **BIOS** (yeni sistemlerde **UEFI**) denir. Donanımın içine gömülü gelen ve donanımı çalıştıran bu tür yazılımlara **donanım yazılımı** (firmware) denir; BIOS bunun en bilinen örneğidir. Bilgisayarı açtığınızda BIOS önce ekran kartı, klavye ve disk gibi temel donanımların yerinde ve çalışır olduğunu sınar, ardından işletim sistemini başlatır. Açılışta gördüğünüz ilk ekran bu yüzden BIOS'a aittir. Kullanıcı bu içeriği değiştirmez.
 
 **Ön bellek** (cache), işlemcinin en sık kullandığı verileri tutan çok küçük ama çok hızlı bellektir. Sık kullanılan veriye hızlı erişim sağlayarak sistemi hızlandırır. "Ön bellek vardır ve hızlandırır" bilgisi bu ders için yeterlidir.
 
@@ -139,29 +158,45 @@ SSD'li bir bilgisayar çok daha hızlı açılır, uygulamalar saniyeler içinde
 
 | Tür | Görevi | Örnekler |
 |:---|:---|:---|
-| Giriş birimleri | Veriyi bilgisayara aktarır | Klavye, fare, mikrofon, tarayıcı, kamera |
-| Çıkış birimleri | Sonucu kullanıcıya iletir | Monitör, yazıcı, hoparlör |
-| Hem giriş hem çıkış | İki yönde de veri taşır | Dokunmatik ekran, USB bellek, harici disk |
+| Giriş birimleri | Veriyi bilgisayara aktarır | Klavye, fare, dokunmatik yüzey (touchpad), mikrofon, tarayıcı, kamera |
+| Çıkış birimleri | Sonucu kullanıcıya iletir | Monitör, projeksiyon cihazı, yazıcı, çizici, hoparlör |
+| Hem giriş hem çıkış | İki yönde de veri taşır | Dokunmatik ekran, çok fonksiyonlu yazıcı, USB bellek, harici disk |
+
+## Sık karşılaşılan çevre birimleri
+
+Günlük hayatta en çok karşılaşacağınız birimleri kısaca tanıyalım:
+
+- **Klavye ve fare:** En yaygın giriş birimleridir; kablolu veya kablosuz, farklı düzenlerde (örneğin Türkçe Q klavye) bulunur.
+- **Dokunmatik yüzey (touchpad):** Dizüstü bilgisayarlarda farenin yerini alır; parmağınızı yüzeyde kaydırarak imleci yönetirsiniz.
+- **Tarayıcı:** Basılı bir belgeyi veya fotoğrafı sayısal hâle çevirir. **Çok fonksiyonlu (tarayıcılı) yazıcılar** yazdırma, tarama ve fotokopiyi tek cihazda yapar; bu yüzden aynı anda hem giriş hem çıkış birimidir.
+- **Yazıcı:** Belgeyi kâğıda aktarır. Mürekkep püskürtmeli yazıcılar renkli baskıda ve başlangıç maliyetinde avantajlıdır; lazer yazıcılar ise çok sayıda siyah-beyaz belgeyi hızlı ve ekonomik biçimde basar.
+- **Çizici (plotter):** Yazıcıya benzer, ama mürekkep yerine kalem kullanır; teknik resim, mimari plan ve harita gibi büyük ve hassas çizimleri kâğıda aktarır.
+- **Projeksiyon cihazı:** Görüntüyü büyüterek perdeye yansıtır; ders ve sunumlarda kullanılır.
+- **Harici depolama (USB bellek, harici disk):** Yazılabilen ve okunabilen taşınabilir saklama ortamlarıdır; bu yüzden iki yönlü sayılırlar. Ayrıntısını 4. haftada göreceğiz.
+
+## Bağlantı noktaları
 
 Çevre birimleri bilgisayara **bağlantı noktaları** (port) üzerinden takılır. En sık karşılaşacağınız noktalar: **USB** (klavye, fare, bellek, yazıcı gibi pek çok cihaz), **USB-C** (yeni nesil, küçük ve çift yönlü uç; hem veri hem şarj), **HDMI** (monitör ve televizyon bağlantısı) ve **Ethernet** (kablolu ağ). Bağlantı noktalarını tanımak, "kablom uymuyor" sorununu kendi başınıza çözmenizi sağlar.
 
-# Bit, Byte ve Ölçü Birimleri
+# Bit, Bayt ve Ölçü Birimleri
 
-Bilgisayar her şeyi **bit** ile temsil eder. Bir bit, 0 veya 1 değerini alabilen en küçük bilgi birimidir. Sekiz bit bir araya gelerek **byte**'ı oluşturur; bir byte yaklaşık olarak tek bir harfi temsil eder.
+Bilgisayar her şeyi **bit** ile temsil eder. Bir bit, 0 veya 1 değerini alabilen en küçük bilgi birimidir. Sekiz bit bir araya gelerek **bayt** (byte) oluşturur; bir bayt yaklaşık olarak tek bir **karakteri** temsil eder.
 
-Dosya boyutları büyüdükçe daha büyük birimler kullanılır. Her birim, bir öncekinin yaklaşık bin katıdır (bilgisayarlar ikilik sistemde çalıştığı için tam olarak 1024 katı):
+Dosya boyutları büyüdükçe daha büyük birimler kullanılır. Sekiz bitten itibaren her birim, bir öncekinin yaklaşık bin katıdır (bilgisayarlar ikilik sistemde çalıştığı için tam olarak 1024 katı):
 
 | Birim | Kısaltma | Yaklaşık değer | Gerçek hayattan örnek |
 |:---|:---|:---|:---|
-| Kilobyte | KB | 1.024 byte | Kısa bir metin dosyası |
-| Megabyte | MB | ~1 milyon byte | Bir fotoğraf (2–5 MB), bir şarkı (3–5 MB) |
-| Gigabyte | GB | ~1 milyar byte | Bir film (1–2 GB), bir uygulama |
-| Terabyte | TB | ~1 trilyon byte | Yüzlerce film, binlerce fotoğraf |
+| Bit | b | 0 veya 1 | Tek bir ikili değer |
+| Bayt | B | 8 bit | Tek bir karakter |
+| Kilobyte | KB | 1.024 bayt | Kısa bir metin dosyası |
+| Megabyte | MB | ~1 milyon bayt | Bir fotoğraf (2–5 MB), bir şarkı (3–5 MB) |
+| Gigabyte | GB | ~1 milyar bayt | Bir film (1–2 GB), bir uygulama |
+| Terabyte | TB | ~1 trilyon bayt | Yüzlerce film, binlerce fotoğraf |
 
 ::: {.callout-note}
 ## Neden 1024?
 
-Bilgisayarlar ikilik (0–1) sistemde çalıştığı için birimler 1000'in katlarıyla değil, 1024'ün katlarıyla artar. Günlük konuşmada "bir megabayt yaklaşık bir milyon byte" demek yeterlidir.
+Bilgisayarlar ikilik (0–1) sistemde çalıştığı için birimler 1000'in katlarıyla değil, 1024'ün katlarıyla artar. Günlük konuşmada "bir megabayt yaklaşık bir milyon bayt" demek yeterlidir.
 :::
 
 # Bilgisayar Türleri
@@ -173,7 +208,9 @@ Bilgisayar denince akla masaüstü gelse de, günümüzde bilgisayarlar pek çok
 | Masaüstü | Kasa + ayrı monitör/klavye; parçaları değiştirilebilir | Ofis, ev, oyun; güç ve genişletme öncelikli |
 | Dizüstü (laptop) | Taşınabilir, hepsi bir arada | Öğrenci, çalışan; hareketlilik öncelikli |
 | Tablet | Dokunmatik, çok taşınabilir | Okuma, not alma, medya |
+| İş istasyonu | Masaüstünden güçlü, tek bir ağır işe odaklı | Mühendislik çizimi, video kurgu, bilimsel çözümleme |
 | Sunucu | Ağa hizmet veren güçlü ve sürekli açık bilgisayar | Web siteleri, kurumsal hizmetler |
+| Süper bilgisayar | Binlerce işlemcinin birlikte çalıştığı en güçlü sistem | İklim modelleme, ilaç ve malzeme araştırması, büyük yapay zekâ modellerinin eğitimi |
 | Gömülü sistemler | Tek amaca özel, cihazın içinde | Modem, akıllı TV, araç, endüstriyel cihaz |
 
 Günlük hayatta bunların çoğuyla iç içeyiz: telefonunuz da bir bilgisayardır, evinizdeki modem de. "Bilgisayar" kavramını yalnızca masaüstü kutudan ibaret görmemek, bu dersteki diğer konuları da anlamayı kolaylaştırır.
@@ -230,11 +267,14 @@ Bu uygulama notla değerlendirilmez. Amacı, donanım kavramlarını kendi cihaz
 
 - Bilgisayar dört iş yapar: veriyi **alır, işler, verir ve saklar** (girdi–işlem–çıktı–depolama).
 - **Anakart** bileşenleri birbirine bağlar; **işlemci** komutları yürütür; **RAM** çalışma belleğidir; **depolama** dosyaları kalıcı saklar.
+- **İşlemcinin içinde** kontrol birimi, ALU, kaydediciler ve ön bellek görev paylaşımı yapar; masaüstünde **x86**, telefon ve tabletlerde **ARM** mimarisi yaygındır.
 - **RAM geçicidir** (elektrik kesilince silinir), **depolama kalıcıdır**; ikisi farklı görevler üstlenir.
+- **BIOS** (yeni sistemlerde **UEFI**), açılışta donanımı sınar ve işletim sistemini başlatır.
 - **SSD**, HDD'ye göre çok daha hızlıdır; günlük performansta ilk bakılacak özelliktir.
 - **GPU**, binlerce basit işi aynı anda yapar; oyun, görüntü işleme, bilimsel hesap ve yapay zekâda kullanılır.
-- **Bit** 0/1'dir; **byte** 8 bittir; boyutlar KB → MB → GB → TB olarak büyür.
-- Bilgisayar; masaüstü, dizüstü, tablet, sunucu ve gömülü sistemler gibi pek çok biçimde bulunur.
+- **Çevre birimleri** giriş (klavye, fare, tarayıcı) ve çıkış (monitör, yazıcı, projeksiyon) birimleri olarak ayrılır; dokunmatik ekran ve çok fonksiyonlu yazıcı gibi bazıları iki yönlüdür.
+- **Bit** 0/1'dir; **bayt** 8 bittir; boyutlar KB → MB → GB → TB olarak büyür.
+- Bilgisayar; masaüstünden süper bilgisayara, sunuculardan gömülü sistemlere kadar pek çok biçimde bulunur.
 
 # Kendini Sınama Soruları
 
@@ -243,9 +283,11 @@ Bu uygulama notla değerlendirilmez. Amacı, donanım kavramlarını kendi cihaz
 3. RAM ile depolama arasındaki temel fark nedir? Hangisi elektrik kesilince silinir?
 4. SSD'nin HDD'ye göre günlük hayatta hissedilen avantajı nedir?
 5. "Bilgisayarım yavaş" şikâyetinin en sık iki donanım nedenini yazın.
-6. Bir byte kaç bittir? KB, MB, GB ve TB sıralamasını küçükten büyüğe yazın.
-7. Dokunmatik ekran neden hem giriş hem çıkış birimidir?
+6. Bir bayt kaç bittir? KB, MB, GB ve TB sıralamasını küçükten büyüğe yazın.
+7. Dokunmatik ekran ve çok fonksiyonlu (tarayıcılı) yazıcı neden hem giriş hem çıkış birimidir?
 8. Bir fotoğrafın, bir filmin ve bir TB'lık diskin boyutlarını kabaca ilişkilendirin.
+9. İşlemcinin içindeki dört temel birimi yazın ve her birinin görevini kısaca açıklayın.
+10. BIOS ne işe yarar? Bilgisayar açılırken hangi iki temel adımı yerine getirir?
 
 # Kaynaklar
 

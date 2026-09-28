@@ -88,6 +88,20 @@ Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmand�
 Kısa mesajla gelen kod, hiç yoktan iyidir; ancak **uygulama tabanlı** kod üreten yöntemler daha güvenlidir.
 :::
 
+# Sosyal Mühendislik
+
+Saldırganların çoğu teknik bir açıklık aramaz; **insanı** hedefler. İnsanların güvenme, yardım etme ve acele etme eğilimini kullanarak güvenlik önlemlerini atlatmaya **sosyal mühendislik** denir.
+
+Sık kullanılan yöntemler:
+
+- **Güven kazanmak:** Kendini yetkili ya da tanıdık biri olarak tanıtmak.
+- **Taklit etmek:** Özellikle telefonla bir kurumun ya da yakının yerine geçmek.
+- **Yardım ediyor görünmek:** Bir sorun yaratıp çözümü kendisi sunmak.
+- **Ortak tanıdık üzerinden yakınlık kurmak:** "Ahmet de beni tanıyor" gibi.
+- **Çöp karıştırmak:** Atılan belgelerden, notlardan bilgi toplamak.
+
+Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. Teknik önlemler ne kadar güçlü olursa olsun, en iyi savunma durup düşünmektir.
+
 # Oltalama (Phishing)
 
 **Oltalama**, sizi kandırarak parola veya kişisel bilgi vermeye ikna etme saldırısıdır. E-posta, kısa mesaj, telefon araması ya da sahte web sitesiyle yapılabilir.
@@ -128,6 +142,14 @@ Kısa mesajla gelen kod, hiç yoktan iyidir; ancak **uygulama tabanlı** kod ür
 | **Fidye yazılımı** | Dosyaları şifreler, açmak için para ister |
 | **Casus yazılım** | Kullanımı izler, parola ve bilgi toplar |
 | **Solucan** | Kullanıcı bir şey yapmadan ağda yayılır |
+
+## Zombi bilgisayarlar
+
+Bazı zararlı yazılımlar bilgisayarınızda hemen bir şey bozmaz. Sessizce çalışır, uzaktaki bir **komut merkezine** bağlanır ve oradan gelen emirleri uygular. Böyle bir bilgisayara **zombi bilgisayar**, bu bilgisayarlardan oluşan ağa **botnet** denir.
+
+Zombi bilgisayarlar genellikle topluca hareket eder: bir siteyi çökertmek, spam göndermek ya da başka sistemlere saldırmak için kullanılırlar. Kullanıcı çoğu zaman hiçbir şey fark etmez; bilgisayar normal çalışmaya devam eder.
+
+Bu yüzden "bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez" demek yanlıştır: cihazınız farkında olmadan bir saldırganın işini görmeye başlayabilir ve bunun hukuki sonuçları olabilir.
 
 ## Nasıl bulaşır?
 
@@ -176,6 +198,22 @@ Günlük hayatta uygulanacak pratik önlemler:
 - **Genel WiFi ağlarında hassas işlem yapmayın** (5. hafta).
 - **Kullanmadığınız hesapları kapatın:** Her hesap bir risk yüzeyidir.
 - **Veri ihlali bildirimlerini takip edin:** Bir hizmet sızarsa parolanızı değiştirin.
+
+## Güvenlik duvarı ve varsayılan ayarlar
+
+**Güvenlik duvarı**, ağdan gelen ve giden trafiği denetleyen, izin verilmeyen bağlantıları engelleyen korumadır. İşletim sistemlerinin çoğunda **hazır olarak açık** gelir; kapatmak korumayı zayıflatır. Benzer şekilde çoğu sistemde bir antivirüs de yerleşik gelir.
+
+Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan bir kullanıcı için genellikle **yeterlidir**. Yeni bir "güvenlik yazılımı" indirmeye gerek yoktur; gerekli olan açık olan korumayı kapatmamak ve güncel tutmaktır.
+
+# Güvenli Alışveriş ve Ödeme
+
+İnternetten alışveriş ve bankacılık, bilgisayarınıza saldırılmasını gerektirmez: bilgilerinizi **siz** yanlış yere yazarsanız kaybolurlar.
+
+- **Adresi ve kilidi kontrol edin.** Ödeme sayfası `https` olmalı ve adres çubuğunda kilit simgesi bulunmalıdır.
+- **Adresi kendiniz yazın.** E-postadan ya da başka bir siteden gelen bağlantıya tıklamak yerine kurumun adresini doğrudan yazın.
+- **Bankacılık parolanızı kimseyle paylaşmayın.** Bankalar dâhil hiçbir kurum parolanızı istemez.
+- **Sanal kart kullanın.** Alışverişe özel, limiti düşük bir sanal kart, asıl kart bilgilerinizin açığa çıkma riskini azaltır.
+- **Ödemeleri hesap özetinden doğrulayın.** Beklemediğiniz bir harcama görürseniz bankanıza bildirin.
 
 # Doğru Bilinen Yanlışlar
 

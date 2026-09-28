@@ -50,6 +50,16 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 
 Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılmaz**.
 
+## CSV: Veriyi Taşıyan Sade Biçim
+
+Tabloları başka programlara aktarmanın ortak yolu: **CSV** (virgülle ayrılmış değerler).
+
+- Aslında **düz metindir**: her satır bir kayıt, alanlar birer sütun
+- **Değerleri taşır, biçimlendirmeyi taşımaz** — renk, formül ve grafik CSV'ye geçmez
+- Neredeyse her program CSV okuyabilir; bu yüzden ortak biçimdir
+
+Sütunlar birleşmiş görünüyorsa sorun genellikle **ayraç uyumsuzluğudur** (virgül / noktalı virgül).
+
 ## Formüller Nasıl Yazılır
 
 Formüller **eşittir işaretiyle** başlar; aksi hâlde tablo yazdığınızı metin sayar.
@@ -146,6 +156,10 @@ Başlığı ortalamak için hücre birleştirmek yerine **ortala** hizalamasın�
 
 Sıralarken **bütün satırı** seçin; yalnızca bir sütunu sıralarsanız satırlar arasındaki bağ kopar.
 
+::: {.callout-warning}
+**Sıralama veriyi kalıcı olarak değiştirir, filtreleme değiştirmez.** Sıralamadan önce verinizin tümünü seçtiğinizden emin olun.
+:::
+
 # Grafik
 
 ## Grafik Oluşturmanın Üç Adımı
@@ -166,6 +180,14 @@ Bu üçüncü adım, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" h�
 | Dağılım | Histogram, kutu grafiği |
 | İki değişken arasındaki ilişki | Dağılım (saçılım) |
 | Coğrafi dağılım | Harita (alan ≠ değer) |
+
+## Örnekler: Sütun, Çizgi, Pasta
+
+![](gorseller/diagram-grafik-turleri-1.png){width=88%}
+
+## Örnekler: Histogram, Kutu, Saçılım
+
+![](gorseller/diagram-grafik-turleri-2.png){width=88%}
 
 ## Pasta Grafik Uyarısı
 
@@ -218,6 +240,8 @@ Grafiği hazırlayan şu kararları verir: hangi veriyi alacağı, hangi aralı�
 9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
 
 ## Uygulama: Aynı Veri, İki Grafik
+
+**Hangi araçla:** Google Sheets gibi çevrimiçi bir araç ya da LibreOffice Calc gibi kurulabilen bir paket.
 
 ![](gorseller/karsilastirma.png)
 

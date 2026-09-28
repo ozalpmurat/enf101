@@ -11,6 +11,7 @@ format: beamer
 
 - Yapay zekânın ne olduğunu açıklar.
 - Günlük kullanım alanlarını örneklendirir.
+- Algoritma kavramını ve akış diyagramını açıklar.
 - Nasıl öğrendiğini kavramsal düzeyde açıklar.
 - Büyük veri ile ilişkisini açıklar.
 - Sınırlarını ve yanılgılarını tanır.
@@ -59,6 +60,22 @@ Bunu **fark etmek**, teknolojiyle ilişkinizi değiştirir.
 
 # Nasıl Öğrenir?
 
+## Algoritma Nedir?
+
+Bir işi bilgisayara yaptırmanın yolu, onu **adım adım** tanımlamaktır. Bu adım dizisine **algoritma** denir.
+
+![](gorseller/diagram-algoritma.png){width=62%}
+
+## Algoritmanın Üç Öğesi
+
+- **Sıra:** adımlar bir düzeni izler
+- **Karar:** bir koşul akışı ikiye böler
+- **Tekrar:** bir adım önceki bir adıma dönebilir
+
+Bu kurallar **programlama dilleri**yle yazılır; yapay zekâda en yaygını **Python**'dur.
+
+**Bu ders kod yazmayı öğretmez** — algoritmayı, yapay zekânın neyi farklı yaptığını görmek için tanıyoruz.
+
 ## Kuralları Yazmak Yerine Örneklerden Öğrenmek
 
 ![](gorseller/diagram-yz-akis.png){width=78%}
@@ -76,6 +93,10 @@ Sonuçta model, **yeni** örnek görünce tahmin yapabilir.
 2. haftada gördük: GPU "binlerce basit işi aynı anda yapar".
 
 İşte bu yüzden yapay zekâ **eğitiminde** kullanılan donanımın temelidir.
+
+- Eğitim tek bir makinede yapılmaz.
+- Binlerce GPU'nun bir arada çalıştığı **veri merkezlerinde** yürütülür.
+- 2. haftadaki **süper bilgisayarlar** çoğu zaman tam bu iş için kurulur.
 
 ## Büyük Veri
 
@@ -98,6 +119,10 @@ Kişisel veri veya özel belge yüklemeyin.
 Model, **kendinden emin bir tonda yanlış bilgi** üretebilir.
 
 Olmayan bir kitap, makale veya olaydan söz edebilir.
+
+::: {.callout-warning}
+**Yapay zekâ emin bir tonda yanlış söyleyebilir.** Kendinden emin üslup doğruluk göstergesi değildir; önemli bilgiyi bağımsız bir kaynaktan doğrulayın.
+:::
 
 ## Neden Olur?
 

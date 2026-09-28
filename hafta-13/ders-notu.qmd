@@ -167,6 +167,15 @@ Doğru kullanıldığında yapay zekâ, öğrenmeyi hızlandıran bir araçtır:
 | **Dil düzeltme** | Kendi yazdığınız metni düzeltmek |
 | **Alıştırma** | Soru üretmesini isteyip kendinizi sınamak |
 | **Yabancı dil** | Metni okuma düzeyinize göre basitleştirmek |
+| **Dağınık veriyi düzenleme** | CSV gibi metin tabanlı veriyi sütunlara ayırmak, tutarsızlıkları bulmak |
+
+::: {.callout-warning}
+## Yapay zekâya veri verirken iki kural
+
+**1. Kişisel ve gizli veriyi yüklemeyin.** Tabloda isim, kimlik numarası, sağlık bilgisi veya müşteri verisi varsa o dosyayı araca yüklemeyin.
+
+**2. Çıktıyı doğrulayın.** Yapay zekâ düzenleme sırasında bir değeri sessizce değiştirebilir, satır atlayabilir veya uydurabilir. Kaydetmeden önce satır sayısını ve toplamları özgün dosyayla karşılaştırın.
+:::
 
 ::: {.callout-tip}
 ## Öğrenmeyi kolaylaştırır mı, zorlaştırır mı?

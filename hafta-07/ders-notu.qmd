@@ -42,13 +42,31 @@ Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulam
 | Stil | Adlandırılmış biçim kümesi (Başlık 1, Normal…) |
 | Sayfa düzeni | Kenar boşlukları, yön, sayfa boyutu |
 
-**Kaydetme ve biçimler.** Belgenizi `.docx` olarak kaydedersiniz; ancak paylaşırken sıklıkla **PDF**'e çevirmeniz gerekir. PDF, farklı bilgisayarlarda bozulmadan görüntülenir ve düzenlenmesi zordur — bu yüzden ödev tesliminde tercih edilir.
+**Kaydetme ve biçimler.** Belgenizi genellikle **`.docx`** (Microsoft Word'ün biçimi) ya da **`.odt`** (LibreOffice gibi açık kaynak paketlerin OpenDocument biçimi) olarak kaydedersiniz; ikisi de düzenlenebilir kalır ve birbirine çevrilebilir. Paylaşırken ise sıklıkla **PDF**'e çevirmeniz gerekir. PDF, farklı bilgisayarlarda bozulmadan görüntülenir ve düzenlenmesi zordur — bu yüzden ödev tesliminde tercih edilir.
 
 ::: {.callout-tip}
 ## Belgeyi sık sık kaydedin
 
 Kelime işlemcilerin çoğu otomatik kaydetme sunar; açık olduğundan emin olun. Kritik bir belgeyi yazarken ara ara `Ctrl + S` alışkanlığı, saatlerce süren çalışmayı kurtarır.
 :::
+
+## Masaüstü sürüm, çevrimiçi sürüm
+
+Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır: bilgisayara **kurulan masaüstü sürüm** ve tarayıcıda çalışan **çevrimiçi (web tabanlı) sürüm**. İkisi de aynı işi yapar; farkları kullanım koşullarındadır.
+
+| | Masaüstü sürüm | Çevrimiçi sürüm |
+|:---|:---|:---|
+| Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
+| İnternet | Gerekmez | Gerekir |
+| Erişim | Yalnızca o belgeyi açan bilgisayardan | Hesabınıza girebildiğiniz her cihazdan |
+| Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
+| Verinin yeri | Kendi bilgisayarınız | Hizmeti sunan şirketin sunucuları |
+
+Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak belgeniz **kendi bilgisayarınızda durmaz**: hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
+
+Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
+
+Aynı ayrım 8. haftadaki tablo (**Google Sheets**, **LibreOffice Calc**) ve 9. haftadaki sunum (**Google Slides**, **LibreOffice Impress**) uygulamaları için de geçerlidir.
 
 # Metin ve Paragraf Biçimlendirme
 
@@ -143,6 +161,17 @@ Sayfa altına düşülen kısa açıklama veya kaynak notudur. Metnin akışın�
 
 Yararlandığınız kaynakların belge sonunda listelendiği bölümdür. Kaynakçadaki her giriş, metin içinde mutlaka anılmalıdır — ve tersi de geçerlidir.
 
+## Değişiklikleri izleme
+
+Belgenin uzunluğuyla ilgili değildir ama bir belgeyi başkasıyla paylaşıp üzerinde çalıştığınızda bu özellik gerekir. **Değişiklikleri izleme** açıkken yapılan her ekleme ve silme işaretlenir; siz bunları **kabul** ya da **reddedebilirsiniz**.
+
+İki durumda işe yarar:
+
+- **Danışman veya hoca düzeltmeleri:** Metninizde yapılan değişiklikleri görür, katılmadıklarınızı reddedersiniz.
+- **Grup ödevi:** Kimin neyi değiştirdiği kayıtlı kalır.
+
+Teslimden önce belgede **açık kalmış bir izleme ya da yorum olmadığından** emin olun; çoğu kurum bunu son okuma adımı olarak ister.
+
 # Akademik Dürüstlük ve Kaynak Gösterme
 
 Bu bölüm, bu haftanın en önemli kısmıdır.
@@ -180,12 +209,14 @@ Metin içinde kısa atıf yapılır, belge sonunda ayrıntılı künye verilir. 
 
 ## Kaynak yönetimi araçları
 
-Kaynakları elle listelemek, sayıları arttıkça zorlaşır. **Ücretsiz kaynak yönetimi araçları** (örneğin Zotero) şunları yapar:
+Kaynakları elle listelemek, sayıları arttıkça zorlaşır. **Ücretsiz kaynak yönetimi araçları** (örneğin **Zotero** ve **Mendeley**) şunları yapar:
 
 - Web sayfasından kaynağı tek tıkla kaydeder
 - Metin içi atıfları otomatik oluşturur
 - Kaynakçayı istediğiniz biçimde üretir
 - Yazdığınız belgeyle bütünleşir
+
+**Zotero** açık kaynak bir araçtır; **Mendeley** ise ücretsiz ama kapalı kaynak bir araçtır. İkisi de aynı işi yapar; seçim size kalır.
 
 Bu araçlar, kaynak göstermeyi zahmetli olmaktan çıkarır — yani intihali önlemenin en pratik yollarından biridir.
 
@@ -209,6 +240,8 @@ Bir resmi belgeye eklediğinizde, "bu resim ne anlatıyor?" sorusunun kısa yan�
 :::
 
 # Uygulama: Kendi Ödevinizi Biçimlendirin
+
+**Hangi araçla:** tarayıcıda çalışan ücretsiz bir araç (Google Docs gibi) ya da bilgisayarınıza kurulabilen ücretsiz bir paket (LibreOffice Writer gibi). Aşağıdaki adımlar ikisinde de aynıdır.
 
 ## Adım 1 — Kısa bir belge yazın
 
@@ -260,7 +293,8 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 # Kaynaklar
 
 - **Kullanılan kelime işlemci yazılımının resmî kılavuzu** — stiller, içindekiler ve erişilebilirlik belgeleri.
-- **Zotero** — ücretsiz kaynak yönetimi aracı. (zotero.org)
+- **Zotero** — ücretsiz ve açık kaynak kaynak yönetimi aracı. (zotero.org)
+- **Mendeley** — ücretsiz, kapalı kaynak kaynak yönetimi aracı. (mendeley.com)
 - **YÖK ve üniversite kütüphanelerinin intihal politikaları** — akademik dürüstlük kılavuzları.
 - **W3C Erişilebilirlik Girişimi** — belge erişilebilirliği ilkeleri. (w3.org/WAI)
 

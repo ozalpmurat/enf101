@@ -33,7 +33,8 @@ Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **b
 
 ## Kaydetme ve Biçimler
 
-- **`.docx`:** Düzenlenebilir hâli
+- **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
+- **`.odt`:** LibreOffice gibi açık kaynak paketlerin biçimi
 - **PDF:** Paylaşım ve teslim için; bozulmaz, düzenlenmesi zor
 
 Ödev tesliminde genellikle **PDF** istenir.
@@ -41,6 +42,19 @@ Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **b
 ## Belgeyi Sık Sık Kaydedin
 
 Otomatik kaydetmeyi açık tutun; ayrıca `Ctrl + S` alışkanlığı edinin.
+
+## Masaüstü mü, Çevrimiçi mi?
+
+Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tarayıcıda çalışan **çevrimiçi** sürüm.
+
+| | Masaüstü | Çevrimiçi |
+|:---|:---|:---|
+| Kurulum | Gerekir | Gerekmez |
+| İnternet | Gerekmez | Gerekir |
+| Ortak çalışma | Sınırlı | Aynı anda çok kişi |
+| Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucusu |
+
+Çevrimiçi belge **sizin bilgisayarınızda durmaz**; kişisel bilgi içeren belgelerde dikkatli olun.
 
 # Biçimlendirme
 
@@ -84,6 +98,10 @@ Gerçek başlık, stil uygulanmış metindir.
 
 **Fark nerede çıkar?** İçindekiler oluşturmaya kalktığınızda: elle biçimlendirilmiş başlıklar içindekilere hiç girmez.
 
+::: {.callout-warning}
+**Elle kalınlaştırılan başlık içindekilere girmez.** Başlıkları her zaman stillerle biçimlendirin; aksi hâlde içindekiler tablosu boş kalır.
+:::
+
 # Tablo ve Görsel
 
 ## Tablolar
@@ -121,15 +139,25 @@ Sayfa numarası belgeyi **başvurulabilir** kılar.
 
 # Uzun Belge Yönetimi
 
-## Üç Zorunlu Özellik
+## Uzun Belgede Üç Özellik
 
 - **İçindekiler:** yalnızca stillerle çalışır
 - **Dipnot:** sayfa altında ek bilgi
 - **Kaynakça:** yararlanılan kaynakların listesi
 
-## İçindekiler ve Kaynakça Kuralı
-
 Kaynakçadaki her giriş metinde anılmalı; metinde anılan her kaynak kaynakçada olmalı.
+
+## Değişiklikleri İzleme
+
+Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır.
+
+- Eklenen ve silinen her şey **işaretlenir**
+- Kimin ne zaman değiştirdiği görülür
+- Her değişiklik **kabul** ya da **reddedilir**
+
+Danışman/hoca düzeltmelerinde ve grup ödevinde işe yarar.
+
+**Teslimden önce açık kalmış izleme ve yorum bırakmayın.**
 
 # Akademik Dürüstlük
 
@@ -167,7 +195,7 @@ Hangi biçim (APA, MLA, IEEE) kullanılacaksa **tutarlı** olunmalıdır.
 
 ## Kaynak Yönetimi Araçları
 
-Ücretsiz araçlar (örneğin **Zotero**):
+İki yaygın ücretsiz araç: **Zotero** (açık kaynak) ve **Mendeley** (kapalı kaynak).
 
 - Kaynağı tek tıkla kaydeder
 - Metin içi atıfları oluşturur
@@ -196,6 +224,8 @@ Kaynak göstermeyi kolaylaştırarak **intihali önler**.
 # Kapanış
 
 ## Uygulama: Kendi Ödevinizi Biçimlendirin
+
+**Hangi araçla:** Google Docs gibi çevrimiçi bir araç ya da LibreOffice Writer gibi kurulabilen bir paket.
 
 1. Üç başlıklı kısa bir metin yazın — başlıkları **stil** olarak uygulayın
 2. Tablo ve görsel ekleyin; altyazı yazın

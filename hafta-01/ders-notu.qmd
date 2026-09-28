@@ -103,6 +103,8 @@ Bugün kullandığımız bilgisayarlar bir gecede ortaya çıkmadı. Hesaplama a
 
 ![Hesaplamanın tarihinden duraklar](gorseller/diagram-timeline-tam.png){width=100%}
 
+Şemadaki duraklar eşit aralıklarla yerleştirilmiştir; **zaman ekseni ölçekli değildir.** Örneğin 1671 ile 1843 arasındaki süre, 1843 ile 1890 arasındaki süreden çok daha uzundur.
+
 Tarihin bilinen ilk hesaplama aracı **abaküs**tür; teller üzerindeki boncuklarla dört işlem yapılmasını sağlar. 17. yüzyılda hesaplama makineleri mekanik hâle geldi: **Blaise Pascal** (1642) toplama ve çıkarma yapabilen bir makine tasarladı; **Gottfried Leibniz** (1671) çarpma ve bölmeyi de ekledi ve ikili sayı sistemi üzerine çalıştı.
 
 19. yüzyılda **Charles Babbage**, bugünkü bilgisayarların atası sayılan **Analitik Makine**'yi tasarladı. Bu makine, delikli kartlardan okunan komutlarla çalışacak ve sonucu saklayacaktı. **Ada Lovelace**, bu makine için yazdığı notlarda bir işlemin adım adım nasıl yapılacağını anlatarak tarihin ilk programcısı kabul edildi.

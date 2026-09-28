@@ -47,6 +47,10 @@ Saldırıların büyük kısmı teknik değil, **ikna** yoluyla yapılır.
 - **Kişisel bilgi içermesin** — doğum tarihi, isim, plaka
 - **Kalıp kullanmayın** — `123456`, `qwerty`, `Ahmet2010!`
 
+::: {.callout-warning}
+**Aynı parolayı birden fazla hesapta kullanmayın.** Tek bir sızıntı, o parolayı kullandığınız bütün hesapları ele geçirir.
+:::
+
 ## Parola Yerine Söz Öbeği
 
 Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edilemez.
@@ -73,6 +77,20 @@ Parolanız çalınsa bile hesabınız korunur.
 - **E-posta** — diğer bütün parolalar oraya sıfırlanır
 - **e-Devlet ve bankacılık**
 - **Sosyal medya hesapları**
+
+# Sosyal Mühendislik
+
+## İnsanı Hedef Alan Saldırılar
+
+Saldırganlar çoğu zaman teknik bir açıklık aramaz; **insanı** hedefler.
+
+- **Güven kazanmak:** Kendini yetkili ya da tanıdık gibi tanıtmak
+- **Taklit etmek:** Telefonda bir kurumun ya da yakının yerine geçmek
+- **Yardım ediyor görünmek:** Sorun yaratıp çözümü kendisi sunmak
+- **Ortak tanıdık:** "Ahmet de beni tanıyor" gibi
+- **Çöp karıştırmak:** Atılan belgelerden bilgi toplamak
+
+Ortak yanı: sizi **düşünmeden hareket etmeye** itmeleri.
 
 # Oltalama
 
@@ -105,6 +123,14 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 ## Türler
 
 ![](gorseller/diagram-zararli.png){width=78%}
+
+## Zombi Bilgisayarlar
+
+- Bilgisayar sessizce bir **komut merkezine** bağlanır
+- Oradan gelen emirleri uygular; kullanıcı fark etmez
+- Bu makinelerden oluşan ağa **botnet** denir
+
+Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir — "bende önemli veri yok" demek yanlıştır.
 
 ## Nasıl Bulaşır?
 
@@ -149,6 +175,24 @@ Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifrele
 - **Genel WiFi'da hassas işlem yapmayın**
 - **Kullanmadığınız hesapları kapatın**
 - **Veri ihlali bildirimlerini** takip edin
+
+## Güvenlik Duvarı ve Varsayılan Ayarlar
+
+- **Güvenlik duvarı:** Gelen-giden trafiği denetler, izin verilmeyeni engeller
+- İşletim sistemlerinde **hazır ve açık** gelir; kapatmayın
+- Çoğu sistemde antivirüs de yerleşik gelir
+
+Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
+
+# Güvenli Alışveriş ve Ödeme
+
+## İnternetten Alışveriş ve Bankacılık
+
+- **`https` ve kilit simgesini** kontrol edin
+- Adresi **kendiniz yazın**; bağlantıya tıklamayın
+- Bankacılık parolanızı **kimseyle paylaşmayın**
+- **Sanal kart** kullanın (düşük limitli)
+- Ödemeleri **hesap özetinden** doğrulayın
 
 # Doğru Bilinen Yanlışlar
 

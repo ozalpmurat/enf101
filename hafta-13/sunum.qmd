@@ -126,6 +126,10 @@ Bölümünüzün politikası olabilir; **kurallarınızı bilin**.
 - **Parola ve erişim bilgileri** — hiçbir koşulda
 - **Ödev/tez metninizin tamamı**
 
+::: {.callout-warning}
+**Kişisel ve gizli veriyi araca yazmayın.** Kimlik numarası, sağlık bilgisi, müşteri verisi veya yayımlanmamış belge sohbete girmemelidir.
+:::
+
 ## Sorulacak Soru
 
 Bir bilgiyi araca yazmadan önce:
@@ -146,6 +150,14 @@ Yanıt "evet" ise yazmayın.
 | Dil düzeltme | Kendi metninizi düzeltme |
 | Alıştırma | Soru üretip kendinizi sınama |
 | Yabancı dil | Metni basitleştirme |
+| Dağınık veriyi düzenleme | CSV'yi sütunlara ayırma, tutarsızlık bulma |
+
+## Veri Verirken İki Kural
+
+- **Kişisel ve gizli veriyi yüklemeyin.** İsim, kimlik numarası, sağlık bilgisi, müşteri verisi…
+- **Çıktıyı doğrulayın.** Yapay zekâ bir değeri sessizce değiştirebilir, satır atlayabilir veya uydurabilir.
+
+Kaydetmeden önce satır sayısını ve toplamları özgün dosyayla karşılaştırın.
 
 ## Cevap Makinesi Değil, Çalışma Arkadaşı
 

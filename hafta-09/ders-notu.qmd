@@ -12,6 +12,8 @@ format:
 
 Üniversite hayatınızda ve iş hayatında fikirlerinizi **anlatmanız** gerekecek: sınıfta bir ödevi sunmak, bir projeyi tanıtmak, bir öneriyi savunmak. Sunum yazılımları bu iş için araçtır — ama iyi bir sunum, iyi bir slayttan fazlasıdır.
 
+Sunum uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın.
+
 Bu haftanın temel iddiası şu: **slayt, konuşmanın yerini almaz; onu destekler.** En iyi slaytlar üzerinde en az yazı olanlardır. Çünkü insanlar aynı anda hem okuyup hem dinleyemez; slaytı okumaya başladıkları anda sizi dinlemeyi bırakırlar.
 
 ::: {.callout-note}
@@ -110,7 +112,8 @@ Görseller sunumu güçlendirir — ama yalnızca doğru kullanıldığında.
 
 | Kaynak türü | Kullanım |
 |:---|:---|
-| **Kamu malı** (ücretsiz stok siteleri) | Serbest, atıf gerekmez |
+| **Kamu malı (CC0)** | Telif süresi dolmuş ya da hakkından feragat edilmiş; serbest, atıf gerekmez |
+| **Ücretsiz lisanslı stok siteleri** (Pexels, Unsplash vb.) | Ücretsiz kullanılır, atıf gerekmez; ancak **kamu malı değildir** ve lisans koşulları vardır |
 | **Creative Commons (CC)** | Lisans şartına uyulur; genellikle atıf gerekir |
 | **Telifli** | İzin gerekir; aksi hâlde kullanılamaz |
 
@@ -178,6 +181,8 @@ Sunumunuz da belgeler gibi erişilebilir olmalıdır:
 - **Slayt başlıklarını anlamlı yazın:** "Slayt 5" değil, "Sonuçlar".
 
 # Uygulama: Kısa Bir Sunum Hazırlayın
+
+**Hangi araçla:** çevrimiçi ücretsiz bir sunum aracı (Google Slides gibi) ya da kurulabilen ücretsiz bir paket (LibreOffice Impress gibi). Aşağıdaki adımlar ikisinde de aynıdır.
 
 ## Adım 1 — Konu ve mesaj seçin
 

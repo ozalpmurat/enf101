@@ -65,7 +65,8 @@ Bir dosyayı aynı klasöre kopyalarsanız sistem adının sonuna "kopya" ekler.
 
 | Uzantı | Tür | Açan program |
 |:---|:---|:---|
-| `.docx` | Metin belgesi | Kelime işlemci |
+| `.docx` | Metin belgesi (Word biçimi) | Kelime işlemci |
+| `.odt` | Metin belgesi (açık kaynak biçim) | Kelime işlemci |
 | `.xlsx` | Elektronik tablo | Tablo programı |
 | `.pptx` | Sunum | Sunum programı |
 | `.pdf` | Taşınabilir belge | PDF görüntüleyici |
@@ -177,6 +178,8 @@ Bulut hizmetleri güvenilirdir ama hesabınıza erişimi kaybederseniz (parola, 
 # Çevrimiçi İşbirliği ve Ortak Çalışma Araçları
 
 Bulutun en güçlü yanlarından biri, **aynı belge üzerinde birden çok kişinin aynı anda çalışabilmesidir**. Bu, grup ödevlerinde ve kurumsal işlerde büyük kolaylık sağlar.
+
+Bunun en görünür örneği, tarayıcıda çalışan ücretsiz ofis araçlarıdır (örneğin **Google Docs**): aynı belgeyi birden çok kişi aynı anda düzenleyebilir. Belgenin kendi bilgisayarınızda değil, hizmeti sunan şirketin sunucularında tutulduğunu unutmayın (7. hafta).
 
 Bu araçların temel özellikleri:
 

@@ -107,6 +107,10 @@ Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez.
 
 **Lisansı uygun olan** görselleri seçin.
 
+::: {.callout-warning}
+**Ücretsiz stok siteleri kamu malı değildir.** Pexels, Unsplash gibi siteler ücretsiz kullanım verir; ancak içerik teliflidir ve lisans koşulları vardır.
+:::
+
 # Tablo ve Grafik
 
 ## Slayt İçin Basitleştirin
@@ -160,6 +164,8 @@ Nerede takıldığınızı en iyi o zaman görürsünüz.
 # Kapanış
 
 ## Uygulama: Kısa Bir Sunum Hazırlayın
+
+**Hangi araçla:** Google Slides gibi çevrimiçi bir araç ya da LibreOffice Impress gibi kurulabilen bir paket.
 
 1. Konu seçin, **üç ana mesaj** yazın
 2. Açılış–gövde–kapanış planı yapın

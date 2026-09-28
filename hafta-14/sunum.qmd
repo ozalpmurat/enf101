@@ -39,6 +39,10 @@ Bu hafta mobil cihazları **cihaz ve veri olarak** ele alıyoruz.
 
 Mağaza dışı uygulamalar (kırılmış, "ücretsiz premium") en yaygın **zararlı yazılım** kaynaklarıdır.
 
+::: {.callout-warning}
+**Mağaza dışı kurulum en yaygın zararlı yazılım kaynağıdır.** "Ücretsiz premium" vaat eden kırılmış uygulamalar cihazınızı ve hesaplarınızı riske atar.
+:::
+
 # Uygulama İzinleri
 
 ## Her İzin Bir Sorudur

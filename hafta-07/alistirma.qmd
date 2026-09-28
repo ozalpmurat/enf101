@@ -47,7 +47,7 @@ B) Eser adı\
 C) Yayın yılı\
 D) Yazıldığı bilgisayarın markası
 
-**6.** Kaynak yönetimi araçlarının (örneğin Zotero) temel faydası nedir?\
+**6.** Kaynak yönetimi araçlarının (örneğin Zotero, Mendeley) temel faydası nedir?\
 A) Belgeyi otomatik yazması\
 B) Kaynak göstermeyi kolaylaştırarak intihali önlemesi\
 C) Belgeyi PDF'e çevirmesi\

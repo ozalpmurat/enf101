@@ -113,6 +113,10 @@ Dijital araçları ve ortamları **etkin, eleştirel ve güvenli** biçimde kull
 | İletişim ve işbirliği | Uygun üslupla iletişim, ortak çalışma |
 | Dijital etik | Telif hakkı, kaynak gösterme, nezaket |
 
+::: {.callout-warning}
+**Dijital okuryazarlık bir programı bilmek değildir.** Hangi uygulamanın kullanıldığı yıllar içinde değişir; kalıcı olan, kavramları ve yöntemleri anlamaktır.
+:::
+
 ## Bir Kaynağa Güvenmeli miyim? Beş Soru
 
 1. **Kim** yazdı? Yazarın uzmanlığı açık mı?
@@ -128,6 +132,8 @@ Bilgiye ulaşmak artık kolay. Asıl beceri, ulaşılan bilginin doğruluğunu d
 ## Hesaplama Araçlarından Elektronik Bilgisayara
 
 ![](gorseller/diagram-timeline.png)
+
+Şemadaki aralıklar eşittir; **zaman ekseni ölçekli değildir.**
 
 ## İlk Elektronik Bilgisayarlar
 

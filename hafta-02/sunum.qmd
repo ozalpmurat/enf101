@@ -11,10 +11,12 @@ format: beamer
 
 - Girdi–işlem–çıktı–depolama döngüsünü açıklar.
 - İşlemci, bellek, depolama ve ekran kartının görevlerini ayırt eder.
+- İşlemcinin iç birimlerini (kontrol birimi, ALU, kaydediciler, ön bellek) tanır.
 - Bellek ile depolama arasındaki farkı açıklar.
 - HDD ile SSD arasındaki farkı ve günlük etkisini değerlendirir.
 - GPU'nun işlemciden farkını ve kullanım alanlarını açıklar.
-- Bit, byte ve ölçü birimlerini doğru kullanır.
+- Çevre birimlerini giriş ve çıkış işlevlerine göre ayırt eder.
+- Bit, bayt ve ölçü birimlerini doğru kullanır.
 - Bilgisayar türlerini ayırt eder.
 
 # Girdi–İşlem–Çıktı–Depolama
@@ -42,6 +44,8 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 
 İşlemci, bellek, ekran kartı ve depolama; hepsi anakart üzerinde birleşir ve bu kart üzerinden birbiriyle konuşur.
 
+- Bileşenler ortak **veri yolu** (bus) üzerinden haberleşir.
+
 ![](gorseller/diagram-anakart.png){width=70%}
 
 ## İşlemci: Bilgisayarın Beyni
@@ -60,8 +64,21 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 
 "İşlemci ne kadar güçlü" = "aynı anda ne kadar çok ve ne kadar hızlı iş yapabildiği".
 
-- Mimari ve saat hızı ayrıntıları bu dersin dışındadır.
 - Günlük kullanımda orta seviye bir işlemci çoğu işi görür.
+- Ayrıntılı mimari karşılaştırmaları ve saat hızı yarışı bu dersin dışındadır.
+
+## İşlemcinin İç Yapısı
+
+![](gorseller/diagram-cpu-yapi.png){width=85%}
+
+## İşlemcinin İçinde Ne Var?
+
+- **Kontrol birimi:** komutları okur, çalışmayı yönetir.
+- **ALU:** hesaplama ve karşılaştırma yapar.
+- **Kaydediciler:** en hızlı, çok küçük saklama alanları.
+- **Ön bellek:** sık kullanılan veriyi tutar.
+
+**Mimari:** masaüstünde x86, mobilde ARM; ikisi de aynı işi farklı komut kümeleriyle yapar.
 
 ## Ekran Kartı ve GPU
 
@@ -87,10 +104,18 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 
 Benzetme: **masa** — üzerinde çalıştığınız şeyler.
 
-## Bellek: ROM ve Ön Bellek
+## Bellek: ROM ve BIOS
 
-- **ROM:** Kalıcı, yalnızca okunur; açılıştaki temel yazılımı barındırır.
-- **Ön bellek (cache):** Çok küçük ama çok hızlı; sık kullanılan veriyi tutar, sistemi hızlandırır.
+- **ROM:** Kalıcı, yalnızca okunur bellek.
+- Açılışta çalışan temel yazılımı barındırır: **BIOS** (yeni sistemlerde **UEFI**).
+- Donanımın içine gömülü bu yazılımlara **donanım yazılımı** (firmware) denir.
+- BIOS önce temel donanımı sınar, ardından işletim sistemini başlatır.
+- Açılışta gördüğünüz ilk ekran bu yüzden BIOS'a aittir.
+
+## Ön Bellek (Cache)
+
+- Çok küçük ama çok hızlı bir bellek türüdür.
+- Sık kullanılan veriyi tutar; işlemcinin belleğe gitme sayısını azaltır.
 
 "Ön bellek vardır ve hızlandırır" bilgisi yeter.
 
@@ -125,9 +150,17 @@ SSD'li bilgisayar hızlı açılır, uygulamalar saniyeler içinde yüklenir.
 
 | Tür | Görev | Örnek |
 |:---|:---|:---|
-| Giriş | Veriyi aktarır | Klavye, fare, mikrofon, tarayıcı |
-| Çıkış | Sonucu iletir | Monitör, yazıcı, hoparlör |
-| Hem giriş hem çıkış | İki yönde taşır | Dokunmatik ekran, USB bellek |
+| Giriş | Veriyi aktarır | Klavye, fare, touchpad, mikrofon, tarayıcı |
+| Çıkış | Sonucu iletir | Monitör, projeksiyon, yazıcı, çizici |
+| Hem giriş hem çıkış | İki yönde taşır | Dokunmatik ekran, çok fonksiyonlu yazıcı |
+
+## Çevre Birimleri Tanıyalım
+
+- **Touchpad:** Dizüstünde farenin yerini alır.
+- **Tarayıcı:** Basılı belgeyi sayısal hâle çevirir.
+- **Çok fonksiyonlu (tarayıcılı) yazıcı:** Yazdırır, tarar, fotokopi çeker; hem giriş hem çıkış birimidir.
+- **Çizici (plotter):** Kalemle büyük ve hassas çizim basar.
+- **Projeksiyon cihazı:** Görüntüyü büyüterek perdeye yansıtır.
 
 ## Bağlantı Noktaları
 
@@ -140,10 +173,10 @@ Noktaları tanımak, "kablom uymuyor" sorununu çözer.
 
 # Veri ve Ölçü Birimleri
 
-## Bit ve Byte
+## Bit ve Bayt
 
 - **Bit:** 0 veya 1; en küçük bilgi birimi.
-- **Byte:** 8 bit; yaklaşık bir harf.
+- **Bayt:** 8 bit; yaklaşık bir karakter.
 
 Bilgisayar her şeyi bit olarak temsil eder.
 
@@ -151,10 +184,11 @@ Bilgisayar her şeyi bit olarak temsil eder.
 
 | Birim | Yaklaşık değer |
 |:---|:---|
-| Kilobyte (KB) | 1.024 byte |
-| Megabyte (MB) | ~1 milyon byte |
-| Gigabyte (GB) | ~1 milyar byte |
-| Terabyte (TB) | ~1 trilyon byte |
+| Bayt (B) | 8 bit |
+| Kilobyte (KB) | 1.024 bayt |
+| Megabyte (MB) | ~1 milyon bayt |
+| Gigabyte (GB) | ~1 milyar bayt |
+| Terabyte (TB) | ~1 trilyon bayt |
 
 ## Gerçek Nesnelerle İlişkilendirin
 
@@ -174,7 +208,9 @@ Birimleri ezberlemek yerine gerçek nesnelerle eşleştirin.
 | Masaüstü | Ofis, ev, oyun |
 | Dizüstü | Hareketlilik |
 | Tablet | Okuma, not, medya |
+| İş istasyonu | Mühendislik, video kurgu |
 | Sunucu | Ağ hizmetleri |
+| Süper bilgisayar | Bilimsel modelleme, yapay zekâ eğitimi |
 | Gömülü sistemler | Modem, TV, araç |
 
 Telefonunuz da bir bilgisayardır; modeminiz de.
@@ -187,6 +223,10 @@ Telefonunuz da bir bilgisayardır; modeminiz de.
 - **Depolama:** Öncelik **SSD**.
 - **İşlemci:** Ağır iş yoksa orta seviye yeter.
 - **Ekran kartı:** Oyun ve video düzenleme için ayrı kart.
+
+::: {.callout-warning}
+**Tek bir sayıya bakarak karar vermeyin.** Yüksek işlemci hızı her işi hızlandırmaz; günlük kullanımda yeterli RAM ve SSD daha çok hissedilir.
+:::
 
 ## Bilgisayar Neden Yavaşlıyor?
 
@@ -206,7 +246,9 @@ Notla değerlendirilmez; donanımı kendi cihazınız üzerinden içselleştirme
 ## Özet
 
 - Bilgisayar veriyi **alır, işler, verir, saklar**.
+- **İşlemcinin içinde** kontrol birimi, ALU, kaydediciler ve ön bellek çalışır.
 - **RAM** çalışma belleği (geçici), **depolama** kalıcıdır.
+- **BIOS/UEFI** açılışta donanımı sınar, işletim sistemini başlatır.
 - **SSD**, HDD'den çok daha hızlıdır.
 - **GPU** binlerce basit işi aynı anda yapar.
 - Boyutlar **KB → MB → GB → TB** büyür.

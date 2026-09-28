@@ -24,6 +24,7 @@ Yapay zekâ, **desen bulan** bir sistemdir. Bu, onu çok güçlü ama aynı zama
 
 - Yapay zekânın ne olduğunu ve ne olmadığını açıklar.
 - Günlük hayatta yapay zekânın hangi alanlarda kullanıldığını örneklendirir.
+- Algoritma kavramını ve akış diyagramının öğelerini (sıra, karar, tekrar) açıklar.
 - Yapay zekânın veriyle nasıl öğrendiğini kavramsal düzeyde açıklar.
 - Büyük veri kavramının yapay zekâ ile ilişkisini açıklar.
 - Yapay zekânın sınırlarını ve yanılgılarını tanır.
@@ -73,6 +74,32 @@ Yapay zekâ çoğu zaman adı geçmeden karşımıza çıkar:
 Bu ders boyunca kullandığınız pek çok araç — arama motorunuz, e-posta hesabınız, klavye önerileriniz — yapay zekâ içerir. Bunu fark etmek, teknolojiyle ilişkinizi değiştirir.
 :::
 
+# Algoritma: Adım Adım Tanımlamak
+
+Bir işi bilgisayara yaptırmanın yolu, o işi **adım adım** tanımlamaktan geçer. Bu adım dizisine **algoritma** denir. Algoritmayı insan yazar; bilgisayar yalnızca yazılanı uygular.
+
+Gündelik hayattan bir örnek — çay demlemek:
+
+1. Suyu kaynat.
+2. Çaydanlığa çay koy.
+3. Kaynar suyu ekle.
+4. Yeterince demlendi mi? Demlenmediyse bekle ve yeniden sor.
+5. Servis et.
+
+Bu adımlar bir **akış diyagramı** ile görselleştirilebilir. Şemada kutular işleri, baklava dilimi kararı, oklar ise izlenecek sırayı gösterir:
+
+![Çay demleme algoritmasının akış diyagramı](gorseller/diagram-algoritma.png){width=72%}
+
+Şemadaki "yeterince demlendi mi?" adımı bir **karardır** ve akışı ikiye böler; "bekle" adımı ise aynı karara geri döner. Böylece bir algoritmanın üç temel öğesi görünür olur: **sıra**, **karar** ve **tekrar**.
+
+Bu kurallar **programlama dilleri** denen özel dillerle yazılır; yapay zekâ alanında en yaygın kullanılanı **Python**'dur.
+
+::: {.callout-note}
+## Bu ders programlama öğretmez
+
+Algoritmayı burada, yapay zekânın neyi **farklı** yaptığını görebilmek için tanıdık. Geleneksel programlamada kuralları insan yazar; makine öğrenmesinde ise kurallar örneklerden çıkarılır. Bu ders boyunca kod yazmayacaksınız.
+:::
+
 # Yapay Zekâ Nasıl Öğrenir?
 
 Yapay zekânın çoğu bugünkü biçimi **makine öğrenmesi**ne dayanır: programa kural yazmak yerine, **örneklerden öğrenmesi** sağlanır.
@@ -89,7 +116,7 @@ Sonuçta ortaya çıkan model, **yeni** bir örnek gördüğünde tahmin yapabil
 
 ## Derin öğrenme ve GPU bağlantısı
 
-Bu eğitim süreci çok büyük hesaplama gücü gerektirir. 2. haftada gördüğümüz **grafik işlemci (GPU)**, "binlerce basit işi aynı anda yapar" özelliği sayesinde tam bu iş için uygundur. Bugün yapay zekâ modellerinin eğitiminde kullanılan donanımın temelini GPU'lar oluşturur.
+Bu eğitim süreci çok büyük hesaplama gücü gerektirir. 2. haftada gördüğümüz **grafik işlemci (GPU)**, "binlerce basit işi aynı anda yapar" özelliği sayesinde tam bu iş için uygundur. Bugün yapay zekâ modellerinin eğitiminde kullanılan donanımın temelini GPU'lar oluşturur. Büyük modellerin eğitimi tek bir bilgisayarda yapılmaz: binlerce GPU'nun bir arada çalıştığı **veri merkezlerinde**, haftalarca bazen aylarca süren bir işlemle gerçekleştirilir. 2. haftada gördüğümüz **süper bilgisayarların** çoğu da tam bu iş için kurulmuştur.
 
 ## Büyük veri
 

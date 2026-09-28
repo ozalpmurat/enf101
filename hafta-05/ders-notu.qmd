@@ -91,7 +91,7 @@ Kablosuz ağda veri havadan gider. Şifreleme yoksa, aynı ortamdaki biri bu ver
 - Mümkünse kendi mobil verinizi kullanın.
 - Zorunluysa, yalnızca şifreli siteleri (adres çubuğunda kilit simgesi olan `https`) tercih edin.
 
-**Sahte erişim noktası (evil twin).** Saldırgan, gerçek bir ağın adına çok benzeyen sahte bir ağ kurar — örneğin "KampusWiFi" yerine "KampusWiFi-Ucretsiz". Siz bağlandığınızda trafiğinizi izleyebilir. Bu yüzden **ağ adının tam olarak doğru yazıldığından** emin olun ve şüpheli ağlara bağlanmayın.
+**Sahte erişim noktası (evil twin).** Saldırgan, gerçek bir ağın adını taşıyan sahte bir ağ kurar — örneğin kampüste **eduroam** adıyla yayın yapan bir ağ — örneğin "KampusWiFi" yerine "KampusWiFi-Ucretsiz". Siz eduroam'a bağlandığınızı sanırken aslında saldırganın ağındasınızdır ve bütün trafiğiniz izlenebilir. Bu yüzden **ağ adının tam olarak doğru yazıldığından** emin olun ve şüpheli ağlara bağlanmayın.
 
 **Ortak ağda paylaşım ayarları.** İşletim sistemleri, yeni bir ağa bağlandığınızda "bu ağda dosya paylaşımı açılsın mı?" diye sorar. Halka açık ağlarda bu soruya **hayır** deyin.
 
@@ -101,6 +101,16 @@ Kablosuz ağda veri havadan gider. Şifreleme yoksa, aynı ortamdaki biri bu ver
 - **Yönlendirici yazılımını güncelleyin:** Üretici güvenlik yamaları yayınlar.
 - **Ağ adında kişisel bilgi kullanmayın:** "Ayşe'nin Evi" gibi adlar, hangi ağın size ait olduğunu belli eder.
 - **Kullanmadığınızda WiFi'ı kapatın:** Özellikle dışarıdayken pil ve güvenlik açısından yararlıdır.
+
+## eduroam: kurumlar arası kablosuz ağ
+
+**eduroam**, üniversitelerin ortak kablosuz ağ hizmetidir. Kendi kurumunuzun hesabıyla giriş yaparsınız; başka bir üniversiteye gittiğinizde ayrı bir hesap almadan orada da bağlanırsınız.
+
+Bağlanmak için ağ listesinden **eduroam**'ı seçin, kullanıcı adı alanına **öğrenci numaranızı** yazıp sonuna `@bilecik.edu.tr` ekleyin:
+
+`öğrenci_numaranız@bilecik.edu.tr`
+
+Parola alanına öğrenci hesabınızın parolasını girin. İlk bağlantıda sertifikayla ilgili bir uyarı görebilirsiniz; kesin adımlar kurumdan kuruma değiştiği için üniversitenizin bilgi işlem biriminin yönergesine bakın.
 
 # Bluetooth: Kullanım ve Güvenlik
 
@@ -183,6 +193,12 @@ Bu haftanın konularını bir arada düşündüğümüzde, günlük hayatta uygu
 4. **Kilit simgesine bakın.** `https` olmayan sitelere bilgi girmeyin.
 5. **Güncellemeleri ertelemeyin.** İşletim sistemi ve tarayıcı güncellemeleri güvenlik açıklarını kapatır.
 6. **Bluetooth ve WiFi'ı kullanmadığınızda kapatın.**
+
+## Aile filtresi
+
+İnternet servis sağlayıcıları, çocuklu evler için ücretsiz bir **içerik filtreleme** hizmeti sunar. Türkiye'de bu hizmet **Güvenli İnternet Hizmeti** adıyla bilinir; "Aile" ya da "Çocuk" profili seçilir ve uygun olmayan siteler **abonelik düzeyinde** engellenir.
+
+Bunu bir güvenlik duvarı gibi düşünmemek gerekir: filtre yalnızca **erişilebilir içeriği** sınırlar, cihazdaki riskleri ortadan kaldırmaz. Kişisel önlemlerin yerini almaz, onları tamamlar.
 
 ::: {.callout-warning}
 ## Gerçek bir "ücretsiz WiFi" tuzağı

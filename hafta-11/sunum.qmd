@@ -41,6 +41,10 @@ Sağlık, din, etnik köken, biyometrik veri, ceza mahkûmiyeti…
 
 Daha **sıkı** korunur. Paylaşırken çok daha dikkatli olunmalıdır.
 
+::: {.callout-warning}
+**Özel nitelikli veriler daha sıkı korunur.** Sağlık, din, etnik köken ve biyometrik veriler bu kapsamdadır; işlenmeleri özel şartlara bağlıdır.
+:::
+
 # KVKK
 
 ## Temel Kavramlar

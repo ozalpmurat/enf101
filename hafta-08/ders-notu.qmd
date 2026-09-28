@@ -42,6 +42,8 @@ Tablo yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri ta
 - Stok ve envanter listeleri
 - Deney veya ölçüm verilerinin karşılaştırılması
 
+Tablo uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın.
+
 # Temel Kavramlar
 
 | Kavram | Ne demek | Örnek |
@@ -71,6 +73,26 @@ Bir hücreye yazdığınız her şey aynı türde değildir ve tablo bu türü k
 ## Hizalama bir ipucudur
 
 Girdiğiniz değer sağa yaslanıyorsa tablo onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
+:::
+
+# Veri Alışverişi: CSV
+
+Tabloları başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül — bazı ülkelerde ve bazı programlarda noktalı virgül — konur.
+
+```text
+ad,soyad,not
+Ayşe,Yılmaz,85
+Mehmet,Kaya,72
+```
+
+CSV'nin en önemli özelliği şudur: **değerleri taşır, biçimlendirmeyi taşımaz.** Renkler, kalın yazı, birleştirilmiş hücreler, formüller ve grafikler CSV'ye geçmez; yalnızca ham veri aktarılır. Bir dosyayı CSV olarak kaydedip yeniden açtığınızda biçimlendirmenizin kaybolmasının nedeni budur.
+
+Buna karşılık neredeyse **her** program CSV okuyabilir; bu yüzden farklı programlar arasında veri alışverişinin ortak biçimidir.
+
+::: {.callout-tip}
+## Sütunlar birleşmiş görünüyorsa
+
+Bir CSV dosyasını açtığınızda bütün veri tek sütuna yığılmışsa, sorun genellikle **ayraç uyuşmazlığıdır**: dosya noktalı virgülle ayrılmışken program virgül bekliyordur (ya da tersi). Dosyayı içe aktarırken ayracı elle belirterek bu sorunu çözebilirsiniz.
 :::
 
 # Formüller ve Hücre Başvuruları
@@ -199,6 +221,12 @@ Nasıl bir grafik oluşturulur: önce **veriyi seçin** (başlık satırıyla bi
 
 Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinden belirgin biçimde farklı oranlar** olduğunda işe yarar. Altı yedi dilimli, oranları yakın pastalar okunamaz.
 
+![Yaygın grafik türleri: sütun, çizgi ve pasta](gorseller/diagram-grafik-turleri-1.png){width=90%}
+
+![Yaygın grafik türleri: histogram, kutu grafiği ve saçılım](gorseller/diagram-grafik-turleri-2.png){width=90%}
+
+Coğrafi dağılım için kullanılan **harita** bu örneklerin dışındadır: haritada alan büyüklüğü değeri göstermediği için okunurken ayrıca dikkat gerekir.
+
 # Grafiklerin Doğru Okunması
 
 Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza konan bir grafiğe güvenip güvenemeyeceğimizi nasıl anlarız?
@@ -243,6 +271,8 @@ Bir grafiğe her baktığınızda şu dokuz soruyu hızlıca gözden geçirmek �
 9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
 
 # Uygulama: Aynı Veri, İki Grafik
+
+**Hangi araçla:** çevrimiçi ücretsiz bir tablo aracı (Google Sheets gibi) ya da kurulabilen ücretsiz bir paket (LibreOffice Calc gibi). Aşağıdaki adımlar ikisinde de aynıdır.
 
 ## Etkinliğin verisi
 

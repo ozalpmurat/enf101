@@ -82,7 +82,7 @@ Bu ağlarda:
 
 Saldırgan, gerçek bir ağa çok benzeyen sahte bir ağ kurar.
 
-- "KampusWiFi" yerine "KampusWiFi-Ucretsiz"
+- Kampüste **eduroam** adıyla yayın yapan sahte bir ağ
 - Bağlanan kullanıcının trafiği izlenebilir
 
 **Korunma:** Ağ adının tam doğru yazıldığından emin olun.
@@ -99,6 +99,16 @@ Halka açık ağlarda bu soruya **hayır** deyin.
 - Yönlendirici **yazılımını güncelleyin**
 - Ağ adında **kişisel bilgi kullanmayın**
 - Kullanmadığınızda **WiFi'ı kapatın**
+
+## eduroam: Kurumlar Arası Ağ
+
+- Üniversitelerin **ortak kablosuz ağı**
+- Kendi hesabınızla **başka üniversitede de** bağlanırsınız
+- Kullanıcı adı: **öğrenci_numaranız** + `@bilecik.edu.tr`
+
+Biçim: `öğrenci_numaranız@bilecik.edu.tr`
+
+Parola: öğrenci hesabınızın parolası
 
 # Bluetooth
 
@@ -206,6 +216,15 @@ Sitelerin tarayıcınıza bıraktığı küçük veri parçalarıdır.
 Ağ saldırganın olsaydı, şifreniz eline geçerdi. Bu saldırı yaygındır ve fark edilmesi zordur.
 
 **Pratik kural:** Halka açık ağda oturum açmanız gerekiyorsa mobil verinizi kullanın.
+
+## Aile Filtresi
+
+İnternet servis sağlayıcıları, çocuklu evler için ücretsiz **içerik filtresi** sunar.
+
+- **Güvenli İnternet Hizmeti** — "Aile" ve "Çocuk" profilleri
+- Uygun olmayan siteler **abonelik düzeyinde** engellenir
+
+Filtre yalnızca içeriği sınırlar; **kişisel önlemlerin yerini almaz**.
 
 # Kapanış
 

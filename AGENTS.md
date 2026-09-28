@@ -20,7 +20,7 @@ Son güncelleme: 28.09.2026
 | Ölçme          | Başarı notu = ara sınav (vize) + kısa sınav + final **ortalaması**; alıştırmalar **notsuz** |
 | İçerik dili    | Türkçe                                                                                      |
 
-Ders, klasik "temel bilgi teknolojileri" kapsamındadır; **programlama ve algoritma bilinçli olarak kapsam dışıdır**.
+Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğretilmez:** hiçbir haftada kod yazılmaz. **Algoritma** kavramı ise 12. haftada yalnızca tanıtım düzeyinde ele alınır (sıra, karar, tekrar; gündelik bir örnek ve akış diyagramıyla) — çünkü makine öğrenmesinin geleneksel programlamadan farkını açıklamak için gereklidir.
 
 ---
 
@@ -46,7 +46,7 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır; **programlama ve algor
    └─ gorseller/*.png            o haftanın diyagramları
 ```
 
-Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz) · 38 diyagram.
+Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz) · 40 diyagram.
 
 ---
 
@@ -183,7 +183,7 @@ kendiliğinden ortadan kalkar. Çoktan seçmeli şıkların harf etiketleri bu y
 
 ## 8. Görsel üretimi
 
-Mevcut 38 diyagramın tamamı **matplotlib** ile üretildi (kaynak betikler ayrı bir çalışma alanında tutuldu).
+Mevcut 40 diyagramın tamamı **matplotlib** ile üretildi (kaynak betikler ayrı bir çalışma alanında tutuldu).
 Tema renkleri: lacivert `#1F3864`, mavi `#2E74B5`, açık zemin `#EDF2F9`, gri `#595959`.
 
 **Ölçü kuralları (iki tur hatadan sonra çıkarıldı):**
@@ -225,7 +225,7 @@ kurumsal palete çekmek için ayrıca tema ayarı gerekir.
 ## 9. İçerik ilkeleri
 
 - **Platformdan bağımsız.** Belirli bir işletim sistemi, ofis sürümü veya marka öğretilmez;
-  menü yolları yerine kavramlar anlatılır. Açık ve kapalı kaynak yazılımlar birlikte tanıtılır.
+  menü yolları, düğme adları ve sürüm karşılaştırmaları yazılmaz; kavramlar anlatılır. Yazılım adları **örnek olarak** geçebilir (adı ve ne işe yaradığı), ancak her konuda ücretsiz bir **çevrimiçi** seçenek ile kurulabilen **açık kaynak** bir seçenek birlikte gösterilir; ortam seçimi öğrenciye bırakılır. Açık ve kapalı kaynak yazılımlar birlikte tanıtılır.
 - **Sade dil.** Hedef kitle teknik olmayan bölümlerden geliyor. Jargon ilk kullanımda tanımlanır.
 - **Aşırı teknik ayrıntıdan kaçınılır.** İşlemci mimarisi, önbellek katmanları, DDR nesilleri,
   protokol başlık yapıları gibi konular 1. sınıf için gereksizdir; "kısaca değinmek yeter" düzeyinde kalır.

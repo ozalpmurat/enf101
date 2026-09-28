@@ -45,6 +45,10 @@ Bir uygulama doğrudan donanıma erişemez; isteğini işletim sistemine iletir.
 - **Kapalı kaynak:** Kaynak kodu gizli; yalnızca üretici görüp değiştirebilir.
 - **Açık kaynak:** Kaynak kodu herkese açık; incelenebilir, değiştirilebilir, paylaşılabilir.
 
+::: {.callout-warning}
+**Açık kaynak, "ücretsiz" demek değildir.** Açık kaynak kodun görülebilir ve değiştirilebilir olmasıdır; bazı açık kaynak yazılımlar ücretlidir.
+:::
+
 ## Karşılaştırma
 
 | | Açık kaynak | Kapalı kaynak |
@@ -81,6 +85,8 @@ Kurumlar çoğu zaman ikisini bir arada kullanır.
 ## Görevler Şeması
 
 ![](gorseller/diagram-os-gorev.png){width=62%}
+
+Bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok program açıkken işlemci çok hızlı geçiş yapar.
 
 # İşletim Sistemi Aileleri
 
