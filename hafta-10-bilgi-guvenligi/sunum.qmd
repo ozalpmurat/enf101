@@ -171,7 +171,7 @@ Saldırganlar güncellenmemiş sistemleri hedefler.
 
 Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez.
 
-4. haftanın **3-2-1 kuralı** burada da geçerli.
+4\. haftanın **3-2-1 kuralı** burada da geçerli.
 
 Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifreler.
 

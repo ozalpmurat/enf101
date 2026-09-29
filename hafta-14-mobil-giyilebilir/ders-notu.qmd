@@ -35,7 +35,7 @@ Mobil cihazlar hayatımızı kolaylaştırır ama sürekli **veri toplar**. Bili
 
 **Mobil cihaz**, taşınabilir ve genellikle dokunmatik arayüzlü bilgisayardır: telefon, tablet, akıllı saat.
 
-3. haftada mobil **işletim sistemlerini** tanımıştık: Android ve iOS. Burada ise **ekosisteme** bakıyoruz.
+3\. haftada mobil **işletim sistemlerini** tanımıştık: Android ve iOS. Burada ise **ekosisteme** bakıyoruz.
 
 **Uygulama ekosistemi**, bir mobil işletim sistemi etrafında oluşan uygulama mağazası, geliştirici topluluğu ve hizmetler bütünüdür.
 
@@ -101,7 +101,7 @@ Bir dosyayı yanlışlıkla silip senkronizasyonun onu bütün cihazlardan silme
 
 # Mobil Cihaz Güvenliği
 
-10. haftadaki güvenlik ilkeleri mobil cihazlar için de geçerlidir; birkaç ek nokta var:
+10\. haftadaki güvenlik ilkeleri mobil cihazlar için de geçerlidir; birkaç ek nokta var:
 
 - **Ekran kilidi kullanın:** parola, desen veya biyometrik. Basit desenler kolayca tahmin edilir.
 - **Otomatik güncellemeyi açın:** mobil işletim sistemleri düzenli güvenlik yaması yayınlar.
@@ -228,7 +228,7 @@ Bu dersin amacı da buydu: teknolojiyi **bilinçli** kullanmanızı sağlayacak 
 
 ## Dijital uçurum
 
-1. haftada söz ettiğimiz **dijital uçurum** burada tekrar karşımıza çıkar: internet erişimi, cihaz sahipliği ve dijital beceri bakımından bireyler ve bölgeler arasındaki fark. Bu fark, eğitime ve işe erişimi doğrudan etkiler.
+1\. haftada söz ettiğimiz **dijital uçurum** burada tekrar karşımıza çıkar: internet erişimi, cihaz sahipliği ve dijital beceri bakımından bireyler ve bölgeler arasındaki fark. Bu fark, eğitime ve işe erişimi doğrudan etkiler.
 
 ## Diğer alanlar
 

@@ -90,7 +90,7 @@ Sonuçta model, **yeni** örnek görünce tahmin yapabilir.
 
 ## GPU Bağlantısı
 
-2. haftada gördük: GPU "binlerce basit işi aynı anda yapar".
+2\. haftada gördük: GPU "binlerce basit işi aynı anda yapar".
 
 İşte bu yüzden yapay zekâ **eğitiminde** kullanılan donanımın temelidir.
 

@@ -219,7 +219,12 @@ Makale (PDF) biçiminde Mermaid **doğrudan ve sorunsuz** çalışır; ölçek s
 - Her hafta şu bölümlerle biter: **Uygulama · Özet · Kendini Sınama Soruları · Kaynaklar**.
 - İçindekiler tablosu ve numaralandırma otomatiktir (`toc: true`, `number-sections: true`).
   Başlıklara **elle numara yazılmaz**; sıra değişince numaralar kendiliğinden düzelir.
-- Bölüm başlığı **tam metin** olarak figure altına yazılır; Quarto "Şekil 1:" etiketini kendisi ekler.
+- Bölüm başlığı **tam metin** olarak figure altına yazılır; Quarto "Şekil 1:" etiketi kendisi ekler.
+- **Paragraf `N. ` ile başlamaz.** Satır başındaki "sayı + nokta" pandoc tarafından **sıralı liste** olarak
+  çözülür; cümle maddelenir ve devamı maddenin gövdesine girer. En çok haftalara atıf yapan cümlelerde olur
+  ("10. haftadaki güvenlik ilkeleri…" → "10." maddesi). Çözüm: noktayı kaçırın — `10\. haftadaki` — ya da
+  cümleyi numara satır başına gelmeyecek biçimde kurun. **Kural sunumlar için de geçerlidir.**
+  2026-09-29'da 13 cümle bu şekilde düzeltildi (02, 03, 06, 08, 10, 12, 14. haftalar).
 
 ---
 

@@ -98,7 +98,7 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 - Bilimsel hesaplamalar ve benzetimler
 - **Yapay zekâ modeli eğitimi**
 
-12. haftada yapay zekâyı işlerken "GPU binlerce işi aynı anda yapar" özelliğine geri döneceğiz.
+12\. haftada yapay zekâyı işlerken "GPU binlerce işi aynı anda yapar" özelliğine geri döneceğiz.
 
 ## Bellek: RAM
 

@@ -22,7 +22,7 @@ format: beamer
 
 ## 3. Haftadan Farkı
 
-3. haftada mobil **işletim sistemlerini** tanıdık.
+3\. haftada mobil **işletim sistemlerini** tanıdık.
 
 Bu hafta mobil cihazları **cihaz ve veri olarak** ele alıyoruz.
 
@@ -51,7 +51,7 @@ Mağaza dışı uygulamalar (kırılmış, "ücretsiz premium") en yaygın **zar
 
 ## Üç Soru
 
-11. haftadan hatırlayın: **gerekli mi, orantılı mı, ne zaman** erişecek?
+11\. haftadan hatırlayın: **gerekli mi, orantılı mı, ne zaman** erişecek?
 
 ## Tipik Orantısız İzinler
 
@@ -195,7 +195,7 @@ Aynı araç bir kişi için öğrenme, bir başkası için zaman kaybı olabilir
 
 ## Dijital Uçurum
 
-1. haftada söz ettiğimiz kavram: erişim, cihaz ve beceri bakımından eşitsizlik.
+1\. haftada söz ettiğimiz kavram: erişim, cihaz ve beceri bakımından eşitsizlik.
 
 Eğitime ve işe erişimi doğrudan etkiler.
 

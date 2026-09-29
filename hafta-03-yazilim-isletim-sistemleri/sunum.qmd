@@ -142,7 +142,7 @@ Hepsi farklı görünür — ama hepsinde bir işletim sistemi çalışır.
 
 Ortak özellikler: dokunmatik arayüz, pil tasarrufu, uygulama mağazası.
 
-14. haftada mobil cihazları **cihaz ve veri olarak** ele alacağız.
+14\. haftada mobil cihazları **cihaz ve veri olarak** ele alacağız.
 
 ## Gömülü İşletim Sistemleri
 

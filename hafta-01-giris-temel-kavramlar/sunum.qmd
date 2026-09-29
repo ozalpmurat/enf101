@@ -137,7 +137,7 @@ Bilgiye ulaşmak artık kolay. Asıl beceri, ulaşılan bilginin doğruluğunu d
 
 ## Tarihten Nesneler
 
-Soldan sağa: abaküs, Pascal'ın hesap makinesi, Babbage'ın Fark Makinesi ve ENIAC.
+Soldan sağa: abaküs, Pascal'ın hesap makinesi, Babbage'ın özgün planlarından 1991'de inşa edilen Fark Makinesi No. 2 ve ENIAC.
 
 ![](gorseller/foto-abakus.jpg){width=23%} ![](gorseller/foto-pascaline.jpg){width=23%} ![](gorseller/foto-fark-makinesi.jpg){width=23%} ![](gorseller/foto-eniac.jpg){width=23%}
 
@@ -160,7 +160,7 @@ Soldan sağa: abaküs, Pascal'ın hesap makinesi, Babbage'ın Fark Makinesi ve E
 
 Sırasıyla vakum tüpü, transistör, entegre devre ve mikroişlemci.
 
-![](gorseller/foto-vakum-tupu.jpg){width=23%} ![](gorseller/foto-transistor.jpg){width=23%} ![](gorseller/foto-entegre-devre.jpg){width=23%} ![](gorseller/foto-intel-4004.jpg){width=23%}
+![](gorseller/foto-vakum-tupu.jpg){width=23%} ![](gorseller/foto-transistor.jpg){width=23%} ![](gorseller/foto-entegre-devre.jpg){width=23%} ![](gorseller/foto-mikroislemci.jpg){width=23%}
 
 ## Bugün ve Yarın
 

@@ -48,7 +48,7 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 ## Kaynak değerlendirme
 
-1. haftada öğrendiğimiz **beş soruyu** hatırlayın — kim, ne zaman, kanıt, amaç, başka kaynaklar. İnternette karşılaştığınız her içeriği bu sorularla sınamayı alışkanlık hâline getirin.
+1\. haftada öğrendiğimiz **beş soruyu** hatırlayın — kim, ne zaman, kanıt, amaç, başka kaynaklar. İnternette karşılaştığınız her içeriği bu sorularla sınamayı alışkanlık hâline getirin.
 
 ::: {.callout-tip}
 ## Akademik kaynak ararken

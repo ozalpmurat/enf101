@@ -35,7 +35,7 @@ format: beamer
 
 ## Kaynak Değerlendirme
 
-1. haftadaki beş soruyu hatırlayın: **kim, ne zaman, kanıt, amaç, başka kaynaklar.**
+1\. haftadaki beş soruyu hatırlayın: **kim, ne zaman, kanıt, amaç, başka kaynaklar.**
 
 ## Akademik Kaynak Önceliği
 

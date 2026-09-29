@@ -306,7 +306,7 @@ Kullanılan taktik **kesilmiş eksen**dir. Sütun grafiklerinde sütun yüksekli
 
 ## Adım 3 — Kendiniz üretin
 
-8. haftada öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kasten yanıltıcı**, bir kez de **dürüst** grafik oluşturun. İkisini yan yana koyup yanıltıcı sürümde hangi kararları değiştirdiğinizi not edin. Bu adım, taktikleri bir daha unutmayacak biçimde öğretir.
+8\. haftada öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kasten yanıltıcı**, bir kez de **dürüst** grafik oluşturun. İkisini yan yana koyup yanıltıcı sürümde hangi kararları değiştirdiğinizi not edin. Bu adım, taktikleri bir daha unutmayacak biçimde öğretir.
 
 # Özet
 
