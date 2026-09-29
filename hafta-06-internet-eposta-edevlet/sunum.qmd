@@ -183,6 +183,12 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 | Mobil imza | SIM üzerinden imzalar | Islak imza hükmünde |
 | e-imza | USB token / akıllı kart | Islak imza hükmünde |
 
+## İmza Araçları
+
+![](gorseller/foto-sim-kart.jpg){width=30%} ![](gorseller/foto-akilli-kart.jpg){width=30%} ![](gorseller/foto-kart-okuyucu.jpg){width=20%}
+
+Mobil imza SIM kartı, e-imza akıllı kart (veya USB token) kullanır.
+
 ## En Sık Karışan Ayrım
 
 **e-Devlet şifresi bir imza değildir.** Sisteme giriş aracıdır.

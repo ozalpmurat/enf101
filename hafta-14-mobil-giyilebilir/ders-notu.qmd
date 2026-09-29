@@ -125,6 +125,16 @@ Bu yüzden telefonunuzda **ekran kilidi** ve **SIM kart PIN'i** açık olmalıd�
 
 ![Giyilebilir ve bağlı cihazlar](gorseller/diagram-giyilebilir.png){width=80%}
 
+::: {#fig-giyilebilir layout-ncol=3}
+![Akıllı saat](gorseller/foto-akilli-saat.jpg){width=90%}
+
+![Bileklik](gorseller/foto-bileklik.jpg){width=90%}
+
+![Kablosuz (akıllı) kulaklık](gorseller/foto-kablosuz-kulaklik.jpg){width=90%}
+
+Giyilebilir cihazlar: akıllı saat, bileklik ve akıllı kulaklık.
+:::
+
 ## Hangi veriler toplanır?
 
 | Sensör | Topladığı veri |
@@ -161,6 +171,14 @@ Bir sağlık uygulaması kurarken, verilerinizin nasıl kullanılacağını beli
 # Nesnelerin İnterneti (IoT)
 
 **Nesnelerin İnterneti**, günlük cihazların internete bağlanıp veri alışverişi yapmasıdır: akıllı televizyon, akıllı priz, güvenlik kamerası, sesli asistan, akıllı termostat.
+
+::: {#fig-iot-cihazlar layout-ncol=2}
+![Ağa bağlı güvenlik kamerası](gorseller/foto-guvenlik-kamerasi.jpg){width=90%}
+
+![Sesli asistan (akıllı hoparlör)](gorseller/foto-hoparlor.jpg){width=90%}
+
+IoT cihazları internete bağlanır ve sürekli veri toplar.
+:::
 
 ## Faydaları
 
@@ -277,5 +295,15 @@ Bu uygulama notla değerlendirilmez. Amacı, dönem boyunca öğrendiklerinizi k
 - **USOM** — mobil cihaz ve IoT güvenliği uyarıları. (usom.gov.tr)
 - **BTK** — İnternet'in bilinçli kullanımı ve dijital denge. (btk.gov.tr)
 - **Avrupa Birliği DigComp çerçevesi** — dijital iyi olma hali ve güvenlik alanı. (joint-research-centre.ec.europa.eu)
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki beş fotoğrafın künyesi:
+
+- Akıllı saat — *Grey Smart Watch*, Srini297, CC BY-SA 4.0.
+- Bileklik — *Huawei Smartwatch (Band 4)*, TheArchivistMan, CC0.
+- Kablosuz kulaklık — *Nothing ear (1) earphone*, Premeditated, CC BY-SA 4.0.
+- Güvenlik kamerası — *IP camera Ethernet power*, Olli Niemitalo, CC0.
+- Akıllı hoparlör — *Alexa Amazon Echo Dot 3rd Gen Smart Speaker*, Smart Home Perfected, CC BY 2.0.
+
+Akıllı saat, kablosuz kulaklık ve akıllı hoparlör fotoğrafları için kaynak gösterme zorunludur; bileklik ve güvenlik kamerası kareleri CC0 olduğu için zorunlu değildir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

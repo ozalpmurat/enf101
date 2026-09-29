@@ -126,6 +126,20 @@ Masaüstü sistemler işletim sistemlerinin yalnızca bir türüdür. Cihazın a
 | Sunucu | Kesintisiz çalışma, çok kullanıcı | Web sunucusu, veri merkezi |
 | Gömülü | Tek amaç, düşük kaynak | Modem, akıllı TV, araç |
 
+Aşağıdaki fotoğraflar bu dört türü somutlaştırır: hepsi farklı görünür, ama hepsinde bir işletim sistemi çalışır.
+
+::: {#fig-os-turleri layout-ncol=2}
+![Masaüstü bilgisayarlar](gorseller/foto-masaustu.jpg){width=90%}
+
+![Akıllı telefon (mobil)](gorseller/foto-mobil.jpg){width=60%}
+
+![Sunucu dolapları (veri merkezi)](gorseller/foto-sunucu.jpg){width=90%}
+
+![Yazıcı (gömülü sistem)](gorseller/foto-gomulu.jpg){width=90%}
+
+Aynı kavram — işletim sistemi — cihazın türüne göre farklı biçimde karşımıza çıkar.
+:::
+
 ::: {.callout-note}
 ## 14. haftaya köprü
 
@@ -220,5 +234,14 @@ Bu uygulama notla değerlendirilmez. Amacı, yazılım ve işletim sistemi kavra
 - **Pardus** — yerli ve açık kaynak işletim sistemi; kullanım kılavuzları. (pardus.org.tr)
 - **İşletim sistemlerinin resmî yardım sayfaları** — Windows, Linux dağıtımları ve macOS için kullanıcı belgeleri.
 - **Özgür Yazılım Vakfı ve Açık Kaynak Girişimi** — açık kaynak lisansları ve felsefesi hakkında kaynaklar. (fsf.org, opensource.org)
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki dört fotoğrafın künyesi:
+
+- Masaüstü bilgisayarlar — *Computer lab showing desktop PCs warwick*, Mike1024, kamu malı.
+- Akıllı telefon — *OnePlus Nord smartphone displaying Android home screen*, Gannu03, CC BY-SA 4.0.
+- Sunucu dolapları — *Datacenter*, Wilweterings, kamu malı.
+- Yazıcı — *Brother DCP-115C-1471*, Raimond Spekking, CC BY-SA 4.0.
+
+Telefon ve yazıcı fotoğrafları için kaynak gösterme zorunludur; masaüstü ve sunucu kareleri kamu malı olduğu için zorunlu değildir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

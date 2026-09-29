@@ -12,14 +12,12 @@ format:
 ::: {.callout-note}
 ## Bu belge nedir?
 
-14 haftanın **ders notlarındaki** bölüm başlıklarının bir arada görünümüdür; dersin içerik haritası olarak kullanılır. Sunum ve alıştırma için hafta başına yalnızca sayı verilir. Notlardaki kutu (callout) başlıkları bölüm sayılmadığı için buraya alınmaz.
+14 haftanın **ders notlarındaki** bölüm başlıklarının bir arada görünümüdür; dersin içerik haritası olarak kullanılır. Notlardaki kutu (callout) başlıkları bölüm sayılmadığı için buraya alınmaz.
 
-**Otomatik üretilir, elle düzenlenmez.** İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra betiği çalıştırıp belgeyi yeniden derleyin: `python3 araclar/basliklari-uret.py` ve `quarto render BASLIKLAR.qmd`.
+**Otomatik üretilir, elle düzenlenmez.** İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra betiği çalıştırıp belgeyi yeniden derleyin: `python3 araclar/basliklari-uret.py` ve `bash araclar/derle.sh BASLIKLAR.qmd`.
 :::
 
 # 1. Hafta — Bilgi Toplumu, Dijital Okuryazarlık ve Temel Kavramlar
-
-*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -43,8 +41,6 @@ format:
 - Kaynaklar
 
 # 2. Hafta — Bilgisayar Donanımı
-
-*Sunum: 29 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -74,8 +70,6 @@ format:
 
 # 3. Hafta — Yazılım ve İşletim Sistemleri
 
-*Sunum: 24 slayt başlığı · Alıştırma: 10 soru*
-
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Yazılım Nedir?
@@ -97,8 +91,6 @@ format:
 - Kaynaklar
 
 # 4. Hafta — Dosya Yönetimi, Depolama ve Bulut
-
-*Sunum: 28 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -124,8 +116,6 @@ format:
 - Kaynaklar
 
 # 5. Hafta — Bilgisayar Ağları ve İnternet
-
-*Sunum: 29 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -155,8 +145,6 @@ format:
 
 # 6. Hafta — İnternet Pratikleri, E-posta ve Dijital Kamu Hizmetleri
 
-*Sunum: 26 slayt başlığı · Alıştırma: 10 soru*
-
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Etkili Arama
@@ -183,8 +171,6 @@ format:
 - Kaynaklar
 
 # 7. Hafta — Kelime İşlemci
-
-*Sunum: 28 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -219,8 +205,6 @@ format:
 
 # 8. Hafta — Elektronik Tablo ve Grafik Okuma
 
-*Sunum: 31 slayt başlığı · Alıştırma: 10 soru*
-
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Elektronik Tablo Nedir?
@@ -251,8 +235,6 @@ format:
 
 # 9. Hafta — Sunum Uygulamaları
 
-*Sunum: 22 slayt başlığı · Alıştırma: 10 soru*
-
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Bir Sunumun Yapısı
@@ -281,8 +263,6 @@ format:
 - Kaynaklar
 
 # 10. Hafta — Bilgi Güvenliği
-
-*Sunum: 27 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -315,8 +295,6 @@ format:
 
 # 11. Hafta — Kişisel Veriler ve Dijital Etik
 
-*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
-
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Kişisel Veri Nedir?
@@ -342,8 +320,6 @@ format:
 
 # 12. Hafta — Yapay Zekâ Okuryazarlığı
 
-*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
-
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Yapay Zekâ Nedir?
@@ -366,8 +342,6 @@ format:
 - Kaynaklar
 
 # 13. Hafta — Üretken Yapay Zekâ Araçları
-
-*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
@@ -393,8 +367,6 @@ format:
 - Kaynaklar
 
 # 14. Hafta — Mobil Cihazlar, Giyilebilir Teknolojiler ve Toplumsal Etki
-
-*Sunum: 26 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları

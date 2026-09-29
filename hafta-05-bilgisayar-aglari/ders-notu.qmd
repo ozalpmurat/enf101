@@ -64,6 +64,18 @@ Bir ev veya kampüs ağını oluşturan temel cihazlar şunlardır:
 
 ![Bir ev veya kampüs ağı](gorseller/diagram-ag-sema.png){width=70%}
 
+::: {#fig-ag-bilesenleri layout-ncol=2}
+![Kablosuz yönlendirici (modemle aynı kutuda)](gorseller/foto-yonlendirici.jpg){width=90%}
+
+![Ethernet kablosu (RJ45 uçlu)](gorseller/foto-ethernet-kablo.jpg){width=55%}
+
+![Ağ kartı](gorseller/foto-ag-karti.jpg){width=90%}
+
+![Duvara monte erişim noktası](gorseller/foto-erisim-noktasi.jpg){width=60%}
+
+Ağı oluşturan bileşenler: yönlendirici, kablolu bağlantı, ağ kartı ve erişim noktası.
+:::
+
 # WiFi: Kullanım ve Güvenlik
 
 **WiFi**, kablosuz yerel ağ teknolojisidir. Cihazınız radyo dalgaları aracılığıyla erişim noktasıyla konuşur.
@@ -259,5 +271,14 @@ Bu uygulama notla değerlendirilmez. Amacı, günlük kablosuz kullanımınızı
 - **USOM** — güvenli İnternet ve kablosuz ağ güvenliği konularında uyarılar. (usom.gov.tr)
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **İşletim sistemlerinizin resmî yardım sayfaları** — WiFi ve Bluetooth ayarları.
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki dört fotoğrafın künyesi:
+
+- Yönlendirici — *Huawei HG520V Home Gateway*, Mk2010, CC BY-SA 3.0.
+- Ethernet kablosu — *Patch cable with RJ45 connector*, heimnetzwerke.net, CC BY 4.0.
+- Ağ kartı — *GB Network PCI Card*, Harke, kamu malı.
+- Erişim noktası — *Unifi AC Lite Access Point*, ServerGuruBrisbane, CC BY-SA 4.0 (kare kırpılmıştır).
+
+Yönlendirici, Ethernet kablosu ve erişim noktası fotoğrafları için kaynak gösterme zorunludur; ağ kartı karesi kamu malı olduğu için zorunlu değildir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

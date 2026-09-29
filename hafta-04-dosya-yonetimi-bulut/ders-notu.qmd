@@ -116,6 +116,16 @@ Geçen hafta HDD ve SSD'yi tanımıştık. Şimdi bunların **nasıl kullanıld�
 | SD kart | 16–512 GB | Fotoğraf makinesi, telefon |
 | Harici disk | 500 GB–4 TB | Büyük yedekleme, arşiv |
 
+::: {#fig-cikarilabilir-depolama layout-ncol=3}
+![USB bellek](gorseller/foto-usb-bellek.jpg){width=90%}
+
+![SD kart](gorseller/foto-sd-kart.jpg){width=90%}
+
+![Harici disk](gorseller/foto-harici-disk.jpg){width=90%}
+
+Çıkarılabilir depolama aygıtları: USB bellek, SD kart ve harici disk.
+:::
+
 ::: {.callout-warning}
 ## Güvenli çıkarma
 
@@ -275,5 +285,13 @@ Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir al�
 - **İşletim sisteminizin resmî yardım sayfaları** — dosya yönetimi, yedekleme ve disk yönetimi konularında kullanıcı belgeleri.
 - **Bulut depolama hizmetlerinin resmî yardım sayfaları** — paylaşım izinleri ve sürüm geçmişi.
 - **USOM ve BTK farkındalık yayınları** — zararlı dosya ve güvenli indirme konularında. (usom.gov.tr, btk.gov.tr)
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki üç fotoğrafın künyesi:
+
+- USB bellek — *USB flash drive, 1TB*, EU+Mexico, CC0.
+- SD kart — *SDHC memory card - 8GB*, Jiří Doubravský, kamu malı.
+- Harici disk — *Seagate SRD0NF1 portable hard drive HS2*, Hayden Schiff, CC BY 4.0.
+
+Harici disk fotoğrafı için kaynak gösterme zorunludur; USB bellek ve SD kart kareleri CC0/kamu malı olduğu için zorunlu değildir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

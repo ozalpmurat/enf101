@@ -54,18 +54,6 @@ def onyuz_ve_basliklar(yol):
     return baslik, cikti
 
 
-def sunum_slaytlari(yol):
-    """Sunumdaki ## slayt başlıklarının sayısı (kutu başlıkları hariç)."""
-    _, basliklar = onyuz_ve_basliklar(yol)
-    return sum(1 for s, _ in basliklar if s == 2)
-
-
-def soru_sayisi(yol):
-    """Alıştırmadaki soru sayısı."""
-    metin = open(yol, encoding="utf-8").read()
-    return len(re.findall(r'^\*\*\d+\.\*\*', metin, re.M))
-
-
 def main():
     parcalar = [
         "---",
@@ -82,9 +70,9 @@ def main():
         "::: {.callout-note}",
         "## Bu belge nedir?",
         "",
-        "14 haftanın **ders notlarındaki** bölüm başlıklarının bir arada görünümüdür; dersin içerik haritası olarak kullanılır. Sunum ve alıştırma için hafta başına yalnızca sayı verilir. Notlardaki kutu (callout) başlıkları bölüm sayılmadığı için buraya alınmaz.",
+        "14 haftanın **ders notlarındaki** bölüm başlıklarının bir arada görünümüdür; dersin içerik haritası olarak kullanılır. Notlardaki kutu (callout) başlıkları bölüm sayılmadığı için buraya alınmaz.",
         "",
-        "**Otomatik üretilir, elle düzenlenmez.** İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra betiği çalıştırıp belgeyi yeniden derleyin: `python3 araclar/basliklari-uret.py` ve `quarto render BASLIKLAR.qmd`.",
+        "**Otomatik üretilir, elle düzenlenmez.** İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra betiği çalıştırıp belgeyi yeniden derleyin: `python3 araclar/basliklari-uret.py` ve `bash araclar/derle.sh BASLIKLAR.qmd`.",
         ":::",
         "",
     ]
@@ -97,10 +85,6 @@ def main():
         no = os.path.basename(klasor).split("-")[1]
         baslik, basliklar = onyuz_ve_basliklar(not_)
         parcalar.append(f"# {int(no)}. Hafta — {baslik}")
-        parcalar.append("")
-        sl = sunum_slaytlari(os.path.join(klasor, "sunum.qmd"))
-        al = soru_sayisi(os.path.join(klasor, "alistirma.qmd"))
-        parcalar.append(f"*Sunum: {sl} slayt başlığı · Alıştırma: {al} soru*")
         parcalar.append("")
         for seviye, metin in basliklar:
             parcalar.append(("  " * (seviye - 1)) + "- " + metin)

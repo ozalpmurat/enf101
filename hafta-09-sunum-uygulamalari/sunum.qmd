@@ -131,6 +131,8 @@ Geçen haftanın **yanıltıcı grafikler** konusunu hatırlayın — kendi graf
 - **Teknik kontrol:** projeksiyon, ses, dosya biçimi
 - **Yedek kopya:** PDF olarak da taşıyın
 
+![](gorseller/foto-projeksiyon.jpg){width=32%} ![](gorseller/foto-mikrofon.png){width=30%}
+
 ## Sunarken
 
 - **Dinleyiciye bakın**, slayta değil

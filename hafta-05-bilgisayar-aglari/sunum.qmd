@@ -51,6 +51,12 @@ format: beamer
 
 ![](gorseller/diagram-ag-sema.png){width=62%}
 
+## Ağ Donanımı
+
+![](gorseller/foto-yonlendirici.jpg){width=24%} ![](gorseller/foto-ethernet-kablo.jpg){width=15%} ![](gorseller/foto-ag-karti.jpg){width=24%} ![](gorseller/foto-erisim-noktasi.jpg){width=16%}
+
+Yönlendirici, Ethernet kablosu, ağ kartı ve erişim noktası.
+
 # WiFi
 
 ## Kablosuz Yerel Ağ

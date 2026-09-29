@@ -34,6 +34,7 @@
 # derleme çıktısı olan .tex dosyaları yok sayılır.
 /hafta-*/*.tex
 /izlence.tex
+/BASLIKLAR.tex
 /KILAVUZ_*.tex
 /ornekler/*.tex
 

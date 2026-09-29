@@ -124,6 +124,12 @@ Bu yüzden **ekran kilidi** ve **SIM PIN'i** açık olmalıdır.
 
 Tek başına önemsiz görünen bu veriler, bir araya geldiğinde **ayrıntılı bir profil** oluşturur.
 
+## Giyilebilir Cihazlar
+
+![](gorseller/foto-akilli-saat.jpg){width=30%} ![](gorseller/foto-bileklik.jpg){width=24%} ![](gorseller/foto-kablosuz-kulaklik.jpg){width=26%}
+
+Akıllı saat, bileklik ve akıllı kulaklık: hepsi sensör taşır, hepsi veri toplar.
+
 ## Sağlık Verisi ve Gizlilik
 
 Sağlık verisi **özel nitelikli kişisel veridir** (11. hafta).
@@ -149,6 +155,8 @@ Okumadan kabul etmek, verinizin nereye gittiğini bilmemektir.
 Akıllı televizyon, priz, kamera, sesli asistan, termostat.
 
 **Faydaları:** uzaktan kontrol, otomasyon, enerji tasarrufu, konfor.
+
+![](gorseller/foto-guvenlik-kamerasi.jpg){width=26%} ![](gorseller/foto-hoparlor.jpg){width=30%}
 
 ## Riskler
 

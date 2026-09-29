@@ -129,6 +129,12 @@ Bir sistemi öğrenen diğerine kolayca geçer.
 | Sunucu | Kesintisiz, çok kullanıcı | Web sunucusu |
 | Gömülü | Tek amaç, düşük kaynak | Modem, akıllı TV |
 
+## Dört Cihaz Türü
+
+![](gorseller/foto-masaustu.jpg){width=24%} ![](gorseller/foto-mobil.jpg){width=16%} ![](gorseller/foto-sunucu.jpg){width=24%} ![](gorseller/foto-gomulu.jpg){width=26%}
+
+Hepsi farklı görünür — ama hepsinde bir işletim sistemi çalışır.
+
 ## Mobil İşletim Sistemleri
 
 - **Android:** Açık kaynak temelli, çok üreticili

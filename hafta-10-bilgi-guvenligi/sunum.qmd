@@ -79,6 +79,8 @@ Parolanız çalınsa bile hesabınız korunur.
 
 **Uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
 
+![](gorseller/foto-guvenlik-anahtari.jpg){width=36%}
+
 ## Nerede Mutlaka Açık Olmalı?
 
 - **E-posta** — diğer bütün parolalar oraya sıfırlanır
@@ -146,6 +148,8 @@ Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir —
 - **Korsan / kırılmış yazılımlar**
 - **Takılan USB bellekler**
 - **Güncellenmemiş yazılım açıkları**
+
+![](gorseller/foto-usb-bellek.jpg){width=32%}
 
 ## Yazılımı Kaynağından İndirin
 

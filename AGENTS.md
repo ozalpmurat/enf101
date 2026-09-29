@@ -74,6 +74,30 @@ quarto render izlence.qmd       # tek dosya
 hafta-03-yazilim-isletim-sistemleri` çalışmaz.
 Tam projeyi tek komutta derlemek 3 dakikayı aştığı için uzun işlerde hafta hafta derlemek gerekir.
 
+**Önerilen yol: `araclar/derle.sh`.** Yukarıdaki komutlar yerine bu sarmalayıcı kullanılabilir; çalışma
+ağacına geçici `.tex/.aux/.log/.out` bırakmaz ve ders notlarında altbilgiyi garanti eder:
+
+```bash
+bash araclar/derle.sh hafta-03-yazilim-isletim-sistemleri   # klasördeki bütün .qmd
+bash araclar/derle.sh BASLIKLAR.qmd izlence.qmd             # tek tek dosyalar
+bash araclar/derle.sh .                                     # bütün depo
+```
+
+**Altbilgi tuzağı (bu betiğin varlık sebebi).** `tema/notlar.tex` altbilgiye `Sayfa n / N` yazar; buradaki
+**N**, LaTeX'in belge sonunda yazdığı bir çapraz referanstan (`\pageref{LastPage}`) gelir. Belge **tam sayfa
+sınırında** bittiğinde Quarto'nun çalıştırdığı geçiş sayısı yetmez ve son sayfa `Sayfa 11 / 10` gibi **yanlış
+toplam** basar. Bu, bayat önbellekten değil belgenin sınırda olmasından kaynaklanır: `.quarto/` ve PDF
+silinip **temiz** derlense de olur. `latex-max-runs` da ikinci bir `quarto render` da düzeltmez.
+
+Betik, `.tex`'i koruyarak (`-M keep-tex:true`) derler; son sayfada `Sayfa n / N` görüp tutmuyorsa altbilgi
+oturana kadar (en fazla 6 kez) ek `xelatex` geçişi yapar, ardından yan ürünleri siler. Altbilgisi zaten
+doğru olan belgelere dokunmaz.
+
+Denenip **işe yaramayan** çözümler — tekrar denenmesin: `\AtEndDocument{\clearpage\label{LastPage}}`
+(referans "??" kalır), `totpages` paketi (TinyTeX'te kurulu değil, derleme düşer), etiketi altbilgiye taşımak
+(yine "??"), altbilgiden toplamı tümden kaldırmak (çalışır ama `n / N` bilgisi kaybolur — kullanıcı bunu
+istemedi). 2026-09-29'da 02, 04, 05, 06, 09, 14. haftalar bu tuzağa yakalanmıştı.
+
 **`BASLIKLAR.qmd` elle düzenlenmez.** `araclar/basliklari-uret.py` betiği bu dosyayı `hafta-*/ders-notu.qmd`
 başlıklarından üretir. İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra — izlenceyi
 güncellediğiniz gibi — betiği çalıştırıp belgeyi yeniden derleyin:
@@ -381,6 +405,14 @@ awk 'p ~ /^\*\*[0-9]+\.\*\*/ && $0=="" {print FILENAME": "NR". satır — soruda
 
 # 7. İçerik başlıkları kaynaklarla uyumlu mu? (commit beklemeye gerek yok)
 python3 araclar/basliklari-uret.py --kontrol
+
+# 8. Altbilgi doğru mu? — her ders notunun son sayfası "Sayfa n / n" yazmalı
+#    (yanlışsa: bash araclar/derle.sh <klasör>; bkz. §3)
+for f in hafta-*/ders-notu.pdf; do
+  n=$(pdfinfo "$f" | awk '/^Pages/{print $2}')
+  s=$(pdftotext -layout -f "$n" -l "$n" "$f" - | grep -oE 'Sayfa [0-9]+ / [0-9]+' | head -1)
+  [ "$s" = "Sayfa $n / $n" ] || echo "HATA: $f -> ${s:-altbilgi yok} (gerçek $n)"
+done
 ```
 
 ---

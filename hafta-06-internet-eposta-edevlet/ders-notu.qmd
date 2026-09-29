@@ -189,6 +189,16 @@ Kamu hizmetlerinde ve resmî işlemlerde karşınıza çıkacak üç farklı kav
 | **Mobil imza** | SIM kart üzerinden imzalar | Islak imza hükmündedir |
 | **e-imza (nitelikli elektronik imza)** | USB token veya akıllı kart ile imzalar | Islak imza hükmündedir |
 
+::: {#fig-imza-araclari layout-ncol=3}
+![SIM kart (mobil imza)](gorseller/foto-sim-kart.jpg){width=90%}
+
+![Çipli (akıllı) kart](gorseller/foto-akilli-kart.jpg){width=90%}
+
+![Kart okuyucu](gorseller/foto-kart-okuyucu.jpg){width=60%}
+
+Mobil imza SIM kartı kullanır; e-imza ise akıllı kart ve onu okuyan bir cihazla atılır.
+:::
+
 ::: {.callout-note}
 ## En sık karışan ayrım
 
@@ -250,5 +260,11 @@ Bu uygulama notla değerlendirilmez. Amacı, doğrulama ve yazışma becerilerin
 - **USOM** — oltalama ve siber güvenlik uyarıları. (usom.gov.tr)
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunması ve gizlilik. (kvkk.gov.tr)
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki üç fotoğraf için kaynak gösterme zorunludur:
+
+- SIM kart — *Formats de cartes SIM*, Bidouille82, CC BY-SA 3.0.
+- Çipli (akıllı) kart — *TopUp TV smart card back*, Bumper12, CC BY-SA 4.0.
+- Kart okuyucu — *IC Card Reader Writer RW-5100W*, Project Kei, CC BY-SA 4.0.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

@@ -82,6 +82,8 @@ Bütün parolaları akılda tutmak mümkün değildir. **Parola yöneticisi** ya
 
 Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmandır: **bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı).
 
+![Donanım güvenlik anahtarı: iki adımlı doğrulamada "sahip olduğunuz şey"](gorseller/foto-guvenlik-anahtari.jpg){width=42%}
+
 ::: {.callout-warning}
 ## İki adımlı doğrulamayı açın
 
@@ -164,6 +166,8 @@ Bu yüzden "bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez" 
 - **Korsan yazılımlar ve kırılmış uygulamalar**
 - **Takılan USB bellekler**
 - **Güncellenmemiş yazılımlardaki açıklar**
+
+![Tanımadığınız bir USB belleği takmak da yaygın bulaşma yollarından biridir](gorseller/foto-usb-bellek.jpg){width=38%}
 
 ::: {.callout-tip}
 ## Yazılımı kaynağından indirin
@@ -284,5 +288,10 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **TÜBİTAK BİLGEM** — bilişim güvenliği farkındalık yayınları. (tubitak.gov.tr)
 - **Kullanılan işletim sistemi ve tarayıcının resmî güvenlik sayfaları.**
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki iki fotoğraf için kaynak gösterme zorunludur:
+
+- Donanım güvenlik anahtarı — *Yubikey USB 2FA U2F Security Token*, Tony Webster, CC BY 2.0.
+- USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

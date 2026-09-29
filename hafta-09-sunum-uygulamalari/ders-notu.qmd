@@ -147,6 +147,14 @@ Slayt hazırlamak işin yarısıdır; sunmak diğer yarısı.
 - **Teknik kontrol yapın.** Projeksiyon, ses, dosya biçimi — önceden deneyin.
 - **Yedek kopya taşıyın.** Sunumunuzu PDF olarak da yanınızda bulundurun.
 
+::: {#fig-sunum-donanim layout-ncol=2}
+![Projeksiyon cihazı](gorseller/foto-projeksiyon.jpg){width=90%}
+
+![Yaka mikrofonu](gorseller/foto-mikrofon.png){width=90%}
+
+Sunumdan önce projeksiyon ve ses düzeneği denenmeli; ses için genellikle yaka mikrofonu kullanılır.
+:::
+
 ## Sunarken
 
 - **Dinleyiciye bakın.** Slayta değil.
@@ -234,5 +242,12 @@ Bu uygulama notla değerlendirilmez. Amacı, sunum hazırlamanın her adımını
 - **Creative Commons** — lisans türleri ve arama araçları. (creativecommons.org)
 - **Sunum yazılımınızın resmî kılavuzu** — şablonlar, erişilebilirlik ve dışa aktarma.
 - **W3C Erişilebilirlik Girişimi** — sunum erişilebilirliği ilkeleri. (w3.org/WAI)
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki iki fotoğrafın künyesi:
+
+- Projeksiyon cihazı — *InFocus IN34*, Dave Pape, kamu malı.
+- Yaka mikrofonu — *GA100 Mic*, 多多123, CC BY 4.0.
+
+Yaka mikrofonu fotoğrafı için kaynak gösterme zorunludur; projeksiyon karesi kamu malı olduğu için zorunlu değildir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

@@ -103,6 +103,12 @@ Bunları `.zip`'lemek neredeyse **hiç küçültmez**. Kazanç metin tabanlı be
 | SD kart | 16–512 GB | Fotoğraf, telefon |
 | Harici disk | 500 GB–4 TB | Yedekleme, arşiv |
 
+## Çıkarılabilir Aygıtlar
+
+![](gorseller/foto-usb-bellek.jpg){width=30%} ![](gorseller/foto-sd-kart.jpg){width=30%} ![](gorseller/foto-harici-disk.jpg){width=30%}
+
+USB bellek, SD kart ve harici disk: hepsi taşınabilir, hepsi kolay kaybolur.
+
 ## Güvenli Çıkarma
 
 ::: {.callout-warning}
