@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 28.09.2026
+Son güncelleme: 29.09.2026
 
 ---
 
@@ -112,7 +112,14 @@ Bu yüzden `checkout` adımı `fetch-depth: 0` ile bütün geçmişi indirir.
 Bu düzenin iki sonucu var. Birincisi, **commit başlıkları doğrudan günlüğe girer**: notu okuyan kişi bir hoca
 veya öğrencidir, bu yüzden commit mesajlarının özet satırı teknik değil, okuyanın anlayacağı dille
 yazılmalıdır. İkincisi, sürüm kimliği günlük başlığı olduğu için **her sürüm günlükte yer alır**; içerik
-değişmese bile bölüm eklenir ("İçerik değişmedi; paket yeniden üretildi."), aksi hâlde numaralandırma kopar.
+değişmese bile bölüm eklenir ("İçerik değişmedi."), aksi hâlde numaralandırma kopar.
+
+**İçerik dışı değişiklikler.** Yalnızca altyapıyı ilgilendiren commit'lerin başlığı `alt:` ile başlatılır
+(ör. `alt: PDF iş akışındaki checkout sürümünü güncelle`). Bunlar günlükten atılmaz ama içerik maddelerinin
+altında **"İçerik dışı değişiklikler"** alt başlığı altında, ön ek gösterilmeden listelenir. Böylece günlüğü
+okuyan hoca indirdiği dosyaları ilgilendiren değişiklikleri üstte görür; iş akışı ve araç düzeltmeleri altta
+kalır, yine de kayda geçer. Kural: bir commit'in başlığı ders içeriğiyle ilgiliyse normal yazılır,
+yalnızca üretim/araç/iş akışıyla ilgiliyse `alt:` ön eki kullanılır.
 
 PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan geçici dosyalar
 (`.quarto/`, `*.log`, `*.tex`, `*_files/`) teslim edilmez; klasör temiz tutulur.
@@ -272,6 +279,39 @@ Chrome gereken araçlar için: `quarto install chrome-headless-shell` (tek sefer
 Mermaid ve Graphviz kendi varsayılan font ve renkleriyle çizer — belgeye "yabancı" durabilir;
 kurumsal palete çekmek için ayrıca tema ayarı gerekir.
 
+**Fotoğraflar.** Diyagramın yanında, konunun somut nesnesini göstermek için fotoğraf kullanılır: donanım
+parçaları, bağlantı noktaları, depolama aygıtları, ağ donanımı, giyilebilir ve IoT cihazları, tarihsel
+hesaplama makineleri. Soyut konularda (veri–enformasyon–bilgi, KVKK, etik, güvenlik kavramları) fotoğraf
+aramak yerine şema çizilir. **Fotoğraf diyagramın yerini almaz**, yanına gelir: şema "nerede, ne işe yarar"
+sorusunu, fotoğraf "gerçekte nasıl görünür" sorusunu yanıtlar.
+
+- **Kaynak:** Wikimedia Commons. Lisans Commons API'sinden **doğrulanır**, dosya adından tahmin edilmez.
+  Kabul: CC0, kamu malı, CC BY, CC BY-SA. Red: FAL, GFDL, NC, ND ve lisansı belirsiz olanlar.
+- **Kaynak gösterimi:** Atıf gerektiren her fotoğraf için haftanın Kaynaklar bölümüne "Görsel kaynakları"
+  listesi eklenir: *Dosya adı — Yazar, Lisans.* CC0/kamu malı olanlar için zorunlu değildir ama künyesi
+  yine yazılır.
+- **Dosya adı:** `gorseller/foto-<konu>.jpg` (ASCII, küçük harf, tire) — örn. `foto-anakart.jpg`,
+  `foto-cpu-soketi.jpg`. Şemalar `diagram-*.png` kalıbında kalır; ikisi karışmaz.
+- **Ölçü:** İnen dosyanın en uzun kenarı **~1000 piksel** olmalı (baskıda ~10 cm genişlik ≈ 254 dpi).
+  Commons dosyaları 72 dpi damgalı gelir; bu yüzden yerleştirmede **her fotoğrafa açık `{width=…}` yazılır**,
+  aksi hâlde §8'in ölçü kuralı gereği kat kat büyük basılır. Gereğinden büyük dosya PDF'i şişirir:
+  2. haftada 1600 piksellik 10 fotoğraf ders notunu 299 KB'tan 5,43 MB'a çıkarmıştı.
+- **Ders notunda yerleşim:** `::: {#fig-ad layout-ncol=N}` bloğu. **Kimlik ve başlık zorunludur:** bunlar
+  olmadan Quarto bloğu şekil saymaz, alt görseller "(a)" etiketi alır, ana "Şekil N" başlığı basılmaz,
+  ama numara yine tüketilir ve numaralandırma atlar.
+- **Sunumda yerleşim:** Görseller **aynı paragrafta bitişik** yazılır
+  (`![](gorseller/a.jpg){width=45%} ![](gorseller/b.jpg){width=45%}`); `layout-ncol` sunumda her görsele
+  "Şekil N" başlığı eklediği için kullanılmaz. Büyük bir şema ya da tablo içeren slayta fotoğraf sırası
+  **eklenmez** (başlıklardan sonra gövdeye kalan alan ~7 cm'dir, fotoğrafın altı kesilir); fotoğraf sırasına
+  kendi slaydı verilir — dört fotoğraf %23 genişlikle ve tek satır açıklamayla rahat oturur.
+- **Kapsam:** Fotoğraf eklendiğinde **ders notu ve sunum birlikte** güncellenir ve ikisi de yeniden derlenir;
+  sunuma slayt eklendiyse `python3 araclar/basliklari-uret.py` çalıştırılıp `BASLIKLAR.qmd` yenilenir (§3).
+- **İçerik sınırları:** Markanın baskın olduğu kare seçilmez (§9 marka kuralıyla gerilim); tanınabilir insan
+  içeren kare kullanılmaz (model izni gerekir). Fotoğraf metinde geçmeyen bir olgu getiriyorsa (model adı,
+  tarih) başlıkta açıkça belirtilir.
+- **Bütçe:** Fotoğraf sayfa/slayt sayısını artırır. Gerekiyorsa görselin metnin yerine geçmesi yeğlenir;
+  hedefler §2 ve §5'te.
+
 ---
 
 ## 9. İçerik ilkeleri
@@ -354,7 +394,7 @@ python3 araclar/basliklari-uret.py --kontrol
   yaygınlaştırıldı; artık her sunuda en az bir kutu var.
 - **Çıktı eşlemesi (K1–K9):** izlence ile haftalık belgeler arasındaki eşleme gözden geçirildi.
   4. haftaya K4 eklendi (bulut ve işbirliği araçları), 3. haftadaki K2 bağlantısı kaldırıldı
-  (donanım çıktısı, yazılım haftasına bağlıydı), K3'e işletim sistemi aileleri eklendi.
+     (donanım çıktısı, yazılım haftasına bağlıydı), K3'e işletim sistemi aileleri eklendi.
 
 ---
 

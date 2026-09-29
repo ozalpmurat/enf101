@@ -72,23 +72,29 @@ jobs:
           VERSIYON="enf101-$BUGUN$SIRA"
           echo "Sürüm kimliği: $VERSIYON"
 
-          # Bu sürümün bölümü: son sürümden bu yana gelen commit başlıkları
-          DEGISIM=""
+          # Bu sürümün bölümü: son sürümden bu yana gelen commit başlıkları.
+          # Başlığı "alt:" ile başlayan commit'ler içerik dışı (altyapı) sayılır
+          # ve günlükte ayrı bir alt başlık altında listelenir; ön ek gösterilmez.
+          BASLIKLAR=""
           if [ -n "$ONCEKI_COMMIT" ]; then
-            DEGISIM=$(git log --no-merges --reverse --pretty=format:'- %s' "$ONCEKI_COMMIT..HEAD" 2>/dev/null || true)
+            BASLIKLAR=$(git log --no-merges --reverse --pretty=format:'%s' "$ONCEKI_COMMIT..HEAD" 2>/dev/null || true)
           fi
+          ICERIK=$(printf '%s\n' "$BASLIKLAR" | awk '/^alt:/{next} NF{print "- " $0}')
+          ICERIK_DISI=$(printf '%s\n' "$BASLIKLAR" | awk '/^alt:/{sub(/^alt: */,""); print "- " $0}')
           printf '%s' "$NOTLAR" | grep -v 'son-surum-commit' > /tmp/onceki-notlar.md
 
           # Yeni günlük bölümü. Sürüm kimliği günlük başlığı olduğu için her
           # sürüm günlükte yer alır; bölüm atlanırsa numaralandırma kopar.
-          if [ -z "$DEGISIM" ]; then
-            DEGISIM="- İçerik değişmedi; paket yeniden üretildi."
-            echo "Son sürümden bu yana yeni commit yok."
-          fi
           {
             echo "## $VERSIYON — $BUGUN_TR"
             echo
-            echo "$DEGISIM"
+            if [ -n "$ICERIK" ]; then echo "$ICERIK"; else echo "- İçerik değişmedi."; fi
+            if [ -n "$ICERIK_DISI" ]; then
+              echo
+              echo "### İçerik dışı değişiklikler"
+              echo
+              echo "$ICERIK_DISI"
+            fi
             echo
             echo "<!-- son-surum-commit: $(git rev-parse HEAD) -->"
             echo

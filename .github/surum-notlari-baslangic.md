@@ -2,7 +2,7 @@ Bütün haftaların ders notu, sunum ve alıştırma PDF'leri tek dosyada; ayrı
 
 Dosyalar, sürüm kimliğiyle adlandırılmış bir klasörün içinde durur: `enf101-YYYYMMDDNN` (örneğin `enf101-2026092901`). Bu ad aynı zamanda sürüm numarası olarak kullanılır. Hafta klasörleri bu klasörün altındadır ve bu değişiklik günlüğü de onun içindedir.
 
-Aşağıda her sürümde bir öncekine göre neyin değiştiği listelenir; en yeni sürüm en üsttedir.
+Aşağıda her sürümde bir öncekine göre neyin değiştiği listelenir; en yeni sürüm en üsttedir. Ders içeriğini ilgilendirmeyen altyapı işleri, her sürümün altında "İçerik dışı değişiklikler" başlığıyla ayrıca verilir.
 
 ## enf101-2026092801 — 28.09.2026
 
@@ -13,6 +13,9 @@ Aşağıda her sürümde bir öncekine göre neyin değiştiği listelenir; en y
 - İçerik denetimi: çıktı eşlemesi, alıştırma tekrarları ve 11. hafta tutarlılığı düzeltildi.
 - Ders notu başlıklarının içerik haritası olan BASLIKLAR belgesi eklendi.
 - Terim tutarlılığı sağlandı: hesap erişiminde "parola", verinin okunamaz hâle getirilmesinde "şifreleme".
-- PDF sürümü elle çıkarılır hâle getirildi: Actions → PDF paketi ile tetiklenen ZIP.
+
+### İçerik dışı değişiklikler
+
+- PDF paketi elle çıkarılır hâle getirildi: Actions → PDF paketi ile tetiklenen ZIP.
 
 <!-- son-surum-commit: abf802bfec3f33c1d4f608a76228da2551cf2817 -->
