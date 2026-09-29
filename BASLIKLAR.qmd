@@ -19,7 +19,7 @@ format:
 
 # 1. Hafta — Bilgi Toplumu, Dijital Okuryazarlık ve Temel Kavramlar
 
-*Sunum: 19 slayt başlığı · Alıştırma: 10 soru*
+*Sunum: 21 slayt başlığı · Alıştırma: 10 soru*
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları

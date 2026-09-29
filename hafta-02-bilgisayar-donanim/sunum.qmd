@@ -46,7 +46,7 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 
 - Bileşenler ortak **veri yolu** (bus) üzerinden haberleşir.
 
-![](gorseller/diagram-anakart.png){width=70%}
+![](gorseller/diagram-anakart.png){width=48%} ![](gorseller/foto-anakart.jpg){width=44%}
 
 ## İşlemci: Bilgisayarın Beyni
 
@@ -66,6 +66,8 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 
 - Günlük kullanımda orta seviye bir işlemci çoğu işi görür.
 - Ayrıntılı mimari karşılaştırmaları ve saat hızı yarışı bu dersin dışındadır.
+
+![](gorseller/foto-islemci.jpg){width=38%} ![](gorseller/foto-cpu-soketi.jpg){width=38%}
 
 ## İşlemcinin İç Yapısı
 
@@ -87,6 +89,8 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 
 İşlemci az sayıda karmaşık işi, GPU **binlerce basit işi aynı anda** yapar.
 
+![](gorseller/foto-ekran-karti.jpg){width=45%}
+
 ## GPU'nun Kullanım Alanları
 
 - Oyunlarda üç boyutlu görüntü
@@ -103,6 +107,8 @@ Her donanım bileşeni bu döngünün bir aşamasında görev alır.
 - Elektrik kesilince **silinir** (geçici).
 
 Benzetme: **masa** — üzerinde çalıştığınız şeyler.
+
+![](gorseller/foto-ram.jpg){width=45%}
 
 ## Bellek: ROM ve BIOS
 
@@ -144,6 +150,8 @@ SSD'li bilgisayar hızlı açılır, uygulamalar saniyeler içinde yüklenir.
 - Yeni bir bilgisayarda **SSD, performans için ilk bakılacak özelliktir**.
 - HDD, büyük ve ucuz yedek alan için tercih edilir.
 
+![](gorseller/foto-hdd.jpg){width=42%} ![](gorseller/foto-ssd.jpg){width=42%}
+
 # Çevre Birimleri
 
 ## Çevre Birimleri Üç Türde
@@ -170,6 +178,8 @@ SSD'li bilgisayar hızlı açılır, uygulamalar saniyeler içinde yüklenir.
 - **Ethernet:** Kablolu ağ.
 
 Noktaları tanımak, "kablom uymuyor" sorununu çözer.
+
+![](gorseller/foto-usb-c.png){width=30%} ![](gorseller/foto-hdmi.jpg){width=30%} ![](gorseller/foto-ethernet.jpg){width=30%}
 
 # Veri ve Ölçü Birimleri
 

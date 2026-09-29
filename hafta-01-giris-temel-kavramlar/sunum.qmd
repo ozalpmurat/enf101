@@ -135,6 +135,12 @@ Bilgiye ulaşmak artık kolay. Asıl beceri, ulaşılan bilginin doğruluğunu d
 
 Şemadaki aralıklar eşittir; **zaman ekseni ölçekli değildir.**
 
+## Tarihten Nesneler
+
+Soldan sağa: abaküs, Pascal'ın hesap makinesi, Babbage'ın Fark Makinesi ve ENIAC.
+
+![](gorseller/foto-abakus.jpg){width=23%} ![](gorseller/foto-pascaline.jpg){width=23%} ![](gorseller/foto-fark-makinesi.jpg){width=23%} ![](gorseller/foto-eniac.jpg){width=23%}
+
 ## İlk Elektronik Bilgisayarlar
 
 **ENIAC (1945)** — binlerce vakum tüpüyle çalışıyordu ve yaklaşık 167 m² alan kaplıyordu.
@@ -149,6 +155,12 @@ Bilgiye ulaşmak artık kolay. Asıl beceri, ulaşılan bilginin doğruluğunu d
 | İkinci nesil | 1956–1964 | Transistörler |
 | Üçüncü nesil | 1964–1970 | Entegre devreler |
 | Dördüncü nesil | 1971 ve sonrası | Mikroişlemciler |
+
+## Nesillerin Belirleyici Teknolojileri
+
+Sırasıyla vakum tüpü, transistör, entegre devre ve mikroişlemci.
+
+![](gorseller/foto-vakum-tupu.jpg){width=23%} ![](gorseller/foto-transistor.jpg){width=23%} ![](gorseller/foto-entegre-devre.jpg){width=23%} ![](gorseller/foto-intel-4004.jpg){width=23%}
 
 ## Bugün ve Yarın
 

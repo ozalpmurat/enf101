@@ -107,11 +107,23 @@ Bugün kullandığımız bilgisayarlar bir gecede ortaya çıkmadı. Hesaplama a
 
 Tarihin bilinen ilk hesaplama aracı **abaküs**tür; teller üzerindeki boncuklarla dört işlem yapılmasını sağlar. 17. yüzyılda hesaplama makineleri mekanik hâle geldi: **Blaise Pascal** (1642) toplama ve çıkarma yapabilen bir makine tasarladı; **Gottfried Leibniz** (1671) çarpma ve bölmeyi de ekledi ve ikili sayı sistemi üzerine çalıştı.
 
+::: {#fig-hesap-araclari layout-ncol=2}
+![Teller üzerindeki boncuklarla çalışan bir abaküs](gorseller/foto-abakus.jpg){width=90%}
+
+![Pascal'ın toplama ve çıkarma makinesi](gorseller/foto-pascaline.jpg){width=90%}
+
+Hesaplamanın ilk araçları: abaküs ve Pascal'ın hesap makinesi
+:::
+
 19. yüzyılda **Charles Babbage**, bugünkü bilgisayarların atası sayılan **Analitik Makine**'yi tasarladı. Bu makine, delikli kartlardan okunan komutlarla çalışacak ve sonucu saklayacaktı. **Ada Lovelace**, bu makine için yazdığı notlarda bir işlemin adım adım nasıl yapılacağını anlatarak tarihin ilk programcısı kabul edildi.
+
+![Babbage'ın tasarladığı Fark Makinesi'nin çalışan bir örneği](gorseller/foto-fark-makinesi.jpg){width=62%}
 
 1890'da **Herman Hollerith**, Amerika Birleşik Devletleri nüfus sayımında delikli kartla çalışan bir tablolama makinesi kullandı. Hollerith'in kurduğu şirket, sonradan bugünkü **IBM**'e dönüştü. 1936'da **Alan Turing**, "Turing makinesi" adı verilen kuramsal modelle hesaplanabilirliğin sınırlarını tanımladı; bu model, bilgisayar biliminin matematiksel temeli sayılır.
 
 Elektronik bilgisayara geçiş İkinci Dünya Savaşı yıllarında hızlandı. 1945'te tamamlanan **ENIAC**, yaklaşık 167 metrekarelik bir alanı kaplayan, binlerce vakum tüpüyle çalışan ilk elektronik bilgisayarlardan biriydi.
+
+![ENIAC: binlerce vakum tüpüyle çalışan ilk elektronik bilgisayarlardan biri](gorseller/foto-eniac.jpg){width=65%}
 
 ## Bilgisayar nesilleri
 
@@ -124,7 +136,21 @@ Bilgisayarlar, kullandıkları baskın teknolojiye göre nesillere ayrılır:
 | Üçüncü nesil | 1964–1970 | Entegre devreler | IBM System/360 |
 | Dördüncü nesil | 1971 ve sonrası | Mikroişlemciler | Intel 4004, kişisel bilgisayarlar |
 
+::: {#fig-nesiller layout-ncol=4}
+![Vakum tüpü](gorseller/foto-vakum-tupu.jpg){width=90%}
+
+![Transistör](gorseller/foto-transistor.jpg){width=90%}
+
+![Entegre devre](gorseller/foto-entegre-devre.jpg){width=90%}
+
+![Mikroişlemci](gorseller/foto-intel-4004.jpg){width=90%}
+
+Nesillerin belirleyici teknolojileri: vakum tüpü, transistör, entegre devre ve mikroişlemci
+:::
+
 **1948'de transistörün icadı**, vakum tüplerinin yerini aldı; makineler küçüldü, daha az ısındı ve daha güvenilir oldu. **Entegre devreler** sayesinde yüzlerce transistör tek bir yonga üzerine sığdırıldı. **1971'de Intel 4004** ile başlayan mikroişlemci dönemi, bilgisayarı kurumların deposundan çıkarıp masalarımıza getirdi.
+
+![IBM PC (1981): kişisel bilgisayarların yaygınlaşmasında dönüm noktası](gorseller/foto-ibm-pc.jpg){width=62%}
 
 ::: {.callout-tip}
 ## Bunu biliyor muydunuz?
@@ -199,5 +225,16 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunmasına yönelik farkındalık yayınları. (kvkk.gov.tr)
 - **Ulusal Siber Olaylara Müdahale Merkezi (USOM)** — güvenlik uyarıları ve farkındalık içerikleri. (usom.gov.tr)
 - **TÜBİTAK BİLGEM** — bilişim güvenliği ve siber güvenlik farkındalık yayınları. (tubitak.gov.tr)
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki altı fotoğraf için kaynak gösterme zorunludur:
+
+- Fark Makinesi — *Difference engine (161978436)*, Richard King, CC BY 2.0.
+- ENIAC — *ENIAC Penn1*, TexasDex, CC BY-SA 3.0.
+- Kişisel bilgisayar — *IBM PC 5150 (1)*, edwardhblake, CC BY 2.0.
+- Vakum tüpü — *PCL84 Tungsram*, Mister rf, CC BY-SA 4.0.
+- Transistör — *A replica of the first working transistor 02*, Mister rf, CC BY-SA 4.0.
+- Entegre devre — *DIP packages*, Mister rf, CC BY-SA 4.0.
+
+Abaküs, Pascaline ve Intel 4004 fotoğrafları kamu malı ya da CC0 lisanslı olduğu için kaynak gösterme zorunluluğu yoktur; künyeleri sırasıyla Syced, bilinmeyen bir sanatçı ve Wolfgang Stief'e aittir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

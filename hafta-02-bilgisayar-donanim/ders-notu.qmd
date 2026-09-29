@@ -59,6 +59,8 @@ Bileşenler arasındaki bu iletişim, anakart üzerindeki **veri yolu** (bus) de
 
 ![Anakart ve üzerindeki bileşenler](gorseller/diagram-anakart.png){width=70%}
 
+![Anakart: işlemci yuvası, bellek yuvaları ve genişletme yuvaları tek kart üzerinde](gorseller/foto-anakart.jpg){width=62%}
+
 ## İşlemci (CPU)
 
 **İşlemci**, bilgisayarın beynidir: programlardaki komutları tek tek yürütür, hesapları yapar ve diğer bileşenleri yönetir. İki özelliği bilmek yeterlidir:
@@ -70,6 +72,14 @@ Bileşenler arasındaki bu iletişim, anakart üzerindeki **veri yolu** (bus) de
 ## İşlemci hakkında bilmeniz gereken tek şey
 
 "İşlemci ne kadar güçlü" sorusunun günlük hayattaki karşılığı, "aynı anda ne kadar çok ve ne kadar hızlı iş yapabildiği"dir. Detaylı mimari ve saat hızı karşılaştırmaları bu dersin kapsamı dışındadır.
+:::
+
+::: {#fig-islemci-soket layout-ncol=2}
+![Bir işlemci çipi](gorseller/foto-islemci.jpg){width=90%}
+
+![Anakart üzerinde işlemcinin takıldığı soket](gorseller/foto-cpu-soketi.jpg){width=90%}
+
+Bir işlemci çipi ve onun anakart üzerinde takıldığı soket
 :::
 
 ## İşlemcinin iç yapısı
@@ -104,9 +114,13 @@ GPU ile işlemci arasındaki fark, işin **türünde** yatar: İşlemci az sayı
 "GPU binlerce basit işi aynı anda yapar" özelliği, günümüzde yapay zekâ modeli eğitiminin de temelidir. Bu konuyu 12. haftada yapay zekâyı işlerken yeniden hatırlayacağız.
 :::
 
+![Bir ekran kartı ve üzerindeki grafik işlemci](gorseller/foto-ekran-karti.jpg){width=60%}
+
 ## Bellek: RAM, ROM ve ön bellek
 
 **RAM**, bilgisayarın çalışma belleğidir. O anda açık olan programları ve işlenen veriyi tutar. Elektrik kesildiğinde ya da bilgisayar kapandığında RAM'in içindekiler **silinir**; yani RAM geçicidir.
+
+![Bir bellek (RAM) modülü](gorseller/foto-ram.jpg){width=65%}
 
 **ROM**, üzerindeki bilgiyi kalıcı olarak saklayan, yalnızca okunabilen bellektir. Bilgisayarın açılışında çalışan temel yazılımı (donanım yazılımı) barındırır; bu yazılıma **BIOS** (yeni sistemlerde **UEFI**) denir. Donanımın içine gömülü gelen ve donanımı çalıştıran bu tür yazılımlara **donanım yazılımı** (firmware) denir; BIOS bunun en bilinen örneğidir. Bilgisayarı açtığınızda BIOS önce ekran kartı, klavye ve disk gibi temel donanımların yerinde ve çalışır olduğunu sınar, ardından işletim sistemini başlatır. Açılışta gördüğünüz ilk ekran bu yüzden BIOS'a aittir. Kullanıcı bu içeriği değiştirmez.
 
@@ -146,6 +160,14 @@ Depolama birimleri iki ana türe ayrılır: mekanik **HDD** ve elektronik **SSD*
 
 ![HDD ve SSD şeması](gorseller/diagram-hdd-ssd.png){width=70%}
 
+::: {#fig-hdd-ssd-foto layout-ncol=2}
+![Açılmış bir sabit disk: dönen plakalar ve okuyucu kafa](gorseller/foto-hdd.jpg){width=90%}
+
+![Bir SSD: hareketli parçası yoktur](gorseller/foto-ssd.jpg){width=90%}
+
+Açılmış bir sabit disk ile bir SSD yan yana
+:::
+
 ::: {.callout-tip}
 ## SSD'nin günlük hayattaki farkı
 
@@ -177,6 +199,16 @@ Günlük hayatta en çok karşılaşacağınız birimleri kısaca tanıyalım:
 ## Bağlantı noktaları
 
 Çevre birimleri bilgisayara **bağlantı noktaları** (port) üzerinden takılır. En sık karşılaşacağınız noktalar: **USB** (klavye, fare, bellek, yazıcı gibi pek çok cihaz), **USB-C** (yeni nesil, küçük ve çift yönlü uç; hem veri hem şarj), **HDMI** (monitör ve televizyon bağlantısı) ve **Ethernet** (kablolu ağ). Bağlantı noktalarını tanımak, "kablom uymuyor" sorununu kendi başınıza çözmenizi sağlar.
+
+::: {#fig-baglanti-noktalari layout-ncol=3}
+![USB-C ucu](gorseller/foto-usb-c.png){width=90%}
+
+![HDMI ucu](gorseller/foto-hdmi.jpg){width=90%}
+
+![Duvardaki Ethernet (RJ45) çıkışı](gorseller/foto-ethernet.jpg){width=90%}
+
+Üç yaygın bağlantı ucu: USB-C, HDMI ve Ethernet
+:::
 
 # Bit, Bayt ve Ölçü Birimleri
 
@@ -296,5 +328,17 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **İşletim sisteminizin resmî yardım ve destek sayfaları** — cihaz bilgilerine ve sistem özelliklerine nasıl bakılacağı.
 - **Bilgisayar üreticilerinin resmî alıcı kılavuzları ve ürün sayfaları** — RAM, depolama ve işlemci özelliklerinin karşılaştırılması.
 - **Bağımsız teknoloji inceleme sitelerinin alıcı rehberleri** — bütçeye göre donanım seçiminde tarafsız karşılaştırmalar.
+
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki yedi fotoğraf için kaynak gösterme zorunludur:
+
+- Anakart — *Mainboard Asus P5Q-E 18015*, Michael Wolf, CC BY-SA 3.0.
+- İşlemci çipi — *Intel SB80486DX2-50*, Mister rf, CC BY-SA 4.0.
+- İşlemci soketi — *LGA Socket 1366*, Appaloosa, CC BY-SA 3.0.
+- Bellek modülü — *2×8 GB DDR4 Corsair*, Bretwa, CC BY-SA 4.0.
+- Sabit disk — *Seagate ST33232A hard disk inner view*, Eric Gaba (Sting), CC BY-SA 3.0.
+- SSD — *2023 Dysk SSD Patriot P210 2TB*, Jacek Halicki, CC BY-SA 4.0.
+- Ethernet çıkışı — *Ethernet Jack on Wall – CAT6*, Tony Webster, CC BY 2.0.
+
+Ekran kartı, USB-C ve HDMI fotoğrafları kamu malı ya da CC0 lisanslı olduğu için kaynak gösterme zorunluluğu yoktur; yine de künyeleri sırasıyla Evan-Amos, Deergirl ve Evan-Amos'a aittir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
