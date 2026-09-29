@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) PAN\
 B) LAN\
 C) WAN\
-D) DNS
+D) DNS\
+E) VPN
 
 **2.** Ağdaki cihazların birbirine ve İnternet'e bağlanmasını yöneten cihaz hangisidir?\
 A) Modem\
 B) Yazıcı\
 C) Yönlendirici\
-D) Ağ kartı
+D) Ağ kartı\
+E) Anahtar (switch)
 
 **3.** Kablosuz ağlarda kullanılan güncel şifreleme standartları hangileridir?\
 A) WEP ve WPA\
-B) WPA2 ve WPA3\
+B) HTTPS ve TLS\
 C) HTTP ve HTTPS\
-D) LAN ve WAN
+D) LAN ve WAN\
+E) WPA2 ve WPA3
 
 **4.** Bluetooth ile ilgili aşağıdakilerden hangisi doğrudur?\
 A) Şehirler arası bağlantı sağlar\
 B) Kısa mesafeli kablosuz bağlantı teknolojisidir\
 C) Yalnızca kablolu çalışır\
-D) İnternet'e bağlanmak için zorunludur
+D) İnternet'e bağlanmak için zorunludur\
+E) Yalnızca aynı marka cihazlar arasında çalışır
 
 **5.** Tarayıcıya `siteadi.edu.tr` yazdığınızda bunu IP adresine çeviren sistem hangisidir?\
 A) WiFi\
 B) Bluetooth\
 C) DNS\
-D) HTTPS
+D) HTTPS\
+E) HTTP
 
 **6.** `.gov.tr` uzantılı bir alan adı neyi gösterir?\
 A) Ticari bir şirketi\
-B) Bir kamu kurumunu\
+B) Bir uluslararası kuruluşu\
 C) Bir üniversiteyi\
-D) Bir kişisel blogu
+D) Bir kişisel blogu\
+E) Bir kamu kurumunu
 
 **7.** Tarayıcının gizli modu hakkında hangisi doğrudur?\
 A) Kullanıcıyı tamamen anonim yapar\
 B) Yalnızca cihazdaki geçmiş kaydını tutmaz\
 C) İnternet hızını artırır\
-D) Virüsleri engeller
+D) Virüsleri engeller\
+E) İndirilen dosyaları virüslere karşı tarar
 
 **8.** Halka açık ve şifresiz bir kablosuz ağda aşağıdakilerden hangisini yapmak en risklidir?\
 A) Hava durumuna bakmak\
 B) Haber okumak\
 C) Bankacılık işlemi yapmak\
-D) Harita uygulaması açmak
+D) Harita uygulaması açmak\
+E) Yemek tarifi okumak
 
 **9.** Aynı anda hem kullanıcı adı hem de parola isteyen sahte bir kablosuz ağ, "sahte erişim noktası" saldırısına örnektir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -79,10 +87,10 @@ D) Harita uygulaması açmak
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | LAN (yerel ağ) bir bina veya kampüs gibi sınırlı bir alanı kapsar. |
 | 2 | C | Yönlendirici, ağdaki cihazların birbirine ve İnternet'e bağlanmasını yönetir. Modem ise sinyali çevirir. |
-| 3 | B | WPA2 ve WPA3 güncel ve güvenli şifreleme standartlarıdır. WEP artık güvensiz kabul edilir. |
+| 3 | E | Doğru ifade E seçeneğindedir: WPA2 ve WPA3 kablosuz ağlarda kullanılan güncel şifreleme standartlarıdır. HTTPS ve TLS internet trafiğinin şifrelenmesiyle ilgilidir, kablosuz ağ standardı değildir. |
 | 4 | B | Bluetooth, genellikle 10 metreye kadar olan kısa mesafeli bir kablosuz bağlantı teknolojisidir. |
 | 5 | C | DNS, alan adlarını IP adreslerine çeviren sistemdir; İnternet'in telefon rehberi gibi çalışır. |
-| 6 | B | `.gov.tr` kamu kurumlarını gösterir. `.edu.tr` üniversiteler, `.com` ticari siteler içindir. |
+| 6 | E | Doğru ifade E seçeneğindedir: .gov.tr kamu kurumlarını gösterir. .edu.tr üniversiteler, .com ticari siteler içindir. |
 | 7 | B | Gizli mod yalnızca cihazınızdaki kaydı tutmaz; sizi anonim yapmaz. Servis sağlayıcı ve site yine görebilir. |
 | 8 | C | Açık ağlarda trafik izlenebilir. Bankacılık ve e-Devlet gibi hassas işlemler bu ağlarda yapılmamalıdır. |
 | 9 | Doğru | Saldırgan, gerçek bir ağa benzeyen sahte bir ağ kurup kullanıcıyı yanıltır. Buna "sahte erişim noktası" (evil twin) denir. |

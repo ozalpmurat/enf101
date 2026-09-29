@@ -49,7 +49,7 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 └─ hafta-NN-konu/                NN = 01 … 14, konu = kısa konu adı
    ├─ ders-notu.qmd + .pdf       8–12 sayfa
    ├─ sunum.qmd + .pdf           25–38 slayt (hedef ~30)
-   ├─ alistirma.qmd + .pdf        4 sayfa · 10 soru + cevap anahtarı
+   ├─ alistirma.qmd + .pdf        3 sayfa · 10 soru (5 şıklı) + cevap anahtarı
    └─ gorseller/*.png            o haftanın diyagramları
 ```
 
@@ -201,7 +201,8 @@ Makale (PDF) biçiminde Mermaid **doğrudan ve sorunsuz** çalışır; ölçek s
 
 ## 7. Alıştırma yazım kuralları
 
-Her hafta 10 soru: **8 çoktan seçmeli + 2 doğru–yanlış**. Cevap anahtarı `{{< pagebreak >}}` ile ayrı
+Her hafta 10 soru: **8 çoktan seçmeli + 2 doğru–yanlış**. Çoktan seçmeli soruların her biri **beş şıklıdır**
+(A–E) ve doğru cevap şıklar arasında dağılır — tek bir harfte birikmez. Cevap anahtarı `{{< pagebreak >}}` ile ayrı
 sayfaya alınır ve her soru için kısa gerekçe içerir.
 
 **Soru ile şıklar arasında paragraf boşluğu olmaz.** Soru metni, A) B) C) D) şıkları ve doğru–yanlış
@@ -339,7 +340,7 @@ Her hafta için üç belge:
 |:------------- |:---------------------------------------------------------------------------------------------------------- |
 | **ders-notu** | Kurumsal kapak yok; başlık bloğu. Öğrenme çıktıları, ana içerik, uygulama, özet, kendini sınama, kaynaklar |
 | **sunum**     | Bölüm ayraçları + slaytlar. Öğrenme çıktılarıyla başlar, "gelecek hafta" ile biter                         |
-| **alıştırma** | 8 çoktan seçmeli + 2 doğru-yanlış; cevap anahtarı ayrı sayfada, kısa gerekçeli                             |
+| **alıştırma** | 8 çoktan seçmeli (beş şıklı) + 2 doğru-yanlış; cevap anahtarı ayrı sayfada, kısa gerekçeli                 |
 
 Üçünde de aynı başlık yapısı ve aynı görsel dil kullanılır; haftalar arası tutarlılık esastır.
 

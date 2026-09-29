@@ -20,50 +20,58 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 **1.** Aşağıdakilerden hangisi kişisel veri değildir?\
 A) Telefon numarası\
 B) TC kimlik numarası\
-C) Hava durumu tahmini\
-D) E-posta adresi
+C) Okul numarası\
+D) E-posta adresi\
+E) Hava durumu tahmini
 
 **2.** Aşağıdakilerden hangisi "özel nitelikli kişisel veri" kapsamındadır?\
 A) Ad ve soyad\
 B) Sağlık bilgisi\
 C) Telefon numarası\
-D) Doğum yılı
+D) Doğum yılı\
+E) E-posta adresi
 
 **3.** KVKK kapsamında "ilgili kişi" kimdir?\
 A) Veriyi işleyen kurum\
 B) Verisi işlenen kişi\
 C) Veriyi denetleyen kurul\
-D) Yazılımı geliştiren firma
+D) Yazılımı geliştiren firma\
+E) Veriyi saklayan sunucu
 
 **4.** Dijital ayak izinin "pasif" kısmına hangisi girer?\
 A) Yazdığınız bir yorum\
 B) Paylaştığınız bir fotoğraf\
 C) Tarayıcı çerezleri ve konum kaydı\
-D) Üye olduğunuz bir site
+D) Üye olduğunuz bir site\
+E) Beğendiğiniz bir gönderi
 
 **5.** Bir fener uygulamasının konum izni istemesi neyi gösterir?\
 A) Uygulamanın çok gelişmiş olduğunu\
-B) İznin işlevle orantılı olmadığını\
+B) Uygulamanın reklam gösterdiğini\
 C) İznin zorunlu olduğunu\
-D) Uygulamanın ücretsiz olduğunu
+D) Uygulamanın ücretsiz olduğunu\
+E) İznin işlevle orantılı olmadığını
 
 **6.** Creative Commons lisanslı bir eser için genellikle ne gerekir?\
 A) Hiçbir şey\
 B) İzin için ücret ödemek\
 C) Lisans şartlarına uymak, çoğunlukla atıf yapmak\
-D) Eseri değiştirmeden kullanmak
+D) Eseri değiştirmeden kullanmak\
+E) Lisansı iptal ettirmek
 
 **7.** Bir görselin altına kaynak yazmak ne sağlar?\
 A) Görseli kullanma hakkı verir\
 B) Telif sorununu ortadan kaldırır\
 C) Yalnızca kaynağı belirtir; kullanım hakkı vermez\
-D) Görseli kamu malı yapar
+D) Görseli kamu malı yapar\
+E) Eserin sahibinden sonradan izin alınmasını gerektirir
 
 **8.** Aşağıdakilerden hangisi dijital etiğe uygun bir davranıştır?\
 A) Başkasının hesabına izinsiz girmek\
 B) Yanlış bilgiyi düzeltmek\
 C) Bir kişiyi hedef göstererek paylaşım yapmak\
-D) Başkasının fotoğrafını izinsiz paylaşmak
+D) Başkasının fotoğrafını izinsiz paylaşmak\
+E) Bir tartışmada karşı tarafı küçümsemek
 
 **9.** Dijital ayak izi silinen bir paylaşımla birlikte tamamen ortadan kalkar. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -77,11 +85,11 @@ D) Başkasının fotoğrafını izinsiz paylaşmak
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | C | Hava durumu tahmini kişiye ilişkin bir bilgi değildir; kişisel veri sayılmaz. |
+| 1 | E | Kişisel veri olmayan ifade E seçeneğindedir: hava durumu tahmini kişiye ilişkin bir bilgi değildir. Telefon numarası, TC kimlik numarası, okul numarası ve e-posta adresi kişiyi belirlenebilir kılar. |
 | 2 | B | Sağlık bilgisi özel nitelikli kişisel veridir ve daha sıkı korunur. |
 | 3 | B | İlgili kişi, kişisel verisi işlenen gerçek kişidir. Veriyi işleyen taraf veri sorumlusudur. |
 | 4 | C | Çerezler ve konum kaydı kullanıcı bir şey yapmadan toplanır; bu pasif izdir. Diğerleri aktif izdir. |
-| 5 | B | Fener uygulamasının işini yapmak için konuma ihtiyacı yoktur; izin işlevle orantılı değildir. |
+| 5 | E | Doğru değerlendirme E seçeneğindedir: fener uygulamasının işini yapmak için konuma ihtiyacı yoktur; bu izin işlevle orantılı değildir. |
 | 6 | C | Creative Commons lisansları kullanıma izin verir ancak şartları vardır; en yaygını atıf yapmaktır. |
 | 7 | C | Kaynak gösterme kaynağı belirtir; kullanım hakkı lisans konusudur ve ayrıdır. |
 | 8 | B | Yanlış bilgiyi düzeltmek sorumlu davranıştır. Diğer üç seçenek etik dışı ve bazıları suçtur. |

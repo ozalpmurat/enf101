@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) Hız, doğruluk, güvenilirlik\
 B) Gizlilik, bütünlük, erişilebilirlik\
 C) Donanım, yazılım, ağ\
-D) Parola, kullanıcı adı, kimlik
+D) Parola, kullanıcı adı, kimlik\
+E) Hız, maliyet, kullanılabilirlik
 
 **2.** Aşağıdaki parolalardan hangisi en güçlüdür?\
 A) `123456`\
 B) `Ahmet2010!`\
 C) `mavi-kahve-sandalye-41`\
-D) `parola`
+D) `parola`\
+E) `ankara1234`
 
 **3.** Parola yöneticisi kullanmanın temel faydası nedir?\
 A) Parolaları internette paylaşması\
 B) Her hesap için farklı ve güçlü parola üretip güvenle saklaması\
 C) Parolayı unutmanızı engellemek için ekrana yazması\
-D) Parolaları kısaltması
+D) Parolaları kısaltması\
+E) Parolaları e-posta ile yedeklemesi
 
 **4.** İki adımlı doğrulama ne sağlar?\
 A) Parolayı daha kısa yapar\
-B) Parola çalınsa bile hesabı korur\
+B) Her girişte parolanın sorulmasını kaldırır\
 C) İnternet hızını artırır\
-D) E-postaları siler
+D) E-postaları siler\
+E) Parola çalınsa bile hesabı korur
 
 **5.** İki adımlı doğrulamanın mutlaka açık olması gereken hesap hangisidir?\
 A) Oyun hesabı\
-B) E-posta hesabı\
+B) Sosyal medya hesabı\
 C) Alışveriş sitesi üyeliği\
-D) Haber sitesi aboneliği
+D) Haber sitesi aboneliği\
+E) E-posta hesabı
 
 **6.** Bir e-postada "hesabınız 24 saat içinde kapatılacak" yazıyor ve bir bağlantı veriliyor. İlk yapılması gereken nedir?\
 A) Bağlantıya tıklayıp durumu görmek\
 B) E-postayı yanıtlayıp bilgi istemek\
 C) Bağlantıya tıklamadan göndereni başka kanaldan doğrulamak\
-D) E-postayı silmek ve unutmak
+D) E-postayı silmek ve unutmak\
+E) E-postayı spam olarak işaretlemek
 
 **7.** Yararlı bir program gibi görünüp arka kapı açan zararlı yazılım türü hangisidir?\
 A) Virüs\
 B) Solucan\
 C) Truva atı\
-D) Fidye yazılımı
+D) Fidye yazılımı\
+E) Reklam yazılımı (adware)
 
 **8.** Fidye yazılımına karşı en etkili savunma nedir?\
 A) Daha güçlü parola kullanmak\
 B) Düzenli yedekleme yapmak\
 C) Tarayıcıyı gizli modda kullanmak\
-D) Bilgisayarı sık sık kapatmak
+D) Bilgisayarı sık sık kapatmak\
+E) Bilgisayarı her gün yeniden başlatmak
 
 **9.** Gizli modda gezinmek kullanıcıyı tamamen anonim yapar. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -80,8 +88,8 @@ D) Bilgisayarı sık sık kapatmak
 | 1 | B | Gizlilik, bütünlük ve erişilebilirlik bilgi güvenliğinin üç temel ilkesidir. |
 | 2 | C | Birbirinden ilgisiz kelimelerden oluşan uzun söz öbeği hem akılda kalır hem tahmin edilemez. Diğer seçenekler tahmin edilebilir kalıplardır. |
 | 3 | B | Parola yöneticisi her hesap için rastgele ve güçlü parola üretir, bunları şifreli kasada saklar. |
-| 4 | B | İki adımlı doğrulama, parolaya ek ikinci bir katman ekler; parola çalınsa bile hesap korunur. |
-| 5 | B | E-posta hesabı, diğer bütün hesapların parola sıfırlama adresi olduğu için en kritik hesaptır. |
+| 4 | E | Doğru ifade E seçeneğindedir: iki adımlı doğrulama, parola ele geçse bile ikinci bir adım gerektiği için hesabı korur. |
+| 5 | E | Doğru cevap E seçeneğindedir: e-posta hesabı diğer bütün hesapların kurtarma yoludur; ele geçirilirse tek tek bütün hesaplar riske girer. |
 | 6 | C | Acele ettiren mesajlar oltalamanın tipik işaretidir. Bağlantıya tıklanmaz; gönderen başka bir kanaldan doğrulanır. |
 | 7 | C | Truva atı, yararlı bir program gibi görünerek kullanıcıyı kandırır ve sisteme arka kapı açar. |
 | 8 | B | Yedek varsa şifrelenen dosyalar geri yüklenebilir; fidye ödemek zorunda kalınmaz. |

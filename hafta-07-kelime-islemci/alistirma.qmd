@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) Metni gerçek bir başlık hâline getirir\
 B) Metin başlık gibi görünür ama gerçek başlık olmaz\
 C) İçindekiler tablosuna eklenir\
-D) Belge otomatik kaydedilir
+D) Belge otomatik kaydedilir\
+E) Belgenin dosya boyutunu küçültür
 
 **2.** İçindekiler tablosunun otomatik oluşması için ne gereklidir?\
 A) Belgenin PDF olarak kaydedilmesi\
-B) Başlıklara stil uygulanmış olması\
+B) İçindekiler bölümünün elle yazılmış olması\
 C) Sayfa numarası eklenmiş olması\
-D) Belgenin yazdırılmış olması
+D) Belgenin yazdırılmış olması\
+E) Başlıklara stil uygulanmış olması
 
 **3.** Ödev tesliminde genellikle hangi dosya biçimi tercih edilir?\
 A) `.docx`\
 B) `.txt`\
 C) `.pdf`\
-D) `.pptx`
+D) `.pptx`\
+E) .jpg
 
 **4.** Aşağıdakilerden hangisi intihal sayılır?\
 A) Alıntıyı tırnak içinde gösterip kaynak belirtmek\
 B) Bir kaynağı kendi cümlelerinizle anlatıp kaynak göstermek\
 C) Bir cümleyi birkaç kelimesini değiştirip kaynak göstermeden kullanmak\
-D) Kaynakçayı belge sonuna eklemek
+D) Kaynakçayı belge sonuna eklemek\
+E) Kaynakçada kullandığınız eserleri listelemek
 
 **5.** Kaynak gösterirken aşağıdakilerden hangisi bulunmak zorunda değildir?\
 A) Yazar adı\
 B) Eser adı\
 C) Yayın yılı\
-D) Yazıldığı bilgisayarın markası
+D) Yazıldığı bilgisayarın markası\
+E) Eserin yayınlandığı yer (dergi veya yayınevi)
 
 **6.** Kaynak yönetimi araçlarının (örneğin Zotero, Mendeley) temel faydası nedir?\
 A) Belgeyi otomatik yazması\
-B) Kaynak göstermeyi kolaylaştırarak intihali önlemesi\
+B) Belgeyi otomatik olarak biçimlendirmesi\
 C) Belgeyi PDF'e çevirmesi\
-D) Yazım hatalarını düzeltmesi
+D) Yazım hatalarını düzeltmesi\
+E) Kaynak göstermeyi kolaylaştırarak intihali önlemesi
 
 **7.** Bir görsele "alternatif metin" eklemek kimin için önemlidir?\
 A) Belgeyi yazdıran kişi için\
 B) Ekran okuyucu kullanan kişiler için\
 C) Belgeyi PDF'e çeviren program için\
-D) Yalnızca öğretim elemanı için
+D) Yalnızca öğretim elemanı için\
+E) Belgenin daha hızlı açılmasını sağlamak için
 
 **8.** Belgeye sayfa numarası eklemenin temel amacı nedir?\
 A) Belgeyi güzel göstermek\
 B) Belgenin boyutunu artırmak\
 C) Belgeyi başvurulabilir kılmak\
-D) Yazdırmayı hızlandırmak
+D) Yazdırmayı hızlandırmak\
+E) Belgenin sayfa sayısını azaltmak
 
 **9.** Stiller kullanmak, elle biçimlendirmeye göre daha tutarlı ve hızlıdır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -78,11 +86,11 @@ D) Yazdırmayı hızlandırmak
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | Elle biçimlendirme metni başlık gibi gösterir ama gerçek başlık yapmaz; içindekiler tablosuna girmez. |
-| 2 | B | İçindekiler, yalnızca "Başlık 1", "Başlık 2" gibi stiller uygulanmış metinleri tanır. |
+| 2 | E | Doğru koşul E seçeneğindedir: içindekiler tablosu yalnızca stillerle (Başlık 1, Başlık 2 …) biçimlendirilmiş başlıklardan otomatik üretilir. |
 | 3 | C | PDF, farklı cihazlarda bozulmadan görüntülenir ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
 | 4 | C | Birkaç kelimesi değiştirilmiş olsa da kaynak gösterilmeyen kullanım intihaldir. |
 | 5 | D | Kaynak künyesinde yazar, eser, yıl, sayfa ve erişim bilgisi bulunur; kullanılan bilgisayarın markası hiçbir zaman yer almaz. |
-| 6 | B | Kaynak yönetimi araçları atıf ve kaynakça oluşturmayı kolaylaştırır; böylece kaynak gösterme zahmetli olmaktan çıkar ve intihal azalır. |
+| 6 | E | Doğru fayda E seçeneğindedir: kaynak yönetimi araçları atıf ve kaynakça oluşturmayı kolaylaştırarak kaynak göstermeyi pratik hâle getirir ve intihali önler. |
 | 7 | B | Alternatif metin, görseli göremeyen ve ekran okuyucu kullanan kişilerin içeriği anlamasını sağlar. |
 | 8 | C | Sayfa numarası olmadan belgenin belirli bir yerine atıf yapılamaz. |
 | 9 | Doğru | Stiller hem işi hızlandırır hem de belge boyunca tutarlılık sağlar; ayrıca içindekiler gibi otomatik özellikleri mümkün kılar. |

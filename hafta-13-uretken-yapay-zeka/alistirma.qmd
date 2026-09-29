@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) Daha hızlı çalışması\
 B) Sınıflandırmak yerine yeni içerik üretmesi\
 C) Yalnızca metinle çalışması\
-D) İnternet gerektirmemesi
+D) İnternet gerektirmemesi\
+E) Yalnızca matematiksel işlem yapması
 
 **2.** Aşağıdaki istemlerden hangisi en güçlüdür?\
 A) "Bana ödev yaz."\
 B) "Bilgi güvenliğini anlat."\
 C) "Birinci sınıf öğrencisi için bilgi güvenliğini üç ana başlıkta, her başlık tek cümle olacak biçimde madde madde özetle."\
-D) "Bilgi güvenliği hakkında bir şeyler söyle."
+D) "Bilgi güvenliği hakkında bir şeyler söyle."\
+E) "Bilgi güvenliği hakkında uzun bir yazı yaz."
 
 **3.** İyi bir istemin bileşenleri arasında aşağıdakilerden hangisi yer almaz?\
 A) Görev\
 B) Bağlam\
 C) Biçim\
-D) Yapay zekânın markası
+D) Yapay zekânın markası\
+E) Uzunluk
 
 **4.** Yapay zekâ çıktısını doğrulamanın **ilk** adımı nedir?\
 A) Metni olduğu gibi kopyalamak\
-B) Kaynak isteyip bağımsız kaynakla karşılaştırmak\
+B) Çıktıyı başka bir dile çevirmek\
 C) Metni kısaltmak\
-D) Başka bir yapay zekâya sormak
+D) Başka bir yapay zekâya sormak\
+E) Kaynak isteyip bağımsız kaynakla karşılaştırmak
 
 **5.** Yapay zekânın verdiği kaynak künyeleri neden güvenilir sayılmaz?\
 A) Her zaman İngilizce oldukları için\
 B) Kaynak uydurma olabildiği için\
 C) Çok kısa oldukları için\
-D) Yalnızca kitapları gösterdikleri için
+D) Yalnızca kitapları gösterdikleri için\
+E) Yalnızca 2020 sonrası kaynakları göstermeleri
 
 **6.** Aşağıdaki kullanımlardan hangisi akademik dürüstlük açısından uygundur?\
 A) Ödevi baştan sona yapay zekâya yazdırıp teslim etmek\
 B) Üretilen metni kendi çalışmanız gibi sunmak\
 C) Anlamadığınız bir konuyu yapay zekâya sorup öğrenmek\
-D) Kaynak göstermeden çeviri yaptırmak
+D) Kaynak göstermeden çeviri yaptırmak\
+E) Yapay zekâdan aldığınız metni doğrudan sunuma koymak
 
 **7.** Aşağıdakilerden hangisi yapay zekâ aracına yazılmamalıdır?\
 A) Anlamadığınız bir kavramın adı\
 B) Genel bir konu başlığı\
 C) Başkasına ait kişisel veriler\
-D) Yazdığınız metnin dil bilgisi sorusu
+D) Yazdığınız metnin dil bilgisi sorusu\
+E) Örnek bir metin paragrafı
 
 **8.** Yapay zekâ öğrenmeyi nasıl zorlaştırabilir?\
 A) Çok yavaş cevap vererek\
-B) Cevabı düşünmeden alındığında öğrenmeyi engelleyerek\
+B) Yalnızca kısa cevaplar vermesi\
 C) Yalnızca İngilizce bilerek\
-D) Uzun metinler üreterek
+D) Uzun metinler üreterek\
+E) Cevabı düşünmeden alındığında öğrenmeyi engelleyerek
 
 **9.** Yapay zekâ ile üretilmiş bir metni kendi çalışmanız gibi teslim etmek intihal sayılır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -80,11 +88,11 @@ D) Uzun metinler üreterek
 | 1 | B | Üretken modeller sınıflandırmak veya tahmin etmek yerine yeni içerik üretir: metin, görsel, ses, video, kod. |
 | 2 | C | Görev, bağlam, biçim ve uzunluk belirtilmiş istem en güçlüsüdür. Diğerleri belirsizdir. |
 | 3 | D | İyi bir istemde görev, bağlam, biçim, uzunluk ve örnek bulunur; aracın markası istemin bileşeni değildir. |
-| 4 | B | Doğrulamanın ilk adımı kaynak istemek ve bilgiyi bağımsız bir kaynakla karşılaştırmaktır. |
+| 4 | E | İlk adım E seçeneğindedir: doğrulama, kaynak isteyip bağımsız bir kaynakla karşılaştırmakla başlar. Ama verilen kaynağın da uydurma olabileceği unutulmamalıdır. |
 | 5 | B | Model, olmayan bir kitap veya makaleyi gerçekmiş gibi sunabilir; bu yüzden kaynak künyesi mutlaka doğrulanmalıdır. |
 | 6 | C | Yapay zekâyı öğrenme amacıyla kullanmak uygundur. Diğer üç seçenek intihal kapsamına girer. |
 | 7 | C | Başkasına ait kişisel veriler gizlilik ihlali oluşturur; araca yazılmamalıdır. |
-| 8 | B | Cevabı düşünmeden almak öğrenmeyi engeller; sınavda öğrenci yalnız kalır. |
+| 8 | E | Doğru gerekçe E seçeneğindedir: cevabı düşünmeden olduğu gibi almak, öğrenmeyi kolaylaştırmak yerine engeller. |
 | 9 | Doğru | Başkasının (bu durumda bir aracın) ürettiği metni kendi çalışması gibi sunmak intihaldir. |
 | 10 | Yanlış | Modeller inandırıcı çıktı üretmek üzere eğitilir; akıcılık doğruluk anlamına gelmez. |
 

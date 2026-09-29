@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) Açılış %50 – Gövde %30 – Kapanış %20\
 B) Açılış %10 – Gövde %80 – Kapanış %10\
 C) Açılış %30 – Gövde %50 – Kapanış %20\
-D) Açılış %20 – Gövde %40 – Kapanış %40
+D) Açılış %20 – Gövde %40 – Kapanış %40\
+E) Açılış %25 – Gövde %25 – Kapanış %50
 
 **2.** "Slayt bir vitrindir, depo değil" ifadesi ne anlatır?\
 A) Slaytlara çok bilgi koyulması gerektiğini\
 B) Slaytta anahtar kelimeler olması, ayrıntının konuşmacı tarafından anlatılması gerektiğini\
 C) Slaytların renkli olması gerektiğini\
-D) Slaytların yazdırılması gerektiğini
+D) Slaytların yazdırılması gerektiğini\
+E) Slaytlarda yalnızca grafik kullanılması gerektiğini
 
 **3.** Bir sunumda dinleyicinin genellikle hatırlayabildiği ana mesaj sayısı kaç kabul edilir?\
 A) 1\
-B) 3\
+B) 5\
 C) 7\
-D) 10
+D) 10\
+E) 3
 
 **4.** Slayt hazırlarken satır başına önerilen kelime sayısı hangisidir?\
 A) 6–8\
 B) 15–20\
 C) 25–30\
-D) Sınır yoktur
+D) Sınır yoktur\
+E) 2–3
 
 **5.** Sunumun kapanış bölümünde ne yapılmalıdır?\
 A) Yalnızca "Teşekkürler" denmelidir\
 B) Yeni bilgiler eklenmelidir\
 C) Ana mesajlar özetlenip ne yapılması gerektiği söylenmelidir\
-D) Sorular hemen alınmalıdır
+D) Sorular hemen alınmalıdır\
+E) Sunum baştan özetlenip süre uzatılmalıdır
 
 **6.** Bir sunumda "üç ana mesaj" kuralının amacı nedir?\
 A) Slayt sayısını artırmak\
-B) Dinleyicinin hatırlayabildiği mesaj sayısı sınırlı olduğu için\
+B) Her bölüme eşit süre ayrılması için\
 C) Sunum süresini uzatmak\
-D) Görsel sayısını azaltmak
+D) Görsel sayısını azaltmak\
+E) Dinleyicinin hatırlayabildiği mesaj sayısı sınırlı olduğu için
 
 **7.** Erişilebilir bir sunum hazırlarken aşağıdakilerden hangisi yapılmalıdır?\
 A) Bilgiyi yalnızca renkle vermek\
 B) Küçük punto kullanmak\
 C) Görsellere alternatif metin eklemek\
-D) Slayt başlıklarını "Slayt 5" biçiminde yazmak
+D) Slayt başlıklarını "Slayt 5" biçiminde yazmak\
+E) Renkleri yalnızca dekoratif amaçla kullanmak
 
 **8.** Sunum öncesi yapılması gerekenlerden hangisi değildir?\
 A) Yüksek sesle prova yapmak\
 B) Süreyi ölçmek\
 C) Teknik kontrol yapmak\
-D) Slaytlara daha fazla metin eklemek
+D) Slaytlara daha fazla metin eklemek\
+E) Sunumun yapılacağı ortamı önceden görmek
 
 **9.** Sunum sırasında slaytta yazanı kelimesi kelimesine okumak, dinleyicinin dikkatini artırır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -79,10 +87,10 @@ D) Slaytlara daha fazla metin eklemek
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | Açılış ve kapanış kısa tutulur (~%10), gövde sunumun ağırlığını taşır (~%80). |
 | 2 | B | Slayt destekleyici bir yüzeydir; anahtar kelimeler taşır, ayrıntıyı konuşmacı anlatır. |
-| 3 | B | Dinleyici genellikle üçten fazla ana mesajı hatırlamaz; bu yüzden sunum üç mesaj etrafında kurulmalıdır. |
+| 3 | E | Doğru sayı E seçeneğindedir: dinleyici genellikle üçten fazla ana mesajı akılda tutamaz. |
 | 4 | A | Satır başına 6–8 kelime, slayt başına 6 madde iyi bir ölçüdür. |
 | 5 | C | Kapanış, ana mesajları hatırlatır ve ne yapılması gerektiğini söyler. Yalnızca teşekkür etmek kapanış sayılmaz. |
-| 6 | B | Dinleyici genellikle üçten fazla ana mesajı hatırlamaz; bu yüzden sunum üç mesaja odaklanmalıdır. |
+| 6 | E | Doğru gerekçe E seçeneğindedir: dinleyicinin akılda tutabildiği ana mesaj sayısı sınırlı olduğu için sunum üç mesaja odaklanır. |
 | 7 | C | Erişilebilir sunumda görsellere alternatif metin eklenir; punto büyük olmalı, bilgi yalnızca renkle verilmemeli ve başlıklar anlamlı yazılmalıdır. |
 | 8 | D | Slaytlara daha fazla metin eklemek bir hazırlık değil, yapılan bir hatadır. |
 | 9 | Yanlış | Slaytı okumak dinleyicinin dikkatini dağıtır; dinleyici okumaya başlar ve konuşmacıyı dinlemeyi bırakır. |

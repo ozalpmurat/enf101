@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) Kopyala / Yapıştır\
 B) Kes / Yapıştır\
 C) Yeniden adlandır\
-D) Sıkıştır
+D) Sıkıştır\
+E) Silip yeniden oluşturmak
 
 **2.** Aşağıdakilerden hangisi bir elektronik tablo dosyasının uzantısıdır?\
 A) `.docx`\
 B) `.pptx`\
 C) `.xlsx`\
-D) `.pdf`
+D) `.pdf`\
+E) .odp
 
 **3.** `rapor.docx` dosyasının adını `rapor.jpg` olarak değiştirirseniz ne olur?\
 A) Dosya resme dönüşür\
 B) Dosya bozulur ve açılmaz hâle gelir\
 C) Dosyanın türü değişmez, yalnızca yanlış programla açılmaya çalışılır\
-D) Dosya sıkıştırılmış olur
+D) Dosya sıkıştırılmış olur\
+E) Dosyanın boyutu küçülür
 
 **4.** Sıkıştırma hangi dosya türlerinde belirgin boyut kazancı sağlar?\
 A) Video dosyaları\
 B) Metin tabanlı belgeler\
 C) Yüksek çözünürlüklü fotoğraflar\
-D) Müzik dosyaları
+D) Müzik dosyaları\
+E) Zaten sıkıştırılmış bir .zip arşivi
 
 **5.** Bir USB belleği çıkarmadan önce ne yapılmalıdır?\
 A) Bilgisayarı kapatmak\
 B) Doğrudan kabloyu çekmek\
 C) İşletim sisteminin "güvenle çıkar" seçeneğini kullanmak\
-D) Dosyaları sıkıştırmak
+D) Dosyaları sıkıştırmak\
+E) Dosyaları başka bir diske kopyalamak
 
 **6.** Bir bölümdeki tüm veriyi silen işlem hangisidir?\
 A) Bölümleme\
-B) Biçimlendirme\
+B) Geri dönüşüm kutusunu boşaltmak\
 C) Sıkıştırma\
-D) Kopyalama
+D) Kopyalama\
+E) Biçimlendirme
 
 **7.** 3-2-1 yedekleme kuralına göre kaç kopya bulundurulmalıdır?\
 A) 1\
 B) 2\
 C) 3\
-D) 5
+D) 5\
+E) 4
 
 **8.** Aşağıdakilerden hangisi bulut depolamanın bir sınırıdır?\
 A) Her cihazdan erişilebilmesi\
 B) Paylaşım kolaylığı sağlaması\
-C) İnternet bağlantısı gerektirmesi\
-D) Sürüm geçmişi tutması
+C) Yalnızca tek cihazdan erişilebilmesi\
+D) Sürüm geçmişi tutması\
+E) İnternet bağlantısı gerektirmesi
 
 **9.** Dosyayı aynı bilgisayarın başka bir klasörüne kopyalamak yeterli bir yedeklemedir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -78,13 +86,13 @@ D) Sürüm geçmişi tutması
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | "Kes / Yapıştır" dosyayı taşır; aslı eski yerinden kalkar. "Kopyala / Yapıştır" ise iki nüsha bırakır. |
-| 2 | C | `.xlsx` elektronik tablo dosyasının uzantısıdır. `.docx` belge, `.pptx` sunum, `.pdf` taşınabilir belgedir. |
+| 2 | C | .xlsx elektronik tablo dosyasının uzantısıdır. .docx belge, .pptx ve .odp sunum, .pdf ise taşınabilir belgedir. |
 | 3 | C | Uzantıyı değiştirmek dosyanın içeriğini ve türünü değiştirmez; yalnızca işletim sisteminin onu yanlış programla açmaya çalışmasına yol açar. |
 | 4 | B | Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır. En belirgin kazanç metin tabanlı belgelerde olur. |
 | 5 | C | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |
-| 6 | B | Biçimlendirme bölümün içeriğini boşaltır. Bölümleme ise diski parçalara ayırır, tek başına veri silmez. |
+| 6 | E | Doğru işlem E seçeneğindedir: biçimlendirme bölümün içeriğini boşaltır. Bölümleme diski parçalara ayırır, tek başına veri silmez. |
 | 7 | C | Kural: 3 kopya, 2 farklı ortam, 1 kopya bilgisayarın dışında. |
-| 8 | C | Bulut depolama her yerden erişim sağlar ama bunun için internet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
+| 8 | E | Doğru ifade E seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için internet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
 | 9 | Yanlış | Aynı bilgisayarın başka klasöründeki kopya yedek sayılmaz; cihaz bozulduğunda iki kopya da kaybedilir. Yedek başka bir ortamda olmalıdır. |
 | 10 | Doğru | Bu tür çift uzantılı dosyalar, uzantının görünen kısmıyla kullanıcıyı yanıltmayı amaçlar. Tanımadığınız kaynaklardan gelen `.exe` dosyaları açılmamalıdır. |
 

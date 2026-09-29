@@ -21,49 +21,57 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) Tarayıcı\
 B) Dokunmatik yüzey (touchpad)\
 C) Mikrofon\
-D) Çizici (plotter)
+D) Çizici (plotter)\
+E) Klavye
 
 **2.** Elektrik kesildiğinde içindeki bilgiler silinen bellek hangisidir?\
 A) ROM\
 B) RAM\
 C) SSD\
-D) HDD
+D) HDD\
+E) USB bellek
 
 **3.** İşlemcinin içinde hesaplama ve karşılaştırma yapan birim hangisidir?\
 A) Kontrol birimi\
 B) Ön bellek\
 C) Aritmetik ve mantık birimi (ALU)\
-D) Kaydediciler
+D) Kaydediciler\
+E) Ekran kartı
 
 **4.** SSD'nin HDD'ye göre en belirgin günlük avantajı nedir?\
 A) Daha ucuz olması\
-B) Daha sessiz ve çok daha hızlı olması\
+B) Daha uzun ömürlü olması\
 C) Daha fazla hareketli parça içermesi\
-D) Daha az enerjiyle ısınması
+D) Daha az enerjiyle ısınması\
+E) Daha sessiz ve çok daha hızlı olması
 
 **5.** Ekran kartının üzerindeki işlemciye ne ad verilir?\
 A) CPU\
 B) RAM\
 C) GPU\
-D) ROM
+D) ROM\
+E) Çipset
 
 **6.** İşlemci ile GPU arasındaki temel fark nedir?\
 A) İşlemci binlerce basit işi aynı anda, GPU az sayıda karmaşık işi yapar\
-B) İşlemci az sayıda karmaşık işi, GPU binlerce basit işi aynı anda yapar\
+B) İşlemci yalnızca görüntü işler, GPU bütün hesaplamaları yapar\
 C) İkisi tamamen aynı görevi yapar\
-D) GPU yalnızca bellek yönetiminden sorumludur
+D) GPU yalnızca bellek yönetiminden sorumludur\
+E) İşlemci az sayıda karmaşık işi, GPU binlerce basit işi aynı anda yapar
 
 **7.** Aşağıdaki ölçü birimleri küçükten büyüğe hangi sırayla dizilir?\
 A) KB → MB → GB → TB\
 B) MB → KB → GB → TB\
 C) GB → MB → KB → TB\
-D) TB → GB → MB → KB
+D) TB → GB → MB → KB\
+E) GB → TB → MB → KB
 
 **8.** Bir bayt kaç bittir?\
 A) 2\
 B) 4\
 C) 8\
-D) 16
+D) 16\
+E) 32
 
 **9.** "Bilgisayarım yavaş" şikâyetinde diski büyütmek her zaman sorunu çözer. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -79,12 +87,12 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | D | Çizici (plotter), çizimi kâğıda aktaran bir çıkış birimidir. Tarayıcı, dokunmatik yüzey ve mikrofon giriş birimleridir. |
-| 2 | B | RAM geçicidir; elektrik kesilince içeriği silinir. ROM kalıcıdır; SSD ve HDD ise kalıcı depolama birimleridir. |
+| 1 | D | Çizici (plotter), çizimi kâğıda aktaran bir çıkış birimidir. Tarayıcı, dokunmatik yüzey, mikrofon ve klavye giriş birimleridir. |
+| 2 | B | RAM geçicidir; elektrik kesilince içeriği silinir. ROM kalıcıdır; SSD, HDD ve USB bellek ise kalıcı depolama ortamlarıdır. |
 | 3 | C | Hesaplama ve karşılaştırmayı aritmetik ve mantık birimi (ALU) yapar. Kontrol birimi komutları okur ve yönetir; ön bellek ile kaydediciler veri tutar. |
-| 4 | B | SSD hareketli parça içermez, sessizdir ve çok daha hızlıdır. Daha ucuz olmak HDD'nin avantajıdır. |
+| 4 | E | Doğru ifade E seçeneğindedir: SSD hareketli parça içermediği için sessizdir ve HDD'ye göre çok daha hızlıdır. Daha ucuz olmak HDD'nin avantajıdır. |
 | 5 | C | Ekran kartının üzerindeki işlemciye GPU (grafik işlemci) denir. CPU genel amaçlı işlemcidir. |
-| 6 | B | İşlemci az sayıda karmaşık işi sırayla, GPU binlerce basit işi aynı anda yapar. |
+| 6 | E | Doğru ifade E seçeneğindedir: işlemci az sayıda karmaşık işi sırayla, GPU binlerce basit işi aynı anda yapar. |
 | 7 | A | Boyutlar kilobayttan terabayta doğru KB → MB → GB → TB sırasıyla büyür. |
 | 8 | C | Sekiz bit bir bayt eder; bir bayt yaklaşık bir karakteri temsil eder. |
 | 9 | Yanlış | Yavaşlığın en sık nedeni RAM'in yetmemesidir. Diski büyütmek bu sorunu çözmez; RAM'i büyütmek çözebilir. |
