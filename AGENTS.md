@@ -41,8 +41,10 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 ├─ BASLIKLAR.qmd + .pdf          ders içeriği başlıkları (betikle üretilir)
 ├─ araclar/
 │  └─ basliklari-uret.py         BASLIKLAR.qmd'yi ders notlarından üretir
-├─ .github/workflows/
-│  └─ pdf-paketi.yml             PDF'leri ZIP'leyip sürüme yükler (elle tetiklenir)
+├─ .github/
+│  ├─ workflows/
+│  │  └─ pdf-paketi.yml          PDF'leri ZIP'leyip sürüme yükler (elle tetiklenir)
+│  └─ surum-notlari-baslangic.md sürüm notlarının başlangıç metni (bir kez okunur)
 ├─ KILAVUZ_Quarto_...qmd + .pdf  hocalar için Quarto kurulum/kullanım kılavuzu
 └─ hafta-NN-konu/                NN = 01 … 14, konu = kısa konu adı
    ├─ ders-notu.qmd + .pdf       8–12 sayfa
@@ -94,6 +96,23 @@ Böylece git kullanmayan hocalar tek bağlantıdan bütün belgeleri indirir.
 
 Çalıştırmak için: **Actions → PDF paketi → Run workflow**. Depoya gönderilmiş commit'ten derlendiği için,
 yereldeki gönderilmemiş veya yarım değişiklikler sürüme girmez. Yerelde aynı iş `find` + `zip -@` ile yapılır.
+
+**Sürüm kimliği.** Her sürüm, çıkarıldığı gün ve o günkü kaçıncı sürüm olduğuyla adlandırılır:
+`enf101-YYYYMMDDNN` (ör. `enf101-2026092901`). ZIP açıldığında bütün belgeler bu adda **tek bir klasörün**
+içindedir; ad aynı zamanda sürüm numarası olarak kullanılır ve sürüm sayfasının başlığında görünür
+(`Ders PDF'leri · enf101-2026092901`). ZIP **dosyasının** adı ve indirme bağlantısı bilinçli olarak sabittir.
+
+**Değişiklik günlüğü.** İş akışı her çalıştırmada, bir önceki sürümden bu yana gelen commit başlıklarını
+sürüm kimliğiyle başlayan tarihli bir bölüm (`## enf101-2026092901 — 29.09.2026`) olarak sürüm notlarına
+ekler; aynı metin ZIP'in içine **`DEGISIKLIKLER.md`** olarak da konur. Sıra numarası ve "hangi commit'ten
+bu yana" bilgisi notların içindeki işaretlerden okunur (en üstteki `## enf101-...` başlığı ve
+`<!-- son-surum-commit: ... -->` satırı); notlar hiç yoksa `.github/surum-notlari-baslangic.md` temel alınır.
+Bu yüzden `checkout` adımı `fetch-depth: 0` ile bütün geçmişi indirir.
+
+Bu düzenin iki sonucu var. Birincisi, **commit başlıkları doğrudan günlüğe girer**: notu okuyan kişi bir hoca
+veya öğrencidir, bu yüzden commit mesajlarının özet satırı teknik değil, okuyanın anlayacağı dille
+yazılmalıdır. İkincisi, sürüm kimliği günlük başlığı olduğu için **her sürüm günlükte yer alır**; içerik
+değişmese bile bölüm eklenir ("İçerik değişmedi; paket yeniden üretildi."), aksi hâlde numaralandırma kopar.
 
 PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan geçici dosyalar
 (`.quarto/`, `*.log`, `*.tex`, `*_files/`) teslim edilmez; klasör temiz tutulur.

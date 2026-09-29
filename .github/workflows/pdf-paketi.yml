@@ -6,7 +6,17 @@ name: PDF paketi
 #
 # KENDİLİĞİNDEN ÇALIŞMAZ. Sürüm çıkarmak bilinçli bir adımdır; elle tetiklenir:
 #   Actions → PDF paketi → Run workflow
-# Her çalıştırmada ZIP aynı etiketin üzerine yazılır (--clobber); indirme bağlantısı değişmez.
+# ZIP dosyasının adı ve indirme bağlantısı sabittir (--clobber ile üzerine yazılır).
+#
+# SÜRÜM KİMLİĞİ: Her sürüm, çıkarıldığı gün ve o günkü kaçıncı sürüm olduğuyla
+# adlandırılır:  enf101-YYYYMMDDNN   (ör. enf101-2026092901)
+# ZIP açıldığında her şey bu adda tek bir klasörün içinde durur; ad aynı zamanda
+# sürüm numarası olarak kullanılır ve sürüm sayfasının başlığında görünür.
+#
+# DEĞİŞİKLİK GÜNLÜĞÜ: Sürüm notlarına, bir önceki sürümden bu yana gelen commit
+# başlıkları sürüm kimliğiyle başlayan tarihli bir bölüm olarak eklenir. Aynı
+# metin, zip'in içine DEGISIKLIKLER.md olarak da konur. Sürüm numarası kullanılmaz
+# denemez: numara yerine bu kimlik geçer.
 
 on:
   workflow_dispatch:
@@ -20,31 +30,130 @@ jobs:
     steps:
       # v7: Node 24 çalışma zamanını hedefler; v4 artık kullanımdan kaldırılmış
       # Node 20'yi hedefliyordu ve her çalıştırmada uyarı üretiyordu.
+      # fetch-depth: 0 — değişiklik günlüğü "son sürümden bu yana" olan commit
+      # listesini git geçmişinden üretir; varsayılan sığ klonda geçmiş yoktur.
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
+      # 1) Sürüm kimliğini ve değişiklik günlüğünü hazırla
+      - name: Sürüm kimliğini ve günlüğü hazırla
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="pdf"
+          BUGUN=$(date -u +%Y%m%d)
+          BUGUN_TR=$(date -u +%d.%m.%Y)
+
+          # Var olan sürüm notları. Her sürümün notunda, o sürümün derlendiği
+          # commit'i gösteren bir işaret bulunur; bir sonraki çalıştırma
+          # "bu işaretten bu yana" olan commit'leri toplar. Notlar hiç yoksa
+          # (ilk kez) depodaki başlangıç dosyası temel alınır.
+          NOTLAR=$(gh release view "$TAG" --json body -q .body 2>/dev/null || true)
+          if ! printf '%s' "$NOTLAR" | grep -q 'son-surum-commit'; then
+            NOTLAR=$(cat .github/surum-notlari-baslangic.md)
+          fi
+          ONCEKI_COMMIT=$(printf '%s' "$NOTLAR" | sed -n 's/.*son-surum-commit: *\([0-9a-f]\{7,40\}\).*/\1/p' | sed -n '1p' || true)
+          ONCEKI_SURUM=$(printf '%s' "$NOTLAR" | sed -n 's/^## \(enf101-[0-9]\{10\}\).*/\1/p' | sed -n '1p' || true)
+
+          # Sürüm kimliği: aynı gün içindeyse sıra artar, yeni günde 01'e döner.
+          ONCEKI_TARIH=""
+          ONCEKI_SIRA=""
+          if [ -n "$ONCEKI_SURUM" ]; then
+            ONCEKI_TARIH=${ONCEKI_SURUM#enf101-}     # YYYYMMDDNN
+            ONCEKI_SIRA=${ONCEKI_TARIH: -2}          # NN
+            ONCEKI_TARIH=${ONCEKI_TARIH%??}          # YYYYMMDD
+          fi
+          if [ "$ONCEKI_TARIH" = "$BUGUN" ]; then
+            SIRA=$(printf '%02d' $(( 10#${ONCEKI_SIRA:-0} + 1 )))
+          else
+            SIRA="01"
+          fi
+          VERSIYON="enf101-$BUGUN$SIRA"
+          echo "Sürüm kimliği: $VERSIYON"
+
+          # Bu sürümün bölümü: son sürümden bu yana gelen commit başlıkları
+          DEGISIM=""
+          if [ -n "$ONCEKI_COMMIT" ]; then
+            DEGISIM=$(git log --no-merges --reverse --pretty=format:'- %s' "$ONCEKI_COMMIT..HEAD" 2>/dev/null || true)
+          fi
+          printf '%s' "$NOTLAR" | grep -v 'son-surum-commit' > /tmp/onceki-notlar.md
+
+          # Yeni günlük bölümü. Sürüm kimliği günlük başlığı olduğu için her
+          # sürüm günlükte yer alır; bölüm atlanırsa numaralandırma kopar.
+          if [ -z "$DEGISIM" ]; then
+            DEGISIM="- İçerik değişmedi; paket yeniden üretildi."
+            echo "Son sürümden bu yana yeni commit yok."
+          fi
+          {
+            echo "## $VERSIYON — $BUGUN_TR"
+            echo
+            echo "$DEGISIM"
+            echo
+            echo "<!-- son-surum-commit: $(git rev-parse HEAD) -->"
+            echo
+            cat /tmp/onceki-notlar.md
+          } > /tmp/surum-notlari.md
+
+          # Zip'e girecek sürüm: iç işaret satırları çıkarılır
+          grep -v 'son-surum-commit' /tmp/surum-notlari.md > /tmp/DEGISIKLIKLER.md
+
+          # Sonraki adımlara aktar
+          {
+            echo "TAG=$TAG"
+            echo "VERSIYON=$VERSIYON"
+          } >> "$GITHUB_ENV"
+
+      # 2) PDF'leri topla ve hepsini sürüm klasörünün içine koyarak ZIP oluştur
       - name: PDF'leri topla ve ZIP oluştur
         run: |
+          KOK=$(pwd)
+          HEDEF="$RUNNER_TEMP/paket/$VERSIYON"
+          mkdir -p "$HEDEF"
+
           # ornekler/ (Quarto başvuru belgeleri) ve KILAVUZ_*.pdf (hocalar için
           # kurulum kılavuzu) ders içeriği sayılmadığı için ZIP'e alınmaz
           find . \( -path ./.git -o -path ./ornekler \) -prune -o \
             -name '*.pdf' ! -name 'KILAVUZ_*.pdf' -print \
             | sed 's|^\./||' | sort > /tmp/liste.txt
           echo "Toplanan PDF sayısı: $(wc -l < /tmp/liste.txt)"
-          zip -q enf101-pdf.zip -@ < /tmp/liste.txt
-          ls -lh enf101-pdf.zip
 
-      - name: Sürümü oluştur ya da güncelle
+          while IFS= read -r f; do
+            mkdir -p "$HEDEF/$(dirname "$f")"
+            cp "$f" "$HEDEF/$f"
+          done < /tmp/liste.txt
+
+          # Değişiklik günlüğü de paketin içinde
+          cp /tmp/DEGISIKLIKLER.md "$HEDEF/DEGISIKLIKLER.md"
+
+          # Zip, sürüm klasörünü en üst düzey giriş olarak taşısın:
+          # açıldığında doğrudan "$VERSIYON/" klasörü çıkar.
+          # Önce eski arşiv silinir: zip var olan arşive EKLER, silinmezse
+          # önceki sürümlerin klasörleri arşivde birikir.
+          rm -f "$KOK/enf101-pdf.zip"
+          (cd "$RUNNER_TEMP/paket" && zip -q -r "$KOK/enf101-pdf.zip" "$VERSIYON")
+
+          ls -lh "$KOK/enf101-pdf.zip"
+          echo "--- ZIP içeriğinin ilk satırları ---"
+          # Not: `unzip -l | head` boru hattı SIGPIPE verir ve `-o pipefail`
+          # altında adımı düşürür; bu yüzden önce dosyaya yazılıp öyle okunur.
+          unzip -l "$KOK/enf101-pdf.zip" > /tmp/zip-liste.txt
+          sed -n '1,8p' /tmp/zip-liste.txt
+
+      # 3) ZIP'i yükle, sürümü ve notlarını yaz
+      - name: Sürümü ve notlarını güncelle
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TAG="pdf"
+          BASLIK="Ders PDF'leri · $VERSIYON"
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" enf101-pdf.zip --clobber
-            echo "ZIP güncellendi: $TAG"
+            gh release edit "$TAG" --title "$BASLIK" --notes-file /tmp/surum-notlari.md
+            echo "ZIP ve sürüm bilgileri güncellendi: $TAG ($VERSIYON)"
           else
             gh release create "$TAG" enf101-pdf.zip \
-              --title "Ders PDF'leri" \
-              --notes "Bütün haftaların ders notu, sunum ve alıştırma PDF'leri tek dosyada; ayrıca izlence ve başlık listesi. Dosyalar hafta klasörlerine göre düzenlenmiştir. Bu ZIP, sürüm çıkarıldıkça elle yenilenir." \
+              --title "$BASLIK" \
+              --notes-file /tmp/surum-notlari.md \
               --target main
-            echo "Sürüm oluşturuldu: $TAG"
+            echo "Sürüm oluşturuldu: $TAG ($VERSIYON)"
           fi

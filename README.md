@@ -13,10 +13,14 @@ Bütün PDF'ler tek bir ZIP dosyasında toplanır. ZIP **elle çıkarılan sür�
 
 **[enf101-pdf.zip](https://github.com/ozalpmurat/enf101/releases/download/pdf/enf101-pdf.zip)**
 
-İçinde 14 haftanın ders notu, sunum ve alıştırma PDF'leri; ayrıca izlence ve başlık listesi.
-(`ornekler/` klasöründeki Quarto başvuru belgeleri ile hocalar için hazırlanan Quarto kurulum kılavuzu
-ders içeriği sayılmadığı için ZIP'e alınmaz.) Dosyalar hafta klasörlerine göre düzenlenmiştir, yani ZIP'i
-açtığınızda `hafta-01-giris-temel-kavramlar/ders-notu.pdf` gibi bir yapı görürsünüz. Git, terminal
+Sürüm sayfasında, her sürümde bir öncekine göre neyin değiştiği tarihli başlıklar altında listelenir;
+ZIP'i indirmeden önce nelerin değiştiğine bakabilirsiniz. Sürüm numarası kullanılmaz.
+
+İçinde 14 haftanın ders notu, sunum ve alıştırma PDF'leri; ayrıca izlence, başlık listesi ve değişiklik
+günlüğü. (`ornekler/` klasöründeki Quarto başvuru belgeleri ile hocalar için hazırlanan Quarto kurulum
+kılavuzu ders içeriği sayılmadığı için ZIP'e alınmaz.) ZIP'i açtığınızda, sürüm kimliğini taşıyan tek bir
+klasör çıkar: `enf101-2026092901/`. Hafta klasörleri ile `DEGISIKLIKLER.md` bu klasörün içindedir; yani
+`enf101-2026092901/hafta-01-giris-temel-kavramlar/ders-notu.pdf` gibi bir yapı görürsünüz. Git, terminal
 veya hesap gerekmez.
 
 Yalnızca PDF'leri git ile indirmek isterseniz (klasör yapısı korunur):
