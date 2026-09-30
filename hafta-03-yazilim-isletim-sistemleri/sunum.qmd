@@ -12,7 +12,7 @@ format: beamer
 - Sistem ve uygulama yazılımını ayırt eder.
 - Açık kaynak ve kapalı kaynak yazılımı karşılaştırır.
 - İşletim sisteminin görevlerini sıralar.
-- Windows, Linux, macOS ve Pardus'u ayırt eder.
+- Windows, Linux ve macOS ailelerini ayırt eder; Pardus'un yerli bir Linux dağıtımı olduğunu bilir.
 - Masaüstü, mobil ve gömülü işletim sistemlerini tanır.
 - Dosya sistemi kavramını açıklar.
 - Basit sorunlarda doğru adımı bilir.
@@ -56,7 +56,7 @@ Bir uygulama doğrudan donanıma erişemez; isteğini işletim sistemine iletir.
 | Kaynak kodu | Herkese açık | Gizli |
 | Ücret | Genellikle ücretsiz | Lisanslı |
 | Güvenlik denetimi | Herkes inceleyebilir | Yalnızca üretici |
-| Örnek | Linux, Pardus, Firefox | Windows, macOS |
+| Örnek | Linux (Pardus), Firefox | Windows, macOS |
 
 ## Hangisi Daha İyi?
 
@@ -90,14 +90,13 @@ Bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok p
 
 # İşletim Sistemi Aileleri
 
-## Dört Masaüstü Sistemi
+## Üç Masaüstü Ailesi
 
-| Sistem | Özelliği | Kaynak |
+| Aile | Özelliği | Kaynak |
 |:---|:---|:---|
 | **Windows** | En yaygın; geniş yazılım desteği | Kapalı, ücretli |
-| **Linux** | Açık kaynak; çok dağıtımı var | Açık, ücretsiz |
+| **Linux** | Açık kaynak; çok dağıtımı var (Ubuntu, Fedora, **Pardus**) | Açık, ücretsiz |
 | **macOS** | Yalnızca Apple cihazlarda | Kapalı, ücretli |
-| **Pardus** | TÜBİTAK'ın yerli Linux dağıtımı | Açık, ücretsiz |
 
 ## Pardus
 
@@ -217,7 +216,7 @@ Notla değerlendirilmez.
 - **Yazılım**: sistem yazılımı ve uygulama yazılımı
 - **Açık kaynak** kod herkese açık, **kapalı kaynak** kod gizli
 - **İşletim sistemi** donanımı, dosyaları, süreçleri yönetir
-- **Windows, Linux, macOS, Pardus** masaüstü sistemleri
+- **Windows, Linux, macOS** masaüstü aileleri; **Pardus** yerli bir Linux dağıtımı
 - **Masaüstü, mobil, sunucu, gömülü** işletim sistemi türleri
 - Basit sorunda: panik yapma, kaydet, yeniden başlat
 

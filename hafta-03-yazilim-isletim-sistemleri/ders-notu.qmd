@@ -25,7 +25,7 @@ Donanım gövdedir, yazılım ise ona ne yapacağını söyleyen akıldır. İki
 - Sistem yazılımı ile uygulama yazılımını birbirinden ayırt eder.
 - Açık kaynak ve kapalı kaynak yazılım arasındaki farkı açıklar.
 - İşletim sisteminin temel görevlerini sıralar.
-- Windows, Linux, macOS ve Pardus'u temel özellikleri bakımından karşılaştırır.
+- Windows, Linux ve macOS işletim sistemi ailelerini ayırt eder; Pardus'un yerli bir Linux dağıtımı olduğunu bilir.
 - Masaüstü, mobil ve gömülü işletim sistemlerini ayırt eder.
 - Dosya sistemi kavramını ve dizin yapısını açıklar.
 - Karşılaştığı basit sorunlarda izlenecek doğru adımları bilir.
@@ -64,7 +64,7 @@ Yazılımları ayıran bir başka ölçüt, **kaynak kodunun** erişilebilir olu
 | Değiştirme | Serbest | Genellikle yasak |
 | Güvenlik denetimi | Herkes inceleyebilir | Yalnızca üretici |
 | Destek | Topluluk veya ücretli destek | Üretici desteği |
-| Örnek | Linux, Pardus, LibreOffice, Firefox | Windows, macOS, ticari ofis paketleri |
+| Örnek | Linux (Pardus), LibreOffice, Firefox | Windows, macOS, ticari ofis paketleri |
 
 ::: {.callout-tip}
 ## Hangisi daha iyi?
@@ -89,12 +89,13 @@ Bu bir tercih sorusudur, üstünlük sorusu değil. Açık kaynak yazılımlar d
 
 ## İşletim sistemi aileleri
 
-| İşletim sistemi | Özelliği | Kaynak modeli |
+| Aile | Özelliği | Kaynak modeli |
 |:---|:---|:---|
 | **Windows** | En yaygın masaüstü sistemi; geniş yazılım ve donanım desteği | Kapalı kaynak, ücretli |
-| **Linux** | Açık kaynak; pek çok farklı dağıtımı vardır (Ubuntu, Fedora, Debian) | Açık kaynak, ücretsiz |
+| **Linux** | Açık kaynak bir aile; pek çok dağıtımı vardır (Ubuntu, Fedora, **Pardus**) | Açık kaynak, ücretsiz |
 | **macOS** | Yalnızca Apple cihazlarında çalışır; arayüz ve donanım uyumu bütünleşiktir | Kapalı kaynak, ücretli |
-| **Pardus** | TÜBİTAK bünyesinde geliştirilen yerli ve açık kaynak Linux dağıtımı | Açık kaynak, ücretsiz |
+
+Bir **dağıtım**, aynı Linux ailesinden gelip farklı tercihlerle paketlenmiş bir sistemdir. Pardus da bu ailenin yerli bir üyesidir.
 
 ::: {.callout-note}
 ## Pardus
@@ -213,7 +214,7 @@ Bu uygulama notla değerlendirilmez. Amacı, yazılım ve işletim sistemi kavra
 - **Yazılım**, donanıma ne yapacağını söyleyen komutlar bütünüdür; **sistem** ve **uygulama** yazılımı olarak ikiye ayrılır.
 - **Açık kaynak** yazılımın kodu herkese açıktır; **kapalı kaynak** yazılımda kod gizlidir.
 - **İşletim sistemi**, donanım ile kullanıcı arasındaki aracıdır; donanımı, dosyaları, süreçleri ve güvenliği yönetir.
-- **Windows, Linux, macOS ve Pardus** başlıca masaüstü işletim sistemleridir.
+- Başlıca masaüstü işletim sistemi **aileleri** Windows, Linux ve macOS'tur; **Pardus** yerli bir Linux dağıtımıdır.
 - İşletim sistemleri **masaüstü, mobil, sunucu ve gömülü** olarak sınıflandırılır.
 - **Dosya sistemi**, depolamadaki dosyaları ağaç biçiminde düzenler.
 - Basit sorunlarda doğru refleks: panik yapmamak, veriyi kaydetmek, gerekirse yeniden başlatmak.
@@ -231,7 +232,7 @@ Bu uygulama notla değerlendirilmez. Amacı, yazılım ve işletim sistemi kavra
 
 # Kaynaklar
 
-- **Pardus** — yerli ve açık kaynak işletim sistemi; kullanım kılavuzları. (pardus.org.tr)
+- **Pardus** — yerli ve açık kaynak Linux dağıtımı; kullanım kılavuzları. (pardus.org.tr)
 - **İşletim sistemlerinin resmî yardım sayfaları** — Windows, Linux dağıtımları ve macOS için kullanıcı belgeleri.
 - **Özgür Yazılım Vakfı ve Açık Kaynak Girişimi** — açık kaynak lisansları ve felsefesi hakkında kaynaklar. (fsf.org, opensource.org)
 
