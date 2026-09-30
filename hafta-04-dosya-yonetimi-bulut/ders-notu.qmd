@@ -149,6 +149,8 @@ Bir depolama aygıtı kullanılmadan önce iki aşamadan geçer:
 | exFAT | Taşınabilir bellekler | Hem Windows hem macOS/Linux ile uyumlu |
 | FAT32 | Eski aygıtlar | 4 GB'tan büyük tek dosyayı desteklemez |
 
+![Windows'un biçimlendirme penceresi: bölüm için dosya sistemi burada seçilir](gorseller/ekran-bicimlendirme.png){width=70%}
+
 ::: {.callout-warning}
 ## Biçimlendirme veriyi siler
 
@@ -293,5 +295,7 @@ Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir al�
 - Harici disk — *Seagate SRD0NF1 portable hard drive HS2*, Hayden Schiff, CC BY 4.0.
 
 Harici disk fotoğrafı için kaynak gösterme zorunludur; USB bellek ve SD kart kareleri CC0/kamu malı olduğu için zorunlu değildir.
+
+Biçimlendirme penceresi görüntüsü (`ekran-bicimlendirme.png`) bir **Windows** ekran görüntüsüdür; belirli bir sistemin penceresi yalnızca kavramı somutlaştırmak için örnek olarak gösterilmiştir (AGENTS.md §9).
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

@@ -162,7 +162,7 @@ Belgeler/
     └── ozgecmis.pdf
 ```
 
-Farklı işletim sistemleri farklı dosya sistemleri kullanır — örneğin Windows'ta NTFS, Linux'ta ext4, taşınabilir belleklerde sıklıkla exFAT. Bu konuyu gelecek hafta dosya yönetimi ve disk biçimlendirme başlığı altında ayrıntılı ele alacağız.
+Farklı işletim sistemleri farklı dosya sistemleri kullanır. Hangisinin hangisini kullandığını gelecek hafta dosya yönetimi ve disk biçimlendirme başlığı altında göreceğiz.
 
 # Basit Sorunlara İlk Bakış
 

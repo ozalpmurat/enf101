@@ -321,7 +321,11 @@ sorusunu, fotoğraf "gerçekte nasıl görünür" sorusunu yanıtlar.
   listesi eklenir: *Dosya adı — Yazar, Lisans.* CC0/kamu malı olanlar için zorunlu değildir ama künyesi
   yine yazılır.
 - **Dosya adı:** `gorseller/foto-<konu>.jpg` (ASCII, küçük harf, tire) — örn. `foto-anakart.jpg`,
-  `foto-cpu-soketi.jpg`. Şemalar `diagram-*.png` kalıbında kalır; ikisi karışmaz.
+  `foto-cpu-soketi.jpg`. Şemalar `diagram-*.png`, ekran görüntüleri `ekran-*.png` kalıbındadır;
+  üçü karışmaz.
+- **Ekran görüntüsü:** belirli bir sistemin penceresi, kavramı somutlaştırmak için **örnek olarak**
+  kullanılabilir (§9). Baskıda okunabilirlik için kare en az ~600 px genişlikte olmalı ve genişliği
+  açıkça verilmelidir (`{width=…}`); gösterildiğinde **hangi sistem olduğu yazılır**.
 - **Ölçü:** İnen dosyanın en uzun kenarı **~1000 piksel** olmalı (baskıda ~10 cm genişlik ≈ 254 dpi).
   Commons dosyaları 72 dpi damgalı gelir; bu yüzden yerleştirmede **her fotoğrafa açık `{width=…}` yazılır**,
   aksi hâlde §8'in ölçü kuralı gereği kat kat büyük basılır. Gereğinden büyük dosya PDF'i şişirir:
@@ -348,6 +352,11 @@ sorusunu, fotoğraf "gerçekte nasıl görünür" sorusunu yanıtlar.
 
 - **Platformdan bağımsız.** Belirli bir işletim sistemi, ofis sürümü veya marka öğretilmez;
   menü yolları, düğme adları ve sürüm karşılaştırmaları yazılmaz; kavramlar anlatılır. Yazılım adları **örnek olarak** geçebilir (adı ve ne işe yaradığı), ancak her konuda ücretsiz bir **çevrimiçi** seçenek ile kurulabilen **açık kaynak** bir seçenek birlikte gösterilir; ortam seçimi öğrenciye bırakılır. Açık ve kapalı kaynak yazılımlar birlikte tanıtılır.
+  **Ekran görüntüleri yasak değildir.** Belirli bir sistemin penceresi, bir kavramı somutlaştırmak
+  için **örnek olarak** gösterilebilir; gösterildiğinde **hangi sistem olduğu açıkça yazılır**
+  (ör. "Windows'un biçimlendirme penceresi"). Kuralın yasakladığı şey, o sistemi **tek doğru yolmuş
+  gibi** anlatmak ve öğrenciden menü ezberi beklemektir; örnek olarak göstermek serbesttir.
+  (Kullanıcı kararı, 2026-09-30 — 4. haftadaki biçimlendirme ekran görüntüsü vesilesiyle.)
 - **Sade dil.** Hedef kitle teknik olmayan bölümlerden geliyor. Jargon ilk kullanımda tanımlanır.
 - **Aşırı teknik ayrıntıdan kaçınılır.** İşlemci mimarisi, önbellek katmanları, DDR nesilleri,
   protokol başlık yapıları gibi konular 1. sınıf için gereksizdir; "kısaca değinmek yeter" düzeyinde kalır.

@@ -129,7 +129,7 @@ Tek bir fiziksel disk, bilgisayarda **birden çok sürücü** gibi görünür.
 
 ## Biçimlendirme
 
-Bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini boşaltır.
+Bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini boşaltır. Aşağıda **Windows'un** biçimlendirme penceresi görülüyor.
 
 | Dosya sistemi | Nerede |
 |:---|:---|
@@ -137,6 +137,8 @@ Bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini bo�
 | ext4 | Linux |
 | exFAT | Taşınabilir bellekler |
 | FAT32 | Eski aygıtlar |
+
+![](gorseller/ekran-bicimlendirme.png){width=52%}
 
 ## Biçimlendirme Veriyi Siler
 

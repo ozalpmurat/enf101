@@ -173,11 +173,9 @@ Her dosyanın bir **adı**, bir **uzantısı** ve bir **yolu** vardır.
 
 ## Dosya Sistemleri Farklıdır
 
-- **Windows:** NTFS
-- **Linux:** ext4
-- **Taşınabilir bellekler:** sıklıkla exFAT
+Her işletim sisteminin kullandığı dosya sistemi farklıdır.
 
-Farkı gelecek hafta disk biçimlendirme başlığında ayrıntılı göreceğiz.
+Hangisinin hangisi olduğunu **gelecek hafta** disk biçimlendirme başlığında göreceğiz.
 
 # Basit Sorunlara İlk Bakış
 
