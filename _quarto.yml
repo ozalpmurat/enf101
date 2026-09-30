@@ -13,7 +13,7 @@ format:
   beamer:
     pdf-engine: xelatex
     include-in-header: tema/sunum.tex
-    theme: Singapore
+    theme: Hannover
     aspectratio: 169
     slide-number: true
     section-titles: true

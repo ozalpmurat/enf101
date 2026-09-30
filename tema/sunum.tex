@@ -1,28 +1,153 @@
-% ---- ENF101 sunum ortak görünümü (beamer) ----
+% ============================================================
+% ENF101 — sunum ortak görünümü (beamer)
+% Tema: Hannover (kenar çubuklu)  ·  Kimlik: BSEU amblem renkleri
+% Kapak: sol dikey bant + logo (ornekler/temalar/hafta03/bseu3 ile aynı tasarım)
+%
+% KRİTİK: _quarto.yml içinde `theme: Hannover` olmalıdır (bkz. AGENTS.md §5).
+% Ekranda denenen tasarım: ornekler/temalar/hafta03/bseu3.pdf
+% ============================================================
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc}
-\definecolor{lightbg}{HTML}{EDF2F9}
-% notlar.tex ile uyumlu renk takma adları
+
+% ---- amblem tonları (tema/logo.png'den örneklendi) ----
+\definecolor{bseured}{HTML}{A91818}    % ana koyu kırmızı
+\definecolor{bseudark}{HTML}{7C0F0F}   % koyu gölge
+\definecolor{bseutint}{HTML}{C66A65}   % açık kırmızı / vurgu
+\definecolor{bseulight}{HTML}{F6E8E7}  % çok açık kırmızı zemin
+\definecolor{bseugrey}{HTML}{5D5E5E}   % logo grisi
+
+% ---- ders malzemesinin ortak TikZ renk adları (AGENTS.md §8) ----
+% Şemalarda iki ad kümesi birlikte kullanılır (navy/enfnavy …); notlar.tex ile
+% aynı tonlardadır. Şablon yenilenirken düşmüştü: eksikse TikZ şeması içeren
+% sunular (örn. ornekler/quarto-ozellikleri-sunum.qmd) "Undefined color" ile derlenmez.
 \definecolor{navy}{HTML}{1F3864}
 \definecolor{accentcol}{HTML}{2E74B5}
 \definecolor{greytext}{HTML}{595959}
-\setbeamertemplate{navigation symbols}{}
 \definecolor{enfnavy}{HTML}{1F3864}
 \definecolor{enfaccent}{HTML}{2E74B5}
 \definecolor{enfgrey}{HTML}{595959}
+\definecolor{lightbg}{HTML}{EDF2F9}
 
-\setbeamercolor{structure}{fg=enfnavy}
-\setbeamercolor{frametitle}{fg=enfnavy}
-\setbeamercolor{title}{fg=enfnavy}
-\setbeamercolor{subtitle}{fg=enfaccent}
-\setbeamercolor{author}{fg=enfgrey}
+\setbeamertemplate{navigation symbols}{}
+
+% ---- renk düğümleri ----
+\setbeamercolor{structure}{fg=bseured}
 \setbeamercolor{normal text}{fg=black}
-\setbeamercolor{block title}{bg=enfaccent!18,fg=enfnavy}
-\setbeamercolor{block body}{bg=enfaccent!6}
+\setbeamercolor{frametitle}{fg=bseured}
+\setbeamercolor{frametitle right}{bg=bseulight}
+\setbeamercolor{titlelike}{fg=bseured}
+\setbeamercolor{title}{fg=bseured}
+\setbeamercolor{subtitle}{fg=bseutint}
+\setbeamercolor{author}{fg=bseugrey}
+\setbeamercolor{institute}{fg=bseugrey}
+\setbeamercolor{date}{fg=bseugrey}
+\setbeamercolor{palette primary}{fg=white,bg=bseured}
+\setbeamercolor{palette secondary}{fg=white,bg=bseutint}
+\setbeamercolor{palette tertiary}{fg=white,bg=bseudark}
+\setbeamercolor{palette quaternary}{fg=white,bg=bseudark!85!black}
+\setbeamercolor{section in head/foot}{fg=white,bg=bseudark}
+\setbeamercolor{subsection in head/foot}{fg=white,bg=bseutint}
+% kenar çubuğu (içerik slaytları): arka planı bandın rengiyle aynı
+\setbeamercolor{sidebar}{bg=bseured,fg=white}
+\setbeamercolor{section in sidebar}{fg=white}
+\setbeamercolor{section in sidebar shaded}{fg=bseutint}
+\setbeamercolor{title in sidebar}{fg=white}
+\setbeamercolor{author in sidebar}{fg=bseulight}
+\setbeamercolor{palette sidebar primary}{fg=white}
+\setbeamercolor{palette sidebar secondary}{fg=bseutint}
+\setbeamercolor{palette sidebar tertiary}{fg=white}
+\setbeamercolor{palette sidebar quaternary}{fg=bseutint}
+\setbeamercolor{logo}{bg=bseured}
+\setbeamercolor{block title}{bg=bseured!15,fg=bseured}
+\setbeamercolor{block body}{bg=bseured!5}
+\setbeamercolor{itemize item}{fg=bseured}
+\setbeamercolor{itemize subitem}{fg=bseudark}
+\setbeamercolor{section title}{fg=bseured}
+\setbeamercolor{section name}{fg=bseutint}
+\setbeamercolor{page number in head/foot}{fg=white}
+\setbeamercolor{institute in head/foot}{fg=white}
 \setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{itemize item}{\color{bseured}\textbullet}
+\setbeamertemplate{itemize subitem}{\color{bseudark}\textendash}
 
-\setbeamertemplate{itemize item}{\color{enfnavy}\textbullet}
-\setbeamertemplate{itemize subitem}{\color{enfaccent}\textendash}
+% ---- KENAR ÇUBUĞU ve KAPAK BANDI ----
+% Bant, kenar çubuğunun ARKA PLANINI çizen şablondan basılır: beamer bu katmanı
+% her derlemede güvenilir biçimde çizer. (DİKKAT: daha önce bant, kapak
+% şablonunda bir tikz overlay olarak çiziliyordu; sayfa çıkışında dizildiği için
+% derleme geçişine göre bir var bir yok oluyordu — bu yöntem terk edildi.)
+%   · kapakta (1. slayt) → 3 cm genişliğinde bant
+%   · diğer slaytlar     → kenar çubuğu genişliğinde bant (üzerine bölüm listesi gelir)
+% Kapak ölçütü SLAYT NUMARASIDIR, bölüm sayacı DEĞİL: 1. haftada ilk '#' bölümünden
+% önce bir '##' slaytı var; bölüm sayacı orada da 0 kaldığı için o slayt yanlışlıkla
+% kapak sayılıyordu (3 cm'lik bant madde imlerini örtüyordu).
+\makeatletter
+\setbeamertemplate{sidebar canvas left}{%
+  \ifnum\insertframenumber=1
+    \color{bseured}\vrule height\sidebarheight width 3.0cm
+  \else
+    \ifbeamercolorempty[bg]{sidebar left}{}%
+      {\color{bg}\vrule height\sidebarheight width\beamer@leftsidebar}%
+  \fi}
+% Kenar çubuğu: kapağa basılmaz; içerik slaytlarında sunu adı ve ders adı
+% YAZILMAZ, onların yerine beyaz amblem (logobeyaz.png) durur — amblem şeffaflığı
+% korunarak banda basılır. Sunu adı zaten her slaytın alt şeridinde yazıyor.
+% Altında bölüm navigasyonu aynen kalır.
+\setbeamertemplate{sidebar left}{%
+  \ifnum\insertframenumber>1
+    \beamer@tempdim=\beamer@sidebarwidth%
+    \advance\beamer@tempdim by -0.4cm%
+    \vskip1.2em%
+    \hbox to \beamer@sidebarwidth{\hss
+      \includegraphics[width=\beamer@tempdim]{../tema/logobeyaz.png}\hss}%
+    \vskip1.4em%
+    \insertverticalnavigation{\beamer@sidebarwidth}%
+    \vfill
+  \fi}
+\makeatother
+
+% ---- KAPAK METNİ + LOGO ----
+% Logo, bandın sağ kenarına (3,0 cm) ortalanır; metin alanının sol kenarı
+% sayfadan (kenar çubuğu + metin marjı) kadar içeride olduğu için fark
+% \dimexpr ile hesaplanır. Logo içerik olarak basılır (kırpılmaz).
+\makeatletter
+\setbeamertemplate{title page}{%
+  \begingroup
+  % Kapakta sözcük BÖLÜNMEZ ve satırlar ESNEMEZ: metin sola dayalıdır.
+  % (Aksi hâlde başlık "Okuryazar-" / "lık" diye tirenle bölünüyor ya da
+  %  iki yana yaslamada sözcükler arası kocaman boşluklar açılıyor.)
+  \hyphenpenalty=10000 \exhyphenpenalty=10000
+  \vspace*{0.75cm}%
+  \hspace*{3.6cm}%
+  \begin{minipage}{9.2cm}
+    \raggedright
+    {\color{bseutint}\rule{2.6cm}{1.4pt}\par}
+    \vspace{4mm}
+    {\color{bseured}\LARGE\bfseries \inserttitle\par}
+    \vspace{5mm}
+    {\color{bseugrey}\large \insertsubtitle\par}
+    \vspace{6mm}
+    {\color{bseugrey}\small \insertauthor\par}
+    {\color{bseugrey}\small Bilecik Şeyh Edebali Üniversitesi\par}
+  \end{minipage}
+  \vfill
+  {\hspace*{\dimexpr 1.5cm-\beamer@leftsidebar-\beamer@leftmargin\relax}%
+   \includegraphics[height=3cm]{../tema/logo.png}\par}%
+  \endgroup
+}
+\makeatother
+
+% ---- ALT ŞERİT: sunu adı + sayfa numarası (kapakta çizilmez) ----
+\setbeamertemplate{footline}{%
+  \ifnum\insertframenumber>1
+    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}\end{beamercolorbox}%
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+      \leavevmode{\usebeamerfont{title in head/foot}\insertshorttitle}%
+      \hfill%
+      {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortinstitute
+       \qquad\usebeamercolor[fg]{page number in head/foot}\usebeamerfont{page number in head/foot}\insertframenumber\,/\,\inserttotalframenumber}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}\end{beamercolorbox}%
+  \fi}
 
 % ---- görseller slayt sınırlarını aşmasın ----
 % Quarto'nun makale şablonu görselleri metin genişliğine sığdırır; beamer şablonu

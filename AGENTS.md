@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 29.09.2026
+Son güncelleme: 30.09.2026
 
 ---
 
@@ -157,6 +157,9 @@ PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan ge�
 - `tema/notlar.tex`
 - `tema/sunum.tex`
 
+`tema/sunum.tex` ise kapak amblemini **`tema/logo.png`**'den alır (bkz. §5 kural 7); bu dosya da
+silinirse/taşınırsa sunular amblemsiz derlenir.
+
 Bu dosyalar silinirse veya taşınırsa **hiçbir belge derlenmez** ve şu hata alınır:
 
 ```
@@ -205,11 +208,68 @@ Belge düzeyi `execute: fig-width` de etkisiz. Beamer şablonu görselleri sın�
 sarmalaması (Quarto'nun kendi `\pandocbounded` makrosu dâhil) işe yaramıyor.
 **Çözüm:** şemayı PNG'ye çevirip `![](gorseller/x.png){width=85%}` biçiminde ekleyin; kaynak `.mmd`
 dosyasını yanında tutun.
-**Ölçüler (16:9 beamer):** slayt metin alanı **14,0 × 8,9 cm** (xelatex ile ölçüldü: 398,34 × 252,07 pt).
+**Ölçüler (16:9 beamer):** Hannover teması + sol kenar çubuğu + alt şeritle slayt metin alanı
+**13,4 × 8,0 cm** (xelatex ile ölçüldü: 381,79 × 227,62 pt). (Kenar çubuğu ve alt şerit yokken,
+eski Singapore temasında 398,34 × 252,07 pt = 14,0 × 8,9 cm idi; kenar çubuğu ~1,6 cm, alt şerit
+~0,9 cm yer kaplıyor.)
 Güvenli üst sınırlar: genişlik %85, yükseklik ~5,8 cm. Bu sınırı aşan görseller slayttan taşar.
+**(Uyarı:** bu güvenli sınırlar eski, daha geniş alan için ölçülmüştü; yeni temada yükseklik üst
+sınırı oransal olarak **~5,2 cm**'ye iner. İlk uygulamada birkaç diyagramla yeniden doğrulanmalıdır.)
 Kare oranlı şemalar %85 genişlikte yükseklik sınırına dayanır; en-boy oranı 2:1'den küçükse
 genişliği ~%55'te tutun (oran 1,3 ise %85 zaten taşar).
 Makale (PDF) biçiminde Mermaid **doğrudan ve sorunsuz** çalışır; ölçek sorunu yalnızca sunulardadır.
+
+**7. Sunum teması: Hannover + BSEU kimliği (tek kaynak).** Sunuların görünümü üç dosyada tanımlıdır
+ve **birlikte** değişir:
+
+- `_quarto.yml` → `theme: Hannover`
+- `tema/sunum.tex` → renkler (amblem tonları), kapak (sol dikey bant + logo), kenar çubuğu, alt şerit
+- `tema/logo.png` → **kapakta** basılan amblem
+- `tema/logobeyaz.png` → **kenar çubuğunda** basılan beyaz amblem (şeffaflığı korunur)
+
+Kenar çubuğunda (içerik slaytları) **sunu adı ve ders adı YAZILMAZ**; onların yerine beyaz amblem
+durur. Sunu adı zaten her slaytın alt şeridinde yazdığı için orada tekrar edilmez. Amblemin altında
+bölüm navigasyonu aynen kalır.
+
+Renkler amblemden örneklendi: ana koyu kırmızı `#A91818`, gölge `#7C0F0F`, vurgu `#C66A65`,
+açık zemin `#F6E8E7`, gri `#5D5E5E`. Onaylanmış tasarım `ornekler/temalar/hafta03/bseu3.pdf`;
+tema denemeleri `ornekler/temalar/` altındadır.
+
+Korunacaklar: görselleri sığdıran `\setkeys{Gin}` bloğu (kural 5–6), `mainfont` ayarlanmaması
+(kural 3), her `#` altında `##` bulunması (kural 2).
+
+Tuzaklar (ölçülerek bulundu):
+
+- **Kapak bandı, kenar çubuğunun ARKA PLAN katmanından basılır** (`sidebar canvas left` şablonu):
+  kapakta 3 cm, içerik slaytlarında kenar çubuğu genişliği kadar. **DİKKAT — bir kez yanlış yapıldı:**
+  bant önce kapak şablonunda bir `tikz overlay` olarak çiziliyordu. Arka plan katmanı sayfa çıkışında
+  dizildiği için sonuç **derleme geçişine göre değişiyordu: bir geçişte bant var, sonrakinde yok**
+  (Quarto 2 geçiş → bant var, +1 geçiş → yok, +2 → var). Bu yöntem terk edildi; tekrar denenmemeli.
+- **Kenar çubuğunun arka planını `sidebar canvas left` çizer** (`sidebar left` değil). Kapakta
+  boşaltılmazsa çizilen `\vrule` **logonun sol kenarından birkaç piksel keser**; bu yüzden kapağa
+  özel olarak 3 cm'lik bant çizecek biçimde yazılmıştır.
+- **Kapak ölçütü SLAYIT NUMARASIDIR:** `\ifnum\insertframenumber=1` (kapak) / `>1` (diğerleri).
+  Bölüm sayacı kullanılmaz: 1. haftada ilk `#` bölümünden **önce** bir `##` slaytı var ("Dersi Nasıl
+  İşleyeceğiz?"); bölüm sayacı orada da 0 kaldığı için o slayt yanlışlıkla kapak sayılıyor, 3 cm'lik
+  bant gövdenin üstüne taşıp **madde imlerini örtüyordu** (yaşandı). Kapak, belgenin 1. slaytıdır.
+- **Kapakta sözcük bölünmez.** Kapak metni `\raggedright` + `\hyphenpenalty=10000` ile dizilir:
+  başlık satır sonunda tire ile kesilmez (`Okuryazar-` / `lık`) ve iki yana yaslamanın açtığı
+  kocaman sözcük aralıkları oluşmaz.
+
+**8. Kapak logosunu kaydırmak.** Logo, kapak metninden sonra **içerik olarak** basılır (kırpılmaz).
+Metin alanının sol kenarı sayfadan `kenar çubuğu + metin marjı` kadar içeride olduğu için kaydırma
+`\dimexpr` ile hesaplanır:
+
+```latex
+\hspace*{\dimexpr 1.5cm-\beamer@leftsidebar-\beamer@leftmargin\relax}%
+\includegraphics[height=3cm]{../tema/logo.png}
+```
+
+`1.5cm`, logo genişliğinin yarısıdır (height 3 cm ⇒ ~3 cm genişlik); böylece logonun **merkezi
+bandın sağ kenarına (3,0 cm)** oturur. Sağa/sola kaydırmak için bu değeri değiştirin (ör. `1.7cm`
+sağa, `1.3cm` sola). Yükseklik/ölçü için `height` değerini değiştirin; ölçü ipucu: `1 mm ≈ 4 piksel`
+(96 dpi). Logo yolu `../tema/logo.png`'dir — xelatex hafta klasöründe çalıştığı için kök değil bir
+üst dizin (`../tema/`) kullanılır.
 
 ---
 
@@ -433,7 +493,21 @@ done
 
 ## 12. Bekleyen işler
 
-Şu an bekleyen bir iş yok. Kapatılan başlıklar ve kararları:
+**Açık — karar bekleyen iş yok (30.09.2026).** Sunum teması yaygınlaştırması tamamlandı; ders
+notları **ENF lacivertinde kalıyor** (kullanıcı kararı, 30.09.2026).
+
+Kapatılan başlıklar ve kararları:
+
+- **Sunum teması yaygınlaştırma (30.09.2026):** Şablon Hannover + BSEU kimliğine çevrildi
+  (`tema/sunum.tex`, `tema/logo.png`, `_quarto.yml`; §5 kural 7–8). **14 haftanın tamamı +
+  `ornekler/quarto-ozellikleri-sunum.qmd`** yeni temayla yeniden derlendi; slayt sayıları birebir
+  korundu (01:28, 02:37, 03:35, 04:39, 05:39, 06:36, 07:39, 08:39, 09:31, 10:38, 11:30, 12:29,
+  13:30, 14:38; örnek:38). Hafta-02 ve 03 kenar çubuğuna beyaz amblem gelmeden önce derlenmişti,
+  onlar da yenilendi. Ders notları ve alıştırmalar **değişmedi**. Bu iş sırasında `tema/sunum.tex`'te
+  eksik olan ortak TikZ renk adları (`navy`/`enfnavy`, `accentcol`/`enfaccent`, `greytext`/`enfgrey`,
+  `lightbg`; §8) geri eklendi — şablon yenilenirken düşmüşlerdi ve TikZ şeması içeren örnek sunumu
+  "Undefined color `enfnavy`" hatasıyla derlenmez hâle getirmişlerdi.
+
 
 - **Sunu kalabalığı:** 4. hafta 38, 7. hafta 39 slayt. Kullanıcı bu yoğunluğu kabul etti (hedef ~30,
   kabul edilen üst sınır 38; 39 onaylı). Yeni bir konu eklenirse başka bir yerden yer açmak gerekir.

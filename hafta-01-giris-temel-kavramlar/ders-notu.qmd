@@ -170,7 +170,7 @@ Ders 14 hafta sürer ve üç ana bloktan oluşur:
 |:---|:---|:---|
 | 1–6 | Temel kavramlar ve altyapı | Bilgi kavramları ve tarihçe, donanım, yazılım ve işletim sistemleri, dosya yönetimi, ağlar, İnternet ve e-posta |
 | 7–9 | Üretim araçları | Kelime işlemci, elektronik tablo, sunum uygulamaları |
-| 10–14 | Değerlendirme ve sorumluluk | Sayısal okuryazarlık, bilgi güvenliği, kişisel veriler ve dijital etik, bütünleşik uygulama, genel tekrar |
+| 10–14 | Sorumluluk | Bilgi güvenliği, kişisel veriler ve dijital etik, yapay zekâ okuryazarlığı, üretken yapay zekâ, mobil ve giyilebilir teknolojiler |
 
 Dersin başarı notu; ara sınav (vize), kısa sınav ve dönem sonu sınavı (final) notlarının ortalaması alınarak belirlenir. Her hafta paylaşılan 10 soruluk alıştırmalar ise notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz için verilir.
 

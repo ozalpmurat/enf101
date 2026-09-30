@@ -12,6 +12,24 @@ format: beamer
 - Her hafta **üç PDF** paylaşılır: **ders notu**, **sunum**, **alıştırma**. Sınavlar için bunların dışında kaynak gerekmez.
 - **Sınava hazırlık:** Ders notlarını ücretsiz **Google NotebookLM**'e yükleyerek çalışabilirsiniz — sesli podcast, çalışma soruları, çalışma kartları.
 - **Canlı dersler** sonradan **kayıttan** izlenebilir.
+- **Başarı notu:** ara sınav (vize), **kısa sınav** ve **dönem sonu sınavı (final)** notlarının **ortalaması**; haftalık **alıştırmalar** notla değerlendirilmez.
+
+## Dersin Yol Haritası
+
+1. Bilişim ve temel kavramlar
+2. Bilgisayar donanımı
+3. Yazılım ve işletim sistemleri
+4. Dosya yönetimi ve bulut
+5. Bilgisayar ağları
+6. İnternet, e-posta ve e-Devlet
+7. Kelime işlemci
+8. Elektronik tablo
+9. Sunum uygulamaları
+10. Bilgi güvenliği
+11. Kişisel veriler ve dijital etik
+12. Yapay zekâ okuryazarlığı
+13. Üretken yapay zekâ araçları
+14. Mobil ve giyilebilir teknolojiler
 
 # Bu Haftanın Çerçevesi
 
@@ -170,17 +188,6 @@ Sırasıyla vakum tüpü, transistör, entegre devre ve mikroişlemci.
 - **Yapay zekâ**: hesaplamanın yeni dönemi.
 
 # Kapanış
-
-## Dersin Yapısı ve Değerlendirme
-
-| Haftalar | Blok |
-|:---|:---|
-| 1–6 | Temel kavramlar ve altyapı |
-| 7–9 | Üretim araçları (kelime işlemci, tablo, sunum) |
-| 10–14 | Değerlendirme ve sorumluluk |
-
-- **Başarı notu:** ara sınav (vize), **kısa sınav** ve **dönem sonu sınavı (final)** notlarının **ortalaması**.
-- Haftalık **alıştırmalar** notla değerlendirilmez.
 
 ## Bu Haftanın Uygulaması
 
