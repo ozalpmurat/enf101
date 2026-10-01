@@ -57,7 +57,7 @@ A) Dizüstü bilgisayarda çalışan sistem\
 B) Modemin içindeki sistem\
 C) Sunucu işletim sistemi\
 D) Sanal makine sistemi\
-E) Veri merkezindeki sunucu işletim sistemi
+E) Akıllı telefon işletim sistemi
 
 **7.** Yazılım katmanları alttan üste doğru hangi sırayla dizilir?\
 A) Uygulamalar → işletim sistemi → donanım\
@@ -85,7 +85,7 @@ E) Virüs taraması başlatmak
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | İşletim sistemi, donanımı yöneten sistem yazılımıdır. Diğer üç seçenek kullanıcının işini yapan uygulama yazılımlarıdır. |
+| 1 | B | İşletim sistemi, donanımı yöneten sistem yazılımıdır. Diğer dört seçenek kullanıcının işini yapan uygulama yazılımlarıdır. |
 | 2 | E | Doğru ifade E seçeneğindedir: açık kaynak yazılımda kaynak kodu herkese açıktır; incelenebilir, değiştirilebilir ve paylaşılabilir. |
 | 3 | C | İşletim sistemi, donanım ile kullanıcı ve uygulamalar arasındaki aracı yazılımdır. |
 | 4 | C | Yazım hatası düzeltmek bir kelime işlemci uygulamasının işidir. Diğer dört seçenek işletim sisteminin görevlerindendir. |

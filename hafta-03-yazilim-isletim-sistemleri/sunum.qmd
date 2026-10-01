@@ -14,7 +14,6 @@ format: beamer
 - İşletim sisteminin görevlerini sıralar.
 - Windows, Linux ve macOS ailelerini ayırt eder; Pardus'un yerli bir Linux dağıtımı olduğunu bilir.
 - Masaüstü, mobil ve gömülü işletim sistemlerini tanır.
-- Dosya sistemi kavramını açıklar.
 - Basit sorunlarda doğru adımı bilir.
 
 # Yazılım Nedir?
@@ -34,7 +33,7 @@ Elle tutulmaz, görünmez — ama donanımı anlamlı kılan odur.
 
 ## Yazılım Katmanları
 
-![](gorseller/diagram-katmanlar.png){width=62%}
+![](gorseller/diagram-katmanlar.png){width=58%} ![](gorseller/diagram-ornek-yazdirma.png){width=30%}
 
 Bir uygulama doğrudan donanıma erişemez; isteğini işletim sistemine iletir.
 
@@ -71,7 +70,7 @@ Kurumlar çoğu zaman ikisini bir arada kullanır.
 
 ## Donanım ile Kullanıcı Arasındaki Aracı
 
-İşletim sistemi bilgisayar açıldığında ilk çalışan, kapanana kadar arka planda kalan yazılımdır.
+İşletim sistemi bilgisayar açılırken yüklenen, kapanana kadar arka planda kalan temel yazılımdır.
 
 ## Görevleri
 
@@ -87,6 +86,96 @@ Kurumlar çoğu zaman ikisini bir arada kullanır.
 ![](gorseller/diagram-os-gorev.png){width=62%}
 
 Bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok program açıkken işlemci çok hızlı geçiş yapar.
+
+## Donanım Yönetimi
+
+::: {.columns}
+::: {.column width="52%"}
+İşletim sistemi takılı **donanımı tanır ve listeler**; her aygıt için gereken sürücüyü yükler.
+
+İşlemci, bellek, depolama ve çevre birimlerini programlar arasında paylaştırır.
+:::
+::: {.column width="48%"}
+![](gorseller/ekran-aygit-yoneticisi.png){width=100%}
+
+*Windows'ta Aygıt Yöneticisi*
+:::
+:::
+
+## Dosya Sistemi Yönetimi
+
+::: {.columns}
+::: {.column width="50%"}
+İşletim sistemi dosyaların nerede ve nasıl saklanacağını düzenler; bunları **sürücüler** üzerinde takip eder.
+
+Dosya ve klasörlerin ağaç biçimindeki yapısını, uzantıları ve disk biçimlendirmeyi **4. haftada** ayrıntılı göreceğiz.
+:::
+::: {.column width="50%"}
+![](gorseller/ekran-bilgisayar.png){width=100%}
+
+*Windows'ta Bilgisayar penceresi*
+:::
+:::
+
+## Süreç Yönetimi
+
+::: {.columns}
+::: {.column width="50%"}
+**Süreç**, çalışmakta olan bir programdır.
+
+İşletim sistemi her sürece işlemci zamanı ve bellek ayırır; hangisinin ne zaman çalışacağını belirler.
+:::
+::: {.column width="50%"}
+![](gorseller/ekran-gorev-yoneticisi.png){width=100%}
+
+*Windows'ta Görev Yöneticisi*
+:::
+:::
+
+## Kullanıcı Arayüzü
+
+::: {.columns}
+::: {.column width="45%"}
+Kullanıcının bilgisayarla konuşma biçimidir.
+
+**Grafik arayüz** pencereler ve simgelerle, **komut satırı** ise yazılı komutlarla çalışır.
+:::
+::: {.column width="55%"}
+![](gorseller/ekran-pardus-masaustu.jpg){width=100%}
+
+*Pardus'un masaüstü arayüzü*
+:::
+:::
+
+## Kullanıcı ve Güvenlik Yönetimi
+
+::: {.columns}
+::: {.column width="50%"}
+Kimin hangi dosyaya ve ayara erişebileceğini denetler.
+
+Kullanıcı hesapları ve yetkiler bu görevin parçasıdır.
+:::
+::: {.column width="50%"}
+![](gorseller/ekran-macos-kullanicilar.png){width=100%}
+
+*macOS'ta Kullanıcılar ve Gruplar*
+:::
+:::
+
+## Hata Yönetimi
+
+::: {.columns}
+::: {.column width="50%"}
+Bir program çöktüğünde tüm sistemi değil, yalnızca o programı durdurur; bilgisayarın tamamı kapanmaz.
+
+İşletim sistemi olayları **günlüğe kaydeder**; bir sorunun nedeni bu kayıtlardan okunur.
+:::
+::: {.column width="50%"}
+![](gorseller/ekran-olay-goruntuleyici.png){width=100%}
+
+*Windows'ta Olay Görüntüleyicisi*
+:::
+:::
 
 # İşletim Sistemi Aileleri
 
@@ -132,6 +221,8 @@ Bir sistemi öğrenen diğerine kolayca geçer.
 
 ![](gorseller/foto-masaustu.jpg){width=24%} ![](gorseller/foto-mobil.jpg){width=16%} ![](gorseller/foto-sunucu.jpg){width=24%} ![](gorseller/foto-gomulu.jpg){width=26%}
 
+Sırasıyla masaüstü, mobil, sunucu ve gömülü sistem örnekleri: bilgisayarlar, akıllı telefon, sunucu dolapları ve yazıcı.
+
 Hepsi farklı görünür — ama hepsinde bir işletim sistemi çalışır.
 
 ## Mobil İşletim Sistemleri
@@ -153,29 +244,6 @@ Tek bir amaca özel cihazların içinde çalışır:
 - Yazıcı, endüstriyel makine
 
 Kullanıcı bu sistemlerin varlığını çoğu zaman fark etmez.
-
-# Dosya Sistemi
-
-## Ağaç Biçiminde Düzen
-
-Dosya sistemi, depolamadaki dosyaların nasıl düzenlendiğini belirler. Tek bir **kök** dizinden başlar.
-
-```
-Belgeler/
-├── Dersler/
-│   ├── enf101-notlar.docx
-│   └── enf101-sunum.pptx
-└── Kisisel/
-    └── ozgecmis.pdf
-```
-
-Her dosyanın bir **adı**, bir **uzantısı** ve bir **yolu** vardır.
-
-## Dosya Sistemleri Farklıdır
-
-Her işletim sisteminin kullandığı dosya sistemi farklıdır.
-
-Hangisinin hangisi olduğunu **gelecek hafta** disk biçimlendirme başlığında göreceğiz.
 
 # Basit Sorunlara İlk Bakış
 
@@ -205,7 +273,6 @@ Cihaz hiç açılmıyorsa ya da veri kaybı riski varsa deneme yanılma yapmayı
 
 1. İşletim sisteminizi ve sürümünü belirleyin.
 2. Üç yazılım seçin; her birini **sistem/uygulama** ve **açık/kapalı** olarak sınıflandırın.
-3. Bir klasör açıp üç seviyeli bir dizin yolu yazın.
 
 Notla değerlendirilmez.
 

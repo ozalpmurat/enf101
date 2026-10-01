@@ -32,7 +32,18 @@ Dosya kaybolmaz — **yanlış yerde** durur ya da **hiç yedeklenmemiştir**. B
 
 # Dosya ve Klasör İşlemleri
 
-**Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, geçen hafta gördüğümüz **ağaç yapısı** içinde yer alır.
+**Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır: kökün altına klasörler, onların altına alt klasörler ve dosyalar yerleşir.
+
+```
+Belgeler/
+|-- Dersler/
+|   |-- enf101-notlar.docx
+|   `-- enf101-sunum.pptx
+`-- Kişisel/
+    `-- ozgecmis.pdf
+```
+
+Her dosyanın bir **adı**, bir **uzantısı** ve bir **yolu** vardır.
 
 En sık kullanacağınız dosya işlemleri şunlardır:
 

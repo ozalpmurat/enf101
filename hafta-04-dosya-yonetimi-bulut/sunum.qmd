@@ -24,7 +24,16 @@ format: beamer
 - **Dosya:** Bilgisayarda saklanan bilgi birimi
 - **Klasör:** Dosyaları gruplamak için kullanılan kap
 
-Hepsi geçen hafta gördüğümüz **ağaç yapısı** içinde yer alır.
+Hepsi tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır:
+
+```
+Belgeler/
+|-- Dersler/
+|   |-- enf101-notlar.docx
+|   `-- enf101-sunum.pptx
+`-- Kisisel/
+    `-- ozgecmis.pdf
+```
 
 ## Temel İşlemler
 

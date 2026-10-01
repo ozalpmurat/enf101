@@ -79,13 +79,11 @@ format:
   - Görevleri
   - İşletim sistemi aileleri
 - İşletim Sistemi Türleri
-- Dosya Sistemi
 - Basit Sorunlara İlk Bakış
 - Uygulama: Kendi Sisteminizi Tanıyın
   - Adım 1 — İşletim sisteminizi belirleyin
   - Adım 2 — Bir yazılımı sınıflandırın
-  - Adım 3 — Dosya sistemini inceleyin
-  - Adım 4 — Kısa değerlendirme yazın
+  - Adım 3 — Kısa değerlendirme yazın
 - Özet
 - Kendini Sınama Soruları
 - Kaynaklar
