@@ -34,16 +34,20 @@ Dosya kaybolmaz — **yanlış yerde** durur ya da **hiç yedeklenmemiştir**. B
 
 **Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır: kökün altına klasörler, onların altına alt klasörler ve dosyalar yerleşir.
 
-```
+```{=latex}
+\begin{minipage}{\linewidth}
+\begin{verbatim}
 Belgeler/
 |-- Dersler/
 |   |-- enf101-notlar.docx
 |   `-- enf101-sunum.pptx
 `-- Kişisel/
     `-- ozgecmis.pdf
+\end{verbatim}
+\end{minipage}
 ```
 
-Her dosyanın bir **adı**, bir **uzantısı** ve bir **yolu** vardır.
+Her dosyanın bir **adı** ve bir **yolu** vardır; ayrıca **genellikle bir de uzantısı** olur.
 
 En sık kullanacağınız dosya işlemleri şunlardır:
 
@@ -60,9 +64,9 @@ En sık kullanacağınız dosya işlemleri şunlardır:
 Dosya kaybetmenin en yaygın nedeni, kötü adlandırmadır. Şu alışkanlıklar hayat kurtarır:
 
 - **Anlamlı adlar kullanın:** `odev.docx` yerine `enf101-veri-analizi-odevi.docx`.
-- **Tarih kullanın:** `2026-10-15-proje-taslak.docx` gibi; tarih başa yazıldığında dosyalar kendiliğinden kronolojik sıralanır.
-- **Boşluk yerine tire kullanın:** Boşluk bazı sistemlerde sorun çıkarır; `-` veya `_` daha güvenlidir.
-- **Sürüm belirtin:** `proje-v1`, `proje-v2` gibi. Eski sürümü silmek yerine saklamak, çoğu zaman işe yarar.
+- **Tarih kullanın:** `2026-10-15-proje-taslak.docx` gibi; tarihi başa **yıl-ay-gün** biçiminde yazarsanız dosyalar kendiliğinden kronolojik sıralanır. Türkçede yaygın olan gün-ay-yıl biçimi (`15-10-2026`) bu sıralamayı bozar.
+- **Boşluk yerine tire kullanın:** Dosyayı başkalarıyla paylaşacaksanız ya da farklı sistemlerde kullanacaksanız boşluk sorun çıkarabilir; `-` veya `_` daha güvenlidir. Yalnızca kendi sisteminizde kalacaksa boşluk da sorun olmaz.
+- **Sürüm belirtin:** `ENF-proje-s1.0`, `ENF-proje-s1.1` gibi. Eski sürümü silmek yerine saklamak, çoğu zaman işe yarar.
 
 ::: {.callout-warning}
 ## Aynı klasörde iki aynı ad olamaz
@@ -91,9 +95,15 @@ Bir dosyayı aynı klasöre kopyalarsanız sistem adının sonuna "kopya" ekler.
 ## Uzantıyı değiştirmeyin
 
 Bir dosyanın uzantısını değiştirmek, türünü değiştirmez; yalnızca onu açacak programın yanlış seçilmesine yol açar. `rapor.docx` dosyasını `rapor.jpg` yapmak onu resim yapmaz — sadece açılmaz hâle getirir.
-
-Bu ayrıca önemli bir güvenlik konusudur: Bir e-postayla gelen `fatura.pdf.exe` gibi çift uzantılı dosyalar, göründüğü belge değil **çalıştırılabilir bir programdır**. Tanımadığınız kaynaklardan gelen `.exe` dosyalarını açmayın.
 :::
+
+::: {.callout-warning}
+## Çift uzantı tehlikesi
+
+Başkasından gelen `fatura.pdf.exe` gibi çift uzantılı dosyaların **sonundaki** uzantı (örnekte `.exe`) gerçek olandır. İşletim sisteminizde dosya uzantıları gizlenmişse (Windows varsayılan olarak gizler) bu dosyayı `.pdf` (bir belge dosyası) zannedebilirsiniz. Tanımadığınız kaynaklardan gelen `.exe` dosyalarını açmayın.
+:::
+
+![Windows Gezgini'nde Dosya adı uzantıları seçeneği: dosyanın gerçek uzantısının (ör. `.exe`) görünmesini sağlar](gorseller/ekran-cift-uzanti.png){width=70%}
 
 # Sıkıştırma
 
@@ -101,7 +111,7 @@ Bu ayrıca önemli bir güvenlik konusudur: Bir e-postayla gelen `fatura.pdf.exe
 
 Neden kullanılır:
 
-- **Boyut küçültme:** Özellikle metin ve belgeler belirgin biçimde küçülür; böylece e-postayla göndermek kolaylaşır.
+- **Boyut küçültme:** Özellikle metin ve belgeler belirgin biçimde küçülür; başkasıyla paylaşmak kolaylaşabilir.
 - **Toplama:** Onlarca dosyayı tek bir `.zip` dosyasına çevirmek, göndermeyi ve saklamayı kolaylaştırır.
 - **Düzen:** İlgili dosyaları bir arada tutar.
 
@@ -115,7 +125,7 @@ Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklan
 
 # Depolama Aygıtları
 
-Geçen hafta HDD ve SSD'yi tanımıştık. Şimdi bunların **nasıl kullanıldığına** bakıyoruz.
+Daha önce HDD ve SSD'yi tanımıştık. Şimdi bunların **nasıl kullanıldığına** bakıyoruz.
 
 ## Çıkarılabilir depolama
 
@@ -132,7 +142,7 @@ Geçen hafta HDD ve SSD'yi tanımıştık. Şimdi bunların **nasıl kullanıld�
 
 ![SD kart](gorseller/foto-sd-kart.jpg){width=90%}
 
-![Harici disk](gorseller/foto-harici-disk.jpg){width=90%}
+![Harici disk](gorseller/foto-harici-disk.jpg){width=55%}
 
 Çıkarılabilir depolama aygıtları: USB bellek, SD kart ve harici disk.
 :::
@@ -142,7 +152,7 @@ Geçen hafta HDD ve SSD'yi tanımıştık. Şimdi bunların **nasıl kullanıld�
 
 Bir USB belleği veya harici diski, üzerinde işlem yapılırken **kabloyu çekmeyin**. Özellikle yazma işlemi sürerken çıkarılan aygıtlarda veri bozulabilir ya da dosyalar yarım kalabilir. İşletim sisteminin "güvenle çıkar" seçeneğini kullanın; bu işlem, bekleyen yazma işlemlerinin tamamlanmasını sağlar.
 
-**Unutmayın:** çıkarılabilir aygıtlar kolay kaybolur ve kolay bozulur. **Üzerindeki tek kopya olmamalıdır.**
+**Unutmayın:** çıkarılabilir aygıtlar kolay kaybolur ve kolay bozulur. **Üzerindeki verilerin başka bir yerde bir kopyası daha olmalıdır.**
 :::
 
 ## Disk bölümleme ve biçimlendirme
@@ -150,6 +160,8 @@ Bir USB belleği veya harici diski, üzerinde işlem yapılırken **kabloyu çek
 Bir depolama aygıtı kullanılmadan önce iki aşamadan geçer:
 
 **Bölümleme**, bir diskin mantıksal olarak ayrı parçalara ayrılmasıdır. Böylece tek bir fiziksel disk, bilgisayarda birden çok sürücü gibi görünür. Örneğin bir dizüstü bilgisayarda sistem için bir bölüm, kişisel dosyalar için bir başka bölüm bulunabilir.
+
+**Sürücü**, işletim sisteminin tek bir depolama birimi olarak gösterdiği mantıksal yapıdır (örneğin C: sürücüsü).
 
 **Biçimlendirme (formatlama)**, bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini boşaltır.
 
@@ -169,7 +181,7 @@ Biçimlendirme, o bölümdeki **her şeyi siler**. Yanlış bölümü biçimlend
 
 Bu yüzden iki kural: **Önce yedek alın.** Ve **hangi bölümü seçtiğinizden emin olun.** Sistem diskinizi biçimlendirmeye kalkmak, bilgisayarı açılmaz hâle getirebilir.
 
-Bu konu bu derste yalnızca **kavramsal** düzeyde kalacak; pratik uygulama beklenmiyor.
+Bu ayarları kurcalamamanızı tavsiye ederiz.
 :::
 
 # Bulut Depolama
@@ -277,7 +289,7 @@ Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir al�
 - Anlamlı adlandırma ve tarih kullanımı, dosya kaybetmeyi önler.
 - **Uzantı** dosyanın türünü belirtir; uzantıyı değiştirmek türü değiştirmez. Çift uzantılı dosyalara dikkat.
 - **Sıkıştırma** boyut küçültür ve dosyaları toplar; metin belgelerde daha etkilidir.
-- **Çıkarılabilir aygıtlar** güvenli çıkarılmalıdır ve üzerlerindeki tek kopya olmamalıdır.
+- **Çıkarılabilir aygıtlar** güvenli çıkarılmalıdır ve üzerlerindeki verilerin başka bir yerde bir kopyası olmalıdır.
 - **Bölümleme** diski parçalara ayırır; **biçimlendirme** dosya sistemini belirler ve **veriyi siler**.
 - **Bulut**, her yerden erişim ve paylaşım sağlar; ama yedeğin yerini tamamen almaz.
 - **Yedekleme** için 3-2-1 kuralı: 3 kopya, 2 ortam, 1 tanesi dışarıda.
@@ -299,14 +311,12 @@ Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir al�
 - **Bulut depolama hizmetlerinin resmî yardım sayfaları** — paylaşım izinleri ve sürüm geçmişi.
 - **USOM ve BTK farkındalık yayınları** — zararlı dosya ve güvenli indirme konularında. (usom.gov.tr, btk.gov.tr)
 
-**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki üç fotoğrafın künyesi:
+**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır; ekran görüntüleri (biçimlendirme penceresi ve Dosya adı uzantıları) dersin yazarı tarafından Windows'ta alınmıştır. Aşağıdaki üç fotoğrafın künyesi:
 
 - USB bellek — *USB flash drive, 1TB*, EU+Mexico, CC0.
 - SD kart — *SDHC memory card - 8GB*, Jiří Doubravský, kamu malı.
-- Harici disk — *Seagate SRD0NF1 portable hard drive HS2*, Hayden Schiff, CC BY 4.0.
+- Harici disk — *WD Elements hard drive*, TheArchivistMan, CC0.
 
-Harici disk fotoğrafı için kaynak gösterme zorunludur; USB bellek ve SD kart kareleri CC0/kamu malı olduğu için zorunlu değildir.
-
-Biçimlendirme penceresi görüntüsü (`ekran-bicimlendirme.png`) bir **Windows** ekran görüntüsüdür; belirli bir sistemin penceresi yalnızca kavramı somutlaştırmak için örnek olarak gösterilmiştir (AGENTS.md §9).
+Üç fotoğraf da CC0/kamu malı olduğu için kaynak gösterme zorunlu değildir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

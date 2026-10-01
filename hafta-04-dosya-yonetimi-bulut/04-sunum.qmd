@@ -31,7 +31,7 @@ Belgeler/
 |-- Dersler/
 |   |-- enf101-notlar.docx
 |   `-- enf101-sunum.pptx
-`-- Kisisel/
+`-- Kişisel/
     `-- ozgecmis.pdf
 ```
 
@@ -47,9 +47,9 @@ Belgeler/
 ## Dosya Adlandırma Alışkanlıkları
 
 - **Anlamlı adlar:** `odev.docx` yerine `enf101-veri-analizi-odevi.docx`
-- **Tarih başa:** `2026-10-15-proje-taslak.docx` → kendiliğinden sıralanır
-- **Boşluk yerine tire:** `-` veya `_`
-- **Sürüm belirtin:** `proje-v1`, `proje-v2`
+- **Tarih başa (yıl-ay-gün):** `2026-10-15-proje-taslak.docx` → kendiliğinden sıralanır; gün-ay-yıl şeklinde olursa doğru sıralanmaz
+- **Boşluk yerine tire:** başkalarıyla paylaşacağın belgelerde `-` veya `_` daha güvenlidir
+- **Sürüm belirtin:** `ENF-proje-s1.0`, `ENF-proje-s1.1`
 
 ## Aynı Klasörde İki Aynı Ad Olamaz
 
@@ -82,9 +82,19 @@ Dosya adının sonundaki noktadan sonraki kısımdır. İşletim sistemi ona bak
 
 ## Çift Uzantı Tehlikesi
 
-`fatura.pdf.exe` gibi dosyalar, göründüğü belge değil **çalıştırılabilir bir programdır**.
+`fatura.pdf.exe` gibi çift uzantılı dosyaların **sonundaki uzantı** gerçek olandır.
+
+Uzantılar gizlenmişse (Windows varsayılanı) dosyayı `.pdf` sanabilirsiniz.
 
 Tanımadığınız kaynaklardan gelen `.exe` dosyalarını açmayın.
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.65\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-cift-uzanti.png}
+
+\emph{Windows Gezgini'nde Dosya adı uzantıları seçeneği}
+\end{center}
+```
 
 # Sıkıştırma
 
@@ -114,7 +124,7 @@ Bunları `.zip`'lemek neredeyse **hiç küçültmez**. Kazanç metin tabanlı be
 
 ## Çıkarılabilir Aygıtlar
 
-![](gorseller/foto-usb-bellek.jpg){width=30%} ![](gorseller/foto-sd-kart.jpg){width=30%} ![](gorseller/foto-harici-disk.jpg){width=30%}
+![](gorseller/foto-usb-bellek.jpg){width=30%} ![](gorseller/foto-sd-kart.jpg){width=30%} ![](gorseller/foto-harici-disk.jpg){width=17%}
 
 USB bellek, SD kart ve harici disk: hepsi taşınabilir, hepsi kolay kaybolur.
 
@@ -134,6 +144,8 @@ Bir diskin mantıksal olarak ayrı parçalara ayrılmasıdır.
 
 Tek bir fiziksel disk, bilgisayarda **birden çok sürücü** gibi görünür.
 
+**Sürücü:** tek bir depolama birimi (ör. C:).
+
 Örnek: sistem için bir bölüm, kişisel dosyalar için bir bölüm.
 
 ## Biçimlendirme
@@ -147,7 +159,11 @@ Bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini bo�
 | exFAT | Taşınabilir bellekler |
 | FAT32 | Eski aygıtlar |
 
-![](gorseller/ekran-bicimlendirme.png){width=52%}
+```{=latex}
+\begin{center}
+\includegraphics[width=0.52\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-bicimlendirme.png}
+\end{center}
+```
 
 ## Biçimlendirme Veriyi Siler
 
@@ -157,7 +173,7 @@ Biçimlendirme, o bölümdeki **her şeyi siler**. Yanlış bölümü biçimlend
 
 İki kural: **Önce yedek alın.** **Hangi bölümü seçtiğinizden emin olun.**
 
-Bu konu derste yalnızca kavramsal düzeyde kalır.
+Bu ayarları kurcalamamanızı tavsiye ederiz.
 
 # Bulut Depolama
 
