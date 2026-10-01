@@ -47,15 +47,20 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 │  └─ surum-notlari-baslangic.md sürüm notlarının başlangıç metni (bir kez okunur)
 ├─ KILAVUZ_Quarto_...qmd + .pdf  hocalar için Quarto kurulum/kullanım kılavuzu
 └─ hafta-NN-konu/                NN = 01 … 14, konu = kısa konu adı
-   ├─ ders-notu.qmd + .pdf       8–12 sayfa
-   ├─ sunum.qmd + .pdf           25–38 slayt (hedef ~30)
-   ├─ alistirma.qmd + .pdf        3 sayfa · 10 soru (5 şıklı) + cevap anahtarı
+   ├─ NN-ders-notu.qmd + .pdf    8–12 sayfa
+   ├─ NN-sunum.qmd + .pdf        25–38 slayt (hedef ~30)
+   ├─ NN-alistirma.qmd + .pdf     3 sayfa · 10 soru (5 şıklı) + cevap anahtarı
    └─ gorseller/*.png            o haftanın diyagramları
 ```
 
 Klasör adları `hafta-NN-konu` kalıbındadır: hafta numarası **başta** durur (klasör sıralaması ve
 `araclar/basliklari-uret.py`'nin `split("-")[1]` çözümlemesi buna bağlıdır), `konu` ise ASCII
 (Türkçe karaktersiz) kısa addır — örn. `hafta-10-bilgi-guvenligi`.
+
+Hafta klasörünün içindeki üç belgenin adı da hafta numarasıyla başlar: **`NN-ders-notu`**,
+**`NN-sunum`**, **`NN-alistirma`** (`.qmd` ve `.pdf`; örn. `03-alistirma.pdf`). Böylece bir dosya
+başka bir klasöre kopyalandığında ya da tek başına paylaşıldığında hangi haftaya ait olduğu adından
+anlaşılır. `NN` iki haneli hafta numarasıdır (01 … 14) ve klasör adındaki numarayla aynıdır.
 
 Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz) · 40 diyagram.
 
@@ -98,7 +103,7 @@ Denenip **işe yaramayan** çözümler — tekrar denenmesin: `\AtEndDocument{\c
 (yine "??"), altbilgiden toplamı tümden kaldırmak (çalışır ama `n / N` bilgisi kaybolur — kullanıcı bunu
 istemedi). 2026-09-29'da 02, 04, 05, 06, 09, 14. haftalar bu tuzağa yakalanmıştı.
 
-**`BASLIKLAR.qmd` elle düzenlenmez.** `araclar/basliklari-uret.py` betiği bu dosyayı `hafta-*/ders-notu.qmd`
+**`BASLIKLAR.qmd` elle düzenlenmez.** `araclar/basliklari-uret.py` betiği bu dosyayı `hafta-*/NN-ders-notu.qmd`
 başlıklarından üretir. İçerikte ekleme, çıkarma ya da yer değişikliği yaptıktan sonra — izlenceyi
 güncellediğiniz gibi — betiği çalıştırıp belgeyi yeniden derleyin:
 
@@ -461,10 +466,10 @@ done
 
 # 3. Beamer yapı kontrolü — her '#' altında '##' var mı?
 #    (yoksa slaytlar tek sayfaya yığılır, hata mesajı çıkmaz)
-awk '/^# /{if(p!=""&&!f)print "SORUN:",p; p=$0; f=0; next} /^## /{f=1} END{if(p!=""&&!f)print "SORUN:",p}' hafta-*/sunum.qmd
+awk '/^# /{if(p!=""&&!f)print "SORUN:",p; p=$0; f=0; next} /^## /{f=1} END{if(p!=""&&!f)print "SORUN:",p}' hafta-*/[0-9][0-9]-sunum.qmd
 
 # 4. Kalıntı sözdizimi
-grep -rn "{.block}" hafta-*/sunum.qmd
+grep -rn "{.block}" hafta-*/[0-9][0-9]-sunum.qmd
 
 # 5. İnç kalıntısı — içerikte ölçüler cm/mm veya yüzde olmalı
 #    (desenli arama "bilinçli" gibi kelimelere takılmaz, "inçe" gibi ekleri yakalar;
@@ -473,7 +478,7 @@ grep -rnE '[^[:alpha:]]inç|^inç' --include="*.qmd" --include="*.tex" .
 
 # 6. Alıştırmada soru ile şıklar bitişik mi?
 #    (soru satırından hemen sonra boş satır varsa blok dağılmış demektir — bkz. §7)
-awk 'p ~ /^\*\*[0-9]+\.\*\*/ && $0=="" {print FILENAME": "NR". satır — sorudan sonra boş satır"} {p=$0}' hafta-*/alistirma.qmd
+awk 'p ~ /^\*\*[0-9]+\.\*\*/ && $0=="" {print FILENAME": "NR". satır — sorudan sonra boş satır"} {p=$0}' hafta-*/[0-9][0-9]-alistirma.qmd
 #    Çıktı boş olmalı. Sonuç varsa ilgili soru bloğundaki boş satırlar kaldırılıp
 #    satır sonlarına `\` eklenir.
 
@@ -482,7 +487,7 @@ python3 araclar/basliklari-uret.py --kontrol
 
 # 8. Altbilgi doğru mu? — her ders notunun son sayfası "Sayfa n / n" yazmalı
 #    (yanlışsa: bash araclar/derle.sh <klasör>; bkz. §3)
-for f in hafta-*/ders-notu.pdf; do
+for f in hafta-*/[0-9][0-9]-ders-notu.pdf; do
   n=$(pdfinfo "$f" | awk '/^Pages/{print $2}')
   s=$(pdftotext -layout -f "$n" -l "$n" "$f" - | grep -oE 'Sayfa [0-9]+ / [0-9]+' | head -1)
   [ "$s" = "Sayfa $n / $n" ] || echo "HATA: $f -> ${s:-altbilgi yok} (gerçek $n)"

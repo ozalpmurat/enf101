@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""BASLIKLAR.qmd dosyasını hafta-*/ders-notu.qmd dosyalarından üretir.
+"""BASLIKLAR.qmd dosyasını hafta-*/NN-ders-notu.qmd dosyalarından üretir.
 
 Kullanım (depo kökünde):
     python3 araclar/basliklari-uret.py            # dosyayı üretir
@@ -78,11 +78,11 @@ def main():
     ]
     sayac = 0
     for klasor in sorted(glob.glob(os.path.join(KOK, "hafta-*"))):
-        not_ = os.path.join(klasor, "ders-notu.qmd")
+        no = os.path.basename(klasor).split("-")[1]
+        not_ = os.path.join(klasor, f"{no}-ders-notu.qmd")
         if not os.path.exists(not_):
             continue
         sayac += 1
-        no = os.path.basename(klasor).split("-")[1]
         baslik, basliklar = onyuz_ve_basliklar(not_)
         parcalar.append(f"# {int(no)}. Hafta — {baslik}")
         parcalar.append("")

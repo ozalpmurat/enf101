@@ -231,7 +231,7 @@ Bu bölüm kapak, içindekiler ve sayfa düzeni ayarlarını içerir. İçeriği
 
 **PDF üretilmiyor, hata veriyor** — Metnin en başındaki `---` ile başlayan bölümün bozulmadığından emin olun. Bu bölümde bir tırnak veya girinti hatası olduğunda Quarto dosyayı okuyamaz.
 
-**Türkçe karakterli dosya adı sorun çıkarıyor** — Dosya ve klasör adlarını Türkçe karakter kullanmadan yazın (örneğin `hafta-01-giris-temel-kavramlar/ders-notu.qmd`). Metnin içinde Türkçe karakterler sorunsuz görünür; sorun yalnızca dosya adındadır.
+**Türkçe karakterli dosya adı sorun çıkarıyor** — Dosya ve klasör adlarını Türkçe karakter kullanmadan yazın (örneğin `hafta-01-giris-temel-kavramlar/01-ders-notu.qmd`). Metnin içinde Türkçe karakterler sorunsuz görünür; sorun yalnızca dosya adındadır.
 
 **İlk üretim çok uzun sürüyor** — İlk çalıştırmada gerekli paketler hazırlanır, bu birkaç dakika sürebilir. Sonraki üretimler saniyeler içinde tamamlanır.
 

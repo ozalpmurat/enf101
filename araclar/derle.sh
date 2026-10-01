@@ -16,7 +16,7 @@
 #
 # Kullanım (depo kökünde):
 #   bash araclar/derle.sh hafta-04-dosya-yonetimi-bulut
-#   bash araclar/derle.sh hafta-04-dosya-yonetimi-bulut/ders-notu.qmd
+#   bash araclar/derle.sh hafta-04-dosya-yonetimi-bulut/04-ders-notu.qmd
 #   bash araclar/derle.sh BASLIKLAR.qmd izlence.qmd
 #   bash araclar/derle.sh .                 # bütün depo
 #
