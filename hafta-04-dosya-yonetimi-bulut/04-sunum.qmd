@@ -144,7 +144,7 @@ Bir diskin mantıksal olarak ayrı parçalara ayrılmasıdır.
 
 Tek bir fiziksel disk, bilgisayarda **birden çok sürücü** gibi görünür.
 
-**Sürücü:** tek bir depolama birimi (ör. C:).
+**Sürücü:** tek bir depolama birimi (ör. Windows'ta C:).
 
 Örnek: sistem için bir bölüm, kişisel dosyalar için bir bölüm.
 
@@ -267,7 +267,7 @@ Notla değerlendirilmez.
 - **Dosya** ve **klasör** işlemleri; anlamlı adlandırma
 - **Uzantı** türü belirtir; çift uzantıya dikkat
 - **Sıkıştırma** metin belgelerde kazanç sağlar
-- **Çıkarılabilir aygıt:** güvenle çıkar, tek kopya olmasın
+- **Çıkarılabilir aygıt:** güvenle çıkar, başka yerde kopyası olsun
 - **Biçimlendirme veriyi siler**
 - **Bulut**: erişim ve paylaşım sağlar, ama yedeğin yerini almaz
 - **3-2-1 kuralı**: 3 kopya, 2 ortam, 1 dışarıda

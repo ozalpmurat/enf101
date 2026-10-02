@@ -161,7 +161,7 @@ Bir depolama aygıtı kullanılmadan önce iki aşamadan geçer:
 
 **Bölümleme**, bir diskin mantıksal olarak ayrı parçalara ayrılmasıdır. Böylece tek bir fiziksel disk, bilgisayarda birden çok sürücü gibi görünür. Örneğin bir dizüstü bilgisayarda sistem için bir bölüm, kişisel dosyalar için bir başka bölüm bulunabilir.
 
-**Sürücü**, işletim sisteminin tek bir depolama birimi olarak gösterdiği mantıksal yapıdır (örneğin C: sürücüsü).
+**Sürücü**, işletim sisteminin tek bir depolama birimi olarak gösterdiği mantıksal yapıdır (örneğin Windows'ta C: sürücüsü).
 
 **Biçimlendirme (formatlama)**, bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini boşaltır.
 

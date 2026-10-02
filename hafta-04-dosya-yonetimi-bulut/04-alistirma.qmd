@@ -29,7 +29,7 @@ A) `.docx`\
 B) `.pptx`\
 C) `.xlsx`\
 D) `.pdf`\
-E) .odp
+E) `.odt`
 
 **3.** `rapor.docx` dosyasının adını `rapor.jpg` olarak değiştirirseniz ne olur?\
 A) Dosya resme dönüşür\
@@ -76,7 +76,7 @@ E) İnternet bağlantısı gerektirmesi
 **9.** Dosyayı aynı bilgisayarın başka bir klasörüne kopyalamak yeterli bir yedeklemedir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** `fatura.pdf.exe` gibi çift uzantılı bir dosya, göründüğü gibi bir belge değil çalıştırılabilir bir program olabilir. *(Doğru / Yanlış)*\
+**10.** `fatura.pdf.exe` gibi çift uzantılı bir dosyanın **sonundaki** uzantı gerçek olandır; bu dosya bir belge değil, çalıştırılabilir bir programdır. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}
@@ -86,7 +86,7 @@ E) İnternet bağlantısı gerektirmesi
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | "Kes / Yapıştır" dosyayı taşır; aslı eski yerinden kalkar. "Kopyala / Yapıştır" ise iki nüsha bırakır. |
-| 2 | C | .xlsx elektronik tablo dosyasının uzantısıdır. .docx belge, .pptx ve .odp sunum, .pdf ise taşınabilir belgedir. |
+| 2 | C | .xlsx elektronik tablo dosyasının uzantısıdır. .docx ve .odt belge, .pptx sunum, .pdf ise taşınabilir belgedir. |
 | 3 | C | Uzantıyı değiştirmek dosyanın içeriğini ve türünü değiştirmez; yalnızca işletim sisteminin onu yanlış programla açmaya çalışmasına yol açar. |
 | 4 | B | Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır. En belirgin kazanç metin tabanlı belgelerde olur. |
 | 5 | C | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |
@@ -94,7 +94,7 @@ E) İnternet bağlantısı gerektirmesi
 | 7 | C | Kural: 3 kopya, 2 farklı ortam, 1 kopya bilgisayarın dışında. |
 | 8 | E | Doğru ifade E seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için internet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
 | 9 | Yanlış | Aynı bilgisayarın başka klasöründeki kopya yedek sayılmaz; cihaz bozulduğunda iki kopya da kaybedilir. Yedek başka bir ortamda olmalıdır. |
-| 10 | Doğru | Bu tür çift uzantılı dosyalar, uzantının görünen kısmıyla kullanıcıyı yanıltmayı amaçlar. Tanımadığınız kaynaklardan gelen `.exe` dosyaları açılmamalıdır. |
+| 10 | Doğru | Çift uzantılı dosyalarda sonundaki uzantı (`.exe`) gerçek olandır; Windows uzantıları gizlediği için dosya `.pdf` gibi görünebilir. Tanımadığınız kaynaklardan gelen `.exe` dosyaları açılmamalıdır. |
 
 ::: {.callout-tip}
 ## Nasıl kullanılır?
