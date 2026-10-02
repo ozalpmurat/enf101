@@ -39,7 +39,9 @@ git sparse-checkout set --no-cone '*.pdf'
   `NN-alistirma.qmd`+`.pdf` ve `gorseller/` klasörü. `NN` hafta numarası (01 … 14), `konu` o haftanın
   kısa adıdır (örn. `hafta-10-bilgi-guvenligi`). Belge adları hafta numarasıyla başlar (örn.
   `03-alistirma.pdf`). Adlar ASCII'dir; Türkçe karakter kullanılmaz.
-- **`tema/notlar.tex` ve `tema/sunum.tex`** — ders notu ve sunumun ortak görünüm dosyaları.
+- **`tema/notlar.tex` ve `tema/sunum.tex`** — ders notu/izlence ve sunumun ortak görünüm dosyaları.
+  Haftalık **ders notu ve alıştırma** belgeleri ayrıca `tema/notlar-hafta.tex` katmanını kullanır
+  (üst/alt bilgi ve giriş logosu). Amblem: `tema/logo.png` (kapak/giriş), `tema/logobeyaz.png` (sunum kenar çubuğu).
 - **`ornekler/`** — Quarto özelliklerine ilişkin başvuru belgeleri (ders içeriği değildir).
 - **`KILAVUZ_Quarto_Kurulum_ve_Kullanim.qmd` / `.pdf`** — Quarto kurulum ve kullanım kılavuzu.
 - **`AGENTS.md`** — proje kuralları, üretim talimatları ve geçmiş hatalardan çıkarılan uyarılar.

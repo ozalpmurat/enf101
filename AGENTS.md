@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 30.09.2026
+Son güncelleme: 02.10.2026
 
 ---
 
@@ -32,7 +32,10 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 ├─ _quarto.yml                   proje ayarları (ortak tema buradan bağlanır)
 ├─ tema/
 │  ├─ notlar.tex                 ders notu · alıştırma · izlence görünümü (TikZ desteği dahil)
-│  └─ sunum.tex                  beamer sunu görünümü
+│  ├─ notlar-hafta.tex           haftalık ders notu · alıştırma üst/alt bilgi + giriş logosu
+│  ├─ sunum.tex                  beamer sunu görünümü
+│  ├─ logo.png                   BSEU amblemi (ders notu girişi, sunum kapağı)
+│  └─ logobeyaz.png              beyaz amblem (sunum kenar çubuğu)
 ├─ ornekler/                     Quarto özellik örnekleri (başvuru belgesi, ders içeriği değil)
 │  ├─ quarto-ozellikleri.qmd + .pdf + .html        özellik başvuru belgesi
 │  ├─ quarto-ozellikleri-sunum.qmd + .pdf          aynı içeriğin sunum sürümü
@@ -165,6 +168,10 @@ PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan ge�
 `tema/sunum.tex` ise kapak amblemini **`tema/logo.png`**'den alır (bkz. §5 kural 7); bu dosya da
 silinirse/taşınırsa sunular amblemsiz derlenir.
 
+**`tema/notlar-hafta.tex`** ise 28 haftalık belgenin (14 ders notu + 14 alıştırma) YAML'ında
+`include-in-header: ../tema/notlar-hafta.tex` ile çağrılır; silinir/taşınırsa bu 28 belge derlenmez.
+Ayrıntı ve kenar boşluğu/logo kuralları: §6.
+
 Bu dosyalar silinirse veya taşınırsa **hiçbir belge derlenmez** ve şu hata alınır:
 
 ```
@@ -290,6 +297,34 @@ sağa, `1.3cm` sola). Yükseklik/ölçü için `height` değerini değiştirin; 
   ("10. haftadaki güvenlik ilkeleri…" → "10." maddesi). Çözüm: noktayı kaçırın — `10\. haftadaki` — ya da
   cümleyi numara satır başına gelmeyecek biçimde kurun. **Kural sunumlar için de geçerlidir.**
   2026-09-29'da 13 cümle bu şekilde düzeltildi (02, 03, 06, 08, 10, 12, 14. haftalar).
+
+**Haftalık belgelerin üst/alt bilgisi, giriş logosu ve kenar boşlukları (2026-10-02).**
+14 ders notu ve 14 alıştırma PDF'i `tema/notlar-hafta.tex` katmanını kullanır. Standart:
+
+- **Üst bilgi** (içerik sayfalarında): solda `BŞEÜ`, sağda `ENF101`.
+- **Alt bilgi** (içerik sayfalarında): solda `Güncelleme: gg.aa.yyyy`, sağda `Sayfa X / XX`.
+  Tarih **elle yazılmaz**; LaTeX'in `\day/\month/\year`'ından gelir, yani derleme (render) günüdür.
+  Sıfır dolgusu `\iki` makrosuyla verilir (`\iki{\day}` → `02`).
+- **Giriş logosu:** 1. sayfada, başlığın hemen üstünde, ortada, **3 cm** (`\titlehead` ile).
+- **Kenar boşlukları:** KOMA varsayılanına göre **alt 2 cm, sağ 1 cm daraltılmıştır** (sol/üst korunur).
+  Metin alanı büyüdüğü için belgeler 0–2 sayfa kısalmıştır (hedefler §2).
+
+**Tuzaklar (ölçülerek bulundu, tekrar denenmesin):**
+1. **Başlık sayfası "plain" stildedir.** `\maketitle` LaTeX'te `\thispagestyle{plain}` çağırır;
+   bu yüzden 1. sayfada üst/alt bilgi görünmez, yalnızca sayfa numarası olur. Bilgi 2. sayfadan başlar.
+2. **`\maketitle`'a `\pretocmd` ile logo eklenmez.** KOMA-script (`scrartcl`) başlık sayfasını
+   sayfa dolduğunda taşırır; logo başlığı 2. sayfaya iter (denendi, oldu). Doğrusu KOMA'nın
+   `\titlehead` alanıdır — başlığın tam üstüne, sayfa kırmadan yerleşir.
+3. **Kenar boşluğu `\textwidth`'ı artırarak değiştirilemez.** KOMA `typearea` `\textwidth`'ı
+   `\begin{document}` sırasında yeniden hesaplar (bkz. log: `Package typearea Info: ... \textwidth`);
+   `\AtBeginDocument` içindeki `\addtolength` bir sonraki `\DIV` hesabında ezilir. Ayrıca yalnızca
+   `\textwidth`'ı büyütmek de yetmez: gövde `\columnwidth/\hsize/\linewidth`, fancyhdr ise `\headwidth`
+   kullanır. **Çalışan çözüm:** `\AtBeginDocument` içinde beşini birlikte ayarlamak —
+   `\addtolength{\textheight}{2cm}`, `\textwidth`, `\columnwidth`, `\hsize`, `\linewidth` (+1 cm) ve
+   `\setlength{\headwidth}{\textwidth}`; ardından `\pagestyle{fancy}` yeniden çağrılır.
+4. **fancyhdr genişliği `\pagestyle` anında dondurur.** Yalnızca `\fancyhead` tanımlamak yetmez;
+   geometri değiştikten sonra `\pagestyle{fancy}` tekrar çağrılmalı, yoksa başlık/alt bilgi eski
+   genişlikte kalır (sağa yaslı "ENF101" ortada kalır).
 
 ---
 
@@ -492,6 +527,14 @@ for f in hafta-*/[0-9][0-9]-ders-notu.pdf; do
   s=$(pdftotext -layout -f "$n" -l "$n" "$f" - | grep -oE 'Sayfa [0-9]+ / [0-9]+' | head -1)
   [ "$s" = "Sayfa $n / $n" ] || echo "HATA: $f -> ${s:-altbilgi yok} (gerçek $n)"
 done
+
+# 9. Üst/alt bilgi yerinde mi? — her haftalık belgenin 2. sayfasında
+#    BŞEÜ + ENF101 (üst) ve "Güncelleme: gg.aa.yyyy" (alt) bulunmalı (bkz. §6)
+for f in hafta-*/[0-9][0-9]-ders-notu.pdf hafta-*/[0-9][0-9]-alistirma.pdf; do
+  t=$(pdftotext -layout -f 2 -l 2 "$f" -)
+  echo "$t" | grep -q "BŞEÜ" && echo "$t" | grep -q "ENF101" || echo "HATA: üst bilgi yok -> $f"
+  echo "$t" | grep -qE "Güncelleme: [0-9]{2}\.[0-9]{2}\.[0-9]{4}" || echo "HATA: tarih yok -> $f"
+done
 ```
 
 ---
@@ -521,6 +564,10 @@ Kapatılan başlıklar ve kararları:
 - **Çıktı eşlemesi (K1–K9):** izlence ile haftalık belgeler arasındaki eşleme gözden geçirildi.
   4. haftaya K4 eklendi (bulut ve işbirliği araçları), 3. haftadaki K2 bağlantısı kaldırıldı
      (donanım çıktısı, yazılım haftasına bağlıydı), K3'e işletim sistemi aileleri eklendi.
+- **Haftalık belgelere kurumsal üst/alt bilgi ve giriş logosu (02.10.2026):** 14 ders notu + 14
+  alıştırma `tema/notlar-hafta.tex` katmanını kullanır (üst: BŞEÜ/ENF101, alt: güncelleme tarihi +
+  sayfa, girişte 3 cm logo). Kenar boşlukları alt 2 cm / sağ 1 cm daraltıldı. Ayrıntı ve dört tuzağı:
+  §6. izlence, BASLIKLAR ve KILAVUZ bu katmanı **kullanmaz** (bilinçli).
 
 ---
 

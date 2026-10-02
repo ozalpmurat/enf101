@@ -1,0 +1,39 @@
+% ---- ENF101 haftalık ders notu + alıştırma: üst/alt bilgi ve giriş logosu ----
+% tema/notlar.tex'in üzerine binen katman. Haftalık belgelerin YAML'ından
+% `include-in-header` ile eklenir; notlar.tex (font, renk, TikZ, lastpage) korunur.
+
+% gg.aa.yyyy için sıfır dolgulu gün/ay
+\providecommand{\iki}[1]{\ifnum#1<10 0\fi\number#1}
+
+% Giriş logosu: başlığın hemen üstünde, ortada, 3 cm.
+% KOMA-script'in \titlehead alanı tam bunun için var; \maketitle bu içeriği
+% başlıktan önce dizer (sayfa başına atlamaz).
+\titlehead{%
+  \IfFileExists{../tema/logo.png}%
+    {\begin{center}\includegraphics[height=3cm]{../tema/logo.png}\end{center}}%
+    {\IfFileExists{tema/logo.png}%
+      {\begin{center}\includegraphics[height=3cm]{tema/logo.png}\end{center}}%
+      {}}%
+}
+
+\AtBeginDocument{%
+  % Kenar boşlukları: alt 2 cm, sağ 1 cm daraltılır; sol ve üst korunur.
+  % KOMA typearea \textwidth'ı \begin{document}'ta geri hesapladığı için
+  % yalnızca \textwidth'ı artırmak yetmez; gövdenin kullandığı
+  % \columnwidth/\hsize/\linewidth ve fancyhdr'ın kullandığı \headwidth da
+  % birlikte genişletilmeli (yoksa başlık/altbilgi eski genişlikte kalır).
+  \addtolength{\textheight}{2cm}%
+  \addtolength{\textwidth}{1cm}%
+  \addtolength{\columnwidth}{1cm}%
+  \addtolength{\hsize}{1cm}%
+  \addtolength{\linewidth}{1cm}%
+  \setlength{\headwidth}{\textwidth}%
+  \pagestyle{fancy}%
+  % Üst bilgi: solda BŞEÜ, sağda ENF101
+  \fancyhf{}%
+  \fancyhead[L]{\small\color{greytext} BŞEÜ}%
+  \fancyhead[R]{\small\color{greytext} ENF101}%
+  % Alt bilgi: solda güncelleme tarihi (derleme günü), sağda sayfa
+  \fancyfoot[L]{\small\color{greytext} Güncelleme: \iki{\day}.\iki{\month}.\number\year}%
+  \fancyfoot[R]{\small\color{greytext} Sayfa \thepage\ / \pageref{LastPage}}%
+}
