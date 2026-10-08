@@ -14,9 +14,11 @@ name: PDF paketi
 # sürüm numarası olarak kullanılır ve sürüm sayfasının başlığında görünür.
 #
 # DEĞİŞİKLİK GÜNLÜĞÜ: Sürüm notlarına, bir önceki sürümden bu yana gelen commit
-# başlıkları sürüm kimliğiyle başlayan tarihli bir bölüm olarak eklenir. Aynı
-# metin, zip'in içine DEGISIKLIKLER.md olarak da konur. Sürüm numarası kullanılmaz
-# denemez: numara yerine bu kimlik geçer.
+# başlıkları sürüm kimliğiyle başlayan tarihli bir bölüm olarak eklenir. Sürüm
+# sayfasında yalnızca EN YENİ ÜÇ sürüm açık durur; daha eskileri "Önceki sürümler"
+# başlığı altında <details> ile katlanır ki sayfa zamanla uzamasın. Günlüğün
+# tamamı (katlama etiketi olmadan, düz metin) zip'in içine DEGISIKLIKLER.md
+# olarak konur. Sürüm numarası kullanılmaz denemez: numara yerine bu kimlik geçer.
 
 on:
   workflow_dispatch:
@@ -81,7 +83,15 @@ jobs:
           fi
           ICERIK=$(printf '%s\n' "$BASLIKLAR" | awk '/^alt:/{next} NF{print "- " $0}')
           ICERIK_DISI=$(printf '%s\n' "$BASLIKLAR" | awk '/^alt:/{sub(/^alt: */,""); print "- " $0}')
-          printf '%s' "$NOTLAR" | grep -v 'son-surum-commit' > /tmp/onceki-notlar.md
+          # Önceki notları düz metne indir: katlama etiketleri (<details>,
+          # <summary>) ve iç işaret satırları çıkarılır. Böylece gövde, her
+          # çalıştırmada baştan kurulabilen tek bir düz günlük gibi işlenir.
+          awk '
+            /son-surum-commit/ { next }
+            /^[[:space:]]*<\/?details>[[:space:]]*$/ { next }
+            /^[[:space:]]*<summary/ { next }
+            { print }
+          ' <<< "$NOTLAR" > /tmp/duz-eski.md
 
           # Yeni günlük bölümü. Sürüm kimliği günlük başlığı olduğu için her
           # sürüm günlükte yer alır; bölüm atlanırsa numaralandırma kopar.
@@ -97,12 +107,47 @@ jobs:
             fi
             echo
             echo "<!-- son-surum-commit: $(git rev-parse HEAD) -->"
+          } > /tmp/yeni-bolum.md
+
+          # Gövdeyi kur: en yeni ÜÇ sürüm açık durur, daha eskileri katlanır.
+          # Önceki gövdenin ilk iki bölümü açık kalır (yeni bölümle üç eder),
+          # üçüncü bölümden itibaren <details> içine alınır; böylece sürüm
+          # sayfası uzamaz, tam günlük tek tıkla açılır.
+          : > /tmp/acik.md
+          : > /tmp/eski.md
+          # Başlık kalıbı kasten [0-9] ile yazıldı: {10} aralık ifadesi her
+          # awk sürümünde (ör. mawk) desteklenmez ve sessizce eşleşmez.
+          awk '
+            /^## enf101-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/ { n++ }
+            n >= 3 { print > "/tmp/eski.md"; next }
+            { print > "/tmp/acik.md" }
+          ' /tmp/duz-eski.md
+
+          {
+            cat /tmp/yeni-bolum.md
             echo
-            cat /tmp/onceki-notlar.md
+            cat /tmp/acik.md
+            if [ -s /tmp/eski.md ]; then
+              echo
+              echo '<details>'
+              echo '<summary>Önceki sürümler</summary>'
+              echo
+              cat /tmp/eski.md
+              echo
+              echo '</details>'
+            fi
           } > /tmp/surum-notlari.md
 
-          # Zip'e girecek sürüm: iç işaret satırları çıkarılır
-          grep -v 'son-surum-commit' /tmp/surum-notlari.md > /tmp/DEGISIKLIKLER.md
+          # Zip'e girecek günlük: katlama etiketi olmadan, baştan sona düz
+          # metin (dosya olarak okunacağı için <details> gerekmez) ve iç işaret
+          # satırları çıkarılmış hâlde.
+          {
+            cat /tmp/yeni-bolum.md
+            echo
+            cat /tmp/acik.md
+            cat /tmp/eski.md
+          } > /tmp/duz-tam.md
+          awk '/son-surum-commit/ { next } { print }' /tmp/duz-tam.md > /tmp/DEGISIKLIKLER.md
 
           # Sonraki adımlara aktar
           {

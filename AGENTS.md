@@ -141,6 +141,13 @@ bu yana" bilgisi notların içindeki işaretlerden okunur (en üstteki `## enf10
 `<!-- son-surum-commit: ... -->` satırı); notlar hiç yoksa `.github/surum-notlari-baslangic.md` temel alınır.
 Bu yüzden `checkout` adımı `fetch-depth: 0` ile bütün geçmişi indirir.
 
+**Sürüm sayfası katlanır.** Sürüm sayfasında yalnızca **en yeni üç sürüm** açık durur; daha eskiler
+`<details><summary>Önceki sürümler</summary>` kutusunda katlanır. Böylece indirme sayfası sürüm sayısıyla
+birlikte uzamaz, günlüğün tamamı tek tıkla açılır. İş akışı her çalıştırmada gövdeyi düz metne indirip
+baştan kurduğu için katlama iç içe geçmez; sıra numarası ve commit işareti en üstteki (açık) bölümde
+kaldığından durum okuma bozulmaz. **ZIP içindeki `DEGISIKLIKLER.md` katlanmaz** — dosya olarak okunacağı
+için orada düz, tam metin durur (katlama etiketi yalnızca web sayfasına aittir).
+
 Bu düzenin iki sonucu var. Birincisi, **commit başlıkları doğrudan günlüğe girer**: notu okuyan kişi bir hoca
 veya öğrencidir, bu yüzden commit mesajlarının özet satırı teknik değil, okuyanın anlayacağı dille
 yazılmalıdır. İkincisi, sürüm kimliği günlük başlığı olduğu için **her sürüm günlükte yer alır**; içerik
