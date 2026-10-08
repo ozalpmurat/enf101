@@ -24,6 +24,8 @@ Donanım tek başına hiçbir işe yaramaz; ona ne yapacağını söyleyen şey 
 
 Elle tutulmaz, görünmez — ama donanımı anlamlı kılan odur.
 
+Bir insansı robotun içindeki yazılım olmasa, elektrik verilse bile ayakta duramaz; yığılır kalır.
+
 ## İki Tür Yazılım
 
 | Tür | Ne yapar | Örnek |
@@ -53,7 +55,7 @@ Bir uygulama doğrudan donanıma erişemez; isteğini işletim sistemine iletir.
 | | Açık kaynak | Kapalı kaynak |
 |:---|:---|:---|
 | Kaynak kodu | Herkese açık | Gizli |
-| Ücret | Genellikle ücretsiz | Lisanslı |
+| Ücret | Genellikle ücretsiz | Genellikle ücretli |
 | Güvenlik denetimi | Herkes inceleyebilir | Yalnızca üretici |
 | Örnek | Linux (Pardus), Firefox | Windows, macOS |
 
@@ -77,7 +79,7 @@ Kurumlar çoğu zaman ikisini bir arada kullanır.
 - **Donanım yönetimi:** Kaynakları programlar arasında paylaştırır
 - **Dosya sistemi yönetimi:** Dosyaların yerini düzenler
 - **Süreç yönetimi:** Hangi program ne zaman çalışacak
-- **Kullanıcı arayüzü:** İnsan ile bilgisayar arasındaki dil
+- **Kullanıcı arayüzü:** İnsan ile bilgisayar arasındaki katman
 - **Kullanıcı ve güvenlik yönetimi:** Kim neye erişebilir
 - **Hata yönetimi:** Bir program çökerse yalnızca o durur
 
@@ -91,9 +93,11 @@ Bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok p
 
 ::: {.columns}
 ::: {.column width="52%"}
-İşletim sistemi takılı **donanımı tanır ve listeler**; her aygıt için gereken sürücüyü yükler.
+İşletim sistemi takılı **donanımı tanır ve listeler**; her aygıt için gereken **aygıt sürücüsünü** yükler.
 
 İşlemci, bellek, depolama ve çevre birimlerini programlar arasında paylaştırır.
+
+*Sürücü — 1. anlam: aygıt sürücüsü (donanımı işletim sistemine tanıtan yazılım).*
 :::
 ::: {.column width="48%"}
 ![](gorseller/ekran-aygit-yoneticisi.png){width=100%}
@@ -106,9 +110,11 @@ Bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok p
 
 ::: {.columns}
 ::: {.column width="50%"}
-İşletim sistemi dosyaların nerede ve nasıl saklanacağını düzenler; bunları **sürücüler** üzerinde takip eder.
+İşletim sistemi dosyaların nerede ve nasıl saklanacağını düzenler; bunları **disk sürücüleri** üzerinde takip eder.
 
 Dosya ve klasörlerin ağaç biçimindeki yapısını, uzantıları ve disk biçimlendirmeyi **4. haftada** ayrıntılı göreceğiz.
+
+*Sürücü — 2. anlam: disk sürücüsü (depolama birimi).*
 :::
 ::: {.column width="50%"}
 ![](gorseller/ekran-bilgisayar.png){width=100%}
@@ -206,16 +212,18 @@ Farklı sistemlerde menüler farklı yerlerde olabilir ama **kavramlar aynıdır
 
 Bir sistemi öğrenen diğerine kolayca geçer.
 
+Sürücü kursunda öğrendiğiniz arabadan farklı bir arabaya geçtiğinizde, birkaç günlük alışmadan sonra onu da rahatça kullanırsınız; işletim sistemleri için de durum böyledir.
+
 # İşletim Sistemi Türleri
 
-## Masaüstü Değil, Pek Çok Tür
+## Dört İşletim Sistemi Türü
 
 | Tür | Önceliği | Örnek cihaz |
 |:---|:---|:---|
 | Masaüstü | Güç ve çok yönlülük | Bilgisayar, dizüstü |
 | Mobil | Pil, dokunmatik | Telefon, tablet |
 | Sunucu | Kesintisiz, çok kullanıcı | Web sunucusu |
-| Gömülü | Tek amaç, düşük kaynak | Modem, akıllı TV |
+| Gömülü | Tek amaç, düşük kaynak | Modem, akıllı TV, İHA (drone) |
 
 ## Dört Cihaz Türü
 
@@ -227,7 +235,7 @@ Hepsi farklı görünür — ama hepsinde bir işletim sistemi çalışır.
 
 ## Mobil İşletim Sistemleri
 
-- **Android:** Açık kaynak temelli, çok üreticili
+- **Android:** Linux tabanlı, açık kaynak temelli, çok üreticili
 - **iOS:** Yalnızca Apple cihazlarda, kapalı ekosistem
 
 Ortak özellikler: dokunmatik arayüz, pil tasarrufu, uygulama mağazası.
@@ -241,6 +249,7 @@ Tek bir amaca özel cihazların içinde çalışır:
 - Modem, yönlendirici
 - Akıllı televizyon
 - Araç bilgisayarı
+- İHA (drone)
 - Yazıcı, endüstriyel makine
 
 Kullanıcı bu sistemlerin varlığını çoğu zaman fark etmez.
@@ -254,7 +263,7 @@ Kullanıcı bu sistemlerin varlığını çoğu zaman fark etmez.
 | Açılmıyor | Kablo ve prize bakın |
 | Çok yavaş | Gereksiz programları kapatın |
 | Program yanıt vermiyor | Kapatıp yeniden açın |
-| Aşırı ısınıyor | Havalandırmayı açın |
+| Aşırı ısınıyor | Havalandırma deliklerinin açık olduğunu kontrol edin |
 | İnternet yok | Modemi kapatıp açın |
 
 ## Üç Altın Kural
@@ -270,6 +279,8 @@ Cihaz hiç açılmıyorsa ya da veri kaybı riski varsa deneme yanılma yapmayı
 # Kapanış
 
 ## Uygulama: Kendi Sisteminizi Tanıyın
+
+Bilgisayarınız veya akıllı telefonunuz üzerinde şu iki adımı deneyin:
 
 1. İşletim sisteminizi ve sürümünü belirleyin.
 2. Üç yazılım seçin; her birini **sistem/uygulama** ve **açık/kapalı** olarak sınıflandırın.

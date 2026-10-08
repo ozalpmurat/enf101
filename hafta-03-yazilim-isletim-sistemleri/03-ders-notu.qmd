@@ -11,7 +11,7 @@ format:
 
 # Giriş
 
-Geçen hafta bilgisayarın **donanımını** — elle tutulur parçalarını — inceledik. Ama donanım tek başına hiçbir işe yaramaz; ne yapacağını söyleyen bir şey olmadan sadece ısınan bir metal yığınıdır. Ona ne yapacağını söyleyen şey **yazılımdır**.
+Geçen hafta bilgisayarın **donanımını** — elle tutulur parçalarını — inceledik. Ama donanım tek başına hiçbir işe yaramaz; ne yapacağını söyleyen bir şey olmadan sadece ısınan bir metal yığınıdır. Bir insansı robot da öyledir: içindeki yazılım olmasa, elektrik verilse bile ayakta duramaz, yığılır kalır. Ona ne yapacağını söyleyen şey **yazılımdır**.
 
 Bu hafta iki kavramı ele alıyoruz. Birincisi **yazılımın kendisi**: hangi türleri vardır, açık kaynak ile kapalı kaynak ne anlama gelir. İkincisi ise bilgisayarın bütün parçalarını yöneten temel yazılım: **işletim sistemi**. Hangi işletim sistemini kullandığınız günlük deneyiminizi doğrudan belirler — nitekim bu derste platformdan bağımsız çalışıyoruz ve bu hafta bunun neden mümkün olduğunu göreceksiniz.
 
@@ -66,7 +66,7 @@ Yazılımları ayıran bir başka ölçüt, **kaynak kodunun** erişilebilir olu
 | | Açık kaynak | Kapalı kaynak |
 |:---|:---|:---|
 | Kaynak kodu | Herkese açık | Gizli |
-| Ücret | Genellikle ücretsiz | Lisanslı, ücretli olabilir |
+| Ücret | Genellikle ücretsiz | Genellikle ücretli |
 | Değiştirme | Serbest | Genellikle yasak |
 | Güvenlik denetimi | Herkes inceleyebilir | Yalnızca üretici |
 | Destek | Topluluk veya ücretli destek | Üretici desteği |
@@ -88,17 +88,17 @@ Bu bir tercih sorusudur, üstünlük sorusu değil. Açık kaynak yazılımlar d
 
 **Donanım yönetimi.** İşlemci, bellek, depolama ve çevre birimlerini programlar arasında paylaştırır. Aynı anda açık olan bütün programlar bu kaynakları çok hızlı biçimde sırayla kullanır.
 
-![Windows'ta Aygıt Yöneticisi: işletim sistemi takılı donanımı ve sürücülerini burada listeler](gorseller/ekran-aygit-yoneticisi.png){width=35%}
+![Windows'ta Aygıt Yöneticisi: işletim sistemi takılı donanımı ve aygıt sürücülerini burada listeler](gorseller/ekran-aygit-yoneticisi.png){width=35%}
 
-**Dosya sistemi yönetimi.** Dosyaların nerede ve nasıl saklanacağını düzenler. Dosya ve klasörlerin ağaç biçimindeki yapısını, uzantıları ve disk biçimlendirmeyi **4. haftada** ayrıntılı göreceğiz.
+**Dosya sistemi yönetimi.** Dosyaların nerede ve nasıl saklanacağını düzenler; bunları **disk sürücüleri** üzerinde takip eder. Buradaki **sürücü** depolama birimidir (ör. C: sürücüsü); donanımı işletim sistemine tanıtan **aygıt sürücüsü**nden farklıdır. Dosya ve klasörlerin ağaç biçimindeki yapısını, uzantıları ve disk biçimlendirmeyi **4. haftada** ayrıntılı göreceğiz.
 
-![Windows'ta Bilgisayar penceresi: işletim sistemi dosyaları sürücüler üzerinde düzenler ve doluluk oranlarını gösterir](gorseller/ekran-bilgisayar.png){width=35%}
+![Windows'ta Bilgisayar penceresi: işletim sistemi dosyaları disk sürücüleri üzerinde düzenler ve doluluk oranlarını gösterir](gorseller/ekran-bilgisayar.png){width=35%}
 
 **Süreç yönetimi.** Hangi programın ne zaman çalışacağını, ne kadar kaynak alacağını belirler. **Süreç**, çalışmakta olan bir programdır. Bu yüzden bugün bütün masaüstü ve mobil sistemler **çok görevlidir**: birden çok program açıkken işlemci çok hızlı geçiş yaparak hepsini çalıştırıyormuş izlenimi verir.
 
 ![Windows'ta Görev Yöneticisi: çalışan süreçler ve her birinin işlemci ile bellek kullanımı](gorseller/ekran-gorev-yoneticisi.png){width=35%}
 
-**Kullanıcı arayüzü.** Kullanıcının bilgisayarla konuşmasını sağlar. **Grafik arayüz** pencereler ve simgelerle, **komut satırı** ise yazılı komutlarla çalışır.
+**Kullanıcı arayüzü.** İnsan ile bilgisayar arasındaki katmandır. **Grafik arayüz** pencereler ve simgelerle, **komut satırı** ise yazılı komutlarla çalışır.
 
 ![Pardus'un masaüstü arayüzü: pencereler, simgeler, görev çubuğu ve bildirimler bir grafik arayüz oluşturur](gorseller/ekran-pardus-masaustu.jpg){width=35%}
 
@@ -131,7 +131,7 @@ Sizin için önemi şu: mezun olduktan sonra kamu kurumlarında çalışırsanı
 ::: {.callout-tip}
 ## Bu ders neden platformdan bağımsız?
 
-Farklı işletim sistemlerinde menüler ve düğmeler farklı yerlerde olabilir ama **kavramlar aynıdır**: her sistemde dosya vardır, klasör vardır, kullanıcı hesabı vardır, yazılım kurulur. Biz bu derste kavramları öğreniyoruz; bir sistemi öğrenen diğerine kolayca geçer.
+Farklı işletim sistemlerinde menüler ve düğmeler farklı yerlerde olabilir ama **kavramlar aynıdır**: her sistemde dosya vardır, klasör vardır, kullanıcı hesabı vardır, yazılım kurulur. Biz bu derste kavramları öğreniyoruz; bir sistemi öğrenen diğerine kolayca geçer. Sürücü kursunda öğrendiğiniz arabadan farklı bir arabaya geçtiğinizde, birkaç günlük alışmadan sonra onu da rahatça kullanırsınız; işletim sistemleri için de durum böyledir.
 :::
 
 # İşletim Sistemi Türleri
@@ -139,9 +139,9 @@ Farklı işletim sistemlerinde menüler ve düğmeler farklı yerlerde olabilir 
 Masaüstü sistemler işletim sistemlerinin yalnızca bir türüdür. Cihazın amacı ve kaynakları değiştikçe işletim sistemi de değişir.
 
 - **Masaüstü işletim sistemleri** (Windows, Linux, macOS): Geniş kaynak, çok sayıda program, klavye-fare ile kullanım.
-- **Mobil işletim sistemleri** (Android, iOS): Dokunmatik arayüz, pil ve veri tasarrufu öncelikli, uygulama mağazası merkezli.
+- **Mobil işletim sistemleri** (Android, iOS): Dokunmatik arayüz, pil ve veri tasarrufu öncelikli, uygulama mağazası merkezli. **Android**, Linux tabanlıdır.
 - **Sunucu işletim sistemleri** (çoğunlukla Linux tabanlı): Kesintisiz çalışmaya ve çok kullanıcılı erişime göre tasarlanmış sistemler.
-- **Gömülü işletim sistemleri:** Tek bir amaca özel cihazların içinde çalışır — modem, akıllı televizyon, araç, endüstriyel makine, yazıcı.
+- **Gömülü işletim sistemleri:** Tek bir amaca özel cihazların içinde çalışır — modem, akıllı televizyon, araç, İHA (drone), endüstriyel makine, yazıcı.
 
 Aşağıdaki fotoğraflar bu dört türü somutlaştırır: hepsi farklı görünür, ama hepsinde bir işletim sistemi çalışır.
 
@@ -188,7 +188,7 @@ Bunların dışında kalan, cihazın hiç açılmadığı veya veri kaybı riski
 
 ## Adım 1 — İşletim sisteminizi belirleyin
 
-Kullandığınız cihazın hangi işletim sistemini çalıştırdığını, sürümünü de belirterek yazın.
+Bilgisayarınız veya akıllı telefonunuzun hangi işletim sistemini çalıştırdığını, sürümünü de belirterek yazın.
 
 ## Adım 2 — Bir yazılımı sınıflandırın
 
