@@ -15,8 +15,9 @@ name: PDF paketi
 #
 # DEĞİŞİKLİK GÜNLÜĞÜ: Sürüm notlarına, bir önceki sürümden bu yana gelen commit
 # başlıkları sürüm kimliğiyle başlayan tarihli bir bölüm olarak eklenir. Sürüm
-# sayfasında yalnızca EN YENİ ÜÇ sürüm açık durur; daha eskileri "Önceki sürümler"
-# başlığı altında <details> ile katlanır ki sayfa zamanla uzamasın. Günlüğün
+# sayfasında yalnızca EN YENİ ÜÇ sürüm açık durur; daha eskileri <details> ile,
+# H1 ve büyük harfli "# ÖNCEKİ SÜRÜMLER" başlığı altında katlanır ki sayfa
+# zamanla uzamasın. Günlüğün
 # tamamı (katlama etiketi olmadan, düz metin) zip'in içine DEGISIKLIKLER.md
 # olarak konur. Sürüm numarası kullanılmaz denemez: numara yerine bu kimlik geçer.
 
@@ -83,13 +84,20 @@ jobs:
           fi
           ICERIK=$(printf '%s\n' "$BASLIKLAR" | awk '/^alt:/{next} NF{print "- " $0}')
           ICERIK_DISI=$(printf '%s\n' "$BASLIKLAR" | awk '/^alt:/{sub(/^alt: */,""); print "- " $0}')
-          # Önceki notları düz metne indir: katlama etiketleri (<details>,
-          # <summary>) ve iç işaret satırları çıkarılır. Böylece gövde, her
-          # çalıştırmada baştan kurulabilen tek bir düz günlük gibi işlenir.
+          # Önceki notları düz metne indir: katlama etiketleri ve iç işaret
+          # satırları çıkarılır. <summary> ile </summary> arasındaki başlık
+          # (ör. "# ÖNCEKİ SÜRÜMLER") de atılır; yoksa her çalıştırmada artık
+          # olarak gövdeye sızardı. Böylece gövde, her çalıştırmada baştan
+          # kurulabilen tek bir düz günlük gibi işlenir.
           awk '
             /son-surum-commit/ { next }
             /^[[:space:]]*<\/?details>[[:space:]]*$/ { next }
-            /^[[:space:]]*<summary/ { next }
+            /^[[:space:]]*<summary/ {
+              if ($0 ~ /<\/summary>/) next
+              skip = 1; next
+            }
+            skip && /<\/summary>/ { skip = 0; next }
+            skip { next }
             { print }
           ' <<< "$NOTLAR" > /tmp/duz-eski.md
 
@@ -130,7 +138,11 @@ jobs:
             if [ -s /tmp/eski.md ]; then
               echo
               echo '<details>'
-              echo '<summary>Önceki sürümler</summary>'
+              echo '<summary>'
+              echo
+              echo '# ÖNCEKİ SÜRÜMLER'
+              echo
+              echo '</summary>'
               echo
               cat /tmp/eski.md
               echo

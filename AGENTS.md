@@ -142,7 +142,7 @@ bu yana" bilgisi notların içindeki işaretlerden okunur (en üstteki `## enf10
 Bu yüzden `checkout` adımı `fetch-depth: 0` ile bütün geçmişi indirir.
 
 **Sürüm sayfası katlanır.** Sürüm sayfasında yalnızca **en yeni üç sürüm** açık durur; daha eskiler
-`<details><summary>Önceki sürümler</summary>` kutusunda katlanır. Böylece indirme sayfası sürüm sayısıyla
+`<details>` kutusunda, **H1 ve büyük harfli** bir başlıkla (`# ÖNCEKİ SÜRÜMLER`) katlanır. Böylece indirme sayfası sürüm sayısıyla
 birlikte uzamaz, günlüğün tamamı tek tıkla açılır. İş akışı her çalıştırmada gövdeyi düz metne indirip
 baştan kurduğu için katlama iç içe geçmez; sıra numarası ve commit işareti en üstteki (açık) bölümde
 kaldığından durum okuma bozulmaz. **ZIP içindeki `DEGISIKLIKLER.md` katlanmaz** — dosya olarak okunacağı
