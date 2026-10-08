@@ -13,7 +13,7 @@ format:
 
 Bir bilgisayarda ürettiğiniz her şey — yazdığınız ödev, çektiğiniz fotoğraf, indirdiğiniz belge — bir **dosya** olarak saklanır. Dosyalarınızı düzenli tutmak, bulmak ve kaybetmemek; günlük hayatta en sık ihtiyaç duyacağınız beceridir. Nitekim "ödevimi kaydettim ama bulamıyorum" ya da "flash bellek bozuldu, her şey gitti" cümlelerini çok duymuşsunuzdur.
 
-Bu hafta üç konuyu birlikte ele alıyoruz: **dosyaları yönetmek**, **depolama aygıtlarını tanımak** ve **veriyi güvende tutmak** — yani yedekleme. Son bölümde ise verinin bilgisayarınızın dışında, internet üzerinden nasıl saklandığını (bulut) ve ortak çalışma araçlarını göreceğiz.
+Bu hafta şunları ele alıyoruz: **dosyaları ve uzantılarını yönetmeyi**, **sıkıştırmayı**, **depolama aygıtlarını tanımayı** ve **veriyi güvende tutmayı** — yani yedekleme. Son bölümde ise verinin bilgisayarınızın dışında, internet üzerinden nasıl saklandığını (bulut) ve ortak çalışma araçlarını göreceğiz.
 
 ::: {.callout-note}
 ## Bu haftanın temel fikri
@@ -35,18 +35,9 @@ Dosya kaybolmaz — **yanlış yerde** durur ya da **hiç yedeklenmemiştir**. B
 
 **Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır: kökün altına klasörler, onların altına alt klasörler ve dosyalar yerleşir.
 
-```{=latex}
-\begin{minipage}{\linewidth}
-\begin{verbatim}
-Belgeler/
-|-- Dersler/
-|   |-- enf101-notlar.docx
-|   `-- enf101-sunum.pptx
-`-- Kişisel/
-    `-- ozgecmis.pdf
-\end{verbatim}
-\end{minipage}
-```
+![Masaüstünde dosyalar ve klasörler](gorseller/ekran-dosya-klasor.png){width=75%}
+
+![Windows'ta kök dizinden başlayan dosya ağacı yapısı](gorseller/diagram-dosya-agaci.png){width=28%}
 
 Her dosyanın bir **adı** ve bir **yolu** vardır; ayrıca **genellikle bir de uzantısı** olur.
 
@@ -59,6 +50,8 @@ En sık kullanacağınız dosya işlemleri şunlardır:
 | Yeniden adlandır | Dosyanın adını değiştirir | **Uzantıyı değiştirmeyin** |
 | Sil | Dosyayı geri dönüşüm kutusuna gönderir | Kutu boşaltılmadıkça kurtarılabilir |
 | Geri dönüşüm kutusundan geri al | Yanlışlıkla silinen dosyayı kurtarır | Kutu boşaltıldıysa kurtarılamaz |
+
+![Windows'ta sağ tık menüsü: işlemler dosyaya sağ tıklanarak da yapılabilir](gorseller/ekran-sag-tik-menu.png){width=45%}
 
 ## Dosya adlandırma alışkanlıkları
 
@@ -118,11 +111,15 @@ Neden kullanılır:
 
 Sıkıştırılmış dosyaların türü **arşiv** olarak adlandırılır. En yaygın biçim `.zip`'tir; `.rar` ve `.7z` de karşınıza çıkar. Arşivi açmak için üzerine çift tıklamak genellikle yeterlidir.
 
+![Windows'ta `Odev.txt` dosyası `Odev.zip` arşivine sıkıştırılmış](gorseller/ekran-sikistirma.png){width=45%}
+
 ::: {.callout-tip}
 ## Sıkıştırma boyutu her zaman küçültmez
 
-Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır; bunları `.zip`'lemek neredeyse hiç küçültmez. Sıkıştırmanın asıl kazancı metin tabanlı belgelerde olur.
+Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır; bunları sıkıştırmak neredeyse hiç küçültmez. Sıkıştırmanın asıl kazancı metin tabanlı belgelerde olur.
 :::
+
+![Zaten sıkıştırılmış dosya türleri: ses, video ve görsel](gorseller/ekran-sikistirilmis-dosyalar.png){width=50%}
 
 # Depolama Aygıtları
 
@@ -164,6 +161,8 @@ Bir depolama aygıtı kullanılmadan önce iki aşamadan geçer:
 
 **Sürücü**, işletim sisteminin tek bir depolama birimi olarak gösterdiği mantıksal yapıdır (örneğin Windows'ta C: sürücüsü).
 
+![Windows'ta sürücüler: Sistem Diski (C:) ve Veri Diski (D:)](gorseller/ekran-suruculer.png){width=70%}
+
 **Biçimlendirme (formatlama)**, bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini boşaltır.
 
 | Dosya sistemi | Nerede kullanılır | Not |
@@ -189,6 +188,8 @@ Bu ayarları kurcalamamanızı tavsiye ederiz.
 
 **Bulut depolama**, dosyalarınızı kendi bilgisayarınız yerine internet üzerinden erişilen uzak sunucularda saklamaktır. Dosyalar sizin diskinizde değil, hizmet sağlayıcının sunucularındadır; siz internet üzerinden erişirsiniz.
 
+![Bulut depolamada dosya akışı: cihazınızdan İnternet üzerinden sağlayıcının sunucularına](gorseller/diagram-bulut.png){width=85%}
+
 Sağladığı olanaklar:
 
 - **Her cihazdan erişim:** Telefon, tablet, okul bilgisayarı — aynı dosyalara erişebilirsiniz.
@@ -205,6 +206,10 @@ Sınırlarını da bilmek gerekir:
 | Şifreleme ve güvenlik | Veri sağlayıcının sunucusunda durur |
 | Paylaşım kolaylığı | Yanlış paylaşım veriyi herkese açar |
 
+Karşınıza çıkacak başlıca bulut depolama hizmetleri şunlardır:
+
+![İnternette popüler bulut depolama servisleri](gorseller/ekran-bulut-servisleri.png){width=85%}
+
 ::: {.callout-warning}
 ## Bulut, yedeğin yerini tamamen almaz
 
@@ -216,6 +221,8 @@ Bulut hizmetleri güvenilirdir ama hesabınıza erişimi kaybederseniz (parola, 
 Bulutun en güçlü yanlarından biri, **aynı belge üzerinde birden çok kişinin aynı anda çalışabilmesidir**. Bu, grup ödevlerinde ve kurumsal işlerde büyük kolaylık sağlar.
 
 Bunun en görünür örneği, tarayıcıda çalışan ücretsiz ofis araçlarıdır (örneğin **Google Docs**): aynı belgeyi birden çok kişi aynı anda düzenleyebilir. Belgenin kendi bilgisayarınızda değil, hizmeti sunan şirketin sunucularında tutulduğunu unutmayın (7. hafta).
+
+![Google Docs'ta aynı belge üzerinde çalışan iki kullanıcı](gorseller/ekran-ortak-duzenleme.png){width=75%}
 
 Bu araçların temel özellikleri:
 
@@ -229,11 +236,15 @@ Bu araçların temel özellikleri:
 ## Paylaşım izni verirken iki saniye durun
 
 Bir dosyayı "bağlantıya sahip herkes düzenleyebilir" olarak paylaşmak, çoğu zaman istemediğiniz sonuçlar doğurur. Varsayılan olarak **görüntüleme** izni vermek, yalnızca gerektiğinde düzenleme açmak daha güvenlidir.
+
+![Google Docs'ta paylaşım izinleri: Görüntüleyen, Yorumlayan, Düzenleyen](gorseller/ekran-paylasim-izni.png){width=55%}
 :::
 
 # Yedekleme
 
 **Yedekleme**, verinizin bir kopyasını başka bir yerde bulundurmaktır. Bu, bu haftanın en önemli başlığıdır — çünkü diğer bütün konular veriyi **kullanmakla** ilgiliyken, yedekleme veriyi **korumakla** ilgilidir.
+
+![Windows'ta yedekleme seçenekleri](gorseller/ekran-yedekleme.png){width=42%}
 
 ## 3-2-1 kuralı
 
@@ -312,7 +323,7 @@ Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir al�
 - **Bulut depolama hizmetlerinin resmî yardım sayfaları** — paylaşım izinleri ve sürüm geçmişi.
 - **USOM ve BTK farkındalık yayınları** — zararlı dosya ve güvenli indirme konularında. (usom.gov.tr, btk.gov.tr)
 
-**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır; ekran görüntüleri (biçimlendirme penceresi ve Dosya adı uzantıları) dersin yazarı tarafından Windows'ta alınmıştır. Aşağıdaki üç fotoğrafın künyesi:
+**Görsel kaynakları.** Fotoğraflar Wikimedia Commons'tan alınmıştır; ekran görüntüleri Windows, Google Docs ve popüler bulut hizmetlerinin pencerelerindendir; şemalar (dosya ağacı, bulut akışı, 3-2-1 kuralı) dersin yazarı tarafından üretilmiştir. Aşağıdaki üç fotoğrafın künyesi:
 
 - USB bellek — *USB flash drive, 1TB*, EU+Mexico, CC0.
 - SD kart — *SDHC memory card - 8GB*, Jiří Doubravský, kamu malı.

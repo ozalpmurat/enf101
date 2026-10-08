@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 02.10.2026
+Son güncelleme: 08.10.2026
 
 ---
 
@@ -317,6 +317,7 @@ sağa, `1.3cm` sola). Yükseklik/ölçü için `height` değerini değiştirin; 
   Metin alanı büyüdüğü için belgeler 0–2 sayfa kısalmıştır (hedefler §2).
 
 **Tuzaklar (ölçülerek bulundu, tekrar denenmesin):**
+
 1. **Başlık sayfası "plain" stildedir.** `\maketitle` LaTeX'te `\thispagestyle{plain}` çağırır;
    bu yüzden 1. sayfada üst/alt bilgi görünmez, yalnızca sayfa numarası olur. Bilgi 2. sayfadan başlar.
 2. **`\maketitle`'a `\pretocmd` ile logo eklenmez.** KOMA-script (`scrartcl`) başlık sayfasını
@@ -340,6 +341,11 @@ sağa, `1.3cm` sola). Yükseklik/ölçü için `height` değerini değiştirin; 
 Her hafta 10 soru: **8 çoktan seçmeli + 2 doğru–yanlış**. Çoktan seçmeli soruların her biri **beş şıklıdır**
 (A–E) ve doğru cevap şıklar arasında dağılır — tek bir harfte birikmez. Cevap anahtarı `{{< pagebreak >}}` ile ayrı
 sayfaya alınır ve her soru için kısa gerekçe içerir.
+
+**Doğru cevap dağılımı dengeli olmalıdır.** 8 çoktan seçmeli sorunun doğru cevapları A–E harflerine
+**olabildiğince eşit** dağılır; ideal dağılım her harften **en az 1, en fazla 2** doğru yanıttır
+(8 ÷ 5 ≈ 1,6). Bir harf hiç kullanılmazsa veya bir harf 4+ kez tekrarlanırsa dağılım bozuk sayılır ve
+yeniden dengelenir. §11'deki 10. kontrol bunu otomatik sınar.
 
 **Soru ile şıklar arasında paragraf boşluğu olmaz.** Soru metni, A) B) C) D) şıkları ve doğru–yanlış
 sorularındaki `(   ) Doğru        (   ) Yanlış` satırı tek bir blok hâlinde **bitişik** yazılır;
@@ -542,7 +548,40 @@ for f in hafta-*/[0-9][0-9]-ders-notu.pdf hafta-*/[0-9][0-9]-alistirma.pdf; do
   echo "$t" | grep -q "BŞEÜ" && echo "$t" | grep -q "ENF101" || echo "HATA: üst bilgi yok -> $f"
   echo "$t" | grep -qE "Güncelleme: [0-9]{2}\.[0-9]{2}\.[0-9]{4}" || echo "HATA: tarih yok -> $f"
 done
+
+# 10. Doğru cevap dağılımı dengeli mi? — her alıştırmada 8 çoktan seçmeli sorusunun
+#    doğru cevapları A–E harflerine eşit dağılmalı (her harften en az 1, en fazla 2; bkz. §7)
+#    (cevap anahtarı tablosunda satır "| 1 | B | gerekçe |" biçimindedir; harf $4 alanındadır)
+for f in hafta-*/[0-9][0-9]-alistirma.qmd; do
+  awk '/^\| [0-9]+ \| [A-E] \|/{print $4}' "$f" | sort | uniq -c | \
+    awk 'BEGIN{ok=1} {if($1>2)ok=0} END{if(!ok) print FILENAME": denge bozuk"}'
+done
+#    Ayrıca hiç kullanılmayan harf olup olmadığını da kontrol edin (uniq -c çıktısında A–E'nin hepsi geçmeli).
+
+# 11. Alıştırma içeriği ders notuyla tutarlı mı? — her çoktan seçmeli sorunun doğru cevabı ve
+#    gerekçesi, ders notunda/sunumda öğretilmiş bir bilgiye dayanmalı (uydurulmamalı, çelişmemeli).
+#    Ağırlıklı olarak elle denetlenir: soruları ders notu bölümüyle karşılaştır; doğru cevap notta
+#    açıkça geçiyor mu, çeldiriciler makul mü, sayısal bilgiler (kapasite, kural) notla aynı mı bak.
+#    (Ör. "güvenle çıkar" sorusunun cevabı, nottaki "güvenli çıkarma" bölümüyle örtüşmeli.)
 ```
+
+Bu otomatik kontrollere ek olarak, "yayına hazırlık" denetiminde **içerik düzeyinde dört kontrol**
+daha yapılır (mekanik kontrollerin yakalamadığı kalite sorunları bunlarda çıkar):
+
+- **Dilbilgisi ve yazım.** Yazım hataları, noktalama, terimlerin tutarlı yazımı; başlık büyük–küçük
+  düzeninin her belgede kendi içinde tutarlı olması (ders notunda `#` büyük / `##` cümle biçimi,
+  sunuda slayt başlıkları büyük — bu ikisi bilinçli olarak farklıdır, sorun değildir).
+- **Akış tutarlılığı.** Bölüm geçişleri mantıklı mı; giriş/özet gerçek kapsamı yansıtıyor mu;
+  tekrar eden ya da çelişen cümle var mı; başlık içeriğiyle uyumlu mu.
+- **Referans tutarlılığı.** Haftalar arası çapraz atıflar ("7. hafta", "daha önce", "geçen hafta")
+  gerçek hedefle örtüşüyor mu; ileri–geri atıflar karşılıklı mı; izlence/kazanım (K1–K9) eşleşmesi doğru mu.
+- **Sunu ↔ ders notu ↔ alıştırma içerik tutarlılığı.** Aynı konunun üç belgede çelişmemesi;
+  sayısal bilgilerin (kapasite, oran, kural) birebir aynı olması; bir belgede yapılan metin düzeltmesinin
+  diğerlerine de yansımış olması; görsel künyelerinin belgeler arası tutarlılığı.
+
+Bu içerik denetimi tek komutla yapılamaz; dosyalar (gerektiğinde atıf yapılan diğer hafta da) okunup
+karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzeltme kararı kullanıcıya bırakılır.
+
 
 ---
 
@@ -550,6 +589,11 @@ done
 
 **Açık — karar bekleyen iş yok (30.09.2026).** Sunum teması yaygınlaştırması tamamlandı; ders
 notları **ENF lacivertinde kalıyor** (kullanıcı kararı, 30.09.2026).
+
+**Açık — doğru cevap dağılımı (08.10.2026).** 14 haftanın alıştırmalarındaki çoktan seçmeli doğru
+cevapların harflere dağılımı henüz dengeli değil (bazı haftalarda tek harf baskın, bazı harfler hiç
+kullanılmıyor; ör. 4. haftada B×2, C×4, E×2 — A ve D yok). §7'ye dengeli dağılım kuralı, §11'e 10.
+kontrol eklendi (08.10.2026); kalan haftalar sırası geldikçe denetlenip dengelenecek.
 
 Kapatılan başlıklar ve kararları:
 
@@ -563,14 +607,17 @@ Kapatılan başlıklar ve kararları:
   `lightbg`; §8) geri eklendi — şablon yenilenirken düşmüşlerdi ve TikZ şeması içeren örnek sunumu
   "Undefined color `enfnavy`" hatasıyla derlenmez hâle getirmişlerdi.
 
-
 - **Sunu kalabalığı:** 4. hafta 38, 7. hafta 39 slayt. Kullanıcı bu yoğunluğu kabul etti (hedef ~30,
   kabul edilen üst sınır 38; 39 onaylı). Yeni bir konu eklenirse başka bir yerden yer açmak gerekir.
+
 - **Uyarı kutuları:** 4. ve 5. haftada ikişer olan `callout-warning` kutuları 14 sununun tamamına
   yaygınlaştırıldı; artık her sunuda en az bir kutu var.
+
 - **Çıktı eşlemesi (K1–K9):** izlence ile haftalık belgeler arasındaki eşleme gözden geçirildi.
+  
   4. haftaya K4 eklendi (bulut ve işbirliği araçları), 3. haftadaki K2 bağlantısı kaldırıldı
      (donanım çıktısı, yazılım haftasına bağlıydı), K3'e işletim sistemi aileleri eklendi.
+
 - **Haftalık belgelere kurumsal üst/alt bilgi ve giriş logosu (02.10.2026):** 14 ders notu + 14
   alıştırma `tema/notlar-hafta.tex` katmanını kullanır (üst: BŞEÜ/ENF101, alt: güncelleme tarihi +
   sayfa, girişte 3 cm logo). Kenar boşlukları alt 2 cm / sağ 1 cm daraltıldı. Ayrıntı ve dört tuzağı:

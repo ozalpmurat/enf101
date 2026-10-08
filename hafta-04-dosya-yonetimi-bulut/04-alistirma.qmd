@@ -19,8 +19,8 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Bir dosyayı başka bir klasöre taşımak için hangi işlem kullanılır?\
-A) Kopyala / Yapıştır\
-B) Kes / Yapıştır\
+A) Kes / Yapıştır\
+B) Kopyala / Yapıştır\
 C) Yeniden adlandır\
 D) Sıkıştır\
 E) Silip yeniden oluşturmak
@@ -33,46 +33,46 @@ D) `.pdf`\
 E) `.odt`
 
 **3.** `rapor.docx` dosyasının adını `rapor.jpg` olarak değiştirirseniz ne olur?\
-A) Dosya resme dönüşür\
-B) Dosya bozulur ve açılmaz hâle gelir\
-C) Dosyanın türü değişmez, yalnızca yanlış programla açılmaya çalışılır\
+A) Dosyanın türü değişmez, yalnızca yanlış programla açılmaya çalışılır\
+B) Dosya resme dönüşür\
+C) Dosya bozulur ve açılmaz hâle gelir\
 D) Dosya sıkıştırılmış olur\
 E) Dosyanın boyutu küçülür
 
 **4.** Sıkıştırma hangi dosya türlerinde belirgin boyut kazancı sağlar?\
 A) Video dosyaları\
-B) Metin tabanlı belgeler\
-C) Yüksek çözünürlüklü fotoğraflar\
-D) Müzik dosyaları\
+B) Yüksek çözünürlüklü fotoğraflar\
+C) Müzik dosyaları\
+D) Metin tabanlı belgeler\
 E) Zaten sıkıştırılmış bir .zip arşivi
 
 **5.** Bir USB belleği çıkarmadan önce ne yapılmalıdır?\
 A) Bilgisayarı kapatmak\
 B) Doğrudan kabloyu çekmek\
-C) İşletim sisteminin "güvenle çıkar" seçeneğini kullanmak\
-D) Dosyaları sıkıştırmak\
-E) Dosyaları başka bir diske kopyalamak
+C) Dosyaları sıkıştırmak\
+D) Dosyaları başka bir diske kopyalamak\
+E) İşletim sisteminin "güvenle çıkar" seçeneğini kullanmak
 
 **6.** Bir bölümdeki tüm veriyi silen işlem hangisidir?\
 A) Bölümleme\
-B) Geri dönüşüm kutusunu boşaltmak\
-C) Sıkıştırma\
-D) Kopyalama\
-E) Biçimlendirme
+B) Biçimlendirme\
+C) Geri dönüşüm kutusunu boşaltmak\
+D) Sıkıştırma\
+E) Kopyalama
 
 **7.** 3-2-1 yedekleme kuralına göre kaç kopya bulundurulmalıdır?\
 A) 1\
-B) 2\
-C) 3\
+B) 3\
+C) 2\
 D) 5\
 E) 4
 
 **8.** Aşağıdakilerden hangisi bulut depolamanın bir sınırıdır?\
 A) Her cihazdan erişilebilmesi\
 B) Paylaşım kolaylığı sağlaması\
-C) Yalnızca tek cihazdan erişilebilmesi\
+C) İnternet bağlantısı gerektirmesi\
 D) Sürüm geçmişi tutması\
-E) İnternet bağlantısı gerektirmesi
+E) Yalnızca tek cihazdan erişilebilmesi
 
 **9.** Dosyayı aynı bilgisayarın başka bir klasörüne kopyalamak yeterli bir yedeklemedir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
@@ -86,14 +86,14 @@ E) İnternet bağlantısı gerektirmesi
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | "Kes / Yapıştır" dosyayı taşır; aslı eski yerinden kalkar. "Kopyala / Yapıştır" ise iki nüsha bırakır. |
+| 1 | A | "Kes / Yapıştır" dosyayı taşır; aslı eski yerinden kalkar. "Kopyala / Yapıştır" ise iki nüsha bırakır. |
 | 2 | C | .xlsx elektronik tablo dosyasının uzantısıdır. .docx ve .odt belge, .pptx sunum, .pdf ise taşınabilir belgedir. |
-| 3 | C | Uzantıyı değiştirmek dosyanın içeriğini ve türünü değiştirmez; yalnızca işletim sisteminin onu yanlış programla açmaya çalışmasına yol açar. |
-| 4 | B | Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır. En belirgin kazanç metin tabanlı belgelerde olur. |
-| 5 | C | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |
-| 6 | E | Doğru işlem E seçeneğindedir: biçimlendirme bölümün içeriğini boşaltır. Bölümleme diski parçalara ayırır, tek başına veri silmez. |
-| 7 | C | Kural: 3 kopya, 2 farklı ortam, 1 kopya bilgisayarın dışında. |
-| 8 | E | Doğru ifade E seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için internet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
+| 3 | A | Uzantıyı değiştirmek dosyanın içeriğini ve türünü değiştirmez; yalnızca işletim sisteminin onu yanlış programla açmaya çalışmasına yol açar. |
+| 4 | D | Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır. En belirgin kazanç metin tabanlı belgelerde olur. |
+| 5 | E | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |
+| 6 | B | Doğru işlem B seçeneğindedir: biçimlendirme bölümün içeriğini boşaltır. Bölümleme diski parçalara ayırır, tek başına veri silmez. |
+| 7 | B | Kural: 3 kopya, 2 farklı ortam, 1 kopya bilgisayarın dışında. |
+| 8 | C | Doğru ifade C seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için internet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
 | 9 | Yanlış | Aynı bilgisayarın başka klasöründeki kopya yedek sayılmaz; cihaz bozulduğunda iki kopya da kaybedilir. Yedek başka bir ortamda olmalıdır. |
 | 10 | Doğru | Çift uzantılı dosyalarda sonundaki uzantı (`.exe`) gerçek olandır; Windows uzantıları gizlediği için dosya `.pdf` gibi görünebilir. Tanımadığınız kaynaklardan gelen `.exe` dosyaları açılmamalıdır. |
 

@@ -12,8 +12,8 @@ format: beamer
 - Dosya ve klasör işlemlerini güvenli biçimde yürütür.
 - Dosya uzantılarını tanır ve türü uzantıdan anlar.
 - Sıkıştırmanın ne işe yaradığını açıklar.
-- Çıkarılabilir depolamayı güvenle kullanır.
-- Disk bölümleme ve biçimlendirmenin riskini açıklar.
+- Çıkarılabilir depolama aygıtlarını tanır ve güvenle kullanır.
+- Disk bölümleme ve biçimlendirmenin ne olduğunu ve veri kaybı riskini açıklar.
 - Bulut depolamanın olanak ve sınırlarını değerlendirir.
 - Basit bir yedekleme planı kurar.
 
@@ -24,25 +24,55 @@ format: beamer
 - **Dosya:** Bilgisayarda saklanan bilgi birimi
 - **Klasör:** Dosyaları gruplamak için kullanılan kap
 
-Hepsi tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır:
-
-```
-Belgeler/
-|-- Dersler/
-|   |-- enf101-notlar.docx
-|   `-- enf101-sunum.pptx
-`-- Kişisel/
-    `-- ozgecmis.pdf
+```{=latex}
+\begin{center}
+\includegraphics[width=0.80\linewidth,height=0.68\textheight,keepaspectratio]{gorseller/ekran-dosya-klasor.png}
+\end{center}
 ```
 
-## Temel İşlemler
+## Kök Dizinden Başlayan Ağaç Yapısı
 
+::: {.columns}
+::: {.column width="45%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{gorseller/diagram-dosya-agaci.png}
+\end{center}
+```
+:::
+
+::: {.column width="55%"}
+- **Dosya:** Bilgisayarda saklanan bilgi birimi
+- **Klasör:** Dosyaları gruplamak için kullanılan kap
+
+Hepsi tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır.
+:::
+:::
+
+## Dosya ve Klasörlerde Temel İşlemler
+
+::: {.columns}
+::: {.column width="55%"}
 | İşlem | Ne yapar |
 |:---|:---|
-| Kopyala / Yapıştır | Kopya oluşturur, aslı kalır |
+| Kopyala / Yapıştır | Kopya oluşturur |
 | Kes / Yapıştır | Taşır, aslı kalkar |
 | Yeniden adlandır | Adını değiştirir |
-| Sil | Geri dönüşüm kutusuna gönderir |
+| Sil | Geri dönüşüme gönderir |
+:::
+
+::: {.column width="45%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-sag-tik-menu.png}
+
+\emph{Windows'ta sağ tık menüsü}
+\end{center}
+```
+:::
+:::
 
 ## Dosya Adlandırma Alışkanlıkları
 
@@ -61,7 +91,7 @@ Bu dosyalar çoğalınca hangisinin güncel olduğu anlaşılmaz.
 
 # Dosya Uzantıları
 
-## Uzantı Türü Belirtir
+## Dosya Uzantısı, Dosya Türünü Belirtir
 
 Dosya adının sonundaki noktadan sonraki kısımdır. İşletim sistemi ona bakarak dosyayı hangi programla açacağını anlar.
 
@@ -100,17 +130,47 @@ Tanımadığınız kaynaklardan gelen `.exe` dosyalarını açmayın.
 
 ## Ne İşe Yarar?
 
+::: {.columns}
+::: {.column width="52%"}
 - **Boyut küçültme:** Özellikle metin belgelerde belirgin
 - **Toplama:** Onlarca dosyayı tek arşivde birleştirme
 - **Düzen:** İlgili dosyaları bir arada tutma
 
 En yaygın biçim `.zip`; ayrıca `.rar` ve `.7z` karşınıza çıkar.
+:::
+
+::: {.column width="48%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-sikistirma.png}
+
+\emph{Windows'ta \texttt{Odev.txt} dosyası \texttt{Odev.zip} arşivine sıkıştırılmış}
+\end{center}
+```
+:::
+:::
 
 ## Her Zaman Küçültmez
 
+::: {.columns}
+::: {.column width="52%"}
 Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır.
 
-Bunları `.zip`'lemek neredeyse **hiç küçültmez**. Kazanç metin tabanlı belgelerde olur.
+Bunları sıkıştırmak neredeyse **hiç küçültmez**. Kazanç metin tabanlı belgelerde olur.
+:::
+
+::: {.column width="48%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-sikistirilmis-dosyalar.png}
+
+\emph{Zaten sıkıştırılmış dosya türleri: ses, video ve görsel}
+\end{center}
+```
+:::
+:::
 
 # Depolama Aygıtları
 
@@ -140,6 +200,8 @@ Yazma işlemi sürerken kabloyu çekmeyin; veri bozulabilir.
 
 ## Disk Bölümleme
 
+::: {.columns}
+::: {.column width="50%"}
 Bir diskin mantıksal olarak ayrı parçalara ayrılmasıdır.
 
 Tek bir fiziksel disk, bilgisayarda **birden çok sürücü** gibi görünür.
@@ -147,6 +209,19 @@ Tek bir fiziksel disk, bilgisayarda **birden çok sürücü** gibi görünür.
 **Sürücü:** tek bir depolama birimi (ör. Windows'ta C:).
 
 Örnek: sistem için bir bölüm, kişisel dosyalar için bir bölüm.
+:::
+
+::: {.column width="50%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-suruculer.png}
+
+\emph{Windows'ta sürücüler: Sistem Diski (C:) ve Veri Diski (D:)}
+\end{center}
+```
+:::
+:::
 
 ## Biçimlendirme
 
@@ -157,7 +232,7 @@ Bölümün hangi **dosya sistemiyle** kullanılacağını belirler ve içini bo�
 | NTFS | Windows |
 | ext4 | Linux |
 | exFAT | Taşınabilir bellekler |
-| FAT32 | Eski aygıtlar |
+| FAT32 | Eski aygıtlar — tek dosya en çok 4 GB |
 
 ```{=latex}
 \begin{center}
@@ -181,6 +256,12 @@ Bu ayarları kurcalamamanızı tavsiye ederiz.
 
 Dosyalarınızı kendi bilgisayarınız yerine internet üzerinden erişilen **uzak sunucularda** saklamaktır.
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.9\linewidth,height=\textheight,keepaspectratio]{gorseller/diagram-bulut.png}
+\end{center}
+```
+
 ## Olanakları
 
 - **Her cihazdan erişim:** Telefon, tablet, okul bilgisayarı
@@ -196,6 +277,14 @@ Dosyalarınızı kendi bilgisayarınız yerine internet üzerinden erişilen **u
 | Ücretsiz kullanım | Alan sınırlı |
 | Şifreleme | Veri sağlayıcıda durur |
 | Paylaşım kolaylığı | Yanlış paylaşım veriyi açar |
+
+## Popüler Bulut Depolama Servisleri
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.92\linewidth,height=0.82\textheight,keepaspectratio]{gorseller/ekran-bulut-servisleri.png}
+\end{center}
+```
 
 ## Bulut Yedeğin Yerini Almaz
 
@@ -217,17 +306,57 @@ Hesabınıza erişimi kaybederseniz dosyalarınıza da erişemezsiniz.
 - **Paylaşım izinleri:** Görüntüleme / yorumlama / düzenleme
 - **Bağlantıyla paylaşım:** İndirmeye gerek kalmaz
 
+## Ortak Düzenleme
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.78\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-ortak-duzenleme.png}
+
+\emph{Google Docs'ta aynı belge üzerinde çalışan iki kullanıcı}
+\end{center}
+```
+
 ## Paylaşım İzni Verirken İki Saniye Durun
 
+::: {.columns}
+::: {.column width="52%"}
 "Bağlantıya sahip herkes düzenleyebilir" demek çoğu zaman istemediğiniz sonuçlar doğurur.
 
 **Varsayılan olarak görüntüleme izni verin**; düzenlemeyi yalnızca gerekince açın.
+:::
+
+::: {.column width="48%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.98\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-paylasim-izni.png}
+
+\emph{Google Docs'ta paylaşım izinleri: Görüntüleyen, Yorumlayan, Düzenleyen}
+\end{center}
+```
+:::
+:::
 
 # Yedekleme
 
 ## Haftanın En Önemli Başlığı
 
+::: {.columns}
+::: {.column width="62%"}
 Diğer konular veriyi **kullanmakla**, yedekleme veriyi **korumakla** ilgilidir.
+:::
+
+::: {.column width="38%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-yedekleme.png}
+
+\emph{Windows'ta yedekleme seçenekleri}
+\end{center}
+```
+:::
+:::
 
 ## 3-2-1 Kuralı
 
