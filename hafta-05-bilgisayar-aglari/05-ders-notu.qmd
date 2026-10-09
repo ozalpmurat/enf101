@@ -39,11 +39,9 @@ Kablosuz bağlantı, kablosuz olduğu için **havada** gerçekleşir — yani si
 - **İletişim:** Mesajlaşma, e-posta, görüntülü görüşme.
 - **Erişim:** Uzaktaki bilgilere ve hizmetlere ulaşım.
 
-## Ağ türleri
+## Kapsama alanına göre ağ türleri
 
 Ağlar en çok **kapsama alanına** göre sınıflandırılır.
-
-![Ağ türleri](gorseller/diagram-ag-turleri.png){width=72%}
 
 | Tür | Kapsama alanı | Teknoloji | Örnek |
 |:---|:---|:---|:---|
@@ -58,15 +56,15 @@ Ağlar en çok **kapsama alanına** göre sınıflandırılır.
 Bir ev veya kampüs ağını oluşturan temel cihazlar şunlardır:
 
 - **Modem:** Servis sağlayıcıdan gelen sinyali bilgisayarın anlayacağı hâle çevirir.
-- **Yönlendirici (router):** Ağdaki cihazların birbirine ve İnternet'e bağlanmasını yönetir; genellikle modemle aynı kutuda bulunur.
+- **Yönlendirici (router):** Ağdaki cihazlar arasındaki veri trafiğini yönlendirir; cihazların birbirine ve İnternet'e ulaşmasını sağlar. Genellikle modemle aynı kutuda bulunur.
 - **Erişim noktası (access point):** Kablosuz yayını sağlar; kampüslerde onlarca erişim noktası bulunur.
 - **Ağ kablosu (Ethernet):** Kablolu ve en kararlı bağlantıyı sağlar.
 - **Ağ kartı:** Her cihazın içinde, ağa bağlanmayı sağlayan donanım.
 
-![Bir ev veya kampüs ağı](gorseller/diagram-ag-sema.png){width=70%}
+![Bir ev ağının bileşenleri](gorseller/diagram-ev-agi.jpg){width=72%}
 
 ::: {#fig-ag-bilesenleri layout-ncol=2}
-![Kablosuz yönlendirici (modemle aynı kutuda)](gorseller/foto-yonlendirici.jpg){width=90%}
+![Kablosuz yönlendirici (arka görünüm)](gorseller/foto-yonlendirici.jpg){width=90%}
 
 ![Ethernet kablosu (RJ45 uçlu)](gorseller/foto-ethernet-kablo.jpg){width=55%}
 
@@ -95,18 +93,20 @@ Ağı oluşturan bileşenler: yönlendirici, kablolu bağlantı, ağ kartı ve e
 
 Kablosuz ağda veri havadan gider. Şifreleme yoksa, aynı ortamdaki biri bu veriyi yakalayabilir.
 
-**WPA2** ve **WPA3**, güncel şifreleme standartlarıdır. Bir ağın yalnızca eski WEP şifrelemesini desteklediğini görürseniz, o ağa hassas işlemler için bağlanmayın.
+**WPA2** ve **WPA3**, güncel şifreleme standartlarıdır. Eski **WEP** şifrelemesini kullanan ağlarda hassas işlem yapmayın.
 :::
 
 **Açık (şifresiz) ağlar.** Havaalanı, kafe veya otel ağları çoğu zaman şifresizdir. Bu ağlarda:
 
 - Bankacılık, e-Devlet ve alışveriş işlemi **yapmayın**.
 - Mümkünse kendi mobil verinizi kullanın.
-- Zorunluysa, yalnızca şifreli siteleri (adres çubuğunda kilit simgesi olan `https`) tercih edin.
+- Zorunluysa, yalnızca şifreli siteleri (adres çubuğunda güvenlik ikonu olan `https`) tercih edin.
 
-**Sahte erişim noktası (evil twin).** Saldırgan, gerçek bir ağın adını taşıyan sahte bir ağ kurar — örneğin kampüste **eduroam** adıyla yayın yapan bir ağ — örneğin "KampusWiFi" yerine "KampusWiFi-Ucretsiz". Siz eduroam'a bağlandığınızı sanırken aslında saldırganın ağındasınızdır ve bütün trafiğiniz izlenebilir. Bu yüzden **ağ adının tam olarak doğru yazıldığından** emin olun ve şüpheli ağlara bağlanmayın.
+**Sahte erişim noktası (evil twin).** Saldırgan, gerçek bir ağın adını taşıyan sahte bir ağ kurar — örneğin kampüste **eduroam** adıyla yayın yapan bir ağ ya da "KampüsWiFi" yerine "KampüsWiFi-Ücretsiz" gibi bir ad. Sahte ağlara bağlanan kullanıcının bütün trafiği izlenebilir; siz eduroam'a bağlandığınızı sanırken aslında saldırganın ağındasınızdır. Bu yüzden **ağ adının tam olarak doğru yazıldığından** emin olun ve şüpheli ağlara bağlanmayın. eduroam gibi **kurumsal** ağlarda parola ile birlikte **kullanıcı adı** da girilmesi gerekir; yalnızca parola isteyen bir "eduroam" ağı şüphelidir.
 
 **Ortak ağda paylaşım ayarları.** İşletim sistemleri, yeni bir ağa bağlandığınızda "bu ağda dosya paylaşımı açılsın mı?" diye sorar. Halka açık ağlarda bu soruya **hayır** deyin.
+
+![Windows'un yeni ağa bağlanınca sorduğu paylaşım sorusu](gorseller/ekran-ag-paylasim-sorusu.png){width=52%}
 
 ## WiFi kullanımında pratik noktalar
 
@@ -125,6 +125,8 @@ Bağlanmak için ağ listesinden **eduroam**'ı seçin, kullanıcı adı alanın
 
 Parola alanına öğrenci hesabınızın parolasını girin. İlk bağlantıda sertifikayla ilgili bir uyarı görebilirsiniz; kesin adımlar kurumdan kuruma değiştiği için üniversitenizin bilgi işlem biriminin yönergesine bakın.
 
+Ev ağlarında olduğu gibi herkesin bildiği **tek bir şifre** yoktur: eduroam bir **kurumsal (Enterprise)** ağdır ve herkes **kendi hesabıyla** doğrulanır (WPA2/WPA3-Enterprise). Bu sayede kurum, ağa kimin bağlandığını görebilir.
+
 # Bluetooth: Kullanım ve Güvenlik
 
 **Bluetooth**, kısa mesafeli (genellikle 10 metreye kadar) kablosuz bağlantı teknolojisidir. İki cihazın doğrudan konuşmasını sağlar — bir ağa bağlanmak gerekmez.
@@ -141,6 +143,8 @@ Parola alanına öğrenci hesabınızın parolasını girin. İlk bağlantıda s
 
 Bluetooth bağlantısında iki cihaz **eşleştirilir**. Eşleştirme sırasında genellikle iki cihazda aynı kodu görmeniz istenir; bu, doğru cihaza bağlandığınızı doğrulamanın yoludur.
 
+![Telefonda Bluetooth eşleştirme isteği](gorseller/ekran-bluetooth-eslestirme.png){width=32%}
+
 ::: {.callout-warning}
 ## Eşleştirme isteklerine dikkat
 
@@ -155,13 +159,15 @@ Diğer dikkat noktaları:
 - **Tanımadığınız cihazlarla eşleşmeyin:** Eşleştirme, karşı tarafa cihazınıza erişim yetkisi verir.
 - **Kamuya açık alanda dikkat:** Kalabalık bir ortamda eşleştirme yaparken kodun iki cihazda da göründüğünü doğrulayın.
 
+![Bluetooth görünürlük ayarı: "Her Zaman Herkese Görünür Ol" seçeneği kapalı](gorseller/ekran-bluetooth-gorunurluk.png){width=30%}
+
 # IP ve DNS
 
 İnternet'te her cihazın bir **adresi** vardır. Buna **IP adresi** denir. IP adresi, cihazın ağ üzerindeki konumunu belirtir — tıpkı bir ev adresi gibi.
 
 **DNS (Alan Adı Sistemi)** ise bu adresleri insanların hatırlayabileceği **alan adlarına** çevirir. Bilgisayarlar sayılarla çalışır; insanlar ise isimlerle.
 
-![Alan adı nasıl IP'ye çevrilir](gorseller/diagram-dns.png){width=76%}
+![Web sitesine erişim: alan adı DNS ile IP adresine çevrilir](gorseller/diagram-dns.jpg){width=82%}
 
 Örneğin tarayıcıya bir adres yazdığınızda:
 
@@ -169,7 +175,7 @@ Diğer dikkat noktaları:
 2. DNS sunucusu karşılık gelen sayısal adresi bildirir.
 3. Bilgisayarınız o adrese bağlanıp sayfayı ister.
 
-Bu yüzden DNS, İnternet'in **telefon rehberi** gibi düşünülebilir. Ayrıca alan adları; son eklerine göre tür belirtir — `.edu.tr` bir üniversiteyi, `.gov.tr` bir kamu kurumunu, `.com` ticari bir siteyi gösterir.
+Bu yüzden DNS, İnternet'in **telefon rehberi** gibi düşünülebilir. Ayrıca alan adları; son eklerine göre tür belirtir — `.edu` bir üniversiteyi, `.gov` bir kamu kurumunu, `.com` ticari bir siteyi, `.org` bir kuruluşu gösterir.
 
 # Tarayıcı ve Web
 
@@ -192,19 +198,23 @@ Gizli mod yalnızca **sizin cihazınızdaki** kaydı tutmaz: geçmiş, çerez ve
 Ama sizi **anonim yapmaz**: internet servis sağlayıcınız, işvereniniz veya ziyaret ettiğiniz site yine de ne yaptığınızı görebilir.
 :::
 
-**Adres çubuğundaki kilit simgesi** ve başındaki `https`, o siteyle aranızdaki iletişimin şifreli olduğunu gösterir. Şifre, kart numarası gibi bilgileri yalnızca `https` olan sitelerde girin.
+**Adres çubuğundaki güvenlik ikonu** (kilit ya da kalkan gibi) ve başındaki `https`, o siteyle aranızdaki iletişimin şifreli olduğunu gösterir. Şifre, kart numarası gibi bilgileri yalnızca `https` olan sitelerde girin.
 
-**Çerezler**: Sitelerin tarayıcınıza bıraktığı küçük veri parçalarıdır. Oturum açık kalsın, tercihler hatırlansın diye kullanılır; ancak sizi izlemek için de kullanılabilir. Tarayıcı ayarlarından çerezleri düzenleyebilirsiniz.
+![HTTP (şifresiz) ile HTTPS (şifreli) iletişimin karşılaştırması](gorseller/diagram-http-https.jpg){width=88%}
+
+**Çerezler**: Sitelerin tarayıcınıza bıraktığı küçük veri parçalarıdır. Oturum açık kalsın, tercihler hatırlansın diye kullanılır. Ancak **üçüncü taraf çerezler** (sitenin kendisi değil, sayfaya eklenen reklam ve izleme servisleri tarafından bırakılan çerezler) farklı sitelerdeki gezintinizi takip etmek ve size ilgi alanınıza göre reklam göstermek için **kullanılabilir**.
+
+**Tedbir:** Tarayıcı ayarlarından üçüncü taraf çerezlerini engelleyebilir ya da izlemeyi sınırlandırabilirsiniz. Gizli mod bunu engellemez; yalnızca cihazınızda kayıt tutmaz.
 
 # Güvenli İnternet
 
 Bu haftanın konularını bir arada düşündüğümüzde, günlük hayatta uygulanacak ilkeler şöyle özetlenebilir:
 
 1. **Bağlantınızı bilin.** Hangi ağa bağlandığınızdan emin olun; tanımadığınız ağlarda işlem yapmayın.
-2. **Şifreleme olmadan hassas işlem yapmayın.** Açık ağlarda bankacılık ve e-Devlet işlemi yapmayın.
-3. **Adresin doğruluğunu kontrol edin.** Banka veya kurum adreslerinde tek harf farkı olabilir.
-4. **Kilit simgesine bakın.** `https` olmayan sitelere bilgi girmeyin.
-5. **Güncellemeleri ertelemeyin.** İşletim sistemi ve tarayıcı güncellemeleri güvenlik açıklarını kapatır.
+2. **Şifrelemesiz ağlarda hassas işlem yapmayın.** Açık ağlarda bankacılık ve e-Devlet işlemi yapmayın.
+3. **Web sitesinin adresini kontrol edin.** Banka veya kurum adreslerinde tek karakter farkı olabilir — örneğin "bilecik" yerine "bi1ecik" gibi (`l` yerine `1`).
+4. **Güvenlik ikonuna bakın** (kilit ya da kalkan). `https` olmayan sitelere bilgi girmeyin.
+5. **İşletim sistemi ve tarayıcı güncellemelerini ertelemeyin.** Güncellemeler güvenlik açıklarını kapatır.
 6. **Bluetooth ve WiFi'ı kullanmadığınızda kapatın.**
 
 ## Aile filtresi
@@ -253,7 +263,7 @@ Bu uygulama notla değerlendirilmez. Amacı, günlük kablosuz kullanımınızı
 - **Sahte erişim noktası** saldırısına karşı ağ adını doğrulamak gerekir.
 - **Bluetooth** kısa mesafeli bağlantıdır; beklenmeyen eşleştirme istekleri reddedilmelidir.
 - **IP adresi** cihazın ağdaki adresidir; **DNS** alan adlarını IP adreslerine çevirir.
-- Tarayıcıda **`https` ve kilit simgesi** şifreli iletişimi gösterir; **gizli mod anonim değildir**.
+- Tarayıcıda **`https` ve güvenlik ikonu** şifreli iletişimi gösterir; **gizli mod anonim değildir**.
 - Güvenli İnternet, doğru bağlantı seçimi ve şifreleme kontrolüyle başlar.
 
 # Kendini Sınama Soruları
@@ -275,11 +285,13 @@ Bu uygulama notla değerlendirilmez. Amacı, günlük kablosuz kullanımınızı
 
 **Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki dört fotoğrafın künyesi:
 
-- Yönlendirici — *Huawei HG520V Home Gateway*, Mk2010, CC BY-SA 3.0.
+- Yönlendirici — *TP-Link AX1500 Wi-Fi 6 Router Back*, Abhi25t, CC BY-SA 4.0.
 - Ethernet kablosu — *Patch cable with RJ45 connector*, heimnetzwerke.net, CC BY 4.0.
 - Ağ kartı — *GB Network PCI Card*, Harke, kamu malı.
 - Erişim noktası — *Unifi AC Lite Access Point*, ServerGuruBrisbane, CC BY-SA 4.0 (kare kırpılmıştır).
 
 Yönlendirici, Ethernet kablosu ve erişim noktası fotoğrafları için kaynak gösterme zorunludur; ağ kartı karesi kamu malı olduğu için zorunlu değildir.
+
+Sunum ve notlardaki **şemalar** (ağın sağladıkları, ağ türleri kartları, ev ağı, WiFi bağlantı adımları, güvenlik karşılaştırması, sahte erişim noktası, DNS çözümleme, HTTP–HTTPS) dersin yazarı tarafından **yapay zekâ desteğiyle** hazırlanmıştır. **Ekran görüntüleri** (Windows'ta ağ paylaşım sorusu, telefonda Bluetooth eşleştirme isteği ve görünürlük ayarı) dersin yazarı tarafından alınmıştır.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

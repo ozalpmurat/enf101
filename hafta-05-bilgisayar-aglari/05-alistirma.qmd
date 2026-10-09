@@ -19,13 +19,13 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Bir kampüs içindeki ağ hangi tür ağdır?\
-A) PAN\
-B) LAN\
+A) LAN\
+B) PAN\
 C) WAN\
 D) DNS\
 E) VPN
 
-**2.** Ağdaki cihazların birbirine ve İnternet'e bağlanmasını yöneten cihaz hangisidir?\
+**2.** Ağdaki cihazlar arasındaki veri trafiğini yönlendiren cihaz hangisidir?\
 A) Modem\
 B) Yazıcı\
 C) Yönlendirici\
@@ -46,14 +46,14 @@ C) Yalnızca kablolu çalışır\
 D) İnternet'e bağlanmak için zorunludur\
 E) Yalnızca aynı marka cihazlar arasında çalışır
 
-**5.** Tarayıcıya `siteadi.edu.tr` yazdığınızda bunu IP adresine çeviren sistem hangisidir?\
+**5.** Tarayıcıya bir alan adı yazdığınızda bunu IP adresine çeviren sistem hangisidir?\
 A) WiFi\
 B) Bluetooth\
-C) DNS\
-D) HTTPS\
+C) HTTPS\
+D) DNS\
 E) HTTP
 
-**6.** `.gov.tr` uzantılı bir alan adı neyi gösterir?\
+**6.** `.gov` uzantılı bir alan adı neyi gösterir?\
 A) Ticari bir şirketi\
 B) Bir uluslararası kuruluşu\
 C) Bir üniversiteyi\
@@ -74,7 +74,7 @@ C) Bankacılık işlemi yapmak\
 D) Harita uygulaması açmak\
 E) Yemek tarifi okumak
 
-**9.** Aynı anda hem kullanıcı adı hem de parola isteyen sahte bir kablosuz ağ, "sahte erişim noktası" saldırısına örnektir. *(Doğru / Yanlış)*\
+**9.** Kampüste "eduroam" adıyla yayın yapan ve yalnızca parola isteyen (kullanıcı adı istemeyen) bir ağ, sahte erişim noktası olabilir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 **10.** Bluetooth'u kullanmadığınız zamanlarda kapatmak hem pili korur hem de güvenliği artırır. *(Doğru / Yanlış)*\
@@ -86,15 +86,15 @@ E) Yemek tarifi okumak
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | LAN (yerel ağ) bir bina veya kampüs gibi sınırlı bir alanı kapsar. |
-| 2 | C | Yönlendirici, ağdaki cihazların birbirine ve İnternet'e bağlanmasını yönetir. Modem ise sinyali çevirir. |
+| 1 | A | LAN (yerel ağ) bir bina veya kampüs gibi sınırlı bir alanı kapsar. |
+| 2 | C | Yönlendirici, ağdaki cihazlar arasındaki veri trafiğini yönlendirir ve İnternet'e bağlanmayı sağlar. Modem ise sinyali çevirir. |
 | 3 | E | Doğru ifade E seçeneğindedir: WPA2 ve WPA3 kablosuz ağlarda kullanılan güncel şifreleme standartlarıdır. HTTPS ve TLS internet trafiğinin şifrelenmesiyle ilgilidir, kablosuz ağ standardı değildir. |
 | 4 | B | Bluetooth, genellikle 10 metreye kadar olan kısa mesafeli bir kablosuz bağlantı teknolojisidir. |
-| 5 | C | DNS, alan adlarını IP adreslerine çeviren sistemdir; İnternet'in telefon rehberi gibi çalışır. |
-| 6 | E | Doğru ifade E seçeneğindedir: .gov.tr kamu kurumlarını gösterir. .edu.tr üniversiteler, .com ticari siteler içindir. |
+| 5 | D | DNS, alan adlarını IP adreslerine çeviren sistemdir; İnternet'in telefon rehberi gibi çalışır. |
+| 6 | E | Doğru ifade E seçeneğindedir: .gov kamu kurumlarını gösterir. .edu üniversiteler, .com ticari siteler içindir. |
 | 7 | B | Gizli mod yalnızca cihazınızdaki kaydı tutmaz; sizi anonim yapmaz. Servis sağlayıcı ve site yine görebilir. |
 | 8 | C | Açık ağlarda trafik izlenebilir. Bankacılık ve e-Devlet gibi hassas işlemler bu ağlarda yapılmamalıdır. |
-| 9 | Doğru | Saldırgan, gerçek bir ağa benzeyen sahte bir ağ kurup kullanıcıyı yanıltır. Buna "sahte erişim noktası" (evil twin) denir. |
+| 9 | Doğru | Gerçek eduroam kullanıcı adı ve parola ister; yalnızca parola isteyen "eduroam" şüphelidir. |
 | 10 | Doğru | Bluetooth kapalıyken cihaz eşleştirme isteklerine kapalıdır ve daha az enerji harcar. |
 
 ::: {.callout-tip}

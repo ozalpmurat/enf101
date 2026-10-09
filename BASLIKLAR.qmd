@@ -118,7 +118,7 @@ format:
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Ağ Nedir?
-  - Ağ türleri
+  - Kapsama alanına göre ağ türleri
   - Ağ bileşenleri
 - WiFi: Kullanım ve Güvenlik
   - WiFi nasıl çalışır?

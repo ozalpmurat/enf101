@@ -19,60 +19,61 @@ format: beamer
 
 # Ağ Nedir?
 
-## Cihazların Birbiriyle Konuşması
+## Ağın Sağladıkları
 
-İki veya daha fazla cihazın veri paylaşmak üzere bağlanmasıdır.
+***Ağ (network)*, iki veya daha fazla cihazın veri paylaşmak üzere birbirine bağlanmasıyla oluşur.**
 
-- **Paylaşım:** Dosya, yazıcı, internet
-- **İletişim:** Mesaj, e-posta, görüntülü görüşme
-- **Erişim:** Uzaktaki bilgi ve hizmetler
+```{=latex}
+\begin{center}
+\includegraphics[width=0.96\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/diagram-agin-sagladiklari.jpg}
+\end{center}
+```
 
-## Ağ Türleri
+## Kapsama Alanına Göre Ağ Türleri
 
-![](gorseller/diagram-ag-turleri.png){width=72%}
-
-## Ağ Türleri Tablosu
-
-| Tür | Kapsama | Teknoloji | Örnek |
-|:---|:---|:---|:---|
-| **PAN** | Birkaç metre | Bluetooth | Kulaklık, saat |
-| **LAN** | Bina, kampüs | WiFi, Ethernet | Ev, okul |
-| **WAN** | Şehir, ülke | Fiber, hücresel | İnternet |
+```{=latex}
+\begin{center}
+\includegraphics[width=0.86\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/diagram-ag-turleri-kartlar.png}
+\end{center}
+```
 
 İnternet, dünyanın en büyük WAN'ıdır.
 
 ## Ağ Bileşenleri
 
-- **Modem:** Sinyali çevirir
-- **Yönlendirici:** Cihazları yönetir
-- **Erişim noktası:** Kablosuz yayın sağlar
-- **Ethernet kablosu:** En kararlı bağlantı
-- **Ağ kartı:** Cihazın ağ donanımı
+```{=latex}
+\begin{center}
+\includegraphics[width=0.98\linewidth,height=0.74\textheight,keepaspectratio]{gorseller/diagram-ev-agi.jpg}
+\end{center}
+```
 
-![](gorseller/diagram-ag-sema.png){width=62%}
+Temel ağ bileşenleri: modem, yönlendirici, erişim noktası, Ethernet kablosu, ağ kartı.
 
 ## Ağ Donanımı
 
-![](gorseller/foto-yonlendirici.jpg){width=24%} ![](gorseller/foto-ethernet-kablo.jpg){width=15%} ![](gorseller/foto-ag-karti.jpg){width=24%} ![](gorseller/foto-erisim-noktasi.jpg){width=16%}
+![](gorseller/foto-yonlendirici.jpg){width=30%} ![](gorseller/foto-ethernet-kablo.jpg){width=15%} ![](gorseller/foto-ag-karti.jpg){width=22%} ![](gorseller/foto-erisim-noktasi.jpg){width=15%}
 
 Yönlendirici, Ethernet kablosu, ağ kartı ve erişim noktası.
 
 # WiFi
 
-## Kablosuz Yerel Ağ
+## Bağlantı Nasıl Kurulur?
 
-- Erişim noktası kendini **ağ adıyla** (SSID) duyurur
-- Cihaz bağlanmak için **şifre** ister
-- Bağlantı kurulunca veri **şifrelenir**
-- Sinyal mesafeyle zayıflar
+```{=latex}
+\begin{center}
+\includegraphics[width=0.98\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/diagram-wifi-adimlar.jpg}
+\end{center}
+```
 
 ## Şifreleme Standartları
 
-::: {.callout-warning}
-**WPA2** ve **WPA3** güncel standartlardır.
+```{=latex}
+\begin{center}
+\includegraphics[width=0.92\linewidth,height=0.52\textheight,keepaspectratio]{gorseller/diagram-wifi-guvenlik.jpg}
+\end{center}
+```
 
-Yalnızca eski **WEP** şifrelemesini destekleyen ağlarda hassas işlem yapmayın.
-:::
+**WPA2** ve **WPA3** güncel standartlardır. Eski **WEP** şifrelemesini kullanan ağlarda hassas işlem yapmayın.
 
 ## Açık (Şifresiz) Ağlar
 
@@ -86,18 +87,41 @@ Bu ağlarda:
 
 ## Sahte Erişim Noktası
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.78\linewidth,height=0.42\textheight,keepaspectratio]{gorseller/diagram-sahte-ag.jpg}
+\end{center}
+```
+
 Saldırgan, gerçek bir ağa çok benzeyen sahte bir ağ kurar.
 
-- Kampüste **eduroam** adıyla yayın yapan sahte bir ağ
-- Bağlanan kullanıcının trafiği izlenebilir
+- Örneğin; **eduroam** adıyla yayın yapan sahte bir ağ olabilir
+- Sahte ağlara bağlanan kullanıcının trafiği izlenebilir
 
-**Korunma:** Ağ adının tam doğru yazıldığından emin olun.
+**Korunma:** Ağ adının tam doğru yazıldığından emin olun. eduroam gibi kurumsal ağlarda parola ile birlikte kullanıcı adı da girilmelidir.
 
 ## Ortak Ağda Paylaşım
+
+::: {.columns}
+::: {.column width="50%"}
 
 Yeni bir ağa bağlanınca sistem "dosya paylaşımı açılsın mı?" diye sorar.
 
 Halka açık ağlarda bu soruya **hayır** deyin.
+
+:::
+
+::: {.column width="50%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-ag-paylasim-sorusu.png}
+
+\emph{Windows'un yeni ağa bağlanınca sorduğu paylaşım sorusu}
+\end{center}
+```
+:::
+:::
 
 ## Pratik Noktalar
 
@@ -116,13 +140,15 @@ Biçim: `öğrenci_numaranız@bilecik.edu.tr`
 
 Parola: öğrenci hesabınızın parolası
 
+**Kurumsal ağ:** Burada herkesin bildiği tek bir şifre yoktur; herkes **kendi hesabıyla** doğrulanır (WPA2/WPA3-Enterprise).
+
 # Bluetooth
 
 ## Kısa Mesafeli Bağlantı
 
 Genellikle 10 metreye kadar. İki cihaz doğrudan konuşur; ağ gerekmez.
 
-## Kullanım Alanları
+**Kullanım alanları:**
 
 - Kablosuz kulaklık ve hoparlör
 - Kablosuz klavye ve fare
@@ -132,6 +158,9 @@ Genellikle 10 metreye kadar. İki cihaz doğrudan konuşur; ağ gerekmez.
 
 ## Güvenlik: Eşleştirme
 
+::: {.columns}
+::: {.column width="55%"}
+
 Eşleştirmede iki cihazda genellikle **aynı kod** görünür; bu, doğru cihaza bağlandığınızı doğrular.
 
 ::: {.callout-warning}
@@ -140,11 +169,42 @@ Eşleştirmede iki cihazda genellikle **aynı kod** görünür; bu, doğru cihaz
 Yakınınızdaki biri cihazınıza bağlanmaya çalışıyor olabilir.
 :::
 
+:::
+
+::: {.column width="45%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.72\linewidth,height=0.82\textheight,keepaspectratio]{gorseller/ekran-bluetooth-eslestirme.png}
+
+\emph{Telefonda Bluetooth eşleştirme isteği}
+\end{center}
+```
+:::
+:::
+
 ## Bluetooth İçin Üç Kural
+
+::: {.columns}
+::: {.column width="55%"}
 
 - **Görünürlüğü sınırlayın** — sürekli herkese görünür olmasın
 - **Tanımadığınız cihazla eşleşmeyin** — eşleşme erişim yetkisi verir
 - **Kullanmadığınızda kapatın** — pil ve güvenlik
+
+:::
+
+::: {.column width="45%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.68\linewidth,height=0.82\textheight,keepaspectratio]{gorseller/ekran-bluetooth-gorunurluk.png}
+
+\emph{Bluetooth görünürlük ayarı}
+\end{center}
+```
+:::
+:::
 
 # IP ve DNS
 
@@ -154,47 +214,45 @@ Her cihazın bir **IP adresi** vardır: ağ üzerindeki konumu.
 
 İnsanlar ise **alan adlarını** hatırlar. İkisini birleştiren sistem **DNS**'tir.
 
-![](gorseller/diagram-dns.png){width=74%}
-
-## DNS: İnternet'in Telefon Rehberi
-
-1. Tarayıcıya adres yazarsınız
-2. Bilgisayar DNS sunucusuna sorar
-3. DNS sayısal adresi bildirir
-4. O adrese bağlanılıp sayfa istenir
+```{=latex}
+\begin{center}
+\includegraphics[width=0.92\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/diagram-dns.jpg}
+\end{center}
+```
 
 ## Alan Adı Son Ekleri
 
 | Son ek | Gösterdiği |
 |:---|:---|
-| `.edu.tr` | Üniversite |
-| `.gov.tr` | Kamu kurumu |
+| `.edu` | Üniversite |
+| `.gov` | Kamu kurumu |
 | `.com` | Ticari site |
 | `.org` | Kuruluş |
 
 # Tarayıcı ve Web
 
-## Yararlı Özellikler
+## Çok Kullanılan Özellikler
 
 | Özellik | Ne işe yarar |
 |:---|:---|
-| Sekmeler | Birden çok sayfa |
-| Yer imleri | Sık kullanılan adresler |
-| Geçmiş | Önceki sayfalara dönüş |
-| Gizli mod | Kayıt tutmaz |
-| Eklentiler | İşlev ekler |
+| Sekmeler | Birden çok sayfayı aynı pencerede tutar |
+| Yer imleri | Sık kullanılan adresleri kaydeder |
+| Geçmiş | Daha önce ziyaret edilen sayfalara dönüş |
+| Gizli mod | Geçmişe kayıt tutmaz — **anonim değildir** |
+| İndirmeler | İndirilen dosyaların listesi |
+| Eklentiler | Tarayıcıya işlev ekler (reklam engelleyici gibi) |
 
-## Gizli Mod Ne Yapar, Ne Yapmaz?
+**Gizli mod ne yapar, ne yapmaz?** Gizli mod yalnızca **sizin cihazınızdaki** kaydı tutmaz: geçmiş, çerez ve form bilgileri saklanmaz. Ama sizi **anonim yapmaz**: internet servis sağlayıcınız, işvereniniz veya ziyaret ettiğiniz site yine de ne yaptığınızı görebilir.
 
-**Yapar:** Cihazınızda geçmiş ve çerez kaydı tutmaz.
+## Güvenlik İkonu ve HTTPS
 
-**Yapmaz:** Sizi anonim yapmaz. Servis sağlayıcınız ve ziyaret ettiğiniz site yine görebilir.
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=0.60\textheight,keepaspectratio]{gorseller/diagram-http-https.jpg}
+\end{center}
+```
 
-## Kilit Simgesi ve HTTPS
-
-Adres çubuğundaki **kilit simgesi** ve `https`, iletişimin şifreli olduğunu gösterir.
-
-Parola ve kart bilgilerini yalnızca `https` sitelerde girin.
+Adres çubuğundaki **güvenlik ikonu** (kilit ya da kalkan gibi) ve `https`, iletişimin şifreli olduğunu gösterir. Parola ve kart bilgilerini yalnızca `https` sitelerde girin.
 
 ## Çerezler
 
@@ -202,17 +260,19 @@ Sitelerin tarayıcınıza bıraktığı küçük veri parçalarıdır.
 
 - Oturumun açık kalmasını sağlar
 - Tercihleri hatırlar
-- Ancak **sizi izlemek için de kullanılabilir**
+- **Üçüncü taraf çerezler** farklı sitelerdeki gezintinizi izleyip size reklam göstermek için **kullanılabilir**
+
+**Tedbir:** Tarayıcı ayarlarından üçüncü taraf çerezlerini engelleyebilirsiniz. Gizli mod bunu engellemez.
 
 # Güvenli İnternet
 
 ## Altı İlke
 
 1. **Bağlantınızı bilin** — tanımadığınız ağlarda işlem yapmayın
-2. **Şifrelemesiz hassas işlem yapmayın**
-3. **Adresin doğruluğunu kontrol edin**
-4. **Kilit simgesine bakın**
-5. **Güncellemeleri ertelemeyin**
+2. **Şifrelemesiz ağlarda hassas işlem yapmayın**
+3. **Web sitesinin adresini kontrol edin** — "bilecik" yerine "bi1ecik" gibi tek karakter farkı olabilir
+4. **Güvenlik ikonuna bakın** (kilit ya da kalkan)
+5. **İşletim sistemi ve tarayıcı güncellemelerini ertelemeyin**
 6. **Kullanmadığınızda WiFi ve Bluetooth'u kapatın**
 
 ## Gerçek Bir Tuzak
@@ -248,7 +308,7 @@ Notla değerlendirilmez.
 - **WiFi**: WPA2/WPA3 şifrelemesi şart; sahte ağa dikkat
 - **Bluetooth**: beklenmeyen eşleştirmeyi reddet
 - **IP** cihazın adresi, **DNS** adları adreslere çevirir
-- **HTTPS ve kilit simgesi** şifreli iletişim demek
+- **HTTPS ve güvenlik ikonu** şifreli iletişim demek
 - **Gizli mod anonim değildir**
 
 ## Gelecek Hafta
