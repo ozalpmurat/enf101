@@ -220,9 +220,11 @@ Tek adres: **turkiye.gov.tr**
 | **Mobil imza** | SIM üzerinden imzalar | Islak imza hükmünde |
 | **e-imza** | USB token / akıllı kart | Islak imza hükmünde |
 
-## İmza Araçları
+## En Sık Karışan Ayrım
 
-![](gorseller/foto-sim-kart.jpg){width=30%} ![](gorseller/foto-akilli-kart.jpg){width=30%} ![](gorseller/foto-kart-okuyucu.jpg){width=20%}
+**e-Devlet şifresi bir imza değildir.** Sisteme giriş aracıdır.
+
+**e-imza hukuki bir imzadır.** 5070 sayılı Elektronik İmza Kanunu uyarınca ıslak imzayla aynı sonucu doğurur.
 
 Mobil imza SIM kartı, e-imza akıllı kart (veya USB token) kullanır.
 
