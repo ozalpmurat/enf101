@@ -57,7 +57,9 @@ Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine d
 
 ## Kaynak değerlendirme
 
-1\. haftada öğrendiğimiz **beş soruyu** hatırlayın — kim, ne zaman, kanıt, amaç, başka kaynaklar. İnternette karşılaştığınız her içeriği bu sorularla sınamayı alışkanlık hâline getirin.
+1\. haftada öğrendiğimiz **beş soruyu** hatırlayın ve internette karşılaştığınız her içeriği aşağıdaki ölçütlerle sınayın:
+
+![Şüpheli içeriği kontrol et](gorseller/diagram-dezenformasyon.png){width=78%}
 
 ::: {.callout-tip}
 ## Akademik kaynak ararken
@@ -74,8 +76,6 @@ Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine d
 # Dezenformasyon ve Sahte Haber
 
 **Dezenformasyon**, kasıtlı olarak yanıltmak amacıyla üretilen yanlış bilgidir. Yanlış bilgi (malinformasyon) ile karıştırılır, ama fark önemlidir: dezenformasyonda **kötü niyet** vardır.
-
-![Şüpheli içeriği kontrol et](gorseller/diagram-dezenformasyon.png){width=78%}
 
 Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) hazırladığı listeye dayanan aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
 
@@ -96,7 +96,7 @@ En sık karşılaşacağınız biçimler:
 ::: {.callout-warning}
 ## Paylaşmadan önce iki soru
 
-1. **Kaynağa gittim mi?** Başlığı okuyup paylaşmak, en yaygın hata.
+1. **İçeriği kaynağından okudum mu?** Yalnızca başlığa bakıp paylaşmak, en yaygın hatadır.
 2. **Tersine görsel arama yaptım mı?** Bir fotoğrafın daha önce başka bir bağlamda kullanılıp kullanılmadığını görmek için görsel arama kullanılabilir.
 
 Yanıtı "hayır" ise **paylaşmayın**. Yanlış bilginin yayılmasına katkı, onu üretmek kadar zarar verir.

@@ -51,7 +51,9 @@ format: beamer
 
 ## Kaynak Değerlendirme
 
-1\. haftadaki beş soruyu hatırlayın: **kim, ne zaman, kanıt, amaç, başka kaynaklar.**
+1\. haftadaki **beş soruyu** hatırlayın ve karşılaştığınız her içeriği aşağıdaki ölçütlerle sınayın.
+
+![](gorseller/diagram-dezenformasyon.png){width=76%}
 
 ## Akademik Kaynak Önceliği
 
@@ -63,15 +65,9 @@ format: beamer
 
 # Dezenformasyon
 
-## Kasıtlı Yanlış Bilgi
+## Dezenformasyon: Tanım ve Biçimler
 
-**Dezenformasyon:** Yanıltmak amacıyla üretilmiş yanlış bilgi.
-
-Yanlış bilgiden farkı: burada **kötü niyet** vardır.
-
-![](gorseller/diagram-dezenformasyon.png){width=76%}
-
-## Sık Karşılaşılan Biçimler
+**Dezenformasyon:** Yanıltmak amacıyla üretilmiş yanlış bilgi; farkı **kötü niyet**tir.
 
 | Biçim | Ne yapar |
 |:---|:---|
@@ -83,10 +79,10 @@ Yanlış bilgiden farkı: burada **kötü niyet** vardır.
 
 ## Paylaşmadan Önce İki Soru
 
-1. **Kaynağa gittim mi?**
-2. **Tersine görsel arama yaptım mı?**
+1. **İçeriği kaynağından okudum mu?** Yalnızca başlığa bakıp paylaşmak, en yaygın hata.
+2. **Tersine görsel arama yaptım mı?** Fotoğraf daha önce başka bir bağlamda kullanılmış olabilir.
 
-Yanıt "hayır" ise **paylaşmayın**.
+Yanıt "hayır" ise **paylaşmayın**; yanlış bilginin yayılmasına katkı, onu üretmek kadar zarar verir.
 
 ## Sahte Haberi Fark Etme Listesi
 
