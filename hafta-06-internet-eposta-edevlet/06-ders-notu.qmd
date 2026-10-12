@@ -39,7 +39,7 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 ::: {#fig-arama-ornek layout-ncol=2}
 ![Google arama sayfası](gorseller/ekran-google-arama.png){width=100%}
 
-![Arama sonuçları listesi](gorseller/ekran-arama-sonuclari.png){width=100%}
+![Arama sonuçları listesi](gorseller/foto-arama-sonuclari.png){width=100%}
 
 Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine dönüşmesidir.
 :::
@@ -98,7 +98,7 @@ Kaynağa ulaşamıyorsanız ya da sorular yanıtısız kalıyorsa içeriği akta
 
 # Dezenformasyon ve Sahte Haber
 
-**Dezenformasyon**, kasıtlı olarak yanıltmak amacıyla üretilen yanlış bilgidir. Yanlış bilgi (malinformasyon) ile karıştırılır, ama fark önemlidir: dezenformasyonda **kötü niyet** vardır.
+**Dezenformasyon**, kasıtlı olarak yanıltmak amacıyla üretilen yanlış bilgidir. Yanlış bilgi (misinformasyon) ile karıştırılır, ama fark önemlidir: dezenformasyonda **kötü niyet** vardır.
 
 Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) hazırladığı listeye dayanan aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
 
@@ -131,7 +131,7 @@ Yanıtı "hayır" ise **paylaşmayın**. Yanlış bilginin yayılmasına katkı,
 
 ## Adresin yapısı
 
-Bir e-posta adresi @ **işaretiyle** iki yarıya ayrılır. Sol yarı **kullanıcı adıdır**: postanın o sunucuda kime teslim edileceğini belirtir. Sağ yarı **alan adıdır**: postanın hangi sunucuya, dolayısıyla hangi kuruma gideceğini belirtir.
+Bir e-posta adresi, `@` işaretiyle iki yarıya ayrılır. Sol yarı **kullanıcı adıdır**: postanın o sunucuda kime teslim edileceğini belirtir. Sağ yarı **alan adıdır**: postanın hangi sunucuya, dolayısıyla hangi kuruma gideceğini belirtir.
 
 ![E-posta adresinin yapısı](gorseller/diagram-eposta.png){width=78%}
 
@@ -236,7 +236,7 @@ Kamu hizmetlerinin elektronik ortama taşınması, dijital dönüşümün en som
 - **Adresin doğruluğundan emin olun.** Giriş yapmadan önce adres çubuğunu kontrol edin; resmî site `gov.tr` uzantılıdır ve `https` ile şifrelidir.
 - **Parolanızı kimseyle paylaşmayın.** Hiçbir kurum e-posta veya telefonla parola istemez.
 - **Ortak bilgisayarda işiniz bitince çıkış yapın.** Yalnızca sekmeyi kapatmak yetmez.
-- **İşlem yaparken bağlantınıza dikkat edin.** Halka açık kablosuz ağlarda e-Devlet işlemi yapmayın; mobil veri kullanın.
+- **İşlem yaparken bağlantınıza dikkat edin.** Halka açık kablosuz ağlarda e-Devlet işlemi yapmayın; bu ağlarda trafik izlenebilir, işleminizi mobil veri üzerinden yapın.
 - **Şüpheli bildirimlere karşı dikkatli olun.** e-Devlet üzerinden geldiği söylenen bağlantılar sahte olabilir; her zaman kendiniz giriş yaparak kontrol edin.
 
 # e-imza ve İlgili Kavramlar
@@ -319,14 +319,12 @@ Bu uygulama notla değerlendirilmez. Amacı, doğrulama ve yazışma becerilerin
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunması ve gizlilik. (kvkk.gov.tr)
 
-**Görsel kaynakları.** Bu haftanın şemaları dersin yazarı tarafından çizilmiştir; sahte haber denetim listesi IFLA'nın *How to Spot Fake News* listesinden uyarlanmıştır (IFLA, CC BY 4.0). Fotoğraflar ve ekran görüntüleri Wikimedia Commons'tan alınmıştır; aşağıdaki görseller için kaynak gösterme zorunludur:
+**Görsel kaynakları.** Bu haftanın şemaları dersin yazarı tarafından çizilmiştir; sahte haber denetim listesi IFLA'nın *How to Spot Fake News* listesinden uyarlanmıştır (IFLA, CC BY 4.0). Fotoğraflar Wikimedia Commons'tan alınmıştır; aşağıdaki görseller için kaynak gösterme zorunludur:
 
 - SIM kart — *Formats de cartes SIM*, Bidouille82, CC BY-SA 3.0.
 - Kart okuyucu — *IC Card Reader Writer RW-5100W*, Project Kei, CC BY-SA 4.0.
 - Arama sonuçları listesi — *Search Engine Results Page (SERP) Graphic Illustration*, Muhammad Rafizeldi, CC BY 4.0.
 
 Sahte e-Devlet duyurusu görseli, oltalama örneği olarak **temsilî biçimde** ders için hazırlanmıştır; gerçek bir kuruma ait değildir.
-
-Google arama sayfası görüntüsü kamu malıdır (kaynak gösterme zorunlu değildir).
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

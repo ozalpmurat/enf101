@@ -30,7 +30,7 @@ format: beamer
 :::
 
 ::: {.column width="50%"}
-![](gorseller/ekran-arama-sonuclari.png){width=100%}
+![](gorseller/foto-arama-sonuclari.png){width=100%}
 
 *Sonuç listesine dönüşür*
 :::
