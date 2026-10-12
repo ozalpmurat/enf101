@@ -216,9 +216,9 @@ Tek adres: **turkiye.gov.tr**
 
 | Kavram | Ne yapar | Hukuki sonuç |
 |:---|:---|:---|
-| e-Devlet şifresi | Kimlik doğrular | İmza değildir |
-| Mobil imza | SIM üzerinden imzalar | Islak imza hükmünde |
-| e-imza | USB token / akıllı kart | Islak imza hükmünde |
+| **e-Devlet şifresi** | Kimlik doğrular | İmza değildir |
+| **Mobil imza** | SIM üzerinden imzalar | Islak imza hükmünde |
+| **e-imza** | USB token / akıllı kart | Islak imza hükmünde |
 
 ## İmza Araçları
 
