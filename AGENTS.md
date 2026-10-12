@@ -140,8 +140,16 @@ bölüm sayılmadığı için anahatta yer almaz; böylece belge, notların kend
 `https://github.com/ozalpmurat/enf101/releases/download/pdf/enf101-pdf.zip`.
 Böylece git kullanmayan hocalar tek bağlantıdan bütün belgeleri indirir.
 
-Çalıştırmak için: **Actions → PDF paketi → Run workflow**. Depoya gönderilmiş commit'ten derlendiği için,
-yereldeki gönderilmemiş veya yarım değişiklikler sürüme girmez. Yerelde aynı iş `find` + `zip -@` ile yapılır.
+Çalıştırmak için: **Actions → PDF paketi → Run workflow**. İş akışı **derleme yapmaz**: depoda
+commit'lenmiş `*.pdf` dosyalarını olduğu gibi kopyalayıp ZIP'ler (`quarto render` çağrısı yoktur, bu
+yüzden saniyeler sürer). Bunun iki sonucu var:
+
+- Bir kaynağı düzenleyip PDF'i **yeniden derlemediyseniz ya da commit'lemediyseniz**, sürüme **eski PDF**
+  girer — hata çıkmaz, derleme kırmızı yanmaz, yalnızca ZIP'i indiren öğretmen eski belgeyi alır.
+  Bu yüzden akış: kaynağı düzenle → derle (`araclar/derle.sh`) → kaynağı ve PDF'i **birlikte** commit'le
+  → sürümü çıkar. Ayrıntı ve denetim komutu: §11, kontrol 13.
+- Sürüm daima gönderilmiş commit'ten alındığı için yereldeki gönderilmemiş veya yarım değişiklikler
+  pakete girmez. Yerelde aynı paketleme işi `find` + `zip -@` ile yapılır.
 
 **Sürüm kimliği.** Her sürüm, çıkarıldığı gün ve o günkü kaçıncı sürüm olduğuyla adlandırılır:
 `enf101-YYYYMMDDNN` (ör. `enf101-2026092901`). ZIP açıldığında bütün belgeler bu adda **tek bir klasörün**
@@ -422,6 +430,17 @@ Kapsam ve sınırlar:
   %4,3). Görünür bir fark değildir ama git ikili dosyada değişiklik gösterir; gereksiz yere
   çalıştırmayın.
 
+**Şemaya başlık gömülmez.** Başlık ders notunda şekil altyazısı, sunumda slayt başlığıdır; şemanın
+içine de yazılırsa aynı söz iki kez basılır (12.10.2026'da 6. haftada yaşandı: slayt başlığı, üst satır
+ve görselin içindeki başlık aynı cümleyi üç kez söylüyordu). Yatay bir kart şemasında başlık bandı
+kaldırılınca görsel de kısalır, slayta daha rahat oturur.
+
+**Dış görselin yerine kendi çizimini koyarken metin ve künye birlikte değişir.** Görsel artık bir
+uyarlamaysa çevresindeki cümle "kuruluşun hazırladığı" değil "…listesine dayanan/uyarlanan" demeli;
+künye de alıntı gerektiren dış görseller listesinden çıkıp kendi çizimlerin anlatıldığı paragrafta
+anılmalıdır (uyarlama ve lisans bilgisi korunarak). 12.10.2026'da 6. haftada tam olarak bu iki
+tutarsızlık oluştu; kaynak listesindeki yeri ve metnin ifadesi görselle birlikte gözden geçirilmelidir.
+
 Tema renkleri: lacivert `#1F3864`, mavi `#2E74B5`, açık zemin `#EDF2F9`, gri `#595959`.
 
 **Ölçü kuralları (iki tur hatadan sonra çıkarıldı):**
@@ -599,6 +618,30 @@ done
 #    Ağırlıklı olarak elle denetlenir: soruları ders notu bölümüyle karşılaştır; doğru cevap notta
 #    açıkça geçiyor mu, çeldiriciler makul mü, sayısal bilgiler (kapasite, kural) notla aynı mı bak.
 #    (Ör. "güvenle çıkar" sorusunun cevabı, nottaki "güvenli çıkarma" bölümüyle örtüşmeli.)
+
+# 12. Her .qmd'de geçen görsel diskte ve git'te var mı?
+#    Görsel değiştirilirken yeni dosya takipsiz kalırsa (git add unutulursa) ya da
+#    silinen dosyanın referansı bırakılırsa derleme başka makinede kırılır;
+#    yerelde her şey çalışıyor göründüğü için sessiz bir hatadır.
+#    Çıktı boş olmalı.
+for q in hafta-*/*.qmd *.qmd; do
+  d=$(dirname "$q")
+  grep -oE 'gorseller/[A-Za-z0-9._-]+\.(png|jpg|jpeg)' "$q" | sort -u | while read -r g; do
+    if [ ! -f "$d/$g" ]; then echo "YOK: $q -> $g"
+    elif ! git ls-files --error-unmatch "$d/$g" >/dev/null 2>&1; then echo "TAKİPSİZ: $d/$g"; fi
+  done
+done
+
+# 13. Her PDF kaynağından yeni mi? — yayın akışı derleme yapmadığı için
+#    (bkz. §3) PDF'i derlemeyi ya da commit'lemeyi unutmak sürüme eski belge sokar.
+#    Çıktı boş olmalı; çıkıyorsa `bash araclar/derle.sh <hafta klasörü>` çalıştırıp
+#    PDF'i de commit'leyin. DİKKAT: taze bir klonda bütün dosyalar aynı anda
+#    yazıldığı için bu kontrol yanlış pozitif verebilir; derlemeden sonra çalıştırın.
+for q in hafta-*/*.qmd *.qmd; do
+  p="${q%.qmd}.pdf"
+  [ -f "$p" ] || { echo "PDF yok: $q"; continue; }
+  [ "$p" -nt "$q" ] || echo "PDF eski: $p"
+done
 ```
 
 Bu otomatik kontrollere ek olarak, "yayına hazırlık" denetiminde **içerik düzeyinde dört kontrol**

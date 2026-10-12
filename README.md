@@ -80,8 +80,9 @@ tek komutta derlemek uzun sürdüğü için hafta hafta derlemek gerekir. Ayrın
 
 PDF'ler aslında birer derleme çıktısıdır, ama bu depoda bilinçli olarak takip edilir: böylece
 Quarto/TeX kurulu olmayan hocalar depoyu indirip PDF'leri doğrudan kullanabilir. Bir kaynağı
-düzenlediğinizde, yeniden ürettiğiniz PDF'i de aynı commit'te göndermeniz iyi olur — ama bu bir
-zorunluluk değil; kaynak her zaman esas alınır.
+düzenlediğinizde, yeniden ürettiğiniz PDF'i de aynı commit'te göndermeniz **gerekir**: sürüm ZIP'ini
+çıkaran iş akışı derleme yapmaz, depodaki PDF'leri paketler. PDF'i commit'lemezseniz sürümü indiren
+öğretmen eski belgeyi alır. (Kaynak yine de esas alınır; PDF ondan üretilen çıktıdır.)
 `.gitattributes` PDF'leri ikili dosya olarak işaretler; Git bunlar üzerinde satır satır fark almaya çalışmaz.
 
 ## Katkı
