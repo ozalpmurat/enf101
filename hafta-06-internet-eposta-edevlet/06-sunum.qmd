@@ -90,25 +90,9 @@ Yanıt "hayır" ise **paylaşmayın**.
 
 ## Sahte Haberi Fark Etme Listesi
 
-::: {.columns}
-::: {.column width="52%"}
-IFLA'nın sekiz maddelik denetim listesi:
+IFLA'nın listesinden uyarlanan sekiz madde:
 
-- Kaynağı sorgula
-- Yazarı kontrol et
-- Tarihi kontrol et
-- Önyargılarına bak
-- Haberin tamamını oku
-- Destekleyici kaynak ara
-- Şaka mı, ciddi mi?
-- Uzmanlara sor
-:::
-
-::: {.column width="48%"}
-
-\includegraphics[width=\linewidth,height=0.82\textheight,keepaspectratio]{gorseller/ekran-sahte-haber-ifla.png}
-:::
-:::
+\includegraphics[width=0.95\linewidth,height=0.72\textheight,keepaspectratio]{gorseller/diagram-sahte-haber-denetim.png}
 
 # Elektronik Posta
 

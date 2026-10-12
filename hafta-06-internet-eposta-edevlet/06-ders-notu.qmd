@@ -77,13 +77,11 @@ Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine d
 
 ![Şüpheli içeriği kontrol et](gorseller/diagram-dezenformasyon.png){width=78%}
 
-Kütüphanecilik alanında çalışan uluslararası bir kuruluşun (IFLA) hazırladığı aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
+Kütüphanecilik alanında çalışan uluslararası bir kuruluşun (IFLA) hazırladığı listeye dayanan aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
 
-::: {#fig-sahte-haber-ifla layout-ncol=2}
-![Sekiz maddelik denetim listesi](gorseller/ekran-sahte-haber-ifla.png){width=100%}
+![IFLA'nın denetim listesinden uyarlanan sekiz madde](gorseller/diagram-sahte-haber-denetim.png){width=95%}
 
 Kontrol listesi içeriğin kaynağını, yazarını, tarihini ve amacını sorgular; bu, 1. haftada öğrendiğimiz beş soruyla aynı yaklaşımdır.
-:::
 
 En sık karşılaşacağınız biçimler:
 
@@ -298,13 +296,12 @@ Bu uygulama notla değerlendirilmez. Amacı, doğrulama ve yazışma becerilerin
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunması ve gizlilik. (kvkk.gov.tr)
 
-**Görsel kaynakları.** Bu haftanın şemaları dersin yazarı tarafından çizilmiştir. Fotoğraflar ve ekran görüntüleri Wikimedia Commons'tan alınmıştır; aşağıdaki görseller için kaynak gösterme zorunludur:
+**Görsel kaynakları.** Bu haftanın şemaları dersin yazarı tarafından çizilmiştir; sahte haber denetim listesi IFLA'nın *How to Spot Fake News* listesinden uyarlanmıştır (IFLA, CC BY 4.0). Fotoğraflar ve ekran görüntüleri Wikimedia Commons'tan alınmıştır; aşağıdaki görseller için kaynak gösterme zorunludur:
 
 - SIM kart — *Formats de cartes SIM*, Bidouille82, CC BY-SA 3.0.
 - Çipli (akıllı) kart — *TopUp TV smart card back*, Bumper12, CC BY-SA 4.0.
 - Kart okuyucu — *IC Card Reader Writer RW-5100W*, Project Kei, CC BY-SA 4.0.
 - Arama sonuçları listesi — *Search Engine Results Page (SERP) Graphic Illustration*, Muhammad Rafizeldi, CC BY 4.0.
-- Sahte haber denetim listesi — *How to Spot Fake News*, IFLA (Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu), CC BY 4.0.
 
 Sahte e-Devlet duyurusu görseli, oltalama örneği olarak **temsilî biçimde** ders için hazırlanmıştır; gerçek bir kuruma ait değildir.
 
