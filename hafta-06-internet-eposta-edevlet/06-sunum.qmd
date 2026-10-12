@@ -24,6 +24,22 @@ format: beamer
 
 ![](gorseller/diagram-arama.png){width=78%}
 
+## Arama Kutusu ve Sonuçlar
+
+::: {.columns}
+::: {.column width="50%"}
+![](gorseller/ekran-google-arama.png){width=100%}
+
+*Arama kutusuna yazılan sözcükler*
+:::
+
+::: {.column width="50%"}
+![](gorseller/ekran-arama-sonuclari.png){width=100%}
+
+*Sonuç listesine dönüşür*
+:::
+:::
+
 ## Aramayı Daraltmanın Yolları
 
 - **Anahtar kelime:** Uzun cümle yerine ayırt edici kelimeler
@@ -59,7 +75,7 @@ Yanlış bilgiden farkı: burada **kötü niyet** vardır.
 
 | Biçim | Ne yapar |
 |:---|:---|
-| Başlık tuzağı | İçerik başlığı doğrulamaz |
+| Başlık tuzağı | Başlık, içeriğin söylemediği bir şeyi iddia eder |
 | Bağlamdan koparma | Eski fotoğraf güncel gibi |
 | Sahte görsel | Fotoğraf düzenlenir |
 | Yanlış alıntı | Söylenmemiş söz atfedilir |
@@ -72,6 +88,28 @@ Yanlış bilgiden farkı: burada **kötü niyet** vardır.
 
 Yanıt "hayır" ise **paylaşmayın**.
 
+## Sahte Haberi Fark Etme Listesi
+
+::: {.columns}
+::: {.column width="52%"}
+IFLA'nın sekiz maddelik denetim listesi:
+
+- Kaynağı sorgula
+- Yazarı kontrol et
+- Tarihi kontrol et
+- Önyargılarına bak
+- Haberin tamamını oku
+- Destekleyici kaynak ara
+- Şaka mı, ciddi mi?
+- Uzmanlara sor
+:::
+
+::: {.column width="48%"}
+
+\includegraphics[width=\linewidth,height=0.82\textheight,keepaspectratio]{gorseller/ekran-sahte-haber-ifla.png}
+:::
+:::
+
 # Elektronik Posta
 
 ## Adresin Yapısı
@@ -80,14 +118,7 @@ Yanıt "hayır" ise **paylaşmayın**.
 
 ## E-postanın Bölümleri
 
-| Bölüm | Ne yazılır |
-|:---|:---|
-| **Alıcı (To)** | Asıl muhatap |
-| **Bilgi (CC)** | Bilgilendirilecek kişiler |
-| **Gizli (BCC)** | Adresleri görünmeyen kişiler |
-| **Konu** | Kısa ve açıklayıcı başlık |
-| **Gövde** | Hitap, mesaj, kapanış, imza |
-| **Ek** | Gönderilen dosyalar |
+\includegraphics[width=0.92\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/diagram-eposta-bolumler.png}
 
 ## BCC Ne Zaman Kullanılır?
 
@@ -104,7 +135,7 @@ Böylece herkes yalnızca kendi adresini görür.
 - **Kısa ve net yazın**
 - **Tam cümle kurun** — kısaltma ve emoji olmaz
 - **Büyük harfle yazmayın** — bağırmak gibi algılanır
-- **Yanıtla / Yanıtla-hepsine** ayrımına dikkat
+- **Yanıtla / Tümüne yanıtla** ayrımına dikkat
 - **Ek dosyayı adlandırın:** `belge1.docx` değil, `enf101-odev-ad-soyad.docx`
 - **Göndermeden önce okuyun**
 
@@ -131,7 +162,7 @@ Kurumsal yazışma **kayıt altındadır** ve geri alınamaz.
 | Adres uyuşmazlığı | Görünen ad doğru, adres farklı |
 | Yazım hataları | Kurumsal e-postada beklenmez |
 | Bilgi isteği | Kurumlar parola sormaz |
-| Bağlantı adresi | Üzerine gelince gerçek adres görünür |
+| Bağlantı adresi | Bilgisayarda üzerine gelince gerçek adres görünür; telefonda üzerine gelinemez, tuzağa bu yüzden düşülür |
 
 ## Şüphelendiğinizde
 
@@ -140,6 +171,24 @@ Kurumsal yazışma **kayıt altındadır** ve geri alınamaz.
 - Kurumunuzun bilgi işlem birimine bildirin
 
 **Acele ettiren her mesaj şüphelidir.**
+
+## Örnek: Sahte e-Devlet Duyurusu
+
+::: {.columns}
+::: {.column width="58%"}
+![](gorseller/ekran-oltalama-edevlet.png){width=100%}
+:::
+
+::: {.column width="42%"}
+Gerçek kurum gibi görünür ama...
+
+- **Para vaat eder:** "aidat iadesi 10.000 TL"
+- **Bağlantıya yönlendirir:** "linke tıklayın"
+- Gerçek e-Devlet **kendiliğinden bildirim göndermez**
+
+**Bağlantıya tıklamayın; kendiniz giriş yapıp kontrol edin.**
+:::
+:::
 
 ## E-posta Gizli Değildir
 
@@ -151,15 +200,19 @@ Parola, kimlik numarası, sağlık bilgisi e-postayla gönderilmez.
 
 ## İstenmeyen Posta (Spam)
 
-- Adresiniz listelere girdiğinde gelmeye başlar
+- Adresiniz listelere girdiğinde spam gelmeye başlar
 - Bağlantılara tıklamayın; **işaretleyip silin**
 - "Listeden çık" bağlantısına güvenmeyin: adresinizin **canlı olduğunu doğrular**
+
+![](gorseller/diagram-spam.png){width=88%}
 
 # Dijital Kamu Hizmetleri
 
 ## e-Devlet
 
 Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi, başvuru, sorgulama, ödeme.
+
+![](gorseller/diagram-edevlet.png){width=88%}
 
 ## Güvenli Kullanım
 

@@ -19,8 +19,8 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Yalnızca resmî kamu kurumu sitelerinde arama yapmak için hangi ifade kullanılır?\
-A) `filetype:pdf`\
-B) `site:gov.tr`\
+A) `site:gov.tr`\
+B) `filetype:pdf`\
 C) `"tam ifade"`\
 D) `-kelime`\
 E) `site:edu.tr`
@@ -40,23 +40,23 @@ D) Algoritma\
 E) Dezenformasyon
 
 **4.** E-postada adresleri diğer alıcılara görünmeyecek kişiler hangi alana yazılır?\
-A) To (Alıcı)\
-B) CC (Bilgi)\
-C) BCC (Gizli)\
+A) BCC (Gizli)\
+B) To (Alıcı)\
+C) CC (Bilgi)\
 D) Konu\
 E) Ek dosya (eklenti)
 
 **5.** Kurumsal bir e-postada aşağıdakilerden hangisi bulunmaz?\
 A) Konu satırı\
 B) Hitap ve kapanış\
-C) Emoji ve kısaltmalar\
-D) İmza\
+C) İmza\
+D) Emoji ve kısaltmalar\
 E) Tarih ve saat bilgisi
 
 **6.** Oltalama (phishing) e-postalarının en belirgin ortak özelliği nedir?\
 A) Uzun ve ayrıntılı olmaları\
-B) Görseller içermeleri\
-C) Aciliyet duygusu yaratarak acele ettirmeleri\
+B) Aciliyet duygusu yaratarak acele ettirmeleri\
+C) Görseller içermeleri\
 D) Yalnızca sabah gönderilmeleri\
 E) Yalnızca kurumsal hesaplardan gelmeleri
 
@@ -64,8 +64,8 @@ E) Yalnızca kurumsal hesaplardan gelmeleri
 A) e-Devlet şifresi ücretlidir, e-imza ücretsizdir\
 B) e-Devlet şifresi yalnızca mobil cihazlarda çalışır\
 C) İkisi tamamen aynı işlevi görür\
-D) e-imza yalnızca kurumlar tarafından kullanılır\
-E) e-Devlet şifresi kimliği doğrular ancak imza yerine geçmez; e-imza hukuki bir imzadır
+D) e-Devlet şifresi kimliği doğrular ancak imza yerine geçmez; e-imza hukuki bir imzadır\
+E) e-imza yalnızca kurumlar tarafından kullanılır
 
 **8.** Öğrenciye gönderilmiş ve "hemen ödeme yapılmazsa hesabınız kapatılacak" diyen bir e-posta aldınız. İlk yapılması gereken nedir?\
 A) Bağlantıya tıklayıp durumu kontrol etmek\
@@ -86,13 +86,13 @@ E) E-postayı yazdırıp saklamak
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | `site:gov.tr` yalnızca kamu kurumlarına ait alan adlarındaki sonuçları getirir. |
+| 1 | A | `site:gov.tr` yalnızca kamu kurumlarına ait alan adlarındaki sonuçları getirir. |
 | 2 | C | Eksi işareti, belirtilen kelimeyi arama sonuçlarından çıkarır; gereksiz sonuçları elemek için kullanılır. |
 | 3 | E | Doğru terim E seçeneğindedir: dezenformasyon, yanıltmak amacıyla kasıtlı olarak üretilmiş yanlış bilgidir. |
-| 4 | C | BCC (gizli) alanındaki adresler diğer alıcılara görünmez. Toplu duyurularda adres gizliliği için kullanılır. |
-| 5 | C | Kurumsal yazışmada tam cümle kullanılır; emoji ve kısaltma yer almaz. |
-| 6 | C | Oltalama e-postaları genellikle "hemen", "acil" gibi ifadelerle acele ettirir; amaç düşünmeden tıklamanızı sağlamaktır. |
-| 7 | E | Doğru ifade E seçeneğindedir: e-Devlet şifresi sisteme giriş için bir kimlik doğrulama aracıdır, imza yerine geçmez; e-imza ise ıslak imza hükmünde hukuki bir imzadır. |
+| 4 | A | BCC (gizli) alanındaki adresler diğer alıcılara görünmez. Toplu duyurularda adres gizliliği için kullanılır. |
+| 5 | D | Kurumsal yazışmada tam cümle kullanılır; emoji ve kısaltma yer almaz. |
+| 6 | B | Oltalama e-postaları genellikle "hemen", "acil" gibi ifadelerle acele ettirir; amaç düşünmeden tıklamanızı sağlamaktır. |
+| 7 | D | Doğru ifade D seçeneğindedir: e-Devlet şifresi sisteme giriş için bir kimlik doğrulama aracıdır, imza yerine geçmez; e-imza ise ıslak imza hükmünde hukuki bir imzadır. |
 | 8 | C | Şüpheli e-postalarda bağlantıya tıklanmaz ve yanıt verilmez; gönderen başka bir kanaldan doğrulanır. |
 | 9 | Doğru | Kaynağa gitmek, içeriğin bağlamını ve doğruluğunu görmenin en temel yoludur. |
 | 10 | Yanlış | Açık ağlarda trafik izlenebilir. e-Devlet gibi hassas işlemler için mobil veri tercih edilmelidir. |

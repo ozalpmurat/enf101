@@ -38,6 +38,14 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 ![Etkili arama: dört adım](gorseller/diagram-arama.png){width=78%}
 
+::: {#fig-arama-ornek layout-ncol=2}
+![Arama kutusu: anahtar kelime buraya yazılır](gorseller/ekran-google-arama.png){width=100%}
+
+![Arama sonuçları listesi](gorseller/ekran-arama-sonuclari.png){width=100%}
+
+Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine dönüşmesidir.
+:::
+
 ## Aramayı daraltma yolları
 
 - **Anahtar kelime seçimi:** Uzun cümleler yerine ayırt edici kelimeler kullanın. "Nasıl ödev yazarım" yerine "akademik yazım kuralları".
@@ -56,7 +64,11 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 Ödev ve araştırma için öncelik sırası şöyle olmalı:
 
-**1.** Kütüphane veri tabanları ve akademik dergiler → **2.** Kurumsal ve resmî siteler (`.edu.tr`, `.gov.tr`) → **3.** Uzman kuruluşların yayınları → **4.** Genel web siteleri ve haber siteleri → **5.** Forumlar, sosyal medya, bloglar (tek başına kaynak olarak kullanılmaz).
+1. **Kütüphane veri tabanları ve akademik dergiler.** Üniversite kütüphanesinin abone olduğu, yalnızca kütüphane üzerinden erişilebilen çevrimiçi kaynak koleksiyonlarıdır; makaleler, tezler ve raporlar burada yer alır.
+2. **Kurumsal ve resmî siteler** (`.edu.tr`, `.gov.tr`).
+3. **Uzman kuruluşların yayınları.**
+4. **Genel web siteleri ve haber siteleri.**
+5. **Forumlar, sosyal medya, bloglar** (tek başına kaynak olarak kullanılmaz).
 :::
 
 # Dezenformasyon ve Sahte Haber
@@ -65,11 +77,19 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 ![Şüpheli içeriği kontrol et](gorseller/diagram-dezenformasyon.png){width=78%}
 
+Kütüphanecilik alanında çalışan uluslararası bir kuruluşun (IFLA) hazırladığı aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
+
+::: {#fig-sahte-haber-ifla layout-ncol=2}
+![Sekiz maddelik denetim listesi](gorseller/ekran-sahte-haber-ifla.png){width=100%}
+
+Kontrol listesi içeriğin kaynağını, yazarını, tarihini ve amacını sorgular; bu, 1. haftada öğrendiğimiz beş soruyla aynı yaklaşımdır.
+:::
+
 En sık karşılaşacağınız biçimler:
 
 | Biçim | Ne yapar |
 |:---|:---|
-| **Başlık tuzağı** | İçerik başlığın söylediğini söylemez |
+| **Başlık tuzağı** | Başlık, içeriğin söylemediği bir şeyi iddia eder |
 | **Bağlamdan koparma** | Eski bir fotoğraf güncel olaymış gibi sunulur |
 | **Sahte görsel** | Fotoğraf düzenlenir ya da başka olaydan alınır |
 | **Yanlış alıntı** | Bir uzmana söylemediği söz atfedilir |
@@ -78,8 +98,8 @@ En sık karşılaşacağınız biçimler:
 ::: {.callout-warning}
 ## Paylaşmadan önce iki soru
 
-**1. Kaynağa gittim mi?** Başlığı okuyup paylaşmak, en yaygın hata.
-**2. Tersine görsel arama yaptım mı?** Bir fotoğrafın daha önce başka bir bağlamda kullanılıp kullanılmadığını görmek için görsel arama kullanılabilir.
+1. **Kaynağa gittim mi?** Başlığı okuyup paylaşmak, en yaygın hata.
+2. **Tersine görsel arama yaptım mı?** Bir fotoğrafın daha önce başka bir bağlamda kullanılıp kullanılmadığını görmek için görsel arama kullanılabilir.
 
 Yanıtı "hayır" ise **paylaşmayın**. Yanlış bilginin yayılmasına katkı, onu üretmek kadar zarar verir.
 :::
@@ -103,6 +123,10 @@ Yanıtı "hayır" ise **paylaşmayın**. Yanlış bilginin yayılmasına katkı,
 | **Gövde** | Hitap, mesaj, kapanış, imza |
 | **Ek (attachment)** | Gönderilen dosyalar |
 
+Bu bölümler bir e-posta penceresinde şöyle sıralanır:
+
+![Bir e-postanın bölümleri](gorseller/diagram-eposta-bolumler.png){width=82%}
+
 ::: {.callout-warning}
 ## Gizli alıcı (BCC) ne zaman kullanılır?
 
@@ -118,7 +142,7 @@ Bir kişi listesini **To** alanına yazmak, tanımadığınız kişilerin adresl
 - **Kısa ve net yazın.** Uzun paragraflar yerine madde madde.
 - **Tam cümle kullanın.** Kurumsal yazışmada kısaltma ve emoji kullanılmaz.
 - **Büyük harfle yazmayın.** Karşı taraf bunu bağırmak gibi algılar.
-- **Yanıtla / Yanıtla-hepsine ayrımına dikkat edin.** Yalnızca gönderene mi, tüm listeye mi yanıt veriyorsunuz?
+- **Yanıtla / Tümüne yanıtla ayrımına dikkat edin.** Yalnızca gönderene mi, tüm listeye mi yanıt veriyorsunuz?
 - **Ek gönderiyorsanız dosya adını düzeltin.** `belge1.docx` yerine `enf101-odev-ahmet-yilmaz.docx`.
 - **Büyük dosyaları ek olarak göndermeyin.** Posta sunucularının ek boyutu sınırı vardır (genellikle 20–25 MB); büyük bir dosyayı buluta yükleyip **bağlantısını** göndermek ya da sıkıştırmak daha güvenilirdir.
 - **Göndermeden okuyun.** Yazım hatası ve yanlış alıcı, en sık yapılan iki hatadır.
@@ -141,7 +165,13 @@ E-posta, saldırganların en çok kullandığı giriş kapısıdır. Tanımanız
 | **Adres uyuşmazlığı** | Görünen ad doğru, arkasındaki adres farklı olabilir |
 | **Yazım hataları** | Kurumsal e-postada beklenmez |
 | **Bilgi isteği** | Kurumlar e-postayla parola sormaz |
-| **Bağlantı adresi** | Üzerine gelindiğinde gerçek adres görünür; yazılandan farklı olabilir |
+| **Bağlantı adresi** | Bilgisayarda üzerine gelindiğinde gerçek adres görünür; yazılandan farklı olabilir. **Telefonda üzerine gelinemez**, bu yüzden bağlantıya tıklamadan önce adres çubuğunu okuyun |
+
+Aşağıdaki örnek, sahte bir e-Devlet duyurusudur: iletide kurumun adı ve amblemi kullanılmış, kredi kartı aidat iadesi adı altında **para vaat edilmiş** ve işlemi tamamlamak için bir bağlantıya tıklamanız istenmiştir.
+
+![Sahte e-Devlet duyurusu: para vaat eden ve bağlantıya yönlendiren bir örnek](gorseller/ekran-oltalama-edevlet.png){width=72%}
+
+Bu örnekte birkaç şüpheli işaret bir arada: **gerçek olmayan bir kazanç** vaadi, işlemi **yalnızca verilen bağlantıdan** yapmaya yönlendirme ve acele ettirme. Gerçek e-Devlet size kendiliğinden böyle bir bildirim göndermez; böyle bir durumda bağlantıya tıklamadan doğrudan **turkiye.gov.tr** adresinden giriş yapıp ilgili hizmeti kendiniz kontrol edersiniz.
 
 ::: {.callout-warning}
 ## Şüphelendiğinizde ne yapmalısınız?
@@ -159,7 +189,11 @@ Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgile
 
 ## İstenmeyen posta (spam)
 
-Adresiniz bir kez paylaşıldığında listelere girer ve istenmeyen toplu posta gelmeye başlar. Yapılacaklar basittir:
+Adresiniz bir kez paylaşıldığında listelere girer ve spam (istenmeyen toplu posta) gelmeye başlar:
+
+![İstenmeyen posta nasıl gelir?](gorseller/diagram-spam.png){width=88%}
+
+Yapılacaklar basittir:
 
 - Mesajdaki bağlantılara **tıklamayın**, ekleri açmayın.
 - Postayı **istenmeyen olarak işaretleyip silin**.
@@ -169,6 +203,8 @@ Adresiniz bir kez paylaşıldığında listelere girer ve istenmeyen toplu posta
 # Dijital Kamu Hizmetleri ve e-Devlet
 
 Kamu hizmetlerinin elektronik ortama taşınması, dijital dönüşümün en somut örneklerinden biridir. **e-Devlet**, farklı kurumların hizmetlerine tek bir giriş üzerinden erişmenizi sağlar: belge talebi, başvuru, sorgulama, ödeme.
+
+![e-Devlet: farklı kurumların hizmetlerine tek giriş](gorseller/diagram-edevlet.png){width=82%}
 
 ## Güvenli kullanım
 
@@ -262,10 +298,16 @@ Bu uygulama notla değerlendirilmez. Amacı, doğrulama ve yazışma becerilerin
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunması ve gizlilik. (kvkk.gov.tr)
 
-**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki üç fotoğraf için kaynak gösterme zorunludur:
+**Görsel kaynakları.** Bu haftanın şemaları dersin yazarı tarafından çizilmiştir. Fotoğraflar ve ekran görüntüleri Wikimedia Commons'tan alınmıştır; aşağıdaki görseller için kaynak gösterme zorunludur:
 
 - SIM kart — *Formats de cartes SIM*, Bidouille82, CC BY-SA 3.0.
 - Çipli (akıllı) kart — *TopUp TV smart card back*, Bumper12, CC BY-SA 4.0.
 - Kart okuyucu — *IC Card Reader Writer RW-5100W*, Project Kei, CC BY-SA 4.0.
+- Arama sonuçları listesi — *Search Engine Results Page (SERP) Graphic Illustration*, Muhammad Rafizeldi, CC BY 4.0.
+- Sahte haber denetim listesi — *How to Spot Fake News*, IFLA (Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu), CC BY 4.0.
+
+Sahte e-Devlet duyurusu görseli, oltalama örneği olarak **temsilî biçimde** ders için hazırlanmıştır; gerçek bir kuruma ait değildir.
+
+Google arama sayfası görüntüsü kamu malıdır (kaynak gösterme zorunlu değildir).
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

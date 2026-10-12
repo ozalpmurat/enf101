@@ -33,11 +33,11 @@ Dosya kaybolmaz — **yanlış yerde** durur ya da **hiç yedeklenmemiştir**. B
 
 # Dosya ve Klasör İşlemleri
 
-**Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır: kökün altına klasörler, onların altına alt klasörler ve dosyalar yerleşir.
+**Dosya**, bilgisayarda saklanan her türlü bilgi birimidir. **Klasör** ise dosyaları gruplamak için kullanılan kaptır. Dosya ve klasörler, tek bir **kök** klasörden başlayan **ağaç yapısı** içinde yer alır: kökün altına klasörler, onların altına alt klasörler ve dosyalar yerleşir.
 
 ![Masaüstünde dosyalar ve klasörler](gorseller/ekran-dosya-klasor.png){width=75%}
 
-![Windows'ta kök dizinden başlayan dosya ağacı yapısı](gorseller/diagram-dosya-agaci.png){width=28%}
+![Windows'ta kök klasörden başlayan dosya ağacı yapısı](gorseller/diagram-dosya-agaci.png){width=28%}
 
 Her dosyanın bir **adı** ve bir **yolu** vardır; ayrıca **genellikle bir de uzantısı** olur.
 

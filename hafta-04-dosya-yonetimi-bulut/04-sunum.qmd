@@ -30,7 +30,7 @@ format: beamer
 \end{center}
 ```
 
-## Kök Dizinden Başlayan Ağaç Yapısı
+## Kök Klasörden Başlayan Ağaç Yapısı
 
 ::: {.columns}
 ::: {.column width="45%"}
@@ -46,7 +46,7 @@ format: beamer
 - **Dosya:** Bilgisayarda saklanan bilgi birimi
 - **Klasör:** Dosyaları gruplamak için kullanılan kap
 
-Hepsi tek bir **kök** dizinden başlayan **ağaç yapısı** içinde yer alır.
+Hepsi tek bir **kök** klasörden başlayan **ağaç yapısı** içinde yer alır.
 :::
 :::
 
@@ -99,8 +99,8 @@ Dosya adının sonundaki noktadan sonraki kısımdır. İşletim sistemi ona bak
 |:---|:---|
 | `.docx` | Metin belgesi (Word) |
 | `.odt` | Metin belgesi (açık kaynak) |
-| `.xlsx` | Elektronik tablo |
-| `.pptx` | Sunum |
+| `.xlsx` | Elektronik tablo (Excel) |
+| `.pptx` | Sunum (PowerPoint) |
 | `.pdf` | Taşınabilir belge |
 | `.jpg`, `.png` | Görsel |
 | `.zip` | Sıkıştırılmış arşiv |
