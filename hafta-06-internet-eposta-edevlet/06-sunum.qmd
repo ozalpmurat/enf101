@@ -94,7 +94,13 @@ Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) listes
 
 ## Adresin Yapısı
 
-![](gorseller/diagram-eposta.png){width=76%}
+**E-posta**, kurumsal yazışmanın temel aracıdır; adresiniz sizi ve kurumunuzu temsil eder.
+
+![](gorseller/diagram-eposta.png){width=72%}
+
+- **@ işaretinin solu** kimi, **sağı** postanın hangi sunucuya gideceğini belirtir.
+- Alan adı kurumu da belli eder: `...edu.tr` üniversite, `...gov.tr` kamu kurumu.
+- Adres benzersizdir ve kurumunuz tarafından verilir — ciddi bir adres seçin (`ad.soyad` gibi).
 
 ## E-postanın Bölümleri
 

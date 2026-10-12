@@ -108,7 +108,11 @@ Yanıtı "hayır" ise **paylaşmayın**. Yanlış bilginin yayılmasına katkı,
 
 ## Adresin yapısı
 
+Bir e-posta adresi **@** işaretiyle iki yarıya ayrılır. Sol yarı **kullanıcı adıdır**: postanın o sunucuda kime teslim edileceğini belirtir. Sağ yarı **alan adıdır**: postanın hangi sunucuya, dolayısıyla hangi kuruma gideceğini belirtir.
+
 ![E-posta adresinin yapısı](gorseller/diagram-eposta.png){width=78%}
+
+Alan adı ayrıca adresin hangi tür kuruma ait olduğunu da ele verir: `...edu.tr` ile biten bir adres bir eğitim kurumuna, `...gov.tr` ile biten bir adres bir kamu kurumuna aittir — kaynak değerlendirirken baktığımız aynı işaret. Adres benzersizdir ve kurumunuz tarafından verilir; kurumsal yazışmada kullanacağınız adres sizi ve kurumunuzu temsil eder.
 
 ## Bir e-postanın bölümleri
 

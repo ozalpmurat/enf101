@@ -413,17 +413,26 @@ konumundan kökü bularak haftanın `gorseller/` klasörüne yazar
 (`Path(__file__).resolve().parent.parent`), yani hangi dizinden çalıştırıldığı önemli değildir.
 
 Daha önce betikler depoda tutulmuyordu; ajan oturumlarının geçici klasörlerinde kalıyor ve kayboluyordu.
-12.10.2026'da bulunabilenler bu klasöre taşındı (6 betikten, tek-PNG kuralına göre bölünerek 10 betik).
+12.10.2026'da bulunabilenler bu klasöre taşındı (6 betikten, tek-PNG kuralına göre bölünerek 10 betik);
+aynı gün bir betik de baştan yazıldı, böylece klasörde **11 betik** oldu.
 Kapsam ve sınırlar:
 
 - **Kaynağı olan görseller:** 2. haftadan `diagram-ram-depolama`, `diagram-hdd-ssd`; 3. haftadan
   `diagram-ornek-yazdirma`; 4. haftadan `diagram-bulut`, `diagram-dosya-agaci`; 6. haftadan
-  `diagram-edevlet`, `diagram-eposta-bolumler`, `diagram-spam`, `diagram-sahte-haber-denetim`;
-  8. haftadan `karsilastirma`.
+  `diagram-edevlet`, `diagram-eposta`, `diagram-eposta-bolumler`, `diagram-spam`,
+  `diagram-sahte-haber-denetim`; 8. haftadan `karsilastirma`.
 - **Kaynağı bulunmayanlar:** kalan şemalar (ör. 2. haftanın `diagram-ipos` ve `diagram-anakart`'ı —
   bunlar 28.09.2026'da başka bir oturumda yeniden çizildi, eski betiğin ürettiği sürümle
   uyuşmadığı için taşınmadı) ve `foto-*`/`ekran-*` görselleri. Bir görselin betiği yoksa
   kaynağı kayıptır; yeniden çizilmesi gerekir.
+- **Sonradan yazılan betik:** `diagram-eposta` (6. hafta) taşınmadı, 12.10.2026'da baştan yazıldı.
+  Şeklin **içinde gömülü başlık** vardı ("E-POSTA ADRESININ YAPISI") — aşağıdaki kurala aykırı ve
+  slayt başlığıyla şekil altyazısının aynısını tekrarlıyordu; kaynağı kayıp olduğu için çizimi
+  düzeltmenin tek yolu yeniden çizmekti. Betiği olan diğer şekillerde bu sorun aranabilir.
+- **Kutudan taşan yazı (sessiz kusur):** matplotlib yazıyı kırmaz, kutunun kenarından **üstüne
+  bindirerek** taşırır; görüntüde hata mesajı olmaz, şema bozuk görünür. `diagram-eposta.py`
+  yazı genişliklerini kutularla `--kontrol` bayrağında ölçüyor; yeni bir kart şeması çizerken
+  kutu genişliğini metin uzunluğuna göre **ölçerek** verin (bkz. aşağıdaki ölçü kuralları).
 - **Yeniden çalıştırma tuzağı:** betikler görselin üzerine **yazar**. Eski betikler farklı bir
   matplotlib/FreeType sürümüyle üretildiği için aynı betik bugün çalıştırıldığında PNG piksel piksel
   aynı çıkmaz (ölçüldü: %0,8–1,5 oranında yalnızca kenar yumuşatma farkı; `diagram-dosya-agaci`'nda
