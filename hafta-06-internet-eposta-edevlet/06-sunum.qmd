@@ -151,7 +151,7 @@ Sahte kurum adı altında ekli dosyayı açmanızı ya da bağlantıya tıklaman
 ## Şüphelendiğinizde
 
 - Ne eki açın ne bağlantıya tıklayın
-- **Göndereni başka kanaldan arayıp doğrulayın**
+- **Gönderen ile başka kanaldan iletişime geçip doğrulayın**
 - Kurumunuzun bilgi işlem birimine bildirin
 
 **Acele ettiren her mesaj şüphelidir.**
