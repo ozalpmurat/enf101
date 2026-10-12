@@ -105,11 +105,13 @@ doğru olan belgelere dokunmaz.
 
 **Tuzak — ek geçişlerin `xelatex`'i PATH'ten gelir.** Quarto belgeyi kendi TinyTeX'iyle derler, betik ise ek
 geçişlerde PATH'teki `xelatex`'i çağırır. PATH'teki `xelatex` belgeyi derleyemiyorsa (ör. tam TeX Live
-kurulumunda `fontawesome5` paketi yoksa: `File 'fontawesome5.sty' not found`) ek geçişler **sessizce**
-başarısız olur, altbilgi hiç oturmaz ve betik yalnızca "UYARI: altbilgi tutmuyor" der. Çözüm: TinyTeX'in
-`bin` klasörünü PATH'in başına almak ya da eksik paketi kurmak (`tlmgr install fontawesome5`;
-Debian/Ubuntu'da `sudo apt install texlive-fonts-extra`). 12.10.2026'da 6. haftanın notunda yaşandı:
-altbilgi ancak paket kurulunca oturdu.
+kurulumunda `fontawesome5` paketi yoksa: `File 'fontawesome5.sty' not found`; Quarto bu paketi belgede
+çağrı kutusu varsa kendisi ister) ek geçişler **sessizce** başarısız olur, altbilgi hiç oturmaz ve betik
+yalnızca "UYARI: altbilgi tutmuyor" der. Çözüm: PATH'teki `xelatex`'i derleyebilir hâle getirmek —
+TinyTeX'in `bin` klasörünü PATH'in başına almak (paket TinyTeX ile gelir) ya da **yalnızca eksik paketi**
+kurmak (`tlmgr install fontawesome5`, ~1,5 MB). Dağıtımın geniş font paketini kurmayın
+(`texlive-fonts-extra`: indirme ~700 MB, diskte ~2 GB); gerekmez. 12.10.2026'da 6. haftanın notunda
+yaşandı: altbilgi ancak eksik paket kurulunca oturdu.
 
 Denenip **işe yaramayan** çözümler — tekrar denenmesin: `\AtEndDocument{\clearpage\label{LastPage}}`
 (referans "??" kalır), `totpages` paketi (TinyTeX'te kurulu değil, derleme düşer), etiketi altbilgiye taşımak

@@ -48,7 +48,7 @@ git clone https://github.com/ozalpmurat/enf101.git
 
 ## 2. Quarto'yu kurun
 
-Tarayıcıdan **quarto.org/docs/download** adresine gidin. Sayfa, işletim sisteminizi kendisi algılar ve doğru dosyayı önerir. Dosya boyutu yaklaşık 150–250 MB'tır.
+Tarayıcıdan **quarto.org/docs/download** adresine gidin. Sayfa, işletim sisteminizi kendisi algılar ve doğru dosyayı önerir. Dosya boyutu yaklaşık 140–240 MB'tır (işletim sistemine göre).
 
 İndirilecek dosya işletim sistemine göre değişir:
 
@@ -85,7 +85,7 @@ PDF üretmek için Quarto'nun arkasında bir dizgi motoruna ihtiyaç vardır. Bu
 quarto install tinytex
 ```
 
-Bu adım yaklaşık 100 MB indirir ve diskte 400–500 MB yer kaplar. Yalnızca bir kez yapılır.
+Bu adım işletim sistemine göre yaklaşık 145–200 MB indirir ve diskte 400 MB'dan fazla yer kaplar. Yalnızca bir kez yapılır; sonradan gereken paketler kendiliğinden eklendiği için kurulum zamanla biraz büyür.
 
 ## 5. Şemalar için Chrome (isteğe bağlı)
 

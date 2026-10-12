@@ -72,5 +72,8 @@ cd /c/Users/<kullanıcı>/Documents/enf101
   tlmgr install fontawesome5
   ```
 
-  Debian/Ubuntu'daki TeX Live karşılığı: `sudo apt install texlive-fonts-extra`.
+  Paket yaklaşık 1,5 MB'tır. Dağıtımın geniş font paketini **kurmaya gerek yoktur** (Debian/Ubuntu'da
+  `texlive-fonts-extra`: indirme ~700 MB, diskte ~2 GB). TinyTeX zaten kuruluysa aynı paketi oradan
+  almak da yeter: `texmf-dist` içindeki `tex/latex/fontawesome5` ile `fonts/*/public/fontawesome5`
+  klasörlerini TEXMFHOME ağacına (`~/texmf/`) kopyalayın.
 - Dosya/klasör adlarında Türkçe karakter kullanmayın (depodaki adlar zaten uygundur).
