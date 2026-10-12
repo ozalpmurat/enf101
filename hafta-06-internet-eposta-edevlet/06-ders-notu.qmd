@@ -220,8 +220,6 @@ Kamu hizmetlerinin elektronik ortama taşınması, dijital dönüşümün en som
 
 Kamu hizmetlerinde ve resmî işlemlerde karşınıza çıkacak üç farklı kavram vardır; bunları karıştırmamak önemlidir.
 
-![Kimlik doğrulama ve imza araçları](gorseller/diagram-eimza.png){width=80%}
-
 | Kavram | Ne yapar | Hukuki sonucu |
 |:---|:---|:---|
 | **e-Devlet şifresi** | Kimliğinizi doğrular (giriş aracı) | İmza yerine geçmez |

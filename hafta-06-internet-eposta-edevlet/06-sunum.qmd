@@ -214,13 +214,9 @@ Tek adres: **turkiye.gov.tr**
 
 # e-imza
 
-## Karıştırılan Üç Kavram
+## Karşılaştırma
 
 **Üçü farklı iş yapar:** biri sisteme giriş aracı, ikisi hukuken imza sayılır.
-
-![](gorseller/diagram-eimza.png){width=78%}
-
-## Karşılaştırma
 
 | Kavram | Ne yapar | Hukuki sonuç |
 |:---|:---|:---|
