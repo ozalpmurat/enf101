@@ -45,6 +45,8 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 ├─ BASLIKLAR.qmd + .pdf          ders içeriği başlıkları (betikle üretilir)
 ├─ araclar/
 │  └─ basliklari-uret.py         BASLIKLAR.qmd'yi ders notlarından üretir
+├─ diyagram_betikleri/           diyagram üreten betikler (bkz. §8)
+│  └─ <görsel adı>.py            ürettiği PNG ile aynı adı taşır
 ├─ .github/
 │  ├─ workflows/
 │  │  └─ pdf-paketi.yml          PDF'leri ZIP'leyip sürüme yükler (elle tetiklenir)
@@ -396,7 +398,30 @@ kendiliğinden ortadan kalkar. Çoktan seçmeli şıkların harf etiketleri bu y
 
 ## 8. Görsel üretimi
 
-matplotlib ile üretilen grafiklerde kaynak betikler ayrı bir çalışma alanında tutulur.
+**Diyagram betikleri `diyagram_betikleri/` klasöründe tutulur** (kullanıcı kararı, 12.10.2026).
+**Bir betik tek bir PNG üretir** ve o PNG ile **aynı adı** taşır (`diagram-spam.py` →
+`gorseller/diagram-spam.png`); böylece görselin kaynağı ada bakarak bulunur. Betik çıktıyı, kendi
+konumundan kökü bularak haftanın `gorseller/` klasörüne yazar
+(`Path(__file__).resolve().parent.parent`), yani hangi dizinden çalıştırıldığı önemli değildir.
+
+Daha önce betikler depoda tutulmuyordu; ajan oturumlarının geçici klasörlerinde kalıyor ve kayboluyordu.
+12.10.2026'da bulunabilenler bu klasöre taşındı (6 betikten, tek-PNG kuralına göre bölünerek 10 betik).
+Kapsam ve sınırlar:
+
+- **Kaynağı olan görseller:** 2. haftadan `diagram-ram-depolama`, `diagram-hdd-ssd`; 3. haftadan
+  `diagram-ornek-yazdirma`; 4. haftadan `diagram-bulut`, `diagram-dosya-agaci`; 6. haftadan
+  `diagram-edevlet`, `diagram-eposta-bolumler`, `diagram-spam`, `diagram-sahte-haber-denetim`;
+  8. haftadan `karsilastirma`.
+- **Kaynağı bulunmayanlar:** kalan şemalar (ör. 2. haftanın `diagram-ipos` ve `diagram-anakart`'ı —
+  bunlar 28.09.2026'da başka bir oturumda yeniden çizildi, eski betiğin ürettiği sürümle
+  uyuşmadığı için taşınmadı) ve `foto-*`/`ekran-*` görselleri. Bir görselin betiği yoksa
+  kaynağı kayıptır; yeniden çizilmesi gerekir.
+- **Yeniden çalıştırma tuzağı:** betikler görselin üzerine **yazar**. Eski betikler farklı bir
+  matplotlib/FreeType sürümüyle üretildiği için aynı betik bugün çalıştırıldığında PNG piksel piksel
+  aynı çıkmaz (ölçüldü: %0,8–1,5 oranında yalnızca kenar yumuşatma farkı; `diagram-dosya-agaci`'nda
+  %4,3). Görünür bir fark değildir ama git ikili dosyada değişiklik gösterir; gereksiz yere
+  çalıştırmayın.
+
 Tema renkleri: lacivert `#1F3864`, mavi `#2E74B5`, açık zemin `#EDF2F9`, gri `#595959`.
 
 **Ölçü kuralları (iki tur hatadan sonra çıkarıldı):**
