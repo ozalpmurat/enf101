@@ -178,7 +178,7 @@ Bu örnekte birkaç şüpheli işaret bir arada: **gerçek olmayan bir kazanç**
 ::: {.callout-warning}
 ## Şüphelendiğinizde ne yapmalısınız?
 
-Ne eki açın ne de bağlantıya tıklayın. **Gönderen ile başka bir kanaldan iletişime geçip doğrulayın.** Kurumunuzdan geldiğini düşündüğünüz şüpheli bir e-postayı bilgi işlem birimine bildirin.
+Ne eki açın ne de bağlantıya tıklayın. Gönderen ile başka bir kanaldan iletişime geçip doğrulayın. Kurumunuzdan geldiğini düşündüğünüz şüpheli bir e-postayı bilgi işlem birimine bildirin.
 
 Unutmayın: oltalama saldırıları (phishing) genellikle sizi acele ettirir. **Acele ettiren her mesaj şüphelidir.**
 :::
