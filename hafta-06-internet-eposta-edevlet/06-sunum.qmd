@@ -131,11 +131,7 @@ Böylece herkes yalnızca kendi adresini görür.
 - **İçeriğinden emin olmadığınız mesajı iletmeyin** — zincirleme iletiler yanlış bilgi taşır
 - İletirken **alıcı listesini ve gereksiz ekleri** temizleyin
 
-## Sinirliyken Yanıt Yazmayın
-
-Taslağı yazın, kaydedin, yarım saat bekleyin, sonra gönderin.
-
-Kurumsal yazışma **kayıt altındadır** ve geri alınamaz.
+**Sinirliyken yanıt yazmayın.** Taslağı yazın, kaydedin, yarım saat bekleyin, sonra gönderin. Kurumsal yazışma **kayıt altındadır** ve geri alınamaz.
 
 # E-posta Güvenliği
 
