@@ -90,7 +90,7 @@ Yanıt "hayır" ise **paylaşmayın**.
 
 ## Sahte Haberi Fark Etme Listesi
 
-IFLA'nın listesinden uyarlanan sekiz madde:
+Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) listesinden uyarlanan sekiz madde:
 
 \includegraphics[width=0.95\linewidth,height=0.72\textheight,keepaspectratio]{gorseller/diagram-sahte-haber-denetim.png}
 

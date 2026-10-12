@@ -77,7 +77,7 @@ Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine d
 
 ![Şüpheli içeriği kontrol et](gorseller/diagram-dezenformasyon.png){width=78%}
 
-Kütüphanecilik alanında çalışan uluslararası bir kuruluşun (IFLA) hazırladığı listeye dayanan aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
+Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) hazırladığı listeye dayanan aşağıdaki denetim listesi, bir içeriği paylaşmadan önce sorulması gereken soruları özetler:
 
 ![IFLA'nın denetim listesinden uyarlanan sekiz madde](gorseller/diagram-sahte-haber-denetim.png){width=95%}
 
