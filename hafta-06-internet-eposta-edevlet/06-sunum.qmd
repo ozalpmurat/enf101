@@ -141,6 +141,8 @@ Kurumsal yazışma **kayıt altındadır** ve geri alınamaz.
 
 ## Şüpheli İşaretler
 
+Sahte kurum adı altında ek açmanızı ya da bağlantıya tıklamanızı isteyen e-postalara **oltalama (phishing)** denir.
+
 | İşaret | Neden şüpheli |
 |:---|:---|
 | "Acelen var" vurgusu | Düşünmeden tıklamanızı ister |
@@ -198,7 +200,9 @@ Parola, kimlik numarası, sağlık bilgisi e-postayla gönderilmez.
 
 Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi, başvuru, sorgulama, ödeme.
 
-![](gorseller/diagram-edevlet.png){width=88%}
+Tek adres: **turkiye.gov.tr**
+
+![](gorseller/diagram-edevlet.png){width=75%}
 
 ## Güvenli Kullanım
 
@@ -211,6 +215,8 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 # e-imza
 
 ## Karıştırılan Üç Kavram
+
+**Üçü farklı iş yapar:** biri sisteme giriş aracı, ikisi hukuken imza sayılır.
 
 ![](gorseller/diagram-eimza.png){width=78%}
 
@@ -256,7 +262,7 @@ Notla değerlendirilmez.
 ## Özet
 
 - **Etkili arama**: netleştir, anahtar kelime, sınırla, doğrula
-- **Dezenformasyon**: kaynağa gitmeden paylaşma
+- **Dezenformasyon**: içeriği kaynağından okumadan paylaşmayın
 - **E-posta**: konu, hitap, kısa gövde, kapanış, imza
 - **BCC**: adres gizliliği için
 - **Oltalama**: acele ettirir; başka kanaldan doğrula
