@@ -36,8 +36,6 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 İnternette arama yapmak herkesin yaptığı bir şey, ama **verimli** arama yapmak öğrenilen bir beceridir.
 
-![Etkili arama: dört adım](gorseller/diagram-arama.png){width=78%}
-
 ::: {#fig-arama-ornek layout-ncol=2}
 ![Google arama sayfası](gorseller/ekran-google-arama.png){width=100%}
 
@@ -45,6 +43,18 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine dönüşmesidir.
 :::
+
+![Etkili arama: dört adım](gorseller/diagram-arama.png){width=78%}
+
+Dört adım, Şekil 1'deki arama kutusuna ne yazılacağını ve bulunan sonucun nasıl eleneceğini belirler.
+Önce **soruyu netleştirirsiniz**: ne aradığınızı bir tümceyle söyleyebiliyorsanız doğru sözcükleri de
+bulabilirsiniz. Sonra **anahtar kelime** seçilir; ardından sonuçlar **sınırlandırılır** — kurumsal bir
+alan adı, bir dosya türü ya da bir tarih aralığı listeyi gözle görülür biçimde kısaltır. Son adım
+**doğrulamadır**: bir sonucun listenin ilk sırasında çıkması, o bilginin doğru olduğu anlamına gelmez.
+
+Bu adımlar tek turda bitmez. Boş ya da ilgisiz bir listeyle karşılaştığınızda sorun genellikle İnternet'te
+aradığınız bilginin bulunmaması değil, yanlış soru kurmanızdır: başa dönüp soruyu ve anahtar kelimeleri
+değiştirin. Doğrulama adımı ise aramayı kopyala-yapıştır işinden ayıran şeydir.
 
 ## Aramayı daraltma yolları
 
@@ -55,16 +65,29 @@ Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine d
 - **Tür sınırlaması:** `filetype:pdf` yalnızca PDF sonuçları getirir; ders materyali veya rapor ararken kullanışlıdır.
 - **Tarih sınırlaması:** Güncel bilgi gerektiğinde arama aracının tarih filtresini kullanın.
 
+::: {.callout-tip}
+## Dört adım bir arada: somut bir örnek
+
+Sınav haftasında kütüphanenin kaçta açıldığını araştırdığınızı düşünün:
+
+1. **Soruyu netleştirin:** "kütüphane açık mı" sorusu belirsizdir; hangi kütüphane ve hangi gün? Doğru soru: "üniversitemiz kütüphanesi sınav haftasında kaçta açılıyor?"
+2. **Anahtar kelimeyi seçin:** "kütüphane açık mı saat" gibi dağınık bir tamlama yerine ayırt edici sözcükler: `kütüphane çalışma saatleri`.
+3. **Sınırlayın:** `site:edu.tr` yazarak sonuçları üniversite sitelerine indirin.
+4. **Doğrulayın:** Sayfanın resmî kurum sitesinde olduğundan ve tarihin bu döneme ait olduğundan emin olun; bilgi eski bir duyuruda kalmış olabilir.
+:::
+
 ## Kaynak değerlendirme
 
-1\. haftada öğrendiğimiz **beş soruyu** hatırlayın ve internette karşılaştığınız her içeriği aşağıdaki ölçütlerle sınayın:
+Karşılaştığınız her içerikte 1. haftanın **beş sorusunu** yeniden sorun: kaynağı, yazarı, tarihi, amacı ve kanıtı sorgulayan bu sorular bir alışkanlığa dönüşmeli.
+
+Beş soru şöyle:
 
 ![Şüpheli içeriği kontrol et](gorseller/diagram-dezenformasyon.png){width=78%}
 
+Kaynağa ulaşamıyorsanız ya da sorular yanıtısız kalıyorsa içeriği aktarmayın. Ödev ve araştırma için hangi kaynağa önce bakacağınız da bir sıra izler:
+
 ::: {.callout-tip}
 ## Akademik kaynak ararken
-
-Ödev ve araştırma için öncelik sırası şöyle olmalı:
 
 1. **Kütüphane veri tabanları ve akademik dergiler.** Üniversite kütüphanesinin abone olduğu, yalnızca kütüphane üzerinden erişilebilen çevrimiçi kaynak koleksiyonlarıdır; makaleler, tezler ve raporlar burada yer alır.
 2. **Kurumsal ve resmî siteler** (`.edu.tr`, `.gov.tr`).
@@ -81,7 +104,7 @@ Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) hazır
 
 ![IFLA'nın denetim listesinden uyarlanan sekiz madde](gorseller/diagram-sahte-haber-denetim.png){width=95%}
 
-Kontrol listesi içeriğin kaynağını, yazarını, tarihini ve amacını sorgular; bu, 1. haftada öğrendiğimiz beş soruyla aynı yaklaşımdır.
+Kontrol listesi içeriğin kaynağını, yazarını ve tarihini sorgular; tamamını okumayı ve destekleyici kanıtlara bakmayı ister; bu, 1. haftanın beş sorusuyla aynı yaklaşımdır.
 
 En sık karşılaşacağınız biçimler:
 
@@ -108,7 +131,7 @@ Yanıtı "hayır" ise **paylaşmayın**. Yanlış bilginin yayılmasına katkı,
 
 ## Adresin yapısı
 
-Bir e-posta adresi **@** işaretiyle iki yarıya ayrılır. Sol yarı **kullanıcı adıdır**: postanın o sunucuda kime teslim edileceğini belirtir. Sağ yarı **alan adıdır**: postanın hangi sunucuya, dolayısıyla hangi kuruma gideceğini belirtir.
+Bir e-posta adresi @ **işaretiyle** iki yarıya ayrılır. Sol yarı **kullanıcı adıdır**: postanın o sunucuda kime teslim edileceğini belirtir. Sağ yarı **alan adıdır**: postanın hangi sunucuya, dolayısıyla hangi kuruma gideceğini belirtir.
 
 ![E-posta adresinin yapısı](gorseller/diagram-eposta.png){width=78%}
 
@@ -187,7 +210,7 @@ Unutmayın: oltalama saldırıları (phishing) genellikle sizi acele ettirir. **
 
 E-posta, yolda ve sunucularda **şifresiz** tutulabilir. Ağdaki biri ya da yanlış bir alıcı mesajınızı okuyabilir; kurumsal yazışmalar ayrıca **kayıt altındadır** ve sonradan silinse bile kurumda kalır.
 
-Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgileri e-postayla göndermeyin; böyle bir bilgi gerekiyorsa güvenli bir kanal kullanın (5. hafta) ve kişisel veri kurallarını hatırlayın (11. hafta).
+Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgileri e-postayla göndermeyin; böyle bir bilgi gerekiyorsa güvenli bir kanal kullanın (10. hafta) ve kişisel veri kurallarını hatırlayın (11. hafta).
 
 ## İstenmeyen posta (spam)
 

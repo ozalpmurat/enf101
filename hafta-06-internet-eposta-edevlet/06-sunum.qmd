@@ -20,10 +20,6 @@ format: beamer
 
 # Etkili Arama
 
-## Dört Adım
-
-![](gorseller/diagram-arama.png){width=78%}
-
 ## Arama Kutusu ve Sonuçlar
 
 ::: {.columns}
@@ -40,6 +36,12 @@ format: beamer
 :::
 :::
 
+## Dört Adım
+
+![](gorseller/diagram-arama.png){width=78%}
+
+Sonuç işinize yaramadıysa başa dönün: çoğu zaman soru yanlış kurulmuştur.
+
 ## Aramayı Daraltmanın Yolları
 
 - **Anahtar kelime:** Uzun cümle yerine ayırt edici kelimeler
@@ -49,9 +51,18 @@ format: beamer
 - **`filetype:pdf`:** Yalnızca PDF getir
 - **Tarih filtresi:** Güncel bilgi gerektiğinde
 
-## Kaynak Değerlendirme
+## Dört Adım: Somut Örnek
 
-1\. haftadaki **beş soruyu** hatırlayın ve karşılaştığınız her içeriği aşağıdaki ölçütlerle sınayın.
+Kütüphanenin sınav haftasında kaçta açıldığı aranıyor:
+
+- **Netleştir:** hangi kütüphane, hangi gün?
+- **Anahtar kelime:** `kütüphane çalışma saatleri`
+- **Sınırla:** `site:edu.tr`
+- **Doğrula:** resmî site mi, tarih bu döneme mi ait?
+
+## Kaynak Değerlendirme: Beş Soru
+
+Kaynağı, yazarı, tarihi, amacı ve kanıtı sorgulayan **beş soruyu** her karşılaştığınız içerikte yeniden sorun.
 
 ![](gorseller/diagram-dezenformasyon.png){width=76%}
 
@@ -98,7 +109,7 @@ Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) listes
 
 ![](gorseller/diagram-eposta.png){width=72%}
 
-- **@ işaretinin solu** kimi, **sağı** postanın hangi sunucuya gideceğini belirtir.
+- @ işaretinin **solu** kimi, **sağı** postanın hangi sunucuya gideceğini belirtir.
 - Alan adı kurumu da belli eder: `...edu.tr` üniversite, `...gov.tr` kamu kurumu.
 - Adres benzersizdir ve kurumunuz tarafından verilir — ciddi bir adres seçin (`ad.soyad` gibi).
 

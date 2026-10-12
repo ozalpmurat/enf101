@@ -1,6 +1,9 @@
 # 6. hafta: e-Devlet — farklı kurumların hizmetlerine tek giriş.
 # Kullanım: python3 diyagram_betikleri/diagram-edevlet.py
 # Çıktı:    hafta-06-internet-eposta-edevlet/gorseller/diagram-edevlet.png
+#
+# Şemanın içine başlık yazılmaz (AGENTS.md §8): başlık ders notunda şekil
+# altyazısı, sunuda slayt başlığıdır.
 
 from pathlib import Path
 
@@ -47,33 +50,30 @@ def ok(ax, p1, p2, cift=False, etiket=None, renk=LAC):
                 fontsize=8.5, color=GRI, zorder=4)
 
 
-fig, ax = plt.subplots(figsize=(8.6, 4.4), dpi=170)
+fig, ax = plt.subplots(figsize=(8.6, 3.2), dpi=170)
 ax.set_xlim(0, 10)
-ax.set_ylim(0, 5.2)
+ax.set_ylim(0, 4.2)
 ax.axis("off")
 
-ax.add_patch(FancyBboxPatch((0.25, 0.25), 9.5, 4.7,
+ax.add_patch(FancyBboxPatch((0.25, 0.2), 9.5, 3.7,
              boxstyle="round,pad=0.02,rounding_size=0.12",
              linewidth=0, facecolor=ZEMIN, zorder=0))
 
 # sol: kullanıcı
-kutu(ax, 0.7, 2.1, 2.0, 1.0, "Kullanıcı\n(tek giriş)", fc="#FFFFFF", fs=11, bold=True)
+kutu(ax, 0.7, 1.55, 2.0, 1.0, "Kullanıcı\n(tek giriş)", fc="#FFFFFF", fs=11, bold=True)
 # orta: e-Devlet kapısı
-kutu(ax, 3.6, 1.9, 2.3, 1.4, "e-Devlet\nKapısı", fc=LAC, tc="#FFFFFF", fs=13, bold=True)
+kutu(ax, 3.7, 1.3, 2.3, 1.5, "e-Devlet\nKapısı", fc=LAC, tc="#FFFFFF", fs=13, bold=True)
 # sag: kurumlar
 kurumlar = ["Belge talebi", "Başvuru", "Sorgulama", "Ödeme"]
-ys = [3.55, 2.75, 1.95, 1.15]
+ys = [2.9, 2.15, 1.4, 0.65]
 for k, y in zip(kurumlar, ys):
-    kutu(ax, 7.0, y, 2.4, 0.62, k, fc=ACIK, fs=10)
+    kutu(ax, 7.1, y, 2.2, 0.62, k, fc=ACIK, fs=10)
 
-ok(ax, (2.7, 2.6), (3.6, 2.6), cift=True, etiket="giriş /\nsonuç")
+ok(ax, (2.7, 2.05), (3.7, 2.05), cift=True, etiket="giriş /\nsonuç")
 for y in ys:
-    ok(ax, (5.9, 2.6), (7.0, y + 0.31))
+    ok(ax, (6.0, 2.05), (7.1, y + 0.31))
 
-ax.text(5.0, 4.75, "e-Devlet: farklı kurumların hizmetlerine tek giriş",
-        ha="center", va="center", fontsize=9.5, color=GRI, style="italic")
-
-fig.tight_layout(pad=0.2)
+fig.tight_layout(pad=0.35)
 cikti = HEDEF / "diagram-edevlet.png"
 fig.savefig(cikti, dpi=170, facecolor="white")
 plt.close(fig)
