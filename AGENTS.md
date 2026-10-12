@@ -69,8 +69,6 @@ Hafta klasörünün içindeki üç belgenin adı da hafta numarasıyla başlar: 
 başka bir klasöre kopyalandığında ya da tek başına paylaşıldığında hangi haftaya ait olduğu adından
 anlaşılır. `NN` iki haneli hafta numarasıdır (01 … 14) ve klasör adındaki numarayla aynıdır.
 
-Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz).
-
 ---
 
 ## 3. Üretim
@@ -197,9 +195,9 @@ PDF'ler `.qmd` dosyalarının yanına üretilir. Üretim sırasında oluşan ge�
 `tema/sunum.tex` ise kapak amblemini **`tema/logo.png`**'den alır (bkz. §5 kural 7); bu dosya da
 silinirse/taşınırsa sunular amblemsiz derlenir.
 
-**`tema/notlar-hafta.tex`** ise 28 haftalık belgenin (14 ders notu + 14 alıştırma) YAML'ında
-`include-in-header: ../tema/notlar-hafta.tex` ile çağrılır; silinir/taşınırsa bu 28 belge derlenmez.
-Ayrıntı ve kenar boşluğu/logo kuralları: §6.
+**`tema/notlar-hafta.tex`** ise haftalık ders notları ve alıştırmaların (diğer belgeler kullanmaz;
+bkz. §6) YAML'ında `include-in-header: ../tema/notlar-hafta.tex` ile çağrılır; silinir/taşınırsa bu
+belgelerin hiçbiri derlenmez. Ayrıntı ve kenar boşluğu/logo kuralları: §6.
 
 Bu dosyalar silinirse veya taşınırsa **hiçbir belge derlenmez** ve şu hata alınır:
 
@@ -319,6 +317,10 @@ sağa, `1.3cm` sola). Yükseklik/ölçü için `height` değerini değiştirin; 
 - Her hafta şu bölümlerle biter: **Uygulama · Özet · Kendini Sınama Soruları · Kaynaklar**.
 - İçindekiler tablosu ve numaralandırma otomatiktir (`toc: true`, `number-sections: true`).
   Başlıklara **elle numara yazılmaz**; sıra değişince numaralar kendiliğinden düzelir.
+- **Sunumdaki slayt sırası, ders notundaki bölüm ve görsel sırasını izler.** Aynı konunun iki
+  belgede farklı sırada anlatılması derste notla slayt arasında geçişi bozar. Birinde sıra
+  değiştirilirken diğeri de değiştirilir (ör. önce kavramın somut görünümü — ekran görüntüsü,
+  fotoğraf —, sonra onu soyutlayan şema).
 - Bölüm başlığı **tam metin** olarak figure altına yazılır; Quarto "Şekil 1:" etiketi kendisi ekler.
 - **Paragraf `N. ` ile başlamaz.** Satır başındaki "sayı + nokta" pandoc tarafından **sıralı liste** olarak
   çözülür; cümle maddelenir ve devamı maddenin gövdesine girer. En çok haftalara atıf yapan cümlelerde olur
@@ -413,36 +415,27 @@ konumundan kökü bularak haftanın `gorseller/` klasörüne yazar
 (`Path(__file__).resolve().parent.parent`), yani hangi dizinden çalıştırıldığı önemli değildir.
 
 Daha önce betikler depoda tutulmuyordu; ajan oturumlarının geçici klasörlerinde kalıyor ve kayboluyordu.
-12.10.2026'da bulunabilenler bu klasöre taşındı (6 betikten, tek-PNG kuralına göre bölünerek 10 betik);
-aynı gün bir betik de baştan yazıldı, böylece klasörde **11 betik** oldu.
-Kapsam ve sınırlar:
+Envanter tutulmaz: betik ile PNG aynı adı taşıdığı için **hangi görselin kaynağı olduğu ada bakılarak**
+bulunur. Bir PNG'nin `diyagram_betikleri/` içinde eş adı taşıyan betiği yoksa kaynağı kayıptır ve
+elden geçirilmesi gereken görsel odur.
 
-- **Kaynağı olan görseller:** 2. haftadan `diagram-ram-depolama`, `diagram-hdd-ssd`; 3. haftadan
-  `diagram-ornek-yazdirma`; 4. haftadan `diagram-bulut`, `diagram-dosya-agaci`; 6. haftadan
-  `diagram-edevlet`, `diagram-eposta`, `diagram-eposta-bolumler`, `diagram-spam`,
-  `diagram-sahte-haber-denetim`; 8. haftadan `karsilastirma`.
-- **Kaynağı bulunmayanlar:** kalan şemalar (ör. 2. haftanın `diagram-ipos` ve `diagram-anakart`'ı —
-  bunlar 28.09.2026'da başka bir oturumda yeniden çizildi, eski betiğin ürettiği sürümle
-  uyuşmadığı için taşınmadı) ve `foto-*`/`ekran-*` görselleri. Bir görselin betiği yoksa
-  kaynağı kayıptır; yeniden çizilmesi gerekir.
-- **Sonradan yazılan betik:** `diagram-eposta` (6. hafta) taşınmadı, 12.10.2026'da baştan yazıldı.
-  Şeklin **içinde gömülü başlık** vardı ("E-POSTA ADRESININ YAPISI") — aşağıdaki kurala aykırı ve
-  slayt başlığıyla şekil altyazısının aynısını tekrarlıyordu; kaynağı kayıp olduğu için çizimi
-  düzeltmenin tek yolu yeniden çizmekti. Betiği olan diğer şekillerde bu sorun aranabilir.
 - **Kutudan taşan yazı (sessiz kusur):** matplotlib yazıyı kırmaz, kutunun kenarından **üstüne
-  bindirerek** taşırır; görüntüde hata mesajı olmaz, şema bozuk görünür. `diagram-eposta.py`
-  yazı genişliklerini kutularla `--kontrol` bayrağında ölçüyor; yeni bir kart şeması çizerken
-  kutu genişliğini metin uzunluğuna göre **ölçerek** verin (bkz. aşağıdaki ölçü kuralları).
-- **Yeniden çalıştırma tuzağı:** betikler görselin üzerine **yazar**. Eski betikler farklı bir
-  matplotlib/FreeType sürümüyle üretildiği için aynı betik bugün çalıştırıldığında PNG piksel piksel
-  aynı çıkmaz (ölçüldü: %0,8–1,5 oranında yalnızca kenar yumuşatma farkı; `diagram-dosya-agaci`'nda
-  %4,3). Görünür bir fark değildir ama git ikili dosyada değişiklik gösterir; gereksiz yere
-  çalıştırmayın.
+  bindirerek** taşırır; görüntüde hata mesajı olmaz, şema bozuk görünür. Yeni bir kart şeması çizerken
+  kutu genişliğini metin uzunluğuna göre **ölçerek** verin (bkz. aşağıdaki ölçü kuralları) ve betiğe
+  `--kontrol` bayrağı koyun: bu bayrak PNG üretmeden her yazının kendi kutusuna sığıp sığmadığını
+  yazdırır, taşma varsa betik sıfır olmayan çıkış koduyla döner.
+- **Yeniden çalıştırma tuzağı:** betikler görselin üzerine **yazar**. Farklı bir matplotlib/FreeType
+  sürümüyle üretilmiş bir PNG, betik bugün çalıştırıldığında piksel piksel aynı çıkmaz (fark yalnızca
+  kenar yumuşatmadır, görünür bir fark değildir). Bu, git'te ikili dosyada değişiklik olarak görünür;
+  gereksiz yere çalıştırmayın, yalnızca şemayı gerçekten değiştirecekseniz çalıştırın.
 
 **Şemaya başlık gömülmez.** Başlık ders notunda şekil altyazısı, sunumda slayt başlığıdır; şemanın
-içine de yazılırsa aynı söz iki kez basılır (12.10.2026'da 6. haftada yaşandı: slayt başlığı, üst satır
-ve görselin içindeki başlık aynı cümleyi üç kez söylüyordu). Yatay bir kart şemasında başlık bandı
-kaldırılınca görsel de kısalır, slayta daha rahat oturur.
+içine de yazılırsa aynı söz iki kez basılır (bir slaytta üç kez söylendiği de görüldü: slayt başlığı,
+şemanın üst satırı ve altyazı). Yatay bir kart şemasında başlık bandı kaldırılınca görsel de kısalır,
+slayta daha rahat oturur. Bu kusur sessizdir: eski oturumlarda çizilmiş şemalarda da bulunabilir.
+Denetim için PNG ile altyazı/slayt başlığını karşılaştırın (ör. `tesseract <png> - -l tur`) ve betiği
+olan şemalarda başlığı çizen `ax.text(...)` satırını arayın; bulunan betikte başlık satırı silinir,
+figür yüksekliği başlıksız düzene göre kısaltılır ve PNG yeniden üretilir.
 
 **Dış görselin yerine kendi çizimini koyarken metin ve künye birlikte değişir.** Görsel artık bir
 uyarlamaysa çevresindeki cümle "kuruluşun hazırladığı" değil "…listesine dayanan/uyarlanan" demeli;
@@ -677,27 +670,26 @@ karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzelt
 **Açık — karar bekleyen iş yok (30.09.2026).** Sunum teması yaygınlaştırması tamamlandı; ders
 notları **ENF lacivertinde kalıyor** (kullanıcı kararı, 30.09.2026).
 
-**Açık — doğru cevap dağılımı (08.10.2026).** 14 haftanın alıştırmalarındaki çoktan seçmeli doğru
-cevapların harflere dağılımı henüz dengeli değil (bazı haftalarda tek harf baskın, bazı harfler hiç
-kullanılmıyor; ör. 4. haftada B×2, C×4, E×2 — A ve D yok). §7'ye dengeli dağılım kuralı, §11'e 10.
+**Açık — doğru cevap dağılımı (08.10.2026).** Alıştırmalardaki çoktan seçmeli doğru
+cevapların harflere dağılımı her haftada dengeli değil (bazı haftalarda tek harf baskın, bazı harfler
+hiç kullanılmıyor; ör. bir haftada B×2, C×4, E×2 — A ve D yok). §7'ye dengeli dağılım kuralı, §11'e 10.
 kontrol eklendi (08.10.2026); kalan haftalar sırası geldikçe denetlenip dengelenecek.
 
 Kapatılan başlıklar ve kararları:
 
 - **Sunum teması yaygınlaştırma (30.09.2026):** Şablon Hannover + BSEU kimliğine çevrildi
-  (`tema/sunum.tex`, `tema/logo.png`, `_quarto.yml`; §5 kural 7–8). **14 haftanın tamamı +
-  `ornekler/quarto-ozellikleri-sunum.qmd`** yeni temayla yeniden derlendi; slayt sayıları birebir
-  korundu (01:28, 02:37, 03:35, 04:39, 05:39, 06:36, 07:39, 08:39, 09:31, 10:38, 11:30, 12:29,
-  13:30, 14:38; örnek:38). Hafta-02 ve 03 kenar çubuğuna beyaz amblem gelmeden önce derlenmişti,
-  onlar da yenilendi. Ders notları ve alıştırmalar **değişmedi**. Bu iş sırasında `tema/sunum.tex`'te
+  (`tema/sunum.tex`, `tema/logo.png`, `_quarto.yml`; §5 kural 7–8). **Bütün sunular** (14 hafta +
+  `ornekler/quarto-ozellikleri-sunum.qmd`) yeni temayla yeniden derlendi; slayt sayıları birebir
+  korundu. İki hafta kenar çubuğuna beyaz amblem gelmeden önce derlenmişti, onlar da yenilendi.
+  Ders notları ve alıştırmalar **değişmedi**. Bu iş sırasında `tema/sunum.tex`'te
   eksik olan ortak TikZ renk adları (`navy`/`enfnavy`, `accentcol`/`enfaccent`, `greytext`/`enfgrey`,
   `lightbg`; §8) geri eklendi — şablon yenilenirken düşmüşlerdi ve TikZ şeması içeren örnek sunumu
   "Undefined color `enfnavy`" hatasıyla derlenmez hâle getirmişlerdi.
 
-- **Sunu kalabalığı:** 4. hafta 38, 7. hafta 39 slayt. Kullanıcı bu yoğunluğu kabul etti (hedef ~30,
-  kabul edilen üst sınır 38; 39 onaylı). Yeni bir konu eklenirse başka bir yerden yer açmak gerekir.
+- **Sunu kalabalığı:** Hedef ~30, kabul edilen üst sınır 38 slayttır; iki sununun bu sınırın
+  bir birim üstünde olduğu kabul edilmiştir. Yeni bir konu eklenirse başka bir yerden yer açmak gerekir.
 
-- **Uyarı kutuları:** 4. ve 5. haftada ikişer olan `callout-warning` kutuları 14 sununun tamamına
+- **Uyarı kutuları:** iki haftada ikişer olan `callout-warning` kutuları tüm sunulara
   yaygınlaştırıldı; artık her sunuda en az bir kutu var.
 
 - **Çıktı eşlemesi (K1–K9):** izlence ile haftalık belgeler arasındaki eşleme gözden geçirildi.
