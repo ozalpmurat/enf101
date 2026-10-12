@@ -103,6 +103,14 @@ Betik, `.tex`'i koruyarak (`-M keep-tex:true`) derler; son sayfada `Sayfa n / N`
 oturana kadar (en fazla 6 kez) ek `xelatex` geçişi yapar, ardından yan ürünleri siler. Altbilgisi zaten
 doğru olan belgelere dokunmaz.
 
+**Tuzak — ek geçişlerin `xelatex`'i PATH'ten gelir.** Quarto belgeyi kendi TinyTeX'iyle derler, betik ise ek
+geçişlerde PATH'teki `xelatex`'i çağırır. PATH'teki `xelatex` belgeyi derleyemiyorsa (ör. tam TeX Live
+kurulumunda `fontawesome5` paketi yoksa: `File 'fontawesome5.sty' not found`) ek geçişler **sessizce**
+başarısız olur, altbilgi hiç oturmaz ve betik yalnızca "UYARI: altbilgi tutmuyor" der. Çözüm: TinyTeX'in
+`bin` klasörünü PATH'in başına almak ya da eksik paketi kurmak (`tlmgr install fontawesome5`;
+Debian/Ubuntu'da `sudo apt install texlive-fonts-extra`). 12.10.2026'da 6. haftanın notunda yaşandı:
+altbilgi ancak paket kurulunca oturdu.
+
 Denenip **işe yaramayan** çözümler — tekrar denenmesin: `\AtEndDocument{\clearpage\label{LastPage}}`
 (referans "??" kalır), `totpages` paketi (TinyTeX'te kurulu değil, derleme düşer), etiketi altbilgiye taşımak
 (yine "??"), altbilgiden toplamı tümden kaldırmak (çalışır ama `n / N` bilgisi kaybolur — kullanıcı bunu

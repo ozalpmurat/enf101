@@ -64,5 +64,13 @@ cd /c/Users/<kullanıcı>/Documents/enf101
 
 ## Notlar
 
-- Tam TeX Live (TinyTeX değil) kullanacaksanız `fontawesome5` paketi kurulu olmalı; TinyTeX ile birlikte gelir.
+- Tam TeX Live (TinyTeX değil) kullanacaksanız `fontawesome5` paketi de kurulu olmalı; TinyTeX ile birlikte
+  gelir. Paket yoksa belgeler derlenmez (`File 'fontawesome5.sty' not found`) ve `araclar/derle.sh`
+  altbilgiyi düzeltemez. Kurmak için:
+
+  ```powershell
+  tlmgr install fontawesome5
+  ```
+
+  Debian/Ubuntu'daki TeX Live karşılığı: `sudo apt install texlive-fonts-extra`.
 - Dosya/klasör adlarında Türkçe karakter kullanmayın (depodaki adlar zaten uygundur).
