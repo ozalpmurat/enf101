@@ -67,7 +67,7 @@ Hafta klasörünün içindeki üç belgenin adı da hafta numarasıyla başlar: 
 başka bir klasöre kopyalandığında ya da tek başına paylaşıldığında hangi haftaya ait olduğu adından
 anlaşılır. `NN` iki haneli hafta numarasıdır (01 … 14) ve klasör adındaki numarayla aynıdır.
 
-Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz) · 40 diyagram.
+Toplam: 14 hafta · 42 belge (+ izlence ve kılavuz).
 
 ---
 
@@ -386,7 +386,7 @@ kendiliğinden ortadan kalkar. Çoktan seçmeli şıkların harf etiketleri bu y
 
 ## 8. Görsel üretimi
 
-Mevcut 40 diyagramın tamamı **matplotlib** ile üretildi (kaynak betikler ayrı bir çalışma alanında tutuldu).
+matplotlib ile üretilen grafiklerde kaynak betikler ayrı bir çalışma alanında tutulur.
 Tema renkleri: lacivert `#1F3864`, mavi `#2E74B5`, açık zemin `#EDF2F9`, gri `#595959`.
 
 **Ölçü kuralları (iki tur hatadan sonra çıkarıldı):**
