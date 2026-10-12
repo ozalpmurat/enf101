@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 08.10.2026
+Son güncelleme: 12.10.2026
 
 ---
 
@@ -39,7 +39,8 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 ├─ ornekler/                     Quarto özellik örnekleri (başvuru belgesi, ders içeriği değil)
 │  ├─ quarto-ozellikleri.qmd + .pdf + .html        özellik başvuru belgesi
 │  ├─ quarto-ozellikleri-sunum.qmd + .pdf          aynı içeriğin sunum sürümü
-│  └─ gorseller/
+│  ├─ gorseller/
+│  └─ temalar/bseu3.pdf          onaylanmış sunum tasarımı (bkz. §5 kural 7)
 ├─ izlence.qmd + .pdf            ders izlencesi
 ├─ BASLIKLAR.qmd + .pdf          ders içeriği başlıkları (betikle üretilir)
 ├─ araclar/
@@ -49,6 +50,7 @@ Ders, klasik "temel bilgi teknolojileri" kapsamındadır. **Programlama öğreti
 │  │  └─ pdf-paketi.yml          PDF'leri ZIP'leyip sürüme yükler (elle tetiklenir)
 │  └─ surum-notlari-baslangic.md sürüm notlarının başlangıç metni (bir kez okunur)
 ├─ KILAVUZ_Quarto_...qmd + .pdf  hocalar için Quarto kurulum/kullanım kılavuzu
+├─ WINDOWS-KURULUM.md            Windows'ta depo kurulumu ve derleme adımları (PowerShell)
 └─ hafta-NN-konu/                NN = 01 … 14, konu = kısa konu adı
    ├─ NN-ders-notu.qmd + .pdf    8–12 sayfa
    ├─ NN-sunum.qmd + .pdf        25–38 slayt (hedef ~30)
@@ -251,8 +253,7 @@ durur. Sunu adı zaten her slaytın alt şeridinde yazdığı için orada tekrar
 bölüm navigasyonu aynen kalır.
 
 Renkler amblemden örneklendi: ana koyu kırmızı `#A91818`, gölge `#7C0F0F`, vurgu `#C66A65`,
-açık zemin `#F6E8E7`, gri `#5D5E5E`. Onaylanmış tasarım `ornekler/temalar/hafta03/bseu3.pdf`;
-tema denemeleri `ornekler/temalar/` altındadır.
+açık zemin `#F6E8E7`, gri `#5D5E5E`. Onaylanmış tasarım `ornekler/temalar/bseu3.pdf`.
 
 Korunacaklar: görselleri sığdıran `\setkeys{Gin}` bloğu (kural 5–6), `mainfont` ayarlanmaması
 (kural 3), her `#` altında `##` bulunması (kural 2).
@@ -581,7 +582,6 @@ daha yapılır (mekanik kontrollerin yakalamadığı kalite sorunları bunlarda 
 
 Bu içerik denetimi tek komutla yapılamaz; dosyalar (gerektiğinde atıf yapılan diğer hafta da) okunup
 karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzeltme kararı kullanıcıya bırakılır.
-
 
 ---
 
