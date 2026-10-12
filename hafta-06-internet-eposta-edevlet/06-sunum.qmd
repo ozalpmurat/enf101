@@ -137,7 +137,7 @@ Böylece herkes yalnızca kendi adresini görür.
 
 ## Şüpheli İşaretler
 
-Sahte kurum adı altında ek açmanızı ya da bağlantıya tıklamanızı isteyen e-postalara **oltalama (phishing)** denir.
+Sahte kurum adı altında ekli dosyayı açmanızı ya da bağlantıya tıklamanızı isteyen e-postalara **oltalama (phishing)** denir.
 
 | İşaret | Neden şüpheli |
 |:---|:---|
