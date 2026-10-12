@@ -184,7 +184,7 @@ Parola, kimlik numarası, sağlık bilgisi e-postayla gönderilmez.
 
 ## İstenmeyen Posta (Spam)
 
-- Adresiniz listelere girdiğinde spam gelmeye başlar
+- Adresiniz bir kez paylaşıldığında spam gönderenlerin adres listelerine düşer; spam gelmeye başlar
 - Bağlantılara tıklamayın; **işaretleyip silin**
 - "Listeden çık" bağlantısına güvenmeyin: adresinizin **canlı olduğunu doğrular**
 

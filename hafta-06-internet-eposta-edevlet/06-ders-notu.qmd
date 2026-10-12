@@ -191,7 +191,7 @@ Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgile
 
 ## İstenmeyen posta (spam)
 
-Adresiniz bir kez paylaşıldığında listelere girer ve spam (istenmeyen toplu posta) gelmeye başlar:
+Adresiniz bir kez paylaşıldığında spam gönderenlerin adres listelerine girer ve spam (istenmeyen toplu posta) gelmeye başlar:
 
 ![İstenmeyen posta nasıl gelir?](gorseller/diagram-spam.png){width=88%}
 
