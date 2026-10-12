@@ -39,7 +39,7 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 ![Etkili arama: dört adım](gorseller/diagram-arama.png){width=78%}
 
 ::: {#fig-arama-ornek layout-ncol=2}
-![Arama kutusu: anahtar kelime buraya yazılır](gorseller/ekran-google-arama.png){width=100%}
+![Google arama sayfası](gorseller/ekran-google-arama.png){width=100%}
 
 ![Arama sonuçları listesi](gorseller/ekran-arama-sonuclari.png){width=100%}
 

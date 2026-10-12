@@ -30,7 +30,7 @@ format: beamer
 ::: {.column width="50%"}
 ![](gorseller/ekran-google-arama.png){width=100%}
 
-*Arama kutusuna yazılan sözcükler*
+*Google arama sayfası: sözcükler kutuya yazılır*
 :::
 
 ::: {.column width="50%"}
