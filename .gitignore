@@ -45,6 +45,11 @@ desktop.ini
 *.swp
 *~
 
+# --- Ajan / araç artıkları ---
+# OpenChamber oturumunun depoda bıraktığı ekran görüntüleri. Ders içeriği
+# değildir; PDF teslim paketinin konusu değildir (AGENTS.md §3).
+.openchamber/
+
 # --- R / RStudio ---
 .Rproj.user/
 .Rhistory
