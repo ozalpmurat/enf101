@@ -211,6 +211,10 @@ Tek adres: **turkiye.gov.tr**
 
 ![](gorseller/diagram-edevlet.png){width=75%}
 
+## e-Devlet Giriş Sayfası (turkiye.gov.tr)
+
+![](gorseller/ekran-edevlet-giris.png){width=55%}
+
 ## Güvenli Kullanım
 
 - **Adresi kontrol edin:** `gov.tr` uzantılı ve `https`

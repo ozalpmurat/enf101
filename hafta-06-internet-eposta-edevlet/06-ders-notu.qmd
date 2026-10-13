@@ -231,6 +231,8 @@ Kamu hizmetlerinin elektronik ortama taşınması, dijital dönüşümün en som
 
 ![e-Devlet: farklı kurumların hizmetlerine tek giriş](gorseller/diagram-edevlet.png){width=82%}
 
+![e-Devlet giriş sayfası (turkiye.gov.tr)](gorseller/ekran-edevlet-giris.png){width=62%}
+
 ## Güvenli kullanım
 
 - **Adresin doğruluğundan emin olun.** Giriş yapmadan önce adres çubuğunu kontrol edin; resmî site `gov.tr` uzantılıdır ve `https` ile şifrelidir.
