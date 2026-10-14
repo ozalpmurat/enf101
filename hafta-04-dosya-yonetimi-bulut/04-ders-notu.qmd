@@ -246,6 +246,12 @@ Bir dosyayı "bağlantıya sahip herkes düzenleyebilir" olarak paylaşmak, ço�
 
 **Yedekleme**, verinizin bir kopyasını başka bir yerde bulundurmaktır. Bu, bu haftanın en önemli başlığıdır — çünkü diğer bütün konular veriyi **kullanmakla** ilgiliyken, yedekleme veriyi **korumakla** ilgilidir.
 
+**Yedek almanın üç yolu:**
+
+- **İşletim sisteminin yedekleme aracı:** Sisteme hazır gelir; zamanlamayı siz yaparsınız, kopyalamayı o yapar.
+- **Kendi kuracağınız bir yedekleme aracı:** Ücretsizleri de var, ücretlileri de; neyin nereye yedekleneceğini siz belirlersiniz.
+- **Elle yedekleme:** Önemli dosyaları düzenli aralıklarla kendiniz kopyalarsınız; en basit yol, ama unutulmaya en açık olanı.
+
 ![Windows'ta yedekleme seçenekleri](gorseller/ekran-yedekleme.png){width=42%}
 
 ## 3-2-1 kuralı
