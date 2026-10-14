@@ -83,11 +83,28 @@ Hepsi tek bir **kök** klasörden başlayan **ağaç yapısı** içinde yer alı
 
 ## Aynı Klasörde İki Aynı Ad Olamaz
 
-Bir dosyayı aynı klasöre kopyalarsanız sistem adının sonuna "kopya" ekler.
+::: {.columns}
+::: {.column width="55%"}
+
+Bir dosyayı aynı klasöre kopyalarsanız, sistem adının sonuna "kopya" veya (1) gibi sayı ekler.
 
 Bu dosyalar çoğalınca hangisinin güncel olduğu anlaşılmaz.
 
 **Çözüm:** kopyalamak yerine sürüm numarası kullanmak.
+
+:::
+
+::: {.column width="45%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.68\textheight,keepaspectratio]{gorseller/ekran-kopya-adi.png}
+\emph{Windows'ta aynı klasöre tekrar kopyalama: ad her seferinde "(kopya)" ekiyle çoğalır}
+\end{center}
+```
+
+:::
+:::
 
 # Dosya Uzantıları
 
@@ -344,6 +361,12 @@ Hesabınıza erişimi kaybederseniz dosyalarınıza da erişemezsiniz.
 ::: {.columns}
 ::: {.column width="62%"}
 Diğer konular veriyi **kullanmakla**, yedekleme veriyi **korumakla** ilgilidir.
+
+**Yedek almanın üç yolu:**
+
+- **İşletim sisteminin yedekleme aracı:** Sisteme hazır gelir; zamanlamayı siz yaparsınız, kopyalamayı o yapar.
+- **Kendi kuracağınız bir yedekleme aracı:** Ücretsizleri de var, ücretlileri de; neyin nereye yedekleneceğini siz belirlersiniz.
+- **Elle yedekleme:** Önemli dosyaları düzenli aralıklarla kendiniz kopyalarsınız; en basit yol, ama unutulmaya en açık olanı.
 :::
 
 ::: {.column width="38%"}
@@ -360,11 +383,11 @@ Diğer konular veriyi **kullanmakla**, yedekleme veriyi **korumakla** ilgilidir.
 
 ## 3-2-1 Kuralı
 
-- **3** kopya bulundurun
-- **2** farklı ortamda saklayın
-- **1** kopya bilgisayarın dışında olsun
-
-![](gorseller/diagram-yedekleme.png){width=62%}
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{gorseller/diagram-yedekleme.png}
+\end{center}
+```
 
 ## Alışkanlık Hâline Getirin
 
@@ -399,7 +422,7 @@ Notla değerlendirilmez.
 - **Çıkarılabilir aygıt:** güvenle çıkar, başka yerde kopyası olsun
 - **Biçimlendirme veriyi siler**
 - **Bulut**: erişim ve paylaşım sağlar, ama yedeğin yerini almaz
-- **3-2-1 kuralı**: 3 kopya, 2 ortam, 1 dışarıda
+- **3-2-1 kuralı**: 3 kopya, 2 ortam, 1 uzakta
 
 ## Gelecek Hafta
 

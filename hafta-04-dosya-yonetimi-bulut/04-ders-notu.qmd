@@ -65,8 +65,10 @@ Dosya kaybetmenin en yaygın nedeni, kötü adlandırmadır. Şu alışkanlıkla
 ::: {.callout-warning}
 ## Aynı klasörde iki aynı ad olamaz
 
-Bir dosyayı aynı klasöre kopyalarsanız sistem adının sonuna "kopya" ekler. Bu dosyalar çoğalınca hangisinin güncel olduğunu anlamak zorlaşır. Kopyalama yerine **sürüm numarası** kullanmak daha temizdir.
+Bir dosyayı aynı klasöre kopyalarsanız, sistem adının sonuna "kopya" veya (1) gibi sayı ekler. Bu dosyalar çoğalınca hangisinin güncel olduğunu anlamak zorlaşır. Kopyalama yerine **sürüm numarası** kullanmak daha temizdir.
 :::
+
+![Windows'ta aynı klasöre tekrar tekrar kopyalanan dosya: adı her kopyalamada "(kopya)" ekiyle çoğalır](gorseller/ekran-kopya-adi.png){width=60%}
 
 # Dosya Uzantıları
 
@@ -252,7 +254,9 @@ Yedekleme için yaygın kabul gören basit bir kural vardır:
 
 - **3** kopya bulundurun (asıl + iki yedek)
 - **2** farklı ortamda saklayın (örneğin bilgisayar + harici disk)
-- **1** kopya bilgisayarınızın dışında olsun (örneğin bulut)
+- **1** kopya uzakta olsun (örneğin bulut)
+
+Harici diske alıp onu **aynı çantada** taşırsanız çanta kaybolduğunda bilgisayar da disk de gider. Üçüncü kopya **uzakta** durmalı: bulutta ya da evinizden ayrı bir adreste.
 
 ![3-2-1 yedekleme kuralı](gorseller/diagram-yedekleme.png){width=68%}
 
@@ -279,7 +283,7 @@ Bilgisayarınızdaki dosyaları üç gruba ayırın: **vazgeçilmez** (kaybı ka
 
 ## Adım 2 — Yedek planınızı yazın
 
-Vazgeçilmez dosyalarınız için 3-2-1 kuralını uygulayın: hangi üç kopyayı, hangi iki ortamda, hangi bir dış konumda tutacaksınız? Yazın.
+Vazgeçilmez dosyalarınız için 3-2-1 kuralını uygulayın: hangi üç kopyayı, hangi iki ortamda, hangisini uzakta tutacaksınız? Yazın.
 
 ## Adım 3 — Bir klasör yapısı kurun
 
@@ -304,7 +308,7 @@ Bu uygulama notla değerlendirilmez. Amacı, veri kaybına karşı somut bir al�
 - **Çıkarılabilir aygıtlar** güvenli çıkarılmalıdır ve üzerlerindeki verilerin başka bir yerde bir kopyası olmalıdır.
 - **Bölümleme** diski parçalara ayırır; **biçimlendirme** dosya sistemini belirler ve **veriyi siler**.
 - **Bulut**, her yerden erişim ve paylaşım sağlar; ama yedeğin yerini tamamen almaz.
-- **Yedekleme** için 3-2-1 kuralı: 3 kopya, 2 ortam, 1 tanesi dışarıda.
+- **Yedekleme** için 3-2-1 kuralı: 3 kopya, 2 ortam, 1 tanesi uzakta.
 
 # Kendini Sınama Soruları
 
