@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 12.10.2026
+Son güncelleme: 14.10.2026
 
 ---
 
@@ -308,6 +308,21 @@ bandın sağ kenarına (3,0 cm)** oturur. Sağa/sola kaydırmak için bu değeri
 sağa, `1.3cm` sola). Yükseklik/ölçü için `height` değerini değiştirin; ölçü ipucu: `1 mm ≈ 4 piksel`
 (96 dpi). Logo yolu `../tema/logo.png`'dir — xelatex hafta klasöründe çalıştığı için kök değil bir
 üst dizin (`../tema/`) kullanılır.
+
+**9. Slayt başlığı SOLA hizalıdır.** Hannover teması başlığı kendi içinde
+`\setbeamertemplate{frametitle}[default][right]` ile **sağa** yaslar
+(`beamerthemeHannover.sty`). Sunum araçlarının araç kutusu başlığın üstünü örttüğü için `tema/sunum.tex`
+başlığı `[left]` olarak ezer; `[right]` seçeneğinin verdiği 1,7 cm iç boşluk kalkar, başlık sola ve tam
+genişliğe yayılır. Dikey konum değişmez (üst kenardan ~0,3 cm). Bu satır **silinmemeli**, yoksa başlıklar
+yeniden sağa kayar.
+
+**10. Yalnızca bölüm adını taşıyan ayracı slaytlarda başlık TAMAMEN BÜYÜK HARF.** Bölüm ayraçları
+beamer'ın `section page` şablonundan basılır (Quarto bunu `\insertsection` ile tanımlar; `#` bölüm,
+`##` slayt). `tema/sunum.tex` bu şablonu `\MakeUppercase{\insertsection}` ile yeniden tanımlar; başka
+hiçbir slayt etkilenmez. Türkçe büyük harf eşlemesi (i→İ, ı→I) belge sınıfındaki `turkish` seçeneğiyle
+(babel) geldiği için `İŞLEMLERİ` (İ), `SIKIŞTIRMA` (I) doğru çıkar. Yabancı terimler de kurala uyar:
+**WiFi → WİFİ** (TDK gereği i→İ). Kaynaktaki bölüm başlıkları normal yazımda kalır; büyük harfe çevirme
+yalnızca slaytta basılır (kenar çubuğu listesi normal yazımını korur).
 
 ---
 

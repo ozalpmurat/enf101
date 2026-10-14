@@ -30,6 +30,26 @@
 
 \setbeamertemplate{navigation symbols}{}
 
+% ---- SLAYT BAŞLIĞI: SOLA HİZALI ----
+% Hannover teması başlığı `frametitle[default][right]` ile SAĞA yaslar
+% (bkz. beamerthemeHannover.sty). Sunum araçlarının araç kutusu başlığın üstünü
+% örttüğü için başlık sola alınmıştır. `[right]` seçeneği ayrıca başlığa 1,7 cm
+% iç boşluk verir; `[left]` bunu kaldırır, başlık sola ve tam genişliğe yayılır
+% (dikey konum aynı kalır: üst kenardan ~0,3 cm).
+\setbeamertemplate{frametitle}[default][left]
+
+% ---- BÖLÜM AYRACI SLAYTINDA BAŞLIK TAMAMEN BÜYÜK HARF ----
+% Yalnızca bölüm adını taşıyan ayrıcı slaytlar beamer'ın `section page`
+% şablonundan basılır (Quarto bunu `\insertsection` ile tanımlar, bkz. üretilen
+% .tex). Bölüm adı burada büyük harfe çevrilir; başka hiçbir slayt etkilenmez.
+% Türkçe büyük harf eşlemesi (i→İ, ı→I) babel'in `turkish` diliyle gelir.
+\setbeamertemplate{section page}{%
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\MakeUppercase{\insertsection}\par
+  \end{beamercolorbox}%
+}
+
 % ---- renk düğümleri ----
 \setbeamercolor{structure}{fg=bseured}
 \setbeamercolor{normal text}{fg=black}
