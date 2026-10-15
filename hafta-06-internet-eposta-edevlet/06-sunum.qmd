@@ -44,7 +44,7 @@ Sonuç işinize yaramadıysa başa dönün: çoğu zaman soru yanlış kurulmuş
 
 ## Aramayı Daraltmanın Yolları
 
-- **Anahtar kelime:** Uzun cümle yerine ayırt edici kelimeler
+- **Anahtar kelime:** Uzun cümle yerine ayırt edici kelimeler — "Nasıl ödev yazarım" yerine "akademik yazım kuralları"
 - **`"tam ifade"`:** Kelimeler tam bu sırayla geçsin
 - **`-kelime`:** Bu kelimeyi çıkar
 - **`site:gov.tr`:** Yalnızca o alan adında ara
@@ -53,24 +53,28 @@ Sonuç işinize yaramadıysa başa dönün: çoğu zaman soru yanlış kurulmuş
 
 ## Dört Adım: Somut Örnek
 
-Kütüphanenin sınav haftasında kaçta açıldığı aranıyor:
+Üniversite kütüphanesinin sınav haftasında kaçta açıldığı aranıyor:
 
 - **Netleştir:** hangi kütüphane, hangi gün?
 - **Anahtar kelime:** `kütüphane çalışma saatleri`
 - **Sınırla:** `site:edu.tr`
 - **Doğrula:** resmî site mi, tarih bu döneme mi ait?
 
+**Kötü arama:** kütüphane açık mı?
+
+**İyi arama:** kütüphane çalışma saatleri site:bilecik.edu.tr
+
 ## Kaynak Değerlendirme: Beş Soru
 
 Kaynağı, yazarı, tarihi, amacı ve kanıtı sorgulayan **beş soruyu** her karşılaştığınız içerikte yeniden sorun.
 
-![](gorseller/diagram-dezenformasyon.png){width=76%}
+![](gorseller/diagram-dezenformasyon.png){width=90%}
 
 ## Akademik Kaynak Önceliği
 
 1. Kütüphane veri tabanları ve akademik dergiler
 2. Resmî siteler (`.edu.tr`, `.gov.tr`)
-3. Uzman kuruluşların yayınları
+3. Konusunda uzman kuruluşların yayınları (ör. Dünya Sağlık Örgütü, Birleşmiş Milletler, OECD)
 4. Genel web ve haber siteleri
 5. Forumlar, sosyal medya, bloglar *(tek başına kaynak olmaz)*
 
@@ -78,7 +82,7 @@ Kaynağı, yazarı, tarihi, amacı ve kanıtı sorgulayan **beş soruyu** her ka
 
 ## Dezenformasyon: Tanım ve Biçimler
 
-**Dezenformasyon:** Yanıltmak amacıyla üretilmiş yanlış bilgi; farkı **kötü niyet**tir.
+Yanlış bilgide kötü niyetli olarak yanıltma amacı varsa, buna **dezenformasyon** denir.
 
 | Biçim | Ne yapar |
 |:---|:---|
@@ -119,7 +123,7 @@ Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) listes
 
 ## BCC Ne Zaman Kullanılır?
 
-Tanımadığınız çok sayıda kişiye duyuru gönderiyorsanız adresleri **BCC**'ye yazın.
+Çok sayıda kişiye duyuru gönderiyorsanız adresleri **BCC**'ye yazabilirsiniz.
 
 Böylece herkes yalnızca kendi adresini görür.
 
@@ -128,7 +132,7 @@ Böylece herkes yalnızca kendi adresini görür.
 ## Kurumsal Yazışma Kuralları
 
 - **Konu satırını boş bırakmayın**
-- **Hitap ve kapanış kullanın**
+- **Mesaj içeriğinde hitap ve kapanış kullanın**
 - **Kısa ve net yazın**
 - **Tam cümle kurun** — kısaltma ve emoji olmaz
 - **Büyük harfle yazmayın** — bağırmak gibi algılanır
@@ -151,10 +155,10 @@ Böylece herkes yalnızca kendi adresini görür.
 Sahte kurum adı altında ekli dosyayı açmanızı ya da bağlantıya tıklamanızı isteyen e-postalara **oltalama (phishing)** denir.
 
 | İşaret | Neden şüpheli |
-|:---|:---|
+|:--|:------|
 | "Acelen var" vurgusu | Düşünmeden tıklamanızı ister |
 | Beklenmedik ek | `.exe`, `.zip` zararlı olabilir |
-| Adres uyuşmazlığı | Görünen ad doğru, adres farklı |
+| Adres uyuşmazlığı | Görünen ad doğru, gerçek adres farklı |
 | Yazım hataları | Kurumsal e-postada beklenmez |
 | Bilgi isteği | Kurumlar parola sormaz |
 | Bağlantı adresi | Bilgisayarda üzerine gelince gerçek adres görünür; telefonda üzerine gelinemez, tuzağa bu yüzden düşülür |
@@ -195,7 +199,7 @@ Parola, kimlik numarası, sağlık bilgisi e-postayla gönderilmez.
 
 ## İstenmeyen Posta (Spam)
 
-- Adresiniz bir kez paylaşıldığında spam gönderenlerin adres listelerine düşer; spam gelmeye başlar
+- Adresiniz bir kez İnternet'te paylaşıldığında spam gönderenlerin adres listelerine düşer; spam gelmeye başlar
 - Bağlantılara tıklamayın; **işaretleyip silin**
 - "Listeden çık" bağlantısına güvenmeyin: adresinizin **canlı olduğunu doğrular**
 
@@ -219,7 +223,7 @@ Tek adres: **turkiye.gov.tr**
 
 - **Adresi kontrol edin:** `gov.tr` uzantılı ve `https`
 - **Parolayı paylaşmayın:** Hiçbir kurum istemez
-- **Ortak cihazda çıkış yapın:** Sekmeyi kapatmak yetmez
+- **Ortak cihazlarda oturumu kapatın:** Sekmeyi kapatmak yetmez
 - **Halka açık ağda işlem yapmayın:** Mobil veri kullanın
 - **Bildirimlere şüpheyle bakın:** Her zaman kendiniz giriş yapın
 

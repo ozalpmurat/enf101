@@ -70,7 +70,7 @@ değiştirin. Doğrulama adımı ise aramayı kopyala-yapıştır işinden ayır
 
 Sınav haftasında kütüphanenin kaçta açıldığını araştırdığınızı düşünün:
 
-1. **Soruyu netleştirin:** "kütüphane açık mı" sorusu belirsizdir; hangi kütüphane ve hangi gün? Doğru soru: "üniversitemiz kütüphanesi sınav haftasında kaçta açılıyor?"
+1. **Soruyu netleştirin:** "kütüphane açık mı" sorusu belirsizdir; hangi kütüphane ve hangi gün? Doğru soru: "Bilecik Üniversitesi kütüphanesi sınav haftasında kaçta açılıyor?"
 2. **Anahtar kelimeyi seçin:** "kütüphane açık mı saat" gibi dağınık bir tamlama yerine ayırt edici sözcükler: `kütüphane çalışma saatleri`.
 3. **Sınırlayın:** `site:edu.tr` yazarak sonuçları üniversite sitelerine indirin.
 4. **Doğrulayın:** Sayfanın resmî kurum sitesinde olduğundan ve tarihin bu döneme ait olduğundan emin olun; bilgi eski bir duyuruda kalmış olabilir.
@@ -91,7 +91,7 @@ Kaynağa ulaşamıyorsanız ya da sorular yanıtısız kalıyorsa içeriği akta
 
 1. **Kütüphane veri tabanları ve akademik dergiler.** Üniversite kütüphanesinin abone olduğu, yalnızca kütüphane üzerinden erişilebilen çevrimiçi kaynak koleksiyonlarıdır; makaleler, tezler ve raporlar burada yer alır.
 2. **Kurumsal ve resmî siteler** (`.edu.tr`, `.gov.tr`).
-3. **Uzman kuruluşların yayınları.**
+3. **Konusunda uzman kuruluşların yayınları** (ör. Dünya Sağlık Örgütü, Birleşmiş Milletler, OECD).
 4. **Genel web siteleri ve haber siteleri.**
 5. **Forumlar, sosyal medya, bloglar** (tek başına kaynak olarak kullanılmaz).
 :::
@@ -155,9 +155,9 @@ Bu bölümler bir e-posta penceresinde şöyle sıralanır:
 ::: {.callout-warning}
 ## Gizli alıcı (BCC) ne zaman kullanılır?
 
-Sizi tanımayan çok sayıda kişiye e-posta gönderiyorsanız (duyuru gibi), adresleri **BCC** alanına yazın. Böylece herkes kendi adresini görür, başkalarının adreslerini görmez.
+Çok sayıda kişiye duyuru gönderiyorsanız adresleri **BCC** alanına yazabilirsiniz. Böylece herkes yalnızca kendi adresini görür, başkalarının adresini görmez.
 
-Bir kişi listesini **To** alanına yazmak, tanımadığınız kişilerin adreslerini başkalarına açıklamak anlamına gelir — bu bir gizlilik ihlalidir.
+Çok sayıda kişiyi **To** alanına yazmak, tüm alıcıların adreslerini başkalarına açıklamak anlamına gelir — bu bir gizlilik ihlalidir.
 :::
 
 ## Kurumsal yazışma kuralları
@@ -214,7 +214,7 @@ Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgile
 
 ## İstenmeyen posta (spam)
 
-Adresiniz bir kez paylaşıldığında spam gönderenlerin adres listelerine girer ve spam (istenmeyen toplu posta) gelmeye başlar:
+Adresiniz bir kez İnternet'te paylaşıldığında spam gönderenlerin adres listelerine girer ve spam (istenmeyen toplu posta) gelmeye başlar:
 
 ![İstenmeyen posta nasıl gelir?](gorseller/diagram-spam.png){width=88%}
 
@@ -237,7 +237,7 @@ Kamu hizmetlerinin elektronik ortama taşınması, dijital dönüşümün en som
 
 - **Adresin doğruluğundan emin olun.** Giriş yapmadan önce adres çubuğunu kontrol edin; resmî site `gov.tr` uzantılıdır ve `https` ile şifrelidir.
 - **Parolanızı kimseyle paylaşmayın.** Hiçbir kurum e-posta veya telefonla parola istemez.
-- **Ortak bilgisayarda işiniz bitince çıkış yapın.** Yalnızca sekmeyi kapatmak yetmez.
+- **Ortak cihazlarda oturumu kapatın.** Yalnızca sekmeyi kapatmak yetmez.
 - **İşlem yaparken bağlantınıza dikkat edin.** Halka açık kablosuz ağlarda e-Devlet işlemi yapmayın; bu ağlarda trafik izlenebilir, işleminizi mobil veri üzerinden yapın.
 - **Şüpheli bildirimlere karşı dikkatli olun.** e-Devlet üzerinden geldiği söylenen bağlantılar sahte olabilir; her zaman kendiniz giriş yaparak kontrol edin.
 
@@ -300,7 +300,7 @@ Bu uygulama notla değerlendirilmez. Amacı, doğrulama ve yazışma becerilerin
 - **Dezenformasyon**, kötü niyetle üretilmiş yanlış bilgidir; kaynağa gitmeden paylaşmamak gerekir.
 - E-postada **konu, hitap, kısa gövde, kapanış ve imza** bulunur; adres listesi için **BCC** kullanılır.
 - Oltalama e-postaları genellikle **acele ettirir**; şüphelenildiğinde başka kanaldan doğrulanır.
-- **e-Devlet** hizmetlerine doğru adresten, güvenli bağlantıyla girilir; ortak cihazda çıkış yapılır.
+- **e-Devlet** hizmetlerine doğru adresten, güvenli bağlantıyla girilir; ortak cihazlarda oturum kapatılır.
 - **e-Devlet şifresi imza değildir**; **e-imza ve mobil imza** ıslak imza hükmündedir.
 
 # Kendini Sınama Soruları
