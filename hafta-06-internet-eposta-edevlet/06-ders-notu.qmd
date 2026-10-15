@@ -34,20 +34,20 @@ Bu haftanın iki anahtarı var: **doğrulama** ve **yazışma görgüsü**. Arad
 
 # Etkili Arama
 
-İnternette arama yapmak herkesin yaptığı bir şey, ama **verimli** arama yapmak öğrenilen bir beceridir.
+İnternet'te arama yapmak herkesin yaptığı bir şey, ama **verimli** arama yapmak öğrenilen bir beceridir.
 
 ::: {#fig-arama-ornek layout-ncol=2}
 ![Google arama sayfası](gorseller/ekran-google-arama.png){width=100%}
 
 ![Arama sonuçları listesi](gorseller/foto-arama-sonuclari.png){width=100%}
 
-Arama, bir metin kutusuna yazılan sözcüklerin sıralı bir sonuç listesine dönüşmesidir.
+Arama, bir metin kutusuna yazılan kelimelerin sıralı bir sonuç listesine dönüşmesidir.
 :::
 
 ![Etkili arama: dört adım](gorseller/diagram-arama.png){width=78%}
 
 Dört adım, Şekil 1'deki arama kutusuna ne yazılacağını ve bulunan sonucun nasıl eleneceğini belirler.
-Önce **soruyu netleştirirsiniz**: ne aradığınızı bir tümceyle söyleyebiliyorsanız doğru sözcükleri de
+Önce **soruyu netleştirirsiniz**: ne aradığınızı bir cümleyle söyleyebiliyorsanız doğru kelimeleri de
 bulabilirsiniz. Sonra **anahtar kelime** seçilir; ardından sonuçlar **sınırlandırılır** — kurumsal bir
 alan adı, bir dosya türü ya da bir tarih aralığı listeyi gözle görülür biçimde kısaltır. Son adım
 **doğrulamadır**: bir sonucun listenin ilk sırasında çıkması, o bilginin doğru olduğu anlamına gelmez.
@@ -71,14 +71,14 @@ değiştirin. Doğrulama adımı ise aramayı kopyala-yapıştır işinden ayır
 Sınav haftasında kütüphanenin kaçta açıldığını araştırdığınızı düşünün:
 
 1. **Soruyu netleştirin:** "kütüphane açık mı" sorusu belirsizdir; hangi kütüphane ve hangi gün? Doğru soru: "Bilecik Üniversitesi kütüphanesi sınav haftasında kaçta açılıyor?"
-2. **Anahtar kelimeyi seçin:** "kütüphane açık mı saat" gibi dağınık bir tamlama yerine ayırt edici sözcükler: `kütüphane çalışma saatleri`.
-3. **Sınırlayın:** `site:edu.tr` yazarak sonuçları üniversite sitelerine indirin.
+2. **Anahtar kelimeyi seçin:** "kütüphane açık mı saat" gibi dağınık bir tamlama yerine ayırt edici kelimeler: `kütüphane çalışma saatleri`.
+3. **Sınırlayın:** `site:bilecik.edu.tr` yazarak sonuçları üniversitenin sitesine indirin.
 4. **Doğrulayın:** Sayfanın resmî kurum sitesinde olduğundan ve tarihin bu döneme ait olduğundan emin olun; bilgi eski bir duyuruda kalmış olabilir.
 :::
 
 ## Kaynak değerlendirme
 
-Karşılaştığınız her içerikte 1. haftanın **beş sorusunu** yeniden sorun: kaynağı, yazarı, tarihi, amacı ve kanıtı sorgulayan bu sorular bir alışkanlığa dönüşmeli.
+Karşılaştığınız her içerikte 1. haftanın **beş sorusunu** yeniden sorun: kaynağı, tarihini, kanıtı, amacı ve başka kaynakları sorgulayan bu sorular bir alışkanlığa dönüşmeli.
 
 Beş soru şöyle:
 
@@ -168,7 +168,7 @@ Bu bölümler bir e-posta penceresinde şöyle sıralanır:
 - **Tam cümle kullanın.** Kurumsal yazışmada kısaltma ve emoji kullanılmaz.
 - **Büyük harfle yazmayın.** Karşı taraf bunu bağırmak gibi algılar.
 - **Yanıtla / Tümüne yanıtla ayrımına dikkat edin.** Yalnızca gönderene mi, tüm listeye mi yanıt veriyorsunuz?
-- **Ek gönderiyorsanız dosya adını düzeltin.** `belge1.docx` yerine `enf101-odev-ahmet-yilmaz.docx`.
+- **Ek gönderiyorsanız dosya adını düzeltin.** `belge1.docx` yerine `enf101-odev-ad-soyad.docx`.
 - **Büyük dosyaları ek olarak göndermeyin.** Posta sunucularının ek boyutu sınırı vardır (genellikle 20–25 MB); büyük bir dosyayı buluta yükleyip **bağlantısını** göndermek ya da sıkıştırmak daha güvenilirdir.
 - **Göndermeden okuyun.** Yazım hatası ve yanlış alıcı, en sık yapılan iki hatadır.
 - **İçeriğinden emin olmadığınız mesajı iletmeyin.** Zincirleme iletiler çoğu zaman yanlış bilgi taşır; iletirken alıcı listesini ve gereksiz ekleri temizleyin.
@@ -210,11 +210,11 @@ Unutmayın: oltalama saldırıları (phishing) genellikle sizi acele ettirir. **
 
 E-posta, yolda ve sunucularda **şifresiz** tutulabilir. Ağdaki biri ya da yanlış bir alıcı mesajınızı okuyabilir; kurumsal yazışmalar ayrıca **kayıt altındadır** ve sonradan silinse bile kurumda kalır.
 
-Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgileri e-postayla göndermeyin; böyle bir bilgi gerekiyorsa güvenli bir kanal kullanın (10. hafta) ve kişisel veri kurallarını hatırlayın (11. hafta).
+Bu yüzden parola, kimlik numarası, banka bilgisi, sağlık verisi gibi bilgileri e-postayla göndermeyin; böyle bir bilgi gerekiyorsa güvenli bir kanal kullanın (10. hafta) ve kişisel veri kurallarına da dikkat edin (11. hafta).
 
 ## İstenmeyen posta (spam)
 
-Adresiniz bir kez İnternet'te paylaşıldığında spam gönderenlerin adres listelerine girer ve spam (istenmeyen toplu posta) gelmeye başlar:
+Adresiniz bir kez İnternet'te paylaşıldığında spam gönderenlerin adres listelerine düşer ve spam (istenmeyen toplu posta) gelmeye başlar:
 
 ![İstenmeyen posta nasıl gelir?](gorseller/diagram-spam.png){width=88%}
 

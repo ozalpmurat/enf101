@@ -26,7 +26,7 @@ format: beamer
 ::: {.column width="50%"}
 ![](gorseller/ekran-google-arama.png){width=100%}
 
-*Google arama sayfası: sözcükler kutuya yazılır*
+*Google arama sayfası: kelimeler kutuya yazılır*
 :::
 
 ::: {.column width="50%"}
@@ -66,7 +66,7 @@ Sonuç işinize yaramadıysa başa dönün: çoğu zaman soru yanlış kurulmuş
 
 ## Kaynak Değerlendirme: Beş Soru
 
-Kaynağı, yazarı, tarihi, amacı ve kanıtı sorgulayan **beş soruyu** her karşılaştığınız içerikte yeniden sorun.
+Kaynağı, tarihini, kanıtı, amacı ve başka kaynakları sorgulayan **beş soruyu** her karşılaştığınız içerikte yeniden sorun.
 
 ![](gorseller/diagram-dezenformasyon.png){width=90%}
 
