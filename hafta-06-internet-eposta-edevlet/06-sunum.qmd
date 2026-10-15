@@ -72,11 +72,9 @@ Kaynağı, tarihini, kanıtı, amacı ve başka kaynakları sorgulayan **beş so
 
 ## Akademik Kaynak Önceliği
 
-1. Kütüphane veri tabanları ve akademik dergiler
-2. Resmî siteler (`.edu.tr`, `.gov.tr`)
-3. Konusunda uzman kuruluşların yayınları (ör. Dünya Sağlık Örgütü, Birleşmiş Milletler, OECD)
-4. Genel web ve haber siteleri
-5. Forumlar, sosyal medya, bloglar *(tek başına kaynak olmaz)*
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=0.85\textheight,keepaspectratio]{gorseller/diagram-kaynak-onceligi.png}
+\end{center}
 
 # Dezenformasyon
 
