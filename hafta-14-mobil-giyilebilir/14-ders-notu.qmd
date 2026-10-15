@@ -29,7 +29,7 @@ Mobil cihazlar hayatımızı kolaylaştırır ama sürekli **veri toplar**. Bili
 - Mobil cihaz güvenliği için gerekli önlemleri uygular.
 - Giyilebilir teknolojilerin topladığı verileri tanır.
 - Sağlık verisinin gizlilik boyutunu değerlendirir.
-- Nesnelerin interneti kavramını ve risklerini açıklar.
+- Nesnelerin İnterneti kavramını ve risklerini açıklar.
 - Teknolojinin toplumsal etkilerini tartışır.
 
 # Mobil Cihazlar ve Ekosistem
@@ -171,14 +171,14 @@ Bir sağlık uygulaması kurarken, verilerinizin nasıl kullanılacağını beli
 
 # Nesnelerin İnterneti (IoT)
 
-**Nesnelerin İnterneti**, günlük cihazların internete bağlanıp veri alışverişi yapmasıdır: akıllı televizyon, akıllı priz, güvenlik kamerası, sesli asistan, akıllı termostat.
+**Nesnelerin İnterneti**, günlük cihazların İnternet'e bağlanıp veri alışverişi yapmasıdır: akıllı televizyon, akıllı priz, güvenlik kamerası, sesli asistan, akıllı termostat.
 
 ::: {#fig-iot-cihazlar layout-ncol=2}
 ![Ağa bağlı güvenlik kamerası](gorseller/foto-guvenlik-kamerasi.jpg){width=90%}
 
 ![Sesli asistan (akıllı hoparlör)](gorseller/foto-hoparlor.jpg){width=90%}
 
-IoT cihazları internete bağlanır ve sürekli veri toplar.
+IoT cihazları İnternet'e bağlanır ve sürekli veri toplar.
 :::
 
 ## Faydaları
@@ -201,7 +201,7 @@ IoT cihazları internete bağlanır ve sürekli veri toplar.
 ::: {.callout-tip}
 ## Akıllı cihazlar için üç kural
 
-1. **Varsayılan parolayı değiştirin.** Fabrika parolaları internette listelenmiştir.
+1. **Varsayılan parolayı değiştirin.** Fabrika parolaları İnternet'te listelenmiştir.
 2. **Yazılımını güncelleyin.** Üretici desteği biten cihazlar risklidir.
 3. **Gereksiz kalmadıysa kapatın ya da kaldırın.** Kullanmadığınız akıllı cihaz, kullanmadığınız bir veri toplayıcıdır.
 :::
@@ -229,7 +229,7 @@ Bu dersin amacı da buydu: teknolojiyi **bilinçli** kullanmanızı sağlayacak 
 
 ## Dijital uçurum
 
-1\. haftada söz ettiğimiz **dijital uçurum** burada tekrar karşımıza çıkar: internet erişimi, cihaz sahipliği ve dijital beceri bakımından bireyler ve bölgeler arasındaki fark. Bu fark, eğitime ve işe erişimi doğrudan etkiler.
+1\. haftada söz ettiğimiz **dijital uçurum** burada tekrar karşımıza çıkar: İnternet erişimi, cihaz sahipliği ve dijital beceri bakımından bireyler ve bölgeler arasındaki fark. Bu fark, eğitime ve işe erişimi doğrudan etkiler.
 
 ## Diğer alanlar
 

@@ -15,7 +15,7 @@ format: beamer
 - Mobil cihaz güvenliği önlemlerini uygular.
 - Giyilebilir cihazların topladığı verileri tanır.
 - Sağlık verisinin gizlilik boyutunu değerlendirir.
-- Nesnelerin interneti risklerini bilir.
+- Nesnelerin İnterneti risklerini bilir.
 - Teknolojinin toplumsal etkilerini tartışır.
 
 # Mobil Ekosistem
@@ -150,7 +150,7 @@ Okumadan kabul etmek, verinizin nereye gittiğini bilmemektir.
 
 # Nesnelerin İnterneti
 
-## Günlük Cihazlar İnternette
+## Günlük Cihazlar İnternet'te
 
 Akıllı televizyon, priz, kamera, sesli asistan, termostat.
 
@@ -229,7 +229,7 @@ Notla değerlendirilmez.
 
 ## Dönemin Özeti
 
-- **1–6:** Temel kavramlar, donanım, yazılım, dosya, ağ, internet pratikleri
+- **1–6:** Temel kavramlar, donanım, yazılım, dosya, ağ, İnternet pratikleri
 - **7–9:** Üretim araçları — kelime işlemci, tablo, sunum
 - **10–14:** Sorumluluk — güvenlik, kişisel veriler, yapay zekâ, mobil ve toplumsal etki
 

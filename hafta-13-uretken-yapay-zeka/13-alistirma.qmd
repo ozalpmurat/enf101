@@ -54,9 +54,9 @@ D) Yalnızca kitapları gösterdikleri için\
 E) Yalnızca 2020 sonrası kaynakları göstermeleri
 
 **6.** Aşağıdaki kullanımlardan hangisi akademik dürüstlük açısından uygundur?\
-A) Ödevi baştan sona yapay zekâya yazdırıp teslim etmek\
-B) Üretilen metni kendi çalışmanız gibi sunmak\
-C) Anlamadığınız bir konuyu yapay zekâya sorup öğrenmek\
+A) Anlamadığınız bir konuyu yapay zekâya sorup öğrenmek\
+B) Ödevi baştan sona yapay zekâya yazdırıp teslim etmek\
+C) Üretilen metni kendi çalışmanız gibi sunmak\
 D) Kaynak göstermeden çeviri yaptırmak\
 E) Yapay zekâdan aldığınız metni doğrudan sunuma koymak
 
@@ -91,7 +91,7 @@ E) Cevabı düşünmeden alındığında öğrenmeyi engelleyerek
 | 3 | D | İyi bir istemde görev, bağlam, biçim, uzunluk ve örnek bulunur; aracın markası istemin bileşeni değildir. |
 | 4 | E | İlk adım E seçeneğindedir: doğrulama, kaynak isteyip bağımsız bir kaynakla karşılaştırmakla başlar. Ama verilen kaynağın da uydurma olabileceği unutulmamalıdır. |
 | 5 | B | Model, olmayan bir kitap veya makaleyi gerçekmiş gibi sunabilir; bu yüzden kaynak künyesi mutlaka doğrulanmalıdır. |
-| 6 | C | Yapay zekâyı öğrenme amacıyla kullanmak uygundur. Diğer üç seçenek intihal kapsamına girer. |
+| 6 | A | Yapay zekâyı öğrenme amacıyla kullanmak uygundur. Diğer dört seçenek intihal kapsamına girer. |
 | 7 | C | Başkasına ait kişisel veriler gizlilik ihlali oluşturur; araca yazılmamalıdır. |
 | 8 | E | Doğru gerekçe E seçeneğindedir: cevabı düşünmeden olduğu gibi almak, öğrenmeyi kolaylaştırmak yerine engeller. |
 | 9 | Doğru | Başkasının (bu durumda bir aracın) ürettiği metni kendi çalışması gibi sunmak intihaldir. |

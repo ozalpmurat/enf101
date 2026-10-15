@@ -13,7 +13,7 @@ format:
 
 Bir bilgisayarda ürettiğiniz her şey — yazdığınız ödev, çektiğiniz fotoğraf, indirdiğiniz belge — bir **dosya** olarak saklanır. Dosyalarınızı düzenli tutmak, bulmak ve kaybetmemek; günlük hayatta en sık ihtiyaç duyacağınız beceridir. Nitekim "ödevimi kaydettim ama bulamıyorum" ya da "flash bellek bozuldu, her şey gitti" cümlelerini çok duymuşsunuzdur.
 
-Bu hafta şunları ele alıyoruz: **dosyaları ve uzantılarını yönetmeyi**, **sıkıştırmayı**, **depolama aygıtlarını tanımayı** ve **veriyi güvende tutmayı** — yani yedekleme. Son bölümde ise verinin bilgisayarınızın dışında, internet üzerinden nasıl saklandığını (bulut) ve ortak çalışma araçlarını göreceğiz.
+Bu hafta şunları ele alıyoruz: **dosyaları ve uzantılarını yönetmeyi**, **sıkıştırmayı**, **depolama aygıtlarını tanımayı** ve **veriyi güvende tutmayı** — yani yedekleme. Son bölümde ise verinin bilgisayarınızın dışında, İnternet üzerinden nasıl saklandığını (bulut) ve ortak çalışma araçlarını göreceğiz.
 
 ::: {.callout-note}
 ## Bu haftanın temel fikri
@@ -188,7 +188,7 @@ Bu ayarları kurcalamamanızı tavsiye ederiz.
 
 # Bulut Depolama
 
-**Bulut depolama**, dosyalarınızı kendi bilgisayarınız yerine internet üzerinden erişilen uzak sunucularda saklamaktır. Dosyalar sizin diskinizde değil, hizmet sağlayıcının sunucularındadır; siz internet üzerinden erişirsiniz.
+**Bulut depolama**, dosyalarınızı kendi bilgisayarınız yerine İnternet üzerinden erişilen uzak sunucularda saklamaktır. Dosyalar sizin diskinizde değil, hizmet sağlayıcının sunucularındadır; siz İnternet üzerinden erişirsiniz.
 
 ![Bulut depolamada dosya akışı: cihazınızdan İnternet üzerinden sağlayıcının sunucularına](gorseller/diagram-bulut.png){width=85%}
 
@@ -210,7 +210,7 @@ Sınırlarını da bilmek gerekir:
 
 Karşınıza çıkacak başlıca bulut depolama hizmetleri şunlardır:
 
-![İnternette popüler bulut depolama servisleri](gorseller/ekran-bulut-servisleri.png){width=85%}
+![İnternet'te popüler bulut depolama servisleri](gorseller/ekran-bulut-servisleri.png){width=85%}
 
 ::: {.callout-warning}
 ## Bulut, yedeğin yerini tamamen almaz

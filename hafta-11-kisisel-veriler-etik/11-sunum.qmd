@@ -127,7 +127,7 @@ Kurum sitelerinde "Aydınlatma Metni" ve "Başvuru Formu" bulunur.
 
 ## Sık Yapılan Telif Hataları
 
-- **Görsel:** İnternetten alınan fotoğrafı kullanmak
+- **Görsel:** İnternet'ten alınan fotoğrafı kullanmak
 - **Metin:** Uzun alıntıyı kaynaksız almak
 - **Yazılım:** Korsan kullanmak
 - **Müzik/video:** Sunumda telifli müzik

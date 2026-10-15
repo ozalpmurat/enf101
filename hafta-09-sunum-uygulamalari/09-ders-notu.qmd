@@ -109,7 +109,7 @@ Görseller sunumu güçlendirir — ama yalnızca doğru kullanıldığında.
 
 ![Görsel kaynakları ve lisans](gorseller/diagram-telifsiz.png){width=76%}
 
-İnternetten bulduğunuz her görseli kullanamazsınız. Görsellerin lisansı vardır:
+İnternet'ten bulduğunuz her görseli kullanamazsınız. Görsellerin lisansı vardır:
 
 | Kaynak türü | Kullanım |
 |:---|:---|

@@ -153,7 +153,7 @@ Yapay zekâ araçlarına yazdığınız her şey, hizmetin koşullarına bağlı
 - **Parola ve erişim bilgileri:** Hiçbir koşulda
 - **Ödev/tez metninizin tamamı:** Başkasının erişimine açık hâle gelir
 
-**Kural:** Bir belgeyi ya da bilgiyi yapay zekâ aracına yazmadan önce şu soruyu sorun — *"Bunun internete açık olması sorun yaratır mı?"*
+**Kural:** Bir belgeyi ya da bilgiyi yapay zekâ aracına yazmadan önce şu soruyu sorun — *"Bunun İnternet'e açık olması sorun yaratır mı?"*
 :::
 
 # Yapay Zekâyı Araç Olarak Kullanmak

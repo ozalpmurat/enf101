@@ -19,8 +19,8 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Aşağıdakilerden hangisi sistem yazılımına örnektir?\
-A) Kelime işlemci\
-B) İşletim sistemi\
+A) İşletim sistemi\
+B) Kelime işlemci\
 C) Tarayıcı\
 D) Sunum programı\
 E) Elektronik tablo programı
@@ -86,7 +86,7 @@ E) Virüs taraması başlatmak
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | İşletim sistemi, donanımı yöneten sistem yazılımıdır. Diğer dört seçenek kullanıcının işini yapan uygulama yazılımlarıdır. |
+| 1 | A | İşletim sistemi, donanımı yöneten sistem yazılımıdır. Diğer dört seçenek kullanıcının işini yapan uygulama yazılımlarıdır. |
 | 2 | E | Doğru ifade E seçeneğindedir: açık kaynak yazılımda kaynak kodu herkese açıktır; incelenebilir, değiştirilebilir ve paylaşılabilir. |
 | 3 | C | İşletim sistemi, donanım ile kullanıcı ve uygulamalar arasındaki aracı yazılımdır. |
 | 4 | C | Yazım hatası düzeltmek bir kelime işlemci uygulamasının işidir. Diğer dört seçenek işletim sisteminin görevlerindendir. |

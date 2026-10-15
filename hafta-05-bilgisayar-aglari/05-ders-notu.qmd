@@ -35,7 +35,7 @@ Kablosuz bağlantı, kablosuz olduğu için **havada** gerçekleşir — yani si
 
 **Ağ (network)**, iki veya daha fazla cihazın veri paylaşmak üzere birbirine bağlanmasıyla oluşur. Ağın sağladıkları:
 
-- **Paylaşım:** Dosya, yazıcı, internet bağlantısı ortak kullanılır.
+- **Paylaşım:** Dosya, yazıcı, İnternet bağlantısı ortak kullanılır.
 - **İletişim:** Mesajlaşma, e-posta, görüntülü görüşme.
 - **Erişim:** Uzaktaki bilgilere ve hizmetlere ulaşım.
 
@@ -195,7 +195,7 @@ Bu yüzden DNS, İnternet'in **telefon rehberi** gibi düşünülebilir. Ayrıca
 
 Gizli mod yalnızca **sizin cihazınızdaki** kaydı tutmaz: geçmiş, çerez ve form bilgileri saklanmaz.
 
-Ama sizi **anonim yapmaz**: internet servis sağlayıcınız, işvereniniz veya ziyaret ettiğiniz site yine de ne yaptığınızı görebilir.
+Ama sizi **anonim yapmaz**: İnternet servis sağlayıcınız, işvereniniz veya ziyaret ettiğiniz site yine de ne yaptığınızı görebilir.
 :::
 
 **Adres çubuğundaki güvenlik ikonu** (kilit ya da kalkan gibi) ve başındaki `https`, o siteyle aranızdaki iletişimin şifreli olduğunu gösterir. Şifre, kart numarası gibi bilgileri yalnızca `https` olan sitelerde girin.

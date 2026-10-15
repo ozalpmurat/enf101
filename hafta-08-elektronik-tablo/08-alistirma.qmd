@@ -48,9 +48,9 @@ E) ORTANCA, çünkü uç değerden etkilenmez
 
 **5.** `EĞERSAY` fonksiyonu ne yapar?\
 A) Aralıktaki tüm sayıları toplar\
-B) Koşulu sağlayan hücreleri sayar\
-C) Aralıktaki bütün hücreleri sayar\
-D) Aralıktaki en büyük değeri bulur\
+B) Aralıktaki bütün hücreleri sayar\
+C) Aralıktaki en büyük değeri bulur\
+D) Koşulu sağlayan hücreleri sayar\
 E) Aralıktaki en küçük değeri bulur
 
 **6.** Sıralama ile filtreleme arasındaki temel fark nedir?\
@@ -92,7 +92,7 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | 2 | C | `$` işareti sütunu ve satırı kilitler. $A$1 mutlak başvurudur; kopyalansa bile değişmez. |
 | 3 | B | Tablo, eşittir işaretiyle başlayan girdiyi formül olarak yorumlar; aksi hâlde metin sayar. |
 | 4 | E | Doğru yaklaşım E seçeneğindedir: tek bir uç değer ortalamayı yukarı çeker, ortanca ise etkilenmez; bu yüzden sınıfın genel başarısını ortanca daha iyi anlatır. |
-| 5 | B | EĞERSAY, belirtilen koşulu sağlayan hücreleri sayar. Koşulsuz sayım için SAY kullanılır. |
+| 5 | D | EĞERSAY, belirtilen koşulu sağlayan hücreleri sayar. Koşulsuz sayım için SAY kullanılır. |
 | 6 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
 | 7 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |
 | 8 | E | Doğru taktik E seçeneğindedir: dikey eksenin sıfırdan başlamaması kesilmiş eksendir ve farkı olduğundan büyük gösterir. |

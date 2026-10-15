@@ -134,7 +134,7 @@ Bölümünüzün politikası olabilir; **kurallarınızı bilin**.
 
 Bir bilgiyi araca yazmadan önce:
 
-**"Bunun internete açık olması sorun yaratır mı?"**
+**"Bunun İnternet'e açık olması sorun yaratır mı?"**
 
 Yanıt "evet" ise yazmayın.
 
@@ -190,4 +190,4 @@ Notla değerlendirilmez.
 
 ## Gelecek Hafta
 
-**Mobil cihazlar, giyilebilir teknolojiler ve toplumsal etki** — mobil ekosistem, izinler, senkronizasyon, giyilebilir cihazlar, sağlık verisi, nesnelerin interneti ve teknolojinin toplumsal etkileri.
+**Mobil cihazlar, giyilebilir teknolojiler ve toplumsal etki** — mobil ekosistem, izinler, senkronizasyon, giyilebilir cihazlar, sağlık verisi, Nesnelerin İnterneti ve teknolojinin toplumsal etkileri.

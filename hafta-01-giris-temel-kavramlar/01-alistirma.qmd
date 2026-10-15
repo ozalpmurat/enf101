@@ -26,9 +26,9 @@ D) "Yarın yağmur bekleniyor."\
 E) 23,5
 
 **2.** Enformasyonu veriden ayıran temel özellik aşağıdakilerden hangisidir?\
-A) Sayısal değerlerden oluşması\
-B) Mutlaka bilgisayarda saklanması\
-C) Bağlam içine yerleştirilerek anlam kazanması\
+A) Bağlam içine yerleştirilerek anlam kazanması\
+B) Sayısal değerlerden oluşması\
+C) Mutlaka bilgisayarda saklanması\
 D) Yalnızca uzmanlar tarafından üretilmesi\
 E) Çok sayıda verinin bir araya gelmesi
 
@@ -36,7 +36,7 @@ E) Çok sayıda verinin bir araya gelmesi
 A) İşlenmemiş ham gerçekler ve semboller\
 B) Bağlam kazandırılmış ancak yorumlanmamış veri\
 C) Yorumlanan, deneyimle birleşen ve karar vermede kullanılan enformasyon\
-D) İnternette paylaşılan her türlü içerik\
+D) İnternet'te paylaşılan her türlü içerik\
 E) Bir konuda uzmanların görüş birliği olması
 
 **4.** Bilgi toplumunu sanayi toplumundan ayıran temel özellik nedir?\
@@ -54,9 +54,9 @@ D) Yalnızca büyük kurumları ilgilendiren bir süreçtir.\
 E) Süreçlerin dijital ortama taşınması ve kararların veriye dayandırılmasıdır.
 
 **6.** "Dijital uçurum" kavramı neyi ifade eder?\
-A) İnternet hızındaki teknik dalgalanmaları\
-B) Dijital oyunlardaki beceri farklılıklarını\
-C) Erişim, cihaz ve dijital beceri bakımından bireyler arasındaki eşitsizlikleri\
+A) Erişim, cihaz ve dijital beceri bakımından bireyler arasındaki eşitsizlikleri\
+B) İnternet hızındaki teknik dalgalanmaları\
+C) Dijital oyunlardaki beceri farklılıklarını\
 D) Yazılım sürümleri arasındaki uyumsuzlukları\
 E) Kuşaklar arasındaki iletişim farklılıklarını
 
@@ -67,7 +67,7 @@ C) Dijital etik\
 D) Belirli bir işletim sistemini ileri düzeyde yönetebilmek\
 E) Medya okuryazarlığı
 
-**8.** Bir internet kaynağının güvenilirliğini değerlendirirken aşağıdakilerden hangisi en az ilgilidir?\
+**8.** Bir İnternet kaynağının güvenilirliğini değerlendirirken aşağıdakilerden hangisi en az ilgilidir?\
 A) İçeriği kimin yazdığı ve uzmanlığı\
 B) İçeriğin ne zaman yayımlandığı\
 C) Sayfa tasarımının renkli olup olmadığı\
@@ -89,11 +89,11 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | E | Tek başına anlam taşımayan ham değer E seçeneğindedir. A, B ve D seçenekleri bağlam içerdikleri için enformasyon; C seçeneği ise yorum ve karar içerdiği için bilgi düzeyindedir. |
-| 2 | C | Veri bağlamla ilişkilendirildiğinde anlam kazanır ve enformasyona dönüşür. |
+| 2 | A | Veri bağlamla ilişkilendirildiğinde anlam kazanır ve enformasyona dönüşür. |
 | 3 | C | Bilgi, enformasyonun yorumlanması ve karar vermede kullanılmasıyla oluşur. |
 | 4 | B | Bilgi toplumunda değer, maddi üretimden çok bilginin üretilmesi ve işlenmesiyle oluşur. |
 | 5 | E | Doğru ifade E seçeneğindedir: dijital dönüşüm, teknoloji edinmenin ötesinde süreçlerin ve karar mekanizmalarının dönüşmesidir. |
-| 6 | C | Dijital uçurum, dijital olanaklara erişim ve kullanım bakımından ortaya çıkan toplumsal eşitsizlikleri anlatır. |
+| 6 | A | Dijital uçurum, dijital olanaklara erişim ve kullanım bakımından ortaya çıkan toplumsal eşitsizlikleri anlatır. |
 | 7 | D | Dijital okuryazarlık belirli bir işletim sistemi, marka veya sürüme bağlı değildir. Tanımlı bileşenleri bilgi ve medya okuryazarlığı, güvenlik, iletişim ve etik alanlarını kapsar. |
 | 8 | C | Görsel tasarım içeriğin doğruluğunu göstermez; kaynağın kimliği, güncelliği ve kanıtı belirleyicidir. |
 | 9 | Yanlış | Bilgi toplumunda birey hem tüketici hem de içerik üreticisidir. |

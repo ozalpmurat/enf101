@@ -33,9 +33,9 @@ D) HDD\
 E) USB bellek
 
 **3.** İşlemcinin içinde hesaplama ve karşılaştırma yapan birim hangisidir?\
-A) Kontrol birimi\
-B) Ön bellek\
-C) Aritmetik ve mantık birimi (ALU)\
+A) Aritmetik ve mantık birimi (ALU)\
+B) Kontrol birimi\
+C) Ön bellek\
 D) Kaydediciler\
 E) Ekran kartı
 
@@ -90,7 +90,7 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | D | Çizici (plotter), çizimi kâğıda aktaran bir çıkış birimidir. Tarayıcı, dokunmatik yüzey, mikrofon ve klavye giriş birimleridir. |
 | 2 | B | RAM geçicidir; elektrik kesilince içeriği silinir. ROM kalıcıdır; SSD, HDD ve USB bellek ise kalıcı depolama ortamlarıdır. |
-| 3 | C | Hesaplama ve karşılaştırmayı aritmetik ve mantık birimi (ALU) yapar. Kontrol birimi komutları okur ve yönetir; ön bellek ile kaydediciler veri tutar. |
+| 3 | A | Hesaplama ve karşılaştırmayı aritmetik ve mantık birimi (ALU) yapar. Kontrol birimi komutları okur ve yönetir; ön bellek ile kaydediciler veri tutar. |
 | 4 | E | Doğru ifade E seçeneğindedir: SSD hareketli parça içermediği için sessizdir ve HDD'ye göre çok daha hızlıdır. Daha ucuz olmak HDD'nin avantajıdır. |
 | 5 | C | Ekran kartının üzerindeki işlemciye GPU (grafik işlemci) denir. CPU genel amaçlı işlemcidir. |
 | 6 | E | Doğru ifade E seçeneğindedir: işlemci az sayıda karmaşık işi sırayla, GPU binlerce basit işi aynı anda yapar. |

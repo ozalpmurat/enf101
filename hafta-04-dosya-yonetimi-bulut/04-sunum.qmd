@@ -269,9 +269,9 @@ Bu ayarları kurcalamamanızı tavsiye ederiz.
 
 # Bulut Depolama
 
-## Dosyalar İnternette
+## Dosyalar İnternet'te
 
-Dosyalarınızı kendi bilgisayarınız yerine internet üzerinden erişilen **uzak sunucularda** saklamaktır.
+Dosyalarınızı kendi bilgisayarınız yerine İnternet üzerinden erişilen **uzak sunucularda** saklamaktır.
 
 ```{=latex}
 \begin{center}

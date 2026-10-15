@@ -33,8 +33,8 @@ D) Doğum yılı\
 E) E-posta adresi
 
 **3.** KVKK kapsamında "ilgili kişi" kimdir?\
-A) Veriyi işleyen kurum\
-B) Verisi işlenen kişi\
+A) Verisi işlenen kişi\
+B) Veriyi işleyen kurum\
 C) Veriyi denetleyen kurul\
 D) Yazılımı geliştiren firma\
 E) Veriyi saklayan sunucu
@@ -63,8 +63,8 @@ E) Lisansı iptal ettirmek
 **7.** Bir görselin altına kaynak yazmak ne sağlar?\
 A) Görseli kullanma hakkı verir\
 B) Telif sorununu ortadan kaldırır\
-C) Yalnızca kaynağı belirtir; kullanım hakkı vermez\
-D) Görseli kamu malı yapar\
+C) Görseli kamu malı yapar\
+D) Yalnızca kaynağı belirtir; kullanım hakkı vermez\
 E) Eserin sahibinden sonradan izin alınmasını gerektirir
 
 **8.** Aşağıdakilerden hangisi dijital etiğe uygun bir davranıştır?\
@@ -88,11 +88,11 @@ E) Bir tartışmada karşı tarafı küçümsemek
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | E | Kişisel veri olmayan ifade E seçeneğindedir: hava durumu tahmini kişiye ilişkin bir bilgi değildir. Telefon numarası, TC kimlik numarası, okul numarası ve e-posta adresi kişiyi belirlenebilir kılar. |
 | 2 | B | Sağlık bilgisi özel nitelikli kişisel veridir ve daha sıkı korunur. |
-| 3 | B | İlgili kişi, kişisel verisi işlenen gerçek kişidir. Veriyi işleyen taraf veri sorumlusudur. |
+| 3 | A | İlgili kişi, kişisel verisi işlenen gerçek kişidir. Veriyi işleyen taraf veri sorumlusudur. |
 | 4 | C | Çerezler ve konum kaydı kullanıcı bir şey yapmadan toplanır; bu pasif izdir. Diğerleri aktif izdir. |
 | 5 | E | Doğru değerlendirme E seçeneğindedir: fener uygulamasının işini yapmak için konuma ihtiyacı yoktur; bu izin işlevle orantılı değildir. |
 | 6 | C | Creative Commons lisansları kullanıma izin verir ancak şartları vardır; en yaygını atıf yapmaktır. |
-| 7 | C | Kaynak gösterme kaynağı belirtir; kullanım hakkı lisans konusudur ve ayrıdır. |
+| 7 | D | Kaynak gösterme kaynağı belirtir; kullanım hakkı lisans konusudur ve ayrıdır. |
 | 8 | B | Yanlış bilgiyi düzeltmek sorumlu davranıştır. Diğer üç seçenek etik dışı ve bazıları suçtur. |
 | 9 | Yanlış | Paylaşım silinse de kopyalanmış, arşivlenmiş veya ekran görüntüsü alınmış olabilir; iz tamamen kaybolmaz. |
 | 10 | Doğru | KVKK kapsamında ilgili kişinin verilerinin silinmesini veya yok edilmesini isteme hakkı vardır. |

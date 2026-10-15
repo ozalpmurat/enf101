@@ -19,17 +19,17 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Yapay zekâ için aşağıdakilerden hangisi doğrudur?\
-A) İnsanlar gibi düşünür ve anlar\
-B) Verilerdeki desenleri bulur ancak anlamaz\
+A) Verilerdeki desenleri bulur ancak anlamaz\
+B) İnsanlar gibi düşünür ve anlar\
 C) Her zaman doğru cevap verir\
 D) Yaptığı işin sorumluluğunu taşır\
-E) Yalnızca internete bağlıyken çalışabilir
+E) Yalnızca İnternet'e bağlıyken çalışabilir
 
 **2.** Makine öğrenmesini geleneksel programlamadan ayıran temel özellik nedir?\
 A) Daha hızlı çalışması\
 B) Veriyi bulutta saklaması\
 C) Daha az enerji harcaması\
-D) Yalnızca internette çalışması\
+D) Yalnızca İnternet'te çalışması\
 E) Kuralları yazmak yerine örneklerden öğrenmesi
 
 **3.** Yapay zekâ eğitiminde GPU'nun tercih edilmesinin nedeni nedir?\
@@ -48,9 +48,9 @@ E) Yalnızca yapay zekâ modellerinin ürettiği veri
 
 **5.** Yapay zekânın "halüsinasyon" (yanılgı) yapması ne demektir?\
 A) Sistemin çökmesi\
-B) Kendinden emin bir tonda yanlış bilgi üretmesi\
-C) Çok yavaş çalışması\
-D) İnternete bağlanamaması\
+B) Çok yavaş çalışması\
+C) İnternet'e bağlanamaması\
+D) Kendinden emin bir tonda yanlış bilgi üretmesi\
 E) Aynı soruya her zaman aynı cevabı vermesi
 
 **6.** Bir algoritmanın üç temel öğesi aşağıdakilerden hangisidir?\
@@ -62,8 +62,8 @@ E) Sıra, karar, tekrar
 
 **7.** Bir yapay zekâ aracına kişisel belge yüklemek neden sakıncalıdır?\
 A) Dosya boyutu sınırı olduğu için\
-B) Yüklenen içerik hizmet koşullarına bağlı olarak model geliştirmede kullanılabildiği için\
-C) Yükleme her zaman başarısız olduğu için\
+B) Yükleme her zaman başarısız olduğu için\
+C) Yüklenen içerik hizmet koşullarına bağlı olarak model geliştirmede kullanılabildiği için\
 D) Yalnızca İngilizce belgeler kabul edildiği için\
 E) Belge Türkçe olmadığı için
 
@@ -86,13 +86,13 @@ E) Modelin eğitim süresi
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | Yapay zekâ verilerdeki desenleri bulur ve bu desenlere göre çıktı üretir; anlamaz, düşünmez, sorumluluk taşımaz. |
+| 1 | A | Yapay zekâ verilerdeki desenleri bulur ve bu desenlere göre çıktı üretir; anlamaz, düşünmez, sorumluluk taşımaz. |
 | 2 | E | Doğru özellik E seçeneğindedir: makine öğrenmesinde kurallar elle yazılmaz, model örneklerden örüntü öğrenir. |
 | 3 | C | GPU, binlerce basit işlemi aynı anda yapabildiği için yapay zekâ eğitiminde kullanılır. |
 | 4 | B | Büyük veri; hacim, hız ve çeşitlilik bakımından geleneksel araçlarla işlenemeyecek veri kütlesidir. |
-| 5 | B | Yanılgı, modelin akla yatkın ama yanlış bilgiyi kendinden emin bir tonla üretmesidir. |
+| 5 | D | Yanılgı, modelin akla yatkın ama yanlış bilgiyi kendinden emin bir tonla üretmesidir. |
 | 6 | E | Doğru öğeler E seçeneğindedir: algoritmanın üç temel öğesi sıra, karar ve tekrardır. |
-| 7 | B | Hizmet koşullarına bağlı olarak yüklenen içerik model geliştirmede kullanılabilir; bu bir gizlilik riskidir. |
+| 7 | C | Hizmet koşullarına bağlı olarak yüklenen içerik model geliştirmede kullanılabilir; bu bir gizlilik riskidir. |
 | 8 | B | Önyargı, yapay zekânın başlıca etik sorularından biridir. Diğer seçenekler teknik ayrıntıdır. |
 | 9 | Doğru | Model, eğitildiği verinin istatistiksel özelliklerini öğrenir; veride önyargı varsa çıktıya da yansır. |
 | 10 | Yanlış | Yanılgı riski nedeniyle olgusal bilgiler — sayı, tarih, isim, kaynak — mutlaka bağımsız olarak doğrulanmalıdır. |

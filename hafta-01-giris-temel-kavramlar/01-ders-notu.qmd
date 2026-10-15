@@ -42,7 +42,7 @@ Aynı veri kümesi, farklı bağlamlarda farklı enformasyona dönüşür. Bir m
 
 Bir tabloda gördüğünüz sayı henüz bilgi değildir; onu yorumlamadan karar vermek yanıltıcı olabilir.
 
-İnternette karşılaştığınız bir iddia genellikle enformasyon düzeyindedir. Bilgi düzeyine çıkmak, iddiayı bağlamıyla birlikte değerlendirmeyi gerektirir.
+İnternet'te karşılaştığınız bir iddia genellikle enformasyon düzeyindedir. Bilgi düzeyine çıkmak, iddiayı bağlamıyla birlikte değerlendirmeyi gerektirir.
 :::
 
 # Bilgi Toplumu ve Dijital Dönüşüm
@@ -82,7 +82,7 @@ Dijital okuryazarlık, dijital araçları ve ortamları etkin, eleştirel ve gü
 
 ## Bilginin doğruluğunu değerlendirmek: beş soru
 
-İnternette eriştiğiniz her içerik doğru olmayabilir. Bir kaynağa güvenmeden önce şu beş soruyu sorabilirsiniz:
+İnternet'te eriştiğiniz her içerik doğru olmayabilir. Bir kaynağa güvenmeden önce şu beş soruyu sorabilirsiniz:
 
 1. **Kim yazdı?** Yazarın kimliği ve uzmanlığı açık mı?
 2. **Ne zaman yayımlandı?** Bilgi güncel mi?
@@ -216,7 +216,7 @@ Aşağıdaki soruları ders notuna bakmadan yanıtlamayı deneyin; ardından not
 1. Bir marketin kasa kayıtlarındaki sayılar hangi düzeydedir; bunlar ne zaman bilgiye dönüşür?
 2. Bilgi toplumunu sanayi toplumundan ayıran temel özellik nedir?
 3. Dijital okuryazarlığın hangi bileşeni sizin için en zayıf halka; neden?
-4. Bir internet sitesindeki sağlık bilgisine güvenip güvenmeyeceğinize karar verirken hangi ölçütleri kullanırsınız?
+4. Bir İnternet sitesindeki sağlık bilgisine güvenip güvenmeyeceğinize karar verirken hangi ölçütleri kullanırsınız?
 5. Transistörün icadı bilgisayarları nasıl değiştirdi?
 6. Dijital uçurum kavramını bir örnekle açıklayın.
 

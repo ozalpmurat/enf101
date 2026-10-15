@@ -242,7 +242,7 @@ Her cihazın bir **IP adresi** vardır: ağ üzerindeki konumu.
 | İndirmeler | İndirilen dosyaların listesi |
 | Eklentiler | Tarayıcıya işlev ekler (reklam engelleyici gibi) |
 
-**Gizli mod ne yapar, ne yapmaz?** Gizli mod yalnızca **sizin cihazınızdaki** kaydı tutmaz: geçmiş, çerez ve form bilgileri saklanmaz. Ama sizi **anonim yapmaz**: internet servis sağlayıcınız, işvereniniz veya ziyaret ettiğiniz site yine de ne yaptığınızı görebilir.
+**Gizli mod ne yapar, ne yapmaz?** Gizli mod yalnızca **sizin cihazınızdaki** kaydı tutmaz: geçmiş, çerez ve form bilgileri saklanmaz. Ama sizi **anonim yapmaz**: İnternet servis sağlayıcınız, işvereniniz veya ziyaret ettiğiniz site yine de ne yaptığınızı görebilir.
 
 ## Güvenlik İkonu ve HTTPS
 

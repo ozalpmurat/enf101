@@ -88,7 +88,7 @@ E) Yemek tarifi okumak
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | A | LAN (yerel ağ) bir bina veya kampüs gibi sınırlı bir alanı kapsar. |
 | 2 | C | Yönlendirici, ağdaki cihazlar arasındaki veri trafiğini yönlendirir ve İnternet'e bağlanmayı sağlar. Modem ise sinyali çevirir. |
-| 3 | E | Doğru ifade E seçeneğindedir: WPA2 ve WPA3 kablosuz ağlarda kullanılan güncel şifreleme standartlarıdır. HTTPS ve TLS internet trafiğinin şifrelenmesiyle ilgilidir, kablosuz ağ standardı değildir. |
+| 3 | E | Doğru ifade E seçeneğindedir: WPA2 ve WPA3 kablosuz ağlarda kullanılan güncel şifreleme standartlarıdır. HTTPS ve TLS İnternet trafiğinin şifrelenmesiyle ilgilidir, kablosuz ağ standardı değildir. |
 | 4 | B | Bluetooth, genellikle 10 metreye kadar olan kısa mesafeli bir kablosuz bağlantı teknolojisidir. |
 | 5 | D | DNS, alan adlarını IP adreslerine çeviren sistemdir; İnternet'in telefon rehberi gibi çalışır. |
 | 6 | E | Doğru ifade E seçeneğindedir: .gov kamu kurumlarını gösterir. .edu üniversiteler, .com ticari siteler içindir. |

@@ -146,7 +146,7 @@ Bir eser üretildiği anda **telif hakkı** doğar. Bu hak, eseri kimin hangi ko
 ::: {.callout-warning}
 ## Sık yapılan telif hataları
 
-- **Görsel:** İnternetten bulunan fotoğrafı ödevde kullanmak — kaynak göstermek **kullanım hakkı vermez**.
+- **Görsel:** İnternet'ten bulunan fotoğrafı ödevde kullanmak — kaynak göstermek **kullanım hakkı vermez**.
 - **Metin:** Uzun bir bölümü alıntılayıp kaynak belirtmemek.
 - **Yazılım:** Korsan yazılım kullanmak — hem hukuka aykırı hem güvenlik riski.
 - **Müzik/video:** Sunumda telifli müzik kullanmak.

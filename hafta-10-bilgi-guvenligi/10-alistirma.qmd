@@ -19,8 +19,8 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Bilgi güvenliğinin üç temel ilkesi hangileridir?\
-A) Hız, doğruluk, güvenilirlik\
-B) Gizlilik, bütünlük, erişilebilirlik\
+A) Gizlilik, bütünlük, erişilebilirlik\
+B) Hız, doğruluk, güvenilirlik\
 C) Donanım, yazılım, ağ\
 D) Parola, kullanıcı adı, kimlik\
 E) Hız, maliyet, kullanılabilirlik
@@ -33,7 +33,7 @@ D) `parola`\
 E) `ankara1234`
 
 **3.** Parola yöneticisi kullanmanın temel faydası nedir?\
-A) Parolaları internette paylaşması\
+A) Parolaları İnternet'te paylaşması\
 B) Her hesap için farklı ve güçlü parola üretip güvenle saklaması\
 C) Parolayı unutmanızı engellemek için ekrana yazması\
 D) Parolaları kısaltması\
@@ -63,8 +63,8 @@ E) E-postayı spam olarak işaretlemek
 **7.** Yararlı bir program gibi görünüp arka kapı açan zararlı yazılım türü hangisidir?\
 A) Virüs\
 B) Solucan\
-C) Truva atı\
-D) Fidye yazılımı\
+C) Fidye yazılımı\
+D) Truva atı\
 E) Reklam yazılımı (adware)
 
 **8.** Fidye yazılımına karşı en etkili savunma nedir?\
@@ -86,13 +86,13 @@ E) Bilgisayarı her gün yeniden başlatmak
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | Gizlilik, bütünlük ve erişilebilirlik bilgi güvenliğinin üç temel ilkesidir. |
+| 1 | A | Gizlilik, bütünlük ve erişilebilirlik bilgi güvenliğinin üç temel ilkesidir. |
 | 2 | C | Birbirinden ilgisiz kelimelerden oluşan uzun söz öbeği hem akılda kalır hem tahmin edilemez. Diğer seçenekler tahmin edilebilir kalıplardır. |
 | 3 | B | Parola yöneticisi her hesap için rastgele ve güçlü parola üretir, bunları şifreli kasada saklar. |
 | 4 | E | Doğru ifade E seçeneğindedir: iki adımlı doğrulama, parola ele geçse bile ikinci bir adım gerektiği için hesabı korur. |
 | 5 | E | Doğru cevap E seçeneğindedir: e-posta hesabı diğer bütün hesapların kurtarma yoludur; ele geçirilirse tek tek bütün hesaplar riske girer. |
 | 6 | C | Acele ettiren mesajlar oltalamanın tipik işaretidir. Bağlantıya tıklanmaz; gönderen başka bir kanaldan doğrulanır. |
-| 7 | C | Truva atı, yararlı bir program gibi görünerek kullanıcıyı kandırır ve sisteme arka kapı açar. |
+| 7 | D | Truva atı, yararlı bir program gibi görünerek kullanıcıyı kandırır ve sisteme arka kapı açar. |
 | 8 | B | Yedek varsa şifrelenen dosyalar geri yüklenebilir; fidye ödemek zorunda kalınmaz. |
 | 9 | Yanlış | Gizli mod yalnızca cihazdaki kaydı tutmaz; servis sağlayıcı ve ziyaret edilen site yine görebilir. |
 | 10 | Doğru | Korsan yazılımlar sıklıkla zararlı kod içerir ve en yaygın bulaşma yollarından biridir. |

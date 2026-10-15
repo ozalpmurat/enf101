@@ -33,11 +33,11 @@ D) Belgenin yazdırılmış olması\
 E) Başlıklara stil uygulanmış olması
 
 **3.** Ödev tesliminde genellikle hangi dosya biçimi tercih edilir?\
-A) `.docx`\
-B) `.txt`\
-C) `.pdf`\
+A) `.pdf`\
+B) `.docx`\
+C) `.txt`\
 D) `.pptx`\
-E) .jpg
+E) `.jpg`
 
 **4.** Aşağıdakilerden hangisi intihal sayılır?\
 A) Alıntıyı tırnak içinde gösterip kaynak belirtmek\
@@ -88,7 +88,7 @@ E) Belgenin sayfa sayısını azaltmak
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | Elle biçimlendirme metni başlık gibi gösterir ama gerçek başlık yapmaz; içindekiler tablosuna girmez. |
 | 2 | E | Doğru koşul E seçeneğindedir: içindekiler tablosu yalnızca stillerle (Başlık 1, Başlık 2 …) biçimlendirilmiş başlıklardan otomatik üretilir. |
-| 3 | C | PDF, farklı cihazlarda bozulmadan görüntülenir ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
+| 3 | A | PDF, farklı cihazlarda bozulmadan görüntülenir ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
 | 4 | C | Birkaç kelimesi değiştirilmiş olsa da kaynak gösterilmeyen kullanım intihaldir. |
 | 5 | D | Kaynak künyesinde yazar, eser, yıl, sayfa ve erişim bilgisi bulunur; kullanılan bilgisayarın markası hiçbir zaman yer almaz. |
 | 6 | E | Doğru fayda E seçeneğindedir: kaynak yönetimi araçları atıf ve kaynakça oluşturmayı kolaylaştırarak kaynak göstermeyi pratik hâle getirir ve intihali önler. |

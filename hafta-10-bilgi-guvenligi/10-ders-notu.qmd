@@ -50,7 +50,7 @@ Parola, hesabınızın kapısıdır. Ama çoğu kişi aynı parolayı birden ço
 ::: {.callout-note}
 ## "Parola" ile "şifreleme" farkı
 
-Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise verinin okunamaz hâle getirilmesidir; parola yöneticinizin kasası ya da `https` bağlantısı gibi şeyler şifreleme ile korunur. Günlük dilde ikisine de "şifre" denir; bu metinde erişim için **parola**, verinin korunması için **şifreleme** sözcükleri kullanılır.
+Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise verinin okunamaz hâle getirilmesidir; parola yöneticinizin kasası ya da `https` bağlantısı gibi şeyler şifreleme ile korunur. Günlük dilde ikisine de "şifre" denir; bu metinde erişim için **parola**, verinin korunması için **şifreleme** kelimeleri kullanılır.
 :::
 
 ![Parola gücü](gorseller/diagram-parola.png){width=78%}
@@ -218,7 +218,7 @@ Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan b
 
 ## Güvenli alışveriş ve ödeme
 
-İnternetten alışveriş ve bankacılık, bilgisayarınıza saldırılmasını gerektirmez: bilgilerinizi **siz** yanlış yere yazarsanız kaybolurlar.
+İnternet'ten alışveriş ve bankacılık, bilgisayarınıza saldırılmasını gerektirmez: bilgilerinizi **siz** yanlış yere yazarsanız kaybolurlar.
 
 - **Adresi ve kilidi kontrol edin.** Ödeme sayfası `https` olmalı ve adres çubuğunda kilit simgesi bulunmalıdır.
 - **Adresi kendiniz yazın.** E-postadan ya da başka bir siteden gelen bağlantıya tıklamak yerine kurumun adresini doğrudan yazın.

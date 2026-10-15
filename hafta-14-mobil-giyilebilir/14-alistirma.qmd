@@ -19,8 +19,8 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 :::
 
 **1.** Mobil uygulamaları yüklerken en güvenli yol hangisidir?\
-A) Arama motorundan bulup indirmek\
-B) Resmî uygulama mağazasını kullanmak\
+A) Resmî uygulama mağazasını kullanmak\
+B) Arama motorundan bulup indirmek\
 C) Kırılmış sürümleri indirmek\
 D) E-posta ekiyle gelen dosyayı kurmak\
 E) Arkadaş tavsiyesiyle bağlantıdan indirmek
@@ -34,8 +34,8 @@ E) İznin işlevle orantısız olduğunu
 
 **3.** Senkronizasyon ile yedekleme arasındaki fark nedir?\
 A) İkisi aynı şeydir\
-B) Senkronizasyon veriyi her yerde eşitler, yedekleme ayrı bir kopya saklar\
-C) Yedekleme yalnızca telefondan yapılır\
+B) Yedekleme yalnızca telefondan yapılır\
+C) Senkronizasyon veriyi her yerde eşitler, yedekleme ayrı bir kopya saklar\
 D) Senkronizasyon her zaman ücretlidir\
 E) Yedekleme her cihazda otomatik yapılır
 
@@ -55,9 +55,9 @@ E) Kan oksijen düzeyi
 
 **6.** Sağlık verisi hangi kategoridedir?\
 A) Sıradan veri\
-B) Özel nitelikli kişisel veri\
-C) Kamuya açık veri\
-D) Ticari veri\
+B) Kamuya açık veri\
+C) Ticari veri\
+D) Özel nitelikli kişisel veri\
 E) Anonim veri
 
 **7.** Akıllı ev cihazları için alınması gereken temel önlem hangisidir?\
@@ -86,12 +86,12 @@ E) Cihaz fiyatlarındaki artışı
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | Resmî mağazalar bir denetimden geçer ve uygulamalar gerektiğinde kaldırılabilir. Mağaza dışı kurulumlar en yaygın zararlı yazılım kaynağıdır. |
+| 1 | A | Resmî mağazalar bir denetimden geçer ve uygulamalar gerektiğinde kaldırılabilir. Mağaza dışı kurulumlar en yaygın zararlı yazılım kaynağıdır. |
 | 2 | E | Doğru değerlendirme E seçeneğindedir: oyunun işini yapmak için mikrofona ihtiyacı yoktur; bu izin işlevle orantısızdır. |
-| 3 | B | Senkronizasyon aynı veriyi bütün cihazlarda eşitler; yedekleme ise verinin ayrı bir kopyasını saklar. |
+| 3 | C | Senkronizasyon aynı veriyi bütün cihazlarda eşitler; yedekleme ise verinin ayrı bir kopyasını saklar. |
 | 4 | B | Telefon numarası birçok hesabın parola sıfırlama ve doğrulama yoludur; telefon ele geçirilirse hesaplar risk altına girer. |
 | 5 | D | Giyilebilir cihazlar hareket, nabız, oksijen ve konum gibi veriler toplar; banka bakiyesine erişemez. |
-| 6 | B | Sağlık verisi özel nitelikli kişisel veridir ve daha sıkı korunur. |
+| 6 | D | Sağlık verisi özel nitelikli kişisel veridir ve daha sıkı korunur. |
 | 7 | E | Temel önlem E seçeneğindedir: akıllı cihazlar genellikle varsayılan parolayla gelir ve bu parolalar bilinir; ilk iş parolayı değiştirmektir. |
 | 8 | B | Dijital uçurum, dijital olanaklara erişim ve kullanım bakımından ortaya çıkan eşitsizlikleri anlatır. |
 | 9 | Yanlış | Senkronizasyon veriyi her yerde eşitler; yanlışlıkla silinen bir dosya bütün cihazlardan silinir. Yedek ayrı bir kopyadır. |

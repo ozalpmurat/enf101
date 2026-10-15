@@ -3,7 +3,7 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 14.10.2026
+Son güncelleme: 15.10.2026
 
 ---
 
@@ -685,12 +685,17 @@ karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzelt
 **Açık — karar bekleyen iş yok (30.09.2026).** Sunum teması yaygınlaştırması tamamlandı; ders
 notları **ENF lacivertinde kalıyor** (kullanıcı kararı, 30.09.2026).
 
-**Açık — doğru cevap dağılımı (08.10.2026).** Alıştırmalardaki çoktan seçmeli doğru
-cevapların harflere dağılımı her haftada dengeli değil (bazı haftalarda tek harf baskın, bazı harfler
-hiç kullanılmıyor; ör. bir haftada B×2, C×4, E×2 — A ve D yok). §7'ye dengeli dağılım kuralı, §11'e 10.
-kontrol eklendi (08.10.2026); kalan haftalar sırası geldikçe denetlenip dengelenecek.
-
 Kapatılan başlıklar ve kararları:
+
+- **Doğru cevap dağılımı dengelendi (15.10.2026):** 14 haftanın tamamı tarandı; 04, 05, 06 ve 09
+  dışındaki 10 hafta (01, 02, 03, 07, 08, 10, 11, 12, 13, 14) dengesizdi (ör. 12 ve 14'te B×5; 01'de
+  C×4 ve A yok; 08'de D yok; 10 ve 11'de A ve D yok). Soru içeriği ve doğru yanıtlar değiştirilmeden
+  **yalnızca şıkların sırası** kaydırıldı ve cevap anahtarı güncellendi; artık her haftada doğru
+  cevaplar A–E'ye **her harften en az 1, en fazla 2** olacak biçimde dağılıyor (§7). Anlamlı sıra
+  taşıyan şıklar (ör. 02'de `KB → MB → GB → TB`, 08'de formül işaretleri) yerinde bırakıldı. Bu iş
+  sırasında 07'de bir şıkkın biçimi (`.jpg`) düzeltildi ve 13'ün anahtarındaki "Diğer üç seçenek"
+  ifadesi "Diğer dört seçenek" oldu (dört çeldirici de intihaldi). 10 alıştırma yeniden derlendi;
+  dağılım §11 kontrol 10 ile hem kaynaktan hem PDF'ten doğrulandı.
 
 - **Sunum teması yaygınlaştırma (30.09.2026):** Şablon Hannover + BSEU kimliğine çevrildi
   (`tema/sunum.tex`, `tema/logo.png`, `_quarto.yml`; §5 kural 7–8). **Bütün sunular** (14 hafta +

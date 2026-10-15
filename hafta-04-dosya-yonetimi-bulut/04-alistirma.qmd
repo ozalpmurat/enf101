@@ -93,7 +93,7 @@ E) Yalnızca tek cihazdan erişilebilmesi
 | 5 | E | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |
 | 6 | B | Doğru işlem B seçeneğindedir: biçimlendirme bölümün içeriğini boşaltır. Bölümleme diski parçalara ayırır, tek başına veri silmez. |
 | 7 | B | Kural: 3 kopya, 2 farklı ortam, 1 kopya uzakta (örneğin bulut). |
-| 8 | C | Doğru ifade C seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için internet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
+| 8 | C | Doğru ifade C seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için İnternet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
 | 9 | Yanlış | Aynı bilgisayarın başka klasöründeki kopya yedek sayılmaz; cihaz bozulduğunda iki kopya da kaybedilir. Yedek başka bir ortamda olmalıdır. |
 | 10 | Doğru | Çift uzantılı dosyalarda sonundaki uzantı (`.exe`) gerçek olandır; Windows uzantıları gizlediği için dosya `.pdf` gibi görünebilir. Tanımadığınız kaynaklardan gelen `.exe` dosyaları açılmamalıdır. |
 
