@@ -21,7 +21,7 @@ format: beamer
 
 ## Popüler Kelime İşlemciler
 
-![](gorseller/gorsel-kelime-islemci.jpg){width=80%}
+![](gorseller/gorsel-kelime-islemci.jpg){width=100%}
 
 ## İki Temel İş
 
