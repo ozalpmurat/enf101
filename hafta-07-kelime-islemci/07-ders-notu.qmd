@@ -148,7 +148,7 @@ Kapak sayfasında numara görünmemesi isteniyorsa, numaralandırma ikinci sayfa
 
 # Uzun Belge Yönetimi
 
-On sayfayı geçen belgelerde üç özellik zorunlu hâle gelir.
+On sayfayı geçen belgelerde **içindekiler tablosu**, **dipnot** ve **kaynakça** zorunlu hâle gelir.
 
 ## İçindekiler tablosu
 

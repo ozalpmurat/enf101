@@ -36,12 +36,9 @@ Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **b
 - **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
 - **`.odt`:** LibreOffice gibi açık kaynak paketlerin biçimi
 - **PDF:** Paylaşım ve teslim için; bozulmaz, düzenlenmesi zor
+- **Kaydetme alışkanlığı:** otomatik kaydetmeyi açık tutun, ayrıca `Ctrl + S`
 
 Ödev tesliminde genellikle **PDF** istenir.
-
-## Belgeyi Sık Sık Kaydedin
-
-Otomatik kaydetmeyi açık tutun; ayrıca `Ctrl + S` alışkanlığı edinin.
 
 ## Masaüstü mü, Çevrimiçi mi?
 
@@ -63,13 +60,7 @@ Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tar
 - **Karakter:** yazı tipi, punto, kalın, italik, renk
 - **Paragraf:** hizalama, satır aralığı, girinti, listeler
 
-## Tutarlılık
-
-Aynı belgede farklı yazı tipleri ve puntolar dağınık görünür.
-
-Bir kez karar verin, belge boyunca ona sadık kalın.
-
-**En kolay yol:** stiller.
+**Tutarlılık:** aynı belgede farklı yazı tipleri ve puntolar dağınık görünür. Bir kez karar verin, belge boyunca ona sadık kalın — en kolay yol stillerdir.
 
 # Stiller
 
@@ -121,6 +112,8 @@ Gerçek başlık, stil uygulanmış metindir.
 
 ## Ayarlanacak Öğeler
 
+![](gorseller/diagram-sayfa-duzeni.png){width=52%}
+
 | Öğe | Ne yapar |
 |:---|:---|
 | Kenar boşlukları | Metin ile kenar arası |
@@ -128,8 +121,6 @@ Gerçek başlık, stil uygulanmış metindir.
 | Sayfa boyutu | A4 |
 | Üstbilgi / altbilgi | Tekrarlanan bilgi |
 | Sayfa numarası | Altbilgiye eklenir |
-
-![](gorseller/diagram-sayfa-duzeni.png){width=52%}
 
 ## Sayfa Numarası Neden Gerekli?
 
@@ -161,7 +152,7 @@ Danışman/hoca düzeltmelerinde ve grup ödevinde işe yarar.
 
 # Akademik Dürüstlük
 
-## En Önemli Bölüm
+## Bir Bakışta Akademik Dürüstlük
 
 ![](gorseller/diagram-intihal.png){width=74%}
 

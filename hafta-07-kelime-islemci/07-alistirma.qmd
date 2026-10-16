@@ -51,7 +51,7 @@ A) Yazar adı\
 B) Eser adı\
 C) Yayın yılı\
 D) Yazıldığı bilgisayarın markası\
-E) Eserin yayınlandığı yer (dergi veya yayınevi)
+E) Eserin yayınlandığı kaynak (dergi, kitap ya da web sitesi)
 
 **6.** Kaynak yönetimi araçlarının (örneğin Zotero, Mendeley) temel faydası nedir?\
 A) Belgeyi otomatik yazması\
@@ -90,7 +90,7 @@ E) Belgenin sayfa sayısını azaltmak
 | 2 | E | Doğru koşul E seçeneğindedir: içindekiler tablosu yalnızca stillerle (Başlık 1, Başlık 2 …) biçimlendirilmiş başlıklardan otomatik üretilir. |
 | 3 | A | PDF, farklı cihazlarda bozulmadan görüntülenir ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
 | 4 | C | Birkaç kelimesi değiştirilmiş olsa da kaynak gösterilmeyen kullanım intihaldir. |
-| 5 | D | Kaynak künyesinde yazar, eser, yıl, sayfa ve erişim bilgisi bulunur; kullanılan bilgisayarın markası hiçbir zaman yer almaz. |
+| 5 | D | Kaynak künyesinde yazar, eser, yıl, sayfa ve kaynağın nereden erişildiği (dergi, kitap ya da web sitesi) bulunur; kullanılan bilgisayarın markası hiçbir zaman yer almaz. |
 | 6 | E | Doğru fayda E seçeneğindedir: kaynak yönetimi araçları atıf ve kaynakça oluşturmayı kolaylaştırarak kaynak göstermeyi pratik hâle getirir ve intihali önler. |
 | 7 | B | Alternatif metin, görseli göremeyen ve ekran okuyucu kullanan kişilerin içeriği anlamasını sağlar. |
 | 8 | C | Sayfa numarası olmadan belgenin belirli bir yerine atıf yapılamaz. |
