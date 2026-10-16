@@ -35,6 +35,8 @@ Kelime işlemciyi kullanmak, yazı yazmaktan fazlasıdır. **Stillerle** çalı�
 
 Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulama yazılımıdır. İki temel işi yapar: **içerik yazmak** ve **biçimlendirmek**.
 
+![Yerel (masaüstü) ve bulut (çevrimiçi) kelime işlemciler](gorseller/gorsel-kelime-islemci.jpg){width=80%}
+
 | Kavram | Anlamı |
 |:---|:---|
 | Belge | Oluşturduğunuz dosya (`.docx` gibi) |
@@ -298,5 +300,6 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - **Mendeley** — ücretsiz, kapalı kaynak kaynak yönetimi aracı. (mendeley.com)
 - **YÖK ve üniversite kütüphanelerinin intihal politikaları** — akademik dürüstlük kılavuzları.
 - **W3C Erişilebilirlik Girişimi** — belge erişilebilirliği ilkeleri. (w3.org/WAI)
+- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

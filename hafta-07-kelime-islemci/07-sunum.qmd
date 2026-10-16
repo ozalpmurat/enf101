@@ -19,6 +19,10 @@ format: beamer
 
 # Temel Kavramlar
 
+## Popüler Kelime İşlemciler
+
+![](gorseller/gorsel-kelime-islemci.jpg){width=80%}
+
 ## İki Temel İş
 
 Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **biçimlendirmek**.
