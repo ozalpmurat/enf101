@@ -42,6 +42,14 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 :::
 :::
 
+## Çevrimiçi Kelime İşlemci: Google Docs
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.80\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-google-docs.png}
+\end{center}
+```
+
 ## Popüler Kelime İşlemciler
 
 ![](gorseller/gorsel-kelime-islemci.jpg){width=100%}
