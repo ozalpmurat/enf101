@@ -33,6 +33,11 @@ Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **b
 :::
 
 ::: {.column width="40%"}
+
+```{=latex}
+\vspace*{\baselineskip}
+```
+
 LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamasıdır.
 :::
 :::
