@@ -96,7 +96,7 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 
 - **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
 - **`.odt`:** LibreOffice gibi açık kaynak paketlerin biçimi
-- **PDF:** Paylaşım ve teslim için; bozulmaz, düzenlenmesi zor
+- **`.pdf`:** Paylaşım ve teslim için; bozulmaz, düzenlenmesi zor
 - **Kaydetme alışkanlığı:** otomatik kaydetmeyi açık tutun, ayrıca `Ctrl + S`
 
 Ödev tesliminde genellikle **PDF** istenir.
