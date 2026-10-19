@@ -62,11 +62,11 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arada** bulunduğu yazılımlara **ofis uygulamaları** (ofis paketi) denir. Bu hafta **kelime işlemciyi**, 8. hafta **hesap tablosunu**, 9. hafta **sunuyu** ele alacağız.
 
-| Uygulama | Microsoft | LibreOffice | Google |
-|:---|:---|:---|:---|
-| **Kelime işlemci** | Word | Writer | Docs |
-| **Hesap tablosu** | Excel | Calc | Sheets |
-| **Sunu** | PowerPoint | Impress | Slides |
+| Uygulama | Microsoft | LibreOffice | Google | Apple |
+|:---|:---|:---|:---|:---|
+| **Kelime işlemci** | Word | Writer | Docs | Pages |
+| **Hesap tablosu** | Excel | Calc | Sheets | Numbers |
+| **Sunu** | PowerPoint | Impress | Slides | Keynote |
 
 ## Kullanım Oranları
 
