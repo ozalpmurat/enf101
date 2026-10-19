@@ -56,6 +56,9 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 ## Ofis Uygulamaları
 
+::: {.columns}
+::: {.column width="76%"}
+
 Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arada** bulunduğu yazılımlara **ofis uygulamaları** (ofis paketi) denir.
 
 - **Kelime işlemci:** metin ağırlıklı belge — Word, Writer, Docs
@@ -63,6 +66,18 @@ Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arad
 - **Sunu:** slaytlar — PowerPoint, Impress, Slides
 
 Paketteki uygulamalar ortak biçimleri okur: bir rapora hesap tablosundan tablo, bir sunuya belgeden metin aktarılabilir. Bu hafta **kelime işlemciyi**, 8. hafta **hesap tablosunu**, 9. hafta **sunuyu** ele alacağız.
+:::
+
+::: {.column width="20%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/gorsel-ofis-paketi.png}
+\end{center}
+```
+
+:::
+:::
 
 ## Kullanım Oranları
 
