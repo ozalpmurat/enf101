@@ -54,6 +54,22 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 ![](gorseller/gorsel-kelime-islemci.jpg){width=100%}
 
+## Kullanım Oranları
+
+::: {.columns}
+::: {.column width="52%"}
+
+```{=latex}
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{gorseller/gorsel-office-study.png}
+```
+
+:::
+
+::: {.column width="44%"}
+Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığını bildirmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
+:::
+:::
+
 ## Belge ve Biçimlendirme Kavramları
 
 | Kavram | Anlamı |
