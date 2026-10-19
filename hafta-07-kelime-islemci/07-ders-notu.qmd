@@ -41,6 +41,10 @@ Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulam
 
 ![Yerel (masaüstü) ve bulut (çevrimiçi) kelime işlemciler](gorseller/gorsel-kelime-islemci.jpg){width=80%}
 
+Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığını bildirmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
+
+![2025 Office Study: işletmelerde kullanılan ofis yazılımları](gorseller/gorsel-office-study.png){width=65%}
+
 | Kavram | Anlamı |
 |:---|:---|
 | Belge | Oluşturduğunuz dosya (`.docx` gibi) |
@@ -48,6 +52,14 @@ Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulam
 | Paragraf biçimi | Hizalama, satır aralığı, girinti, boşluk |
 | Stil | Adlandırılmış biçim kümesi (Başlık 1, Normal…) |
 | Sayfa düzeni | Kenar boşlukları, yön, sayfa boyutu |
+
+::: {#fig-word-araclari layout-ncol=2}
+![Microsoft Word'ün stil galerisi](gorseller/ekran-stiller.png){width=92%}
+
+![Microsoft Word'ün karakter ve paragraf biçimlendirme araçları](gorseller/ekran-yazi-tipi.png){width=47%}
+
+Microsoft Word'ün stil galerisi (solda) ile karakter ve paragraf biçimlendirme araçları (sağda)
+:::
 
 **Kaydetme ve biçimler.** Belgenizi genellikle **`.docx`** (Microsoft Word'ün biçimi) ya da **`.odt`** (LibreOffice gibi açık kaynak paketlerin OpenDocument biçimi) olarak kaydedersiniz; ikisi de düzenlenebilir kalır ve birbirine çevrilebilir. Paylaşırken ise sıklıkla **PDF**'e çevirmeniz gerekir. PDF, farklı bilgisayarlarda bozulmadan görüntülenir ve düzenlenmesi zordur — bu yüzden ödev tesliminde tercih edilir.
 
@@ -304,6 +316,6 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - **Mendeley** — ücretsiz, kapalı kaynak kaynak yönetimi aracı. (mendeley.com)
 - **YÖK ve üniversite kütüphanelerinin intihal politikaları** — akademik dürüstlük kılavuzları.
 - **W3C Erişilebilirlik Girişimi** — belge erişilebilirliği ilkeleri. (w3.org/WAI)
-- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır. "Google Docs penceresi" ekran görüntüsü — Google Docs uygulamasından alınmıştır.
+- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır. "Google Docs penceresi" ekran görüntüsü — Google Docs uygulamasından alınmıştır. "2025 Office Study" grafiği — Empower (2025) araştırmasından alınmıştır. Stil galerisi ve yazı tipi araçları ekran görüntüleri — Microsoft Word uygulamasından alınmıştır.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
