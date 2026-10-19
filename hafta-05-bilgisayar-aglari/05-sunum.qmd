@@ -33,7 +33,7 @@ format: beamer
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.86\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/diagram-ag-turleri-kartlar.png}
+\includegraphics[width=0.86\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/a01.png}
 \end{center}
 ```
 
@@ -210,7 +210,7 @@ Yakınınızdaki biri cihazınıza bağlanmaya çalışıyor olabilir.
 
 ## İnternet'in Adres Sistemi
 
-Her cihazın bir **IP adresi** vardır: ağ üzerindeki konumu.
+Her cihazın bir **IP (İnternet Protokolü) adresi** vardır: ağ üzerindeki konumu.
 
 İnsanlar ise **alan adlarını** hatırlar. İkisini birleştiren sistem **DNS**'tir.
 
@@ -230,6 +230,14 @@ Her cihazın bir **IP adresi** vardır: ağ üzerindeki konumu.
 | `.org` | Kuruluş |
 
 # Tarayıcı ve Web
+
+## Popüler web tarayıcıları
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/a02.png}
+\end{center}
+```
 
 ## Çok Kullanılan Özellikler
 
@@ -281,7 +289,7 @@ Sitelerin tarayıcınıza bıraktığı küçük veri parçalarıdır.
 
 Ağ saldırganın olsaydı, parolanız eline geçerdi. Bu saldırı yaygındır ve fark edilmesi zordur.
 
-**Pratik kural:** Halka açık ağda oturum açmanız gerekiyorsa mobil verinizi kullanın.
+**Pratik kural:** Halka açık ağda oturum açmayın, gerekirse mobil verinizi kullanın.
 
 ## Aile Filtresi
 

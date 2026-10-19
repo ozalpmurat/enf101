@@ -163,7 +163,7 @@ Diğer dikkat noktaları:
 
 # IP ve DNS
 
-İnternet'te her cihazın bir **adresi** vardır. Buna **IP adresi** denir. IP adresi, cihazın ağ üzerindeki konumunu belirtir — tıpkı bir ev adresi gibi.
+İnternet'te her cihazın bir **adresi** vardır. Buna **IP (İnternet Protokolü) adresi** denir. IP adresi, cihazın ağ üzerindeki konumunu belirtir — tıpkı bir ev adresi gibi.
 
 **DNS (Alan Adı Sistemi)** ise bu adresleri insanların hatırlayabileceği **alan adlarına** çevirir. Bilgisayarlar sayılarla çalışır; insanlar ise isimlerle.
 
@@ -228,7 +228,7 @@ Bunu bir güvenlik duvarı gibi düşünmemek gerekir: filtre yalnızca **erişi
 
 Havalimanlarında "Ücretsiz WiFi" adıyla yayın yapan bir ağa bağlanıp e-posta parolanızı girdiğinizi düşünün. Ağ saldırganın olsaydı, parolanız eline geçerdi. Bu saldırı türü çok yaygındır ve fark edilmesi zordur.
 
-**Pratik kural:** Halka açık bir ağda oturum açmanız gerekiyorsa, telefonunuzun mobil verisini kullanın.
+**Pratik kural:** Halka açık bir ağda **oturum açmayın**; gerekirse telefonunuzun mobil verisini kullanın.
 :::
 
 # Uygulama: Bağlantılarınızı Denetleyin
