@@ -65,9 +65,30 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 | Sayfa düzeni | Kenar boşluğu, yön, boyut |
 
 ```{=latex}
+\vspace*{-5mm}
+```
+
+::: {.columns}
+::: {.column width="62%"}
+
+```{=latex}
+\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{gorseller/ekran-stiller.png}
+```
+
+:::
+
+::: {.column width="30%"}
+
+```{=latex}
+\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}
+```
+
+:::
+:::
+
+```{=latex}
 \begin{center}
-\includegraphics[width=0.54\linewidth,height=0.45\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\\[-2mm]
-{\scriptsize\emph{Microsoft Word'ün stil galerisi}}
+{\scriptsize\emph{Microsoft Word: solda stil galerisi, sağda karakter ve paragraf biçimleri}}
 \end{center}
 ```
 
