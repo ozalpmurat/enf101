@@ -19,13 +19,21 @@ format: beamer
 
 # Temel Kavramlar
 
+## Kelime İşlemci Nedir?
+
+Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **biçimlendirmek**.
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.62\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-libreoffice-writer.png}
+\end{center}
+```
+
 ## Popüler Kelime İşlemciler
 
 ![](gorseller/gorsel-kelime-islemci.jpg){width=100%}
 
-## İki Temel İş
-
-Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **biçimlendirmek**.
+## Belge ve Biçimlendirme Kavramları
 
 | Kavram | Anlamı |
 |:---|:---|
