@@ -56,6 +56,10 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 ## Ofis Uygulamaları
 
+```{=latex}
+\vspace*{6.8mm}
+```
+
 ::: {.columns}
 ::: {.column width="76%"}
 
@@ -71,9 +75,7 @@ Paketteki uygulamalar ortak biçimleri okur: bir rapora hesap tablosundan tablo,
 ::: {.column width="20%"}
 
 ```{=latex}
-\begin{center}
-\includegraphics[width=\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/gorsel-ofis-paketi.png}
-\end{center}
+\makebox[\linewidth][c]{\includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]{gorseller/gorsel-ofis-paketi.png}}
 ```
 
 :::
