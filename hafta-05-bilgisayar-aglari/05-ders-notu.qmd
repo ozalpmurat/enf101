@@ -179,7 +179,11 @@ Bu yüzden DNS, İnternet'in **telefon rehberi** gibi düşünülebilir. Ayrıca
 
 # Tarayıcı ve Web
 
-**Tarayıcı**, web sayfalarını görüntüleyen programdır. Günlük kullanımda işinizi kolaylaştıracak birkaç nokta:
+**Tarayıcı**, web sayfalarını görüntüleyen programdır. 
+
+![Popüler web tarayıcıları](gorseller/diagram-populer-tarayicilar.png){width=78%}
+
+Günlük kullanımda işinizi kolaylaştıracak birkaç nokta:
 
 | Özellik | Ne işe yarar |
 |:---|:---|

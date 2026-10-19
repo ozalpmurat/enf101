@@ -33,7 +33,7 @@ format: beamer
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.86\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/a01.png}
+\includegraphics[width=0.86\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/diagram-ag-turleri-kapsama.png}
 \end{center}
 ```
 
@@ -235,7 +235,7 @@ Her cihazın bir **IP (İnternet Protokolü) adresi** vardır: ağ üzerindeki k
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.95\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/a02.png}
+\includegraphics[width=0.95\linewidth,height=0.66\textheight,keepaspectratio]{gorseller/diagram-populer-tarayicilar.png}
 \end{center}
 ```
 
