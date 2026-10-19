@@ -120,7 +120,7 @@ format:
 - Ağ Nedir?
   - Kapsama alanına göre ağ türleri
   - Ağ bileşenleri
-- WiFi: Kullanım ve Güvenlik
+- WiFi (Kablosuz Ağlar): Kullanım ve Güvenlik
   - WiFi nasıl çalışır?
   - WiFi güvenliği
   - WiFi kullanımında pratik noktalar
