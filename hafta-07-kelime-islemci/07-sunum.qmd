@@ -64,6 +64,13 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 | Stil | Adlandırılmış biçim kümesi |
 | Sayfa düzeni | Kenar boşluğu, yön, boyut |
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.54\linewidth,height=0.45\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\\[-2mm]
+{\scriptsize\emph{Microsoft Word'ün stil galerisi}}
+\end{center}
+```
+
 ## Kaydetme ve Biçimler
 
 - **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
