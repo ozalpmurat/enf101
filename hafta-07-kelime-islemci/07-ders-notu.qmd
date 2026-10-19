@@ -37,6 +37,8 @@ Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulam
 
 ![LibreOffice Writer penceresi](gorseller/ekran-libreoffice-writer.png){width=60%}
 
+![Google Docs penceresi](gorseller/ekran-google-docs.png){width=60%}
+
 ![Yerel (masaüstü) ve bulut (çevrimiçi) kelime işlemciler](gorseller/gorsel-kelime-islemci.jpg){width=80%}
 
 | Kavram | Anlamı |
@@ -70,8 +72,6 @@ Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır:
 Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak belgeniz **kendi bilgisayarınızda durmaz**: hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
 
 Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
-
-![Google Docs penceresi](gorseller/ekran-google-docs.png){width=60%}
 
 Aynı ayrım 8. haftadaki tablo (**Google Sheets**, **LibreOffice Calc**) ve 9. haftadaki sunum (**Google Slides**, **LibreOffice Impress**) uygulamaları için de geçerlidir.
 
