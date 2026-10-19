@@ -68,26 +68,10 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 \vspace*{-5mm}
 ```
 
-::: {.columns}
-::: {.column width="62%"}
-
-```{=latex}
-\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{gorseller/ekran-stiller.png}
-```
-
-:::
-
-::: {.column width="30%"}
-
-```{=latex}
-\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}
-```
-
-:::
-:::
-
 ```{=latex}
 \begin{center}
+\includegraphics[height=0.35\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\hspace{4mm}%
+\includegraphics[height=0.35\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}\\[-1mm]
 {\scriptsize\emph{Microsoft Word: solda stil galerisi, sağda karakter ve paragraf biçimleri}}
 \end{center}
 ```
