@@ -35,9 +35,9 @@ Kelime işlemciyi kullanmak, yazı yazmaktan fazlasıdır. **Stillerle** çalı�
 
 Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulama yazılımıdır. İki temel işi yapar: **içerik yazmak** ve **biçimlendirmek**.
 
-![LibreOffice Writer penceresi](gorseller/ekran-libreoffice-writer.png){width=60%}
+![LibreOffice Writer penceresi](gorseller/ekran-libreoffice-writer.png){width=70%}
 
-![Google Docs penceresi](gorseller/ekran-google-docs.png){width=60%}
+![Google Docs penceresi](gorseller/ekran-google-docs.png){width=70%}
 
 ![Yerel (masaüstü) ve bulut (çevrimiçi) kelime işlemciler](gorseller/gorsel-kelime-islemci.jpg){width=80%}
 
