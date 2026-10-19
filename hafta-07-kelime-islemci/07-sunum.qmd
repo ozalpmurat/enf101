@@ -23,11 +23,19 @@ format: beamer
 
 Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **biçimlendirmek**.
 
+::: {.columns}
+::: {.column width="58%"}
+
 ```{=latex}
-\begin{center}
-\includegraphics[width=0.62\linewidth,height=\textheight,keepaspectratio]{gorseller/ekran-libreoffice-writer.png}
-\end{center}
+\includegraphics[width=\linewidth,height=0.92\textheight,keepaspectratio]{gorseller/ekran-libreoffice-writer.png}
 ```
+
+:::
+
+::: {.column width="40%"}
+LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamasıdır.
+:::
+:::
 
 ## Popüler Kelime İşlemciler
 
