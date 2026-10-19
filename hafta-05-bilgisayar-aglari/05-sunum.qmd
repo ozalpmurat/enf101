@@ -55,7 +55,7 @@ Temel ağ bileşenleri: modem, yönlendirici, erişim noktası, Ethernet kablosu
 
 Yönlendirici, Ethernet kablosu, ağ kartı ve erişim noktası.
 
-# WiFi
+# WiFi (Kablosuz Ağlar)
 
 ## Bağlantı Nasıl Kurulur?
 
