@@ -117,7 +117,7 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.80\linewidth,height=0.55\textheight,keepaspectratio]{gorseller/gorsel-dosya-bicimleri.png}
+\includegraphics[width=0.40\linewidth,height=0.55\textheight,keepaspectratio]{gorseller/gorsel-dosya-bicimleri.png}
 \end{center}
 ```
 
