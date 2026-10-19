@@ -115,6 +115,12 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 
 Ödev tesliminde genellikle **PDF** istenir.
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.80\linewidth,height=0.55\textheight,keepaspectratio]{gorseller/gorsel-dosya-bicimleri.png}
+\end{center}
+```
+
 ## Masaüstü mü, Çevrimiçi mi?
 
 Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tarayıcıda çalışan **çevrimiçi** sürüm.
