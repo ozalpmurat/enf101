@@ -71,6 +71,8 @@ Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır:
 
 Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
 
+![Google Docs penceresi](gorseller/ekran-google-docs.png){width=60%}
+
 Aynı ayrım 8. haftadaki tablo (**Google Sheets**, **LibreOffice Calc**) ve 9. haftadaki sunum (**Google Slides**, **LibreOffice Impress**) uygulamaları için de geçerlidir.
 
 # Metin ve Paragraf Biçimlendirme
@@ -302,6 +304,6 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - **Mendeley** — ücretsiz, kapalı kaynak kaynak yönetimi aracı. (mendeley.com)
 - **YÖK ve üniversite kütüphanelerinin intihal politikaları** — akademik dürüstlük kılavuzları.
 - **W3C Erişilebilirlik Girişimi** — belge erişilebilirliği ilkeleri. (w3.org/WAI)
-- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır.
+- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır. "Google Docs penceresi" ekran görüntüsü — Google Docs uygulamasından alınmıştır.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
