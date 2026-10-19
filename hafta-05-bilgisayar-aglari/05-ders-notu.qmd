@@ -75,7 +75,7 @@ Bir ev veya kampüs ağını oluşturan temel cihazlar şunlardır:
 Ağı oluşturan bileşenler: yönlendirici, kablolu bağlantı, ağ kartı ve erişim noktası.
 :::
 
-# WiFi: Kullanım ve Güvenlik
+# WiFi (Kablosuz Ağlar): Kullanım ve Güvenlik
 
 **WiFi**, kablosuz yerel ağ teknolojisidir. Cihazınız radyo dalgaları aracılığıyla erişim noktasıyla konuşur.
 
