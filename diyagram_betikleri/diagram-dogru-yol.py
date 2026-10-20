@@ -29,24 +29,24 @@ plt.rcParams["font.family"] = "DejaVu Sans"
 # birim = cm
 G, Y = 17.4, 7.0
 
-SOL_W = 3.6
+SOL_W = 4.4
 ORTA_W = 4.9
 SAG_W = 5.0
 SOL_X = 0.8
-ORTA_X = 5.6
-SAG_X = 11.6
+ORTA_X = 6.4
+SAG_X = 12.2
 
 UST_Y, UST_H = 3.9, 2.1        # 1. yol
 ALT_Y, ALT_H = 0.9, 2.1        # 2. yol
 SAG_Y, SAG_H = 0.9, 5.1        # birleşen kutu
 
-BASLIK_FS = 12
+BASLIK_FS = 10.5
 ALT_FS = 10
 SAG_FS = 12.5
 
 YOLLAR = [
     (UST_Y, UST_H, "DOĞRUDAN\nALINTI", "tırnak içinde göster"),
-    (ALT_Y, ALT_H, "ÖZET", "kendi cümlelerinle anlat"),
+    (ALT_Y, ALT_H, "KENDİ\nCÜMLELERİNLE\n(ÖZET)", "anlamı koruyarak yaz"),
 ]
 SAG_METIN = "KAYNAK GÖSTER"
 
