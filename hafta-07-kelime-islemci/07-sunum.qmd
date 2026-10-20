@@ -84,7 +84,7 @@ Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arad
 ```{=latex}
 \begin{center}
 \vspace*{4mm}
-\includegraphics[width=0.92\linewidth,height=0.3\textheight,keepaspectratio]{gorseller/gorsel-ofis-ikonlari.png}
+\includegraphics[width=0.64\linewidth,height=0.3\textheight,keepaspectratio]{gorseller/gorsel-ofis-ikonlari.png}
 \end{center}
 ```
 
