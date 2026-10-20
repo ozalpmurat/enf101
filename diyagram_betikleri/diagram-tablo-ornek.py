@@ -24,7 +24,7 @@ GRI = "#595959"
 plt.rcParams["font.family"] = "DejaVu Sans"
 
 # birim = cm
-G, Y = 18.8, 7.4
+G, Y = 18.8, 5.6
 KOLONLAR = ["Ad", "Vize", "Final", "Ortalama"]
 SATIRLAR = [
     ["Ayşe", "70", "85", "79"],
@@ -35,8 +35,8 @@ HUCRE_FS = 10.5
 ETIKET_FS = 9.5
 
 PANEL_W = 8.8
-PANEL_H = 4.6
-PANEL_Y0 = 0.9
+PANEL_H = 3.4
+PANEL_Y0 = 0.8
 SOLD_X = 0.4
 SAG_X = 9.8
 
@@ -111,7 +111,7 @@ for x0, etiket, tam in (
     (SOLD_X, "Her hücre çerçeveli", True),
     (SAG_X, "Az çizgili (önerilen)", False),
 ):
-    ax.text(x0, PANEL_Y0 + PANEL_H + 0.75, etiket, ha="left", va="center",
+    ax.text(x0, PANEL_Y0 + PANEL_H + 0.65, etiket, ha="left", va="center",
             fontsize=ETIKET_FS, color=MAVI if tam else LAC, fontweight="bold", zorder=3)
     tablo(ax, x0, tam)
 
