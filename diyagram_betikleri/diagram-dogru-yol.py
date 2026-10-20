@@ -45,7 +45,7 @@ ALT_FS = 10
 SAG_FS = 12.5
 
 YOLLAR = [
-    (UST_Y, UST_H, "ALINTI", "tırnak içinde göster"),
+    (UST_Y, UST_H, "DOĞRUDAN\nALINTI", "tırnak içinde göster"),
     (ALT_Y, ALT_H, "ÖZET", "kendi cümlelerinle anlat"),
 ]
 SAG_METIN = "KAYNAK GÖSTER"
