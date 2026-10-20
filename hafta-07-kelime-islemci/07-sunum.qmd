@@ -345,7 +345,7 @@ Bir kaynak gösterilirken **yazar veya sorumlu kurum**, **eserin başlığı**, 
 
 - Kaynağı tek tıkla kaydeder
 - Metin içi atıfları oluşturur
-- Kaynakçayı istenen biçimde üretir
+- Kaynakçayı istenen biçimde (APA, MLA, IEEE, vb.) üretir
 - Belgeyle bütünleşir
 
 Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya intihali **kendiliğinden önlemez**. Ürettikleri kaynakça kontrol edilmelidir.
