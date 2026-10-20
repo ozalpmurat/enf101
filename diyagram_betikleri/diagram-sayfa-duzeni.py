@@ -28,9 +28,9 @@ GRI = "#595959"
 plt.rcParams["font.family"] = "DejaVu Sans"
 
 # birim = cm; figür oranı A4 dikeye yakın (0,706)
-G, Y = 12.0, 17.0
+G, Y = 11.2, 15.0
 
-SAYFA = (1.2, 1.7, 9.6, 13.6)      # x, y, w, h  (9,6 / 13,6 = 0,706)
+SAYFA = (0.8, 0.7, 9.6, 13.6)      # x, y, w, h  (9,6 / 13,6 = 0,706)
 KENAR = 1.0                        # iç kenar boşluğu
 METIN = (SAYFA[0] + KENAR, SAYFA[1] + KENAR,
          SAYFA[2] - 2 * KENAR, SAYFA[3] - 2 * KENAR)
