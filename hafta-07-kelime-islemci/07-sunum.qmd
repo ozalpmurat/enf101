@@ -317,13 +317,9 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 
 ## Bir Bakışta Akademik Dürüstlük
 
+**İntihal**, başkasının fikrini, cümlesini veya eserini **kaynak göstermeden** kendi çalışmanız gibi sunmaktır; kasten olabileceği gibi dikkatsizlikten de olur — sonucu aynıdır.
+
 ![](gorseller/diagram-intihal.png){width=100%}
-
-## İntihal Nedir?
-
-Başkasının fikrini, cümlesini veya eserini **kaynak göstermeden** kendi çalışmanız gibi sunmaktır.
-
-Kasten olabileceği gibi dikkatsizlikten de olur — sonucu aynıdır.
 
 ## İntihal Yalnızca Kopyala-Yapıştır Değildir
 
