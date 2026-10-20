@@ -109,8 +109,8 @@ En kolay yol **stiller** kullanmaktır — bir sonraki bölümde göreceğiz.
 
 - **Hız:** Metni seçip stil uygulamak, on ayarı elle değiştirmekten hızlıdır.
 - **Tutarlılık:** Aynı stildeki bütün başlıklar aynı görünür.
-- **Yapı:** Kelime işlemci metnin hangi parçasının başlık, hangisinin gövde olduğunu **bilir**.
-- **Otomatik içindekiler:** İçindekiler tablosu yalnızca stiller kullanıldığında çalışır.
+- **Yapı:** Kelime işlemci metnin hangi parçasının başlık, hangisinin gövde olduğunu **bilir**; PDF'e bile çevirseniz başlıklar takip edilebilir.
+- **İçindekiler tablosu:** Başlıklara göre otomatik olarak oluşturulur; bu tablo yalnızca stiller kullanıldığında çalışır.
 
 ![Başlık hiyerarşisi ve içindekiler](gorseller/diagram-baslik.png){width=76%}
 
