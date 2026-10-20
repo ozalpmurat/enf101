@@ -303,7 +303,7 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 
 - Eklenen ve silinen her şey **işaretlenir**
 - Kimin ne zaman değiştirdiği görülür
-- Her değişiklik **kabul** ya da **reddedilir**
+- Her değişiklik **kabul** ya da **reddedilebilir**
 
 ```{=latex}
 \begin{center}
