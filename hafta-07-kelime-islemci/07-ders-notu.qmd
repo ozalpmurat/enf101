@@ -228,8 +228,8 @@ Bu bölüm, akademik çalışmalarda güvenilirliğin ve etik sorumluluğun teme
 
 - Bir cümleyi birkaç kelimesini değiştirerek kaynak göstermeden kullanmak
 - Bir kaynaktaki fikri kendi cümlelerinizle anlatıp kaynağı belirtmemek
-- Başkasının ödevini veya çalışmasını kendi adınıza teslim etmek
 - Başkasına ait görsel, tablo veya verileri kaynak göstermeden kullanmak
+- Başkasının ödevini veya çalışmasını kendi adınıza teslim etmek
 - Yapay zekâ ile üretilmiş içeriği, dersin veya kurumun kurallarına aykırı biçimde kendi çalışmanız gibi sunmak
 
 **Doğru yol:** Doğrudan alıntı yapıyorsanız tırnak içinde gösterip kaynak belirtin; bir fikri kendi cümlelerinizle anlatıyorsanız yine kaynak gösterin.
