@@ -46,7 +46,7 @@ NOT_FS = 11
 SISTEMLER = ["APA", "MLA", "IEEE"]
 SATIRLAR = [
     ("Alan", ["Sosyal bilimler", "Beşeri bilimler", "Mühendislik"]),
-    ("Metin içi", ["(Yılmaz, 2024)", "(Yılmaz 45)", "[1]"]),
+    ("Metin içi", ["(Yılmaz, 2023)", "(Yılmaz 45)", "[1]"]),
     ("Kaynakça", ["Alfabetik", "Alfabetik", "Numaralı"]),
 ]
 NOT = "Hangi biçimin kullanılacağını bölümünüz belirler; önemli olan tutarlılık."

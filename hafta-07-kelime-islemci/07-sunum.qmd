@@ -335,18 +335,9 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 
 ## Kaynak Nasıl Gösterilir?
 
-- **Yazar veya sorumlu kurum**
-- **Eserin başlığı**
-- **Yayın yılı veya tarihi**
-- **Sayfa numarası** (alıntıysa)
-- **Yayıncı, dergi veya web sitesi**
-- **DOI veya web adresi** (varsa)
-
-Hangi biçim (APA, MLA, IEEE) kullanılacaksa **tutarlı** olunmalıdır.
-
-## Atıf Biçimleri
-
 ![](gorseller/diagram-atif-sistemleri.png){width=100%}
+
+Bir kaynak gösterilirken **yazar veya sorumlu kurum**, **eserin başlığı**, **yayın yılı veya tarihi**, **sayfa numarası** (alıntıysa), **yayıncı, dergi veya web sitesi** ve varsa **DOI veya web adresi** belirtilir.
 
 ## Kaynak Yönetimi Araçları
 
