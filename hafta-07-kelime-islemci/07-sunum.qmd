@@ -274,12 +274,13 @@ Gerçek başlık, stil uygulanmış metindir.
 - Numarasız bir belgede "3. sayfadaki tabloya bakın" denemez; sayfa numarası belgeyi **başvurulabilir** kılar.
 - Sayfa numarası ile beraber **sayfa sayısı** da yazılırsa daha güzel olur (*Sayfa: X/Y* şeklinde).
 - Kapak sayfasında numara görünmesi istenmiyorsa numaralandırma ikinci sayfadan başlatılabilir.
+- Yeni sayfaya geçerken `Enter` yerine **sayfa sonu**; farklı numaralandırma için **bölüm sonu** kullanın.
 - Alt bilgi ve üst bilgi kullanım örneği için **ders notunuzun tasarımını** inceleyebilirsiniz.
 
 ```{=latex}
 \begin{center}
 \vspace*{3mm}
-\includegraphics[width=0.85\linewidth,height=0.35\textheight,keepaspectratio]{gorseller/ekran-ders-notu-bilgi.png}
+\includegraphics[width=0.80\linewidth,height=0.35\textheight,keepaspectratio]{gorseller/ekran-ders-notu-bilgi.png}
 \end{center}
 ```
 
@@ -295,6 +296,8 @@ Kaynakçadaki her giriş metinde anılmalı; metinde anılan her kaynak kaynakç
 
 Altyazı verdiğiniz şekil ve tablolar için ayrıca **şekiller listesi** ve **tablolar listesi** de oluşturulabilir.
 
+Teslimden önce içindekileri ve sayfa numaralarını güncelleyin, yazım denetimi yapın ve **PDF**'e aktarın.
+
 ## Değişiklikleri İzleme
 
 Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır.
@@ -305,10 +308,12 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır.
 
 Danışman/hoca düzeltmelerinde ve grup ödevinde işe yarar.
 
+Teslimden önce **açık kalmış izleme ve yorum bırakmayın**.
+
 ```{=latex}
 \begin{center}
 \vspace*{4mm}
-\includegraphics[width=0.75\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}\\[-1mm]
+\includegraphics[width=0.62\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}\\[-1mm]
 {\scriptsize\emph{LibreOffice Writer'da izlenen değişiklikler ve yorum}}
 \end{center}
 ```
