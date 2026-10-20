@@ -174,8 +174,8 @@ Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 
 - **Hız:** seç, uygula
 - **Tutarlılık:** aynı stil = aynı görünüm
-- **Yapı:** program hangi metnin başlık olduğunu bilir
-- **Otomatik içindekiler**
+- **Yapı:** program hangi metnin başlık olduğunu bilir. PDF'e bile çevirseniz, başlıklar takip edilebilir
+- **İçindekiler tablosu:** Başlıklara göre otomatik olarak oluşturulur
 
 ## Başlık Hiyerarşisi
 
