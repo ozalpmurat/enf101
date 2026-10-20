@@ -180,7 +180,9 @@ Stiller bölümünde anlatılan **başlık stilleri** belgenin yapısını kurar
 
 ## İçindekiler tablosu
 
-Başlık stillerini kullanarak yazdıysanız, **içindekiler tablosu** tek komutla oluşturulur ve belge değiştikçe güncellenebilir. Elle yazılan içindekiler, sayfa numaraları değiştiğinde yanlış hâle gelir. Aynı mantıkla, altyazı eklediğiniz şekil ve tablolar için de **şekiller listesi** ve **tablolar listesi** oluşturulabilir.
+Başlık stillerini kullanarak yazdıysanız, **içindekiler tablosu** tek komutla oluşturulur ve belge değiştikçe güncellenebilir. Elle yazılan içindekiler, sayfa numaraları değiştiğinde yanlış hâle gelir.
+
+**Şekiller ve tablolar listesi.** Altyazı eklediğiniz şekil ve tablolar için de birer liste oluşturulabilir. Bu listeler **altyazılardan** üretilir; altyazısı olmayan bir öğe listede görünmez.
 
 ## Dipnot
 
