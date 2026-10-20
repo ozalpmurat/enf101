@@ -231,10 +231,11 @@ Gerçek başlık, stil uygulanmış metindir.
 
 ## Görseller
 
-- **Çözünürlük:** basıldığında bulanık olmasın
-- **Boyut:** sürükleyerek büyütmeyin
-- **Altyazı:** numara ve açıklama ekleyin
-- **Telif:** kaynağı belirtin
+- **Çözünürlük:** Ekranda iyi görünen bir görsel, basıldığında bulanık çıkabilir.
+- **Boyut:** Görseli sürükleyerek büyütmek onu bozar; gerçek boyutunda ekleyip ölçeklemek gerekir.
+- **Konumlandırma:** Metinle görselin ilişkisi (üstünde, altında, yanında) belirlenmelidir.
+- **Altyazı:** Her görsele numara ve açıklama ekleyin (Şekil 1: …); metinde bu numaraya atıf yapın.
+- **Telif:** Başkasının görselini kullanıyorsanız kaynak göstermelisiniz.
 
 # Sayfa Düzeni
 
