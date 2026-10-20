@@ -220,7 +220,14 @@ Gerçek başlık, stil uygulanmış metindir.
 
 - **Başlık satırı** bulunsun
 - Metin sola, **sayılar sağa** hizalansın
-- Az sayıda **yatay çizgi** yeterli
+- **Her hücreyi çizgi ile çerçevelemeye gerek olmayabilir**
+
+```{=latex}
+\begin{center}
+\vspace*{4mm}
+\includegraphics[width=0.95\linewidth,height=0.60\textheight,keepaspectratio]{gorseller/diagram-tablo-ornek.png}
+\end{center}
+```
 
 ## Görseller
 
