@@ -1,5 +1,5 @@
 ---
-title: "Elektronik Tablo ve Grafik Okuma"
+title: "Hesap Tablosu ve Grafik Okuma"
 subtitle: "8. Hafta"
 author: "ENF101 · Temel Bilgi Teknolojileri"
 format: beamer
@@ -9,16 +9,16 @@ format: beamer
 
 ## Öğrenme Çıktıları
 
-- Elektronik tablonun temel kavramlarını tanır.
+- Hesap tablosunun temel kavramlarını tanır.
 - Formül yazar; göreli ve mutlak başvuruyu ayırt eder.
 - Temel fonksiyonları amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler.
 - Veri türüne uygun grafiği seçip grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
 
-# Elektronik Tablo
+# Hesap Tablosu
 
-## Elektronik Tablo Nedir?
+## Hesap Tablosu Nedir?
 
 Verinin hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** yazılımdır.
 
@@ -36,7 +36,7 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 | Satır | Yatay sıra (numarayla) | 5. satır |
 | Sütun | Dikey sıra (harfle) | C sütunu |
 | Aralık | Birden çok hücre | A2:A20 |
-| Çalışma kitabı | Tablo dosyasının tamamı | `butce.xlsx` |
+| Çalışma kitabı | Hesap tablosu dosyasının tamamı | `butce.xlsx` |
 
 ## Veri Türleri
 
@@ -52,7 +52,7 @@ Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılma
 
 ## CSV: Veriyi Taşıyan Sade Biçim
 
-Tabloları başka programlara aktarmanın ortak yolu: **CSV** (virgülle ayrılmış değerler).
+Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgülle ayrılmış değerler).
 
 - Aslında **düz metindir**: her satır bir kayıt, alanlar birer sütun
 - **Değerleri taşır, biçimlendirmeyi taşımaz** — renk, formül ve grafik CSV'ye geçmez
@@ -62,7 +62,7 @@ Sütunlar birleşmiş görünüyorsa sorun genellikle **ayraç uyumsuzluğudur**
 
 ## Formüller Nasıl Yazılır
 
-Formüller **eşittir işaretiyle** başlar; aksi hâlde tablo yazdığınızı metin sayar.
+Formüller **eşittir işaretiyle** başlar; aksi hâlde program yazdığınızı metin sayar.
 
 | Yazım | Anlamı |
 |:---|:---|
@@ -271,7 +271,7 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 
 ## Özet
 
-- Tablo, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır.
+- Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır.
 - **Göreli** başvuru kopyalanınca kayar, **mutlak** (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli değişim** farklıdır.
 - **Ortalama** uç değerden etkilenir, **ortanca** etkilenmez.

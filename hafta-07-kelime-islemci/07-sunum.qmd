@@ -407,4 +407,4 @@ Notla değerlendirilmez.
 
 ## Gelecek Hafta
 
-**Elektronik tablo ve grafik okuma** — formüller, fonksiyonlar, sıralama, grafik oluşturma ve yanıltıcı grafikler.
+**Hesap tablosu ve grafik okuma** — formüller, fonksiyonlar, sıralama, grafik oluşturma ve yanıltıcı grafikler.

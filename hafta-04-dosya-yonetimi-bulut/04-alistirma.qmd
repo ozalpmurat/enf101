@@ -25,7 +25,7 @@ C) Yeniden adlandır\
 D) Sıkıştır\
 E) Silip yeniden oluşturmak
 
-**2.** Aşağıdakilerden hangisi bir elektronik tablo dosyasının uzantısıdır?\
+**2.** Aşağıdakilerden hangisi bir hesap tablosu dosyasının uzantısıdır?\
 A) `.docx`\
 B) `.pptx`\
 C) `.xlsx`\
@@ -87,7 +87,7 @@ E) Yalnızca tek cihazdan erişilebilmesi
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | A | "Kes / Yapıştır" dosyayı taşır; aslı eski yerinden kalkar. "Kopyala / Yapıştır" ise iki nüsha bırakır. |
-| 2 | C | .xlsx elektronik tablo dosyasının uzantısıdır. .docx ve .odt belge, .pptx sunum, .pdf ise taşınabilir belgedir. |
+| 2 | C | .xlsx hesap tablosu dosyasının uzantısıdır. .docx ve .odt belge, .pptx sunum, .pdf ise taşınabilir belgedir. |
 | 3 | A | Uzantıyı değiştirmek dosyanın içeriğini ve türünü değiştirmez; yalnızca işletim sisteminin onu yanlış programla açmaya çalışmasına yol açar. |
 | 4 | D | Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır. En belirgin kazanç metin tabanlı belgelerde olur. |
 | 5 | E | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |

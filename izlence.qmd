@@ -33,7 +33,7 @@ Dersi başarıyla tamamlayan öğrenci aşağıdaki çıktılara ulaşır:
 - **K3 —** İşletim sistemlerinin görevlerini açıklar; masaüstü, mobil ve gömülü işletim sistemlerini ayırt eder; işletim sistemi ailelerini temel özellikleri bakımından karşılaştırır; dosya ve klasör işlemlerini güvenli biçimde yürütür, veri yedekleme alışkanlığı geliştirir ve basit sorunlar karşısında doğru adımları uygular.
 - **K4 —** Bilgisayar ağlarının ve İnternet'in çalışma mantığını, kablolu ve kablosuz bağlantı teknolojilerini ve güvenli kullanım ilkelerini açıklar; elektronik posta, bulut ve ortak çalışma araçları ile dijital kamu hizmetlerini uygun biçimde kullanır; çevrimiçi bilgiyi değerlendirir ve dezenformasyonu fark eder.
 - **K5 —** Kelime işlemci yazılımıyla biçimli, düzenli, erişilebilir ve akademik ölçütlere uygun (kaynak göstermeli) belge üretir.
-- **K6 —** Elektronik tablo yazılımıyla veri girer, düzenler, temel fonksiyonlarla işler ve uygun grafiklerle görselleştirir; karşılaştığı grafikleri eleştirel biçimde okur.
+- **K6 —** Hesap tablosu yazılımıyla veri girer, düzenler, temel fonksiyonlarla işler ve uygun grafiklerle görselleştirir; karşılaştığı grafikleri eleştirel biçimde okur.
 - **K7 —** Sunum yazılımıyla görsel iletişim ilkelerine uygun sunum materyali hazırlar ve etkili biçimde sunar.
 - **K8 —** Bilgi güvenliği, kişisel verilerin korunması ve dijital etik konularında farkındalık gösterir; dijital kaynakları sorumlu biçimde kullanır.
 - **K9 —** Yapay zekâ, mobil ve giyilebilir teknolojiler gibi güncel teknolojileri tanır; **algoritma kavramını ve makine öğrenmesinin ondan farkını açıklar**; sundukları olanakları, sınırlarını ve gizlilik ile etik risklerini değerlendirir.
@@ -51,7 +51,7 @@ Ders 14 hafta sürer. Ara sınav (vize), üniversitenin akademik takvimine göre
 | 5 | Bilgisayar ağları ve İnternet: ağ türleri ve bileşenleri, WiFi kullanımı ve güvenliği, Bluetooth kullanımı ve güvenliği, IP ve DNS, tarayıcı ve web, güvenli İnternet | K4 |
 | 6 | İnternet pratikleri, e-posta ve dijital kamu hizmetleri: etkili arama ve kaynak değerlendirme, dezenformasyon ve sahte haber, e-posta kullanımı ve kurumsal yazışma, e-posta güvenliği, dijital kamu hizmetleri ve e-Devlet, e-imza ve türleri | K4 |
 | 7 | Kelime işlemci: belge oluşturma ve kaydetme, metin ve paragraf biçimlendirme, stiller, tablo ve görsel ekleme, sayfa düzeni, uzun belge yönetimi (içindekiler, dipnot, kaynakça), akademik dürüstlük ve kaynak gösterme, kaynak yönetimi araçları, erişilebilirlik, PDF'e aktarma | K5 |
-| 8 | Elektronik tablo ve grafik okuma: hücre ve formül mantığı, göreli ve mutlak başvuru, temel fonksiyonlar, biçimlendirme, sıralama ve filtreleme, grafik oluşturma, grafiklerin doğru okunması ve yanıltıcı görseller | K6 |
+| 8 | Hesap tablosu ve grafik okuma: hücre ve formül mantığı, göreli ve mutlak başvuru, temel fonksiyonlar, biçimlendirme, sıralama ve filtreleme, grafik oluşturma, grafiklerin doğru okunması ve yanıltıcı görseller | K6 |
 | 9 | Sunum uygulamaları: slayt yapısı, metin yoğunluğu ve okunabilirlik, erişilebilirlik, görsel kullanımı ve telifsiz kaynaklar, tasarım tutarlılığı, etkili sunum teknikleri | K7 |
 | 10 | Bilgi güvenliği: gizlilik–bütünlük–erişilebilirlik, parola yönetimi ve iki adımlı doğrulama, oltalama, zararlı yazılımlar, güncelleme ve yedekleme, cihaz ve hesap güvenliği, sosyal mühendislik, zombi bilgisayarlar, güvenlik duvarı ve varsayılan ayarlar, güvenli alışveriş ve ödeme, doğru bilinen yanlışlar | K8 |
 | 11 | Kişisel veriler ve dijital etik: kişisel veri nedir, KVKK farkındalığı ve ilgili kişinin hakları, dijital ayak izi ve gizlilik ayarları, telif hakkı ve lisanslar, açık kaynak ve kaynak gösterme, verinin etik kullanımı, dijital nezaket | K8 |
@@ -99,7 +99,7 @@ Dersin temel materyali, her hafta paylaşılan ders notları ve sunumlardır. Bu
 - **TÜBİTAK BİLGEM** — bilişim güvenliği ve siber güvenlik farkındalık yayınları. (tubitak.gov.tr)
 - **Pardus** — yerli ve açık kaynak işletim sistemi; kullanım kılavuzları. (pardus.org.tr)
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
-- **Ofis yazılımlarının resmî kullanıcı kılavuzları** — kelime işlemci, elektronik tablo ve sunum uygulamalarının üretici belgeleri.
+- **Ofis yazılımlarının resmî kullanıcı kılavuzları** — kelime işlemci, hesap tablosu ve sunum uygulamalarının üretici belgeleri.
 
 Hafta bazında önerilen ek okuma ve bağlantılar, ilgili haftanın ders notunda ve dersin çevrimiçi ortamında ayrıca listelenir.
 

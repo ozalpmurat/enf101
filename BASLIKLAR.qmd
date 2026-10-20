@@ -204,11 +204,11 @@ format:
 - Kendini Sınama Soruları
 - Kaynaklar
 
-# 8. Hafta — Elektronik Tablo ve Grafik Okuma
+# 8. Hafta — Hesap Tablosu ve Grafik Okuma
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
-- Elektronik Tablo Nedir?
+- Hesap Tablosu Nedir?
 - Temel Kavramlar
 - Veri Girişi ve Veri Türleri
 - Veri Alışverişi: CSV

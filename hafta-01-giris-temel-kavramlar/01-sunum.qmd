@@ -23,7 +23,7 @@ format: beamer
 5. Bilgisayar ağları
 6. İnternet, e-posta ve e-Devlet
 7. Kelime işlemci
-8. Elektronik tablo
+8. Hesap tablosu
 9. Sunum uygulamaları
 10. Bilgi güvenliği
 11. Kişisel veriler ve dijital etik

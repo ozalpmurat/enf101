@@ -116,7 +116,7 @@ Dosya adının sonundaki noktadan sonraki kısımdır. İşletim sistemi ona bak
 |:---|:---|
 | `.docx` | Metin belgesi (Word) |
 | `.odt` | Metin belgesi (açık kaynak) |
-| `.xlsx` | Elektronik tablo (Excel) |
+| `.xlsx` | Hesap tablosu (Excel) |
 | `.pptx` | Sunum (PowerPoint) |
 | `.pdf` | Taşınabilir belge |
 | `.jpg`, `.png` | Görsel |

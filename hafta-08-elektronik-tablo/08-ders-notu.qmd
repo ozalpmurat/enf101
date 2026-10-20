@@ -1,5 +1,5 @@
 ---
-title: "Elektronik Tablo ve Grafik Okuma"
+title: "Hesap Tablosu ve Grafik Okuma"
 subtitle: "ENF101 Temel Bilgi Teknolojileri · 8. Hafta Ders Notu"
 format:
   pdf:
@@ -11,9 +11,9 @@ format:
 
 # Giriş
 
-Bir sayı listesine bakmakla o listeyi anlamak aynı şey değildir. Elli satırlık bir tabloda hangi değerin yüksek, hangisinin düşük olduğunu gözle görmek zordur; toplamı ya da ortalaması sorulduğunda ise elle hesaplamak hem yavaş hem hataya açıktır. **Elektronik tablo** yazılımları tam bu noktada devreye girer: veriyi düzenli bir ızgarada tutar, formüllerle otomatik hesaplar ve sonucu grafikle gösterir.
+Bir sayı listesine bakmakla o listeyi anlamak aynı şey değildir. Elli satırlık bir tabloda hangi değerin yüksek, hangisinin düşük olduğunu gözle görmek zordur; toplamı ya da ortalaması sorulduğunda ise elle hesaplamak hem yavaş hem hataya açıktır. **Hesap tablosu** yazılımları tam bu noktada devreye girer: veriyi düzenli bir ızgarada tutar, formüllerle otomatik hesaplar ve sonucu grafikle gösterir.
 
-Bu hafta iki beceriyi bir arada ele alıyoruz. Birincisi **tablo kurmak ve ondan sonuç çıkarmak** — formül yazmak, fonksiyon kullanmak, veriyi sıralamak, grafik oluşturmak. İkincisi ise **grafiği doğru okumak**: karşınıza konan bir grafiğin sizi yanıltıp yanıltmadığını anlamak. İkisi ayrılmaz, çünkü grafiği üreten ile grafiği okuyan aynı araçları kullanır — birinde iyi olmak, diğerinde de dikkatli olmayı gerektirir.
+Bu hafta iki beceriyi bir arada ele alıyoruz. Birincisi **hesap tablosu kurmak ve ondan sonuç çıkarmak** — formül yazmak, fonksiyon kullanmak, veriyi sıralamak, grafik oluşturmak. İkincisi ise **grafiği doğru okumak**: karşınıza konan bir grafiğin sizi yanıltıp yanıltmadığını anlamak. İkisi ayrılmaz, çünkü grafiği üreten ile grafiği okuyan aynı araçları kullanır — birinde iyi olmak, diğerinde de dikkatli olmayı gerektirir.
 
 ::: {.callout-note}
 ## Bu haftanın temel fikri
@@ -23,7 +23,7 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 # Bu Haftanın Öğrenme Çıktıları
 
-- Elektronik tablonun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
+- Hesap tablosunun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
 - Formül yazar; göreli ve mutlak başvuru arasındaki farkı açıklar.
 - Temel fonksiyonları (topla, ortalama, ortanca, mak, min, eğer, eğersay) amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
@@ -31,11 +31,11 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
 - Yüzde değişim, yüzde puan ve ortalama–ortanca ayrımlarını doğru kullanır.
 
-# Elektronik Tablo Nedir?
+# Hesap Tablosu Nedir?
 
-Elektronik tablo, verinin satır ve sütunların kesiştiği hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** bir yazılımdır. Asıl gücü şurada: bir hücreye yazdığınız formül, başka hücrelerdeki değerleri girdi olarak kullanır; girdi değiştiğinde sonuç kendiliğinden güncellenir.
+Hesap tablosu, verinin satır ve sütunların kesiştiği hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** bir yazılımdır. Asıl gücü şurada: bir hücreye yazdığınız formül, başka hücrelerdeki değerleri girdi olarak kullanır; girdi değiştiğinde sonuç kendiliğinden güncellenir.
 
-Tablo yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri tabanı** ve **görselleştirme** aracıdır. Günlük ve mesleki hayatta en sık karşılaşacağınız kullanım alanları:
+Hesap tablosu yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri tabanı** ve **görselleştirme** aracıdır. Günlük ve mesleki hayatta en sık karşılaşacağınız kullanım alanları:
 
 - Bütçe ve harcama takibi
 - Not, puan ve karne dökümü
@@ -43,7 +43,7 @@ Tablo yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri ta
 - Stok ve envanter listeleri
 - Deney veya ölçüm verilerinin karşılaştırılması
 
-Tablo uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın.
+Hesap tablosu uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın.
 
 # Temel Kavramlar
 
@@ -54,13 +54,13 @@ Tablo uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çev
 | Sütun | Dikey sıra; harfle gösterilir | C sütunu |
 | Aralık | Birden çok hücrenin oluşturduğu bölge | A2:A20 |
 | Sayfa | Aynı dosya içindeki ayrı tablo yüzeyi | Sayfa1, Sayfa2 |
-| Çalışma kitabı | Tablo dosyasının tamamı | `butce.xlsx` |
+| Çalışma kitabı | Hesap tablosu dosyasının tamamı | `butce.xlsx` |
 
 Hücre adresi **sütun harfi + satır numarası** olarak yazılır: `C5`, C sütunu ile 5. satırın kesişimidir. Aralık yazarken iki adres iki nokta ile birleştirilir: `A2:A20`, A2'den A20'ye kadar olan bütün hücreleri kapsar.
 
 # Veri Girişi ve Veri Türleri
 
-Bir hücreye yazdığınız her şey aynı türde değildir ve tablo bu türü kendisi belirlemeye çalışır.
+Bir hücreye yazdığınız her şey aynı türde değildir ve program bu türü kendisi belirlemeye çalışır.
 
 | Tür | Örnek | Not |
 |:---|:---|:---|
@@ -73,12 +73,12 @@ Bir hücreye yazdığınız her şey aynı türde değildir ve tablo bu türü k
 ::: {.callout-tip}
 ## Hizalama bir ipucudur
 
-Girdiğiniz değer sağa yaslanıyorsa tablo onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
+Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
 :::
 
 # Veri Alışverişi: CSV
 
-Tabloları başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül — bazı ülkelerde ve bazı programlarda noktalı virgül — konur.
+Hesap tablolarını başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül — bazı ülkelerde ve bazı programlarda noktalı virgül — konur.
 
 ```text
 ad,soyad,not
@@ -100,7 +100,7 @@ Bir CSV dosyasını açtığınızda bütün veri tek sütuna yığılmışsa, s
 
 ## Formül nasıl yazılır
 
-Formüller **eşittir işaretiyle başlar**. Aksi hâlde tablo yazdığınızı metin olarak kabul eder.
+Formüller **eşittir işaretiyle başlar**. Aksi hâlde program yazdığınızı metin olarak kabul eder.
 
 | Yazım | Anlamı |
 |:---|:---|
@@ -123,7 +123,7 @@ Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Ö
 
 ## Yüzde hesabı: yüzde değişim ve yüzde puan
 
-Tabloda en sık yapılan hesaplardan biri iki değer arasındaki değişimdir. Burada bir tuzak var.
+Hesap tablosunda en sık yapılan hesaplardan biri iki değer arasındaki değişimdir. Burada bir tuzak var.
 
 - **Yüzde puan** farkı: iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
 - **Göreli değişim**: farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
@@ -273,7 +273,7 @@ Bir grafiğe her baktığınızda şu dokuz soruyu hızlıca gözden geçirmek �
 
 # Uygulama: Aynı Veri, İki Grafik
 
-**Hangi araçla:** çevrimiçi ücretsiz bir tablo aracı (Google Sheets gibi) ya da kurulabilen ücretsiz bir paket (LibreOffice Calc gibi). Aşağıdaki adımlar ikisinde de aynıdır.
+**Hangi araçla:** çevrimiçi ücretsiz bir hesap tablosu (Google Sheets gibi) ya da kurulabilen ücretsiz bir paket (LibreOffice Calc gibi). Aşağıdaki adımlar ikisinde de aynıdır.
 
 ## Etkinliğin verisi
 
@@ -311,7 +311,7 @@ Kullanılan taktik **kesilmiş eksen**dir. Sütun grafiklerinde sütun yüksekli
 
 # Özet
 
-- Elektronik tablo, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır; girdi değişince sonuç kendiliğinden güncellenir.
+- Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır; girdi değişince sonuç kendiliğinden güncellenir.
 - Formüller `=` ile başlar; **göreli** başvuru kopyalanınca kayar, **mutlak** başvuru (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli yüzde değişim** farklı şeylerdir; karıştırıldığında değişim olduğundan büyük görünür.
 - **Ortalama** uç değerlerden etkilenir, **ortanca** etkilenmez; ikisini karşılaştırmak verinin dağılımını gösterir.

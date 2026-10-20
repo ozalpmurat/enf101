@@ -78,7 +78,7 @@ Bir dosyayı aynı klasöre kopyalarsanız, sistem adının sonuna "kopya" veya 
 |:---|:---|:---|
 | `.docx` | Metin belgesi (Word biçimi) | Kelime işlemci |
 | `.odt` | Metin belgesi (açık kaynak biçim) | Kelime işlemci |
-| `.xlsx` | Elektronik tablo | Tablo programı |
+| `.xlsx` | Hesap tablosu | Hesap tablosu programı |
 | `.pptx` | Sunum | Sunum programı |
 | `.pdf` | Taşınabilir belge | PDF görüntüleyici |
 | `.jpg`, `.png` | Görsel | Fotoğraf görüntüleyici |
