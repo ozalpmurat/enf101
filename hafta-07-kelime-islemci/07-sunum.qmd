@@ -252,7 +252,7 @@ Gerçek başlık, stil uygulanmış metindir.
 |:---|:---|
 | Kenar boşlukları | Metin ile kenar arası |
 | Yönlendirme | Dikey / yatay |
-| Sayfa boyutu | Genellikle A4 |
+| Sayfa boyutu | A3, A4, A5, vb. |
 | Üstbilgi / altbilgi | Tekrarlanan bilgi |
 | Sayfa numarası | Altbilgiye eklenir |
 

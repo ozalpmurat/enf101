@@ -156,7 +156,7 @@ Sayfa düzeninde ayarlanacak temel öğeler:
 |:---|:---|
 | Kenar boşlukları | Metnin sayfa kenarıyla arasındaki boşluk |
 | Yönlendirme | Dikey (portre) veya yatay (manzara) |
-| Sayfa boyutu | A4 (Türkiye'de yaygın), Letter |
+| Sayfa boyutu | A3, A4, A5, vb. |
 | Üstbilgi / altbilgi | Her sayfada tekrarlanan bilgi |
 | Sayfa numarası | Genellikle altbilgiye eklenir |
 
