@@ -331,8 +331,7 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 
 ## Doğru Yol
 
-- **Alıntı** yapıyorsanız: tırnak içinde gösterin + kaynak belirtin
-- **Kendi cümlelerinizle** anlatıyorsanız: yine kaynak belirtin
+![](gorseller/diagram-dogru-yol.png){width=100%}
 
 ## Kaynak Nasıl Gösterilir?
 
