@@ -308,7 +308,7 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 ```{=latex}
 \begin{center}
 \vspace*{1mm}
-\includegraphics[width=0.72\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}\\[-1mm]
+\includegraphics[width=0.82\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}\\[-1mm]
 {\scriptsize\emph{LibreOffice Writer'da izlenen değişiklikler ve yorum}}
 \end{center}
 ```
