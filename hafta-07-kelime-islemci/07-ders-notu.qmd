@@ -191,6 +191,8 @@ Belgenin uzunluğuyla ilgili değildir ama bir belgeyi başkasıyla paylaşıp �
 
 Teslimden önce belgede **açık kalmış bir izleme ya da yorum olmadığından** emin olun; çoğu kurum bunu son okuma adımı olarak ister.
 
+![LibreOffice Writer'da izlenen değişiklikler ve yorum](gorseller/ekran-degisiklik-izleme.png){width=70%}
+
 # Akademik Dürüstlük ve Kaynak Gösterme
 
 Bu bölüm, bu haftanın en önemli kısmıdır.
@@ -316,6 +318,6 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - **Mendeley** — ücretsiz, kapalı kaynak kaynak yönetimi aracı. (mendeley.com)
 - **YÖK ve üniversite kütüphanelerinin intihal politikaları** — akademik dürüstlük kılavuzları.
 - **W3C Erişilebilirlik Girişimi** — belge erişilebilirliği ilkeleri. (w3.org/WAI)
-- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır. "Google Docs penceresi" ekran görüntüsü — Google Docs uygulamasından alınmıştır. "2025 Office Study" grafiği — Empower (2025) araştırmasından alınmıştır. Stil galerisi ve yazı tipi araçları ekran görüntüleri — Microsoft Word uygulamasından alınmıştır.
+- **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır. "Google Docs penceresi" ekran görüntüsü — Google Docs uygulamasından alınmıştır. "2025 Office Study" grafiği — Empower (2025) araştırmasından alınmıştır. Stil galerisi ve yazı tipi araçları ekran görüntüleri — Microsoft Word uygulamasından alınmıştır. Değişiklik izleme ekran görüntüsü — LibreOffice Writer uygulamasından alınmıştır.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
