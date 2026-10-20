@@ -293,6 +293,8 @@ Gerçek başlık, stil uygulanmış metindir.
 
 Kaynakçadaki her giriş metinde anılmalı; metinde anılan her kaynak kaynakçada olmalı.
 
+Altyazı verdiğiniz şekil ve tablolar için ayrıca **şekiller listesi** ve **tablolar listesi** de oluşturulabilir.
+
 ## Değişiklikleri İzleme
 
 Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır.

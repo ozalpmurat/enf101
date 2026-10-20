@@ -176,7 +176,7 @@ On sayfayı geçen belgelerde **içindekiler tablosu**, **dipnot** ve **kaynakç
 
 ## İçindekiler tablosu
 
-Başlık stillerini kullanarak yazdıysanız, **içindekiler tablosu** tek komutla oluşturulur ve belge değiştikçe güncellenebilir. Elle yazılan içindekiler, sayfa numaraları değiştiğinde yanlış hâle gelir.
+Başlık stillerini kullanarak yazdıysanız, **içindekiler tablosu** tek komutla oluşturulur ve belge değiştikçe güncellenebilir. Elle yazılan içindekiler, sayfa numaraları değiştiğinde yanlış hâle gelir. Aynı mantıkla, altyazı eklediğiniz şekil ve tablolar için de **şekiller listesi** ve **tablolar listesi** oluşturulabilir.
 
 ## Dipnot
 
