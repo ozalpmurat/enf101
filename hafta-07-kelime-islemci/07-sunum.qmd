@@ -327,10 +327,11 @@ Kasten olabileceği gibi dikkatsizlikten de olur — sonucu aynıdır.
 
 ## İntihal Yalnızca Kopyala-Yapıştır Değildir
 
-- Bir cümleyi birkaç kelimesini değiştirip kullanmak
-- Yapay zekâ metnini kendi çalışmanız gibi sunmak
-- Bir fikri kaynak göstermeden kendi fikriniz gibi yazmak
+- Bir cümleyi birkaç kelimesini değiştirerek kaynaksız kullanmak
+- Bir fikri kendi cümlelerinizle anlatıp kaynak belirtmemek
+- Başkasına ait görsel, tablo veya veriyi kaynaksız kullanmak
 - Başkasının ödevini kendi adınıza teslim etmek
+- Yapay zekâ içeriğini kurallara aykırı biçimde kendi çalışmanız gibi sunmak
 
 ## Doğru Yol
 
@@ -339,11 +340,12 @@ Kasten olabileceği gibi dikkatsizlikten de olur — sonucu aynıdır.
 
 ## Kaynak Nasıl Gösterilir?
 
-- **Yazar** adı
-- **Eser** adı
-- **Yayın yılı**
+- **Yazar veya sorumlu kurum**
+- **Eserin başlığı**
+- **Yayın yılı veya tarihi**
 - **Sayfa numarası** (alıntıysa)
-- **Nereden erişildiği**
+- **Yayıncı, dergi veya web sitesi**
+- **DOI veya web adresi** (varsa)
 
 Hangi biçim (APA, MLA, IEEE) kullanılacaksa **tutarlı** olunmalıdır.
 
@@ -356,7 +358,7 @@ Hangi biçim (APA, MLA, IEEE) kullanılacaksa **tutarlı** olunmalıdır.
 - Kaynakçayı istenen biçimde üretir
 - Belgeyle bütünleşir
 
-Kaynak göstermeyi kolaylaştırarak **intihali önler**.
+Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya intihali **kendiliğinden önlemez**. Ürettikleri kaynakça kontrol edilmelidir.
 
 # Erişilebilirlik
 

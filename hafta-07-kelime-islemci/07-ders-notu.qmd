@@ -211,38 +211,42 @@ Teslimden önce belgede **kabul ya da reddedilmemiş değişiklik** ve **çözü
 
 # Akademik Dürüstlük ve Kaynak Gösterme
 
-Bu bölüm, bu haftanın en önemli kısmıdır.
+Bu bölüm, akademik çalışmalarda güvenilirliğin ve etik sorumluluğun temelini oluşturur.
 
 ![Akademik dürüstlük](gorseller/diagram-intihal.png){width=76%}
 
 ## İntihal nedir?
 
-**İntihal**, başkasının fikrini, cümlesini veya eserini **kaynak göstermeden** kendi çalışmanız gibi sunmaktır. Kasten yapılabileceği gibi dikkatsizlikten de olabilir — ama sonuçları aynıdır.
+**İntihal**, başkasının fikrini, cümlesini veya eserini **kaynak göstermeden** kendi çalışmanız gibi sunmaktır. Kasıtlı yapılabileceği gibi dikkatsizlikten de kaynaklanabilir; her iki durumda da akademik dürüstlük açısından sorun oluşturur. Değerlendirme ve yaptırımlar kurumun kurallarına göre değişir.
 
 ::: {.callout-warning}
 ## İntihal yalnızca kopyala-yapıştır değildir
 
 Şu durumlar da intihaldir:
 
-- Bir cümleyi birkaç kelimesini değiştirip kullanmak
-- Yapay zekâ ile üretilmiş metni kendi çalışmanız gibi sunmak
-- Bir fikri kaynak göstermeden kendi fikriniz gibi yazmak
-- Başkasının ödevini kendi adınıza teslim etmek
+- Bir cümleyi birkaç kelimesini değiştirerek kaynak göstermeden kullanmak
+- Bir kaynaktaki fikri kendi cümlelerinizle anlatıp kaynağı belirtmemek
+- Başkasının ödevini veya çalışmasını kendi adınıza teslim etmek
+- Başkasına ait görsel, tablo veya verileri kaynak göstermeden kullanmak
+- Yapay zekâ ile üretilmiş içeriği, dersin veya kurumun kurallarına aykırı biçimde kendi çalışmanız gibi sunmak
 
-**Doğru yol:** alıntı yapıyorsanız tırnak içinde gösterip kaynak belirtin; kendi cümlelerinizle anlatıyorsanız yine kaynak gösterin.
+**Doğru yol:** Doğrudan alıntı yapıyorsanız tırnak içinde gösterip kaynak belirtin; bir fikri kendi cümlelerinizle anlatıyorsanız yine kaynak gösterin.
 :::
 
 ## Kaynak nasıl gösterilir?
 
 Bir kaynağı gösterirken şu bilgiler gerekir:
 
-- **Yazar** adı
-- **Eser** adı
-- **Yayın yılı**
-- **Sayfa numarası** (alıntı yaptıysanız)
-- **Nereden erişildiği** (basılı kaynak, web adresi, veri tabanı)
+- **Yazar veya sorumlu kurum**
+- **Eserin başlığı**
+- **Yayın yılı veya tarihi**
+- **Sayfa numarası** (özellikle doğrudan alıntılarda)
+- **Yayıncı, dergi veya web sitesi**
+- **DOI veya web adresi** (varsa)
 
-Metin içinde kısa atıf yapılır, belge sonunda ayrıntılı künye verilir. Hangi biçimin kullanılacağı (APA, MLA, IEEE gibi) genellikle bölümünüz tarafından belirlenir; **önemli olan tutarlılıktır**.
+Metin içinde kısa atıf yapılır, belge sonunda ayrıntılı künye verilir. Hangi biçimin kullanılacağı (APA, MLA, IEEE gibi) bölümünüzün kurallarına göre belirlenir; **önemli olan tutarlılıktır**.
+
+**Temel kural:** Metindeki atıflar ile kaynakça birbiriyle tutarlı olmalıdır. Kaynakça eklemek, metin içinde gerekli atıfları yapmanın yerine geçmez. Kaynağın güvenilirliğini değerlendirme **6. haftada**, yapay zekâya ilişkin kurallar **13. haftada** ele alınıyor.
 
 ## Kaynak yönetimi araçları
 
@@ -255,7 +259,7 @@ Kaynakları elle listelemek, sayıları arttıkça zorlaşır. **Ücretsiz kayna
 
 **Zotero** açık kaynak bir araçtır; **Mendeley** ise ücretsiz ama kapalı kaynak bir araçtır. İkisi de aynı işi yapar; seçim size kalır.
 
-Bu araçlar, kaynak göstermeyi zahmetli olmaktan çıkarır — yani intihali önlemenin en pratik yollarından biridir.
+**Unutmayın:** Bu araçlar atıfları düzenlemeye yardımcı olur; yanlış künyeleri, eksik atıfları veya intihali kendiliğinden önlemez. Ürettikleri kaynakça mutlaka kontrol edilmelidir.
 
 # Erişilebilir Belge Hazırlama
 
@@ -322,10 +326,11 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 2. İçindekiler tablosu neden yalnızca stillerle çalışır?
 3. İntihalin kopyala-yapıştır dışındaki iki biçimini yazın.
 4. Kaynak gösterirken hangi bilgiler yer almalıdır?
-5. Kaynak yönetimi araçları intihali nasıl önler?
+5. Kaynak yönetimi araçları ne işe yarar; neyi kendiliğinden önlemez?
 6. Alternatif metin (alt text) nedir, kimin için gereklidir?
 7. Sayfa numarası neden gereklidir?
 8. Bir görseli belgeye eklerken nelere dikkat edilir?
+9. Şu üç durumu akademik dürüstlük açısından değerlendirin: (a) bir paragrafı birkaç kelimesini değiştirerek kaynak göstermeden kullanmak, (b) bir kaynaktaki fikri kendi cümlelerinizle anlatıp kaynak göstermek, (c) yapay zekâ metnini kurallara aykırı biçimde kendi çalışmanız gibi teslim etmek.
 
 # Kaynaklar
 
