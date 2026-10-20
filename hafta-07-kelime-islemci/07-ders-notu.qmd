@@ -165,6 +165,8 @@ Sayfa düzeninde ayarlanacak temel öğeler:
 
 Sayfa numarası olmayan bir ödevde hocanın "3. sayfadaki tabloya bakın" demesi mümkün değildir. Sayfa numarası, belgeyi **başvurulabilir** kılar.
 
+Sayfa numarasıyla birlikte **sayfa sayısı** da yazılırsa (ör. *Sayfa: 3/12*) okuyucu belgenin uzunluğunu da görür.
+
 Kapak sayfasında numara görünmemesi isteniyorsa, numaralandırma ikinci sayfadan başlatılabilir.
 :::
 
