@@ -112,6 +112,8 @@ En kolay yol **stiller** kullanmaktır — bir sonraki bölümde göreceğiz.
 - **Yapı:** Kelime işlemci metnin hangi parçasının başlık, hangisinin gövde olduğunu **bilir**; PDF'e bile çevirseniz başlıklar takip edilebilir.
 - **İçindekiler tablosu:** Başlıklara göre otomatik olarak oluşturulur; bu tablo yalnızca stiller kullanıldığında çalışır.
 
+![Google Docs: metin anahatları (başlıklar)](gorseller/ekran-google-docs-belge.png){width=62%}
+
 ![Başlık hiyerarşisi ve içindekiler](gorseller/diagram-baslik.png){width=76%}
 
 ::: {.callout-warning}
