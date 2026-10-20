@@ -29,7 +29,7 @@ GRI = "#595959"     # alt yazı
 plt.rcParams["font.family"] = "DejaVu Sans"
 
 # veri birimi = cm; figür 17,4 × 7,6 cm (eski PNG 1373 × 597 px @200 dpi)
-G, Y = 17.4, 8.4
+G, Y = 18.6, 8.4
 
 KUTU_W, KUTU_H = 6.8, 1.5
 SEVIYE_X = [0.7, 1.4, 2.1]        # her seviye biraz içeriden başlar
@@ -43,7 +43,7 @@ SEVIYE = [
 ]
 KUTU_FS, KUTU_PAY = 10.5, 0.30
 
-PAN_X, PAN_W = 10.0, 6.7          # içindekiler paneli
+PAN_X, PAN_W = 11.0, 6.7          # içindekiler paneli
 PAN_Y0, PAN_Y1 = 0.9, 7.8
 BASLIK_H = 1.2                    # panel başlık bandı
 PAN_FS, PAN_PAY = 9.5, 0.35
@@ -51,6 +51,7 @@ PAN_FS, PAN_PAY = 9.5, 0.35
 MADDELER = [
     "• Başlıklardan otomatik oluşur",
     "• Sayfa numaraları kendiliğinden\ngüncellenir",
+    "• İstenen seviyeye kadar\nbaşlıklar dahil edilebilir",
 ]
 
 
@@ -88,7 +89,7 @@ def kontrol(fig, ax):
     if g > KUTU_W - 0.4:
         print(f"TAŞIYOR  sol başlık: {g:.2f} > {KUTU_W - 0.4:.2f}")
         sorun += 1
-    g = en_uzun("İÇİNDEKİLER", 11, True, fig, ax)
+    g = en_uzun("İÇİNDEKİLER TABLOSU", 11, True, fig, ax)
     if g > PAN_W - 0.4:
         print(f"TAŞIYOR  panel başlığı: {g:.2f} > {PAN_W - 0.4:.2f}")
         sorun += 1
@@ -115,8 +116,7 @@ ax.add_patch(FancyBboxPatch((0.15, 0.15), G - 0.3, Y - 0.3,
              boxstyle="round,pad=0.02,rounding_size=0.14",
              linewidth=0, facecolor=ZEMIN, zorder=0))
 
-# solda: seviye başlık bandı (sağdaki "İÇİNDEKİLER" ile simetrik)
-kutu(ax, SEVIYE_X[0], SOL_BASLIK_Y0, KUTU_W, SOL_BASLIK_H, ACIK, yuvarlak=0.08)
+# solda: seviye başlığı (bantsız, yalnızca metin)
 ax.text(SEVIYE_X[0] + KUTU_W / 2, SOL_BASLIK_Y0 + SOL_BASLIK_H / 2, SOL_BASLIK,
         ha="center", va="center", fontsize=10.5, color=LAC, fontweight="bold", zorder=3)
 
@@ -135,10 +135,9 @@ ax.text((SEVIYE_X[-1] + KUTU_W + PAN_X) / 2, 3.7, "→", ha="center", va="center
 
 # sağda: içindekiler paneli
 kutu(ax, PAN_X, PAN_Y0, PAN_W, PAN_Y1 - PAN_Y0, "#FFFFFF")
-kutu(ax, PAN_X, PAN_Y1 - BASLIK_H, PAN_W, BASLIK_H, ACIK, yuvarlak=0.08)
-ax.text(PAN_X + PAN_W / 2, PAN_Y1 - BASLIK_H / 2, "İÇİNDEKİLER",
+ax.text(PAN_X + PAN_W / 2, PAN_Y1 - BASLIK_H / 2, "İÇİNDEKİLER TABLOSU",
         ha="center", va="center", fontsize=11, color=LAC, fontweight="bold", zorder=3)
-for metin, y in zip(MADDELER, [5.2, 4.3]):
+for metin, y in zip(MADDELER, [6.3, 5.3, 4.2]):
     for j, satir in enumerate(metin.split("\n")):
         ax.text(PAN_X + PAN_PAY, y - j * 0.4, satir, ha="left", va="center",
                 fontsize=PAN_FS, color=GRI, zorder=3)
