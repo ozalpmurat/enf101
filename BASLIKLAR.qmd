@@ -188,6 +188,7 @@ format:
   - Dipnot
   - Kaynakça
   - Değişiklikleri izleme
+  - Belgeyi son hâline getirme
 - Akademik Dürüstlük ve Kaynak Gösterme
   - İntihal nedir?
   - Kaynak nasıl gösterilir?

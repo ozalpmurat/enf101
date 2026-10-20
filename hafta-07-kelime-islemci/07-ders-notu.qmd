@@ -160,6 +160,8 @@ Sayfa düzeninde ayarlanacak temel öğeler:
 | Üstbilgi / altbilgi | Her sayfada tekrarlanan bilgi |
 | Sayfa numarası | Genellikle altbilgiye eklenir |
 
+Yeni sayfaya geçmek için art arda `Enter`'a basmak yerine **sayfa sonu** kullanın; farklı numaralandırma ya da yön gereken yerlerde **bölüm sonu** gerekir. Bu ayrım, sayfa numaralarının istediğiniz yerden başlamasını da sağlar.
+
 ::: {.callout-tip}
 ## Sayfa numarası neden gerekli?
 
@@ -172,7 +174,9 @@ Kapak sayfasında numara görünmemesi isteniyorsa, numaralandırma ikinci sayfa
 
 # Uzun Belge Yönetimi
 
-On sayfayı geçen belgelerde **içindekiler tablosu**, **dipnot** ve **kaynakça** zorunlu hâle gelir.
+Uzun belgelerde tutarlı biçimlendirme, kolay gezinme ve otomatik güncelleme önemlidir. Başlık stilleri, sayfa numaraları, içindekiler tablosu ve kaynakça gibi özellikler belge yönetimini kolaylaştırır; bu özellikler belgenin türüne ve ihtiyacına göre kullanılır.
+
+Stiller bölümünde anlatılan **başlık stilleri** belgenin yapısını kurar, sayfa düzeni bölümündeki ayarlar da sayfa numaralarını ve yerleşimi belirler. Bu bölüm o temellerin üzerine kurulur.
 
 ## İçindekiler tablosu
 
@@ -180,7 +184,7 @@ Başlık stillerini kullanarak yazdıysanız, **içindekiler tablosu** tek komut
 
 ## Dipnot
 
-Sayfa altına düşülen kısa açıklama veya kaynak notudur. Metnin akışını bozmadan ek bilgi vermenin yoludur.
+Sayfa altına düşülen kısa açıklama veya kaynak notudur. Metnin akışını bozmadan ek bilgi vermenin yoludur. Dipnot, her durumda kaynak göstermenin yerine geçmez; kullanılan atıf yöntemine uyulmalıdır.
 
 ## Kaynakça
 
@@ -195,9 +199,15 @@ Belgenin uzunluğuyla ilgili değildir ama bir belgeyi başkasıyla paylaşıp �
 - **Danışman veya hoca düzeltmeleri:** Metninizde yapılan değişiklikleri görür, katılmadıklarınızı reddedersiniz.
 - **Grup ödevi:** Kimin neyi değiştirdiği kayıtlı kalır.
 
-Teslimden önce belgede **açık kalmış bir izleme ya da yorum olmadığından** emin olun; çoğu kurum bunu son okuma adımı olarak ister.
+**Yorumlar** da metni doğrudan değiştirmeden geri bildirim vermeyi sağlar.
 
 ![LibreOffice Writer'da izlenen değişiklikler ve yorum](gorseller/ekran-degisiklik-izleme.png){width=70%}
+
+## Belgeyi son hâline getirme
+
+Belge tamamlandığında **içindekiler tablosu** ve **sayfa numaraları** güncellenmeli, yazım denetimi yapılmalı ve sayfa düzeni gözden geçirilmelidir. Belgenin farklı bilgisayarlarda aynı görünmesi için **PDF**'e aktarmak güvenlidir.
+
+Teslimden önce belgede **açık kalmış bir izleme ya da yorum olmadığından** emin olun; çoğu kurum bunu son okuma adımı olarak ister.
 
 # Akademik Dürüstlük ve Kaynak Gösterme
 
