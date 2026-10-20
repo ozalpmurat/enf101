@@ -134,6 +134,8 @@ Tablolar, karşılaştırmalı bilgi sunmanın en etkili yoludur. Bir tabloda bu
 - **Tutarlı hizalama:** Metin sola, sayılar sağa.
 - **Ölçülü çizgiler:** Her hücreyi çerçevelemek yerine az sayıda yatay çizgi kullanmak daha okunur olur.
 
+![Örnek tablo: solda her hücre çerçeveli, sağda az çizgili](gorseller/diagram-tablo-ornek.png){width=72%}
+
 ## Görseller
 
 Görsel eklerken dikkat edilecekler:
