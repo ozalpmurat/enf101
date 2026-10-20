@@ -1,6 +1,7 @@
-# 7. hafta: ders notunun üst ve alt bilgisini gösteren örnek görsel.
-# Görsel, 07-ders-notu.pdf'in ikinci sayfasından kırpılarak üretilir; bu yüzden
-# ders notu yeniden derlendikten sonra çalıştırılmalıdır.
+# 7. hafta: ders notunun üst ve alt bilgisini gösteren ÖRNEK görsel.
+# Görsel, 07-ders-notu.pdf'in ikinci sayfasından bir kez kırpılmıştır; canlı bir
+# kopya değildir. Sayfa numarası gibi değerlerin güncel kalması beklenmez.
+# Yalnızca notun tasarımı belirgin biçimde değişirse yeniden üretilir.
 # Kullanım: python3 diyagram_betikleri/ekran-ders-notu-bilgi.py
 # Çıktı:    hafta-07-kelime-islemci/gorseller/ekran-ders-notu-bilgi.png
 
