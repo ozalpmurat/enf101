@@ -232,6 +232,13 @@ Danışman/hoca düzeltmelerinde ve grup ödevinde işe yarar.
 
 **Teslimden önce açık kalmış izleme ve yorum bırakmayın.**
 
+```{=latex}
+\begin{center}
+\vspace*{4mm}
+\includegraphics[width=0.66\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}
+\end{center}
+```
+
 # Akademik Dürüstlük
 
 ## Bir Bakışta Akademik Dürüstlük
