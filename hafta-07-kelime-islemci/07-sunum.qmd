@@ -275,6 +275,7 @@ Gerçek başlık, stil uygulanmış metindir.
 - Sayfa numarası belgeyi **başvurulabilir** kılar.
 - Sayfa numarası ile beraber **sayfa sayısı** da yazılırsa daha güzel olur (*Sayfa: X/Y* şeklinde).
 - Kapak sayfasında numara görünmesi istenmiyorsa numaralandırma ikinci sayfadan başlatılabilir.
+- Alt bilgi ve üst bilgi kullanım örneği için **ders notunuzun tasarımını** inceleyebilirsiniz.
 
 # Uzun Belge Yönetimi
 
