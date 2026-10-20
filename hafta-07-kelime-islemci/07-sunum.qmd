@@ -344,6 +344,10 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 
 Hangi biçim (APA, MLA, IEEE) kullanılacaksa **tutarlı** olunmalıdır.
 
+## Atıf Biçimleri
+
+![](gorseller/diagram-atif-sistemleri.png){width=100%}
+
 ## Kaynak Yönetimi Araçları
 
 İki yaygın ücretsiz araç: **Zotero** (açık kaynak) ve **Mendeley** (kapalı kaynak).

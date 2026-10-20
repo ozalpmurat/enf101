@@ -38,14 +38,14 @@ SATIR_Y = [4.3, 3.0, 1.7]
 SATIR_H = 1.2
 NOT_Y, NOT_H = 0.45, 0.95
 
-BASLIK_FS = 12
-ETIKET_FS = 9.5
-DEGER_FS = 10
-NOT_FS = 9.5
+BASLIK_FS = 14
+ETIKET_FS = 11
+DEGER_FS = 12
+NOT_FS = 11
 
 SISTEMLER = ["APA", "MLA", "IEEE"]
 SATIRLAR = [
-    ("Alan", ["Sosyal bilimler", "Beşeri bilimler", "Mühendislik, bilişim"]),
+    ("Alan", ["Sosyal bilimler", "Beşeri bilimler", "Mühendislik"]),
     ("Metin içi", ["(Yılmaz, 2024)", "(Yılmaz 45)", "[1]"]),
     ("Kaynakça", ["Alfabetik", "Alfabetik", "Numaralı"]),
 ]

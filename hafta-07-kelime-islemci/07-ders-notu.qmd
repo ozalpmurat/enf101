@@ -246,6 +246,14 @@ Bir kaynağı gösterirken şu bilgiler gerekir:
 
 Metin içinde kısa atıf yapılır, belge sonunda ayrıntılı künye verilir. Hangi biçimin kullanılacağı (APA, MLA, IEEE gibi) bölümünüzün kurallarına göre belirlenir; **önemli olan tutarlılıktır**.
 
+Aşağıdaki tablo, aynı kaynağın üç yaygın biçimde nasıl gösterildiğini karşılaştırır:
+
+| Atıf Biçimi | Odak Alanı | Metin İçi Atıf | Kaynakça Gösterimi |
+| :--- | :--- | :--- | :--- |
+| **APA** | Sosyal bilimler | (Yılmaz, 2023, s. 45) | Yılmaz, A. (2023). *Dijital çağda bilgi yönetimi*. Bilge Yayınları. |
+| **MLA** | Beşeri bilimler | (Yılmaz 45) | Yılmaz, Ahmet. *Dijital Çağda Bilgi Yönetimi*. Bilge Yayınları, 2023. |
+| **IEEE** | Mühendislik ve teknoloji | [1, s. 45] | [1] A. Yılmaz, *Dijital Çağda Bilgi Yönetimi*. İstanbul: Bilge Yayınları, 2023. |
+
 **Temel kural:** Metindeki atıflar ile kaynakça birbiriyle tutarlı olmalıdır. Kaynakça eklemek, metin içinde gerekli atıfları yapmanın yerine geçmez. Kaynağın güvenilirliğini değerlendirme **6. haftada**, yapay zekâya ilişkin kurallar **13. haftada** ele alınıyor.
 
 ## Kaynak yönetimi araçları
