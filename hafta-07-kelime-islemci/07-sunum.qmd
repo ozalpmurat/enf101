@@ -56,7 +56,7 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 ## Masaüstü mü, Çevrimiçi mi?
 
-Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tarayıcıda çalışan **çevrimiçi** sürüm.
+Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanılır, bazıları ise doğrudan **web üzerinden** (bulut, çevrimiçi, online) kullanılır.
 
 | | Masaüstü | Çevrimiçi |
 |:---|:---|:---|
@@ -65,7 +65,7 @@ Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tar
 | Ortak çalışma | Sınırlı | Aynı anda çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucusu |
 
-Çevrimiçi belge **sizin bilgisayarınızda durmaz**; kişisel bilgi içeren belgelerde dikkatli olun.
+Çevrimiçi uygulamalarda belge **karşıdaki sunucuda durur**; kişisel bilgi içeren belgelerde dikkatli olun.
 
 ## Ofis Uygulamaları
 
