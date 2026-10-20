@@ -29,11 +29,13 @@ GRI = "#595959"     # alt yazı
 plt.rcParams["font.family"] = "DejaVu Sans"
 
 # veri birimi = cm; figür 17,4 × 7,6 cm (eski PNG 1373 × 597 px @200 dpi)
-G, Y = 17.4, 7.6
+G, Y = 17.4, 8.4
 
-KUTU_W, KUTU_H = 6.8, 1.6
+KUTU_W, KUTU_H = 6.8, 1.5
 SEVIYE_X = [0.7, 1.4, 2.1]        # her seviye biraz içeriden başlar
-KUTU_Y = [5.2, 3.0, 0.8]          # 1. seviye üstte: 1,6 yükseklik + 0,6 boşluk
+KUTU_Y = [5.0, 2.95, 0.9]         # 1. seviye üstte: 1,5 yükseklik + 0,55 boşluk
+SOL_BASLIK = "ANAHATLAR (BAŞLIKLAR)"
+SOL_BASLIK_Y0, SOL_BASLIK_H = 6.6, 1.2
 SEVIYE = [
     "Başlık 1 — BÖLÜM",
     "Başlık 2 — alt bölüm",
@@ -42,7 +44,7 @@ SEVIYE = [
 KUTU_FS, KUTU_PAY = 10.5, 0.30
 
 PAN_X, PAN_W = 10.0, 6.7          # içindekiler paneli
-PAN_Y0, PAN_Y1 = 0.8, 6.8
+PAN_Y0, PAN_Y1 = 0.9, 7.8
 BASLIK_H = 1.2                    # panel başlık bandı
 PAN_FS, PAN_PAY = 9.5, 0.35
 
@@ -82,6 +84,10 @@ def kontrol(fig, ax):
         if g > sinir:
             print(f"TAŞIYOR  panel maddesi: {g:.2f} > {sinir:.2f}  ({m.splitlines()[0]})")
             sorun += 1
+    g = en_uzun(SOL_BASLIK, 10.5, True, fig, ax)
+    if g > KUTU_W - 0.4:
+        print(f"TAŞIYOR  sol başlık: {g:.2f} > {KUTU_W - 0.4:.2f}")
+        sorun += 1
     g = en_uzun("İÇİNDEKİLER", 11, True, fig, ax)
     if g > PAN_W - 0.4:
         print(f"TAŞIYOR  panel başlığı: {g:.2f} > {PAN_W - 0.4:.2f}")
@@ -109,17 +115,22 @@ ax.add_patch(FancyBboxPatch((0.15, 0.15), G - 0.3, Y - 0.3,
              boxstyle="round,pad=0.02,rounding_size=0.14",
              linewidth=0, facecolor=ZEMIN, zorder=0))
 
-# solda: sevmiyeler (içe giren kutular)
+# solda: seviye başlık bandı (sağdaki "İÇİNDEKİLER" ile simetrik)
+kutu(ax, SEVIYE_X[0], SOL_BASLIK_Y0, KUTU_W, SOL_BASLIK_H, ACIK, yuvarlak=0.08)
+ax.text(SEVIYE_X[0] + KUTU_W / 2, SOL_BASLIK_Y0 + SOL_BASLIK_H / 2, SOL_BASLIK,
+        ha="center", va="center", fontsize=10.5, color=LAC, fontweight="bold", zorder=3)
+
+# solda: seviyeler (içe giren kutular)
 for i, (x, y, metin) in enumerate(zip(SEVIYE_X, KUTU_Y, SEVIYE)):
     kutu(ax, x, y, KUTU_W, KUTU_H, "#FFFFFF")
     ax.text(x + KUTU_W / 2, y + KUTU_H / 2, metin, ha="center", va="center",
             fontsize=KUTU_FS, color=LAC, fontweight="bold", zorder=3)
     if i < len(SEVIYE) - 1:
-        ax.text(x + KUTU_W / 2, y - 0.3, "↓", ha="center", va="center",
+        ax.text(x + KUTU_W / 2, y - 0.28, "↓", ha="center", va="center",
                 fontsize=13, color=MAVI, zorder=3)
 
 # soldan sağa ok
-ax.text((SEVIYE_X[-1] + KUTU_W + PAN_X) / 2, Y / 2, "→", ha="center", va="center",
+ax.text((SEVIYE_X[-1] + KUTU_W + PAN_X) / 2, 3.7, "→", ha="center", va="center",
         fontsize=15, color=MAVI, zorder=3)
 
 # sağda: içindekiler paneli
@@ -127,7 +138,7 @@ kutu(ax, PAN_X, PAN_Y0, PAN_W, PAN_Y1 - PAN_Y0, "#FFFFFF")
 kutu(ax, PAN_X, PAN_Y1 - BASLIK_H, PAN_W, BASLIK_H, ACIK, yuvarlak=0.08)
 ax.text(PAN_X + PAN_W / 2, PAN_Y1 - BASLIK_H / 2, "İÇİNDEKİLER",
         ha="center", va="center", fontsize=11, color=LAC, fontweight="bold", zorder=3)
-for metin, y in zip(MADDELER, [4.0, 3.1]):
+for metin, y in zip(MADDELER, [5.2, 4.3]):
     for j, satir in enumerate(metin.split("\n")):
         ax.text(PAN_X + PAN_PAY, y - j * 0.4, satir, ha="left", va="center",
                 fontsize=PAN_FS, color=GRI, zorder=3)
