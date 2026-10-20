@@ -53,7 +53,7 @@ Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanı
 | Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Hizmeti sunan şirketin sunucuları |
 
-Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak çevrimiçi uygulamalarda belge **karşıdaki sunucuda durur**; hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
+Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak çevrimiçi uygulamalarda belge **hizmeti sunan şirketin sunucularında tutulur**. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
 
 Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
 
@@ -61,7 +61,7 @@ Aynı ayrım 8. haftadaki hesap tablosu (**Google Sheets**, **LibreOffice Calc**
 
 ## Kullanım oranları
 
-Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığını bildirmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
+Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığı bildirilmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
 
 ![2025 Office Study: işletmelerde kullanılan ofis yazılımları](gorseller/gorsel-office-study.png){width=65%}
 
@@ -254,7 +254,7 @@ Aşağıdaki tablo, aynı kaynağın üç yaygın biçimde nasıl gösterildiği
 | :--- | :--- | :--- | :--- |
 | **APA** | Sosyal bilimler | (Yılmaz, 2023, s. 45) | Yılmaz, A. (2023). *Dijital çağda bilgi yönetimi*. Bilge Yayınları. |
 | **MLA** | Beşeri bilimler | (Yılmaz 45) | Yılmaz, Ahmet. *Dijital Çağda Bilgi Yönetimi*. Bilge Yayınları, 2023. |
-| **IEEE** | Mühendislik ve teknoloji | [1, s. 45] | [1] A. Yılmaz, *Dijital Çağda Bilgi Yönetimi*. İstanbul: Bilge Yayınları, 2023. |
+| **IEEE** | Mühendislik | [1, s. 45] | [1] A. Yılmaz, *Dijital Çağda Bilgi Yönetimi*. İstanbul: Bilge Yayınları, 2023. |
 
 **Temel kural:** Metindeki atıflar ile kaynakça birbiriyle tutarlı olmalıdır. Kaynakça eklemek, metin içinde gerekli atıfları yapmanın yerine geçmez. Kaynağın güvenilirliğini değerlendirme **6. haftada**, yapay zekâya ilişkin kurallar **13. haftada** ele alınıyor.
 
@@ -285,7 +285,7 @@ Hazırladığınız belgeyi yalnızca siz okumayacaksınız. Göz sağlığı so
 ::: {.callout-note}
 ## Alternatif metin (alt text)
 
-Bir resmi belgeye eklediğinizde, "bu resim ne anlatıyor?" sorusunun kısa yanıtını bir alana yazabilirsiniz. Görmeyen bir okuyucu için belge bu sayede anlamlı olur.
+Bir görseli belgeye eklediğinizde, "bu resim ne anlatıyor?" sorusunun kısa yanıtını bir alana yazabilirsiniz. Görmeyen bir okuyucu için belge bu sayede anlamlı olur.
 
 Örnek: "2019–2026 yılları arasında öğrenci sayısının sürekli arttığını gösteren çizgi grafik."
 :::
@@ -304,7 +304,7 @@ Belgeye bir tablo ve bir görsel ekleyin. Görsele altyazı yazın ve metinde on
 
 ## Adım 3 — İçindekiler oluşturun
 
-Stilleri kullandıysanız içindekiler tablosunu oluşturun. Çalışıyor mu? Çalışmıyorsa hangi başlığı stil olarak uygulamayı unuttunuz?
+Stilleri kullandıysanız içindekiler tablosunu oluşturun. Çalışıyor mu? Çalışmıyorsa hangi başlığı stil olarak uygulamayı unuttunuz? Bir **dipnot** ekleyin; numaranın sayfa altında, metindeki sırayla göründüğünü denetleyin.
 
 ## Adım 4 — Kaynak gösterin
 
@@ -325,6 +325,7 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - Kelime işlemci iki iş yapar: **içerik yazmak** ve **biçimlendirmek**.
 - **Karakter** ve **paragraf** düzeyinde biçimlendirme ayrı ayrı yapılır.
 - **Stiller**, elle biçimlendirmeye göre daha hızlı ve tutarlıdır; **içindekiler tablosu yalnızca stillerle** çalışır.
+- **Tablo ve görsel** eklenirken altyazı, metin içi atıf ve sayfa düzeni birlikte düşünülür.
 - Uzun belgelerde **içindekiler, dipnot ve kaynakça** belgenin türüne göre kullanılır.
 - **İntihal**, kaynak göstermeden başkasının çalışmasını kullanmaktır; yalnızca kopyala-yapıştır değildir.
 - **Kaynak yönetimi araçları**, kaynak göstermeyi kolaylaştırır; ama intihali kendiliğinden önlemez.
@@ -345,8 +346,9 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 # Kaynaklar
 
 - **Kullanılan kelime işlemci yazılımının resmî kılavuzu** — stiller, içindekiler ve erişilebilirlik belgeleri.
-- **Zotero** — ücretsiz ve açık kaynak kaynak yönetimi aracı. (zotero.org)
-- **Mendeley** — ücretsiz, kapalı kaynak kaynak yönetimi aracı. (mendeley.com)
+- **Zotero** — ücretsiz ve **açık kaynaklı** bir kaynak yönetimi aracı. (zotero.org)
+- **Mendeley** — ücretsiz, **kapalı kaynaklı** bir kaynak yönetimi aracı. (mendeley.com)
+- **empower — *The 2025 Office Study* (2025).** Kantar tarafından empower adına yürütülen araştırma; ABD'de en az 50 çalışanı olan işletmelerde ofis yazılımı kullanım oranları. (empowersuite.com, Office Study)
 - **YÖK ve üniversite kütüphanelerinin intihal politikaları** — akademik dürüstlük kılavuzları.
 - **W3C Erişilebilirlik Girişimi** — belge erişilebilirliği ilkeleri. (w3.org/WAI)
 - **Görsel kaynakları:** "Yerel ve bulut kelime işlemciler" karşılaştırma görseli — yapay zekâ (Google Gemini) ile üretilmiştir. "LibreOffice Writer penceresi" ekran görüntüsü — ücretsiz ve açık kaynak LibreOffice Writer uygulamasından alınmıştır. "Google Docs penceresi" ekran görüntüsü — Google Docs uygulamasından alınmıştır. "2025 Office Study" grafiği — Empower (2025) araştırmasından alınmıştır. Stil galerisi ve yazı tipi araçları ekran görüntüleri — Microsoft Word uygulamasından alınmıştır. Değişiklik izleme ekran görüntüsü — LibreOffice Writer uygulamasından alınmıştır.

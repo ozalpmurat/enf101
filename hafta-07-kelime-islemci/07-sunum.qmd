@@ -21,7 +21,7 @@ format: beamer
 
 ## Kelime İşlemci Nedir?
 
-Kelime işlemci, metin ağırlıklı belgeler üretir: **içerik yazmak** ve **biçimlendirmek**.
+Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulama yazılımıdır. İki temel işi yapar: **içerik yazmak** ve **biçimlendirmek**.
 
 ::: {.columns}
 ::: {.column width="58%"}
@@ -52,7 +52,9 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 ## Popüler Kelime İşlemciler
 
-![](gorseller/gorsel-kelime-islemci.jpg){width=100%}
+Öne çıkan uygulamalar iki grupta toplanır: bilgisayara **kurulanlar** ve tarayıcıda **çevrimiçi** çalışanlar.
+
+![](gorseller/gorsel-kelime-islemci.jpg){width=80%}
 
 ## Masaüstü mü, Çevrimiçi mi?
 
@@ -101,7 +103,7 @@ Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arad
 :::
 
 ::: {.column width="44%"}
-Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığını bildirmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
+Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığı bildirilmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
 :::
 :::
 
@@ -109,7 +111,7 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 
 - **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
 - **`.odt`:** LibreOffice gibi açık kaynak paketlerin biçimi
-- **`.pdf`:** Paylaşım ve teslim için; bozulmaz, düzenlenmesi zor
+- **`.pdf`:** Paylaşım ve teslim için; görünümü farklı cihazlarda korur, düzenlenmesi zor
 - **Kaydetme alışkanlığı:** otomatik kaydetmeyi açık tutun, ayrıca `Ctrl + S`
 
 Ödev tesliminde genellikle **PDF** istenir.
@@ -273,7 +275,7 @@ Gerçek başlık, stil uygulanmış metindir.
 ## Sayfa Numarası Kullanımı
 
 - Numarasız bir belgede "3. sayfadaki tabloya bakın" denemez; sayfa numarası belgeyi **başvurulabilir** kılar.
-- Sayfa numarası ile beraber **sayfa sayısı** da yazılırsa daha güzel olur (*Sayfa: X/Y* şeklinde).
+- Sayfa numarası ile beraber **sayfa sayısı** da yazılırsa okuyucu belgenin uzunluğunu da görür (*Sayfa: 3/12*).
 - Kapak sayfasında numara görünmesi istenmiyorsa numaralandırma ikinci sayfadan başlatılabilir.
 - Yeni sayfaya geçerken `Enter` yerine **sayfa sonu**; farklı numaralandırma için **bölüm sonu** kullanın.
 - Alt bilgi ve üst bilgi kullanım örneği için **ders notunuzun tasarımını** inceleyebilirsiniz.
@@ -318,7 +320,7 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır; **danış
 
 ## Bir Bakışta Akademik Dürüstlük
 
-**İntihal**, başkasının fikrini, cümlesini veya eserini **kaynak göstermeden** kendi çalışmanız gibi sunmaktır; kasten olabileceği gibi dikkatsizlikten de olur — sonucu aynıdır.
+**İntihal**, başkasının fikrini, cümlesini veya eserini **kaynak göstermeden** kendi çalışmanız gibi sunmaktır; kasten olabileceği gibi dikkatsizlikten de olur — her iki durumda da intihaldir.
 
 ![](gorseller/diagram-intihal.png){width=100%}
 
@@ -390,7 +392,7 @@ Ekran okuyucular belgeyi **başlıklara göre** gezinir ve alternatif metni sesl
 
 1. Üç başlıklı kısa bir metin yazın — başlıkları **stil** olarak uygulayın
 2. Tablo ve görsel ekleyin; altyazı ve **sayfa numarası** ekleyin
-3. **İçindekiler** oluşturun — çalışıyor mu?
+3. **İçindekiler** oluşturun ve bir **dipnot** ekleyin — çalışıyor mu?
 4. Bir alıntı ekleyip kaynağını gösterin
 5. Görsele alternatif metin ekleyip PDF olarak kaydedin
 
@@ -400,10 +402,11 @@ Notla değerlendirilmez.
 
 - **İçerik** ve **biçim** ayrı işler
 - **Stiller**: hız, tutarlılık, yapı, otomatik içindekiler
+- **Tablo ve görsel**: altyazı, metin içi atıf, sayfa düzeni
 - Uzun belgede **içindekiler, dipnot, kaynakça**
 - **İntihal** yalnızca kopyala-yapıştır değildir
 - **Kaynak yönetimi araçları** işi kolaylaştırır, intihali önlemez
-- **Erişilebilirlik**: gerçek başlıklar, alt metin, kontrast
+- **Erişilebilirlik**: gerçek başlıklar, alternatif metin, kontrast
 
 ## Gelecek Hafta
 
