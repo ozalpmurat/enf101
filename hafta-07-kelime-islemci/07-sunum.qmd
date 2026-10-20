@@ -124,19 +124,27 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 
 ## İki Düzey
 
+::: {.columns}
+::: {.column width="62%"}
+
 - **Karakter:** yazı tipi, punto, kalın, italik, renk
 - **Paragraf:** hizalama, satır aralığı, girinti, listeler
 
 **Tutarlılık:** aynı belgede farklı yazı tipleri ve puntolar dağınık görünür. Bir kez karar verin, belge boyunca ona sadık kalın — en kolay yol stillerdir.
 
+:::
+
+::: {.column width="34%"}
+
 ```{=latex}
 \begin{center}
-\vspace*{4mm}
-\includegraphics[height=0.32\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\hspace{4mm}%
-\includegraphics[height=0.32\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}\\[-1mm]
-{\scriptsize\emph{Microsoft Word: solda stil galerisi, sağda karakter ve paragraf biçimleri}}
+\includegraphics[width=\linewidth,height=0.60\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}\\[-1mm]
+{\scriptsize\emph{Microsoft Word: karakter ve paragraf biçimleri}}
 \end{center}
 ```
+
+:::
+:::
 
 # Stiller
 
@@ -145,6 +153,14 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 
 Örneğin "Başlık 1" stili; belirli bir yazı tipi, punto, kalınlık ve boşluğu içerir.
+
+```{=latex}
+\begin{center}
+\vspace*{4mm}
+\includegraphics[width=0.70\linewidth,height=0.45\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\\[-1mm]
+{\scriptsize\emph{Microsoft Word'ün stil galerisi}}
+\end{center}
+```
 
 ## Stillerin Sağladıkları
 
