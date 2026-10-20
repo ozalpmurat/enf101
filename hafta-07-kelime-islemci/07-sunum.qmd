@@ -81,6 +81,13 @@ Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arad
 | **Hesap tablosu** | Excel | Calc | Sheets | Numbers |
 | **Sunu** | PowerPoint | Impress | Slides | Keynote |
 
+```{=latex}
+\begin{center}
+\vspace*{4mm}
+\includegraphics[width=0.92\linewidth,height=0.3\textheight,keepaspectratio]{gorseller/gorsel-ofis-ikonlari.png}
+\end{center}
+```
+
 ## Kullanım Oranları
 
 ::: {.columns}
