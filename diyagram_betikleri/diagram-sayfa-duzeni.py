@@ -52,7 +52,7 @@ def kontrol(fig, ax):
     for metin, fs, bold in (
         ("METİN ALANI", 13, True),
         ("ÜSTBİLGİ (başlık)", 9.5, True),
-        ("ALT BİLGİ", 10, True),
+        ("ALTBİLGİ", 10, True),
         ("(sayfa numarası)", 8.5, False),
     ):
         g = metin_olc(fig, ax, metin, fs, bold)
@@ -91,7 +91,7 @@ ax.text(METIN[0] + METIN[2] / 2, ust_y + 0.18, "ÜSTBİLGİ (başlık)",
 # altbilgi — iki satır
 ax.plot([METIN[0], METIN[0] + METIN[2]], [METIN[1] - 0.04] * 2,
         color=LAC, linewidth=0.9, zorder=3)
-ax.text(METIN[0] + METIN[2] / 2, METIN[1] - 0.25, "ALT BİLGİ",
+ax.text(METIN[0] + METIN[2] / 2, METIN[1] - 0.25, "ALTBİLGİ",
         ha="center", va="center", fontsize=10, color=LAC, fontweight="bold", zorder=4)
 ax.text(METIN[0] + METIN[2] / 2, METIN[1] - 0.58, "(sayfa numarası)",
         ha="center", va="center", fontsize=8.5, color=GRI, zorder=4)

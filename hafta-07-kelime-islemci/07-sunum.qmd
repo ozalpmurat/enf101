@@ -68,7 +68,7 @@ Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanı
 | Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucuları |
 
-Çevrimiçi uygulamalarda belge **karşıdaki sunucuda durur**; kişisel bilgi içeren belgelerde dikkatli olun.
+Çevrimiçi uygulamalarda belge **sağlayıcının sunucularında tutulur**; kişisel bilgi içeren belgelerde dikkatli olun.
 
 ## Ofis Uygulamaları
 
@@ -76,13 +76,13 @@ Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanı
 \vspace*{5mm}
 ```
 
-Kelime işlemci, hesap tablosu ve sunu uygulaması gibi programların **bir arada** bulunduğu yazılımlara **ofis uygulamaları** (ofis paketi) denir. Bu hafta **kelime işlemciyi**, 8. hafta **hesap tablosunu**, 9. hafta **sunuyu** ele alacağız.
+Kelime işlemci, hesap tablosu ve sunum uygulaması gibi programların **bir arada** bulunduğu yazılımlara **ofis uygulamaları** (ofis paketi) denir. Bu hafta **kelime işlemciyi**, 8. hafta **hesap tablosunu**, 9. hafta **sunumu** ele alacağız.
 
 | Uygulama | Microsoft | LibreOffice | Google | Apple |
 |:---|:---|:---|:---|:---|
 | **Kelime işlemci** | Word | Writer | Docs | Pages |
 | **Hesap tablosu** | Excel | Calc | Sheets | Numbers |
-| **Sunu** | PowerPoint | Impress | Slides | Keynote |
+| **Sunum** | PowerPoint | Impress | Slides | Keynote |
 
 ```{=latex}
 \begin{center}
@@ -278,7 +278,7 @@ Gerçek başlık, stil uygulanmış metindir.
 - Sayfa numarası ile beraber **sayfa sayısı** da yazılırsa okuyucu belgenin uzunluğunu da görür (*Sayfa: 3/12*).
 - Kapak sayfasında numara görünmesi istenmiyorsa numaralandırma ikinci sayfadan başlatılabilir.
 - Yeni sayfaya geçerken `Enter` yerine **sayfa sonu**; farklı numaralandırma için **bölüm sonu** kullanın.
-- Alt bilgi ve üst bilgi kullanım örneği için **ders notunuzun tasarımını** inceleyebilirsiniz.
+- Üstbilgi ve altbilgi kullanım örneği için **ders notunuzun tasarımını** inceleyebilirsiniz.
 
 ```{=latex}
 \begin{center}
