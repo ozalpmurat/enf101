@@ -77,7 +77,7 @@ ax.add_patch(Rectangle((SAYFA[0], SAYFA[1]), SAYFA[2], SAYFA[3],
 
 # metin alanı
 ax.add_patch(Rectangle((METIN[0], METIN[1]), METIN[2], METIN[3],
-                       linewidth=1.0, edgecolor=MAVI, facecolor=ACIK, zorder=3))
+                       linewidth=0, edgecolor="none", facecolor=ACIK, zorder=3))
 ax.text(METIN[0] + METIN[2] / 2, METIN[1] + METIN[3] / 2, "METİN ALANI",
         ha="center", va="center", fontsize=13, color=LAC, fontweight="bold", zorder=4)
 
