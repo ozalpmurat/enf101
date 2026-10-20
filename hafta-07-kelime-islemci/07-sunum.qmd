@@ -58,12 +58,13 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanılır, bazıları ise doğrudan **web üzerinden** (bulut, çevrimiçi, online) kullanılır.
 
-| | Masaüstü | Çevrimiçi |
+| | Masaüstü sürüm | Çevrimiçi sürüm |
 |:---|:---|:---|
-| Kurulum | Gerekir | Gerekmez |
+| Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
 | İnternet | Gerekmez | Gerekir |
-| Ortak çalışma | Sınırlı | Aynı anda çok kişi |
-| Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucusu |
+| Erişim | Yalnızca o bilgisayardan | Hesabınızın olduğu her cihazdan |
+| Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
+| Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucuları |
 
 Çevrimiçi uygulamalarda belge **karşıdaki sunucuda durur**; kişisel bilgi içeren belgelerde dikkatli olun.
 
@@ -401,7 +402,7 @@ Notla değerlendirilmez.
 - **Stiller**: hız, tutarlılık, yapı, otomatik içindekiler
 - Uzun belgede **içindekiler, dipnot, kaynakça**
 - **İntihal** yalnızca kopyala-yapıştır değildir
-- **Kaynak yönetimi araçları** intihali önler
+- **Kaynak yönetimi araçları** işi kolaylaştırır, intihali önlemez
 - **Erişilebilirlik**: gerçek başlıklar, alt metin, kontrast
 
 ## Gelecek Hafta

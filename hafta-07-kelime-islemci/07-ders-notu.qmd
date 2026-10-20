@@ -325,7 +325,7 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - **Stiller**, elle biçimlendirmeye göre daha hızlı ve tutarlıdır; **içindekiler tablosu yalnızca stillerle** çalışır.
 - Uzun belgelerde **içindekiler, dipnot ve kaynakça** gereklidir.
 - **İntihal**, kaynak göstermeden başkasının çalışmasını kullanmaktır; yalnızca kopyala-yapıştır değildir.
-- **Kaynak yönetimi araçları**, kaynak göstermeyi kolaylaştırarak intihali önler.
+- **Kaynak yönetimi araçları**, kaynak göstermeyi kolaylaştırır; ama intihali kendiliğinden önlemez.
 - **Erişilebilir belge**, gerçek başlık stilleri, alternatif metin ve yeterli kontrastla hazırlanır.
 
 # Kendini Sınama Soruları
