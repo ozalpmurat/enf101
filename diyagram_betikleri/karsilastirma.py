@@ -1,7 +1,7 @@
 # 8. hafta: aynı verinin iki farklı dikey eksenle gösterimi.
 # Solda eksen sıfırdan başlar, sağda 46'dan — veri aynı, izlenim farklı.
 # Kullanım: python3 diyagram_betikleri/karsilastirma.py
-# Çıktı:    hafta-08-elektronik-tablo/gorseller/karsilastirma.png
+# Çıktı:    hafta-08-hesap-tablosu/gorseller/karsilastirma.png
 
 from pathlib import Path
 
@@ -11,7 +11,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 KOK = Path(__file__).resolve().parent.parent
-HEDEF = KOK / "hafta-08-elektronik-tablo" / "gorseller"
+HEDEF = KOK / "hafta-08-hesap-tablosu" / "gorseller"
 
 NAVY = "#1F3864"
 GREY = "#595959"
