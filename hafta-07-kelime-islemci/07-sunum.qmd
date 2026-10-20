@@ -104,28 +104,6 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 :::
 :::
 
-## Belge ve Biçimlendirme Kavramları
-
-| Kavram | Anlamı |
-|:---|:---|
-| Belge | Oluşturduğunuz dosya |
-| Karakter biçimi | Yazı tipi, boyut, kalın |
-| Paragraf biçimi | Hizalama, aralık, girinti |
-| Stil | Adlandırılmış biçim kümesi |
-| Sayfa düzeni | Kenar boşluğu, yön, boyut |
-
-```{=latex}
-\vspace*{-5mm}
-```
-
-```{=latex}
-\begin{center}
-\includegraphics[height=0.35\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\hspace{4mm}%
-\includegraphics[height=0.35\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}\\[-1mm]
-{\scriptsize\emph{Microsoft Word: solda stil galerisi, sağda karakter ve paragraf biçimleri}}
-\end{center}
-```
-
 ## Kaydetme ve Biçimler
 
 - **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
@@ -150,6 +128,15 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 - **Paragraf:** hizalama, satır aralığı, girinti, listeler
 
 **Tutarlılık:** aynı belgede farklı yazı tipleri ve puntolar dağınık görünür. Bir kez karar verin, belge boyunca ona sadık kalın — en kolay yol stillerdir.
+
+```{=latex}
+\begin{center}
+\vspace*{4mm}
+\includegraphics[height=0.32\textheight,keepaspectratio]{gorseller/ekran-stiller.png}\hspace{4mm}%
+\includegraphics[height=0.32\textheight,keepaspectratio]{gorseller/ekran-yazi-tipi.png}\\[-1mm]
+{\scriptsize\emph{Microsoft Word: solda stil galerisi, sağda karakter ve paragraf biçimleri}}
+\end{center}
+```
 
 # Stiller
 

@@ -75,14 +75,6 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 | Stil | Adlandırılmış biçim kümesi (Başlık 1, Normal…) |
 | Sayfa düzeni | Kenar boşlukları, yön, sayfa boyutu |
 
-::: {#fig-word-araclari layout-ncol=2}
-![Microsoft Word'ün stil galerisi](gorseller/ekran-stiller.png){width=92%}
-
-![Microsoft Word'ün karakter ve paragraf biçimlendirme araçları](gorseller/ekran-yazi-tipi.png){width=47%}
-
-Microsoft Word'ün stil galerisi (solda) ile karakter ve paragraf biçimlendirme araçları (sağda)
-:::
-
 **Kaydetme ve biçimler.** Belgenizi genellikle **`.docx`** (Microsoft Word'ün biçimi) ya da **`.odt`** (LibreOffice gibi açık kaynak paketlerin OpenDocument biçimi) olarak kaydedersiniz; ikisi de düzenlenebilir kalır ve birbirine çevrilebilir. Paylaşırken ise sıklıkla **PDF**'e çevirmeniz gerekir. PDF, farklı bilgisayarlarda bozulmadan görüntülenir ve düzenlenmesi zordur — bu yüzden ödev tesliminde tercih edilir.
 
 ::: {.callout-tip}
@@ -103,6 +95,14 @@ Kelime işlemcilerin çoğu otomatik kaydetme sunar; açık olduğundan emin olu
 Aynı belgede farklı yazı tipleri, farklı puntolar ve farklı aralıklar kullanmak belgeyi dağınık gösterir. Bir kez karar verin ve belge boyunca ona sadık kalın.
 
 En kolay yol **stiller** kullanmaktır — bir sonraki bölümde göreceğiz.
+:::
+
+::: {#fig-word-araclari layout-ncol=2}
+![Microsoft Word'ün stil galerisi](gorseller/ekran-stiller.png){width=92%}
+
+![Microsoft Word'ün karakter ve paragraf biçimlendirme araçları](gorseller/ekran-yazi-tipi.png){width=47%}
+
+Microsoft Word'ün stil galerisi (solda) ile karakter ve paragraf biçimlendirme araçları (sağda)
 :::
 
 # Stiller ve Başlık Hiyerarşisi
