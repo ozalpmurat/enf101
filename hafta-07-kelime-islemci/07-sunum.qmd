@@ -241,7 +241,8 @@ Gerçek başlık, stil uygulanmış metindir.
 
 ## Ayarlanacak Öğeler
 
-![](gorseller/diagram-sayfa-duzeni.png){width=52%}
+::: {.columns}
+::: {.column width="55%"}
 
 | Öğe | Ne yapar |
 |:---|:---|
@@ -250,6 +251,19 @@ Gerçek başlık, stil uygulanmış metindir.
 | Sayfa boyutu | A4 |
 | Üstbilgi / altbilgi | Tekrarlanan bilgi |
 | Sayfa numarası | Altbilgiye eklenir |
+
+:::
+
+::: {.column width="40%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/diagram-sayfa-duzeni.png}
+\end{center}
+```
+
+:::
+:::
 
 ## Sayfa Numarası Neden Gerekli?
 

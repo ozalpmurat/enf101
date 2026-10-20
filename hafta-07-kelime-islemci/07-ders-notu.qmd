@@ -148,7 +148,7 @@ Görsel eklerken dikkat edilecekler:
 
 # Sayfa Düzeni
 
-![Sayfa düzeni](gorseller/diagram-sayfa-duzeni.png){width=60%}
+![Sayfa düzeni](gorseller/diagram-sayfa-duzeni.png){width=32%}
 
 Sayfa düzeninde ayarlanacak temel öğeler:
 
