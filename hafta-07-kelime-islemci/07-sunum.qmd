@@ -200,7 +200,7 @@ Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 
 ## Başlık Hiyerarşisi
 
-![](gorseller/diagram-baslik.png){width=74%}
+![](gorseller/diagram-baslik.png){width=100%}
 
 ## Başlığı Elle Kalınlaştırmayın
 
