@@ -357,7 +357,7 @@ Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya int
 
 ::: {.column width="20%"}
 
-![](gorseller/gorsel-zotero-mendeley.png){height=5.8cm}
+![](gorseller/gorsel-zotero-mendeley.png){height=2.9cm}
 
 :::
 :::
