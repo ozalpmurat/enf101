@@ -174,6 +174,8 @@ format:
 - Bu Haftanın Öğrenme Çıktıları
 - Temel Kavramlar
   - Masaüstü sürüm, çevrimiçi sürüm
+  - Kullanım oranları
+  - Belge ve biçimlendirme kavramları
 - Metin ve Paragraf Biçimlendirme
 - Stiller ve Başlık Hiyerarşisi
   - Neden stiller?

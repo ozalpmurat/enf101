@@ -35,15 +35,37 @@ Kelime işlemciyi kullanmak, yazı yazmaktan fazlasıdır. **Stillerle** çalı�
 
 Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulama yazılımıdır. İki temel işi yapar: **içerik yazmak** ve **biçimlendirmek**.
 
-![LibreOffice Writer penceresi](gorseller/ekran-libreoffice-writer.png){width=70%}
+![LibreOffice Writer penceresi](gorseller/ekran-libreoffice-writer.png){width=64%}
 
-![Google Docs penceresi](gorseller/ekran-google-docs.png){width=70%}
+![Google Docs penceresi](gorseller/ekran-google-docs.png){width=64%}
 
 ![Yerel (masaüstü) ve bulut (çevrimiçi) kelime işlemciler](gorseller/gorsel-kelime-islemci.jpg){width=80%}
+
+## Masaüstü sürüm, çevrimiçi sürüm
+
+Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır: bilgisayara **kurulan masaüstü sürüm** ve tarayıcıda çalışan **çevrimiçi (web tabanlı) sürüm**. İkisi de aynı işi yapar; farkları kullanım koşullarındadır.
+
+| | Masaüstü sürüm | Çevrimiçi sürüm |
+|:---|:---|:---|
+| Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
+| İnternet | Gerekmez | Gerekir |
+| Erişim | Yalnızca o belgeyi açan bilgisayardan | Hesabınıza girebildiğiniz her cihazdan |
+| Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
+| Verinin yeri | Kendi bilgisayarınız | Hizmeti sunan şirketin sunucuları |
+
+Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak belgeniz **kendi bilgisayarınızda durmaz**: hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
+
+Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
+
+Aynı ayrım 8. haftadaki tablo (**Google Sheets**, **LibreOffice Calc**) ve 9. haftadaki sunum (**Google Slides**, **LibreOffice Impress**) uygulamaları için de geçerlidir.
+
+## Kullanım oranları
 
 Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığını bildirmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
 
 ![2025 Office Study: işletmelerde kullanılan ofis yazılımları](gorseller/gorsel-office-study.png){width=65%}
+
+## Belge ve biçimlendirme kavramları
 
 | Kavram | Anlamı |
 |:---|:---|
@@ -68,24 +90,6 @@ Microsoft Word'ün stil galerisi (solda) ile karakter ve paragraf biçimlendirme
 
 Kelime işlemcilerin çoğu otomatik kaydetme sunar; açık olduğundan emin olun. Kritik bir belgeyi yazarken ara ara `Ctrl + S` alışkanlığı, saatlerce süren çalışmayı kurtarır.
 :::
-
-## Masaüstü sürüm, çevrimiçi sürüm
-
-Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır: bilgisayara **kurulan masaüstü sürüm** ve tarayıcıda çalışan **çevrimiçi (web tabanlı) sürüm**. İkisi de aynı işi yapar; farkları kullanım koşullarındadır.
-
-| | Masaüstü sürüm | Çevrimiçi sürüm |
-|:---|:---|:---|
-| Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
-| İnternet | Gerekmez | Gerekir |
-| Erişim | Yalnızca o belgeyi açan bilgisayardan | Hesabınıza girebildiğiniz her cihazdan |
-| Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
-| Verinin yeri | Kendi bilgisayarınız | Hizmeti sunan şirketin sunucuları |
-
-Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak belgeniz **kendi bilgisayarınızda durmaz**: hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
-
-Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
-
-Aynı ayrım 8. haftadaki tablo (**Google Sheets**, **LibreOffice Calc**) ve 9. haftadaki sunum (**Google Slides**, **LibreOffice Impress**) uygulamaları için de geçerlidir.
 
 # Metin ve Paragraf Biçimlendirme
 

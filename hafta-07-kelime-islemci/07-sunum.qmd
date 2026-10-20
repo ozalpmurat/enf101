@@ -54,6 +54,19 @@ LibreOffice Writer, açık kaynaklı ve ücretsiz bir kelime işlemci uygulamas�
 
 ![](gorseller/gorsel-kelime-islemci.jpg){width=100%}
 
+## Masaüstü mü, Çevrimiçi mi?
+
+Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tarayıcıda çalışan **çevrimiçi** sürüm.
+
+| | Masaüstü | Çevrimiçi |
+|:---|:---|:---|
+| Kurulum | Gerekir | Gerekmez |
+| İnternet | Gerekmez | Gerekir |
+| Ortak çalışma | Sınırlı | Aynı anda çok kişi |
+| Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucusu |
+
+Çevrimiçi belge **sizin bilgisayarınızda durmaz**; kişisel bilgi içeren belgelerde dikkatli olun.
+
 ## Ofis Uygulamaları
 
 ```{=latex}
@@ -121,19 +134,6 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 \includegraphics[width=0.40\linewidth,height=0.55\textheight,keepaspectratio]{gorseller/gorsel-dosya-bicimleri.png}
 \end{center}
 ```
-
-## Masaüstü mü, Çevrimiçi mi?
-
-Aynı uygulamanın iki sürümü vardır: bilgisayara **kurulan** sürüm ve tarayıcıda çalışan **çevrimiçi** sürüm.
-
-| | Masaüstü | Çevrimiçi |
-|:---|:---|:---|
-| Kurulum | Gerekir | Gerekmez |
-| İnternet | Gerekmez | Gerekir |
-| Ortak çalışma | Sınırlı | Aynı anda çok kişi |
-| Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucusu |
-
-Çevrimiçi belge **sizin bilgisayarınızda durmaz**; kişisel bilgi içeren belgelerde dikkatli olun.
 
 # Biçimlendirme
 
