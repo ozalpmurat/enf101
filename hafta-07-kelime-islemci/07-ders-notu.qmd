@@ -97,17 +97,13 @@ Aynı belgede farklı yazı tipleri, farklı puntolar ve farklı aralıklar kull
 En kolay yol **stiller** kullanmaktır — bir sonraki bölümde göreceğiz.
 :::
 
-::: {#fig-word-araclari layout-ncol=2}
-![Microsoft Word'ün stil galerisi](gorseller/ekran-stiller.png){width=92%}
-
-![Microsoft Word'ün karakter ve paragraf biçimlendirme araçları](gorseller/ekran-yazi-tipi.png){width=47%}
-
-Microsoft Word'ün stil galerisi (solda) ile karakter ve paragraf biçimlendirme araçları (sağda)
-:::
+![Microsoft Word'ün karakter ve paragraf biçimlendirme araçları](gorseller/ekran-yazi-tipi.png){width=52%}
 
 # Stiller ve Başlık Hiyerarşisi
 
 **Stil**, bir dizi biçim ayarının adlandırılmış hâlidir. Örneğin "Başlık 1" stili, belirli bir yazı tipi, punto, kalınlık ve boşluk ayarını içerir.
+
+![Microsoft Word'ün stil galerisi](gorseller/ekran-stiller.png){width=70%}
 
 ## Neden stiller?
 
