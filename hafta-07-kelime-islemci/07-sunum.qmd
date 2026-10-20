@@ -286,15 +286,14 @@ Gerçek başlık, stil uygulanmış metindir.
 
 # Uzun Belge Yönetimi
 
-## Uzun Belgede Üç Özellik
+## Uzun Belgede Temel Özellikler
 
 - **İçindekiler:** yalnızca stillerle çalışır
 - **Dipnot:** sayfa altında ek bilgi
 - **Kaynakça:** yararlanılan kaynakların listesi
+- **Şekiller ve tablolar listesi:** altyazı eklenen öğelerden oluşur
 
 Kaynakçadaki her giriş metinde anılmalı; metinde anılan her kaynak kaynakçada olmalı.
-
-Altyazı verdiğiniz şekil ve tablolar için ayrıca **şekiller listesi** ve **tablolar listesi** de oluşturulabilir.
 
 Teslimden önce içindekileri ve sayfa numaralarını güncelleyin, yazım denetimi yapın ve **PDF**'e aktarın.
 
