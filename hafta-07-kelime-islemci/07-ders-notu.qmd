@@ -43,7 +43,7 @@ Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulam
 
 ## Masaüstü sürüm, çevrimiçi sürüm
 
-Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır: bilgisayara **kurulan masaüstü sürüm** ve tarayıcıda çalışan **çevrimiçi (web tabanlı) sürüm**. İkisi de aynı işi yapar; farkları kullanım koşullarındadır.
+Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanılır; bazıları ise doğrudan **web üzerinden** (bulut, çevrimiçi, online) çalışır — tarayıcı yeterlidir, kurulum gerekmez. İkisi de aynı işi yapar; farkları kullanım koşullarındadır.
 
 | | Masaüstü sürüm | Çevrimiçi sürüm |
 |:---|:---|:---|
@@ -53,7 +53,7 @@ Kullandığınız kelime işlemcinin büyük olasılıkla iki sürümü vardır:
 | Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Hizmeti sunan şirketin sunucuları |
 
-Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak belgeniz **kendi bilgisayarınızda durmaz**: hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
+Çevrimiçi sürümler grup ödevlerinde ve okul ile ev arasında geçiş yaparken çok kullanışlıdır. Ancak çevrimiçi uygulamalarda belge **karşıdaki sunucuda durur**; hizmeti sunan şirketin sunucularında tutulur. Bu yüzden kişisel veya gizli bilgi içeren belgelerde dikkatli olun (11. hafta) ve çevrimiçi çalıştığınız belgelerin yerel bir kopyasını da bulundurun (4. hafta).
 
 Ücretsiz seçenekler var: tarayıcıda çalışan **Google Docs** ya da bilgisayarınıza kurabileceğiniz **LibreOffice Writer**. İkisi de bu bölümdeki konuların hepsini destekler — stiller, içindekiler tablosu, dipnot. Menü adları farklıdır ama kavramlar aynıdır.
 
