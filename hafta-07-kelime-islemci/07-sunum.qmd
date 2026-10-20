@@ -271,9 +271,9 @@ Gerçek başlık, stil uygulanmış metindir.
 
 ## Sayfa Numarası Neden Gerekli?
 
-Numarasız bir belgede "3. sayfadaki tabloya bakın" denemez.
-
-Sayfa numarası belgeyi **başvurulabilir** kılar.
+- Numarasız bir belgede "3. sayfadaki tabloya bakın" denemez.
+- Sayfa numarası belgeyi **başvurulabilir** kılar.
+- Sayfa numarası ile beraber **sayfa sayısı** da yazılırsa daha güzel olur (*Sayfa: X/Y* şeklinde).
 
 # Uzun Belge Yönetimi
 
