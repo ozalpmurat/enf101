@@ -379,11 +379,7 @@ Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya int
 
 Ekran okuyucular belgeyi **başlıklara göre** gezinir ve alternatif metni sesli okur. Rengi ayırt edemeyen bir okur için de bilgiyi **metinle** vermek gerekir.
 
-## Alternatif Metin (Alt Text)
-
-"Bu resim ne anlatıyor?" sorusunun kısa yanıtı.
-
-Örnek: *"2019–2026 arasında öğrenci sayısının sürekli arttığını gösteren çizgi grafik."*
+**Alternatif metin (alt text):** "Bu resim ne anlatıyor?" sorusunun kısa yanıtı. Örnek: *"2019–2026 arasında öğrenci sayısının sürekli arttığını gösteren çizgi grafik."*
 
 # Kapanış
 
