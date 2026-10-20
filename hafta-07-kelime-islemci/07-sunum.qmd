@@ -122,13 +122,21 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 
 # Biçimlendirme
 
-## İki Düzey
+## Metin ve Paragraf Biçimlendirme
 
 ::: {.columns}
 ::: {.column width="62%"}
 
+```{=latex}
+\vspace*{6mm}
+```
+
 - **Karakter:** yazı tipi, punto, kalın, italik, renk
 - **Paragraf:** hizalama, satır aralığı, girinti, listeler
+
+```{=latex}
+\vspace*{\baselineskip}
+```
 
 **Tutarlılık:** aynı belgede farklı yazı tipleri ve puntolar dağınık görünür. Bir kez karar verin, belge boyunca ona sadık kalın — en kolay yol stillerdir.
 
