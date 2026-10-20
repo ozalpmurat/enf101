@@ -90,7 +90,7 @@ E) Belgenin sayfa sayısını azaltmak
 | 2 | E | Doğru koşul E seçeneğindedir: içindekiler tablosu yalnızca stillerle (Başlık 1, Başlık 2 …) biçimlendirilmiş başlıklardan otomatik üretilir. |
 | 3 | A | PDF, belgenin görünümünü farklı cihazlarda büyük ölçüde korur ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
 | 4 | C | Birkaç kelimesi değiştirilmiş olsa da kaynak gösterilmeyen kullanım intihaldir. |
-| 5 | D | Kaynak künyesinde yazar, eser, yıl, sayfa ve kaynağın nereden erişildiği (dergi, kitap ya da web sitesi) bulunur; kullanılan bilgisayarın markası hiçbir zaman yer almaz. |
+| 5 | D | Kaynak künyesinde yazar, eser, yıl ve kaynağın nereden erişildiği (dergi, kitap ya da web sitesi) bulunur; doğrudan alıntılarda ayrıca sayfa numarası verilir. Kullanılan bilgisayarın markası ise hiçbir zaman yer almaz. |
 | 6 | E | Araçlar atıf ve kaynakça oluşturmayı kolaylaştırır, kaynak göstermeyi pratik hâle getirir. İntihali kendiliğinden önlemez; ürettikleri kaynakça kontrol edilmelidir. |
 | 7 | B | Alternatif metin, görseli göremeyen ve ekran okuyucu kullanan kişilerin içeriği anlamasını sağlar. |
 | 8 | C | Sayfa numarası olmadan belgenin belirli bir yerine atıf yapılamaz. |

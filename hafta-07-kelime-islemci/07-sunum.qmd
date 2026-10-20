@@ -296,6 +296,8 @@ Gerçek başlık, stil uygulanmış metindir.
 - **Kaynakça:** yararlanılan kaynakların listesi
 - **Şekiller ve tablolar listesi:** altyazı eklenen öğelerden oluşur
 
+Bu özellikler belgenin türüne ve ihtiyacına göre kullanılır.
+
 Kaynakçadaki her giriş metinde anılmalı; metinde anılan her kaynak kaynakçada olmalı.
 
 Teslimden önce içindekileri ve sayfa numaralarını güncelleyin, yazım denetimi yapın ve **PDF**'e aktarın.
@@ -348,7 +350,7 @@ Bir kaynak gösterilirken **yazar veya sorumlu kurum**, **eserin başlığı**, 
 
 ::: {.column width="87%"}
 
-İki yaygın ücretsiz araç: **Zotero** (açık kaynak) ve **Mendeley** (kapalı kaynak).
+İki yaygın ücretsiz araç: **Zotero** (açık kaynaklı) ve **Mendeley** (kapalı kaynaklı).
 
 - Kaynağı tek tıkla kaydeder
 - Metin içi atıfları oluşturur

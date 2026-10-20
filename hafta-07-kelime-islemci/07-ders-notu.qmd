@@ -18,7 +18,7 @@ Bu hafta kelime işlemci yazılımını iki düzeyde ele alıyoruz: **teknik** (
 ::: {.callout-note}
 ## Bu haftanın temel fikri
 
-Kelime işlemciyi kullanmak, yazı yazmaktan fazlasıdır. **Stillerle** çalışmak, belgeyi elle biçimlendirmekten hem hızlı hem de güvenilirdir — üstelik içindekiler tablosu gibi şeyler ancak böyle çalışır.
+Kelime işlemciyi kullanmak, yazı yazmaktan fazlasıdır. **Stillerle** çalışmak, belgeyi elle biçimlendirmekten hem hızlı hem de tutarlıdır — üstelik içindekiler tablosu gibi şeyler ancak böyle çalışır.
 :::
 
 # Bu Haftanın Öğrenme Çıktıları
@@ -267,7 +267,7 @@ Kaynakları elle listelemek, sayıları arttıkça zorlaşır. **Ücretsiz kayna
 - Kaynakçayı istediğiniz biçimde üretir
 - Yazdığınız belgeyle bütünleşir
 
-**Zotero** açık kaynak bir araçtır; **Mendeley** ise ücretsiz ama kapalı kaynak bir araçtır. İkisi de aynı işi yapar; seçim size kalır.
+**Zotero** açık kaynaklı bir araçtır; **Mendeley** ise ücretsiz ama kapalı kaynaklı bir araçtır. İkisi de aynı işi yapar; seçim size kalır.
 
 **Unutmayın:** Bu araçlar atıfları düzenlemeye yardımcı olur; yanlış künyeleri, eksik atıfları veya intihali kendiliğinden önlemez. Ürettikleri kaynakça mutlaka kontrol edilmelidir.
 
