@@ -88,7 +88,7 @@ E) Belgenin sayfa sayısını azaltmak
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | B | Elle biçimlendirme metni başlık gibi gösterir ama gerçek başlık yapmaz; içindekiler tablosuna girmez. |
 | 2 | E | Doğru koşul E seçeneğindedir: içindekiler tablosu yalnızca stillerle (Başlık 1, Başlık 2 …) biçimlendirilmiş başlıklardan otomatik üretilir. |
-| 3 | A | PDF, farklı cihazlarda bozulmadan görüntülenir ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
+| 3 | A | PDF, belgenin görünümünü farklı cihazlarda büyük ölçüde korur ve düzenlenmesi zordur; bu yüzden teslimde tercih edilir. |
 | 4 | C | Birkaç kelimesi değiştirilmiş olsa da kaynak gösterilmeyen kullanım intihaldir. |
 | 5 | D | Kaynak künyesinde yazar, eser, yıl, sayfa ve kaynağın nereden erişildiği (dergi, kitap ya da web sitesi) bulunur; kullanılan bilgisayarın markası hiçbir zaman yer almaz. |
 | 6 | E | Araçlar atıf ve kaynakça oluşturmayı kolaylaştırır, kaynak göstermeyi pratik hâle getirir. İntihali kendiliğinden önlemez; ürettikleri kaynakça kontrol edilmelidir. |

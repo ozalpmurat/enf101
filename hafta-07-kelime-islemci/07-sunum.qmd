@@ -61,7 +61,7 @@ Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanı
 | | Masaüstü sürüm | Çevrimiçi sürüm |
 |:---|:---|:---|
 | Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
-| İnternet | Gerekmez | Gerekir |
+| İnternet | Gerekmez | Genellikle gerekir |
 | Erişim | Yalnızca o bilgisayardan | Hesabınızın olduğu her cihazdan |
 | Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucuları |
@@ -182,7 +182,7 @@ Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 
 - **Hız:** seç, uygula
 - **Tutarlılık:** aynı stil = aynı görünüm
-- **Yapı:** program hangi metnin başlık olduğunu bilir. PDF'e bile çevirseniz, başlıklar takip edilebilir
+- **Yapı:** program hangi metnin başlık olduğunu bilir. PDF'e aktarırken başlık yapısı için **etiketli PDF** seçin
 - **İçindekiler tablosu:** Başlıklara göre otomatik olarak oluşturulur
 
 :::
@@ -233,7 +233,7 @@ Gerçek başlık, stil uygulanmış metindir.
 ## Görseller
 
 - **Çözünürlük:** Ekranda iyi görünen bir görsel, basıldığında bulanık çıkabilir.
-- **Boyut:** Görseli sürükleyerek büyütmek onu bozar; gerçek boyutunda ekleyip ölçeklemek gerekir.
+- **Boyut:** Görseli eklerken **en-boy oranını koruyun**; düşük çözünürlüklü görseli büyütmek onu bulanıklaştırır.
 - **Konumlandırma:** Metinle görselin ilişkisi (üstünde, altında, yanında) belirlenmelidir.
 - **Altyazı:** Her görsele numara ve açıklama ekleyin (Şekil 1: …); metinde bu numaraya atıf yapın.
 - **Telif:** Başkasının görselini kullanıyorsanız kaynak göstermelisiniz.
@@ -389,7 +389,7 @@ Ekran okuyucular belgeyi **başlıklara göre** gezinir ve alternatif metni sesl
 **Hangi araçla:** Google Docs gibi çevrimiçi bir araç ya da LibreOffice Writer gibi kurulabilen bir paket.
 
 1. Üç başlıklı kısa bir metin yazın — başlıkları **stil** olarak uygulayın
-2. Tablo ve görsel ekleyin; altyazı yazın
+2. Tablo ve görsel ekleyin; altyazı ve **sayfa numarası** ekleyin
 3. **İçindekiler** oluşturun — çalışıyor mu?
 4. Bir alıntı ekleyip kaynağını gösterin
 5. Görsele alternatif metin ekleyip PDF olarak kaydedin

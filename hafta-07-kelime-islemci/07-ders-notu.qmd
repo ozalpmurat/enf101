@@ -43,12 +43,12 @@ Kelime işlemci, metin ağırlıklı belgeler üretmek için kullanılan uygulam
 
 ## Masaüstü sürüm, çevrimiçi sürüm
 
-Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanılır; bazıları ise doğrudan **web üzerinden** (bulut, çevrimiçi, online) çalışır — tarayıcı yeterlidir, kurulum gerekmez. İkisi de aynı işi yapar; farkları kullanım koşullarındadır.
+Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanılır; bazıları ise doğrudan **web üzerinden** (bulut, çevrimiçi, online) çalışır — tarayıcı yeterlidir, kurulum gerekmez. İkisi de **benzer temel işlevleri** sunar; özellikler, dosya uyumluluğu ve çevrimdışı çalışma desteği yazılıma göre değişir.
 
 | | Masaüstü sürüm | Çevrimiçi sürüm |
 |:---|:---|:---|
 | Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
-| İnternet | Gerekmez | Gerekir |
+| İnternet | Gerekmez | Genellikle gerekir |
 | Erişim | Yalnızca o belgeyi açan bilgisayardan | Hesabınıza girebildiğiniz her cihazdan |
 | Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Hizmeti sunan şirketin sunucuları |
@@ -75,7 +75,7 @@ Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'd
 | Stil | Adlandırılmış biçim kümesi (Başlık 1, Normal…) |
 | Sayfa düzeni | Kenar boşlukları, yön, sayfa boyutu |
 
-**Kaydetme ve biçimler.** Belgenizi genellikle **`.docx`** (Microsoft Word'ün biçimi) ya da **`.odt`** (LibreOffice gibi açık kaynak paketlerin OpenDocument biçimi) olarak kaydedersiniz; ikisi de düzenlenebilir kalır ve birbirine çevrilebilir. Paylaşırken ise sıklıkla **PDF**'e çevirmeniz gerekir. PDF, farklı bilgisayarlarda bozulmadan görüntülenir ve düzenlenmesi zordur — bu yüzden ödev tesliminde tercih edilir.
+**Kaydetme ve biçimler.** Belgenizi genellikle **`.docx`** (Microsoft Word'ün biçimi) ya da **`.odt`** (LibreOffice gibi açık kaynak paketlerin OpenDocument biçimi) olarak kaydedersiniz; ikisi de düzenlenebilir kalır ve birbirine çevrilebilir. Paylaşırken ise sıklıkla **PDF**'e çevirmeniz gerekir. PDF, belgenin görünümünü farklı cihazlarda büyük ölçüde korur ve düzenlenmesi zordur — bu yüzden ödev tesliminde tercih edilir.
 
 ::: {.callout-tip}
 ## Belgeyi sık sık kaydedin
@@ -109,7 +109,7 @@ En kolay yol **stiller** kullanmaktır — bir sonraki bölümde göreceğiz.
 
 - **Hız:** Metni seçip stil uygulamak, on ayarı elle değiştirmekten hızlıdır.
 - **Tutarlılık:** Aynı stildeki bütün başlıklar aynı görünür.
-- **Yapı:** Kelime işlemci metnin hangi parçasının başlık, hangisinin gövde olduğunu **bilir**; PDF'e bile çevirseniz başlıklar takip edilebilir.
+- **Yapı:** Kelime işlemci metnin hangi parçasının başlık, hangisinin gövde olduğunu **bilir**. PDF'e aktarırken başlık yapısının korunması için **etiketli PDF** seçeneğini kullanın.
 - **İçindekiler tablosu:** Başlıklara göre otomatik olarak oluşturulur; bu tablo yalnızca stiller kullanıldığında çalışır.
 
 ![Google Docs: metin anahatları (başlıklar)](gorseller/ekran-google-docs-belge.png){width=62%}
@@ -141,7 +141,7 @@ Tablolar, karşılaştırmalı bilgi sunmanın en etkili yoludur. Bir tabloda bu
 Görsel eklerken dikkat edilecekler:
 
 - **Çözünürlük:** Ekranda iyi görünen bir görsel, basıldığında bulanık çıkabilir.
-- **Boyut:** Görseli sürükleyerek büyütmek onu bozar; gerçek boyutunda ekleyip ölçeklemek gerekir.
+- **Boyut:** Görseli eklerken **en-boy oranını koruyun**; düşük çözünürlüklü bir görseli büyütmek onu bulanıklaştırır.
 - **Konumlandırma:** Metinle görselin ilişkisi (üstünde, altında, yanında) belirlenmelidir.
 - **Altyazı:** Her görsele numara ve açıklama ekleyin (Şekil 1: …). Metinde bu numaraya atıf yapın.
 - **Telif:** Başkasının görselini kullanıyorsanız kaynak göstermelisiniz.
@@ -300,7 +300,7 @@ Yaklaşık bir sayfalık bir metin yazın. En az üç başlık kullanın ve bunl
 
 ## Adım 2 — Yapıyı tamamlayın
 
-Belgeye bir tablo ve bir görsel ekleyin. Görsele altyazı yazın ve metinde ona atıf yapın.
+Belgeye bir tablo ve bir görsel ekleyin. Görsele altyazı yazın ve metinde ona atıf yapın. **Sayfa numarası** ekleyin.
 
 ## Adım 3 — İçindekiler oluşturun
 
@@ -325,7 +325,7 @@ Bu uygulama notla değerlendirilmez. Amacı, uzun belge üretiminin bütün adı
 - Kelime işlemci iki iş yapar: **içerik yazmak** ve **biçimlendirmek**.
 - **Karakter** ve **paragraf** düzeyinde biçimlendirme ayrı ayrı yapılır.
 - **Stiller**, elle biçimlendirmeye göre daha hızlı ve tutarlıdır; **içindekiler tablosu yalnızca stillerle** çalışır.
-- Uzun belgelerde **içindekiler, dipnot ve kaynakça** gereklidir.
+- Uzun belgelerde **içindekiler, dipnot ve kaynakça** belgenin türüne göre kullanılır.
 - **İntihal**, kaynak göstermeden başkasının çalışmasını kullanmaktır; yalnızca kopyala-yapıştır değildir.
 - **Kaynak yönetimi araçları**, kaynak göstermeyi kolaylaştırır; ama intihali kendiliğinden önlemez.
 - **Erişilebilir belge**, gerçek başlık stilleri, alternatif metin ve yeterli kontrastla hazırlanır.
