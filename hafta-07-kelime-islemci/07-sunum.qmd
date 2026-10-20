@@ -244,11 +244,15 @@ Gerçek başlık, stil uygulanmış metindir.
 ::: {.columns}
 ::: {.column width="55%"}
 
+```{=latex}
+\vspace*{17mm}
+```
+
 | Öğe | Ne yapar |
 |:---|:---|
 | Kenar boşlukları | Metin ile kenar arası |
 | Yönlendirme | Dikey / yatay |
-| Sayfa boyutu | A4 |
+| Sayfa boyutu | Genellikle A4 |
 | Üstbilgi / altbilgi | Tekrarlanan bilgi |
 | Sayfa numarası | Altbilgiye eklenir |
 
@@ -258,7 +262,7 @@ Gerçek başlık, stil uygulanmış metindir.
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/diagram-sayfa-duzeni.png}
+\includegraphics[width=\linewidth,height=0.86\textheight,keepaspectratio]{gorseller/diagram-sayfa-duzeni.png}
 \end{center}
 ```
 

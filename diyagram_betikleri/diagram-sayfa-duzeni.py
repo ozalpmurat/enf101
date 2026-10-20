@@ -15,7 +15,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyArrowPatch, Rectangle
+from matplotlib.patches import Rectangle
 
 KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / "hafta-07-kelime-islemci" / "gorseller"
@@ -95,14 +95,6 @@ ax.text(METIN[0] + METIN[2] / 2, METIN[1] - 0.25, "ALT BİLGİ",
         ha="center", va="center", fontsize=10, color=LAC, fontweight="bold", zorder=4)
 ax.text(METIN[0] + METIN[2] / 2, METIN[1] - 0.58, "(sayfa numarası)",
         ha="center", va="center", fontsize=8.5, color=GRI, zorder=4)
-
-# kenar boşluğu oku (sol)
-ok_y0, ok_y1 = METIN[1] + 1.2, METIN[1] + METIN[3] - 1.2
-ax.add_patch(FancyArrowPatch((SAYFA[0] + 0.15, ok_y0), (SAYFA[0] + 0.15, ok_y1),
-                             arrowstyle="<->", mutation_scale=11,
-                             linewidth=1.2, color=MAVI, zorder=4))
-ax.text(SAYFA[0] + 0.55, (ok_y0 + ok_y1) / 2, "kenar boşlukları",
-        ha="center", va="center", rotation=90, fontsize=8.5, color=MAVI, zorder=4)
 
 if "--kontrol" in sys.argv:
     raise SystemExit(1 if kontrol(fig, ax) else 0)
