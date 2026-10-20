@@ -341,6 +341,9 @@ Bir kaynak gösterilirken **yazar veya sorumlu kurum**, **eserin başlığı**, 
 
 ## Kaynak Yönetimi Araçları
 
+::: {.columns}
+::: {.column width="80%"}
+
 İki yaygın ücretsiz araç: **Zotero** (açık kaynak) ve **Mendeley** (kapalı kaynak).
 
 - Kaynağı tek tıkla kaydeder
@@ -349,6 +352,15 @@ Bir kaynak gösterilirken **yazar veya sorumlu kurum**, **eserin başlığı**, 
 - Belgeyle bütünleşir
 
 Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya intihali **kendiliğinden önlemez**. Ürettikleri kaynakça kontrol edilmelidir.
+
+:::
+
+::: {.column width="20%"}
+
+![](gorseller/gorsel-zotero-mendeley.png){height=5.8cm}
+
+:::
+:::
 
 # Erişilebilirlik
 
