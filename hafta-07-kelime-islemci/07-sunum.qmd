@@ -175,6 +175,10 @@ Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 ::: {.columns}
 ::: {.column width="48%"}
 
+```{=latex}
+\vspace*{9mm}
+```
+
 - **Hız:** seç, uygula
 - **Tutarlılık:** aynı stil = aynı görünüm
 - **Yapı:** program hangi metnin başlık olduğunu bilir. PDF'e bile çevirseniz, başlıklar takip edilebilir
@@ -186,7 +190,8 @@ Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{gorseller/ekran-google-docs-belge.png}
+\includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{gorseller/ekran-google-docs-belge.png}\\[-1mm]
+{\scriptsize\emph{Google Docs: metin anahatları (başlıklar)}}
 \end{center}
 ```
 
