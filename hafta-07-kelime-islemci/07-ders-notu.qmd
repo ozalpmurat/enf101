@@ -207,7 +207,7 @@ Belgenin uzunluğuyla ilgili değildir ama bir belgeyi başkasıyla paylaşıp �
 
 Belge tamamlandığında **içindekiler tablosu** ve **sayfa numaraları** güncellenmeli, yazım denetimi yapılmalı ve sayfa düzeni gözden geçirilmelidir. Belgenin farklı bilgisayarlarda aynı görünmesi için **PDF**'e aktarmak güvenlidir.
 
-Teslimden önce belgede **açık kalmış bir izleme ya da yorum olmadığından** emin olun; çoğu kurum bunu son okuma adımı olarak ister.
+Teslimden önce belgede **kabul ya da reddedilmemiş değişiklik** ve **çözülmemiş yorum** kalmadığından emin olun; çoğu kurum bunu son okuma adımı olarak ister.
 
 # Akademik Dürüstlük ve Kaynak Gösterme
 

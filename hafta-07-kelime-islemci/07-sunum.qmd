@@ -307,12 +307,12 @@ Belgeyi başkasıyla paylaşıp üzerinde çalışırken kullanılır.
 
 Danışman/hoca düzeltmelerinde ve grup ödevinde işe yarar.
 
-Teslimden önce **açık kalmış izleme ve yorum bırakmayın**.
+Teslimden önce **kabul ya da reddedilmemiş değişiklik** ve **çözülmemiş yorum** bırakmayın.
 
 ```{=latex}
 \begin{center}
-\vspace*{4mm}
-\includegraphics[width=0.62\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}\\[-1mm]
+\vspace*{1mm}
+\includegraphics[width=0.55\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/ekran-degisiklik-izleme.png}\\[-1mm]
 {\scriptsize\emph{LibreOffice Writer'da izlenen değişiklikler ve yorum}}
 \end{center}
 ```
