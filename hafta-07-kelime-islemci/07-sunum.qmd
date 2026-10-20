@@ -377,6 +377,8 @@ Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya int
 - **Yeterli kontrast** sağlayın
 - **Tablo başlık satırını** tanımlayın
 
+Ekran okuyucular belgeyi **başlıklara göre** gezinir ve alternatif metni sesli okur. Rengi ayırt edemeyen bir okur için de bilgiyi **metinle** vermek gerekir.
+
 ## Alternatif Metin (Alt Text)
 
 "Bu resim ne anlatıyor?" sorusunun kısa yanıtı.
