@@ -172,10 +172,26 @@ Bir dizi biçim ayarının **adlandırılmış** hâlidir.
 
 ## Stillerin Sağladıkları
 
+::: {.columns}
+::: {.column width="48%"}
+
 - **Hız:** seç, uygula
 - **Tutarlılık:** aynı stil = aynı görünüm
 - **Yapı:** program hangi metnin başlık olduğunu bilir. PDF'e bile çevirseniz, başlıklar takip edilebilir
 - **İçindekiler tablosu:** Başlıklara göre otomatik olarak oluşturulur
+
+:::
+
+::: {.column width="48%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{gorseller/ekran-google-docs-belge.png}
+\end{center}
+```
+
+:::
+:::
 
 ## Başlık Hiyerarşisi
 
