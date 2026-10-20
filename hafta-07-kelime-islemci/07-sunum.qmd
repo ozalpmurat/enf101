@@ -342,7 +342,8 @@ Bir kaynak gösterilirken **yazar veya sorumlu kurum**, **eserin başlığı**, 
 ## Kaynak Yönetimi Araçları
 
 ::: {.columns}
-::: {.column width="80%"}
+
+::: {.column width="87%"}
 
 İki yaygın ücretsiz araç: **Zotero** (açık kaynak) ve **Mendeley** (kapalı kaynak).
 
@@ -355,11 +356,14 @@ Kaynak göstermeyi kolaylaştırır; ama yanlış künyeyi, eksik atfı veya int
 
 :::
 
-::: {.column width="20%"}
+::: {.column width="13%"}
 
-![](gorseller/gorsel-zotero-mendeley.png){height=2.9cm}
+\vfill
+![](gorseller/gorsel-zotero-mendeley.png){height=3.5cm}
+\vfill
 
 :::
+
 :::
 
 # Erişilebilirlik
