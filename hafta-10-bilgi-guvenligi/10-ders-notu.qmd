@@ -79,9 +79,11 @@ Bütün parolaları akılda tutmak mümkün değildir. **Parola yöneticisi** ya
 - Yalnızca **bir ana parolayı** hatırlamanız yeterlidir
 - Parolaları siteye otomatik doldurur
 
-## İki adımlı doğrulama (2FA)
+## İki adımlı doğrulama (2FA) — çok adımlı doğrulamanın (MFA) en yaygın biçimi
 
 Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmandır: **bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı).
+
+**Çok adımlı doğrulama** (İngilizce *multi-factor authentication*, MFA), ikiden fazla adım da içerebilen şemsiye terimdir; günlük kullanımda en yaygın biçimi **iki adımlı doğrulamadır** (İngilizce *two-factor authentication*, 2FA). Bu derste ağırlıklı olarak iki adımlı biçimi görüyoruz.
 
 ![Donanım güvenlik anahtarı: iki adımlı doğrulamada "sahip olduğunuz şey"](gorseller/foto-guvenlik-anahtari.jpg){width=42%}
 
@@ -266,7 +268,7 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 
 - Bilgi güvenliğinin üç temeli: **gizlilik, bütünlük, erişilebilirlik**.
 - **Parola** uzun ve her hesap için farklı olmalıdır; **parola yöneticisi** kullanmak en pratik çözümdür.
-- **İki adımlı doğrulama**, parola çalınsa bile hesabı korur; e-posta ve e-Devlet'te mutlaka açık olmalıdır.
+- **İki adımlı doğrulama (2FA)**, çok adımlı doğrulamanın (MFA) en yaygın biçimidir; parola çalınsa bile hesabı korur ve e-posta ile e-Devlet'te mutlaka açık olmalıdır.
 - **Oltalama** saldırıları acele ettirir; bağlantıya tıklamadan başka kanaldan doğrulanır.
 - **Zararlı yazılımlar** en çok beklenmedik ek, sahte indirme ve korsan yazılımla bulaşır.
 - **Güncellemeler** bilinen açıkları kapatır; **yedekleme** fidye yazılımına karşı en iyi savunmadır.
@@ -277,7 +279,7 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 1. Bilgi güvenliğinin üç temel ilkesini yazın ve birer ihlal örneği verin.
 2. Uzun bir parola neden karmaşık ama kısa bir paroladan daha güçlüdür?
 3. Parola yöneticisi nasıl çalışır; hangi tek bilgiyi hatırlamak yeterlidir?
-4. İki adımlı doğrulamanın sağladığı koruma nedir? Hangi hesapta mutlaka açık olmalıdır?
+4. Çok adımlı doğrulama (MFA) ile iki adımlı doğrulama (2FA) arasındaki ilişki nedir? 2FA neyi korur ve hangi hesapta mutlaka açık olmalıdır?
 5. Oltalama saldırılarının en belirgin ortak özelliği nedir?
 6. Truva atı ile virüs arasındaki fark nedir?
 7. Fidye yazılımına karşı en etkili savunma nedir ve neden?

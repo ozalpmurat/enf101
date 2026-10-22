@@ -73,6 +73,8 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ## İki Adımlı Doğrulama (2FA)
 
+**Çok adımlı doğrulama (MFA)** şemsiye terimdir; **2FA** bunun en yaygın biçimidir.
+
 **Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, kod, anahtar).
 
 Parolanız çalınsa bile hesabınız korunur.

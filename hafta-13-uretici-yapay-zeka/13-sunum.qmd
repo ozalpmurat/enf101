@@ -1,5 +1,5 @@
 ---
-title: "Üretken Yapay Zekâ Araçları"
+title: "Üretici Yapay Zekâ Araçları"
 subtitle: "13. Hafta"
 author: "ENF101 · Temel Bilgi Teknolojileri"
 format: beamer
@@ -9,14 +9,14 @@ format: beamer
 
 ## Öğrenme Çıktıları
 
-- Üretken yapay zekâ araç türlerini ayırt eder.
+- Üretici yapay zekâ araç türlerini ayırt eder.
 - Etkili istem yazar.
 - Çıktıyı doğrulama adımlarını uygular.
 - Akademik dürüstlük sınırlarını bilir.
 - Araca verilmemesi gereken bilgileri ayırt eder.
 - Yapay zekâyı öğrenme aracı olarak kullanır.
 
-# Üretken Yapay Zekâ
+# Üretici Yapay Zekâ
 
 ## Sınıflandırmaz, Üretir
 
@@ -181,7 +181,7 @@ Notla değerlendirilmez.
 
 ## Özet
 
-- **Üretken YZ** içerik üretir; doğru olması garanti değildir
+- **Üretici YZ** içerik üretir; doğru olması garanti değildir
 - **İstem**: görev, bağlam, biçim, uzunluk, örnek
 - **Doğrulama**: kaynak iste, karşılaştır, kontrol et, kendin yaz
 - **Ödevi yazdırmak intihaldir**

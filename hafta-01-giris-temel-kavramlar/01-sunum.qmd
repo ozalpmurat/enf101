@@ -28,7 +28,7 @@ format: beamer
 10. Bilgi güvenliği
 11. Kişisel veriler ve dijital etik
 12. Yapay zekâ okuryazarlığı
-13. Üretken yapay zekâ araçları
+13. Üretici yapay zekâ araçları
 14. Mobil ve giyilebilir teknolojiler
 
 # Bu Haftanın Çerçevesi

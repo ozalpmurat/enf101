@@ -271,7 +271,7 @@ format:
 - Parola Yönetimi
   - Güçlü parola nasıl olur?
   - Parola yöneticisi
-  - İki adımlı doğrulama (2FA)
+  - İki adımlı doğrulama (2FA) — çok adımlı doğrulamanın (MFA) en yaygın biçimi
 - Sosyal Mühendislik
 - Oltalama (Phishing)
   - En sık görülen biçimler
@@ -342,11 +342,11 @@ format:
 - Kendini Sınama Soruları
 - Kaynaklar
 
-# 13. Hafta — Üretken Yapay Zekâ Araçları
+# 13. Hafta — Üretici Yapay Zekâ Araçları
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
-- Üretken Yapay Zekâ Nedir?
+- Üretici Yapay Zekâ Nedir?
 - İstem (Prompt) Yazımı
   - İyi bir istemin bileşenleri
   - Zayıf ve güçlü istem

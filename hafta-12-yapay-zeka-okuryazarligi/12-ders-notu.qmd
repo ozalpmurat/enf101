@@ -117,7 +117,7 @@ Sonuçta ortaya çıkan model, **yeni** bir örnek gördüğünde tahmin yapabil
 
 ## Derin öğrenme ve GPU bağlantısı
 
-Bu eğitim süreci çok büyük hesaplama gücü gerektirir. 2. haftada gördüğümüz **grafik işlemci (GPU)**, "binlerce basit işi aynı anda yapar" özelliği sayesinde tam bu iş için uygundur. Bugün yapay zekâ modellerinin eğitiminde kullanılan donanımın temelini GPU'lar oluşturur. Büyük modellerin eğitimi tek bir bilgisayarda yapılmaz: binlerce GPU'nun bir arada çalıştığı **veri merkezlerinde**, haftalarca bazen aylarca süren bir işlemle gerçekleştirilir. 2. haftada gördüğümüz **süper bilgisayarların** çoğu da tam bu iş için kurulmuştur.
+Bu eğitim süreci çok büyük hesaplama gücü gerektirir. 2. haftada gördüğümüz **grafik işlemci (GPU)**, "binlerce basit işi aynı anda yapar" özelliği sayesinde tam bu iş için uygundur. Bu paralel yapı, aynı işi CPU'ya göre çok daha hızlı tamamlamasını sağlar. Bugün yapay zekâ modellerinin eğitiminde kullanılan donanımın temelini GPU'lar oluşturur. Büyük modellerin eğitimi tek bir bilgisayarda yapılmaz: binlerce GPU'nun bir arada çalıştığı **veri merkezlerinde**, haftalarca bazen aylarca süren bir işlemle gerçekleştirilir. 2. haftada gördüğümüz **süper bilgisayarların** çoğu da tam bu iş için kurulmuştur.
 
 ## Büyük veri
 

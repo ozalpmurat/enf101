@@ -1,5 +1,5 @@
 ---
-title: "Üretken Yapay Zekâ Araçları"
+title: "Üretici Yapay Zekâ Araçları"
 subtitle: "ENF101 Temel Bilgi Teknolojileri · 13. Hafta Ders Notu"
 format:
   pdf:
@@ -23,16 +23,16 @@ Yapay zekâyı iyi kullanmak, **iyi soru sormak** ve **çıktıyı doğrulamak**
 
 # Bu Haftanın Öğrenme Çıktıları
 
-- Üretken yapay zekâ araçlarının türlerini ayırt eder.
+- Üretici yapay zekâ araçlarının türlerini ayırt eder.
 - Etkili istem (prompt) yazar.
 - Yapay zekâ çıktısını doğrulama adımlarını uygular.
 - Akademik dürüstlük sınırları içinde yapay zekâdan yararlanır.
 - Yapay zekâ araçlarına verilmemesi gereken bilgileri ayırt eder.
 - Yapay zekâyı öğrenme sürecini destekleyecek biçimde kullanır.
 
-# Üretken Yapay Zekâ Nedir?
+# Üretici Yapay Zekâ Nedir?
 
-**Üretken yapay zekâ**, yeni içerik üreten modellerdir: metin, görsel, ses, video, kod. Diğer yapay zekâ uygulamalarından farkı, **sınıflandırmak veya tahmin etmek yerine üretmesidir**.
+**Üretici yapay zekâ**, yeni içerik üreten modellerdir: metin, görsel, ses, video, kod. Diğer yapay zekâ uygulamalarından farkı, **sınıflandırmak veya tahmin etmek yerine üretmesidir**.
 
 | Tür | Ne üretir | Kullanım örneği |
 |:---|:---|:---|
@@ -45,7 +45,7 @@ Yapay zekâyı iyi kullanmak, **iyi soru sormak** ve **çıktıyı doğrulamak**
 ::: {.callout-warning}
 ## "Üretir" ≠ "Doğrudur"
 
-Bir metnin akıcı ve düzgün olması, doğru olduğu anlamına gelmez. Üretken modeller **inandırıcı görünen** çıktı üretmek üzere eğitilmiştir; doğruluk ikinci plandadır.
+Bir metnin akıcı ve düzgün olması, doğru olduğu anlamına gelmez. Üretici modeller **inandırıcı görünen** çıktı üretmek üzere eğitilmiştir; doğruluk ikinci plandadır.
 
 Geçen hafta gördüğümüz **yanılgı** sorunu burada en kritik hâline gelir.
 :::
@@ -218,7 +218,7 @@ Bu uygulama notla değerlendirilmez. Amacı, yapay zekâ araçlarını bilinçli
 
 # Özet
 
-- **Üretken yapay zekâ** yeni içerik üretir: metin, görsel, ses, video, kod.
+- **Üretici yapay zekâ** yeni içerik üretir: metin, görsel, ses, video, kod.
 - **İstem** kalitesi sonucu belirler: görev, bağlam, biçim, uzunluk ve örnek bileşenleri.
 - **Doğrulama zorunludur:** kaynak isteyin, bağımsız kaynakla karşılaştırın, sayı ve tarihleri kontrol edin, kendi cümlelerinizle yazın.
 - **Akademik dürüstlük:** öğrenmek için kullanmak uygundur; ödevi yazdırıp kendi çalışmanız gibi sunmak **intihaldir**.
@@ -227,7 +227,7 @@ Bu uygulama notla değerlendirilmez. Amacı, yapay zekâ araçlarını bilinçli
 
 # Kendini Sınama Soruları
 
-1. Üretken yapay zekâyı diğer yapay zekâ uygulamalarından ayıran nedir?
+1. Üretici yapay zekâyı diğer yapay zekâ uygulamalarından ayıran nedir?
 2. İyi bir istemin beş bileşenini yazın.
 3. "Bana ödev yaz" istemi neden zayıftır?
 4. Yapay zekâ çıktısını doğrulamanın dört adımı nedir?

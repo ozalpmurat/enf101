@@ -181,4 +181,4 @@ Notla değerlendirilmez.
 
 ## Gelecek Hafta
 
-**Üretken yapay zekâ araçları** — araç türleri, istem yazımı, çıktıların doğrulanması, akademik dürüstlük ve gizlilik.
+**Üretici yapay zekâ araçları** — araç türleri, istem yazımı, çıktıların doğrulanması, akademik dürüstlük ve gizlilik.
