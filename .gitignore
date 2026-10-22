@@ -57,3 +57,9 @@ desktop.ini
 
 /.quarto/
 **/*.quarto_ipynb
+
+# --- Ders dışı çalışma dosyaları ---
+# Soru bankası, üretim raporu ve değişiklik dökümü sınav güvenliği nedeniyle
+# depo DIŞINDA tutulur (../enf101-sorular/). Bu satır, klasör yanlışlıkla
+# depo içinde yeniden oluşturulursa commit edilmesini engeller.
+/sorular/
