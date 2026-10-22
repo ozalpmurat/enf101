@@ -60,6 +60,6 @@ desktop.ini
 
 # --- Ders dışı çalışma dosyaları ---
 # Soru bankası, üretim raporu ve değişiklik dökümü sınav güvenliği nedeniyle
-# depo DIŞINDA tutulur (../enf101-sorular/). Bu satır, klasör yanlışlıkla
-# depo içinde yeniden oluşturulursa commit edilmesini engeller.
+# TAKİP EDİLMEZ: klasör depoda durur, git'e eklenmez. Depoya yalnızca ders
+# materyali girer (haftalık belgeler, izlence, başlıklar).
 /sorular/
