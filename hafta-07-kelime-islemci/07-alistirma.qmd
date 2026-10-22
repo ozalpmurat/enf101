@@ -18,16 +18,16 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bir metni seçip kalın yapmak ve puntosunu büyütmek ne sağlar?\
+**1.** Kelime işlemcide bir metni seçip kalın yapmak ve puntosunu büyütmek ne sağlar?\
 A) Metni gerçek bir başlık hâline getirir\
 B) Metin başlık gibi görünür ama gerçek başlık olmaz\
 C) İçindekiler tablosuna eklenir\
 D) Belge otomatik kaydedilir\
 E) Belgenin dosya boyutunu küçültür
 
-**2.** İçindekiler tablosunun otomatik oluşması için ne gereklidir?\
+**2.** Kelime işlemcide içindekiler tablosunun otomatik oluşması için ne gereklidir?\
 A) Belgenin PDF olarak kaydedilmesi\
-B) İçindekiler bölümünün elle yazılmış olması\
+B) İçindekiler bölümünün elle oluşturulmuş olması\
 C) Sayfa numarası eklenmiş olması\
 D) Belgenin yazdırılmış olması\
 E) Başlıklara stil uygulanmış olması
@@ -60,12 +60,12 @@ C) Belgeyi PDF'e çevirmesi\
 D) Yazım hatalarını düzeltmesi\
 E) Kaynak göstermeyi kolaylaştırması
 
-**7.** Bir görsele "alternatif metin" eklemek kimin için önemlidir?\
-A) Belgeyi yazdıran kişi için\
-B) Ekran okuyucu kullanan kişiler için\
-C) Belgeyi PDF'e çeviren program için\
-D) Yalnızca öğretim elemanı için\
-E) Belgenin daha hızlı açılmasını sağlamak için
+**7.** Bir görsele "alternatif metin" eklemek neden önemlidir?\
+A) Belgenin daha hızlı açılması\
+B) Ekran okuyucu kullanan kişilerin görselin ne anlattığını duyabilmesi\
+C) Belgeyi PDF'e çeviren programın görseli tanıması\
+D) Görselin yazdırılırken daha net çıkması\
+E) Belgenin dosya boyutunun küçülmesi
 
 **8.** Belgeye sayfa numarası eklemenin temel amacı nedir?\
 A) Belgeyi güzel göstermek\

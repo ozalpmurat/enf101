@@ -18,14 +18,14 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Yalnızca resmî kamu kurumu sitelerinde arama yapmak için hangi ifade kullanılır?\
+**1.** Arama motorunda yalnızca resmî kamu kurumu sitelerinde arama yapmak için hangi ifade kullanılır?\
 A) `site:gov.tr`\
 B) `filetype:pdf`\
 C) `"tam ifade"`\
 D) `-kelime`\
 E) `site:edu.tr`
 
-**2.** Arama ifadesinin başına konan eksi işareti (`-kelime`) ne yapar?\
+**2.** Arama motorunda arama ifadesinin başına konan eksi işareti (`-kelime`) ne yapar?\
 A) Kelimeyi sonuçlara ekler\
 B) Yalnızca o kelimeyi arar\
 C) O kelimeyi sonuçlardan çıkarır\

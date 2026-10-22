@@ -47,7 +47,7 @@ D) Sınır yoktur\
 E) 2–3
 
 **5.** Sunumun kapanış bölümünde ne yapılmalıdır?\
-A) Yalnızca "Teşekkürler" denmelidir\
+A) Müzik eklenmelidir\
 B) Yeni bilgiler eklenmelidir\
 C) Ana mesajlar özetlenip ne yapılması gerektiği söylenmelidir\
 D) Sorular hemen alınmalıdır\
@@ -65,9 +65,9 @@ A) Bilgiyi yalnızca renkle vermek\
 B) Küçük punto kullanmak\
 C) Görsellere alternatif metin eklemek\
 D) Slayt başlıklarını "Slayt 5" biçiminde yazmak\
-E) Renkleri yalnızca dekoratif amaçla kullanmak
+E) Renkleri dekoratif amaçla kullanmak
 
-**8.** Sunum öncesi yapılması gerekenlerden hangisi değildir?\
+**8.** Sunum öncesinde aşağıdakilerden hangisi yapılmamalıdır?\
 A) Yüksek sesle prova yapmak\
 B) Süreyi ölçmek\
 C) Teknik kontrol yapmak\
@@ -90,7 +90,7 @@ E) Sunumun yapılacağı ortamı önceden görmek
 | 2 | B | Slayt destekleyici bir yüzeydir; anahtar kelimeler taşır, ayrıntıyı konuşmacı anlatır. |
 | 3 | E | Doğru sayı E seçeneğindedir: dinleyici genellikle üçten fazla ana mesajı akılda tutamaz. |
 | 4 | A | Satır başına 6–8 kelime, slayt başına 6 madde iyi bir ölçüdür. |
-| 5 | C | Kapanış, ana mesajları hatırlatır ve ne yapılması gerektiğini söyler. Yalnızca teşekkür etmek kapanış sayılmaz. |
+| 5 | C | Kapanış, ana mesajları hatırlatır ve ne yapılması gerektiğini söyler. Müzik eklemek kapanış sayılmaz. |
 | 6 | E | Doğru gerekçe E seçeneğindedir: dinleyicinin akılda tutabildiği ana mesaj sayısı sınırlı olduğu için sunum üç mesaja odaklanır. |
 | 7 | C | Erişilebilir sunumda görsellere alternatif metin eklenir; punto büyük olmalı, bilgi yalnızca renkle verilmemeli ve başlıklar anlamlı yazılmalıdır. |
 | 8 | D | Slaytlara daha fazla metin eklemek bir hazırlık değil, yapılan bir hatadır. |

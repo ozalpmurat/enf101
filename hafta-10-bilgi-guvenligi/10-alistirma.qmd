@@ -39,7 +39,7 @@ C) Parolayı unutmanızı engellemek için ekrana yazması\
 D) Parolaları kısaltması\
 E) Parolaları e-posta ile yedeklemesi
 
-**4.** İki adımlı doğrulama ne sağlar?\
+**4.** Çok adımlı doğrulama (MFA) ne sağlar?\
 A) Parolayı daha kısa yapar\
 B) Her girişte parolanın sorulmasını kaldırır\
 C) İnternet hızını artırır\
@@ -65,13 +65,13 @@ A) Virüs\
 B) Solucan\
 C) Fidye yazılımı\
 D) Truva atı\
-E) Reklam yazılımı (adware)
+E) Reklam yazılımı
 
 **8.** Fidye yazılımına karşı en etkili savunma nedir?\
 A) Daha güçlü parola kullanmak\
 B) Düzenli yedekleme yapmak\
 C) Tarayıcıyı gizli modda kullanmak\
-D) Bilgisayarı sık sık kapatmak\
+D) Kablosuz yerine kablolu internet kullanmak\
 E) Bilgisayarı her gün yeniden başlatmak
 
 **9.** Gizli modda gezinmek kullanıcıyı tamamen anonim yapar. *(Doğru / Yanlış)*\
@@ -89,7 +89,7 @@ E) Bilgisayarı her gün yeniden başlatmak
 | 1 | A | Gizlilik, bütünlük ve erişilebilirlik bilgi güvenliğinin üç temel ilkesidir. |
 | 2 | C | Birbirinden ilgisiz kelimelerden oluşan uzun söz öbeği hem akılda kalır hem tahmin edilemez. Diğer seçenekler tahmin edilebilir kalıplardır. |
 | 3 | B | Parola yöneticisi her hesap için rastgele ve güçlü parola üretir, bunları şifreli kasada saklar. |
-| 4 | E | Doğru ifade E seçeneğindedir: iki adımlı doğrulama, parola ele geçse bile ikinci bir adım gerektiği için hesabı korur. |
+| 4 | E | Doğru ifade E seçeneğindedir: çok adımlı doğrulama (MFA), parola ele geçse bile ikinci bir adım gerektiği için hesabı korur. |
 | 5 | E | Doğru cevap E seçeneğindedir: e-posta hesabı diğer bütün hesapların kurtarma yoludur; ele geçirilirse tek tek bütün hesaplar riske girer. |
 | 6 | C | Acele ettiren mesajlar oltalamanın tipik işaretidir. Bağlantıya tıklanmaz; gönderen başka bir kanaldan doğrulanır. |
 | 7 | D | Truva atı, yararlı bir program gibi görünerek kullanıcıyı kandırır ve sisteme arka kapı açar. |

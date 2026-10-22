@@ -46,7 +46,7 @@ C) Tarayıcı çerezleri ve konum kaydı\
 D) Üye olduğunuz bir site\
 E) Beğendiğiniz bir gönderi
 
-**5.** Bir fener uygulamasının konum izni istemesi neyi gösterir?\
+**5.** Cep telefonuna kurulan bir fener (aydınlatma) uygulamasının konum izni istemesi neyi gösterir?\
 A) Uygulamanın çok gelişmiş olduğunu\
 B) Uygulamanın reklam gösterdiğini\
 C) İznin zorunlu olduğunu\

@@ -62,7 +62,7 @@ E) Bir kamu kurumunu
 
 **7.** Tarayıcının gizli modu hakkında hangisi doğrudur?\
 A) Kullanıcıyı tamamen anonim yapar\
-B) Yalnızca cihazdaki geçmiş kaydını tutmaz\
+B) Cihazdaki geçmiş kaydını tutmaz\
 C) İnternet hızını artırır\
 D) Virüsleri engeller\
 E) İndirilen dosyaları virüslere karşı tarar
@@ -92,7 +92,7 @@ E) Yemek tarifi okumak
 | 4 | B | Bluetooth, genellikle 10 metreye kadar olan kısa mesafeli bir kablosuz bağlantı teknolojisidir. |
 | 5 | D | DNS, alan adlarını IP adreslerine çeviren sistemdir; İnternet'in telefon rehberi gibi çalışır. |
 | 6 | E | Doğru ifade E seçeneğindedir: .gov kamu kurumlarını gösterir. .edu üniversiteler, .com ticari siteler içindir. |
-| 7 | B | Gizli mod yalnızca cihazınızdaki kaydı tutmaz; sizi anonim yapmaz. Servis sağlayıcı ve site yine görebilir. |
+| 7 | B | Gizli mod cihazdaki kaydı tutmaz; sizi anonim yapmaz. Servis sağlayıcı ve site yine görebilir. |
 | 8 | C | Açık ağlarda trafik izlenebilir. Bankacılık ve e-Devlet gibi hassas işlemler bu ağlarda yapılmamalıdır. |
 | 9 | Doğru | Gerçek eduroam kullanıcı adı ve parola ister; yalnızca parola isteyen "eduroam" şüphelidir. |
 | 10 | Doğru | Bluetooth kapalıyken cihaz eşleştirme isteklerine kapalıdır ve daha az enerji harcar. |

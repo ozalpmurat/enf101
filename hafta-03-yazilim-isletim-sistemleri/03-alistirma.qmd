@@ -60,7 +60,7 @@ C) Sunucu işletim sistemi\
 D) Sanal makine sistemi\
 E) Akıllı telefon işletim sistemi
 
-**7.** Yazılım katmanları alttan üste doğru hangi sırayla dizilir?\
+**7.** Aşağıdakilerden hangisinde katmanlar alttan üste doğru sıra ile dizilmiştir?\
 A) Uygulamalar → işletim sistemi → donanım\
 B) Uygulamalar → donanım → işletim sistemi\
 C) İşletim sistemi → donanım → uygulamalar\

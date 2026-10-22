@@ -18,7 +18,7 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Bir formülü bir satır aşağı kopyaladığınızda `A1` başvurusu ne olur?\
+**1.** Hesap tablosunda bir formülü bir satır aşağı kopyaladığınızda `A1` başvurusu ne olur?\
 A) A1 olarak kalır\
 B) A2 olur\
 C) $A$1 olur\
@@ -39,12 +39,12 @@ C) @\
 D) +\
 E) %
 
-**4.** Bir sınıfta 9 öğrenci 40, 1 öğrenci 100 puan almıştır. Sınıfın genel başarısını anlatırken hangisi daha uygundur?\
-A) ORTALAMA, çünkü tüm değerleri kapsar\
-B) EĞERORTALAMA, çünkü koşullu hesaplama yapar\
-C) MAK, çünkü en yüksek puanı gösterir\
-D) TOPLA, çünkü bütün puanları içerir\
-E) ORTANCA, çünkü uç değerden etkilenmez
+**4.** Bir sınıfın notları hesap tablosunda tutulmaktadır: 60, 65, 70, 75, 80, 80, 85, 85, 90 ve 95. Sınıfın genel başarısını tek bir sayıyla anlatmak için hangisi daha uygundur?\
+A) MAK, çünkü yalnızca en yüksek puanı verir\
+B) MİN, çünkü yalnızca en düşük puanı verir\
+C) ORTALAMA, çünkü bütün puanları hesaba katar\
+D) TOPLA, çünkü bütün puanları toplar\
+E) EĞERSAY, çünkü koşulu sağlayan hücreleri sayar
 
 **5.** `EĞERSAY` fonksiyonu ne yapar?\
 A) Aralıktaki tüm sayıları toplar\
@@ -53,7 +53,7 @@ C) Aralıktaki en büyük değeri bulur\
 D) Koşulu sağlayan hücreleri sayar\
 E) Aralıktaki en küçük değeri bulur
 
-**6.** Sıralama ile filtreleme arasındaki temel fark nedir?\
+**6.** Hesap tablosunda sıralama ile filtreleme arasındaki temel fark nedir?\
 A) Sıralama veriyi kalıcı olarak yeniden düzenler, filtreleme yalnızca gösterir\
 B) İkisi tamamen aynı işi yapar\
 C) Filtreleme veriyi siler, sıralama silmez\
@@ -91,7 +91,7 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | 1 | B | Göreli başvuru, kopyalandığı yöne göre kayar. Formül bir satır aşağı kopyalandığında A1, A2 olur. |
 | 2 | C | `$` işareti sütunu ve satırı kilitler. $A$1 mutlak başvurudur; kopyalansa bile değişmez. |
 | 3 | B | Hesap tablosu, eşittir işaretiyle başlayan girdiyi formül olarak yorumlar; aksi hâlde metin sayar. |
-| 4 | E | Doğru yaklaşım E seçeneğindedir: tek bir uç değer ortalamayı yukarı çeker, ortanca ise etkilenmez; bu yüzden sınıfın genel başarısını ortanca daha iyi anlatır. |
+| 4 | C | Puanlar 60–95 arasında dağılmış, uç değer yok; ortalama 78,5 olur ve sınıfın genel başarısını tek sayıyla anlatır. MAK ve MİN yalnızca tek bir uç puanı verir, TOPLA toplamı, EĞERSAY ise puanların adedini sayar. |
 | 5 | D | EĞERSAY, belirtilen koşulu sağlayan hücreleri sayar. Koşulsuz sayım için SAY kullanılır. |
 | 6 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
 | 7 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |

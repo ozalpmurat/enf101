@@ -53,8 +53,8 @@ C) Dosyaları sıkıştırmak\
 D) Dosyaları başka bir diske kopyalamak\
 E) İşletim sisteminin "güvenle çıkar" seçeneğini kullanmak
 
-**6.** Bir bölümdeki tüm veriyi silen işlem hangisidir?\
-A) Bölümleme\
+**6.** Bir disk bölümündeki tüm veriyi silen işlem hangisidir?\
+A) Sürücü harfini değiştirmek\
 B) Biçimlendirme\
 C) Geri dönüşüm kutusunu boşaltmak\
 D) Sıkıştırma\
@@ -91,7 +91,7 @@ E) Yalnızca tek cihazdan erişilebilmesi
 | 3 | A | Uzantıyı değiştirmek dosyanın içeriğini ve türünü değiştirmez; yalnızca işletim sisteminin onu yanlış programla açmaya çalışmasına yol açar. |
 | 4 | D | Video, fotoğraf ve müzik dosyaları zaten sıkıştırılmış biçimde saklanır. En belirgin kazanç metin tabanlı belgelerde olur. |
 | 5 | E | "Güvenle çıkar" işlemi, bekleyen yazma işlemlerinin tamamlanmasını sağlar. Doğrudan çekmek veri bozulmasına yol açabilir. |
-| 6 | B | Doğru işlem B seçeneğindedir: biçimlendirme bölümün içeriğini boşaltır. Bölümleme diski parçalara ayırır, tek başına veri silmez. |
+| 6 | B | Doğru işlem B seçeneğindedir: biçimlendirme bölümün içeriğini boşaltır. Sürücü harfini değiştirmek yalnızca bölümün harfini değiştirir, veriye dokunmaz. |
 | 7 | B | Kural: 3 kopya, 2 farklı ortam, 1 kopya uzakta (örneğin bulut). |
 | 8 | C | Doğru ifade C seçeneğindedir: bulut depolama her yerden erişim sağlar ama bunun için İnternet bağlantısı gerekir; bu bir sınırdır. Diğer seçenekler olanaklardır. |
 | 9 | Yanlış | Aynı bilgisayarın başka klasöründeki kopya yedek sayılmaz; cihaz bozulduğunda iki kopya da kaybedilir. Yedek başka bir ortamda olmalıdır. |

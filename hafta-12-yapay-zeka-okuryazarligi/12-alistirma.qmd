@@ -42,9 +42,9 @@ E) Daha az elektrik harcaması
 **4.** "Büyük veri" kavramı neyi ifade eder?\
 A) Çok büyük boyutlu dosyaları\
 B) Geleneksel yöntemlerle işlenemeyecek kadar çok, hızlı ve çeşitli veriyi\
-C) Yalnızca sayısal verileri\
-D) Yalnızca devlet kurumlarının verisini\
-E) Yalnızca yapay zekâ modellerinin ürettiği veri
+C) Çok sayıda sunucudan oluşan büyük veri merkezleri ve ağlar\
+D) Devlet kurumlarının ve bankaların elindeki kişisel kayıtlar\
+E) Yapay zekâ modellerinin ürettiği metinler, görseller ve sesler
 
 **5.** Yapay zekânın "halüsinasyon" (yanılgı) yapması ne demektir?\
 A) Sistemin çökmesi\

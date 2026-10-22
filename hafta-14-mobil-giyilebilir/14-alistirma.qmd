@@ -25,14 +25,14 @@ C) Kırılmış sürümleri indirmek\
 D) E-posta ekiyle gelen dosyayı kurmak\
 E) Arkadaş tavsiyesiyle bağlantıdan indirmek
 
-**2.** Bir oyun uygulamasının mikrofon izni istemesi ne anlama gelir?\
-A) Oyunun çok kapsamlı olduğunu\
-B) Oyunun reklam içerdiğini\
+**2.** Bir not alma uygulamasının kişiler listesine erişim izni istemesi ne anlama gelir?\
+A) Uygulamanın çok kapsamlı olduğunu\
+B) Uygulamanın reklam içerdiğini\
 C) İznin zorunlu olduğunu\
-D) Oyunun güvenli olduğunu\
+D) Uygulamanın güvenli olduğunu\
 E) İznin işlevle orantısız olduğunu
 
-**3.** Senkronizasyon ile yedekleme arasındaki fark nedir?\
+**3.** Dosya senkronizasyonu ile yedekleme arasındaki fark nedir?\
 A) İkisi aynı şeydir\
 B) Yedekleme yalnızca telefondan yapılır\
 C) Senkronizasyon veriyi her yerde eşitler, yedekleme ayrı bir kopya saklar\
@@ -87,7 +87,7 @@ E) Cihaz fiyatlarındaki artışı
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | A | Resmî mağazalar bir denetimden geçer ve uygulamalar gerektiğinde kaldırılabilir. Mağaza dışı kurulumlar en yaygın zararlı yazılım kaynağıdır. |
-| 2 | E | Doğru değerlendirme E seçeneğindedir: oyunun işini yapmak için mikrofona ihtiyacı yoktur; bu izin işlevle orantısızdır. |
+| 2 | E | Doğru değerlendirme E seçeneğindedir: not alma uygulamasının işini yapmak için kişiler listesine ihtiyacı yoktur; bu izin işlevle orantısızdır. |
 | 3 | C | Senkronizasyon aynı veriyi bütün cihazlarda eşitler; yedekleme ise verinin ayrı bir kopyasını saklar. |
 | 4 | B | Telefon numarası birçok hesabın parola sıfırlama ve doğrulama yoludur; telefon ele geçirilirse hesaplar risk altına girer. |
 | 5 | D | Giyilebilir cihazlar hareket, nabız, oksijen ve konum gibi veriler toplar; banka bakiyesine erişemez. |

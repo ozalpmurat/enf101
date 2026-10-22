@@ -18,7 +18,7 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
 
-**1.** Üretken yapay zekâyı diğer yapay zekâ uygulamalarından ayıran temel özellik nedir?\
+**1.** Üretici yapay zekâyı diğer yapay zekâ uygulamalarından ayıran temel özellik nedir?\
 A) Daha hızlı çalışması\
 B) Sınıflandırmak yerine yeni içerik üretmesi\
 C) Yalnızca metinle çalışması\
@@ -39,19 +39,19 @@ C) Biçim\
 D) Yapay zekânın markası\
 E) Uzunluk
 
-**4.** Yapay zekâ çıktısını doğrulamanın **ilk** adımı nedir?\
+**4.** Yapay zekâ çıktısını doğrulamanın dört adımından **ilki** hangisidir?\
 A) Metni olduğu gibi kopyalamak\
 B) Çıktıyı başka bir dile çevirmek\
 C) Metni kısaltmak\
 D) Başka bir yapay zekâya sormak\
-E) Kaynak isteyip bağımsız kaynakla karşılaştırmak
+E) Kaynak göstermesini istemek
 
 **5.** Yapay zekânın verdiği kaynak künyeleri neden güvenilir sayılmaz?\
 A) Her zaman İngilizce oldukları için\
 B) Kaynak uydurma olabildiği için\
 C) Çok kısa oldukları için\
-D) Yalnızca kitapları gösterdikleri için\
-E) Yalnızca 2020 sonrası kaynakları göstermeleri
+D) Kitapları hiç göstermedikleri için\
+E) Kaynakların hepsi 2020 sonrası olduğu için
 
 **6.** Aşağıdaki kullanımlardan hangisi akademik dürüstlük açısından uygundur?\
 A) Anlamadığınız bir konuyu yapay zekâya sorup öğrenmek\
@@ -86,10 +86,10 @@ E) Cevabı düşünmeden alındığında öğrenmeyi engelleyerek
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | Üretken modeller sınıflandırmak veya tahmin etmek yerine yeni içerik üretir: metin, görsel, ses, video, kod. |
+| 1 | B | Üretici modeller sınıflandırmak veya tahmin etmek yerine yeni içerik üretir: metin, görsel, ses, video, kod. |
 | 2 | C | Görev, bağlam, biçim ve uzunluk belirtilmiş istem en güçlüsüdür. Diğerleri belirsizdir. |
 | 3 | D | İyi bir istemde görev, bağlam, biçim, uzunluk ve örnek bulunur; aracın markası istemin bileşeni değildir. |
-| 4 | E | İlk adım E seçeneğindedir: doğrulama, kaynak isteyip bağımsız bir kaynakla karşılaştırmakla başlar. Ama verilen kaynağın da uydurma olabileceği unutulmamalıdır. |
+| 4 | E | Dört adımın ilki E seçeneğindedir: çıktının kaynağını sormak. Kaynağı bağımsız bir kaynakla karşılaştırmak ikinci adımdır; verilen kaynağın da uydurma olabileceği unutulmamalıdır. |
 | 5 | B | Model, olmayan bir kitap veya makaleyi gerçekmiş gibi sunabilir; bu yüzden kaynak künyesi mutlaka doğrulanmalıdır. |
 | 6 | A | Yapay zekâyı öğrenme amacıyla kullanmak uygundur. Diğer dört seçenek intihal kapsamına girer. |
 | 7 | C | Başkasına ait kişisel veriler gizlilik ihlali oluşturur; araca yazılmamalıdır. |
