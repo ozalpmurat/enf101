@@ -15,10 +15,14 @@ format: beamer
 - Veriyi biçimlendirir, sıralar ve filtreler.
 - Veri türüne uygun grafiği seçip grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
+- Yüzde değişim ile yüzde puanı, ortalama ile ortancayı ayırt eder.
 
 # Hesap Tablosu
 
 ## Hesap Tablosu Nedir?
+
+::: {.columns}
+::: {.column width="58%"}
 
 Verinin hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** yazılımdır.
 
@@ -28,6 +32,24 @@ Verinin hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki 
 
 Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok listeleri, ölçüm karşılaştırmaları.
 
+:::
+
+::: {.column width="40%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=4.6cm,height=5cm,keepaspectratio]{gorseller/ekran-libreoffice-calc.png}\\[-0.5mm]
+{\scriptsize\emph{LibreOffice Calc penceresi}}
+\end{center}
+```
+
+:::
+:::
+
+## Google Sheets: Hücre, Satır, Sütun, Aralık, Sayfa
+
+![](gorseller/ekran-google-sheets-hucre-aralik.png){width=82%}
+
 ## Temel Kavramlar
 
 | Kavram | Ne demek | Örnek |
@@ -36,6 +58,7 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 | Satır | Yatay sıra (numarayla) | 5. satır |
 | Sütun | Dikey sıra (harfle) | C sütunu |
 | Aralık | Birden çok hücre | A2:A20 |
+| Sayfa | Aynı dosya içindeki ayrı tablo yüzeyi | Sayfa1, Sayfa2 |
 | Çalışma kitabı | Hesap tablosu dosyasının tamamı | `butce.xlsx` |
 
 ## Veri Türleri
@@ -43,10 +66,12 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 | Tür | Örnek | Hizalama |
 |:---|:---|:---|
 | Metin | "Ankara" | Sola |
-| Sayı | 1250, 3.75 | Sağa |
+| Sayı | 1250; 3,14 | Sağa |
 | Tarih / saat | 12.03.2026 | Sağa |
 | Mantıksal | DOĞRU / YANLIŞ | Ortaya |
 | Formül | `=A1+A2` | Sağa |
+
+Türkçede ondalık ayraç virgüldür (ör: 3,14). İngilizce oluşturulan belgelerde nokta kullanılmış olabilir.
 
 Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılmaz**.
 
@@ -73,6 +98,10 @@ Formüller **eşittir işaretiyle** başlar; aksi hâlde program yazdığınız�
 | `=(A1+A2)/2` | Parantez önce işlenir |
 
 Formüle sayı yazmak yerine **hücre adresi** yazın. Yoksa girdi değiştiğinde sonuç güncellenmez.
+
+::: {.callout-warning}
+**`=` olmadan yazılan `TOPLA(B2:B50)` formül değil, düz metindir.** Program onu hesaplamaz; hücrede yazdığınız gibi görünür.
+:::
 
 ## Göreli ve Mutlak Başvuru
 
@@ -122,11 +151,7 @@ Oran haberlerinde ilk soru: **taban sayı kaç?**
 
 Tek bir uç değer ortalamayı yukarı çeker; ortanca etkilenmez. Gelir ve servet istatistiklerinde fark çok belirgindir.
 
-## Pratik Kural
-
-Veride uç değer olabileceğinden kuşkulanıyorsanız — gelir, harcama, hasılat, görüntülenme — ortalamayı tek başına kullanmayın.
-
-İkisini karşılaştırın. Aralarındaki büyük fark, dağılımın çarpık olduğunun işaretidir.
+Veride uç değer kuşkusu varsa (gelir, harcama, görüntülenme) ikisini karşılaştırın; aralarındaki büyük fark dağılımın çarpık olduğunu gösterir.
 
 # Biçimlendirme
 
@@ -140,9 +165,11 @@ Veride uç değer olabileceğinden kuşkulanıyorsanız — gelir, harcama, has�
 
 ## Birleştirilmiş Hücrelerden Kaçının
 
-Görsel olarak düzenli görünür ama **sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır.
+::: {.callout-warning}
+**Birleştirilmiş hücreler sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır. Görsel olarak düzenli görünse de veriyi işlemeyi zorlaştırır.
 
 Başlığı ortalamak için hücre birleştirmek yerine **ortala** hizalamasını kullanın.
+:::
 
 # Sıralama ve Filtreleme
 
@@ -179,7 +206,11 @@ Bu üçüncü adım, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" h�
 | Bütün içindeki pay | Pasta veya yığılmış çubuk |
 | Dağılım | Histogram, kutu grafiği |
 | İki değişken arasındaki ilişki | Dağılım (saçılım) |
-| Coğrafi dağılım | Harita (alan ≠ değer) |
+| Coğrafi dağılım | Harita (büyük alan, büyük değer değildir) |
+
+::: {.callout-warning}
+**Pasta grafik ancak az sayıda dilim ve belirgin biçimde farklı oranlarla** okunur; altı yedi dilimli, oranları yakın pastalar okunamaz.
+:::
 
 ## Örnekler: Sütun, Çizgi, Pasta
 
@@ -188,12 +219,6 @@ Bu üçüncü adım, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" h�
 ## Örnekler: Histogram, Kutu, Saçılım
 
 ![](gorseller/diagram-grafik-turleri-2.png){width=88%}
-
-## Pasta Grafik Uyarısı
-
-Yalnızca **az sayıda dilim** ve **belirgin biçimde farklı oranlar** olduğunda işe yarar.
-
-Altı yedi dilimli, oranları yakın pastalar okunamaz.
 
 # Grafiklerin Doğru Okunması
 
@@ -259,7 +284,9 @@ Dikey eksenlere bakın: **nereden başlıyorlar?**
 - **Grafik B:** dikey eksen 46'dan başlıyor.
 - Aynı %17'lik artış, B'de kat kat büyük görünüyor.
 
-Sütun yüksekliği değeri temsil eder. Dikey eksen sıfırdan başlamazsa okuma bozulur.
+::: {.callout-warning}
+**Sütun grafiğinde dikey eksen sıfırdan başlamalıdır.** Sütun yüksekliği doğrudan değeri temsil ettiği için eksen kesilirse okuma bozulur.
+:::
 
 ## Kendiniz Üretin
 
@@ -277,3 +304,8 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 - **Ortalama** uç değerden etkilenir, **ortanca** etkilenmez.
 - **Sıralama** düzenler, **filtreleme** gösterir.
 - Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
+- Grafiğe her bakışta sorulacak **dokuz soruluk** bir kontrol listesi vardır.
+
+## Gelecek Hafta
+
+**Sunum uygulamaları** — bir sunumun yapısı, slayt tasarımı, görsel seçimi ve telif, etkili sunum teknikleri.

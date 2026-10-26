@@ -43,7 +43,7 @@ Yapay zekâyı iyi kullanmak, **iyi soru sormak** ve **çıktıyı doğrulamak**
 | **Kod** | Program kodu | Öğrenme, hata ayıklama |
 
 ::: {.callout-warning}
-## "Üretir" ≠ "Doğrudur"
+## "Üretir" Demek, "Doğrudur" Demek Değildir
 
 Bir metnin akıcı ve düzgün olması, doğru olduğu anlamına gelmez. Üretici modeller **inandırıcı görünen** çıktı üretmek üzere eğitilmiştir; doğruluk ikinci plandadır.
 
@@ -117,13 +117,13 @@ Bu bölüm, bu haftanın en önemli kısmıdır.
 
 | Kullanım | Değerlendirme |
 |:---|:---|
-| Konuyu anlamak için soru sormak | ✔ Uygun |
-| Kavramı farklı biçimde açıklamasını istemek | ✔ Uygun |
-| Yazdığınız metni dil bilgisi açısından düzeltmek | ✔ Uygun (kurum politikasına bağlı) |
-| Fikir üretmek için beyin fırtınası yapmak | ✔ Uygun |
-| Ödevi baştan sona yazdırmak | ✘ Uygun değil |
-| Üretilen metni kendi çalışmanız gibi teslim etmek | ✘ **İntihal** |
-| Kaynak göstermeden çeviri yaptırmak | ✘ Uygun değil |
+| Konuyu anlamak için soru sormak | Uygun |
+| Kavramı farklı biçimde açıklamasını istemek | Uygun |
+| Yazdığınız metni dil bilgisi açısından düzeltmek | Uygun (kurum politikasına bağlı) |
+| Fikir üretmek için beyin fırtınası yapmak | Uygun |
+| Ödevi baştan sona yazdırmak | Uygun değil |
+| Üretilen metni kendi çalışmanız gibi teslim etmek | **İntihal** |
+| Kaynak göstermeden çeviri yaptırmak | Uygun değil |
 
 ::: {.callout-warning}
 ## Yapay zekâ metnini kendi çalışmanız gibi sunmak intihaldir

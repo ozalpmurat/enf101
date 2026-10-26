@@ -118,7 +118,7 @@ Bu yüzden **ekran kilidi** ve **SIM PIN'i** açık olmalıdır.
 |:---|:---|
 | Hareket | Adım, aktivite, uyku |
 | Kalp atışı | Nabız, stres göstergesi |
-| Oksijen | SpO₂ |
+| Oksijen | SpO2 |
 | GPS | Rota, gidilen yerler |
 | Mikrofon | Ses, ortam |
 

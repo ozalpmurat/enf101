@@ -552,6 +552,10 @@ sorusunu, fotoğraf "gerçekte nasıl görünür" sorusunu yanıtlar.
   (BTK, KVKK, USOM, TÜBİTAK BİLGEM, TÜİK, Pardus gibi). Uydurma künye yazılmaz.
 - **Türkiye'ye özgü bağlam** korunur: e-Devlet, e-imza, KVKK, Pardus gibi konular dersin ayırt edici yanıdır.
 - **Ölçü birimleri metrik (SI).** Metin içinde uzunluk ölçüleri cm, mm, metre ile verilir; inç kullanılmaz.
+- **Sembol yerine söz.** Tema fontu Yunan harflerini, `≠`, `✔`/`✘`, alt indis `₂` ve CJK karakterlerini
+  **içermiyor**: LaTeX uyarmıyor, PDF boş kutu basıyor (ölçüldü, 26.10.2026). Sembol gereken yerde sözü
+  yazılır — "pi sayısı" (π değil), "eşit değildir" (≠ değil), "uygun / uygun değil" (✔ ✘ yerine),
+  `SpO2` (₂ değil). `→ × ÷ ²` ve Türkçe harfler sorunsuz basılır. Denetimi §11 kontrol 14 yapar.
 
 ---
 
@@ -661,6 +665,16 @@ for q in hafta-*/*.qmd *.qmd; do
 done
 ```
 
+```bash
+# 14. Eksik glif taraması — basılmayan karakter SESSİZ kusurdur.
+#     Tema fontu π ve diğer Yunan harflerini, ≠, ✔/✘, alt indis ₂, CJK karakterlerini içermiyor;
+#     xelatex uyarmıyor, PDF boş kutu basıyor. pdftotext o kutuları U+FFFD olarak döndürür.
+#     Çıktı boş olmalı; çıkıyorsa sembol §9'un "sembol yerine söz" kuralıyla değiştirilir.
+for f in hafta-*/*.pdf; do
+  pdftotext "$f" - | grep -q $'\ufffd' && echo "EKSIK GLIF: $f"
+done
+```
+
 Bu otomatik kontrollere ek olarak, "yayına hazırlık" denetiminde **içerik düzeyinde dört kontrol**
 daha yapılır (mekanik kontrollerin yakalamadığı kalite sorunları bunlarda çıkar):
 
@@ -686,6 +700,20 @@ karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzelt
 notları **ENF lacivertinde kalıyor** (kullanıcı kararı, 30.09.2026).
 
 Kapatılan başlıklar ve kararları:
+
+- **8. haftaya ekran görüntüleri eklendi (26.10.2026):** "LibreOffice Calc penceresi" sunumda 5. slaytta
+  (sağ sütun, 4,6 × 5 cm) ve derste Şekil 1; kullanıcının kendi yakalayıp etiketlediği
+  "Google Sheets: hücre, satır, sütun, aralık, sayfa" görünümü sunumda yeni **6. slaytta** (%82 genişlik)
+  ve derste Şekil 2 (`gorseller/ekran-*.png`, ASCII ad kuralına göre taşındı). Slayt sayısı 39'da kaldı:
+  "Pasta Grafik Uyarısı" ayrı slayttan çıkarılıp "Hangi Veri İçin Hangi Grafik" slaydına uyarı kutusu olarak
+  taşındı — derste de uyarı ayrı başlık değil o bölümün paragrafıydı, böylece iki belgenin yapısı yeniden
+  örtüştü (§6 sıra kuralı). **İki bilinçli sapma (kullanıcı kararı, 26.10.2026):** (1) Sheets görseli
+  **olduğu gibi** bırakıldı; üstünde tarayıcı sekme/adres çubuğu (`docs.google.com/spreadsheets/d/…`) ve
+  sağ üstte Google profil fotoğrafı var — §8'in "tanınabilir insan içeren kare kullanılmaz" kuralı yalnız bu
+  görsel için esnetilmiştir, sonraki oturumlarda "kusur" sayılıp kırpılmasın. (2) Not bu iki görselle
+  **13 sayfa** oldu; §2'nin 8–12 hedefi bu hafta için aşıldı (görsel + altyazı ~5,5 cm; hedef genel olarak
+  değişmedi). Kaynağı kaybolmuş iki grafik-türü şemasının betiği de yeniden yazıldı:
+  `diyagram_betikleri/diagram-grafik-turleri-1.py` ve `-2.py` (`--kontrol` bayrağı var; PNG'ler 1181 × 354 @200 dpi).
 
 - **Doğru cevap dağılımı dengelendi (15.10.2026):** 14 haftanın tamamı tarandı; 04, 05, 06 ve 09
   dışındaki 10 hafta (01, 02, 03, 07, 08, 10, 11, 12, 13, 14) dengesizdi (ör. 12 ve 14'te B×5; 01'de

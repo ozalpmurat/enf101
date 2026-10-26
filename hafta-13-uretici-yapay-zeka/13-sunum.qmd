@@ -30,7 +30,7 @@ Yeni içerik üreten modellerdir: **metin, görsel, ses, video, kod**.
 | Video | Kısa video |
 | Kod | Program kodu |
 
-## "Üretir" ≠ "Doğrudur"
+## "Üretir" Demek, "Doğrudur" Demek Değildir
 
 Akıcı ve düzgün bir metin, **doğru** olduğu anlamına gelmez.
 
@@ -97,11 +97,11 @@ Bunları **doğrulamadan kullanmayın.**
 
 | Kullanım | Değerlendirme |
 |:---|:---|
-| Konuyu anlamak için sormak | ✔ Uygun |
-| Farklı açıklama istemek | ✔ Uygun |
-| Kendi metnini düzeltmek | ✔ Uygun |
-| Ödevi baştan sona yazdırmak | ✘ Uygun değil |
-| Üretileni kendi çalışmanız gibi sunmak | ✘ **İntihal** |
+| Konuyu anlamak için sormak | Uygun |
+| Farklı açıklama istemek | Uygun |
+| Kendi metnini düzeltmek | Uygun |
+| Ödevi baştan sona yazdırmak | Uygun değil |
+| Üretileni kendi çalışmanız gibi sunmak | **İntihal** |
 
 ## En Önemli Uyarı
 

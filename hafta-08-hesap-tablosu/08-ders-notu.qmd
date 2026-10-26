@@ -35,6 +35,8 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 Hesap tablosu, verinin satır ve sütunların kesiştiği hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** bir yazılımdır. Asıl gücü şurada: bir hücreye yazdığınız formül, başka hücrelerdeki değerleri girdi olarak kullanır; girdi değiştiğinde sonuç kendiliğinden güncellenir.
 
+![LibreOffice Calc penceresi: üstte sütun harfleri, solda satır numaraları](gorseller/ekran-libreoffice-calc.png){width=32%}
+
 Hesap tablosu yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri tabanı** ve **görselleştirme** aracıdır. Günlük ve mesleki hayatta en sık karşılaşacağınız kullanım alanları:
 
 - Bütçe ve harcama takibi
@@ -46,6 +48,8 @@ Hesap tablosu yalnızca hesaplama aracı değildir; aynı zamanda küçük bir *
 Hesap tablosu uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın.
 
 # Temel Kavramlar
+
+![Google Sheets'te temel kavramların ekrandaki karşılığı: hücre (A10), satır (10), sütun (C), aralık (C5:E7) ve çalışma sayfası (Bahar dönemi)](gorseller/ekran-google-sheets-hucre-aralik.png){width=52%}
 
 | Kavram | Ne demek | Örnek |
 |:---|:---|:---|
@@ -65,10 +69,12 @@ Bir hücreye yazdığınız her şey aynı türde değildir ve program bu türü
 | Tür | Örnek | Not |
 |:---|:---|:---|
 | Metin | "Ankara" | Genellikle sola yaslanır |
-| Sayı | 1250, 3.75 | Genellikle sağa yaslanır |
+| Sayı | 1250; 3,14 | Genellikle sağa yaslanır |
 | Tarih / saat | 12.03.2026 | Sayı gibi işlem görür, üzerine hesap yapılabilir |
 | Mantıksal | DOĞRU / YANLIŞ | Koşul sonuçlarında kullanılır |
 | Formül | `=A1+A2` | Eşittir işaretiyle başlar |
+
+Türkçede ondalık ayraç **virgüldür**: pi sayısını tabloya çoğunlukla `3,14` olarak yazarız. Bu ayraç bilgisayarın **bölge ayarından** gelir; İngilizce hazırlanmış belgelerde ve İngilizce bölgeli programlarda nokta kullanılır. Bölgesi Türkçe bir tabloda `3.14` yazarsanız program onu sayı değil **metin** sayar — hücrenin sola yaslanmasından bunu hemen fark edersiniz.
 
 ::: {.callout-tip}
 ## Hizalama bir ipucudur
@@ -172,7 +178,7 @@ Tek bir yüksek değer, ortalamayı sınıfın neredeyse tamamının aldığı n
 ::: {.callout-tip}
 ## Pratik kural
 
-Veride uç değer olabileceğinden kuşkulanıyorsanız (gelir, harcama, görüntülenme, hasılat) ortalamayı tek başına kullanmayın;ortancayı da hesaplayıp ikisini karşılaştırın. Aralarındaki büyük fark, veride çarpık bir dağılım olduğunun işaretidir.
+Veride uç değer olabileceğinden kuşkulanıyorsanız (gelir, harcama, görüntülenme, hasılat) ortalamayı tek başına kullanmayın; ortancayı da hesaplayıp ikisini karşılaştırın. Aralarındaki büyük fark, veride çarpık bir dağılım olduğunun işaretidir.
 :::
 
 # Biçimlendirme
@@ -216,7 +222,7 @@ Grafik, sayıları görsel biçime çevirir. Doğru grafik türü, verinin ne s�
 | Bütün içindeki payı göstermek | Pasta veya yığılmış çubuk |
 | Dağılımı göstermek | Histogram, kutu grafiği |
 | İki değişken arasındaki ilişki | Dağılım (saçılım) |
-| Coğrafi dağılım | Harita (alan ≠ değer) |
+| Coğrafi dağılım | Harita (renk değeri gösterir; alanın büyüklüğü değer demek değildir) |
 
 Nasıl bir grafik oluşturulur: önce **veriyi seçin** (başlık satırıyla birlikte), sonra **grafik türünü** seçin. Ardından eksik bırakılmaması gereken üç şey var — **grafik başlığı**, **eksen etiketleri ve birimler**, **veri kaynağı notu**. Bu üçünü eklemek, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" hâle getirir.
 
@@ -338,5 +344,6 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
 - **Gapminder** — veri okuryazarlığı ve yanıltıcı grafikler üzerine ücretsiz eğitim materyalleri. (gapminder.org)
 - **Our World in Data** — açık erişimli veri görselleştirme örnekleri. (ourworldindata.org)
+- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc ve Google Sheets uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri (hücre, satır, sütun, aralık, sayfa) tarafımızca eklenmiştir. Bu haftanın diyagramları (grafik türleri, eksen karşılaştırması) kendi çizimimizdir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

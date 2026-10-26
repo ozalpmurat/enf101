@@ -142,7 +142,7 @@ Giyilebilir cihazlar: akıllı saat, bileklik ve akıllı kulaklık.
 |:---|:---|
 | Hareket (ivmeölçer) | Adım sayısı, aktivite, uyku |
 | Kalp atışı | Nabız, dinlenme nabzı, stres göstergesi |
-| Oksijen (SpO₂) | Kan oksijen düzeyi |
+| Oksijen (SpO2) | Kan oksijen düzeyi |
 | Konum (GPS) | Rota, hız, gidilen yerler |
 | Mikrofon | Ses, ortam bilgisi |
 | Cilt sıcaklığı | Sıcaklık değişimleri |

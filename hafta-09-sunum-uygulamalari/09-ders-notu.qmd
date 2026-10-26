@@ -247,7 +247,7 @@ Bu uygulama notla değerlendirilmez. Amacı, sunum hazırlamanın her adımını
 **Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki iki fotoğrafın künyesi:
 
 - Projeksiyon cihazı — *InFocus IN34*, Dave Pape, kamu malı.
-- Yaka mikrofonu — *GA100 Mic*, 多多123, CC BY 4.0.
+- Yaka mikrofonu — *GA100 Mic*, Wikimedia Commons kullanıcısı (kullanıcı adı CJK harfleriyle yazılmış; *File:GA100 Mic.png* sayfasında görülebilir), CC BY 4.0.
 
 Yaka mikrofonu fotoğrafı için kaynak gösterme zorunludur; projeksiyon karesi kamu malı olduğu için zorunlu değildir.
 
