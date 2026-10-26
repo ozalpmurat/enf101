@@ -87,9 +87,9 @@ Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır
 Hesap tablolarını başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül — bazı ülkelerde ve bazı programlarda noktalı virgül — konur.
 
 ```text
-ad,soyad,not
-Ayşe,Yılmaz,85
-Mehmet,Kaya,72
+Ad,Yaş,Not,Şehir
+Ahmet,21,85,Bilecik
+Ayşe,22,92,Eskişehir
 ```
 
 CSV'nin en önemli özelliği şudur: **değerleri taşır, biçimlendirmeyi taşımaz.** Renkler, kalın yazı, birleştirilmiş hücreler, formüller ve grafikler CSV'ye geçmez; yalnızca ham veri aktarılır. Bir dosyayı CSV olarak kaydedip yeniden açtığınızda biçimlendirmenizin kaybolmasının nedeni budur.

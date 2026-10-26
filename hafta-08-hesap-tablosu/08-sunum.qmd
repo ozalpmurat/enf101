@@ -77,6 +77,9 @@ Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılma
 
 ## CSV: Veriyi Taşıyan Sade Biçim
 
+::: {.columns}
+::: {.column width="58%"}
+
 Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgülle ayrılmış değerler).
 
 - Aslında **düz metindir**: her satır bir kayıt, alanlar birer sütun
@@ -84,6 +87,19 @@ Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgüll
 - Neredeyse her program CSV okuyabilir; bu yüzden ortak biçimdir
 
 Sütunlar birleşmiş görünüyorsa sorun genellikle **ayraç uyumsuzluğudur** (virgül / noktalı virgül).
+
+:::
+
+::: {.column width="40%"}
+
+```text
+Ad,Yaş,Not,Şehir
+Ahmet,21,85,Bilecik
+Ayşe,22,92,Eskişehir
+```
+
+:::
+:::
 
 ## Formüller Nasıl Yazılır
 
