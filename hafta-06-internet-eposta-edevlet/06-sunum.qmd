@@ -273,7 +273,6 @@ Notla değerlendirilmez.
 - **Etkili arama**: netleştir, anahtar kelime, sınırla, doğrula
 - **Dezenformasyon**: içeriği kaynağından okumadan paylaşmayın
 - **E-posta**: konu, hitap, kısa gövde, kapanış, imza
-- **BCC**: adres gizliliği için
 - **Oltalama**: acele ettirir; başka kanaldan doğrula
 - **e-Devlet şifresi imza değildir**; e-imza hukuki imzadır
 

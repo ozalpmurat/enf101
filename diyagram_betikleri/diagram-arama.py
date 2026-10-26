@@ -1,7 +1,11 @@
-# 6. hafta: etkili arama — dört adım.
+# 6. hafta: etkili arama — dört adım ve geri dönüş.
 # Kullanım: python3 diyagram_betikleri/diagram-arama.py [--kontrol]
 #           --kontrol : yazıların kutulara sığıp sığmadığını ölçer, PNG üretmez
 # Çıktı:    hafta-06-internet-eposta-edevlet/gorseller/diagram-arama.png
+#
+# Adımlar tek turda bitmez: sonuç yeterli değilse başa dönülür. Şemada bu,
+# kartların altından 4. adımdan 1. adıma giden geri okuyla gösterilir.
+# Okun etiketi yoktur; döngüyü ders notundaki metin ve sunudaki alt cümle anlatır.
 #
 # Şemanın içine başlık yazılmaz (AGENTS.md §8): başlık ders notunda şekil
 # altyazısı, sunuda slayt başlığıdır.
@@ -13,7 +17,8 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch
+import matplotlib.path as mpath
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / "hafta-06-internet-eposta-edevlet" / "gorseller"
@@ -28,7 +33,8 @@ plt.rcParams["font.family"] = "DejaVu Sans"
 
 # eksen birimi cinsinden kart ölçüleri
 X0, KART_W, ARALIK = 0.34, 2.12, 0.28
-KART_Y, KART_H = 0.35, 1.90
+KART_Y, KART_H = 0.95, 1.90
+DÖNÜŞ_Y = 0.55       # geri okun kartların altından geçtiği yükseklik
 DIŞ_PAY = 0.12       # şeridin sağ/sol kenarında kalan pay
 İÇ_PAY = 0.16        # kutu içinde iki yandan bırakılacak pay
 
@@ -81,14 +87,14 @@ def kutu(ax, x, y, w, h, fc):
                  linewidth=1.6, edgecolor=LAC, facecolor=fc, zorder=2))
 
 
-fig, ax = plt.subplots(figsize=(8.0, 2.5), dpi=200)
+fig, ax = plt.subplots(figsize=(8.0, 3.0), dpi=200)
 SAG = kart_x(len(ADIMLAR) - 1) + KART_W      # son kartın sağ kenarı
 XMAX = SAG + X0                              # simetri: sağa da X0 kadar pay
 ax.set_xlim(0, XMAX)
-ax.set_ylim(0, 2.6)
+ax.set_ylim(0, 3.12)
 ax.axis("off")
 
-ax.add_patch(FancyBboxPatch((DIŞ_PAY, 0.15), XMAX - 2 * DIŞ_PAY, 2.3,
+ax.add_patch(FancyBboxPatch((DIŞ_PAY, 0.15), XMAX - 2 * DIŞ_PAY, 2.85,
              boxstyle="round,pad=0.02,rounding_size=0.14",
              linewidth=0, facecolor=ZEMIN, zorder=0))
 
@@ -104,6 +110,16 @@ for i, (no, baslik, alt) in enumerate(ADIMLAR):
     if i < len(ADIMLAR) - 1:
         ax.text(x + KART_W + ARALIK / 2, KART_Y + KART_H / 2, "›",
                 ha="center", va="center", fontsize=17, color=MAVI, zorder=3)
+
+# geri dönüş: 4. adımın altından çıkıp 1. adımın altına girer (döngü)
+x_sag = kart_x(len(ADIMLAR) - 1) + KART_W / 2
+x_sol = kart_x(0) + KART_W / 2
+geri = mpath.Path(
+    [(x_sag, KART_Y), (x_sag, DÖNÜŞ_Y), (x_sol, DÖNÜŞ_Y), (x_sol, KART_Y)],
+    [mpath.Path.MOVETO, mpath.Path.LINETO, mpath.Path.LINETO, mpath.Path.LINETO],
+)
+ax.add_patch(FancyArrowPatch(path=geri, arrowstyle="-|>", mutation_scale=13,
+                             linewidth=1.8, color=MAVI, zorder=3))
 
 fig.tight_layout(pad=0.35)
 
