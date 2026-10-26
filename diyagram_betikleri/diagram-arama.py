@@ -4,8 +4,8 @@
 # Çıktı:    hafta-06-internet-eposta-edevlet/gorseller/diagram-arama.png
 #
 # Adımlar tek turda bitmez: sonuç yeterli değilse başa dönülür. Şemada bu,
-# kartların altından 4. adımdan 1. adıma giden geri okuyla gösterilir.
-# Okun etiketi yoktur; döngüyü ders notundaki metin ve sunudaki alt cümle anlatır.
+# kartların altından 4. adımdan 1. adıma giden geri okuyla ve okun üzerindeki
+# "bulamadıysan bir daha dene" notuyla gösterilir.
 #
 # Şemanın içine başlık yazılmaz (AGENTS.md §8): başlık ders notunda şekil
 # altyazısı, sunuda slayt başlığıdır.
@@ -32,11 +32,18 @@ GRI = "#595959"     # alt yazı
 plt.rcParams["font.family"] = "DejaVu Sans"
 
 # eksen birimi cinsinden kart ölçüleri
-X0, KART_W, ARALIK = 0.34, 2.12, 0.28
+X0, KART_W, ARALIK = 0.34, 2.12, 0.42
 KART_Y, KART_H = 0.95, 1.90
 DÖNÜŞ_Y = 0.55       # geri okun kartların altından geçtiği yükseklik
 DIŞ_PAY = 0.12       # şeridin sağ/sol kenarında kalan pay
 İÇ_PAY = 0.16        # kutu içinde iki yandan bırakılacak pay
+
+# yazı boyutları: görsel slaytta %92 genişlikte basıldığı için kart yazıları
+# küçük kalmıştı; okunabilirlik için bir kademe büyütüldü.
+YAZI_NO = 12.0
+YAZI_BASLIK = 13.0
+YAZI_ALT = 11.5
+YAZI_OK = 11.5       # geri okun üzerindeki not
 
 ADIMLAR = [
     ("1", "SORUYU\nNETLEŞTİR", "ne arıyorum?"),
@@ -66,9 +73,9 @@ def kontrol(fig, ax):
     sorun = 0
     for i, (no, baslik, alt) in enumerate(ADIMLAR):
         for etiket, metin, fs, bold in [
-            ("no", no, 10.5, False),
-            ("başlık", baslik, 10.5, True),
-            ("alt", alt, 9.5, False),
+            ("no", no, YAZI_NO, False),
+            ("başlık", baslik, YAZI_BASLIK, True),
+            ("alt", alt, YAZI_ALT, False),
         ]:
             gen, _ = metin_olc(fig, ax, metin, fs, bold)
             # sola yaslı rakamda soldaki yerleşim boşluğu da paydan düşülür
@@ -77,6 +84,12 @@ def kontrol(fig, ax):
                 sat = max(metin.split("\n"), key=len)
                 print(f"TAŞIYOR  kart {i + 1} {etiket}: {gen:.2f} > {pay:.2f}  ({sat})")
                 sorun += 1
+    # geri ok notu iki dikey kolun arasına sığmalı
+    gen, _ = metin_olc(fig, ax, "bulamadıysan bir daha dene", YAZI_OK, False)
+    pay = kart_x(len(ADIMLAR) - 1) - kart_x(0)
+    if gen > pay:
+        print(f"TAŞIYOR  geri ok notu: {gen:.2f} > {pay:.2f}")
+        sorun += 1
     print("kontrol: " + ("TAŞMA VAR" if sorun else "temiz"))
     return sorun
 
@@ -102,14 +115,19 @@ for i, (no, baslik, alt) in enumerate(ADIMLAR):
     x = kart_x(i)
     kutu(ax, x, KART_Y, KART_W, KART_H, ACIK if i % 2 else "#FFFFFF")
     ax.text(x + 0.14, KART_Y + 1.58, no, ha="left", va="center",
-            fontsize=10.5, color=GRI, zorder=3)
+            fontsize=YAZI_NO, color=GRI, zorder=3)
     ax.text(x + KART_W / 2, KART_Y + 1.06, baslik, ha="center", va="center",
-            fontsize=10.5, color=LAC, fontweight="bold", zorder=3)
+            fontsize=YAZI_BASLIK, color=LAC, fontweight="bold", zorder=3)
     ax.text(x + KART_W / 2, KART_Y + 0.38, alt, ha="center", va="center",
-            fontsize=9.5, color=GRI, zorder=3)
+            fontsize=YAZI_ALT, color=GRI, zorder=3)
     if i < len(ADIMLAR) - 1:
-        ax.text(x + KART_W + ARALIK / 2, KART_Y + KART_H / 2, "›",
-                ha="center", va="center", fontsize=17, color=MAVI, zorder=3)
+        # kartlar arası ok: küçük "›" işareti yerine çizilmiş ok
+        ax.add_patch(FancyArrowPatch(
+            (x + KART_W + 0.06, KART_Y + KART_H / 2),
+            (x + KART_W + ARALIK - 0.03, KART_Y + KART_H / 2),
+            arrowstyle="-|>,head_length=0.8,head_width=0.4",
+            mutation_scale=13, linewidth=2.0, color=MAVI,
+            shrinkA=0, shrinkB=0, zorder=3))
 
 # geri dönüş: 4. adımın altından çıkıp 1. adımın altına girer (döngü)
 x_sag = kart_x(len(ADIMLAR) - 1) + KART_W / 2
@@ -118,8 +136,13 @@ geri = mpath.Path(
     [(x_sag, KART_Y), (x_sag, DÖNÜŞ_Y), (x_sol, DÖNÜŞ_Y), (x_sol, KART_Y)],
     [mpath.Path.MOVETO, mpath.Path.LINETO, mpath.Path.LINETO, mpath.Path.LINETO],
 )
-ax.add_patch(FancyArrowPatch(path=geri, arrowstyle="-|>", mutation_scale=13,
-                             linewidth=1.8, color=MAVI, zorder=3))
+ax.add_patch(FancyArrowPatch(path=geri, arrowstyle="-|>", mutation_scale=15,
+                             linewidth=2.0, color=MAVI, zorder=3))
+
+# not, çizginin üzerine zemin renginde bir aralık açılarak yazılır
+ax.text((x_sol + x_sag) / 2, DÖNÜŞ_Y, "bulamadıysan bir daha dene",
+        ha="center", va="center", fontsize=YAZI_OK, color=GRI, zorder=4,
+        bbox=dict(boxstyle="round,pad=0.28", facecolor=ZEMIN, edgecolor="none"))
 
 fig.tight_layout(pad=0.35)
 
