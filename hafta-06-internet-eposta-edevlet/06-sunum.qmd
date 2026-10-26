@@ -38,7 +38,7 @@ format: beamer
 
 ## Dört Adım
 
-![](gorseller/diagram-arama.png){width=78%}
+![](gorseller/diagram-arama.png){width=92%}
 
 Sonuç işinize yaramadıysa başa dönün: çoğu zaman soru yanlış kurulmuştur.
 
