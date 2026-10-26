@@ -106,7 +106,7 @@ Bir CSV dosyasını açtığınızda bütün veri tek sütuna yığılmışsa, s
 
 ## Formül nasıl yazılır
 
-Formüller **eşittir işaretiyle başlar**. Aksi hâlde program yazdığınızı metin olarak kabul eder.
+Formüller **eşittir işaretiyle başlar**; aksi hâlde yazılanlar metin olarak kabul edilir.
 
 | Yazım | Anlamı |
 |:---|:---|

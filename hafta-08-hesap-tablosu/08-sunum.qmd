@@ -103,7 +103,7 @@ Ayşe,22,92,Eskişehir
 
 ## Formüller Nasıl Yazılır
 
-Formüller **eşittir işaretiyle** başlar; aksi hâlde program yazdığınızı metin sayar.
+Formüller **eşittir işaretiyle** başlar; aksi hâlde yazılanlar metin olarak kabul edilir. Örneğin `=` olmadan yazılan `TOPLA(B2:B50)` formül değil, düz metindir.
 
 | Yazım | Anlamı |
 |:---|:---|
@@ -113,11 +113,7 @@ Formüller **eşittir işaretiyle** başlar; aksi hâlde program yazdığınız�
 | `=A1/B1` | Böler |
 | `=(A1+A2)/2` | Parantez önce işlenir |
 
-Formüle sayı yazmak yerine **hücre adresi** yazın. Yoksa girdi değiştiğinde sonuç güncellenmez.
-
-::: {.callout-warning}
-**`=` olmadan yazılan `TOPLA(B2:B50)` formül değil, düz metindir.** Program onu hesaplamaz; hücrede yazdığınız gibi görünür.
-:::
+Formülde kullanılan hücre adreslerindeki (A2, B7 gibi) değerler değişince formül sonucu da güncellenir.
 
 ## Göreli ve Mutlak Başvuru
 
