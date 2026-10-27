@@ -25,11 +25,11 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 - Hesap tablosunun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
 - Formül yazar; göreli ve mutlak başvuru arasındaki farkı açıklar.
-- Temel fonksiyonları (topla, ortalama, ortanca, mak, min, eğer, eğersay) amaca uygun kullanır.
+- Temel fonksiyonları (topla, ortalama, mak, min, eğer, eğersay) amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
 - Veri türüne uygun grafiği seçer ve grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
-- Yüzde değişim, yüzde puan ve ortalama–ortanca ayrımlarını doğru kullanır.
+- Yüzde değişim ile yüzde puan ayrımını doğru kullanır.
 
 # Hesap Tablosu Nedir?
 
@@ -156,25 +156,31 @@ Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, g
 
 Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
 
-| Fonksiyon | İngilizce | Ne yapar | Örnek |
-|:---|:---|:---|:---|
-| `TOPLA` | `SUM` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
-| `ORTALAMA` | `AVERAGE` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
-| `ORTANCA` | `MEDIAN` | Sıralı verinin ortasındaki değeri verir (medyan) | `=ORTANCA(B2:B50)` |
-| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
-| `EĞERSAY` | `COUNTIF` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
-| `EĞER` | `IF` | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
-| `SAY` | `COUNT` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
-
-: Sık kullanılan fonksiyonlar ve İngilizce adları {#tbl-fonksiyonlar tbl-colwidths="[14,13,38,35]"}
++---------------+---------------+---------------------------------------+------------------------------------+
+| Fonksiyon     | İngilizce     | Ne yapar                              | Örnek                              |
++===============+===============+=======================================+====================================+
+| `TOPLA`       | `SUM`         | Aralıktaki sayıları toplar            | `=TOPLA(B2:B50)`                   |
++---------------+---------------+---------------------------------------+------------------------------------+
+| `ORTALAMA`    | `AVERAGE`     | Aritmetik ortalamayı verir            | `=ORTALAMA(B2:B50)`                |
++---------------+---------------+---------------------------------------+------------------------------------+
+| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değeri verir     | `=MAK(B2:B50)`                     |
++---------------+---------------+---------------------------------------+------------------------------------+
+| `EĞERSAY`     | `COUNTIF`     | Koşulu sağlayan hücreleri sayar       | `=EĞERSAY(C2:C50;">=70")`          |
++---------------+---------------+---------------------------------------+------------------------------------+
+| `EĞER`        | `IF`          | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")`    |
++---------------+---------------+---------------------------------------+------------------------------------+
+| `SAY`         | `COUNT`       | Sayı içeren hücreleri sayar           | `=SAY(B2:B50)`                     |
++---------------+---------------+---------------------------------------+------------------------------------+
 
 ::: {.callout-note}
-## Aralık yazımı
+## Aralık mı, tek tek değer mi?
 
-Fonksiyonun içine yazılan `B2:B50` bir aralıktır; birden çok aralık kullanmak için aralarına **noktalı virgül** konur: `=TOPLA(B2:B10;C2:C10)`. Metin ve sayı bir arada olduğunda `SAY` yalnızca sayıları sayar — `EĞERSAY` ise koşula bağlı sayım yapar. Bu ikisi sık karıştırılır.
+**İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılır: `=TOPLA(B2:B10;C2:C10)`.
 :::
 
-`ORTALAMA` bütün değerleri toplayıp sayıya böler; `ORTANCA` ise veriyi sıraya dizip ortadaki değeri alır. Aradaki fark, **uç değerler** söz konusu olduğunda ortaya çıkar: bir sınıfta 9 öğrenci 40, 1 öğrenci 100 puan aldığında ortalama **46**, ortanca **40** olur. Tek bir yüksek değer ortalamayı yukarı çeker, ortanca etkilenmez. Gelir, harcama gibi uç değer barındırabilen verilerde bu yüzden ortancayı da hesaplayıp ikisini karşılaştırın; aralarındaki büyük fark dağılımın çarpık olduğunu gösterir.
+Metin ve sayı bir arada olduğunda `SAY` yalnızca sayıları sayar — `EĞERSAY` ise koşula bağlı sayım yapar. Bu ikisi sık karıştırılır.
+
+Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
 # Biçimlendirme
 
@@ -265,11 +271,11 @@ Bir grafiğe her baktığınızda şu dokuz soruyu hızlıca gözden geçirmek �
 1. Eksen sıfırdan mı başlıyor?
 2. Birimler ve ölçek yazılı mı?
 3. Kaynak ve tarih var mı?
-4. Kaç veri noktası var; kayıp veri gizlenmiş mi?
-5. Grafik başlığı verinin söylediğiyle uyumlu mu?
-6. Karşılaştırma grubu adil mi?
-7. Renkler bir şey mi ima ediyor?
-8. Tam veri kümesine erişilebiliyor mu?
+3. Kaç veri noktası var; kayıp veri gizlenmiş mi?
+4. Grafik başlığı verinin söylediğiyle uyumlu mu?
+5. Karşılaştırma grubu adil mi?
+6. Renkler bir şey mi ima ediyor?
+7. Tam veri kümesine erişilebiliyor mu?
 9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
 
 # Uygulama: Aynı Veri, İki Grafik
@@ -315,7 +321,6 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 - Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır; girdi değişince sonuç kendiliğinden güncellenir.
 - Formüller `=` ile başlar; **göreli** başvuru kopyalanınca kayar, **mutlak** başvuru (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli yüzde değişim** farklı şeylerdir; karıştırıldığında değişim olduğundan büyük görünür.
-- **Ortalama** uç değerlerden etkilenir, **ortanca** etkilenmez; ikisini karşılaştırmak verinin dağılımını gösterir.
 - **Sıralama** veriyi yeniden düzenler, **filtreleme** yalnızca gösterir.
 - Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
 - Grafiğe her bakışta sorulacak dokuz soruluk bir kontrol listesi vardır.
@@ -324,12 +329,11 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 
 1. Bir formülü bir satır aşağı kopyaladığınızda `A1` ve `$A$1` başvuruları nasıl davranır?
 2. Bir oranın %40'tan %50'ye çıkması yüzde puan ve göreli değişim olarak nasıl ifade edilir?
-3. Aynı veri kümesinde `ORTALAMA` ile `ORTANCA` neden farklı çıkar? Hangi durumda hangisini tercih edersiniz?
-4. `SAY` ile `EĞERSAY` arasındaki fark nedir?
-5. Sıralama ile filtreleme arasındaki temel fark nedir; hangisi veriyi kalıcı olarak değiştirir?
-6. Zaman içindeki değişimi göstermek için hangi grafik türü uygundur; neden?
-7. Dikey ekseni 45'ten başlayan bir sütun grafiği okuyucuyu nasıl yanıltır?
-8. Elinizde bir grafik olduğunda ilk bakacağınız üç şey nedir?
+3. `SAY` ile `EĞERSAY` arasındaki fark nedir?
+4. Sıralama ile filtreleme arasındaki temel fark nedir; hangisi veriyi kalıcı olarak değiştirir?
+5. Zaman içindeki değişimi göstermek için hangi grafik türü uygundur; neden?
+6. Dikey ekseni 45'ten başlayan bir sütun grafiği okuyucuyu nasıl yanıltır?
+7. Elinizde bir grafik olduğunda ilk bakacağınız üç şey nedir?
 
 # Kaynaklar
 
