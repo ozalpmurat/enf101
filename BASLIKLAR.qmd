@@ -215,7 +215,7 @@ format:
 - Formüller ve Hücre Başvuruları
   - Formül nasıl yazılır
   - Göreli ve mutlak başvuru
-  - Yüzde hesabı: yüzde değişim ve yüzde puan
+  - Yüzde hesabı: yüzde puan ve göreli değişim
 - Temel Fonksiyonlar
   - Ortalama ve ortanca: hangisi ne zaman
 - Biçimlendirme

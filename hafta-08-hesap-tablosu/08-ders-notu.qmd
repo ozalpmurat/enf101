@@ -129,26 +129,22 @@ Bir formülü başka bir hücreye kopyaladığınızda başvurular nasıl davran
 
 Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Örneğin her ürünün toplam içindeki payını hesaplarken toplam hücresi mutlak yazılmalıdır: `=B2/$B$10`.
 
-## Yüzde hesabı: yüzde değişim ve yüzde puan
+![Microsoft Excel'de oran sütunu: her satırda pay bölü mutlak toplam (`=B3/$B$10`), altta toplam hücresi (`=TOPLAM(B3:B7)`)](gorseller/ekran-excel-oran.png){width=30%}
 
-Hesap tablosunda en sık yapılan hesaplardan biri iki değer arasındaki değişimdir. Burada bir tuzak var.
+Görseldeki formül `=B3/$B$10` bir satır aşağı kopyalandığında `=B4/$B$10` olur: pay göreli olduğu için kayar, toplam mutlak olduğu için sabit kalır. `$` işaretleri kaldırılsaydı ikinci satırda toplam hücresi `B11`'e kayar ve oran yanlış çıkardı.
 
-- **Yüzde puan** farkı: iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
-- **Göreli değişim**: farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
+## Yüzde hesabı: yüzde puan ve göreli değişim
 
-| Durum | Yüzde puan farkı | Göreli değişim |
-|:---|:---|:---|
-| %20 → %25 | 5 puan | %25 artış |
-| %2 → %3 | 1 puan | %50 artış |
-| %50 → %55 | 5 puan | %10 artış |
+İki değer arasındaki değişimi anlatmanın iki yolu vardır ve karıştırılmaları yaygındır.
 
-Tabloya dikkat edin: aynı "5 puan" artış, tabana göre %25, %50 ya da %10 olarak ifade edilebiliyor. Bu yüzden bir haberde "yüzde 25 arttı" ifadesini gördüğünüzde **neyin yüzde 25'i** olduğunu sormak gerekir.
+- **Yüzde puan farkı:** iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
+- **Göreli değişim:** farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
 
-::: {.callout-warning}
-## Küçük taban etkisi
+![Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme](gorseller/diagram-yuzde-puan-goreli.png){width=52%}
 
-Bir olayın görülme sayısı 2'den 6'ya çıktığında "vakalar %200 arttı" demek matematiksel olarak doğrudur. Ama 4 vakalık bir artış bir eğilim göstermez. Oran haberlerinde ilk sorulacak soru **taban sayı kaç** olmalıdır.
-:::
+Aynı 5 puan; taban %20 iken %25, taban %50 iken %10 demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
+
+Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, göreli değişim için `=(B2-A2)/A2`. Birincisi **sayı**, ikincisi **yüzde** biçiminde gösterilir; aynı tabloya iki farklı biçim vermek kavramların karışmasını önler.
 
 # Temel Fonksiyonlar
 
@@ -346,6 +342,6 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
 - **Gapminder** — veri okuryazarlığı ve yanıltıcı grafikler üzerine ücretsiz eğitim materyalleri. (gapminder.org)
 - **Our World in Data** — açık erişimli veri görselleştirme örnekleri. (ourworldindata.org)
-- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc ve Google Sheets uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri (hücre, satır, sütun, aralık, sayfa) tarafımızca eklenmiştir. Bu haftanın diyagramları (grafik türleri, eksen karşılaştırması) kendi çizimimizdir.
+- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri (hücre, satır, sütun, aralık, sayfa) tarafımızca eklenmiştir. Bu haftanın diyagramları (grafik türleri, eksen karşılaştırması) kendi çizimimizdir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

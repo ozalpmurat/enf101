@@ -117,42 +117,63 @@ Formülde kullanılan hücre adreslerindeki (A2, B7 gibi) değerler değişince 
 
 ## Göreli ve Mutlak Başvuru
 
-- **Göreli (`A1`):** Kopyalandığı yöne göre kayar. Bir satır aşağı → `A2`.
-- **Mutlak (`$A$1`):** Kopyalansa da sabit kalır. `$` sütunu veya satırı kilitler.
+::: {.columns}
+::: {.column width="56%"}
 
-Sabit bir değere göre oranlarken toplam hücresi mutlak yazılır: `=B2/$B$10`
+```{=latex}
+\begin{minipage}[c][6.4cm][c]{\linewidth}
+\begin{itemize}
+\setlength{\itemsep}{0.9em}
+\item \textbf{Göreli (\texttt{A1}):} Kopyalandığı yöne göre kayar. Bir satır aşağı → \texttt{A2}.
+\item \textbf{Mutlak (\texttt{\$A\$1}):} Kopyalansa da sabit kalır. \texttt{\$} sütunu veya satırı kilitler.
+\end{itemize}
 
-## Yüzde Değişim ve Yüzde Puan
+Sabit bir değere göre oranlarken toplam hücresi mutlak yazılır: \texttt{=B2/\$B\$10}
+\end{minipage}
+```
 
-| Durum | Yüzde puan farkı | Göreli değişim |
-|:---|:---|:---|
-| %20 → %25 | 5 puan | %25 artış |
-| %2 → %3 | 1 puan | %50 artış |
-| %50 → %55 | 5 puan | %10 artış |
+:::
 
-Aynı "5 puan" artış, tabana göre %25, %50 ya da %10 olarak ifade edilir. "Yüzde 25 arttı" denince **neyin yüzde 25'i** diye sorun.
+::: {.column width="42%"}
 
-## Küçük Taban Etkisi
+```{=latex}
+\begin{center}
+\includegraphics[width=5cm,height=4.8cm,keepaspectratio]{gorseller/ekran-excel-oran.png}\\[-0.5mm]
+{\scriptsize\emph{Microsoft Excel'de oran sütunu (=B3/\$B\$10) ve toplam (=TOPLAM(B3:B7))}}
+\end{center}
+```
 
-- Vaka sayısı 2'den 6'ya çıktı → "%200 arttı"
-- Matematiksel olarak doğru, anlatı olarak yanıltıcı.
-- **Küçük sayılarda oranlar hızla büyür.**
+:::
+:::
 
-Oran haberlerinde ilk soru: **taban sayı kaç?**
+## Yüzde Puan ve Göreli Değişim
 
-# Fonksiyonlar
+**Yüzde puan**, iki oran arasındaki doğrudan farktır; **göreli değişim** ise bu farkın tabana bölümüdür.
+
+```{=latex}
+\begin{center}
+\includegraphics[width=6.2cm,height=2.4cm,keepaspectratio]{gorseller/diagram-yuzde-puan-goreli.png}\hspace{0.6cm}%
+\includegraphics[width=6.2cm,height=2.4cm,keepaspectratio]{gorseller/ekran-yuzde-formulleri.png}
+\end{center}
+```
+
+Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçüldükçe, aynı puan farkının etkisi büyür.
+
+2 vakadan 6'ya çıkış "%200 arttı" demektir; ama arada yalnızca **4 vaka** var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez. Oran içeren bir haberde ilk soru şu olmalı: **neyin yüzde kaçı, tabanı kaç?**
+
+# Fonksiyonlar (İşlevler)
 
 ## Sık Kullanılan Fonksiyonlar
 
-| Fonksiyon | Ne yapar |
-|:---|:---|
-| `TOPLA` | Aralıktaki sayıları toplar |
-| `ORTALAMA` | Aritmetik ortalamayı verir |
-| `ORTANCA` | Sıradaki ortadaki değeri verir |
-| `MAK` / `MİN` | En büyük ve en küçük değer |
-| `EĞERSAY` | Koşulu sağlayanları sayar |
-| `EĞER` | Koşula göre iki sonuç döndürür |
-| `SAY` | Sayı içeren hücreleri sayar |
+| Fonksiyon | İngilizce | Ne yapar |
+|:---|:---|:---|
+| `TOPLA` | SUM | Aralıktaki sayıları toplar |
+| `ORTALAMA` | AVERAGE | Aritmetik ortalamayı verir |
+| `ORTANCA` | MEDIAN | Sıradaki ortadaki değeri verir |
+| `MAK` / `MİN` | MAX / MIN | En büyük ve en küçük değer |
+| `EĞERSAY` | COUNTIF | Koşulu sağlayanları sayar |
+| `EĞER` | IF | Koşula göre iki sonuç döndürür |
+| `SAY` | COUNT | Sayı içeren hücreleri sayar |
 
 ## Ortalama ve Ortanca
 
