@@ -150,17 +150,19 @@ Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, g
 
 Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
 
-| Fonksiyon | Ne yapar | Örnek |
-|:---|:---|:---|
-| `TOPLA` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
-| `ORTALAMA` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
-| `ORTANCA` | Sıralı verinin ortasındaki değeri verir (medyan) | `=ORTANCA(B2:B50)` |
-| `MAK` / `MİN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
-| `EĞERSAY` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
-| `EĞER` | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
-| `SAY` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
+| Fonksiyon | İngilizce | Ne yapar | Örnek |
+|:---|:---|:---|:---|
+| `TOPLA` | SUM | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
+| `ORTALAMA` | AVERAGE | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
+| `ORTANCA` | MEDIAN | Sıralı verinin ortasındaki değeri verir (medyan) | `=ORTANCA(B2:B50)` |
+| `MAK` / `MİN` | MAX / MIN | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
+| `EĞERSAY` | COUNTIF | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
+| `EĞER` | IF | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
+| `SAY` | COUNT | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
 
 Fonksiyonun içine yazılan `B2:B50` bir aralıktır; birden çok aralık kullanmak için aralarına noktalı virgül konur: `=TOPLA(B2:B10;C2:C10)`. Metin ve sayı bir arada olduğunda `SAY` yalnızca sayıları sayar — `EĞERSAY` ise koşula bağlı sayım yapar. Bu ikisi sık karıştırılır.
+
+İngilizce arayüzde aynı fonksiyonlar İngilizce adlarıyla (`SUM`, `AVERAGE`, `MEDIAN`, `MAX`, `MIN`, `COUNTIF`, `IF`, `COUNT`) görünür; adı değişse de yaptığı iş aynıdır.
 
 ## Ortalama ve ortanca: hangisi ne zaman
 
