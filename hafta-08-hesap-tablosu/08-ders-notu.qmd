@@ -146,7 +146,7 @@ Aynı 5 puan; taban %20 iken %25, taban %50 iken %10 demektir: taban küçüldü
 
 Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, göreli değişim için `=(B2-A2)/A2`. Birincisi **sayı**, ikincisi **yüzde** biçiminde gösterilir; aynı tabloya iki farklı biçim vermek kavramların karışmasını önler.
 
-# Temel Fonksiyonlar
+# Temel Fonksiyonlar (İşlevler)
 
 Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
 

@@ -216,7 +216,7 @@ format:
   - Formül nasıl yazılır
   - Göreli ve mutlak başvuru
   - Yüzde hesabı: yüzde puan ve göreli değişim
-- Temel Fonksiyonlar
+- Temel Fonksiyonlar (İşlevler)
   - Ortalama ve ortanca: hangisi ne zaman
 - Biçimlendirme
 - Sıralama ve Filtreleme

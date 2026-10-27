@@ -161,7 +161,7 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 
 2 vakadan 6'ya çıkış "%200 arttı" demektir; ama arada yalnızca **4 vaka** var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez. Oran içeren bir haberde ilk soru şu olmalı: **neyin yüzde kaçı, tabanı kaç?**
 
-# Fonksiyonlar (İşlevler)
+# Temel Fonksiyonlar (İşlevler)
 
 ## Sık Kullanılan Fonksiyonlar
 
