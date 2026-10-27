@@ -217,7 +217,6 @@ format:
   - Göreli ve mutlak başvuru
   - Yüzde hesabı: yüzde puan ve göreli değişim
 - Temel Fonksiyonlar (İşlevler)
-  - Ortalama ve ortanca: hangisi ne zaman
 - Biçimlendirme
 - Sıralama ve Filtreleme
 - Grafik Oluşturma

@@ -129,7 +129,7 @@ Bir formülü başka bir hücreye kopyaladığınızda başvurular nasıl davran
 
 Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Örneğin her ürünün toplam içindeki payını hesaplarken toplam hücresi mutlak yazılmalıdır: `=B2/$B$10`.
 
-![Microsoft Excel'de oran sütunu: her satırda pay bölü mutlak toplam (`=B3/$B$10`), altta toplam hücresi (`=TOPLAM(B3:B7)`)](gorseller/ekran-excel-oran.png){width=30%}
+![Microsoft Excel'de oran sütunu: her satırda pay bölü mutlak toplam (`=B3/$B$10`), altta toplam hücresi (`=TOPLAM(B3:B7)`)](gorseller/ekran-excel-oran.png){width=45%}
 
 Görseldeki formül `=B3/$B$10` bir satır aşağı kopyalandığında `=B4/$B$10` olur: pay göreli olduğu için kayar, toplam mutlak olduğu için sabit kalır. `$` işaretleri kaldırılsaydı ikinci satırda toplam hücresi `B11`'e kayar ve oran yanlış çıkardı.
 
@@ -140,7 +140,13 @@ Görseldeki formül `=B3/$B$10` bir satır aşağı kopyalandığında `=B4/$B$1
 - **Yüzde puan farkı:** iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
 - **Göreli değişim:** farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
 
-![Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme](gorseller/diagram-yuzde-puan-goreli.png){width=52%}
+::: {#fig-yuzde-puan layout-ncol=2}
+![Şema: aynı 5 puan iki farklı tabanda](gorseller/diagram-yuzde-puan-goreli.png){width=98%}
+
+![Microsoft Excel'de aynı örnek](gorseller/ekran-yuzde-formulleri.png){width=98%}
+
+Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme. Sağda aynı örnek, Microsoft Excel'de iki ayrı formülle hesaplanmış.
+:::
 
 Aynı 5 puan; taban %20 iken %25, taban %50 iken %10 demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
 
@@ -152,34 +158,23 @@ Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazı
 
 | Fonksiyon | İngilizce | Ne yapar | Örnek |
 |:---|:---|:---|:---|
-| `TOPLA` | SUM | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
-| `ORTALAMA` | AVERAGE | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
-| `ORTANCA` | MEDIAN | Sıralı verinin ortasındaki değeri verir (medyan) | `=ORTANCA(B2:B50)` |
-| `MAK` / `MİN` | MAX / MIN | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
-| `EĞERSAY` | COUNTIF | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
-| `EĞER` | IF | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
-| `SAY` | COUNT | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
+| `TOPLA` | `SUM` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
+| `ORTALAMA` | `AVERAGE` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
+| `ORTANCA` | `MEDIAN` | Sıralı verinin ortasındaki değeri verir (medyan) | `=ORTANCA(B2:B50)` |
+| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
+| `EĞERSAY` | `COUNTIF` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
+| `EĞER` | `IF` | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
+| `SAY` | `COUNT` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
 
-Fonksiyonun içine yazılan `B2:B50` bir aralıktır; birden çok aralık kullanmak için aralarına noktalı virgül konur: `=TOPLA(B2:B10;C2:C10)`. Metin ve sayı bir arada olduğunda `SAY` yalnızca sayıları sayar — `EĞERSAY` ise koşula bağlı sayım yapar. Bu ikisi sık karıştırılır.
+: Sık kullanılan fonksiyonlar ve İngilizce adları {#tbl-fonksiyonlar tbl-colwidths="[14,13,38,35]"}
 
-İngilizce arayüzde aynı fonksiyonlar İngilizce adlarıyla (`SUM`, `AVERAGE`, `MEDIAN`, `MAX`, `MIN`, `COUNTIF`, `IF`, `COUNT`) görünür; adı değişse de yaptığı iş aynıdır.
+::: {.callout-note}
+## Aralık yazımı
 
-## Ortalama ve ortanca: hangisi ne zaman
-
-`ORTALAMA` bütün değerleri toplayıp sayıya böler; `ORTANCA` ise veriyi sıraya dizip ortadaki değeri alır. Aradaki fark, **uç değerler** söz konusu olduğunda ortaya çıkar.
-
-Bir sınıfta 9 öğrenci 40 puan, 1 öğrenci 100 puan almış olsun:
-
-- Aritmetik ortalama: **46**
-- Ortanca: **40**
-
-Tek bir yüksek değer, ortalamayı sınıfın neredeyse tamamının aldığı notun üstüne çekmiştir. Ortanca uç değerlerden etkilenmediği için grubu daha iyi temsil eder. Aynı ayrım gelir ve servet istatistiklerinde çok belirgindir: "ortalama gelir" ile "ortanca gelir" arasındaki fark, toplumun dağılımı hakkında birbirinden çok farklı iki tablo çizer.
-
-::: {.callout-tip}
-## Pratik kural
-
-Veride uç değer olabileceğinden kuşkulanıyorsanız (gelir, harcama, görüntülenme, hasılat) ortalamayı tek başına kullanmayın; ortancayı da hesaplayıp ikisini karşılaştırın. Aralarındaki büyük fark, veride çarpık bir dağılım olduğunun işaretidir.
+Fonksiyonun içine yazılan `B2:B50` bir aralıktır; birden çok aralık kullanmak için aralarına **noktalı virgül** konur: `=TOPLA(B2:B10;C2:C10)`. Metin ve sayı bir arada olduğunda `SAY` yalnızca sayıları sayar — `EĞERSAY` ise koşula bağlı sayım yapar. Bu ikisi sık karıştırılır.
 :::
+
+`ORTALAMA` bütün değerleri toplayıp sayıya böler; `ORTANCA` ise veriyi sıraya dizip ortadaki değeri alır. Aradaki fark, **uç değerler** söz konusu olduğunda ortaya çıkar: bir sınıfta 9 öğrenci 40, 1 öğrenci 100 puan aldığında ortalama **46**, ortanca **40** olur. Tek bir yüksek değer ortalamayı yukarı çeker, ortanca etkilenmez. Gelir, harcama gibi uç değer barındırabilen verilerde bu yüzden ortancayı da hesaplayıp ikisini karşılaştırın; aralarındaki büyük fark dağılımın çarpık olduğunu gösterir.
 
 # Biçimlendirme
 

@@ -167,13 +167,13 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 
 | Fonksiyon | İngilizce | Ne yapar |
 |:---|:---|:---|
-| `TOPLA` | SUM | Aralıktaki sayıları toplar |
-| `ORTALAMA` | AVERAGE | Aritmetik ortalamayı verir |
-| `ORTANCA` | MEDIAN | Sıradaki ortadaki değeri verir |
-| `MAK` / `MİN` | MAX / MIN | En büyük ve en küçük değer |
-| `EĞERSAY` | COUNTIF | Koşulu sağlayanları sayar |
-| `EĞER` | IF | Koşula göre iki sonuç döndürür |
-| `SAY` | COUNT | Sayı içeren hücreleri sayar |
+| `TOPLA` | `SUM` | Aralıktaki sayıları toplar |
+| `ORTALAMA` | `AVERAGE` | Aritmetik ortalamayı verir |
+| `ORTANCA` | `MEDIAN` | Sıradaki ortadaki değeri verir |
+| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değer |
+| `EĞERSAY` | `COUNTIF` | Koşulu sağlayanları sayar |
+| `EĞER` | `IF` | Koşula göre iki sonuç döndürür |
+| `SAY` | `COUNT` | Sayı içeren hücreleri sayar |
 
 ## Ortalama ve Ortanca
 
@@ -182,9 +182,7 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 - Aritmetik ortalama: **46**
 - Ortanca: **40**
 
-Tek bir uç değer ortalamayı yukarı çeker; ortanca etkilenmez. Gelir ve servet istatistiklerinde fark çok belirgindir.
-
-Veride uç değer kuşkusu varsa (gelir, harcama, görüntülenme) ikisini karşılaştırın; aralarındaki büyük fark dağılımın çarpık olduğunu gösterir.
+Tek bir uç değer ortalamayı yukarı çeker; ortanca etkilenmez. Veride uç değer kuşkusu varsa (gelir, harcama, görüntülenme) ikisini karşılaştırın; aralarındaki büyük fark dağılımın çarpık olduğunu gösterir.
 
 # Biçimlendirme
 
