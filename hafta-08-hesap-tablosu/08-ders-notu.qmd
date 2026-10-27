@@ -79,17 +79,19 @@ Türkçede ondalık ayraç **virgüldür**: pi sayısını tabloya çoğunlukla 
 ::: {.callout-tip}
 ## Hizalama bir ipucudur
 
-Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
+Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır. Mantıksal değerlerde (DOĞRU / YANLIŞ) hizalama programdan programa değişir; bu ipucu onlar için güvenilir değildir. Formülde hizalamayı formülün kendisi değil **sonucunun türü** belirler: sayı üreten formül sağa, metin üreten formül sola yaslanır.
 :::
 
 # Veri Alışverişi: CSV
 
-Hesap tablolarını başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül — bazı ülkelerde ve bazı programlarda noktalı virgül — konur.
+Hesap tablolarını başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül konur.
+
+Türkçe bölge ayarında ondalık ayraç virgül olduğu için alanları **noktalı virgül** ayırır:
 
 ```text
-Ad,Yaş,Not,Şehir
-Ahmet,21,85,Bilecik
-Ayşe,22,92,Eskişehir
+Ad;Yaş;Not;Şehir
+Ahmet;21;85;Bilecik
+Ayşe;22;92;Eskişehir
 ```
 
 CSV'nin en önemli özelliği şudur: **değerleri taşır, biçimlendirmeyi taşımaz.** Renkler, kalın yazı, birleştirilmiş hücreler, formüller ve grafikler CSV'ye geçmez; yalnızca ham veri aktarılır. Bir dosyayı CSV olarak kaydedip yeniden açtığınızda biçimlendirmenizin kaybolmasının nedeni budur.

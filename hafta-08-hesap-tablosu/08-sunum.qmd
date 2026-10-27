@@ -68,8 +68,8 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 | Metin | "Ankara" | Sola |
 | Sayı | 1250; 3,14 | Sağa |
 | Tarih / saat | 12.03.2026 | Sağa |
-| Mantıksal | DOĞRU / YANLIŞ | Ortaya |
-| Formül | `=A1+A2` | Sağa |
+| Mantıksal | DOĞRU / YANLIŞ | Programa göre değişir |
+| Formül | `=A1+A2` | Sonucun türüne göre |
 
 Türkçede ondalık ayraç virgüldür (ör: 3,14). İngilizce oluşturulan belgelerde nokta kullanılmış olabilir.
 
@@ -86,16 +86,16 @@ Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgüll
 - **Değerleri taşır, biçimlendirmeyi taşımaz** — renk, formül ve grafik CSV'ye geçmez
 - Neredeyse her program CSV okuyabilir; bu yüzden ortak biçimdir
 
-Sütunlar birleşmiş görünüyorsa sorun genellikle **ayraç uyumsuzluğudur** (virgül / noktalı virgül).
+Örnekte ayraç **noktalı virgül**: Türkçe bölge ayarında ondalık ayraç virgül olduğundan alanlar noktalı virgülle ayrılır. Sütunlar birleşmiş görünüyorsa sorun **ayraç uyumsuzluğudur**.
 
 :::
 
 ::: {.column width="40%"}
 
 ```text
-Ad,Yaş,Not,Şehir
-Ahmet,21,85,Bilecik
-Ayşe,22,92,Eskişehir
+Ad;Yaş;Not;Şehir
+Ahmet;21;85;Bilecik
+Ayşe;22;92;Eskişehir
 ```
 
 :::

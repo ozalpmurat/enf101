@@ -701,6 +701,13 @@ notları **ENF lacivertinde kalıyor** (kullanıcı kararı, 30.09.2026).
 
 Kapatılan başlıklar ve kararları:
 
+- **8. hafta: hizalama tablosu düzeltildi (27.10.2026):** "Veri Türleri" tablosunda mantıksal değerin
+  hizası "Ortaya", formülün hizası "Sağa" yazıyordu; ikisi de genel olarak yanlış. LibreOffice Calc 24.2
+  ile ölçüldü: mantıksal değer sayı gibi **sağa** yaslanıyor (programa göre değişir), formülün hizasını
+  formülün kendisi değil **sonucunun türü** belirliyor (metin üreten formül sola, sayı/tarih üreten sağa).
+  Satırlar "Programa göre değişir" ve "Sonucun türüne göre" yapıldı; ders notundaki "Hizalama bir ipucudur"
+  kutusuna iki istisna yazıldı. **Tekrar "Ortaya" / "Sağa" yazılmasın.**
+
 - **8. haftaya ekran görüntüleri eklendi (26.10.2026):** "LibreOffice Calc penceresi" sunumda 5. slaytta
   (sağ sütun, 4,6 × 5 cm) ve derste Şekil 1; kullanıcının kendi yakalayıp etiketlediği
   "Google Sheets: hücre, satır, sütun, aralık, sayfa" görünümü sunumda yeni **6. slaytta** (%82 genişlik)
