@@ -180,6 +180,18 @@ Kurduğunuz her programı **üreticinin kendi sitesinden** veya resmî uygulama 
 Korsan yazılım, bedava görünür; ama ödediğiniz bedel parayla değil, **verilerinizle** olur.
 :::
 
+## VirusTotal ile ikinci bir görüş
+
+[VirusTotal](https://www.virustotal.com), şüpheli bir dosyayı, bağlantıyı (URL) veya dosya özeti değerini (hash) birçok farklı antivirüs motoruyla aynı anda tarayarak sonuç veren ücretsiz bir hizmettir.
+
+Kendi antivirüs yazılımınız bir dosyayı temiz olarak işaretlese bile, şüphe duyduğunuz durumlarda VirusTotal ile **ikinci bir görüş** almak mümkün olabilir.
+
+::: {.callout-warning}
+## Gizlilik uyarısı
+
+Hassas, gizli veya kişisel dokümanlar gibi içerikleri VirusTotal'a yüklerken dikkatli olunmalıdır. Çünkü yüklenen dosyalar analiz amacıyla hizmette saklanabilir. Mümkünse dosyayı doğrudan yüklemek yerine yalnızca **hash** değeriyle sorgulama yapmak daha güvenli bir seçenektir.
+:::
+
 # Güncelleme ve Yedekleme
 
 ## Güncellemeler neden önemli?

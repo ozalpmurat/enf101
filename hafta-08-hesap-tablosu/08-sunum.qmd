@@ -165,14 +165,22 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 
 ## Sık Kullanılan Fonksiyonlar
 
-| Fonksiyon | İngilizce | Ne yapar |
-|:---|:---|:---|
-| `TOPLA` | `SUM` | Aralıktaki sayıları toplar |
-| `ORTALAMA` | `AVERAGE` | Aritmetik ortalamayı verir |
-| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değer |
-| `EĞERSAY` | `COUNTIF` | Koşulu sağlayanları sayar |
-| `EĞER` | `IF` | Koşula göre iki sonuç döndürür |
-| `SAY` | `COUNT` | Sayı içeren hücreleri sayar |
+```{=latex}
+{\small
+\setlength{\tabcolsep}{2pt}%
+\begin{tabular}{@{}p{2.2cm}p{1.8cm}>{\raggedright\arraybackslash}p{3.2cm}p{5.6cm}@{}}
+\toprule
+\textbf{Fonksiyon} & \textbf{İngilizce} & \textbf{Ne yapar} & \textbf{Örnek}\\
+\midrule
+\texttt{TOPLA} & \texttt{SUM} & Sayıları toplar & \texttt{=TOPLA(B2:B50)} \\
+\texttt{ORTALAMA} & \texttt{AVERAGE} & Aritmetik ortalamayı verir & \texttt{=ORTALAMA(B2:B50)} \\
+\texttt{MAK} / \texttt{MİN} & \texttt{MAX} / \texttt{MIN} & En büyük ve en küçük değer & \texttt{=MAK(B2:B50)} \\
+\texttt{EĞERSAY} & \texttt{COUNTIF} & Koşulu sağlayanları sayar & \texttt{=EĞERSAY(C2:C50;">=70")} \\
+\texttt{EĞER} & \texttt{IF} & Koşula göre iki sonuç & \texttt{=EĞER(B2>=70;"Geçti";"Kaldı")} \\
+\texttt{SAY} & \texttt{COUNT} & Sayı içeren hücreleri sayar & \texttt{=SAY(B2:B50)} \\
+\bottomrule
+\end{tabular}}
+```
 
 # Biçimlendirme
 

@@ -161,6 +161,13 @@ Arama sonuçlarındaki **reklam bağlantıları** sahte olabilir.
 
 Korsan yazılımın bedeli parayla değil, **verilerinizle** ödenir.
 
+## VirusTotal ile İkinci Bir Görüş
+
+- **Ne işe yarar?** Şüpheli dosya/bağlantıyı birçok antivirüs motoruyla tarar
+- **Ne zaman kullanılır?** Antivirüse rağmen şüphe duyduğunuzda
+- **Gizlilik:** Hassas dosyaları yüklemekten kaçının; mümkünse **hash** ile sorgulayın
+- **Adres:** [virustotal.com](https://www.virustotal.com)
+
 # Güncelleme ve Yedekleme
 
 ## Güncelleme Neden Önemli?
