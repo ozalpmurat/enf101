@@ -60,6 +60,7 @@ for i, oge in enumerate(["hitap", "mesaj", "kapanış", "imza"]):
             fontsize=8.5, color=GRI, zorder=3)
 
 # ek
+ax.plot([1.15, 8.85], [1.56, 1.56], color="#C9D3E0", linewidth=1, zorder=2)
 ax.text(1.3, 1.3, "Ek (attachment)", ha="left", va="center", fontsize=9.5,
         color=LAC, fontweight="bold", zorder=3)
 ax.text(3.55, 1.3, "Gönderilen dosyalar", ha="left", va="center",
@@ -67,9 +68,9 @@ ax.text(3.55, 1.3, "Gönderilen dosyalar", ha="left", va="center",
 # ataç simgesi: tek bir tel gibi — iç kol, üst kavis, sağ kol, alt kavis, sol kol
 ATAÇ = dict(linewidth=1.6, edgecolor=LAC, facecolor="none", zorder=4)
 xl, xr, xm = 8.38, 8.70, 8.48          # dış sol, dış sağ, iç kol
-yb = 1.12                               # ikonun en alt noktası
+yb = 1.10                               # ikonun en alt noktası
 r_alt, r_üst = (xr - xl) / 2, (xr - xm) / 2
-y_alt, y_üst = yb + r_alt, 1.48         # kavislerin uç noktalarının yüksekliği
+y_alt, y_üst = yb + r_alt, 1.40         # kavislerin uç noktalarının yüksekliği
 
 ax.plot([xm, xm], [y_üst, y_alt + 0.04], color=LAC,
         linewidth=1.6, solid_capstyle="round", zorder=4)          # iç kol
