@@ -165,22 +165,123 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 
 ## Sık Kullanılan Fonksiyonlar
 
+| Fonksiyon | İngilizce | Ne yapar |
+|:---|:---|:---|
+| `TOPLA` | `SUM` | Aralıktaki sayıları toplar |
+| `ORTALAMA` | `AVERAGE` | Aritmetik ortalamayı verir |
+| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değer |
+| `EĞERSAY` | `COUNTIF` | Koşulu sağlayanları sayar |
+| `EĞER` | `IF` | Koşula göre iki sonuç döndürür |
+| `SAY` | `COUNT` | Sayı içeren hücreleri sayar |
+
+## Örnek Veri: TOPLA, ORTALAMA, MAK, MİN
+
+::: {.columns}
+::: {.column width="46%"}
+
+```{=latex}
+\begin{center}
+{\footnotesize
+\setlength{\arrayrulewidth}{0.3pt}\arrayrulecolor{greytext}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\columncolor{lightbg}}c|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\hline
+\rowcolor{lightbg}
+ & \textbf{A} & \textbf{B} & \textbf{C}\\
+\hline
+\rowcolor{lightbg}
+\textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
+\hline
+\textbf{2} & Ayşe & \cellcolor{lightbg}60 & 70\\
+\hline
+\textbf{3} & Berk & \cellcolor{lightbg}70 & 45\\
+\hline
+\textbf{4} & Ceren & \cellcolor{lightbg}80 & 90\\
+\hline
+\textbf{5} & Deniz & \cellcolor{lightbg}90 & 55\\
+\hline
+\textbf{6} & Efe & \cellcolor{lightbg}50 & 40\\
+\hline
+\textbf{7} & Fatma & \cellcolor{lightbg}100 & 85\\
+\hline
+\textbf{8} & Gökhan & \cellcolor{lightbg}\textcolor{greytext}{\emph{Girmedi}} & 60\\
+\hline
+\end{tabular}}
+\end{center}
+```
+
+:::
+
+::: {.column width="52%"}
+
 ```{=latex}
 {\small
-\setlength{\tabcolsep}{2pt}%
-\begin{tabular}{@{}p{2.2cm}p{1.8cm}>{\raggedright\arraybackslash}p{3.2cm}p{5.6cm}@{}}
-\toprule
-\textbf{Fonksiyon} & \textbf{İngilizce} & \textbf{Ne yapar} & \textbf{Örnek}\\
-\midrule
-\texttt{TOPLA} & \texttt{SUM} & Sayıları toplar & \texttt{=TOPLA(B2:B50)} \\
-\texttt{ORTALAMA} & \texttt{AVERAGE} & Aritmetik ortalamayı verir & \texttt{=ORTALAMA(B2:B50)} \\
-\texttt{MAK} / \texttt{MİN} & \texttt{MAX} / \texttt{MIN} & En büyük ve en küçük değer & \texttt{=MAK(B2:B50)} \\
-\texttt{EĞERSAY} & \texttt{COUNTIF} & Koşulu sağlayanları sayar & \texttt{=EĞERSAY(C2:C50;">=70")} \\
-\texttt{EĞER} & \texttt{IF} & Koşula göre iki sonuç & \texttt{=EĞER(B2>=70;"Geçti";"Kaldı")} \\
-\texttt{SAY} & \texttt{COUNT} & Sayı içeren hücreleri sayar & \texttt{=SAY(B2:B50)} \\
-\bottomrule
+\begin{tabular}{@{}l@{\hspace{5mm}}r@{}}
+\texttt{=TOPLA(B2:B8)} & \textbf{450}\\[1mm]
+\texttt{=ORTALAMA(B2:B8)} & \textbf{75}\\[1mm]
+\texttt{=MAK(B2:B8)} & \textbf{100}\\[1mm]
+\texttt{=MİN(B2:B8)} & \textbf{50}\\
 \end{tabular}}
 ```
+
+**Girmedi** bir metindir: TOPLA, ORTALAMA, MAK ve MİN onu hesaba katmaz. Ortalama 450 ÷ **6** = **75** olur.
+
+:::
+:::
+
+## Örnek Veri: EĞERSAY, EĞER, SAY
+
+::: {.columns}
+::: {.column width="46%"}
+
+```{=latex}
+\begin{center}
+{\footnotesize
+\setlength{\arrayrulewidth}{0.3pt}\arrayrulecolor{greytext}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\columncolor{lightbg}}c|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\hline
+\rowcolor{lightbg}
+ & \textbf{A} & \textbf{B} & \textbf{C}\\
+\hline
+\rowcolor{lightbg}
+\textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
+\hline
+\textbf{2} & Ayşe & \cellcolor{lightbg}60 & 70\\
+\hline
+\textbf{3} & Berk & \cellcolor{lightbg}70 & 45\\
+\hline
+\textbf{4} & Ceren & \cellcolor{lightbg}80 & 90\\
+\hline
+\textbf{5} & Deniz & \cellcolor{lightbg}90 & 55\\
+\hline
+\textbf{6} & Efe & \cellcolor{lightbg}50 & 40\\
+\hline
+\textbf{7} & Fatma & \cellcolor{lightbg}100 & 85\\
+\hline
+\textbf{8} & Gökhan & \cellcolor{lightbg}\textcolor{greytext}{\emph{Girmedi}} & 60\\
+\hline
+\end{tabular}}
+\end{center}
+```
+
+:::
+
+::: {.column width="52%"}
+
+```{=latex}
+{\small
+\begin{tabular}{@{}l@{\hspace{5mm}}r@{}}
+\texttt{=EĞERSAY(B2:B8;">=70")} & \textbf{4}\\[1mm]
+\texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & \textbf{Geçti}\\[1mm]
+\texttt{=SAY(B2:B8)} & \textbf{6}\\
+\end{tabular}}
+```
+
+70, 80, 90 ve 100 → **4** öğrenci. **Girmedi** metin olduğu için SAY onu saymaz: aralıkta 6 sayı vardır.
+
+:::
+:::
 
 # Biçimlendirme
 
