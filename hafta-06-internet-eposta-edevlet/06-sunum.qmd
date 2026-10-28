@@ -201,7 +201,7 @@ Parola, kimlik numarası, sağlık bilgisi e-postayla gönderilmez.
 - Bağlantılara tıklamayın; **işaretleyip silin**
 - "Listeden çık" bağlantısına güvenmeyin: adresinizin **canlı olduğunu doğrular**
 
-![](gorseller/diagram-spam.png){width=88%}
+![](gorseller/diagram-spam.png){width=96%}
 
 # Dijital Kamu Hizmetleri
 
