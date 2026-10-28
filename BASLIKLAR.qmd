@@ -277,6 +277,7 @@ format:
 - Zararlı Yazılımlar
   - Zombi bilgisayarlar
   - Nasıl bulaşır?
+  - VirusTotal ile ikinci bir görüş
 - Güncelleme ve Yedekleme
   - Güncellemeler neden önemli?
   - Yedekleme: fidye yazılımına karşı en iyi savunma

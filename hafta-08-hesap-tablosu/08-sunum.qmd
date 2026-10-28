@@ -224,6 +224,10 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 \end{tabular}}
 ```
 
+```{=latex}
+\vspace{\baselineskip}
+```
+
 **Girmedi** bir metindir: TOPLA, ORTALAMA, MAK ve MİN onu hesaba katmaz. Ortalama 450 ÷ **6** = **75** olur.
 
 :::
@@ -276,6 +280,10 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 \texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & \textbf{Geçti}\\[1mm]
 \texttt{=SAY(B2:B8)} & \textbf{6}\\
 \end{tabular}}
+```
+
+```{=latex}
+\vspace{\baselineskip}
 ```
 
 70, 80, 90 ve 100 → **4** öğrenci. **Girmedi** metin olduğu için SAY onu saymaz: aralıkta 6 sayı vardır.

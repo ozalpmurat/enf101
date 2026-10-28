@@ -178,7 +178,54 @@ Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazı
 **İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılır: `=TOPLA(B2:B10;C2:C10)`.
 :::
 
-Metin ve sayı bir arada olduğunda `SAY` yalnızca sayıları sayar — `EĞERSAY` ise koşula bağlı sayım yapar. Bu ikisi sık karıştırılır.
+Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütununda vize notu, C sütununda final notu var. Gökhan vizeye girmediği için B8 hücresine sayı değil **metin** yazılmıştır.
+
+```{=latex}
+\begin{center}
+{\small
+\setlength{\arrayrulewidth}{0.3pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{2.6cm}|r|r|}
+\hline
+ & \textbf{A} & \textbf{B} & \textbf{C}\\
+\hline
+\textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
+\hline
+\textbf{2} & Ayşe & 60 & 70\\
+\hline
+\textbf{3} & Berk & 70 & 45\\
+\hline
+\textbf{4} & Ceren & 80 & 90\\
+\hline
+\textbf{5} & Deniz & 90 & 55\\
+\hline
+\textbf{6} & Efe & 50 & 40\\
+\hline
+\textbf{7} & Fatma & 100 & 85\\
+\hline
+\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
+\hline
+\end{tabular}}
+\end{center}
+
+\begin{center}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.4cm}r>{\raggedright\arraybackslash}p{5.6cm}@{}}
+\textbf{Formül} & \textbf{Sonuç} & \textbf{Ne yapar}\\
+\midrule[0.3pt]
+\texttt{=TOPLA(B2:B8)} & 450 & Altı vize notunu toplar \\
+\texttt{=ORTALAMA(B2:B8)} & 75 & 450 ÷ 6 \\
+\texttt{=MAK(B2:B8)} & 100 & En yüksek vize notu \\
+\texttt{=MİN(B2:B8)} & 50 & En düşük vize notu \\
+\texttt{=EĞERSAY(B2:B8;">=70")} & 4 & 70 ve üzeri alanlar \\
+\texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
+\texttt{=SAY(B2:B8)} & 6 & Sayı içeren hücreler \\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
+
+`TOPLA`, `ORTALAMA`, `MAK` ve `MİN` metni yok sayar: toplam altı sayının toplamıdır, ortalama 450 ÷ **6** = 75 olur — yedi hücreye değil, altı sayıya bölünür. `SAY` da yalnızca sayı içeren hücreleri saydığı için 6 verir; `EĞERSAY` ise koşula uyanı sayar. `EĞER` sayı ya da metin döndürebilir: `=EĞER(C2>=50;"Geçti";"Kaldı")` C2'deki 70'i eşikle karşılaştırıp "Geçti" verir.
 
 Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
