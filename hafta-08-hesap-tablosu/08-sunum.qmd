@@ -277,8 +277,11 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 {\small
 \begin{tabular}{@{}l@{\hspace{5mm}}r@{}}
 \texttt{=EĞERSAY(B2:B8;">=70")} & \textbf{4}\\[1mm]
+\texttt{=EĞERSAY(B2:B8;"Girmedi")} & \textbf{1}\\[1.5mm]
 \texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & \textbf{Geçti}\\[1mm]
-\texttt{=SAY(B2:B8)} & \textbf{6}\\
+\texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & \textbf{Kaldı}\\[1.5mm]
+\texttt{=SAY(B2:B8)} & \textbf{6}\\[1mm]
+\texttt{=SAY(A2:A8)} & \textbf{0}\\
 \end{tabular}}
 ```
 
@@ -286,7 +289,7 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 \vspace{\baselineskip}
 ```
 
-70, 80, 90 ve 100 → **4** öğrenci. **Girmedi** metin olduğu için SAY onu saymaz: aralıkta 6 sayı vardır.
+70, 80, 90 ve 100 → **4**. Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer. C3'teki 45 eşiğin altında olduğu için **Kaldı** çıkar. A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
 
 :::
 :::

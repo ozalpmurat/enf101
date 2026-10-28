@@ -218,14 +218,17 @@ Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütu
 \texttt{=MAK(B2:B8)} & 100 & En yüksek vize notu \\
 \texttt{=MİN(B2:B8)} & 50 & En düşük vize notu \\
 \texttt{=EĞERSAY(B2:B8;">=70")} & 4 & 70 ve üzeri alanlar \\
+\texttt{=EĞERSAY(B2:B8;"Girmedi")} & 1 & ``Girmedi'' yazan hücre \\
 \texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
+\texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & Kaldı & C3'teki 45 eşiğin altında \\
 \texttt{=SAY(B2:B8)} & 6 & Sayı içeren hücreler \\
+\texttt{=SAY(A2:A8)} & 0 & Adlar metindir, sayı değil \\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
 ```
 
-`TOPLA`, `ORTALAMA`, `MAK` ve `MİN` metni yok sayar: toplam altı sayının toplamıdır, ortalama 450 ÷ **6** = 75 olur — yedi hücreye değil, altı sayıya bölünür. `SAY` da yalnızca sayı içeren hücreleri saydığı için 6 verir; `EĞERSAY` ise koşula uyanı sayar. `EĞER` sayı ya da metin döndürebilir: `=EĞER(C2>=50;"Geçti";"Kaldı")` C2'deki 70'i eşikle karşılaştırıp "Geçti" verir.
+`TOPLA`, `ORTALAMA`, `MAK` ve `MİN` metni yok sayar: toplam altı sayının toplamıdır, ortalama 450 ÷ **6** = 75 olur — yedi hücreye değil, altı sayıya bölünür. `SAY` yalnızca sayı içeren hücreleri saydığı için B sütununda **6**, A sütununda **0** verir. `EĞERSAY` koşula uyanı sayar; ölçüt sayı (`">=70"`) ya da metin (`"Girmedi"`) olabilir. `EĞER` ise iki daldan birini seçer: `=EĞER(C2>=50;…)` "Geçti", `=EĞER(C3>=50;…)` ise "Kaldı" verir.
 
 Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
