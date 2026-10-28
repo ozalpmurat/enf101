@@ -165,7 +165,7 @@ Bu bölümler bir e-posta penceresinde şöyle sıralanır:
 - **Konu satırını boş bırakmayın.** "Toplantı hakkında" ile "Soru" arasındaki fark, e-postanın okunup okunmamasını belirler.
 - **Hitap ile başlayın, kapanış ile bitirin.** "Sayın Hocam," / "Merhaba," … "Saygılarımla," / "İyi çalışmalar,".
 - **Kısa ve net yazın.** Uzun paragraflar yerine madde madde.
-- **Tam cümle kullanın.** Kurumsal yazışmada kısaltma ve emoji kullanılmaz.
+- **Tam cümle kullanın.** Kurumsal yazışmada mesaj dilindeki kısa yazımlar (slm, tşk, nbr) ve emoji kullanılmaz; TBMM, OECD gibi yerleşik kısaltmalar ise yazılabilir.
 - **Büyük harfle yazmayın.** Karşı taraf bunu bağırmak gibi algılar.
 - **Yanıtla / Tümüne yanıtla ayrımına dikkat edin.** Yalnızca gönderene mi, tüm listeye mi yanıt veriyorsunuz?
 - **Ek gönderiyorsanız dosya adını düzeltin.** `belge1.docx` yerine `enf101-odev-ad-soyad.docx`.

@@ -132,7 +132,7 @@ Böylece herkes yalnızca kendi adresini görür.
 - **Konu satırını boş bırakmayın**
 - **Mesaj içeriğinde hitap ve kapanış kullanın**
 - **Kısa ve net yazın**
-- **Tam cümle kurun** — kısaltma ve emoji olmaz
+- **Tam cümle kurun** — `slm`, `tşk` gibi mesaj kısaltmaları ve emoji olmaz; `TBMM`, `OECD` gibi yerleşik kısaltmalar yazılabilir
 - **Büyük harfle yazmayın** — bağırmak gibi algılanır
 - **Yanıtla / Tümüne yanıtla** ayrımına dikkat
 - **Ek dosyayı adlandırın:** `belge1.docx` değil, `enf101-odev-ad-soyad.docx`
