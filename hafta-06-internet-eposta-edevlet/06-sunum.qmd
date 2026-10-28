@@ -211,11 +211,11 @@ Farklı kurumların hizmetlerine **tek giriş** üzerinden erişim: belge talebi
 
 Tek adres: **turkiye.gov.tr**
 
-![](gorseller/diagram-edevlet.png){width=75%}
+![](gorseller/diagram-edevlet.png){width=92%}
 
 ## e-Devlet Giriş Sayfası (turkiye.gov.tr)
 
-![](gorseller/ekran-edevlet-giris.png){width=55%}
+![](gorseller/ekran-edevlet-giris.png){width=62%}
 
 ## Güvenli Kullanım
 

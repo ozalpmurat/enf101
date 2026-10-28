@@ -8,7 +8,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch
+from matplotlib.patches import Arc, FancyBboxPatch
 
 KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / "hafta-06-internet-eposta-edevlet" / "gorseller"
@@ -20,7 +20,7 @@ GRI = "#595959"
 
 plt.rcParams["font.family"] = "DejaVu Sans"
 
-fig, ax = plt.subplots(figsize=(8.6, 5.4), dpi=170)
+fig, ax = plt.subplots(figsize=(6.9, 3.8), dpi=170)
 ax.set_xlim(0, 10)
 ax.set_ylim(0, 6.6)
 ax.axis("off")
@@ -67,10 +67,23 @@ ax.text(1.3, 1.3, "Ek (attachment)", ha="left", va="center", fontsize=9.5,
         color=LAC, fontweight="bold", zorder=3)
 ax.text(3.55, 1.3, "Gönderilen dosyalar", ha="left", va="center",
         fontsize=8.5, color=GRI, zorder=3)
-# ataç ikonu yerine küçük kutu
-ax.add_patch(FancyBboxPatch((8.35, 1.12), 0.35, 0.36,
-             boxstyle="round,pad=0.01,rounding_size=0.03",
-             linewidth=1.2, edgecolor=LAC, facecolor=ACIK, zorder=3))
+# ataç simgesi: tek bir tel gibi — iç kol, üst kavis, sağ kol, alt kavis, sol kol
+ATAÇ = dict(linewidth=1.6, edgecolor=LAC, facecolor="none", zorder=4)
+xl, xr, xm = 8.38, 8.70, 8.48          # dış sol, dış sağ, iç kol
+yb = 1.12                               # ikonun en alt noktası
+r_alt, r_üst = (xr - xl) / 2, (xr - xm) / 2
+y_alt, y_üst = yb + r_alt, 1.48         # kavislerin uç noktalarının yüksekliği
+
+ax.plot([xm, xm], [y_üst, y_alt + 0.04], color=LAC,
+        linewidth=1.6, solid_capstyle="round", zorder=4)          # iç kol
+ax.add_patch(Arc(((xm + xr) / 2, y_üst), 2 * r_üst, 2 * r_üst,
+                 theta1=0, theta2=180, **ATAÇ))                   # üst kavis
+ax.plot([xr, xr], [y_üst, y_alt], color=LAC,
+        linewidth=1.6, solid_capstyle="round", zorder=4)          # sağ kol
+ax.add_patch(Arc(((xl + xr) / 2, y_alt), 2 * r_alt, 2 * r_alt,
+                 theta1=180, theta2=360, **ATAÇ))                 # alt kavis
+ax.plot([xl, xl], [y_alt, y_üst + r_üst - 0.07], color=LAC,
+        linewidth=1.6, solid_capstyle="round", zorder=4)          # sol kol
 
 fig.tight_layout(pad=0.2)
 cikti = HEDEF / "diagram-eposta-bolumler.png"
