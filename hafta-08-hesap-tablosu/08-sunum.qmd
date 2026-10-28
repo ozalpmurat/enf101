@@ -182,29 +182,27 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 ```{=latex}
 \begin{center}
 {\footnotesize
-\setlength{\arrayrulewidth}{0.3pt}\arrayrulecolor{greytext}%
+\setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{|>{\columncolor{lightbg}}c|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
 \hline
-\rowcolor{lightbg}
  & \textbf{A} & \textbf{B} & \textbf{C}\\
 \hline
-\rowcolor{lightbg}
 \textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
 \hline
-\textbf{2} & Ayşe & \cellcolor{lightbg}60 & 70\\
+\textbf{2} & Ayşe & 60 & 70\\
 \hline
-\textbf{3} & Berk & \cellcolor{lightbg}70 & 45\\
+\textbf{3} & Berk & 70 & 45\\
 \hline
-\textbf{4} & Ceren & \cellcolor{lightbg}80 & 90\\
+\textbf{4} & Ceren & 80 & 90\\
 \hline
-\textbf{5} & Deniz & \cellcolor{lightbg}90 & 55\\
+\textbf{5} & Deniz & 90 & 55\\
 \hline
-\textbf{6} & Efe & \cellcolor{lightbg}50 & 40\\
+\textbf{6} & Efe & 50 & 40\\
 \hline
-\textbf{7} & Fatma & \cellcolor{lightbg}100 & 85\\
+\textbf{7} & Fatma & 100 & 85\\
 \hline
-\textbf{8} & Gökhan & \cellcolor{lightbg}\textcolor{greytext}{\emph{Girmedi}} & 60\\
+\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
 \hline
 \end{tabular}}
 \end{center}
@@ -241,29 +239,27 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 ```{=latex}
 \begin{center}
 {\footnotesize
-\setlength{\arrayrulewidth}{0.3pt}\arrayrulecolor{greytext}%
+\setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{|>{\columncolor{lightbg}}c|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
 \hline
-\rowcolor{lightbg}
  & \textbf{A} & \textbf{B} & \textbf{C}\\
 \hline
-\rowcolor{lightbg}
 \textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
 \hline
-\textbf{2} & Ayşe & \cellcolor{lightbg}60 & 70\\
+\textbf{2} & Ayşe & 60 & 70\\
 \hline
-\textbf{3} & Berk & \cellcolor{lightbg}70 & 45\\
+\textbf{3} & Berk & 70 & 45\\
 \hline
-\textbf{4} & Ceren & \cellcolor{lightbg}80 & 90\\
+\textbf{4} & Ceren & 80 & 90\\
 \hline
-\textbf{5} & Deniz & \cellcolor{lightbg}90 & 55\\
+\textbf{5} & Deniz & 90 & 55\\
 \hline
-\textbf{6} & Efe & \cellcolor{lightbg}50 & 40\\
+\textbf{6} & Efe & 50 & 40\\
 \hline
-\textbf{7} & Fatma & \cellcolor{lightbg}100 & 85\\
+\textbf{7} & Fatma & 100 & 85\\
 \hline
-\textbf{8} & Gökhan & \cellcolor{lightbg}\textcolor{greytext}{\emph{Girmedi}} & 60\\
+\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
 \hline
 \end{tabular}}
 \end{center}
