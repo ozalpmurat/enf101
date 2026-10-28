@@ -14,20 +14,15 @@ KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / "hafta-06-internet-eposta-edevlet" / "gorseller"
 
 LAC = "#1F3864"
-ACIK = "#DCE7F5"
-ZEMIN = "#EDF2F9"
 GRI = "#595959"
 
 plt.rcParams["font.family"] = "DejaVu Sans"
 
-fig, ax = plt.subplots(figsize=(6.9, 3.8), dpi=170)
-ax.set_xlim(0, 10)
-ax.set_ylim(0, 6.6)
+fig, ax = plt.subplots(figsize=(5.73, 3.38), dpi=170)
+# kırpma: çizim pencereyle sınırlı; dışarıda açık renk çerçeve yok
+ax.set_xlim(0.85, 9.15)
+ax.set_ylim(0.85, 5.75)
 ax.axis("off")
-
-ax.add_patch(FancyBboxPatch((0.25, 0.25), 9.5, 6.1,
-             boxstyle="round,pad=0.02,rounding_size=0.12",
-             linewidth=0, facecolor=ZEMIN, zorder=0))
 
 # pencere gövdesi
 ax.add_patch(FancyBboxPatch((1.0, 1.0), 8.0, 4.6,
@@ -59,8 +54,10 @@ for ad, aciklama in satirlar:
 ax.plot([1.15, 8.85], [y, y], color="#C9D3E0", linewidth=1, zorder=2)
 ax.text(1.3, y - 0.2, "Gövde", ha="left", va="center", fontsize=9.5,
         color=LAC, fontweight="bold", zorder=3)
-ax.text(3.55, y - 0.2, "Hitap, mesaj, kapanış, imza", ha="left", va="center",
-        fontsize=8.5, color=GRI, zorder=3)
+# gövdenin dört öğesi alt alta
+for i, oge in enumerate(["hitap", "mesaj", "kapanış", "imza"]):
+    ax.text(3.55, y - 0.2 - i * 0.24, oge, ha="left", va="center",
+            fontsize=8.5, color=GRI, zorder=3)
 
 # ek
 ax.text(1.3, 1.3, "Ek (attachment)", ha="left", va="center", fontsize=9.5,

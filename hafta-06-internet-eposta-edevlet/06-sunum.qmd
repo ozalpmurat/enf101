@@ -117,7 +117,7 @@ Uluslararası Kütüphane Dernekleri ve Kurumları Federasyonu'nun (IFLA) listes
 
 ## E-postanın Bölümleri
 
-\includegraphics[width=0.92\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/diagram-eposta-bolumler.png}
+\includegraphics[width=\linewidth,height=0.80\textheight,keepaspectratio]{gorseller/diagram-eposta-bolumler.png}
 
 ## BCC Ne Zaman Kullanılır?
 
