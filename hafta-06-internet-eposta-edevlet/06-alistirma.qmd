@@ -50,7 +50,7 @@ E) Ek dosya (eklenti)
 A) Konu satırı\
 B) Hitap ve kapanış\
 C) İmza\
-D) Emoji ve mesaj kısaltmaları (slm, tşk)\
+D) Emoji ve mesaj kısaltmaları (slm, grşrz)\
 E) Tarih ve saat bilgisi
 
 **6.** Oltalama (phishing) e-postalarının en belirgin ortak özelliği nedir?\
@@ -90,7 +90,7 @@ E) E-postayı yazdırıp saklamak
 | 2 | C | Eksi işareti, belirtilen kelimeyi arama sonuçlarından çıkarır; gereksiz sonuçları elemek için kullanılır. |
 | 3 | E | Doğru terim E seçeneğindedir: dezenformasyon, yanıltmak amacıyla kasıtlı olarak üretilmiş yanlış bilgidir. |
 | 4 | A | BCC (gizli) alanındaki adresler diğer alıcılara görünmez. Toplu duyurularda adres gizliliği için kullanılır. |
-| 5 | D | Kurumsal e-postada tam cümle kullanılır; emoji ve mesaj dili kısaltmaları (slm, tşk) yer almaz. TBMM, OECD gibi yerleşik kısaltmalar yazılabilir. |
+| 5 | D | Kurumsal e-postada tam cümle kullanılır; slm, grşrz gibi mesaj kısaltmaları ve emoji yer almaz. |
 | 6 | B | Oltalama e-postaları genellikle "hemen", "acil" gibi ifadelerle acele ettirir; amaç düşünmeden tıklamanızı sağlamaktır. |
 | 7 | D | Doğru ifade D seçeneğindedir: e-Devlet şifresi sisteme giriş için bir kimlik doğrulama aracıdır, imza yerine geçmez; e-imza ise ıslak imza hükmünde hukuki bir imzadır. |
 | 8 | C | Şüpheli e-postalarda bağlantıya tıklanmaz ve yanıt verilmez; gönderen başka bir kanaldan doğrulanır. |
