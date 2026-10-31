@@ -121,6 +121,7 @@ Formülde kullanılan hücre adreslerindeki (A2, B7 gibi) değerler değişince 
 ::: {.column width="56%"}
 
 ```{=latex}
+\vspace*{9pt}
 \begin{minipage}[c][6.4cm][c]{\linewidth}
 \begin{itemize}
 \setlength{\itemsep}{0.9em}
@@ -307,11 +308,19 @@ Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` form�
 ::: {.columns}
 ::: {.column width="63%"}
 
-- **Sayı biçimi:** ondalık, binlik ayırıcı, para birimi, yüzde
-- **Tarih biçimi:** görünüşü değişir, değeri değişmez
-- **Kenarlık ve dolgu:** başlıkları ayırmak için
-- **Koşullu biçimlendirme:** eşiğin altındakiler kendiliğinden renklenir
-- **Sütun genişliği:** hücrede `###` görüyorsanız sütun dardır
+```{=latex}
+\vspace*{9pt}
+\begin{minipage}[c][6.4cm][c]{\linewidth}
+\begin{itemize}
+\setlength{\itemsep}{0.6em}
+\item \textbf{Sayı biçimi:} ondalık, binlik ayırıcı, para birimi, yüzde
+\item \textbf{Tarih biçimi:} görünüşü değişir, değeri değişmez
+\item \textbf{Kenarlık ve dolgu:} başlıkları ayırmak için
+\item \textbf{Koşullu biçimlendirme:} eşiğin altındakiler kendiliğinden renklenir
+\item \textbf{Sütun genişliği:} hücrede \texttt{\#\#\#} görüyorsanız sütun dardır
+\end{itemize}
+\end{minipage}
+```
 
 :::
 
