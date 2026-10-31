@@ -234,7 +234,7 @@ Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argüm
 
 Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Sheets'te `=GEMINI("…")` ya da `=AI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef kitle ve kampanya hedefi hücrelerinden bir reklam metni yazılmış. Özellik geliştirilmeye devam ediyor; ücretsiz sürümde aylık kullanım sınırı gibi kısıtlamalar olabilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
 
-![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün ve hedef kitle bilgisini reklam metnine çeviriyor. Geliştirilmeye devam ediyor; ücretsiz sürümde bazı kısıtlamalar olabilir.](gorseller/ekran-sheets-gemini.png){width=65%}
+![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün ve hedef kitle bilgisini reklam metnine çeviriyor.](gorseller/ekran-sheets-gemini.png){width=65%}
 
 # Biçimlendirme
 
