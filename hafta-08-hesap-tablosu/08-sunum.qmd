@@ -290,6 +290,16 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 :::
 :::
 
+## Yapay Zekâ Destekli Fonksiyonlar
+
+```{=latex}
+\begin{center}
+\includegraphics[width=9.4cm,height=5.25cm,keepaspectratio]{gorseller/ekran-sheets-gemini.png}
+\end{center}
+```
+
+Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` formülü, A2:C2 aralığındaki ürün ve hedef kitle bilgisini reklam metnine çeviriyor. Geliştirilmeye devam ediyor; ücretsiz sürümde bazı kısıtlamalar olabilir.
+
 # Biçimlendirme
 
 ## Biçimlendirme Türleri

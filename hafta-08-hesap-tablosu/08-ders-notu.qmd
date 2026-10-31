@@ -232,6 +232,10 @@ Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütu
 
 Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
+Yeni sürümlerde hesap tablosu programları yapay zekâ desteği de sunuyor. Google Sheets'te `=GEMINI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef kitle ve kampanya hedefi hücrelerinden bir reklam metni yazılmış. Özellik geliştirilmeye devam ediyor; ücretsiz sürümde aylık kullanım sınırı gibi kısıtlamalar olabilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
+
+![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün ve hedef kitle bilgisini reklam metnine çeviriyor. Geliştirilmeye devam ediyor; ücretsiz sürümde bazı kısıtlamalar olabilir.](gorseller/ekran-sheets-gemini.png){width=65%}
+
 # Biçimlendirme
 
 Biçimlendirme, veriyi değiştirmez; **okunmasını** değiştirir. Bu yüzden amaçlı yapılmalıdır.
