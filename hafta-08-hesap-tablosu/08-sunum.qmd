@@ -304,11 +304,28 @@ Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` form�
 
 ## Biçimlendirme Türleri
 
+::: {.columns}
+::: {.column width="63%"}
+
 - **Sayı biçimi:** ondalık, binlik ayırıcı, para birimi, yüzde
 - **Tarih biçimi:** görünüşü değişir, değeri değişmez
 - **Kenarlık ve dolgu:** başlıkları ayırmak için
 - **Koşullu biçimlendirme:** eşiğin altındakiler kendiliğinden renklenir
 - **Sütun genişliği:** hücrede `###` görüyorsanız sütun dardır
+
+:::
+
+::: {.column width="35%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[height=6.1cm,keepaspectratio]{gorseller/ekran-excel-bicim.png}\\[1mm]
+{\scriptsize\emph{Excel'de biçimlendirme}}
+\end{center}
+```
+
+:::
+:::
 
 ## Birleştirilmiş Hücrelerden Kaçının
 
