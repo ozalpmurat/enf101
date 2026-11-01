@@ -267,23 +267,52 @@ Aynı araç, çok farklı soruları yanıtlar:
 
 Bu iki işlem sık karıştırılır, oysa amaçları farklıdır.
 
+::: {tbl-colwidths="[18,41,41]"}
 | | Sıralama | Filtreleme |
 |:---|:---|:---|
-| Ne yapar | Satırların yerini değiştirir | Yalnızca koşulu sağlayanları gösterir |
-| Veriye etkisi | Kalıcı olarak yeniden düzenler | Veriyi silmez, geçici olarak gizler |
-| Tipik kullanım | En yüksekten en düşüğe listeleme | Yalnızca bir sınıfın veya tarihin kayıtları |
+| Ne yapar | Satırların yerini değiştirir | Filtreye uymayanları gizler |
+| Veriye etkisi | Kalıcı olarak yeniden düzenler | Veriyi silmez |
+| Tipik kullanım | En yüksekten en düşüğe listeleme | Yalnızca 70 ve üstü notlar |
+:::
 
-Sıralama yaparken **bütün satırı** seçmek şarttır; yalnızca bir sütunu sıralarsanız diğer sütunlarla bağlantı kopar ve veri anlamsızlaşır. Başlık satırını sabitlemek de (dondurma) uzun listelerde yön kaybetmemek için gereklidir.
+Sıralama yaparken **bütün tabloyu** seçmek şarttır; yalnızca bir sütunu sıralarsanız diğer sütunlarla bağlantı kopar ve veri anlamsızlaşır. Başlık satırını sabitlemek de (dondurma) uzun listelerde yön kaybetmemek için kullanılabilir.
 
 ::: {.callout-warning}
 ## Birleştirilmiş hücrelerden kaçının
 
-Görsel olarak düzenli görünse de birleştirilmiş hücreler **sıralama ve filtrelemeyi bozar**; formüllerin aralıklarını da şaşırtır. Başlık satırını ortalamak için hücre birleştirmek yerine "ortala" hizalamasını kullanın.
+Görsel olarak düzenli görünse de birleştirilmiş hücreler **sıralama ve filtrelemeyi bozar**; formüllerin aralıklarını da şaşırtır. Bu yüzden yalnızca gerçekten gerektiğinde kullanılmalıdır.
 :::
 
 # Grafik Oluşturma
 
 Grafik, sayıları görsel biçime çevirir. Doğru grafik türü, verinin ne söylediğini ortaya çıkarır; yanlış tür ise olmayan bir sonucu ima eder.
+
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[c]{0.25\linewidth}
+\centering\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+İsim & Boy \\
+\midrule
+Ece & 160 \\
+Veli & 168 \\
+Metin & 172 \\
+Ali & 174 \\
+Musa & 169 \\
+İrem & 158 \\
+Gül & 161 \\
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.72\linewidth}
+\centering
+\includegraphics[width=\linewidth,keepaspectratio]{gorseller/diagram-grafik-anatomi.png}
+\end{minipage}
+\caption{Bir çubuk grafiğin parçaları: başlık, düşey ve yatay eksenler ile etiketleri, sayısal ölçek, veri çubukları ve değerleri.}
+\end{figure}
+```
 
 ## Hangi veri için hangi grafik
 

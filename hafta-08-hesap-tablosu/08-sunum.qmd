@@ -22,7 +22,7 @@ format: beamer
 ## Hesap Tablosu Nedir?
 
 ::: {.columns}
-::: {.column width="58%"}
+::: {.column width="64%"}
 
 Verinin hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** yazılımdır.
 
@@ -34,7 +34,7 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="26%"}
 
 ```{=latex}
 \begin{center}
@@ -78,7 +78,7 @@ Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılma
 ## CSV: Veriyi Taşıyan Sade Biçim
 
 ::: {.columns}
-::: {.column width="58%"}
+::: {.column width="64%"}
 
 Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgülle ayrılmış değerler).
 
@@ -90,7 +90,7 @@ Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgüll
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="26%"}
 
 ```text
 Ad;Yaş;Not;Şehir
@@ -182,7 +182,7 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 
 ```{=latex}
 \begin{center}
-{\footnotesize
+{\scriptsize
 \setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
 \begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
@@ -239,7 +239,7 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 
 ```{=latex}
 \begin{center}
-{\footnotesize
+{\scriptsize
 \setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
 \begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
@@ -377,18 +377,18 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Aralarındaki Fark
 
+::: {tbl-colwidths="[24,38,38]"}
 | | Sıralama | Filtreleme |
 |:---|:---|:---|
-| Ne yapar | Satırların yerini değiştirir | Uygun olanları gösterir |
-| Veriye etkisi | Kalıcı olarak düzenler | Silmez, geçici gizler |
-| Tipik kullanım | Büyükten küçüğe listeleme | Tek sınıfın kayıtları |
-
-Sıralarken **bütün satırı** seçin; yalnızca bir sütunu sıralarsanız satırlar arasındaki bağ kopar.
+| Ne yapar | Satırların yerini değiştirir | Filtreye uymayanları gizler |
+| Veriye etkisi | Kalıcı olarak düzenler | Veriyi silmez |
+| Tipik kullanım | Büyükten küçüğe listeleme | Yalnızca 70 ve üstü notlar |
+:::
 
 ::: {.callout-warning}
-**Sıralama veriyi kalıcı olarak değiştirir, filtreleme değiştirmez.** Sıralamadan önce verinizin tümünü seçtiğinizden emin olun.
+**Sıralamadan önce bütün tabloyu seçin**; yalnızca bir sütunu sıralarsanız satırlar arasındaki bağ kopar.
 
-**Birleştirilmiş hücreler sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır. Başlığı ortalamak için hücre birleştirmek yerine **ortala** hizalamasını kullanın.
+**Birleştirilmiş hücreler sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır; bu yüzden yalnızca gerçekten gerektiğinde kullanılmalıdır.
 :::
 
 # Grafik
@@ -399,7 +399,39 @@ Sıralarken **bütün satırı** seçin; yalnızca bir sütunu sıralarsanız sa
 2. **Grafik türünü seçin** — verinin türüne göre.
 3. **Etiketleri ekleyin** — grafik başlığı, eksen etiketleri ve birimler, kaynak notu.
 
-Bu üçüncü adım, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" hâle getirir.
+::: {.columns}
+::: {.column width="26%"}
+
+```{=latex}
+\scriptsize
+```
+
+| İsim | Boy |
+|:---|--:|
+| Ece | 160 |
+| Veli | 168 |
+| Metin | 172 |
+| Ali | 174 |
+| Musa | 169 |
+| İrem | 158 |
+| Gül | 161 |
+
+```{=latex}
+\normalsize
+```
+
+:::
+
+::: {.column width="64%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,keepaspectratio]{gorseller/diagram-grafik-anatomi.png}
+\end{center}
+```
+
+:::
+:::
 
 ## Hangi Veri İçin Hangi Grafik
 
