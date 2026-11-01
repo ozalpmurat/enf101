@@ -218,6 +218,8 @@ format:
   - Yüzde hesabı: yüzde puan ve göreli değişim
 - Temel Fonksiyonlar (İşlevler)
 - Biçimlendirme
+  - Sayı, tarih ve hücre biçimleri
+  - Koşullu biçimlendirme
 - Sıralama ve Filtreleme
 - Grafik Oluşturma
   - Hangi veri için hangi grafik

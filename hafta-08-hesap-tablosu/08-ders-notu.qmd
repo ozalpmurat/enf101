@@ -238,19 +238,30 @@ Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Shee
 
 # Biçimlendirme
 
-Biçimlendirme, veriyi değiştirmez; **okunmasını** değiştirir. Bu yüzden amaçlı yapılmalıdır.
+Biçimlendirme, veriyi değiştirmez; **okunmasını** değiştirir. Bu yüzden bir amaca hizmet etmeli, süs olsun diye yapılmamalıdır. En sık kullanılan biçimler sayı, tarih ve hücre görünümüyle ilgilidir; koşullu biçimlendirme ise bunlardan ayrı bir iş görür.
+
+## Sayı, tarih ve hücre biçimleri
 
 - **Sayı biçimi:** ondalık basamak sayısı, binlik ayırıcı, para birimi, yüzde.
 - **Tarih biçimi:** gün–ay–yıl sırası; tarihler sayı gibi işlem gördüğü için biçim yalnızca görünüşü etkiler.
+
+![Google Sheets'te biçim menüsü: Sayı, Yüzde, Tarih, Saat ve Para Birimi gibi biçimler tek listeden seçilir. Seçim hücrenin görünüşünü değiştirir; değeri değiştirmez.](gorseller/ekran-sheets-bicim-menusu.png){width=42%}
+
 - **Yazı tipi, kenarlık ve dolgu:** başlıkları ve önemli hücreleri ayırmak için.
-- **Koşullu biçimlendirme:** bir eşiğin altında kalanların kendiliğinden renklenmesi. Örneğin 70'in altındaki notların kırmızı görünmesi.
 - **Sütun genişliği ve satır yüksekliği:** hücrede `###` görüyorsanız sütun dardır, veri kaybolmuş değildir.
 
-::: {.callout-warning}
-## Birleştirilmiş hücrelerden kaçının
+## Koşullu biçimlendirme
 
-Görsel olarak düzenli görünse de birleştirilmiş hücreler **sıralama ve filtrelemeyi bozar**; formüllerin aralıklarını da şaşırtır. Başlık satırını ortalamak için hücre birleştirmek yerine "ortala" hizalamasını kullanın.
-:::
+Koşullu biçimlendirme, bir hücrenin görünüşünü içindeki değere bağlar: değer belirlenen koşulu sağladığında hücre kendiliğinden renklenir. Koşul bir kez tanımlandığında biçim, değer değiştikçe kendini günceller; hücreleri elle boyamak gerekmez.
+
+Aynı araç, çok farklı soruları yanıtlar:
+
+- 50'nin altındaki notları kırmızıya boya (hücre vurgulama kuralı).
+- Bütün değerleri en küçüğü kırmızı, en büyüğü yeşil olacak biçimde renklendir (renk ölçeği).
+- Her hücrenin yanına değerine uygun bir simge koy: trafik ışığı, WiFi çekim gücü gibi (simge kümesi).
+- En yüksek yüzde 10'luk dilime giren değerleri kalın yaz (ilk/son kuralı).
+
+![Excel'de koşullu biçimlendirme: **Koşullu Biçimlendirme** menüsündeki hazır kurallar (Hücre Vurgulama Kuralları, Renk Ölçekleri ve diğerleri) tek listeden seçilir. Görseldeki tablonun H sütununa kırmızı–beyaz renk ölçeği uygulanmış; değer büyüdükçe renk koyulaşıyor.](gorseller/ekran-excel-kosullu-bicim.png){width=40%}
 
 # Sıralama ve Filtreleme
 
@@ -263,6 +274,12 @@ Bu iki işlem sık karıştırılır, oysa amaçları farklıdır.
 | Tipik kullanım | En yüksekten en düşüğe listeleme | Yalnızca bir sınıfın veya tarihin kayıtları |
 
 Sıralama yaparken **bütün satırı** seçmek şarttır; yalnızca bir sütunu sıralarsanız diğer sütunlarla bağlantı kopar ve veri anlamsızlaşır. Başlık satırını sabitlemek de (dondurma) uzun listelerde yön kaybetmemek için gereklidir.
+
+::: {.callout-warning}
+## Birleştirilmiş hücrelerden kaçının
+
+Görsel olarak düzenli görünse de birleştirilmiş hücreler **sıralama ve filtrelemeyi bozar**; formüllerin aralıklarını da şaşırtır. Başlık satırını ortalamak için hücre birleştirmek yerine "ortala" hizalamasını kullanın.
+:::
 
 # Grafik Oluşturma
 

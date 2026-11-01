@@ -303,7 +303,7 @@ Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` form�
 
 # Biçimlendirme
 
-## Biçimlendirme Türleri
+## Sayı, Tarih ve Hücre Biçimleri
 
 ::: {.columns}
 ::: {.column width="63%"}
@@ -316,7 +316,6 @@ Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` form�
 \item \textbf{Sayı biçimi:} ondalık, binlik ayırıcı, para birimi, yüzde
 \item \textbf{Tarih biçimi:} görünüşü değişir, değeri değişmez
 \item \textbf{Kenarlık ve dolgu:} başlıkları ayırmak için
-\item \textbf{Koşullu biçimlendirme:} eşiğin altındakiler kendiliğinden renklenir
 \item \textbf{Sütun genişliği:} hücrede \texttt{\#\#\#} görüyorsanız sütun dardır
 \end{itemize}
 \end{minipage}
@@ -336,12 +335,42 @@ Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` form�
 :::
 :::
 
-## Birleştirilmiş Hücrelerden Kaçının
+## Koşullu Biçimlendirme
 
-::: {.callout-warning}
-**Birleştirilmiş hücreler sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır. Görsel olarak düzenli görünse de veriyi işlemeyi zorlaştırır.
+::: {.columns}
+::: {.column width="57%"}
 
-Başlığı ortalamak için hücre birleştirmek yerine **ortala** hizalamasını kullanın.
+```{=latex}
+\begin{minipage}[c][5.9cm][c]{\linewidth}
+\raggedright
+\hyphenpenalty=10000
+```
+
+Koşullu biçimlendirme, bir hücrenin görünüşünü içindeki **değere** bağlar: koşul sağlanınca hücre kendiliğinden renklenir.
+
+- 50'nin altındaki notlar kırmızı
+- En küçük kırmızı, en büyük yeşil — renk ölçeği
+- Değere uygun simge: trafik ışığı, WiFi — simge kümesi
+- En yüksek yüzde 10 kalın yazı — ilk/son kuralı
+
+Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
+
+```{=latex}
+\end{minipage}
+```
+
+:::
+
+::: {.column width="39%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[height=5.6cm,keepaspectratio]{gorseller/ekran-excel-kosullu-bicim.png}\\[1mm]
+{\scriptsize\emph{Excel'de koşullu biçimlendirme}}
+\end{center}
+```
+
+:::
 :::
 
 # Sıralama ve Filtreleme
@@ -358,6 +387,8 @@ Sıralarken **bütün satırı** seçin; yalnızca bir sütunu sıralarsanız sa
 
 ::: {.callout-warning}
 **Sıralama veriyi kalıcı olarak değiştirir, filtreleme değiştirmez.** Sıralamadan önce verinizin tümünü seçtiğinizden emin olun.
+
+**Birleştirilmiş hücreler sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır. Başlığı ortalamak için hücre birleştirmek yerine **ortala** hizalamasını kullanın.
 :::
 
 # Grafik
