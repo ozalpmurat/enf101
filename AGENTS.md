@@ -708,18 +708,18 @@ Kapatılan başlıklar ve kararları:
   Satırlar "Programa göre değişir" ve "Sonucun türüne göre" yapıldı; ders notundaki "Hizalama bir ipucudur"
   kutusuna iki istisna yazıldı. **Tekrar "Ortaya" / "Sağa" yazılmasın.**
 
-- **8. haftaya ekran görüntüleri eklendi (26.10.2026):** "LibreOffice Calc penceresi" sunumda 5. slaytta
-  (sağ sütun, 4,6 × 5 cm) ve derste Şekil 1; kullanıcının kendi yakalayıp etiketlediği
-  "Google Sheets: hücre, satır, sütun, aralık, sayfa" görünümü sunumda yeni **6. slaytta** (%82 genişlik)
-  ve derste Şekil 2 (`gorseller/ekran-*.png`, ASCII ad kuralına göre taşındı). Slayt sayısı 39'da kaldı:
+- **8. haftaya ekran görüntüleri eklendi (26.10.2026):** "LibreOffice Calc penceresi" görseli "Hesap
+  Tablosu Nedir?" slaytında sağ sütunda (4,6 × 5 cm) ve derste Şekil 1; kullanıcının kendi yakalayıp etiketlediği
+  "Google Sheets: Hücre, Satır, Sütun, Aralık, Sayfa" görünümü kendi slaydında (%82 genişlik)
+  ve derste Şekil 2 (`gorseller/ekran-*.png`, ASCII ad kuralına göre taşındı). Yeni slayt açmamak için
   "Pasta Grafik Uyarısı" ayrı slayttan çıkarılıp "Hangi Veri İçin Hangi Grafik" slaydına uyarı kutusu olarak
   taşındı — derste de uyarı ayrı başlık değil o bölümün paragrafıydı, böylece iki belgenin yapısı yeniden
   örtüştü (§6 sıra kuralı). **İki bilinçli sapma (kullanıcı kararı, 26.10.2026):** (1) Sheets görseli
   **olduğu gibi** bırakıldı; üstünde tarayıcı sekme/adres çubuğu (`docs.google.com/spreadsheets/d/…`) ve
   sağ üstte Google profil fotoğrafı var — §8'in "tanınabilir insan içeren kare kullanılmaz" kuralı yalnız bu
   görsel için esnetilmiştir, sonraki oturumlarda "kusur" sayılıp kırpılmasın. (2) Not bu iki görselle
-  **13 sayfa** oldu; §2'nin 8–12 hedefi bu hafta için aşıldı (görsel + altyazı ~5,5 cm; hedef genel olarak
-  değişmedi). Kaynağı kaybolmuş iki grafik-türü şemasının betiği de yeniden yazıldı:
+  §2'nin 8–12 sayfa hedefini aştı (görsel + altyazı ~5,5 cm; hedef genel olarak değişmedi). Kaynağı
+  kaybolmuş iki grafik-türü şemasının betiği de yeniden yazıldı:
   `diyagram_betikleri/diagram-grafik-turleri-1.py` ve `-2.py` (`--kontrol` bayrağı var; PNG'ler 1181 × 354 @200 dpi).
 
 - **Doğru cevap dağılımı dengelendi (15.10.2026):** 14 haftanın tamamı tarandı; 04, 05, 06 ve 09
@@ -741,8 +741,8 @@ Kapatılan başlıklar ve kararları:
   `lightbg`; §8) geri eklendi — şablon yenilenirken düşmüşlerdi ve TikZ şeması içeren örnek sunumu
   "Undefined color `enfnavy`" hatasıyla derlenmez hâle getirmişlerdi.
 
-- **Sunu kalabalığı:** Hedef ~30, kabul edilen üst sınır 38 slayttır; iki sununun bu sınırın
-  bir birim üstünde olduğu kabul edilmiştir. Yeni bir konu eklenirse başka bir yerden yer açmak gerekir.
+- **Sunu kalabalığı:** Hedef ~30, kabul edilen üst sınır 38 slayttır. Yeni bir konu eklenirse
+  başka bir yerden yer açmak gerekir.
 
 - **Uyarı kutuları:** iki haftada ikişer olan `callout-warning` kutuları tüm sunulara
   yaygınlaştırıldı; artık her sunuda en az bir kutu var.
