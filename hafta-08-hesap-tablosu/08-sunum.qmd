@@ -486,7 +486,7 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 \begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
 {\centering\textbf{Kesilmiş eksen}\par Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür.\par} &
 {\centering\textbf{Ters çevrilmiş eksen}\par Artış aşağı doğru gösterilir.\par} &
-{\centering\textbf{Ölçek aralığı oynama}\par Aynı veri iki farklı hikâye anlatır.\par} \\
+{\centering\textbf{Eşit olmayan aralıklı eksen}\par Etiket aralıkları eşit sanılır.\par} \\
 \end{tabular}
 
 \vspace{0.3mm}
@@ -513,53 +513,28 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 
 ## Yanıltma: Seçme ve Gizleme
 
-- **Seçilmiş zaman aralığı:** Başlangıç ve bitiş noktası özenle seçilir.
-- **Eksik veri ve "diğer" kovası:** Kayıp noktalar gizlenir.
-- **Seçilmiş karşılaştırma grubu:** Sonucu belirleyen, kiminle karşılaştırıldığıdır.
+```{=latex}
+\vspace*{2mm}
+\begin{center}
+\scriptsize
+\begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
+{\centering\textbf{Seçilmiş zaman aralığı}\par Başlangıç ve bitiş noktası özenle seçilir.\par} &
+{\centering\textbf{Eksik veri ve ``diğer'' kovası}\par Kayıp noktalar gizlenir.\par} &
+{\centering\textbf{Seçilmiş karşılaştırma grubu}\par Sonucu belirleyen, kiminle karşılaştırıldığıdır.\par} \\
+\end{tabular}
+
+\vspace{0.3mm}
+\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-karsilastirma.png}
+\end{center}
+```
 
 ## Yanıltma: Tasarım Kaynaklı
 
-- **Renk ve vurgu:** İstenen seri canlı, diğerleri soluk.
-- **Kalabalık gösterim:** Süsleme asıl veriyi görünmez kılar.
-- **Başlıkla verinin uyuşmaması:** En zor fark edileni.
+- **Renk ve vurgu:** İstenen seri canlı, diğerleri soluk çizilir.
+- **Kalabalık gösterim:** Süsleme, asıl veriyi görünmez kılar.
+- **Başlıkla verinin uyuşmaması:** Okuyucu başlığa güvenir, grafiğin ayrıntısına bakmaz.
 
-## Kontrol Listesi
-
-1. Eksen sıfırdan mı başlıyor?
-2. Birimler ve ölçek yazılı mı?
-3. Kaynak ve tarih var mı?
-4. Kaç veri noktası var; kayıp veri gizli mi?
-5. Başlık verinin söylediğiyle uyumlu mu?
-6. Karşılaştırma grubu adil mi?
-7. Renkler bir şey mi ima ediyor?
-8. Tam veri kümesine erişilebiliyor mu?
-9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
-
-## Uygulama: Aynı Veri, İki Grafik
-
-**Hangi araçla:** Google Sheets gibi çevrimiçi bir araç ya da LibreOffice Calc gibi kurulabilen bir paket.
-
-![](gorseller/karsilastirma.png)
-
-## Fark Nerede?
-
-- İki grafikteki sayılar **birebir aynı**.
-- Aylar, renkler ve kaynak notu da aynı.
-- Peki neden biri sakin bir eğilim, diğeri dik bir tırmanış gösteriyor?
-
-Dikey eksenlere bakın: **nereden başlıyorlar?**
-
-## Yanıt: Kesilmiş Eksen
-
-- **Grafik A:** dikey eksen 0'dan başlıyor.
-- **Grafik B:** dikey eksen 46'dan başlıyor.
-- Aynı %17'lik artış, B'de kat kat büyük görünüyor.
-
-::: {.callout-warning}
-**Sütun grafiğinde dikey eksen sıfırdan başlamalıdır.** Sütun yüksekliği doğrudan değeri temsil ettiği için eksen kesilirse okuma bozulur.
-:::
-
-## Kendiniz Üretin
+## Uygulama: Kendiniz Üretin
 
 1. Küçük bir veri kümesi girin.
 2. Bir kez **kasten yanıltıcı**, bir kez **dürüst** grafik oluşturun.
@@ -574,7 +549,6 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 - **Yüzde puan** ile **göreli değişim** farklıdır.
 - **Sıralama** düzenler, **filtreleme** gösterir.
 - Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
-- Grafiğe her bakışta sorulacak **dokuz soruluk** bir kontrol listesi vardır.
 
 ## Gelecek Hafta
 

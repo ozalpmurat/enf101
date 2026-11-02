@@ -359,24 +359,45 @@ Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza k
 Bir grafik, **tercihlerle kurulmuş bir iddiadır**. Onu hazırlayan kişi hangi veriyi alacağına, hangi aralığı göstereceğine, ekseni nereden başlatacağına ve neyi vurgulayacağına karar verir. Bu kararların bir kısmı bilgisizlikten, bir kısmı okuyanı yönlendirmek amacıyla alınır.
 :::
 
-## Yanıltma taktikleri
+Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramaz. Dört grupta toplanır; aşağıda her grup üç örnekle gösteriliyor. Şekillerde üst satır doğru, alt satır yanıltıcı grafiği verir.
 
-Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramazlar. Dört grupta toplanır:
+## Eksen kaynaklı yanıltmalar
 
-| Grup | Taktik | Nasıl yanıltır |
-|:---|:---|:---|
-| **Eksen** | Kesilmiş eksen | Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür |
-| | Ters çevrilmiş eksen | Eksen alışılmadık yönde çizilir; artış aşağı görünür |
-| | Ölçek aralığı oynama | Aynı veri, farklı aralıklarla iki farklı hikâye anlatır |
-| **Ölçek ve oran** | Alan ve hacim yanılsaması | İki kat büyük değer, iki boyutta büyütülünce dört kat görünür |
-| | Üç boyutlu efekt | Perspektif, uzaktaki dilimi küçük gösterir |
-| | Çift eksen | İlgisiz iki seri, olmayan bir ilişki varmış gibi görünür |
-| **Seçme ve gizleme** | Seçilmiş zaman aralığı | Başlangıç ve bitiş noktası seçilerek eğilim tersine çevrilir |
-| | Eksik veri, "diğer" kovası | Kayıp noktalar gizlenir, kararsızlar tek başlıkta toplanır |
-| | Seçilmiş karşılaştırma grubu | Sonucu belirleyen, kiminle karşılaştırıldığıdır |
-| **Tasarım** | Renk ve vurgu | İstenen seri canlı, diğerleri soluk çizilir |
-| | Kalabalık gösterim | Süsleme, asıl veriyi görünmez kılar |
-| | Başlıkla verinin uyuşmaması | Okuyucu başlığa güvenir, grafiğin ayrıntısına bakmaz |
+![Eksen kaynaklı yanıltmalar: (a) kesilmiş eksen, (b) ters çevrilmiş eksen, (c) eşit olmayan aralıklı eksen](gorseller/diagram-yaniltma-eksen-not.png){width=95%}
+
+**Kesilmiş eksen.** Dikey eksen sıfırdan başlamaz. 96, 98, 97 ve 99 değerleri 0–100 aralığında neredeyse aynı yükseklikteyken, eksen 95'ten başlatılınca aralarındaki 1–2 puanlık fark devasa görünür.
+
+**Ters çevrilmiş eksen.** Eksen alışılmadık yönde, 20'den 0'a çizilir. 10'dan 18'e yükselen seri grafikte aşağı iniyormuş gibi okunur.
+
+**Eşit olmayan aralıklı eksen.** Değerler 2, 8, 12, 18 ve 45'tir. Doğru grafikte son sıçrama açıkça görülür; ama dikey eksene 0, 10, 20 ve 50 etiketleri eşit aralıklarla yerleştirilince 18'den 45'e giden 27 puanlık sıçrama, 12'den 18'e giden 6 puanlık artış kadar küçük görünür.
+
+## Ölçek ve oran kaynaklı yanıltmalar
+
+![Ölçek ve oran: (a) alan ve hacim yanılsaması, (b) üç boyutlu efekt, (c) çift eksen](gorseller/diagram-yaniltma-olcek-not.png){width=95%}
+
+**Alan ve hacim yanılsaması.** Değerler 10, 20 ve 30'dur. Üstteki grafikte dairenin alanı değerle orantılıdır; alttaki grafikte ise çapı. İkinci durumda iki kat değer dört kat büyük görünür, çünkü alan çapın karesiyle büyür.
+
+**Üç boyutlu efekt.** Eşit dört dilimli bir pasta eğik bakışla çizilince dilimler eşit görünmez; perspektif uzaktaki dilimleri küçültür.
+
+**Çift eksen.** İki seri tek eksende ilişkisiz dururken, ikinci bir dikey eksen eklendiğinde ikisi de aynı yönde yükseliyormuş gibi görünür. Sol eksen iki grafikte de 0–250'dir; yanıltıcıdaki sağ eksen (10–18) küçük seriyi tüm yüksekliğe yayar.
+
+## Seçme ve gizleme kaynaklı yanıltmalar
+
+![Seçme ve gizleme: (a) seçilmiş zaman aralığı, (b) eksik veri, (c) seçilmiş karşılaştırma grubu](gorseller/diagram-yaniltma-ornekler.png){width=95%}
+
+**Seçilmiş zaman aralığı.** Bütün seri 52'den 65'e yükselirken aradan seçilen 4–7 aralığı düşüyor; yalnızca o aralık gösterildiğinde eğilim tersine dönmüş görünür.
+
+**Eksik veri, "diğer" kovası.** Oylamaya 100 kişi katılmıştır: Evet %55, Hayır %25, Kararsız %10, cevap vermeyen %10. Doğru grafik bu dört kalemi olduğu gibi gösterir. Yanıltıcı grafikte ise kararsızlar ve cevap vermeyenler tümden atılır; yüzdeler yalnızca 80 oy üzerinden yeniden hesaplanınca Evet %69'a (55/80), Hayır %31'e (25/80) çıkar.
+
+**Seçilmiş karşılaştırma grubu.** Dört grup içinden yalnızca 70 ve 75 seçilip dikey eksen 60'tan başlatılınca aradaki 5 puanlık fark, grafiğin büyük bir bölümünü kaplar.
+
+## Tasarım kaynaklı yanıltmalar
+
+**Renk ve vurgu.** Dört çubuk aynı veriyi taşır. Yalnızca biri canlı, ötekiler soluk çizilince göz istenen çubuğa gider; veri değişmemiştir.
+
+**Kalabalık gösterim.** Grafiğe gereksiz ızgara çizgileri, çerçeveler ve ayrıntılar eklendiğinde göz süslemeye takılır, asıl veri geri planda kalır.
+
+**Başlıkla verinin uyuşmaması.** Düşen bir çizginin üstüne "artış" başlığı konursa okuyucu grafiğe değil başlığa inanır.
 
 ## Kontrol listesi
 
@@ -392,43 +413,10 @@ Bir grafiğe her baktığınızda şu dokuz soruyu hızlıca gözden geçirmek �
 7. Tam veri kümesine erişilebiliyor mu?
 9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
 
-# Uygulama: Aynı Veri, İki Grafik
 
-**Hangi araçla:** çevrimiçi ücretsiz bir hesap tablosu (Google Sheets gibi) ya da kurulabilen ücretsiz bir paket (LibreOffice Calc gibi). Aşağıdaki adımlar ikisinde de aynıdır.
+# Uygulama: Kendiniz Üretin
 
-## Etkinliğin verisi
-
-Bir ilçenin bisiklet yolundan aylık geçiş sayıları (bin olarak):
-
-| Ay | Oca | Şub | Mar | Nis | May | Haz | Tem | Ağu |
-|:-------------|:------|:------|:------|:------|:------|:------|:------|:------|
-| Bin geçiş | 48 | 49 | 50 | 52 | 51 | 53 | 54 | 56 |
-
-Sekiz ayda 48 binden 56 bine çıkan, yani yaklaşık %17 artan bir seri. Şimdi aynı verinin iki farklı grafiğine bakın.
-
-## Adım 1 — İki grafiği karşılaştırın
-
-Aşağıdaki iki grafik **birebir aynı veriden** üretilmiştir. Sayılar, aylar, renkler, kaynak notu — hepsi aynıdır. Yalnızca bir karar farklıdır.
-
-![Aynı veriden üretilmiş iki grafik](gorseller/karsilastirma.png)
-
-## Adım 2 — Farkı teşhis edin
-
-1. Hangisi size daha büyük bir artış olduğu izlenimini veriyor?
-2. İkisinde de aynı sayılar olduğuna göre bu izlenim farkı nereden geliyor?
-3. Farkı yaratan tek karar neydi?
-
-::: {.callout-tip}
-## Etkinliğin yanıtı
-
-**Grafik B** yanıltıcıdır. İki grafik arasındaki tek fark **dikey eksenin başlangıç noktasıdır**: Grafik A ekseni 0'dan başlatırken Grafik B ekseni 46'dan başlatır. Bu, gerçekte %17 olan artışı çok daha büyük gösterir.
-
-Kullanılan taktik **kesilmiş eksen**dir. Sütun grafiklerinde sütun yüksekliği doğrudan değeri temsil ettiği için dikey eksenin sıfırdan başlaması gerekir; aksi hâlde okuyucu yükseklikleri birbirine oranlayarak yanlış bir sonuca varır.
-:::
-
-## Adım 3 — Kendiniz üretin
-
-Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kasten yanıltıcı**, bir kez de **dürüst** grafik oluşturun. İkisini yan yana koyup yanıltıcı sürümde hangi kararları değiştirdiğinizi not edin. Bu adım, taktikleri bir daha unutmayacak biçimde öğretir.
+Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kasten yanıltıcı**, bir kez de **dürüst** grafik oluşturun. İkisini yan yana koyup yanıltıcı sürümde hangi kararları değiştirdiğinizi not edin.
 
 # Özet
 

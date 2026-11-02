@@ -227,13 +227,12 @@ format:
   - Diğer grafik türleri
   - Yapay zekâ ile grafik çizme
 - Grafiklerin Doğru Okunması
-  - Yanıltma taktikleri
+  - Eksen kaynaklı yanıltmalar
+  - Ölçek ve oran kaynaklı yanıltmalar
+  - Seçme ve gizleme kaynaklı yanıltmalar
+  - Tasarım kaynaklı yanıltmalar
   - Kontrol listesi
-- Uygulama: Aynı Veri, İki Grafik
-  - Etkinliğin verisi
-  - Adım 1 — İki grafiği karşılaştırın
-  - Adım 2 — Farkı teşhis edin
-  - Adım 3 — Kendiniz üretin
+- Uygulama: Kendiniz Üretin
 - Özet
 - Kendini Sınama Soruları
 - Kaynaklar
