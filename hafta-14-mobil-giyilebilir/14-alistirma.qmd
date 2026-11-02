@@ -5,8 +5,15 @@ format:
   pdf:
     toc: false
     number-sections: false
-    include-in-header: ../tema/notlar-hafta.tex
+    include-in-header:
+      - ../tema/notlar-hafta.tex
+      - ../tema/alistirma-giris.tex
 ---
+
+```{=latex}
+% Yönerge kutusunun üstündeki boşluğu azaltır (alıştırma girişi).
+\vspace*{-2cm}
+```
 
 ::: {.callout-note}
 ## Yönerge
@@ -17,6 +24,10 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
+
+```{=latex}
+\vspace{\baselineskip}
+```
 
 **1.** Mobil uygulamaları yüklerken en güvenli yol hangisidir?\
 A) Resmî uygulama mağazasını kullanmak\
@@ -38,6 +49,10 @@ B) Yedekleme yalnızca telefondan yapılır\
 C) Senkronizasyon veriyi her yerde eşitler, yedekleme ayrı bir kopya saklar\
 D) Senkronizasyon her zaman ücretlidir\
 E) Yedekleme her cihazda otomatik yapılır
+
+```{=latex}
+\needspace{9\baselineskip}
+```
 
 **4.** Telefonunuzda ekran kilidi ve SIM PIN'i neden önemlidir?\
 A) Pili uzattığı için\

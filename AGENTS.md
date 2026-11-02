@@ -419,6 +419,11 @@ sınırından bölünmüştü. Satırlar bitişik yazılınca bu satırlar düz 
 kendiliğinden ortadan kalkar. Çoktan seçmeli şıkların harf etiketleri bu yüzden her zaman
 `A)` biçiminde ve soruya bitişik yazılır.
 
+**Soru ve şıkları bölünmez.** Bir soru ile A–E şıkları (doğru–yanlış sorusunda
+`(   ) Doğru        (   ) Yanlış` satırı) tek bir bloktur; iki sayfaya ayrılmaz. Blok sayfaya bütün
+olarak sığmıyorsa bir sonraki sayfaya geçer. Gerekirse sorudan önce ham LaTeX bloğu olarak
+`\needspace{9\baselineskip}` konur; yarım kalan soru yayına hazırlık denetiminde kusur sayılır.
+
 ---
 
 ## 8. Görsel üretimi
@@ -677,7 +682,7 @@ done
 
 ### Yayına hazırlık denetimleri
 
-Yukarıdaki otomatik kontrollere ek olarak, yayına hazırlıkta **elle yapılan beş kontrol** vardır
+Yukarıdaki otomatik kontrollere ek olarak, yayına hazırlıkta **elle yapılan altı kontrol** vardır
 (mekanik kontrollerin yakalamadığı kalite sorunları bunlarda çıkar):
 
 - **Dilbilgisi ve yazım.** Yazım hataları, noktalama, terimlerin tutarlı yazımı; başlık büyük–küçük
@@ -697,6 +702,9 @@ Yukarıdaki otomatik kontrollere ek olarak, yayına hazırlıkta **elle yapılan
   büyük boşluklar ve bunlara yol açan gereksiz `\newpage` / `\filbreak` kalıntıları; sunularda alta taşma,
   alt şeride değme, metin ile grafik çakışması. Bulgular sayfa/slayt numarasıyla listelenir, düzeltmeler
   toplu yapılır.
+- **Alıştırma soru blokları.** Her soru ile şıkları aynı sayfada mı; blok iki sayfaya bölünmüş mü?
+  Bölünmüşse sorudan önce `\needspace{9\baselineskip}` konur ve blok bütün olarak sonraki sayfaya
+  alınır. Yarım kalan soru kusur sayılır.
 
 Bu denetimlerin hiçbiri tek komutla yapılamaz; dosyalar (gerektiğinde atıf yapılan diğer hafta da) okunup
 karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzeltme kararı kullanıcıya bırakılır.

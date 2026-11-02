@@ -5,8 +5,15 @@ format:
   pdf:
     toc: false
     number-sections: false
-    include-in-header: ../tema/notlar-hafta.tex
+    include-in-header:
+      - ../tema/notlar-hafta.tex
+      - ../tema/alistirma-giris.tex
 ---
+
+```{=latex}
+% Yönerge kutusunun üstündeki boşluğu azaltır (alıştırma girişi).
+\vspace*{-2cm}
+```
 
 ::: {.callout-note}
 ## Yönerge
@@ -17,6 +24,10 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
+
+```{=latex}
+\vspace{\baselineskip}
+```
 
 **1.** Bir sunumun bölümleri ve süre payları hangisinde doğru verilmiştir?\
 A) Açılış %50 – Gövde %30 – Kapanış %20\
@@ -38,6 +49,10 @@ B) 5\
 C) 7\
 D) 10\
 E) 3
+
+```{=latex}
+\needspace{9\baselineskip}
+```
 
 **4.** Slayt hazırlarken satır başına önerilen kelime sayısı hangisidir?\
 A) 6–8\

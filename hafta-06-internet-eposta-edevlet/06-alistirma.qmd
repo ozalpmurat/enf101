@@ -5,8 +5,15 @@ format:
   pdf:
     toc: false
     number-sections: false
-    include-in-header: ../tema/notlar-hafta.tex
+    include-in-header:
+      - ../tema/notlar-hafta.tex
+      - ../tema/alistirma-giris.tex
 ---
+
+```{=latex}
+% Yönerge kutusunun üstündeki boşluğu azaltır (alıştırma girişi).
+\vspace*{-2cm}
+```
 
 ::: {.callout-note}
 ## Yönerge
@@ -17,6 +24,10 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
+
+```{=latex}
+\vspace{\baselineskip}
+```
 
 **1.** Arama motorunda yalnızca resmî kamu kurumu sitelerinde arama yapmak için hangi ifade kullanılır?\
 A) `site:gov.tr`\

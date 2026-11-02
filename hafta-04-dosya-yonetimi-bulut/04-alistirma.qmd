@@ -5,8 +5,15 @@ format:
   pdf:
     toc: false
     number-sections: false
-    include-in-header: ../tema/notlar-hafta.tex
+    include-in-header:
+      - ../tema/notlar-hafta.tex
+      - ../tema/alistirma-giris.tex
 ---
+
+```{=latex}
+% Yönerge kutusunun üstündeki boşluğu azaltır (alıştırma girişi).
+\vspace*{-2cm}
+```
 
 ::: {.callout-note}
 ## Yönerge
@@ -17,6 +24,10 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
+
+```{=latex}
+\vspace{\baselineskip}
+```
 
 **1.** Bir dosyayı başka bir klasöre taşımak için hangi işlem kullanılır?\
 A) Kes / Yapıştır\
@@ -38,6 +49,10 @@ B) Dosya resme dönüşür\
 C) Dosya bozulur ve açılmaz hâle gelir\
 D) Dosya sıkıştırılmış olur\
 E) Dosyanın boyutu küçülür
+
+```{=latex}
+\needspace{9\baselineskip}
+```
 
 **4.** Sıkıştırma hangi dosya türlerinde belirgin boyut kazancı sağlar?\
 A) Video dosyaları\

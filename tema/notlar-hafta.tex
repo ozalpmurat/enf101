@@ -5,10 +5,15 @@
 % gg.aa.yyyy için sıfır dolgulu gün/ay
 \providecommand{\iki}[1]{\ifnum#1<10 0\fi\number#1}
 
+% Alıştırmalarda soru + şıkların sayfa sonunda bölünmemesi için (bkz. AGENTS §7)
+\usepackage{needspace}
+
 % Giriş logosu: başlığın hemen üstünde, ortada, 3 cm.
 % KOMA-script'in \titlehead alanı tam bunun için var; \maketitle bu içeriği
 % başlıktan önce dizer (sayfa başına atlamaz).
+\providecommand{\girisUstBosluk}{0pt}
 \titlehead{%
+  \vspace*{\girisUstBosluk}%
   \IfFileExists{../tema/logo.png}%
     {\begin{center}\includegraphics[height=3cm]{../tema/logo.png}\end{center}}%
     {\IfFileExists{tema/logo.png}%

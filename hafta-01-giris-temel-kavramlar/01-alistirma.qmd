@@ -5,8 +5,15 @@ format:
   pdf:
     toc: false
     number-sections: false
-    include-in-header: ../tema/notlar-hafta.tex
+    include-in-header:
+      - ../tema/notlar-hafta.tex
+      - ../tema/alistirma-giris.tex
 ---
+
+```{=latex}
+% Yönerge kutusunun üstündeki boşluğu azaltır (alıştırma girişi).
+\vspace*{-2cm}
+```
 
 ::: {.callout-note}
 ## Yönerge
@@ -17,6 +24,10 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
+
+```{=latex}
+\vspace{\baselineskip}
+```
 
 **1.** Aşağıdakilerden hangisi tek başına "veri" kavramına örnektir?\
 A) "Bugün hava sıcaklığı 23,5 °C ölçüldü."\
@@ -38,6 +49,10 @@ B) Bağlam kazandırılmış ancak yorumlanmamış veri\
 C) Yorumlanan, deneyimle birleşen ve karar vermede kullanılan enformasyon\
 D) İnternet'te paylaşılan her türlü içerik\
 E) Bir konuda uzmanların görüş birliği olması
+
+```{=latex}
+\needspace{9\baselineskip}
+```
 
 **4.** Bilgi toplumunu sanayi toplumundan ayıran temel özellik nedir?\
 A) Tarımsal üretimin artması\

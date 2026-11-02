@@ -5,8 +5,15 @@ format:
   pdf:
     toc: false
     number-sections: false
-    include-in-header: ../tema/notlar-hafta.tex
+    include-in-header:
+      - ../tema/notlar-hafta.tex
+      - ../tema/alistirma-giris.tex
 ---
+
+```{=latex}
+% Yönerge kutusunun üstündeki boşluğu azaltır (alıştırma girişi).
+\vspace*{-2cm}
+```
 
 ::: {.callout-note}
 ## Yönerge
@@ -17,6 +24,10 @@ Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerini
 
 Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlamanız önerilir.
 :::
+
+```{=latex}
+\vspace{\baselineskip}
+```
 
 **1.** Kelime işlemcide bir metni seçip kalın yapmak ve puntosunu büyütmek ne sağlar?\
 A) Metni gerçek bir başlık hâline getirir\
@@ -38,6 +49,10 @@ B) `.docx`\
 C) `.txt`\
 D) `.pptx`\
 E) `.jpg`
+
+```{=latex}
+\needspace{9\baselineskip}
+```
 
 **4.** Aşağıdakilerden hangisi intihal sayılır?\
 A) Alıntıyı tırnak içinde gösterip kaynak belirtmek\
