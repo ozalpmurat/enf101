@@ -287,6 +287,8 @@ Görsel olarak düzenli görünse de birleştirilmiş hücreler **sıralama ve f
 
 Grafik, sayıları görsel biçime çevirir. Doğru grafik türü, verinin ne söylediğini ortaya çıkarır; yanlış tür ise olmayan bir sonucu ima eder.
 
+Bir grafik nasıl oluşturulur: önce **veriyi seçin** (başlık satırıyla birlikte), sonra **grafik türünü** seçin. Ardından eksik bırakılmaması gereken üç şey var — **grafik başlığı**, **eksen etiketleri ve birimler**, **veri kaynağı notu**. Bu üçünü eklemek, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" hâle getirir.
+
 ```{=latex}
 \begin{figure}[htbp]
 \centering
@@ -314,26 +316,38 @@ Gül & 161 \\
 \end{figure}
 ```
 
-## Hangi veri için hangi grafik
-
-| Amaç | Uygun grafik |
-|:---|:---|
-| Kategorileri karşılaştırmak | Sütun veya çubuk |
-| Zaman içindeki değişimi göstermek | Çizgi |
-| Bütün içindeki payı göstermek | Pasta veya yığılmış çubuk |
-| Dağılımı göstermek | Histogram, kutu grafiği |
-| İki değişken arasındaki ilişki | Dağılım (saçılım) |
-| Coğrafi dağılım | Harita (renk değeri gösterir; alanın büyüklüğü değer demek değildir) |
-
-Nasıl bir grafik oluşturulur: önce **veriyi seçin** (başlık satırıyla birlikte), sonra **grafik türünü** seçin. Ardından eksik bırakılmaması gereken üç şey var — **grafik başlığı**, **eksen etiketleri ve birimler**, **veri kaynağı notu**. Bu üçünü eklemek, grafiği "çizilmiş" olmaktan çıkarıp "anlaşılır" hâle getirir.
-
-Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinden belirgin biçimde farklı oranlar** olduğunda işe yarar. Altı yedi dilimli, oranları yakın pastalar okunamaz.
+## Çokça kullanılan grafik türleri
 
 ![Yaygın grafik türleri: sütun, çizgi ve pasta](gorseller/diagram-grafik-turleri-1.png){width=90%}
 
 ![Yaygın grafik türleri: histogram, kutu grafiği ve saçılım](gorseller/diagram-grafik-turleri-2.png){width=90%}
 
-Coğrafi dağılım için kullanılan **harita** bu örneklerin dışındadır: haritada alan büyüklüğü değeri göstermediği için okunurken ayrıca dikkat gerekir.
+::: {tbl-colwidths="[32,68]"}
+| Grafik türü | Kullanım amacı |
+|:---|:---|
+| Sütun veya çubuk grafiği | Kategorileri karşılaştırmak |
+| Çizgi grafiği | Zaman içindeki değişimi göstermek |
+| Pasta veya yığılmış çubuk | Bütün içindeki payı göstermek |
+| Histogram | Dağılımı göstermek |
+| Kutu grafiği | Yayılımı ve uç değerleri göstermek |
+| Saçılım (dağılım) grafiği | İki değişken arasındaki ilişki |
+:::
+
+Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinden belirgin biçimde farklı oranlar** olduğunda işe yarar. Altı yedi dilimli, oranları yakın pastalar okunamaz.
+
+## Diğer grafik türleri
+
+Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)** kullanılır. Bu şekilde onlarca farklı grafik türü kullanılabilir. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
+
+![Farklı grafik türleri: Sankey diyagramı, kelime bulutu, harita, ısı haritası ve ağaç haritası](gorseller/diagram-farkli-grafik-turleri.jpg){width=95%}
+
+## Yapay zekâ ile grafik çizme
+
+Grafiği elle çizmek yerine yapay zekâya çizdirmek de mümkündür: "ECharts ile radar grafiği oluştur" gibi bir istek, çalışan bir örnek üretir. Apache ECharts ve Chart.js ücretsiz, açık kaynaklı JavaScript kütüphaneleridir; kod tarayıcıda çalışır, kurulum gerektirmez. Üretilen grafiğin başlığı, eksenleri, birimleri ve ölçeği yine de gözle denetlenmelidir. Apache ECharts ve Chart.js örnek grafiklerini kendi web sitelerinden inceleyebilirsiniz.[^ornekler]
+
+[^ornekler]: Apache ECharts: <https://echarts.apache.org/examples/> · Chart.js: <https://www.chartjs.org/docs/latest/samples/>
+
+![ChatGPT ücretsiz sürümde ECharts ile radar grafiği: istek yazılır, üretilen kod çalıştırılır; grafik ile kod arasında geçiş yapılabilir.](gorseller/ekran-chatgpt-echarts.png){width=72%}
 
 # Grafiklerin Doğru Okunması
 

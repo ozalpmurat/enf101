@@ -433,28 +433,37 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 :::
 :::
 
-## Hangi Veri İçin Hangi Grafik
-
-| Amaç | Uygun grafik |
-|:---|:---|
-| Kategorileri karşılaştırmak | Sütun veya çubuk |
-| Zaman içindeki değişim | Çizgi |
-| Bütün içindeki pay | Pasta veya yığılmış çubuk |
-| Dağılım | Histogram, kutu grafiği |
-| İki değişken arasındaki ilişki | Dağılım (saçılım) |
-| Coğrafi dağılım | Harita (büyük alan, büyük değer değildir) |
-
-::: {.callout-warning}
-**Pasta grafik ancak az sayıda dilim ve belirgin biçimde farklı oranlarla** okunur; altı yedi dilimli, oranları yakın pastalar okunamaz.
-:::
-
 ## Örnekler: Sütun, Çizgi, Pasta
 
 ![](gorseller/diagram-grafik-turleri-1.png){width=88%}
 
+| Grafik türü | Kullanım amacı |
+|:---|:---|
+| Sütun grafiği | Kategorileri karşılaştırmak |
+| Çizgi grafiği | Zaman içindeki değişimi göstermek |
+| Pasta grafiği | Bütün içindeki payı göstermek |
+
 ## Örnekler: Histogram, Kutu, Saçılım
 
 ![](gorseller/diagram-grafik-turleri-2.png){width=88%}
+
+| Grafik türü | Kullanım amacı |
+|:---|:---|
+| Histogram | Dağılımı göstermek |
+| Kutu grafiği | Yayılımı ve uç değerleri göstermek |
+| Saçılım (dağılım) grafiği | İki değişken arasındaki ilişki |
+
+## Farklı Grafik Türleri
+
+![](gorseller/diagram-farkli-grafik-turleri.jpg){width=100%}
+
+## Üretici Yapay Zekâ ile Grafik Çizme
+
+```{=latex}
+\begin{center}
+\includegraphics[height=7.4cm,keepaspectratio]{gorseller/ekran-chatgpt-echarts-notlu.png}
+\end{center}
+```
 
 # Grafiklerin Doğru Okunması
 
