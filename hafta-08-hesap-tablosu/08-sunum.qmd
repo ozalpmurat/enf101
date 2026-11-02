@@ -496,9 +496,20 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 
 ## Yanıltma: Ölçek ve Oran
 
-- **Alan ve hacim yanılsaması:** İki kat büyük değer, iki boyutta büyütülünce **dört kat** görünür.
-- **Üç boyutlu efekt:** Perspektif uzaktaki dilimi küçültür.
-- **Çift eksen:** İlgisiz iki seri, olmayan bir ilişki varmış gibi görünür.
+```{=latex}
+\vspace*{2mm}
+\begin{center}
+\scriptsize
+\begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
+{\centering\textbf{Alan ve hacim yanılsaması}\par İki kat büyük değer, iki boyutta büyütülünce dört kat görünür.\par} &
+{\centering\textbf{Üç boyutlu efekt}\par Perspektif uzaktaki dilimi küçültür.\par} &
+{\centering\textbf{Çift eksen}\par İlgisiz iki seri, olmayan bir ilişki varmış gibi görünür.\par} \\
+\end{tabular}
+
+\vspace{0.3mm}
+\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-olcek.png}
+\end{center}
+```
 
 ## Yanıltma: Seçme ve Gizleme
 
