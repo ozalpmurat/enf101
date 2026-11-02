@@ -25,7 +25,7 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 - Hesap tablosunun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
 - Formül yazar; göreli ve mutlak başvuru arasındaki farkı açıklar.
-- Temel fonksiyonları (topla, ortalama, mak, min, eğer, eğersay) amaca uygun kullanır.
+- Temel fonksiyonları (topla, ortalama, mak, min, eğer, eğersay, say) amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
 - Veri türüne uygun grafiği seçer ve grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
@@ -148,7 +148,7 @@ Görseldeki formül `=B3/$B$10` bir satır aşağı kopyalandığında `=B4/$B$1
 Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme. Sağda aynı örnek, Microsoft Excel'de iki ayrı formülle hesaplanmış.
 :::
 
-Aynı 5 puan; taban %20 iken %25, taban %50 iken %10 demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
+Aynı 5 puan; taban %20 iken %25, taban %50 iken %10'luk bir artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
 
 Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, göreli değişim için `=(B2-A2)/A2`. Birincisi **sayı**, ikincisi **yüzde** biçiminde gösterilir; aynı tabloya iki farklı biçim vermek kavramların karışmasını önler.
 
@@ -232,9 +232,9 @@ Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütu
 
 Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
-Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Sheets'te `=GEMINI("…")` ya da `=AI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef kitle ve kampanya hedefi hücrelerinden bir reklam metni yazılmış. Özellik geliştirilmeye devam ediyor; ücretsiz sürümde aylık kullanım sınırı gibi kısıtlamalar olabilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
+Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Sheets'te `=GEMINI("…")` ya da `=AI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef ve kitle hedefi hücrelerinden bir reklam metni yazılmış. İşlevin kullanılabilirliği ve kullanım sınırları hesaba ve plana göre değişebilir; bazı hesaplarda hiç görünmeyebilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
 
-![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün ve hedef kitle bilgisini reklam metnine çeviriyor.](gorseller/ekran-sheets-gemini.png){width=65%}
+![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün, hedef ve kitle hedefi bilgisini reklam metnine çeviriyor.](gorseller/ekran-sheets-gemini.png){width=65%}
 
 # Biçimlendirme
 
@@ -331,13 +331,14 @@ Gül & 161 \\
 | Histogram | Dağılımı göstermek |
 | Kutu grafiği | Yayılımı ve uç değerleri göstermek |
 | Saçılım (dağılım) grafiği | İki değişken arasındaki ilişki |
+| Harita | Coğrafi dağılım (alanın büyüklüğü değerin kendisi değildir) |
 :::
 
 Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinden belirgin biçimde farklı oranlar** olduğunda işe yarar. Altı yedi dilimli, oranları yakın pastalar okunamaz.
 
 ## Diğer grafik türleri
 
-Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)** kullanılır. Bu şekilde onlarca farklı grafik türü kullanılabilir. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
+Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır. Bu şekilde onlarca farklı grafik türü kullanılabilir. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
 
 ![Farklı grafik türleri: Sankey diyagramı, kelime bulutu, harita, ısı haritası ve ağaç haritası](gorseller/diagram-farkli-grafik-turleri.jpg){width=95%}
 
@@ -403,14 +404,14 @@ Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe
 
 Bir grafiğe her baktığınızda şu dokuz soruyu hızlıca gözden geçirmek çoğu yanıltmayı yakalar:
 
-1. Eksen sıfırdan mı başlıyor?
+1. Sütun ve alan grafiğinde eksen sıfırdan mı başlıyor?
 2. Birimler ve ölçek yazılı mı?
 3. Kaynak ve tarih var mı?
-3. Kaç veri noktası var; kayıp veri gizlenmiş mi?
-4. Grafik başlığı verinin söylediğiyle uyumlu mu?
-5. Karşılaştırma grubu adil mi?
-6. Renkler bir şey mi ima ediyor?
-7. Tam veri kümesine erişilebiliyor mu?
+4. Kaç veri noktası var; kayıp veri gizlenmiş mi?
+5. Grafik başlığı verinin söylediğiyle uyumlu mu?
+6. Karşılaştırma grubu adil mi?
+7. Renkler bir şey mi ima ediyor?
+8. Tam veri kümesine erişilebiliyor mu?
 9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
 
 
@@ -423,7 +424,10 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 - Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır; girdi değişince sonuç kendiliğinden güncellenir.
 - Formüller `=` ile başlar; **göreli** başvuru kopyalanınca kayar, **mutlak** başvuru (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli yüzde değişim** farklı şeylerdir; karıştırıldığında değişim olduğundan büyük görünür.
+- **CSV** değerleri taşır, biçimlendirmeyi taşımaz; bu yüzden programlar arasında ortak biçimdir.
+- **Biçimlendirme** veriyi değil görünüşü değiştirir; koşullu biçimlendirme değere göre kendini günceller.
 - **Sıralama** veriyi yeniden düzenler, **filtreleme** yalnızca gösterir.
+- **Grafik türü** verinin türüne göre seçilir: kategoriler için sütun, zaman için çizgi, pay için pasta.
 - Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
 - Grafiğe her bakışta sorulacak dokuz soruluk bir kontrol listesi vardır.
 
@@ -436,6 +440,8 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 5. Zaman içindeki değişimi göstermek için hangi grafik türü uygundur; neden?
 6. Dikey ekseni 45'ten başlayan bir sütun grafiği okuyucuyu nasıl yanıltır?
 7. Elinizde bir grafik olduğunda ilk bakacağınız üç şey nedir?
+8. Bir CSV dosyası hangi bilgileri taşımaz?
+9. Koşullu biçimlendirme hücrenin değerini değiştirir mi; neyi değiştirir?
 
 # Kaynaklar
 

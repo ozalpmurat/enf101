@@ -158,7 +158,7 @@ Sabit bir değere göre oranlarken toplam hücresi mutlak yazılır: \texttt{=B2
 \end{center}
 ```
 
-Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçüldükçe, aynı puan farkının etkisi büyür.
+Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür.
 
 2 vakadan 6'ya çıkış "%200 arttı" demektir; ama arada yalnızca **4 vaka** var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez. Oran içeren bir haberde ilk soru şu olmalı: **neyin yüzde kaçı, tabanı kaç?**
 
@@ -299,7 +299,7 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'dur: taban küçül
 \end{center}
 ```
 
-Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` formülü, A2:C2 aralığındaki ürün ve hedef kitle bilgisini reklam metnine çeviriyor. Geliştirilmeye devam ediyor; ücretsiz sürümde bazı kısıtlamalar olabilir.
+Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` (sürüme göre `=AI(...)`) formülü, A2:C2 aralığındaki ürün, hedef ve kitle hedefi bilgisini reklam metnine çeviriyor. Kullanılabilirliği ve kullanım sınırları hesaba ve plana göre değişebilir; bazı hesaplarda hiç görünmeyebilir.
 
 # Biçimlendirme
 
@@ -547,7 +547,10 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 - Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır.
 - **Göreli** başvuru kopyalanınca kayar, **mutlak** (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli değişim** farklıdır.
+- **CSV** değerleri taşır, biçimlendirmeyi taşımaz.
+- **Biçimlendirme** görünüşü değiştirir, değeri değil.
 - **Sıralama** düzenler, **filtreleme** gösterir.
+- **Grafik türü** veriye göre seçilir: kategori → sütun, zaman → çizgi, pay → pasta.
 - Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
 
 ## Gelecek Hafta
