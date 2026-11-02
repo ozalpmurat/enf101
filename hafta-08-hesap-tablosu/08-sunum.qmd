@@ -469,15 +469,30 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Grafik Tarafsız mı?
 
-Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**.
+Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Grafiği hazırlayan şu kararları verir: hangi veriyi alacağı, hangi aralığı göstereceği, ekseni nereden başlatacağı, neyi vurgulayacağı.
 
-Grafiği hazırlayan şu kararları verir: hangi veriyi alacağı, hangi aralığı göstereceği, ekseni nereden başlatacağı, neyi vurgulayacağı.
+```{=latex}
+\begin{center}
+\includegraphics[width=9.6cm,keepaspectratio]{gorseller/foto-grafik-buyutec.jpg}
+\end{center}
+```
 
 ## Yanıltma: Eksen Kaynaklı
 
-- **Kesilmiş eksen:** Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür.
-- **Ters çevrilmiş eksen:** Artış aşağı doğru gösterilir.
-- **Ölçek aralığı oynama:** Aynı veri iki farklı hikâye anlatır.
+```{=latex}
+\vspace*{2mm}
+\begin{center}
+\scriptsize
+\begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
+{\centering\textbf{Kesilmiş eksen}\par Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür.\par} &
+{\centering\textbf{Ters çevrilmiş eksen}\par Artış aşağı doğru gösterilir.\par} &
+{\centering\textbf{Ölçek aralığı oynama}\par Aynı veri iki farklı hikâye anlatır.\par} \\
+\end{tabular}
+
+\vspace{0.3mm}
+\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-eksen.png}
+\end{center}
+```
 
 ## Yanıltma: Ölçek ve Oran
 
