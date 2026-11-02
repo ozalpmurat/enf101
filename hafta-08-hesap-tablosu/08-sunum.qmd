@@ -204,14 +204,10 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demekti
 \end{tabular}}
 ```
 
-```{=latex}
-\vspace{\baselineskip}
-```
+:::
+:::
 
 **Girmedi** bir metindir: TOPLA, ORTALAMA, MAK ve MİN onu hesaba katmaz. Ortalama 450 ÷ **6** = **75** olur.
-
-:::
-:::
 
 ## Örnek Veri: EĞERSAY, EĞER, SAY
 
@@ -263,14 +259,10 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demekti
 \end{tabular}}
 ```
 
-```{=latex}
-\vspace{\baselineskip}
-```
+:::
+:::
 
 70, 80, 90 ve 100 → **4**. Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer. C3'teki 45 eşiğin altında olduğu için **Kaldı** çıkar. A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
-
-:::
-:::
 
 ## Metin Fonksiyonları
 
@@ -311,14 +303,10 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demekti
 \end{tabular}}
 ```
 
-```{=latex}
-\vspace{\baselineskip}
-```
+:::
+:::
 
 Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçalanır; `&` işareti `BİRLEŞTİR` ile aynı işi yapar. Fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` temizler.
-
-:::
-:::
 
 ## Mantıksal Fonksiyonlar
 
@@ -368,14 +356,10 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 \end{tabular}}
 ```
 
-```{=latex}
-\vspace{\baselineskip}
-```
+:::
+:::
 
 `VE` bütün koşullar sağlanınca, `YADA` en az biri sağlanınca DOĞRU verir. Üç sonuç gerektiğinde `EĞER` iç içe yazılır; parantez çoğaldıkça okunaksızlaştığı için ara sonucu ayrı hücrede tutmak yeğlenir.
-
-:::
-:::
 
 ## Tarih ve Zaman Fonksiyonları
 
@@ -415,14 +399,10 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 \end{tabular}}
 ```
 
-```{=latex}
-\vspace{\baselineskip}
-```
+:::
+:::
 
 Tarih aslında bir sayıdır (1 = 01.01.1900); bu yüzden iki tarihin farkı gün sayısını verir. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" kendiliğinden değişir.
-
-:::
-:::
 
 ## Yapay Zekâ Destekli Fonksiyonlar
 
