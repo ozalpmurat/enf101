@@ -18,7 +18,7 @@ format:
 ::: {.callout-note}
 ## Yönerge
 
-Bu alıştırma 12 sorudan oluşur: 10 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 18 dakikadır.
+Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
 
 Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
 
@@ -29,21 +29,14 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 \vspace{\baselineskip}
 ```
 
-**1.** Hesap tablosunda bir formülü bir satır aşağı kopyaladığınızda `A1` başvurusu ne olur?\
-A) A1 olarak kalır\
-B) A2 olur\
-C) $A$1 olur\
-D) B1 olur\
-E) A1:A2 aralığına dönüşür
+**1.** Bir formülü bir satır aşağı kopyaladığınızda `A1` ve `$A$1` başvurularına ne olur?\
+A) İkisi de A2 olur\
+B) A1, A2 olur; $A$1 değişmez\
+C) İkisi de $A$2 olur\
+D) A1 değişmez; $A$1, A2 olur\
+E) İkisi de A1 olarak kalır
 
-**2.** Aşağıdakilerden hangisi mutlak hücre başvurusudur?\
-A) A1\
-B) A1:A10\
-C) $A$1\
-D) =A1\
-E) A$1:A$10
-
-**3.** Zaman içindeki değişimi göstermek için hangi grafik türü uygundur?\
+**2.** Zaman içindeki değişimi göstermek için hangi grafik türü uygundur?\
 A) Sütun grafiği\
 B) Çizgi grafiği\
 C) Pasta grafiği\
@@ -51,62 +44,55 @@ D) Histogram\
 E) Saçılım grafiği
 
 ```{=latex}
-\needspace{9\baselineskip}
+\needspace{6\baselineskip}
 ```
 
-**4.** Bir sınıfın notları hesap tablosunda tutulmaktadır: 60, 65, 70, 75, 80, 80, 85, 85, 90 ve 95. Sınıfın genel başarısını tek bir sayıyla anlatmak için hangisi daha uygundur?\
+**3.** Bir sınıfın notları hesap tablosunda tutulmaktadır: 60, 65, 70, 75, 80, 80, 85, 85, 90 ve 95. Sınıfın genel başarısını tek bir sayıyla anlatmak için hangisi daha uygundur?\
 A) MAK, çünkü yalnızca en yüksek puanı verir\
 B) MİN, çünkü yalnızca en düşük puanı verir\
 C) ORTALAMA, çünkü bütün puanları hesaba katar\
 D) TOPLA, çünkü bütün puanları toplar\
 E) EĞERSAY, çünkü koşulu sağlayan hücreleri sayar
 
-**5.** `EĞERSAY` fonksiyonu ne yapar?\
-A) Aralıktaki tüm sayıları toplar\
-B) Aralıktaki bütün hücreleri sayar\
-C) Aralıktaki en büyük değeri bulur\
-D) Koşulu sağlayan hücreleri sayar\
-E) Aralıktaki en küçük değeri bulur
-
-**6.** Hesap tablosunda sıralama ile filtreleme arasındaki temel fark nedir?\
+**4.** Hesap tablosunda sıralama ile filtreleme arasındaki temel fark nedir?\
 A) Sıralama veriyi kalıcı olarak yeniden düzenler, filtreleme yalnızca gösterir\
 B) İkisi tamamen aynı işi yapar\
 C) Filtreleme veriyi siler, sıralama silmez\
 D) Sıralama yalnızca sayısal sütunlarda çalışır\
 E) Filtreleme satırların yerini kalıcı olarak değiştirir
 
-**7.** Bir oranın %20'den %25'e çıkması durumunda aşağıdakilerden hangisi doğrudur?\
+**5.** Bir oranın %20'den %25'e çıkması durumunda aşağıdakilerden hangisi doğrudur?\
 A) 5 yüzde puan artmıştır; göreli olarak %25 artış demektir\
 B) %5 artmıştır; göreli değişim yoktur\
 C) %25 puan artmıştır\
 D) Bu verilerle değişim hesaplanamaz\
 E) Göreli artış %100'dür
 
-**8.** Dikey ekseni sıfırdan başlamayan bir sütun grafiğinde hangi yanıltma taktiği kullanılmıştır?\
+**6.** Dikey ekseni sıfırdan başlamayan bir sütun grafiğinde hangi yanıltma taktiği kullanılmıştır?\
 A) Çift eksen\
 B) Logaritmik eksen kullanımı\
 C) Alan yanılsaması\
 D) Seçilmiş zaman aralığı\
 E) Kesilmiş eksen
 
-**9.** Bir hücrede `TR-34-1234` kodu vardır. Kodun ilk iki karakterini (`TR`) veren formül hangisidir?\
+**7.** Bir hücrede `TR-34-1234` kodu vardır. Kodun ilk iki karakterini (`TR`) veren formül hangisidir?\
 A) =SAĞDAN(A2;2)\
 B) =PARÇAAL(A2;2;2)\
 C) =UZUNLUK(A2)\
 D) =SOLDAN(A2;2)\
 E) =BİRLEŞTİR(A2;2)
 
-**10.** A2 hücresinde 15.03.2007, B2 hücresinde 20.11.2026 tarihi vardır. İki tarih arasındaki gün sayısını veren formül hangisidir?\
+**8.** A2 hücresinde 15.03.2007, B2 hücresinde 20.11.2026 tarihi vardır. İki tarih arasındaki gün sayısını veren formül hangisidir?\
 A) =YIL(B2)-YIL(A2)\
 B) =AY(B2)-AY(A2)\
 C) =GÜN(B2)-GÜN(A2)\
 D) =BUGÜN()-A2\
 E) =B2-A2
 
-**11.** Bir CSV dosyası değerleri taşır; renk, kalın yazı ve formülleri taşımaz. *(Doğru / Yanlış)*\
+**9.** Bir CSV dosyası değerleri taşır; renk, kalın yazı ve formülleri taşımaz. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**12.** Koşullu biçimlendirme hücrenin değerini değiştirir. *(Doğru / Yanlış)*\
+**10.** Koşullu biçimlendirme hücrenin değerini değiştirir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}
@@ -117,18 +103,16 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
-| 1 | B | Göreli başvuru, kopyalandığı yöne göre kayar. Formül bir satır aşağı kopyalandığında A1, A2 olur. |
-| 2 | C | `$` işareti sütunu ve satırı kilitler. $A$1 mutlak başvurudur; kopyalansa bile değişmez. |
-| 3 | B | Zaman içindeki değişim çizgi grafiğiyle gösterilir. Sütun kategorileri, pasta bütün içindeki payı, histogram dağılımı, saçılım ise iki değişken arasındaki ilişkiyi gösterir. |
-| 4 | C | Puanlar 60–95 arasında dağılmış, uç değer yok; ortalama 78,5 olur ve sınıfın genel başarısını tek sayıyla anlatır. MAK ve MİN yalnızca tek bir uç puanı verir, TOPLA toplamı, EĞERSAY ise puanların adedini sayar. |
-| 5 | D | EĞERSAY, belirtilen koşulu sağlayan hücreleri sayar. Koşulsuz sayım için SAY kullanılır. |
-| 6 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
-| 7 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |
-| 8 | E | Dikey eksenin sıfırdan başlamaması kesilmiş eksendir; küçük farkı olduğundan büyük gösterir. |
-| 9 | D | `SOLDAN(metin;n)` metnin başından n karakter alır. `SAĞDAN` sondan, `PARÇAAL` belirtilen konumdan itibaren alır; `UZUNLUK` ise karakter sayısını verir. |
-| 10 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` bugünden doğum tarihine kadar geçen süreyi sayar. |
-| 11 | Doğru | CSV yalnızca ham veriyi taşır; renk, kalın yazı, birleştirilmiş hücre, formül ve grafik aktarılmaz. |
-| 12 | Yanlış | Koşullu biçimlendirme yalnızca görünüşü değiştirir; hücrenin değeri aynı kalır. |
+| 1 | B | Göreli başvuru kopyalandığı yöne göre kayar: bir satır aşağı kopyalanınca A1, A2 olur. `$` işareti sütunu ve satırı kilitlediği için $A$1 değişmez. |
+| 2 | B | Zaman içindeki değişim çizgi grafiğiyle gösterilir. Sütun kategorileri, pasta bütün içindeki payı, histogram dağılımı, saçılım ise iki değişken arasındaki ilişkiyi gösterir. |
+| 3 | C | Puanlar 60–95 arasında dağılmış, uç değer yok; ortalama 78,5 olur ve sınıfın genel başarısını tek sayıyla anlatır. MAK ve MİN yalnızca tek bir uç puanı verir, TOPLA toplamı, EĞERSAY ise puanların adedini sayar. |
+| 4 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
+| 5 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |
+| 6 | E | Dikey eksenin sıfırdan başlamaması kesilmiş eksendir; küçük farkı olduğundan büyük gösterir. |
+| 7 | D | `SOLDAN(metin;n)` metnin başından n karakter alır. `SAĞDAN` sondan, `PARÇAAL` belirtilen konumdan itibaren alır; `UZUNLUK` ise karakter sayısını verir. |
+| 8 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` bugünden doğum tarihine kadar geçen süreyi sayar. |
+| 9 | Doğru | CSV yalnızca ham veriyi taşır; renk, kalın yazı, birleştirilmiş hücre, formül ve grafik aktarılmaz. |
+| 10 | Yanlış | Koşullu biçimlendirme yalnızca görünüşü değiştirir; hücrenin değeri aynı kalır. |
 
 ::: {.callout-tip}
 ## Nasıl kullanılır?

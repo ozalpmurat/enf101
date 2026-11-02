@@ -25,7 +25,7 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 - Hesap tablosunun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
 - Formül yazar; göreli ve mutlak başvuru arasındaki farkı açıklar.
-- Temel fonksiyonları (topla, ortalama, mak, min, eğer, eğersay, say) amaca uygun kullanır.
+- Temel fonksiyonları (topla, ortalama, mak, min, eğer, eğersay, say) ve metin, mantıksal, tarih fonksiyonlarını amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
 - Veri türüne uygun grafiği seçer ve grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
@@ -244,7 +244,7 @@ Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argüm
 
 ## Metin, mantıksal ve tarih fonksiyonları
 
-Yukarıdaki altı fonksiyon sayıları işler. Günlük kullanımda metin ve tarih işleri de sık gerekir; bu üç grubu tanımak "hangi iş için hangi fonksiyon" sorusunu büyük ölçüde çözer.
+Yukarıdaki altı fonksiyon toplam, ortalama ve koşullu sayım işlerini çözer. Günlük kullanımda metin ve tarih işleri de sık gerekir; bu üç grubu tanımak "hangi iş için hangi fonksiyon" sorusunu büyük ölçüde çözer.
 
 **Metin fonksiyonları** metni parçalar, birleştirir ve temizler. Sabit genişlikli kodlar — plaka, öğrenci numarası, telefon — tipik kullanım alanıdır. `TR-34-1234` kodunda `=SOLDAN(A2;2)` "TR", `=PARÇAAL(A2;4;2)` "34", `=SAĞDAN(A2;4)` "1234" verir; `=UZUNLUK(A2)` kodun 10 karakter olduğunu söyler. İki hücreyi birleştirmek için `=BİRLEŞTİR(A2;" ";B2)` ya da `&` işareti kullanılır: `=A2&" "&B2`. Başka bir yerden kopyalanan metinlerdeki fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` düzeltir.
 
