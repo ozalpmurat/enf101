@@ -77,9 +77,6 @@ Sayı sola yaslanıyorsa içinde boşluk ya da harf vardır ve **hesaba katılma
 
 ## CSV: Veriyi Taşıyan Sade Biçim
 
-::: {.columns}
-::: {.column width="64%"}
-
 Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgülle ayrılmış değerler).
 
 - Aslında **düz metindir**: her satır bir kayıt, alanlar birer sütun
@@ -88,9 +85,10 @@ Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgüll
 
 Örnekte ayraç **noktalı virgül**: Türkçe bölge ayarında ondalık ayraç virgül olduğundan alanlar noktalı virgülle ayrılır. Sütunlar birleşmiş görünüyorsa sorun **ayraç uyumsuzluğudur**.
 
-:::
-
-::: {.column width="32%"}
+```{=latex}
+\begin{center}
+\begin{minipage}{6.4cm}
+```
 
 ```text
 Ad;Yaş;Not;Şehir
@@ -98,8 +96,10 @@ Ahmet;21;85;Bilecik
 Ayşe;22;92;Eskişehir
 ```
 
-:::
-:::
+```{=latex}
+\end{minipage}
+\end{center}
+```
 
 ## Formüller Nasıl Yazılır
 
