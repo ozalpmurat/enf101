@@ -242,6 +242,18 @@ Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütu
 
 Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
+## Metin, mantıksal ve tarih fonksiyonları
+
+Yukarıdaki altı fonksiyon sayıları işler. Günlük kullanımda metin ve tarih işleri de sık gerekir; bu üç grubu tanımak "hangi iş için hangi fonksiyon" sorusunu büyük ölçüde çözer.
+
+**Metin fonksiyonları** metni parçalar, birleştirir ve temizler. Sabit genişlikli kodlar — plaka, öğrenci numarası, telefon — tipik kullanım alanıdır. `TR-34-1234` kodunda `=SOLDAN(A2;2)` "TR", `=PARÇAAL(A2;4;2)` "34", `=SAĞDAN(A2;4)` "1234" verir; `=UZUNLUK(A2)` kodun 10 karakter olduğunu söyler. İki hücreyi birleştirmek için `=BİRLEŞTİR(A2;" ";B2)` ya da `&` işareti kullanılır: `=A2&" "&B2`. Başka bir yerden kopyalanan metinlerdeki fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` düzeltir.
+
+**Mantıksal fonksiyonlar** birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece `=EĞER(VE(B2>=50;C2>=50);"Geçti";"Kaldı")` vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce `=EĞER(VE(B3>=50;C3>=50);"Geçti";"Bütünleme")` yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir. Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
+
+**Tarih ve zaman fonksiyonları** tarihin sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+
+## Yapay zekâ destekli fonksiyonlar
+
 Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Sheets'te `=GEMINI("…")` ya da `=AI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef ve kitle hedefi hücrelerinden bir reklam metni yazılmış. İşlevin kullanılabilirliği ve kullanım sınırları hesaba ve plana göre değişebilir; bazı hesaplarda hiç görünmeyebilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
 
 ![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün, hedef ve kitle hedefi bilgisini reklam metnine çeviriyor.](gorseller/ekran-sheets-gemini.png){width=65%}

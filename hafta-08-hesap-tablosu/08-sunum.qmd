@@ -272,6 +272,158 @@ Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demekti
 :::
 :::
 
+## Metin Fonksiyonları
+
+::: {.columns}
+::: {.column width="46%"}
+
+```{=latex}
+\begin{center}
+{\scriptsize
+\setlength{\arrayrulewidth}{0.4pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.45cm}|>{\raggedright\arraybackslash}p{1.0cm}|>{\raggedright\arraybackslash}p{1.25cm}|>{\raggedright\arraybackslash}p{1.75cm}|}
+\hline
+ & \textbf{A} & \textbf{B} & \textbf{C}\\
+\hline
+\textbf{1} & \textbf{Ad} & \textbf{Soyad} & \textbf{Kod}\\
+\hline
+\textbf{2} & Ayşe & Yılmaz & TR-34-1234\\
+\hline
+\textbf{3} & Berk & Demir & TR-16-0457\\
+\hline
+\end{tabular}}
+\end{center}
+```
+
+:::
+
+::: {.column width="52%"}
+
+```{=latex}
+{\small
+\begin{tabular}{@{}l@{\hspace{4mm}}r@{}}
+\texttt{=BİRLEŞTİR(A2;"~";B2)} & \textbf{Ayşe Yılmaz}\\[1mm]
+\texttt{=SOLDAN(C2;2)} & \textbf{TR}\\[1mm]
+\texttt{=PARÇAAL(C2;4;2)} & \textbf{34}\\[1mm]
+\texttt{=SAĞDAN(C2;4)} & \textbf{1234}\\[1mm]
+\texttt{=UZUNLUK(C2)} & \textbf{10}\\
+\end{tabular}}
+```
+
+```{=latex}
+\vspace{\baselineskip}
+```
+
+Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçalanır; `&` işareti `BİRLEŞTİR` ile aynı işi yapar. Fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` temizler.
+
+:::
+:::
+
+## Mantıksal Fonksiyonlar
+
+::: {.columns}
+::: {.column width="46%"}
+
+```{=latex}
+\begin{center}
+{\scriptsize
+\setlength{\arrayrulewidth}{0.4pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\hline
+ & \textbf{A} & \textbf{B} & \textbf{C}\\
+\hline
+\textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
+\hline
+\textbf{2} & Ayşe & 60 & 70\\
+\hline
+\textbf{3} & Berk & 70 & 45\\
+\hline
+\textbf{4} & Ceren & 80 & 90\\
+\hline
+\textbf{5} & Deniz & 90 & 55\\
+\hline
+\textbf{6} & Efe & 50 & 40\\
+\hline
+\textbf{7} & Fatma & 100 & 85\\
+\hline
+\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
+\hline
+\end{tabular}}
+\end{center}
+```
+
+:::
+
+::: {.column width="52%"}
+
+```{=latex}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.7cm}r@{}}
+\texttt{=VE(B2>=50;C2>=50)} & \textbf{DOĞRU}\\[1mm]
+\texttt{=YADA(B3<50;C3<50)} & \textbf{DOĞRU}\\[1mm]
+\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\hspace*{1.1em}"Geçti";"Bütünleme")} & \textbf{Bütünleme}\\[1mm]
+\texttt{=EĞERHATA((C8-B8)/B8;}\newline\texttt{\hspace*{1.1em}"Vize yok")} & \textbf{Vize yok}\\
+\end{tabular}}
+```
+
+```{=latex}
+\vspace{\baselineskip}
+```
+
+`VE` bütün koşullar sağlanınca, `YADA` en az biri sağlanınca DOĞRU verir. Üç sonuç gerektiğinde `EĞER` iç içe yazılır; parantez çoğaldıkça okunaksızlaştığı için ara sonucu ayrı hücrede tutmak yeğlenir.
+
+:::
+:::
+
+## Tarih ve Zaman Fonksiyonları
+
+::: {.columns}
+::: {.column width="46%"}
+
+```{=latex}
+\begin{center}
+{\scriptsize
+\setlength{\arrayrulewidth}{0.4pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.45cm}|>{\raggedleft\arraybackslash}p{2.2cm}|>{\raggedleft\arraybackslash}p{2.2cm}|}
+\hline
+ & \textbf{A} & \textbf{B}\\
+\hline
+\textbf{1} & \textbf{Doğum} & \textbf{Teslim}\\
+\hline
+\textbf{2} & 15.03.2007 & 20.11.2026\\
+\hline
+\end{tabular}}
+\end{center}
+```
+
+:::
+
+::: {.column width="52%"}
+
+```{=latex}
+{\small
+\begin{tabular}{@{}l@{\hspace{4mm}}r@{}}
+\texttt{=BUGÜN()} & \textbf{02.11.2026}\\[1mm]
+\texttt{=B2-BUGÜN()} & \textbf{18}\\[1mm]
+\texttt{=GÜNSAY(BUGÜN();B2)} & \textbf{18}\\[1mm]
+\texttt{=YIL(A2)} & \textbf{2007}\\[1mm]
+\texttt{=AY(A2)} & \textbf{3}\\[1mm]
+\texttt{=GÜN(A2)} & \textbf{15}\\
+\end{tabular}}
+```
+
+```{=latex}
+\vspace{\baselineskip}
+```
+
+Tarih aslında bir sayıdır (1 = 01.01.1900); bu yüzden iki tarihin farkı gün sayısını verir. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" kendiliğinden değişir.
+
+:::
+:::
+
 ## Yapay Zekâ Destekli Fonksiyonlar
 
 ```{=latex}
@@ -528,6 +680,7 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 - Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır.
 - **Göreli** başvuru kopyalanınca kayar, **mutlak** (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli değişim** farklıdır.
+- **Fonksiyonlar** hazır formüllerdir: metin, mantık ve tarih işlerini de tek hücrede çözer.
 - **CSV** değerleri taşır, biçimlendirmeyi taşımaz.
 - **Biçimlendirme** görünüşü değiştirir, değeri değil.
 - **Sıralama** düzenler, **filtreleme** gösterir.

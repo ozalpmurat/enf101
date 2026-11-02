@@ -18,7 +18,7 @@ format:
 ::: {.callout-note}
 ## Yönerge
 
-Bu alıştırma 10 sorudan oluşur: 8 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 15 dakikadır.
+Bu alıştırma 12 sorudan oluşur: 10 çoktan seçmeli, 2 doğru–yanlış sorusu. Önerilen süre 18 dakikadır.
 
 Alıştırma notla değerlendirilmez; konuyu pekiştirmeniz ve kendi eksiklerinizi görmeniz amacıyla hazırlanmıştır.
 
@@ -89,10 +89,24 @@ C) Alan yanılsaması\
 D) Seçilmiş zaman aralığı\
 E) Kesilmiş eksen
 
-**9.** Bir CSV dosyası değerleri taşır; renk, kalın yazı ve formülleri taşımaz. *(Doğru / Yanlış)*\
+**9.** Bir hücrede `TR-34-1234` kodu vardır. Kodun ilk iki karakterini (`TR`) veren formül hangisidir?\
+A) =SAĞDAN(A2;2)\
+B) =PARÇAAL(A2;2;2)\
+C) =UZUNLUK(A2)\
+D) =SOLDAN(A2;2)\
+E) =BİRLEŞTİR(A2;2)
+
+**10.** A2 hücresinde 15.03.2007, B2 hücresinde 20.11.2026 tarihi vardır. İki tarih arasındaki gün sayısını veren formül hangisidir?\
+A) =YIL(B2)-YIL(A2)\
+B) =AY(B2)-AY(A2)\
+C) =GÜN(B2)-GÜN(A2)\
+D) =BUGÜN()-A2\
+E) =B2-A2
+
+**11.** Bir CSV dosyası değerleri taşır; renk, kalın yazı ve formülleri taşımaz. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
-**10.** Koşullu biçimlendirme hücrenin değerini değiştirir. *(Doğru / Yanlış)*\
+**12.** Koşullu biçimlendirme hücrenin değerini değiştirir. *(Doğru / Yanlış)*\
 (   ) Doğru        (   ) Yanlış
 
 {{< pagebreak >}}
@@ -111,8 +125,10 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | 6 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
 | 7 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |
 | 8 | E | Dikey eksenin sıfırdan başlamaması kesilmiş eksendir; küçük farkı olduğundan büyük gösterir. |
-| 9 | Doğru | CSV yalnızca ham veriyi taşır; renk, kalın yazı, birleştirilmiş hücre, formül ve grafik aktarılmaz. |
-| 10 | Yanlış | Koşullu biçimlendirme yalnızca görünüşü değiştirir; hücrenin değeri aynı kalır. |
+| 9 | D | `SOLDAN(metin;n)` metnin başından n karakter alır. `SAĞDAN` sondan, `PARÇAAL` belirtilen konumdan itibaren alır; `UZUNLUK` ise karakter sayısını verir. |
+| 10 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` bugünden doğum tarihine kadar geçen süreyi sayar. |
+| 11 | Doğru | CSV yalnızca ham veriyi taşır; renk, kalın yazı, birleştirilmiş hücre, formül ve grafik aktarılmaz. |
+| 12 | Yanlış | Koşullu biçimlendirme yalnızca görünüşü değiştirir; hücrenin değeri aynı kalır. |
 
 ::: {.callout-tip}
 ## Nasıl kullanılır?

@@ -218,6 +218,8 @@ format:
   - Göreli ve mutlak başvuru
   - Yüzde hesabı: yüzde puan ve göreli değişim
 - Temel Fonksiyonlar (İşlevler)
+  - Metin, mantıksal ve tarih fonksiyonları
+  - Yapay zekâ destekli fonksiyonlar
 - Biçimlendirme
   - Sayı, tarih ve hücre biçimleri
   - Koşullu biçimlendirme
