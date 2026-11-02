@@ -117,35 +117,16 @@ Formülde kullanılan hücre adreslerindeki (A2, B7 gibi) değerler değişince 
 
 ## Göreli ve Mutlak Başvuru
 
-::: {.columns}
-::: {.column width="56%"}
+- **Göreli (`A1`):** Kopyalandığı yöne göre kayar. Bir satır aşağı → `A2`; iki hücre sağa → `C1`.
+- **Mutlak (`$A$1`):** Kopyalansa da sabit kalır. `$` sütunu veya satırı kilitler.
 
-```{=latex}
-\vspace*{9pt}
-\begin{minipage}[c][6.4cm][c]{\linewidth}
-\begin{itemize}
-\setlength{\itemsep}{0.9em}
-\item \textbf{Göreli (\texttt{A1}):} Kopyalandığı yöne göre kayar. Bir satır aşağı → \texttt{A2}; iki hücre sağa → \texttt{C1}.
-\item \textbf{Mutlak (\texttt{\$A\$1}):} Kopyalansa da sabit kalır. \texttt{\$} sütunu veya satırı kilitler.
-\end{itemize}
-
-Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: \texttt{=B2/B\$10}
-\end{minipage}
-```
-
-:::
-
-::: {.column width="42%"}
+Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/B$9`
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=5.4cm,height=4.8cm,keepaspectratio]{gorseller/ekran-excel-oran.png}\\[-0.5mm]
-{\scriptsize\emph{Hesap tablosu uygulamasında göreli ve mutlak başvuru kullanımı}}
+\includegraphics[width=8.6cm,keepaspectratio]{gorseller/ekran-excel-oran.png}
 \end{center}
 ```
-
-:::
-:::
 
 ## Yüzde Puan ve Göreli Değişim
 

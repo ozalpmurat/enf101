@@ -137,7 +137,7 @@ Bir formülü başka bir hücreye kopyaladığınızda başvurular nasıl davran
 - **Göreli başvuru (`A1`):** Kopyalandığı yöne göre adres kayar. Bir satır aşağı kopyalarsanız `A1` → `A2` olur; iki hücre sağa kopyalarsanız `A1` → `C1` olur.
 - **Mutlak başvuru (`$A$1`):** Kopyalansa bile adres sabit kalır. `$` işareti sütunu veya satırı kilitler (`$A1` yalnızca sütunu, `A$1` yalnızca satırı kilitler).
 
-Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Örneğin her ürünün toplam içindeki payını hesaplarken toplam hücresinin satırı kilitlenir: `=B2/B$10`. Formül sağa doğru da kopyalanacaksa sütunun da kilitlenmesi gerekir: `=B2/$B$10`.
+Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Örneğin her ürünün toplam içindeki payını hesaplarken toplam hücresinin satırı kilitlenir: `=B2/B$9`. Formül sağa doğru da kopyalanacaksa sütunun da kilitlenmesi gerekir: `=B2/$B$9`.
 
 ![Hesap tablosu uygulamasında göreli ve mutlak başvuru kullanımı](gorseller/ekran-excel-oran.png){width=65%}
 
