@@ -174,8 +174,9 @@ format:
 - Bu Haftanın Öğrenme Çıktıları
 - Temel Kavramlar
   - Masaüstü sürüm, çevrimiçi sürüm
-  - Kullanım oranları
+  - Ofis paketi ve kullanım oranları
   - Belge ve biçimlendirme kavramları
+  - Kelime işlemci dosya türleri
 - Metin ve Paragraf Biçimlendirme
 - Stiller ve Başlık Hiyerarşisi
   - Neden stiller?
@@ -222,7 +223,9 @@ format:
   - Koşullu biçimlendirme
 - Sıralama ve Filtreleme
 - Grafik Oluşturma
-  - Hangi veri için hangi grafik
+  - Çokça kullanılan grafik türleri
+  - Diğer grafik türleri
+  - Yapay zekâ ile grafik çizme
 - Grafiklerin Doğru Okunması
   - Yanıltma taktikleri
   - Kontrol listesi

@@ -70,13 +70,13 @@ Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanı
 
 Çevrimiçi uygulamalarda belge **sağlayıcının sunucularında tutulur**; kişisel bilgi içeren belgelerde dikkatli olun.
 
-## Ofis Uygulamaları
+## Kelime İşlemci Bir Ofis Paketi Uygulamasıdır
 
 ```{=latex}
 \vspace*{5mm}
 ```
 
-Kelime işlemci, hesap tablosu ve sunum uygulaması gibi programların **bir arada** bulunduğu yazılımlara **ofis uygulamaları** (ofis paketi) denir. Bu hafta **kelime işlemciyi**, 8. hafta **hesap tablosunu**, 9. hafta **sunumu** ele alacağız.
+Hesap tablosu ve sunum uygulaması gibi programlarla **bir arada** sunulan yazılımlara **ofis uygulamaları** (ofis paketi) denir. **Kelime işlemci** bu paketin bir parçasıdır; 8. hafta **hesap tablosunu**, 9. hafta **sunumu** ele alacağız.
 
 | Uygulama | Microsoft | LibreOffice | Google | Apple |
 |:---|:---|:---|:---|:---|
@@ -97,17 +97,22 @@ Kelime işlemci, hesap tablosu ve sunum uygulaması gibi programların **bir ara
 ::: {.column width="52%"}
 
 ```{=latex}
-\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{gorseller/gorsel-office-study.png}
+\includegraphics[width=\linewidth,height=0.78\textheight,keepaspectratio]{gorseller/gorsel-office-study.png}
 ```
 
 :::
 
 ::: {.column width="44%"}
-Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığı bildirilmiştir. Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle bu oranlar birbirini dışlayan pazar payları olarak değerlendirilmemelidir (Empower, 2025).
+Empower tarafından yayımlanan *The 2025 Office Study* araştırmasında, ABD'de en az 50 çalışanı bulunan işletmelerde görev yapan çalışanların **%93'ü Microsoft 365**, **%64'ü Google Workspace** ve **%14'ü LibreOffice** kullandığı bildirilmiştir (Empower, 2025).
 :::
 :::
 
-## Kaydetme ve Biçimler
+```{=latex}
+\vspace*{2mm}
+{\small Katılımcıların birden fazla yazılımı işaretleyebilmesi nedeniyle toplam \%100'den fazladır.}
+```
+
+## Kelime İşlemci Dosya Türleri
 
 - **`.docx`:** Microsoft Word'ün düzenlenebilir biçimi
 - **`.odt`:** LibreOffice gibi açık kaynak paketlerin biçimi
@@ -228,8 +233,13 @@ Gerçek başlık, stil uygulanmış metindir.
 ```{=latex}
 \begin{center}
 \vspace*{4mm}
-\includegraphics[width=0.95\linewidth,height=0.60\textheight,keepaspectratio]{gorseller/diagram-tablo-ornek.png}
+\includegraphics[width=0.95\linewidth,height=0.55\textheight,keepaspectratio]{gorseller/diagram-tablo-ornek.png}
 \end{center}
+```
+
+```{=latex}
+\vspace*{1mm}
+{\small Kelime işlemci uygulamalarında tablolarda farklı stiller kullanılabiliyor.}
 ```
 
 ## Görseller
@@ -237,7 +247,7 @@ Gerçek başlık, stil uygulanmış metindir.
 - **Çözünürlük:** Ekranda iyi görünen bir görsel, basıldığında bulanık çıkabilir.
 - **Boyut:** Görseli eklerken **en-boy oranını koruyun**; düşük çözünürlüklü görseli büyütmek onu bulanıklaştırır.
 - **Konumlandırma:** Metinle görselin ilişkisi (üstünde, altında, yanında) belirlenmelidir.
-- **Altyazı:** Her görsele numara ve açıklama ekleyin (Şekil 1: …); metinde bu numaraya atıf yapın.
+- **Altyazı:** Her görsele numara ve açıklama ekleyin (Şekil 1: …); metinde bu numaraya atıf yapın. Kelime işlemcilerdeki **Resim Yazısı Ekle** özelliği bu numarayı ve açıklamayı kendiliğinden ekler.
 - **Telif:** Başkasının görselini kullanıyorsanız kaynak göstermelisiniz.
 
 # Sayfa Düzeni
