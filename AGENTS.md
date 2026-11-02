@@ -675,8 +675,10 @@ for f in hafta-*/*.pdf; do
 done
 ```
 
-Bu otomatik kontrollere ek olarak, "yayına hazırlık" denetiminde **içerik düzeyinde dört kontrol**
-daha yapılır (mekanik kontrollerin yakalamadığı kalite sorunları bunlarda çıkar):
+### Yayına hazırlık denetimleri
+
+Yukarıdaki otomatik kontrollere ek olarak, yayına hazırlıkta **elle yapılan beş kontrol** vardır
+(mekanik kontrollerin yakalamadığı kalite sorunları bunlarda çıkar):
 
 - **Dilbilgisi ve yazım.** Yazım hataları, noktalama, terimlerin tutarlı yazımı; başlık büyük–küçük
   düzeninin her belgede kendi içinde tutarlı olması (ders notunda `#` büyük / `##` cümle biçimi,
@@ -688,8 +690,15 @@ daha yapılır (mekanik kontrollerin yakalamadığı kalite sorunları bunlarda 
 - **Sunu ↔ ders notu ↔ alıştırma içerik tutarlılığı.** Aynı konunun üç belgede çelişmemesi;
   sayısal bilgilerin (kapasite, oran, kural) birebir aynı olması; bir belgede yapılan metin düzeltmesinin
   diğerlerine de yansımış olması; görsel künyelerinin belgeler arası tutarlılığı.
+- **Düzen geçişi (sayfa ve slayt düzeni).** İçerik değişiklikleri bittikten **sonra**, tek geçişte
+  yapılır; her içerik düzeltmesinden sonra sayfa düzeniyle uğraşılmaz, bulgular biriktirilir. Bakılacaklar:
+  bir paragrafın sonraki sayfaya tek satır (dul) ya da tek satırlık grup (yetim) hâlinde taşması; tablonun
+  ya da şekil–künye ikilisinin iki sayfaya bölünmesi, şeklin künyesinden kopması; sayfa altında kalan
+  büyük boşluklar ve bunlara yol açan gereksiz `\newpage` / `\filbreak` kalıntıları; sunularda alta taşma,
+  alt şeride değme, metin ile grafik çakışması. Bulgular sayfa/slayt numarasıyla listelenir, düzeltmeler
+  toplu yapılır.
 
-Bu içerik denetimi tek komutla yapılamaz; dosyalar (gerektiğinde atıf yapılan diğer hafta da) okunup
+Bu denetimlerin hiçbiri tek komutla yapılamaz; dosyalar (gerektiğinde atıf yapılan diğer hafta da) okunup
 karşılaştırılır, bulgular satır/sayfa numarasıyla raporlanır ve düzeltme kararı kullanıcıya bırakılır.
 
 ---
