@@ -34,11 +34,11 @@ Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok list
 
 :::
 
-::: {.column width="26%"}
+::: {.column width="32%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=4.6cm,height=5cm,keepaspectratio]{gorseller/ekran-libreoffice-calc.png}\\[-0.5mm]
+\includegraphics[width=4.4cm,height=5cm,keepaspectratio]{gorseller/ekran-libreoffice-calc.png}\\[-0.5mm]
 {\scriptsize\emph{LibreOffice Calc penceresi}}
 \end{center}
 ```
@@ -90,7 +90,7 @@ Hesap tablolarını başka programlara aktarmanın ortak yolu: **CSV** (virgüll
 
 :::
 
-::: {.column width="26%"}
+::: {.column width="32%"}
 
 ```text
 Ad;Yaş;Not;Şehir
