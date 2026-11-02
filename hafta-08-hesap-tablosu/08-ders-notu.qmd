@@ -66,13 +66,23 @@ Hücre adresi **sütun harfi + satır numarası** olarak yazılır: `C5`, C süt
 
 Bir hücreye yazdığınız her şey aynı türde değildir ve program bu türü kendisi belirlemeye çalışır.
 
-| Tür | Örnek | Not |
-|:---|:---|:---|
-| Metin | "Ankara" | Genellikle sola yaslanır |
-| Sayı | 1250; 3,14 | Genellikle sağa yaslanır |
-| Tarih / saat | 12.03.2026 | Sayı gibi işlem görür, üzerine hesap yapılabilir |
-| Mantıksal | DOĞRU / YANLIŞ | Koşul sonuçlarında kullanılır |
-| Formül | `=A1+A2` | Eşittir işaretiyle başlar |
+```{=latex}
+\begin{center}
+\setlength{\arrayrulewidth}{0.3pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{9.6cm}@{}}
+\toprule
+\textbf{Tür} & \textbf{Örnek} & \textbf{Not}\\
+\midrule
+Metin & ``Ankara'' & Genellikle sola yaslanır\\
+Sayı & 1250; 3,14 & Genellikle sağa yaslanır\\
+Tarih / saat & 12.03.2026 & Sayı gibi işlem görür, üzerine hesap yapılabilir\\
+Mantıksal & DOĞRU / YANLIŞ & Koşul sonuçlarında kullanılır\\
+Formül & \texttt{=A1+A2} & Eşittir işaretiyle başlar\\
+\bottomrule
+\end{tabular}
+\end{center}
+```
 
 Türkçede ondalık ayraç **virgüldür**: pi sayısını tabloya çoğunlukla `3,14` olarak yazarız. Bu ayraç bilgisayarın **bölge ayarından** gelir; İngilizce hazırlanmış belgelerde ve İngilizce bölgeli programlarda nokta kullanılır. Bölgesi Türkçe bir tabloda `3.14` yazarsanız program onu sayı değil **metin** sayar — hücrenin sola yaslanmasından bunu hemen fark edersiniz.
 
@@ -244,11 +254,10 @@ Biçimlendirme, veriyi değiştirmez; **okunmasını** değiştirir. Bu yüzden 
 
 - **Sayı biçimi:** ondalık basamak sayısı, binlik ayırıcı, para birimi, yüzde.
 - **Tarih biçimi:** gün–ay–yıl sırası; tarihler sayı gibi işlem gördüğü için biçim yalnızca görünüşü etkiler.
-
-![Google Sheets'te biçim menüsü: Sayı, Yüzde, Tarih, Saat ve Para Birimi gibi biçimler tek listeden seçilir. Seçim hücrenin görünüşünü değiştirir; değeri değiştirmez.](gorseller/ekran-sheets-bicim-menusu.png){width=42%}
-
 - **Yazı tipi, kenarlık ve dolgu:** başlıkları ve önemli hücreleri ayırmak için.
 - **Sütun genişliği ve satır yüksekliği:** hücrede `###` görüyorsanız sütun dardır, veri kaybolmuş değildir.
+
+![Google Sheets'te biçim menüsü: Sayı, Yüzde, Tarih, Saat ve Para Birimi gibi biçimler tek listeden seçilir. Seçim hücrenin görünüşünü değiştirir; değeri değiştirmez.](gorseller/ekran-sheets-bicim-menusu.png){width=42%}
 
 ## Koşullu biçimlendirme
 
