@@ -216,7 +216,6 @@ format:
 - Formüller ve Hücre Başvuruları
   - Formül nasıl yazılır
   - Göreli ve mutlak başvuru
-  - Yüzde hesabı: yüzde puan ve göreli değişim
 - Temel Fonksiyonlar (İşlevler)
   - Metin, mantıksal ve tarih fonksiyonları
   - Yapay zekâ destekli fonksiyonlar
@@ -228,11 +227,12 @@ format:
   - Çokça kullanılan grafik türleri
   - Diğer grafik türleri
   - Yapay zekâ ile grafik çizme
-- Grafiklerin Doğru Okunması
+- Grafiklerin ve Sayıların Doğru Okunması
   - Eksen kaynaklı yanıltmalar
   - Ölçek ve oran kaynaklı yanıltmalar
   - Seçme ve gizleme kaynaklı yanıltmalar
   - Tasarım kaynaklı yanıltmalar
+  - Yüzde puan ve göreli değişim
   - Kontrol listesi
 - Uygulama: Kendiniz Üretin
 - Özet

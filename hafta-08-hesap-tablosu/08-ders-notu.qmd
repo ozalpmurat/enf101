@@ -143,44 +143,20 @@ Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Ö
 
 Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` olur: pay göreli olduğu için kayar, toplam hücresinde satır kilitli olduğu için sabit kalır. Satır kilidi kaldırılsaydı ikinci satırda toplam hücresi `B10`'a kayar ve oran yanlış çıkardı.
 
-## Yüzde hesabı: yüzde puan ve göreli değişim
-
-İki değer arasındaki değişimi anlatmanın iki yolu vardır ve karıştırılmaları yaygındır.
-
-- **Yüzde puan farkı:** iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
-- **Göreli değişim:** farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
-
-::: {#fig-yuzde-puan layout-ncol=2}
-![Şema: aynı 5 puan iki farklı tabanda](gorseller/diagram-yuzde-puan-goreli.png){width=98%}
-
-![Microsoft Excel'de aynı örnek](gorseller/ekran-yuzde-formulleri.png){width=98%}
-
-Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme. Sağda aynı örnek, Microsoft Excel'de iki ayrı formülle hesaplanmış.
-:::
-
-Aynı 5 puan; taban %20 iken %25, taban %50 iken %10'luk bir artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
-
-Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, göreli değişim için `=(B2-A2)/A2`. Birincisi **sayı**, ikincisi **yüzde** biçiminde gösterilir; aynı tabloya iki farklı biçim vermek kavramların karışmasını önler.
-
 # Temel Fonksiyonlar (İşlevler)
 
 Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
 
-+---------------+---------------+---------------------------------------+------------------------------------+
-| Fonksiyon     | İngilizce     | Ne yapar                              | Örnek                              |
-+===============+===============+=======================================+====================================+
-| `TOPLA`       | `SUM`         | Aralıktaki sayıları toplar            | `=TOPLA(B2:B50)`                   |
-+---------------+---------------+---------------------------------------+------------------------------------+
-| `ORTALAMA`    | `AVERAGE`     | Aritmetik ortalamayı verir            | `=ORTALAMA(B2:B50)`                |
-+---------------+---------------+---------------------------------------+------------------------------------+
-| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değeri verir     | `=MAK(B2:B50)`                     |
-+---------------+---------------+---------------------------------------+------------------------------------+
-| `EĞERSAY`     | `COUNTIF`     | Koşulu sağlayan hücreleri sayar       | `=EĞERSAY(C2:C50;">=70")`          |
-+---------------+---------------+---------------------------------------+------------------------------------+
-| `EĞER`        | `IF`          | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")`    |
-+---------------+---------------+---------------------------------------+------------------------------------+
-| `SAY`         | `COUNT`       | Sayı içeren hücreleri sayar           | `=SAY(B2:B50)`                     |
-+---------------+---------------+---------------------------------------+------------------------------------+
+| Fonksiyon | Ne yapar | Örnek |
+|:---|:---|:---|
+| `TOPLA` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
+| `ORTALAMA` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
+| `MAK` / `MİN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
+| `EĞERSAY` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
+| `EĞER` | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
+| `SAY` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
+
+Fonksiyon adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
 
 ::: {.callout-note}
 ## Aralık mı, tek tek değer mi?
@@ -371,9 +347,9 @@ Grafiği elle çizmek yerine yapay zekâya çizdirmek de mümkündür: "ECharts 
 
 ![ChatGPT ücretsiz sürümde ECharts ile radar grafiği: istek yazılır, üretilen kod çalıştırılır; grafik ile kod arasında geçiş yapılabilir.](gorseller/ekran-chatgpt-echarts.png){width=72%}
 
-# Grafiklerin Doğru Okunması
+# Grafiklerin ve Sayıların Doğru Okunması
 
-Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza konan bir grafiğe güvenip güvenemeyeceğimizi nasıl anlarız?
+Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza konan bir grafiğe ve arkasındaki sayılara güvenip güvenemeyeceğimizi nasıl anlarız?
 
 ::: {.callout-note}
 ## Grafik tarafsız bir resim değildir
@@ -420,6 +396,27 @@ Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe
 **Kalabalık gösterim.** Grafiğe gereksiz ızgara çizgileri, çerçeveler ve ayrıntılar eklendiğinde göz süslemeye takılır, asıl veri geri planda kalır.
 
 **Başlıkla verinin uyuşmaması.** Düşen bir çizginin üstüne "artış" başlığı konursa okuyucu grafiğe değil başlığa inanır.
+
+Yanıltma yalnızca grafikte olmaz; yüzdeler de aynı farkı iki farklı büyüklükte gösterebilir.
+
+## Yüzde puan ve göreli değişim
+
+İki değer arasındaki değişimi anlatmanın iki yolu vardır ve karıştırılmaları yaygındır.
+
+- **Yüzde puan farkı:** iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
+- **Göreli değişim:** farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
+
+::: {#fig-yuzde-puan layout-ncol=2}
+![Şema: aynı 5 puan iki farklı tabanda](gorseller/diagram-yuzde-puan-goreli.png){width=98%}
+
+![Microsoft Excel'de aynı örnek](gorseller/ekran-yuzde-formulleri.png){width=98%}
+
+Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme. Sağda aynı örnek, Microsoft Excel'de iki ayrı formülle hesaplanmış.
+:::
+
+Aynı 5 puan; taban %20 iken %25, taban %50 iken %10'luk bir artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
+
+Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, göreli değişim için `=(B2-A2)/A2`. Birincisi **sayı**, ikincisi **yüzde** biçiminde gösterilir; aynı tabloya iki farklı biçim vermek kavramların karışmasını önler.
 
 ## Kontrol listesi
 

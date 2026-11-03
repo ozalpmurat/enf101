@@ -128,33 +128,20 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \end{center}
 ```
 
-## Yüzde Puan ve Göreli Değişim
-
-**Yüzde puan**, iki oran arasındaki doğrudan farktır; **göreli değişim** ise bu farkın tabana bölümüdür.
-
-```{=latex}
-\begin{center}
-\includegraphics[width=6.2cm,height=2.4cm,keepaspectratio]{gorseller/diagram-yuzde-puan-goreli.png}\hspace{0.6cm}%
-\includegraphics[width=6.2cm,height=2.4cm,keepaspectratio]{gorseller/ekran-yuzde-formulleri.png}
-\end{center}
-```
-
-Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür.
-
-2 vakadan 6'ya çıkış "%200 arttı" demektir; ama arada yalnızca **4 vaka** var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez. Oran içeren bir haberde ilk soru şu olmalı: **neyin yüzde kaçı, tabanı kaç?**
-
 # Temel Fonksiyonlar (İşlevler)
 
 ## Sık Kullanılan Fonksiyonlar
 
-| Fonksiyon | İngilizce | Ne yapar |
-|:---|:---|:---|
-| `TOPLA` | `SUM` | Aralıktaki sayıları toplar |
-| `ORTALAMA` | `AVERAGE` | Aritmetik ortalamayı verir |
-| `MAK` / `MİN` | `MAX` / `MIN` | En büyük ve en küçük değer |
-| `EĞERSAY` | `COUNTIF` | Koşulu sağlayanları sayar |
-| `EĞER` | `IF` | Koşula göre iki sonuç döndürür |
-| `SAY` | `COUNT` | Sayı içeren hücreleri sayar |
+| Fonksiyon | Ne yapar |
+|:---|:---|
+| `TOPLA` | Aralıktaki sayıları toplar |
+| `ORTALAMA` | Aritmetik ortalamayı verir |
+| `MAK` / `MİN` | En büyük ve en küçük değer |
+| `EĞERSAY` | Koşulu sağlayanları sayar |
+| `EĞER` | Koşula göre iki sonuç döndürür |
+| `SAY` | Sayı içeren hücreleri sayar |
+
+İngilizce arayüzlü uygulamalarda fonksiyon adları İngilizce olabilir; işlevleri aynıdır.
 
 ## Örnek Veri: TOPLA, ORTALAMA, MAK, MİN
 
@@ -350,8 +337,8 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 {\small
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.7cm}r@{}}
 \texttt{=VE(B2>=50;C2>=50)} & \textbf{DOĞRU}\\[1mm]
-\texttt{=YADA(B3<50;C3<50)} & \textbf{DOĞRU}\\[1mm]
-\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\hspace*{1.1em}"Geçti";"Bütünleme")} & \textbf{Bütünleme}\\[1mm]
+\texttt{=YADA(B3<50;C3<50)} & \textbf{DOĞRU}\\[6mm]
+\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\hspace*{1.1em}"Geçti";"Bütünleme")} & \textbf{Bütünleme}\\[6mm]
 \texttt{=EĞERHATA((C8-B8)/B8;}\newline\texttt{\hspace*{1.1em}"Vize yok")} & \textbf{Vize yok}\\
 \end{tabular}}
 ```
@@ -578,7 +565,7 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 \end{center}
 ```
 
-# Grafiklerin Doğru Okunması
+# Grafiklerin ve Sayıların Doğru Okunması
 
 ## Grafik Tarafsız mı?
 
@@ -646,6 +633,21 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 - **Renk ve vurgu:** İstenen seri canlı, diğerleri soluk çizilir.
 - **Kalabalık gösterim:** Süsleme, asıl veriyi görünmez kılar.
 - **Başlıkla verinin uyuşmaması:** Okuyucu başlığa güvenir, grafiğin ayrıntısına bakmaz.
+
+## Yüzde Puan ve Göreli Değişim
+
+**Yüzde puan**, iki oran arasındaki doğrudan farktır; **göreli değişim** ise bu farkın tabana bölümüdür.
+
+```{=latex}
+\begin{center}
+\includegraphics[width=6.2cm,height=2.4cm,keepaspectratio]{gorseller/diagram-yuzde-puan-goreli.png}\hspace{0.6cm}%
+\includegraphics[width=6.2cm,height=2.4cm,keepaspectratio]{gorseller/ekran-yuzde-formulleri.png}
+\end{center}
+```
+
+Aynı 5 puan; taban %20 iken **%25**, taban %50 iken **%10**'luk artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür.
+
+2 vakadan 6'ya çıkış "%200 arttı" demektir; ama arada yalnızca **4 vaka** var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez. Oran içeren bir haberde ilk soru şu olmalı: **neyin yüzde kaçı, tabanı kaç?**
 
 ## Uygulama: Kendiniz Üretin
 
