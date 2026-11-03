@@ -130,19 +130,6 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 
 # Temel Fonksiyonlar (İşlevler)
 
-## Sık Kullanılan Fonksiyonlar
-
-| Fonksiyon | Ne yapar |
-|:---|:---|
-| `TOPLA` | Aralıktaki sayıları toplar |
-| `ORTALAMA` | Aritmetik ortalamayı verir |
-| `MAK` / `MİN` | En büyük ve en küçük değer |
-| `EĞERSAY` | Koşulu sağlayanları sayar |
-| `EĞER` | Koşula göre iki sonuç döndürür |
-| `SAY` | Sayı içeren hücreleri sayar |
-
-İngilizce arayüzlü uygulamalarda fonksiyon adları İngilizce olabilir; işlevleri aynıdır.
-
 ## Örnek Veri: TOPLA, ORTALAMA, MAK, MİN
 
 ::: {.columns}
@@ -153,9 +140,9 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 {\scriptsize
 \setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.55cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedleft\arraybackslash}p{1.2cm}|>{\raggedleft\arraybackslash}p{0.8cm}|}
 \hline
- & \textbf{A} & \textbf{B} & \textbf{C}\\
+ & \multicolumn{1}{>{\centering\arraybackslash}p{1.8cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{1.2cm}|}{\textbf{B}} & \multicolumn{1}{>{\centering\arraybackslash}p{0.8cm}|}{\textbf{C}}\\
 \hline
 \textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
 \hline
@@ -182,6 +169,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 ::: {.column width="52%"}
 
 ```{=latex}
+\vspace*{6pt}
 {\small
 \begin{tabular}{@{}l@{\hspace{5mm}}r@{}}
 \texttt{=TOPLA(B2:B8)} & \textbf{450}\\[1mm]
@@ -206,9 +194,9 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 {\scriptsize
 \setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.55cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedleft\arraybackslash}p{1.2cm}|>{\raggedleft\arraybackslash}p{0.8cm}|}
 \hline
- & \textbf{A} & \textbf{B} & \textbf{C}\\
+ & \multicolumn{1}{>{\centering\arraybackslash}p{1.8cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{1.2cm}|}{\textbf{B}} & \multicolumn{1}{>{\centering\arraybackslash}p{0.8cm}|}{\textbf{C}}\\
 \hline
 \textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
 \hline
@@ -235,6 +223,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 ::: {.column width="52%"}
 
 ```{=latex}
+\vspace*{6pt}
 {\small
 \begin{tabular}{@{}l@{\hspace{5mm}}r@{}}
 \texttt{=EĞERSAY(B2:B8;">=70")} & \textbf{4}\\[1mm]
@@ -263,7 +252,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \renewcommand{\arraystretch}{1.15}%
 \begin{tabular}{|>{\centering\arraybackslash}p{0.45cm}|>{\raggedright\arraybackslash}p{1.0cm}|>{\raggedright\arraybackslash}p{1.25cm}|>{\raggedright\arraybackslash}p{1.75cm}|}
 \hline
- & \textbf{A} & \textbf{B} & \textbf{C}\\
+ & \multicolumn{1}{>{\centering\arraybackslash}p{1.0cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{1.25cm}|}{\textbf{B}} & \multicolumn{1}{>{\centering\arraybackslash}p{1.75cm}|}{\textbf{C}}\\
 \hline
 \textbf{1} & \textbf{Ad} & \textbf{Soyad} & \textbf{Kod}\\
 \hline
@@ -280,6 +269,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 ::: {.column width="52%"}
 
 ```{=latex}
+\vspace*{6pt}
 {\small
 \begin{tabular}{@{}l@{\hspace{4mm}}r@{}}
 \texttt{=BİRLEŞTİR(A2;"~";B2)} & \textbf{Ayşe Yılmaz}\\[1mm]
@@ -305,9 +295,9 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 {\scriptsize
 \setlength{\arrayrulewidth}{0.4pt}%
 \renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{1.9cm}|r|r|}
+\begin{tabular}{|>{\centering\arraybackslash}p{0.55cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedleft\arraybackslash}p{1.2cm}|>{\raggedleft\arraybackslash}p{0.8cm}|}
 \hline
- & \textbf{A} & \textbf{B} & \textbf{C}\\
+ & \multicolumn{1}{>{\centering\arraybackslash}p{1.8cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{1.2cm}|}{\textbf{B}} & \multicolumn{1}{>{\centering\arraybackslash}p{0.8cm}|}{\textbf{C}}\\
 \hline
 \textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
 \hline
@@ -334,6 +324,7 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 ::: {.column width="52%"}
 
 ```{=latex}
+\vspace*{6pt}
 {\small
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.7cm}r@{}}
 \texttt{=VE(B2>=50;C2>=50)} & \textbf{DOĞRU}\\[1mm]
@@ -360,7 +351,7 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 \renewcommand{\arraystretch}{1.15}%
 \begin{tabular}{|>{\centering\arraybackslash}p{0.45cm}|>{\raggedleft\arraybackslash}p{2.2cm}|>{\raggedleft\arraybackslash}p{2.2cm}|}
 \hline
- & \textbf{A} & \textbf{B}\\
+ & \multicolumn{1}{>{\centering\arraybackslash}p{2.2cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{2.2cm}|}{\textbf{B}}\\
 \hline
 \textbf{1} & \textbf{Doğum} & \textbf{Teslim}\\
 \hline
@@ -375,6 +366,7 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 ::: {.column width="52%"}
 
 ```{=latex}
+\vspace*{6pt}
 {\small
 \begin{tabular}{@{}l@{\hspace{4mm}}r@{}}
 \texttt{=BUGÜN()} & \textbf{02.11.2026}\\[1mm]
