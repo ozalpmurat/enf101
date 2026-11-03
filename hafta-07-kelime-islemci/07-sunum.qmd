@@ -422,4 +422,4 @@ Notla değerlendirilmez.
 
 ## Gelecek Hafta
 
-**Hesap tablosu ve grafik okuma** — formüller, fonksiyonlar, sıralama, grafik oluşturma ve yanıltıcı grafikler.
+**Hesap tablosu ve grafik okuma** — formüller, işlevler, sıralama, grafik oluşturma ve yanıltıcı grafikler.

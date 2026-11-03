@@ -11,7 +11,7 @@ format: beamer
 
 - Hesap tablosunun temel kavramlarını tanır.
 - Formül yazar; göreli ve mutlak başvuruyu ayırt eder.
-- Temel fonksiyonları amaca uygun kullanır.
+- Temel işlevleri amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler.
 - Veri türüne uygun grafiği seçip grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
@@ -128,7 +128,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \end{center}
 ```
 
-# Temel Fonksiyonlar (İşlevler)
+# Temel İşlevler
 
 ## Örnek Veri: TOPLA, ORTALAMA, MAK, MİN
 
@@ -240,7 +240,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 
 70, 80, 90 ve 100 → **4**. Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer. C3'teki 45 eşiğin altında olduğu için **Kaldı** çıkar. A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
 
-## Metin Fonksiyonları
+## Metin İşlevleri
 
 ::: {.columns}
 ::: {.column width="46%"}
@@ -283,9 +283,9 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 :::
 :::
 
-Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçalanır; `&` işareti `BİRLEŞTİR` ile aynı işi yapar. Fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` temizler.
+Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç işlevle parçalanır; `&` işareti `BİRLEŞTİR` ile aynı işi yapar. Fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` temizler.
 
-## Mantıksal Fonksiyonlar
+## Mantıksal İşlevler
 
 ::: {.columns}
 ::: {.column width="46%"}
@@ -339,7 +339,7 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 
 `VE` bütün koşullar sağlanınca, `YADA` en az biri sağlanınca DOĞRU verir. Üç sonuç gerektiğinde `EĞER` iç içe yazılır; parantez çoğaldıkça okunaksızlaştığı için ara sonucu ayrı hücrede tutmak yeğlenir.
 
-## Tarih ve Zaman Fonksiyonları
+## Tarih ve Zaman İşlevleri
 
 ::: {.columns}
 ::: {.column width="46%"}
@@ -383,7 +383,7 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç fonksiyonla parçal
 
 Tarih aslında bir sayıdır (1 = 01.01.1900); bu yüzden iki tarihin farkı gün sayısını verir. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" kendiliğinden değişir.
 
-## Yapay Zekâ Destekli Fonksiyonlar
+## Yapay Zekâ Destekli İşlevler
 
 ```{=latex}
 \begin{center}
@@ -654,7 +654,7 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 - Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır.
 - **Göreli** başvuru kopyalanınca kayar, **mutlak** (`$A$1`) sabit kalır.
 - **Yüzde puan** ile **göreli değişim** farklıdır.
-- **Fonksiyonlar** hazır formüllerdir: metin, mantık ve tarih işlerini de tek hücrede çözer.
+- **İşlevler** hazır formüllerdir: metin, mantık ve tarih işlerini de tek hücrede çözer.
 - **CSV** değerleri taşır, biçimlendirmeyi taşımaz.
 - **Biçimlendirme** görünüşü değiştirir, değeri değil.
 - **Sıralama** düzenler, **filtreleme** gösterir.

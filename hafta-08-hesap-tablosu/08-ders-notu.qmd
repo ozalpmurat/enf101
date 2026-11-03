@@ -13,7 +13,7 @@ format:
 
 Bir sayı listesine bakmakla o listeyi anlamak aynı şey değildir. Elli satırlık bir tabloda hangi değerin yüksek, hangisinin düşük olduğunu gözle görmek zordur; toplamı ya da ortalaması sorulduğunda ise elle hesaplamak hem yavaş hem hataya açıktır. **Hesap tablosu** yazılımları tam bu noktada devreye girer: veriyi düzenli bir ızgarada tutar, formüllerle otomatik hesaplar ve sonucu grafikle gösterir.
 
-Bu hafta iki beceriyi bir arada ele alıyoruz. Birincisi **hesap tablosu kurmak ve ondan sonuç çıkarmak** — formül yazmak, fonksiyon kullanmak, veriyi sıralamak, grafik oluşturmak. İkincisi ise **grafiği doğru okumak**: karşınıza konan bir grafiğin sizi yanıltıp yanıltmadığını anlamak. İkisi ayrılmaz, çünkü grafiği üreten ile grafiği okuyan aynı araçları kullanır — birinde iyi olmak, diğerinde de dikkatli olmayı gerektirir.
+Bu hafta iki beceriyi bir arada ele alıyoruz. Birincisi **hesap tablosu kurmak ve ondan sonuç çıkarmak** — formül yazmak, işlev kullanmak, veriyi sıralamak, grafik oluşturmak. İkincisi ise **grafiği doğru okumak**: karşınıza konan bir grafiğin sizi yanıltıp yanıltmadığını anlamak. İkisi ayrılmaz, çünkü grafiği üreten ile grafiği okuyan aynı araçları kullanır — birinde iyi olmak, diğerinde de dikkatli olmayı gerektirir.
 
 ::: {.callout-note}
 ## Bu haftanın temel fikri
@@ -25,7 +25,7 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 - Hesap tablosunun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
 - Formül yazar; göreli ve mutlak başvuru arasındaki farkı açıklar.
-- Temel fonksiyonları (topla, ortalama, mak, min, eğer, eğersay, say) ve metin, mantıksal, tarih fonksiyonlarını amaca uygun kullanır.
+- Temel işlevleri (topla, ortalama, mak, min, eğer, eğersay, say) ve metin, mantıksal, tarih işlevlerini amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
 - Veri türüne uygun grafiği seçer ve grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
@@ -143,11 +143,11 @@ Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Ö
 
 Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` olur: pay göreli olduğu için kayar, toplam hücresinde satır kilitli olduğu için sabit kalır. Satır kilidi kaldırılsaydı ikinci satırda toplam hücresi `B10`'a kayar ve oran yanlış çıkardı.
 
-# Temel Fonksiyonlar (İşlevler)
+# Temel İşlevler
 
-Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
+İşlevler, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
 
-| Fonksiyon | Ne yapar | Örnek |
+| İşlev | Ne yapar | Örnek |
 |:---|:---|:---|
 | `TOPLA` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
 | `ORTALAMA` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
@@ -156,7 +156,7 @@ Fonksiyonlar, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazı
 | `EĞER` | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
 | `SAY` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
 
-Fonksiyon adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
+İşlev adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
 
 ::: {.callout-note}
 ## Aralık mı, tek tek değer mi?
@@ -164,7 +164,7 @@ Fonksiyon adları arayüzün diline göre değişir: İngilizce arayüzlü uygul
 **İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılır: `=TOPLA(B2:B10;C2:C10)`.
 :::
 
-Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütununda vize notu, C sütununda final notu var. Gökhan vizeye girmediği için B8 hücresine sayı değil **metin** yazılmıştır.
+İşlevleri somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütununda vize notu, C sütununda final notu var. Gökhan vizeye girmediği için B8 hücresine sayı değil **metin** yazılmıştır.
 
 ```{=latex}
 \begin{center}
@@ -218,17 +218,17 @@ Fonksiyonları somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütu
 
 Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
 
-## Metin, mantıksal ve tarih fonksiyonları
+## Metin, mantıksal ve tarih işlevleri
 
-Yukarıdaki altı fonksiyon toplam, ortalama ve koşullu sayım işlerini çözer. Günlük kullanımda metin ve tarih işleri de sık gerekir; bu üç grubu tanımak "hangi iş için hangi fonksiyon" sorusunu büyük ölçüde çözer.
+Yukarıdaki altı işlev toplam, ortalama ve koşullu sayım işlerini çözer. Günlük kullanımda metin ve tarih işleri de sık gerekir; bu üç grubu tanımak "hangi iş için hangi işlev" sorusunu büyük ölçüde çözer.
 
-**Metin fonksiyonları** metni parçalar, birleştirir ve temizler. Sabit genişlikli kodlar — plaka, öğrenci numarası, telefon — tipik kullanım alanıdır. `TR-34-1234` kodunda `=SOLDAN(A2;2)` "TR", `=PARÇAAL(A2;4;2)` "34", `=SAĞDAN(A2;4)` "1234" verir; `=UZUNLUK(A2)` kodun 10 karakter olduğunu söyler. İki hücreyi birleştirmek için `=BİRLEŞTİR(A2;" ";B2)` ya da `&` işareti kullanılır: `=A2&" "&B2`. Başka bir yerden kopyalanan metinlerdeki fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` düzeltir.
+**Metin işlevleri** metni parçalar, birleştirir ve temizler. Sabit genişlikli kodlar — plaka, öğrenci numarası, telefon — tipik kullanım alanıdır. `TR-34-1234` kodunda `=SOLDAN(A2;2)` "TR", `=PARÇAAL(A2;4;2)` "34", `=SAĞDAN(A2;4)` "1234" verir; `=UZUNLUK(A2)` kodun 10 karakter olduğunu söyler. İki hücreyi birleştirmek için `=BİRLEŞTİR(A2;" ";B2)` ya da `&` işareti kullanılır: `=A2&" "&B2`. Başka bir yerden kopyalanan metinlerdeki fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` düzeltir.
 
-**Mantıksal fonksiyonlar** birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece `=EĞER(VE(B2>=50;C2>=50);"Geçti";"Kaldı")` vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce `=EĞER(VE(B3>=50;C3>=50);"Geçti";"Bütünleme")` yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir. Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
+**Mantıksal işlevler** birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece `=EĞER(VE(B2>=50;C2>=50);"Geçti";"Kaldı")` vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce `=EĞER(VE(B3>=50;C3>=50);"Geçti";"Bütünleme")` yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir. Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
 
-**Tarih ve zaman fonksiyonları** tarihin sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+**Tarih ve zaman işlevleri** tarihin sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
 
-## Yapay zekâ destekli fonksiyonlar
+## Yapay zekâ destekli işlevler
 
 Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Sheets'te `=GEMINI("…")` ya da `=AI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef ve kitle hedefi hücrelerinden bir reklam metni yazılmış. İşlevin kullanılabilirliği ve kullanım sınırları hesaba ve plana göre değişebilir; bazı hesaplarda hiç görünmeyebilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
 
@@ -465,7 +465,7 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 
 Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 
-- **Kullanılan ofis yazılımının resmî kılavuzları** — formüller, fonksiyonlar, sıralama, filtreleme ve grafik oluşturma belgeleri.
+- **Kullanılan ofis yazılımının resmî kılavuzları** — formüller, işlevler, sıralama, filtreleme ve grafik oluşturma belgeleri.
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
 - **Gapminder** — veri okuryazarlığı ve yanıltıcı grafikler üzerine ücretsiz eğitim materyalleri. (gapminder.org)
 - **Our World in Data** — açık erişimli veri görselleştirme örnekleri. (ourworldindata.org)

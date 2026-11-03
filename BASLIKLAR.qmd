@@ -216,9 +216,9 @@ format:
 - Formüller ve Hücre Başvuruları
   - Formül nasıl yazılır
   - Göreli ve mutlak başvuru
-- Temel Fonksiyonlar (İşlevler)
-  - Metin, mantıksal ve tarih fonksiyonları
-  - Yapay zekâ destekli fonksiyonlar
+- Temel İşlevler
+  - Metin, mantıksal ve tarih işlevleri
+  - Yapay zekâ destekli işlevler
 - Biçimlendirme
   - Sayı, tarih ve hücre biçimleri
   - Koşullu biçimlendirme
