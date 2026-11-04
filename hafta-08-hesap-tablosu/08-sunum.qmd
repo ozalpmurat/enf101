@@ -634,7 +634,7 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 \begin{center}
 \scriptsize
 \begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
-{\centering\textbf{Kesilmiş eksen}\par Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür.\par} &
+{\centering\textbf{Kesilmiş eksen}\par Eksen 0'dan başlamazsa küçük farklar abartılı görünür.\par} &
 {\centering\textbf{Alan ve hacim yanılsaması}\par İki kat büyük değer, iki boyutta büyütülünce dört kat görünür.\par} &
 {\centering\textbf{Seçilmiş zaman aralığı}\par Başlangıç ve bitiş noktası özenle seçilir.\par} \\
 \end{tabular}
