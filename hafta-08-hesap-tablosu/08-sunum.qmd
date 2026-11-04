@@ -521,10 +521,10 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ::: {.column width="42%"}
 
+Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
+
 - **Grupla:** "Alıcı" → satırlara
 - **Topla/Say:** "Tutar" → "Değerler"e
-
-Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
 
 :::
 :::
