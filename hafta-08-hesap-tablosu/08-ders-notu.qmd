@@ -268,8 +268,6 @@ Mantıksal işlevler, koşulları birleştirip tek bir karar üretir. Üçü bir
 
 Bu işlevler çoğunlukla `EĞER` ile birlikte yazılır: \texttt{=EĞER(VE(B2>=50;C2>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Kaldı")} hem vizeden hem finalden 50 ve üzeri alan öğrenciye "Geçti" yazar. Üç sonuç gerektiğinde `EĞER` içe içe kullanılır: önce \texttt{=EĞER(VE(B3>=50;C3>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Bütünleme")} yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı bir hücrede tutmak daha iyidir.
 
-Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
-
 Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla çalışır:
 
 ```{=latex}
@@ -313,7 +311,6 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 \texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
 \texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & Kaldı & C3'teki 45 eşiğin altında \\
 \texttt{=EĞER(VE(B3>=50;C3>=50);\newline\hspace*{1.1em}"Geçti";"Bütünleme")} & Bütünleme & İki koşula göre sonuç \\
-\texttt{=EĞERHATA((C8-B8)/B8;\newline\hspace*{1.1em}"Vize yok")} & Vize yok & Hatayı metinle gizler \\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
