@@ -614,11 +614,9 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 
 ## Yanıltma: Tasarım Kaynaklı
 
-::: {.callout-warning}
 - **Renk ve vurgu.** Biri canlı, ötekiler soluk: göz canlı çubuğa gider, veri aynıdır.
 - **Kalabalık gösterim.** Gereksiz ızgara ve çerçeve asıl veriyi geri plana atar.
 - **Başlıkla veri uyuşmazlığı.** Düşen çizgiye "artış" başlığı: okuyucu grafiğe değil başlığa inanır.
-:::
 
 ## Uygulama: Kendiniz Üretin
 
