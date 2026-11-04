@@ -507,19 +507,23 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 ## Veriyi Gruplama ve Özetleme
 
 ::: {.columns}
-::: {.column width="58%"}
+::: {.column width="56%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=6.2cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
+\includegraphics[height=6.8cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
 \end{center}
 ```
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="42%"}
 
 Özet tablolar, formül yazmadan kolayca özet rapor üretmenin en hızlı yoludur.
+
+```{=latex}
+\vspace{0.35\baselineskip}
+```
 
 Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
 
