@@ -469,7 +469,7 @@ Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza k
 Bir grafik, **tercihlerle kurulmuş bir iddiadır**. Onu hazırlayan kişi hangi veriyi alacağına, hangi aralığı göstereceğine, ekseni nereden başlatacağına ve neyi vurgulayacağına karar verir. Bu kararların bir kısmı bilgisizlikten, bir kısmı okuyanı yönlendirmek amacıyla alınır.
 :::
 
-Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramaz. Dört grupta toplanır; en sık karşılaşılan üç örnek **kesilmiş eksen**, **alan ve hacim yanılsaması** ile **seçilmiş zaman aralığıdır**. Sunumda bu üç örnek görsel olarak karşılaştırılır.
+Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramaz. Dört grupta toplanır; en sık karşılaşılan üç örnek **kesilmiş eksen**, **alan ve hacim yanılsaması** ile **seçilmiş zaman aralığıdır**. Üç örneğin doğru ve yanıltıcı sürümü aşağıdaki şemada yan yana durur.
 
 ## Eksen kaynaklı yanıltmalar
 
@@ -488,6 +488,8 @@ Bu grupta **üç boyutlu efekt** (perspektifin uzak dilimleri küçültmesi) ve 
 **Seçilmiş zaman aralığı.** Bütün seri 52'den 65'e yükselirken aradan seçilen 4–7 aralığı düşüyor; yalnızca o aralık gösterildiğinde eğilim tersine dönmüş görünür.
 
 Bunun yanında **eksik veri** (kararsızların veya cevap vermeyenlerin grafikten çıkarılarak yüzdelerin yeniden hesaplanması) ve **seçilmiş karşılaştırma grubu** (dört grup içinden yalnızca istenen sonucu destekleyenlerin gösterilmesi) da sık başvurulan yanıltma yöntemleridir.
+
+![Üç kritik yanıltma örneği: solda kesilmiş eksen, ortada alan ve hacim yanılsaması, sağda seçilmiş zaman aralığı. Her sütunda üstte doğru, altta yanıltıcı grafik](gorseller/diagram-yaniltma-3-ornek.png){width=95%}
 
 ## Tasarım kaynaklı yanıltmalar
 
@@ -569,6 +571,6 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
 - **Gapminder** — veri okuryazarlığı ve yanıltıcı grafikler üzerine ücretsiz eğitim materyalleri. (gapminder.org)
 - **Our World in Data** — açık erişimli veri görselleştirme örnekleri. (ourworldindata.org)
-- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri (hücre, satır, sütun, aralık, sayfa) tarafımızca eklenmiştir. Bu haftanın diyagramları (grafik türleri, eksen karşılaştırması) kendi çizimimizdir.
+- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri tarafımızca eklenmiştir. Bu haftanın diyagramları (grafik türleri, yanıltma şeması) kendi çizimimizdir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

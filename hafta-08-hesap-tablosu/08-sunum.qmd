@@ -618,6 +618,16 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 \end{center}
 ```
 
+## Yanıltma: Tasarım Kaynaklı
+
+::: {.callout-warning}
+**Renk ve vurgu.** Dört çubuk aynı veriyi taşır; biri canlı, ötekiler soluk çizilince göz istenen çubuğa gider.
+
+**Kalabalık gösterim.** Gereksiz ızgara, çerçeve ve ayrıntı eklenince göz süslemeye takılır, asıl veri geri planda kalır.
+
+**Başlıkla verinin uyuşmazlığı.** Düşen bir çizginin üstüne "artış" başlığı konursa okuyucu grafiğe değil başlığa inanır.
+:::
+
 ## Yüzde Puan ve Göreli Değişim
 
 **Yüzde puan**, iki oran arasındaki doğrudan farktır; **göreli değişim** ise bu farkın tabana bölümüdür.
