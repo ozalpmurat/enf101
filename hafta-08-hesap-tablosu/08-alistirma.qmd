@@ -68,12 +68,12 @@ C) Değişmez; ayrı bir özet görünüm oluşur\
 D) Silinir\
 E) Formüle dönüşür
 
-**6.** Dikey ekseni sıfırdan başlamayan bir sütun grafiğinde hangi yanıltma taktiği kullanılmıştır?\
-A) Çift eksen\
-B) Logaritmik eksen kullanımı\
-C) Alan yanılsaması\
-D) Seçilmiş zaman aralığı\
-E) Kesilmiş eksen
+**6.** Bir sütun grafiğinde dikey eksen 0 yerine 95'ten başlatılırsa 96–99 arasındaki farklar okuyucuya nasıl görünür?\
+A) Olduğu gibi\
+B) Daha küçük\
+C) Fark görünmez\
+D) Ters yönde\
+E) Olduğundan çok daha büyük
 
 **7.** Bir hücrede `TR-34-1234` kodu vardır. Kodun ilk iki karakterini (`TR`) veren formül hangisidir?\
 A) =SAĞDAN(A2;2)\
@@ -108,7 +108,7 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | 3 | C | Puanlar 60–95 arasında dağılmış, uç değer yok; ortalama 78,5 olur ve sınıfın genel başarısını tek sayıyla anlatır. MAK ve MİN yalnızca tek bir uç puanı verir, TOPLA toplamı, EĞERSAY ise puanların adedini sayar. |
 | 4 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
 | 5 | C | Özet tablo kaynak veriyi değiştirmez; ayrı bir özet görünüm üretir. Kaynak tablodaki değişiklikler özete yansır, ama özet tablo kaynağı değiştirmez. |
-| 6 | E | Dikey eksenin sıfırdan başlamaması kesilmiş eksendir; küçük farkı olduğundan büyük gösterir. |
+| 6 | E | Eksen 95'ten başlayınca 96–99 arası 100 birimlik ölçeğin yalnızca son 5 birimine sığar; 1–2 puanlık fark çubuklarda devasa görünür. Eksenin nereden başladığı tek başına yanıltma değildir; yanıltıcı olan, küçük farkı büyük göstermesidir. |
 | 7 | D | `SOLDAN(metin;n)` metnin başından n karakter alır. `SAĞDAN` sondan, `PARÇAAL` belirtilen konumdan itibaren alır; `UZUNLUK` ise karakter sayısını verir. |
 | 8 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` bugünden doğum tarihine kadar geçen süreyi sayar. |
 | 9 | Doğru | CSV yalnızca ham veriyi taşır; renk, kalın yazı, birleştirilmiş hücre, formül ve grafik aktarılmaz. |

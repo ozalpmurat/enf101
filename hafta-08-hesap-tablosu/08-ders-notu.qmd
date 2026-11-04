@@ -323,12 +323,14 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 
 Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
 
+::: {tbl-colwidths="[22,22,56]"}
 | Hata Kodu | Anlamı | Yaygın Nedeni |
 |:---|:---|:---|
 | `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış |
 | `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var |
 | `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) |
 | `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış |
+:::
 
 Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
 
@@ -400,7 +402,9 @@ Aynı araç, çok farklı soruları yanıtlar:
 - Her hücrenin yanına değerine uygun bir simge koy: trafik ışığı, WiFi çekim gücü gibi (simge kümesi).
 - En yüksek yüzde 10'luk dilime giren değerleri kalın yaz (ilk/son kuralı).
 
-![Excel'de koşullu biçimlendirme: **Koşullu Biçimlendirme** menüsündeki hazır kurallar (Hücre Vurgulama Kuralları, Renk Ölçekleri ve diğerleri) tek listeden seçilir. Görseldeki tablonun H sütununa kırmızı–beyaz renk ölçeği uygulanmış; değer büyüdükçe renk koyulaşıyor.](gorseller/ekran-excel-kosullu-bicim.png){width=40%}
+![Excel'de koşullu biçimlendirme](gorseller/ekran-excel-kosullu-bicim.png){width=40%}
+
+Yukarıdaki şekilde **Koşullu Biçimlendirme** menüsündeki hazır kurallar (Hücre Vurgulama Kuralları, Renk Ölçekleri ve diğerleri) tek listeden seçiliyor. Görseldeki tablonun H sütununa kırmızı–beyaz renk ölçeği uygulanmış; değer büyüdükçe renk koyulaşıyor.
 
 # Sıralama ve Filtreleme
 
@@ -439,9 +443,7 @@ Temel mantığı üç adımdır:
 \needspace{7\baselineskip}
 ```
 
-Yukarıdaki görselde Microsoft Excel'de özet tablo kurulumu gösterilmiştir. Tarih, harcayan, tür ve tutar sütunlarından oluşan bir tablodan ihtiyaca göre özet tablo oluşturulmuştur. Kaynak tablodaki **Alıcı** alanı "Satırlar"a, **Tutar** alanı "Değerler"e sürüklenmiş ve asıl tablonun altında görülen özet tablo elde edilmiştir. İhtiyaca göre kaynak tablodaki veri sütunları farklı yerlere sürüklenip bırakılarak anında farklı özetler oluşturulabilir. Özet tablo oluşturulunca kaynak tablo değişmez; ayrı bir tablo oluşturulur.
-
-Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur; ancak ham veriyi değiştirmediği için yanlış gruplama yapıldığında yanıltıcı sonuçlar verebilir. Oluşturduğunuz özeti her zaman ham veriyle karşılaştırarak doğrulayın.
+Yukarıdaki görselde Microsoft Excel'de özet tablo kullanımı gösterilmiştir. Tarih, harcayan, tür ve tutar sütunlarından oluşan bir tablodan ihtiyaca göre özet tablo oluşturulmuştur. Kaynak tablodaki **Alıcı** alanı "Satırlar"a, **Tutar** alanı "Değerler"e sürüklenmiş ve asıl tablonun altında görülen özet tablo elde edilmiştir. İhtiyaca göre kaynak tablodaki veri sütunları farklı yerlere sürüklenip bırakılarak anında farklı özetler oluşturulabilir. Özet tablo oluşturulunca kaynak tablo değişmez; ayrı bir tablo oluşturulur. Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
 
 # Grafik Oluşturma
 
@@ -491,14 +493,13 @@ Gül & 161 \\
 | Histogram | Dağılımı göstermek |
 | Kutu grafiği | Yayılımı ve uç değerleri göstermek |
 | Saçılım (dağılım) grafiği | İki değişken arasındaki ilişki |
-| Harita | Coğrafi dağılım (alanın büyüklüğü değerin kendisi değildir) |
 :::
 
 Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinden belirgin biçimde farklı oranlar** olduğunda işe yarar. Altı yedi dilimli, oranları yakın pastalar okunamaz.
 
 ## Diğer grafik türleri
 
-Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır.
+Yukarıda bahsedilen grafikler en sık kullanılanlardır; ancak seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
 
 ::: {.callout-note}
 ## Hazır grafik listesinde yok
@@ -506,13 +507,11 @@ Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sı
 Bu türlerin çoğu hesap tablosu uygulamalarının hazır grafik listesinde yer almaz; çizmek için eklenti, ayrı bir araç ya da kod gerekir.
 :::
 
-İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
-
 ![Farklı grafik türleri: Sankey diyagramı, kelime bulutu, harita, ısı haritası ve ağaç haritası](gorseller/diagram-farkli-grafik-turleri.jpg){width=95%}
 
 ## Yapay zekâ ile grafik çizme
 
-Grafiği elle çizmek yerine yapay zekâya çizdirmek de mümkündür: "ECharts ile radar grafiği oluştur" gibi bir istek, çalışan bir örnek üretir. Apache ECharts ve Chart.js ücretsiz, açık kaynaklı JavaScript kütüphaneleridir; kod tarayıcıda çalışır, kurulum gerektirmez. Üretilen grafiğin başlığı, eksenleri, birimleri ve ölçeği yine de gözle denetlenmelidir. Apache ECharts ve Chart.js örnek grafiklerini kendi web sitelerinden inceleyebilirsiniz.[^ornekler]
+Grafiği elle çizmek yerine yapay zekâya çizdirmek de mümkündür: "ECharts ile radar grafiği oluştur" gibi bir istek, çoğu yapay zekâ sohbet sisteminde çalışan bir örnek üretir. Apache ECharts ve Chart.js ücretsiz, açık kaynaklı JavaScript kütüphaneleridir; kod tarayıcıda çalışır, kurulum gerektirmez. Üretilen grafiğin başlığı, eksenleri, birimleri ve ölçeği yine de gözle denetlenmelidir. Apache ECharts ve Chart.js örnek grafiklerini kendi web sitelerinden inceleyebilirsiniz.[^ornekler] ChatGPT üzerinde ECharts ile grafik üretmeye ilişkin bir örnek için aşağıdaki şekle bakabilirsiniz.
 
 [^ornekler]: Apache ECharts: <https://echarts.apache.org/examples/> · Chart.js: <https://www.chartjs.org/docs/latest/samples/>
 
@@ -525,7 +524,7 @@ Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza k
 ::: {.callout-note}
 ## Grafik tarafsız bir resim değildir
 
-Bir grafik, **tercihlerle kurulmuş bir iddiadır**. Onu hazırlayan kişi hangi veriyi alacağına, hangi aralığı göstereceğine, ekseni nereden başlatacağına ve neyi vurgulayacağına karar verir. Bu kararların bir kısmı bilgisizlikten, bir kısmı okuyanı yönlendirmek amacıyla alınır.
+Bir grafik, **tercihlerle kurulmuş bir iddiadır**. Onu hazırlayan kişi hangi veriyi alacağına, hangi aralığı göstereceğine, ekseni nereden başlatacağına ve neyi vurgulayacağına karar verir.
 :::
 
 En sık karşılaşılabilecek bazı yanıltma yöntemleri aşağıda özetlenmiştir.
@@ -542,7 +541,7 @@ En sık karşılaşılabilecek bazı yanıltma yöntemleri aşağıda özetlenmi
 
 **Kontrol listesi:** Bir grafiğe her bakışta şu soruları sorun:
 
-1. Eksen sıfırdan mı başlıyor?
+1. Eksenin başlangıç ve bitiş değerleri nedir?
 2. Birimler ve ölçek yazılı mı?
 3. Kaynak ve tarih var mı?
 4. Renkler bir şey ima ediyor mu?
@@ -562,8 +561,8 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 - **Biçimlendirme** veriyi değil görünüşü değiştirir; koşullu biçimlendirme değere göre kendini günceller.
 - **Sıralama** veriyi yeniden düzenler, **filtreleme** yalnızca gösterir.
 - **Grafik türü** verinin türüne göre seçilir: kategoriler için sütun, zaman için çizgi, pay için pasta.
-- Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
-- Grafiğe her bakışta sorulacak altı soruluk bir kontrol listesi vardır.
+- **Özet tablo**, sürükle-bırakla büyük veri kümelerini gruplayıp özetler; kaynak veriyi değiştirmez.
+- Grafiklerde yanıltmak için bazı taktikler kullanılabilmektedir.
 
 # Kendini Sınama Soruları
 
@@ -571,7 +570,7 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 2. `SAY` ile `EĞERSAY` arasındaki fark nedir?
 3. Sıralama ile filtreleme arasındaki temel fark nedir; hangisi veriyi kalıcı olarak değiştirir?
 4. Zaman içindeki değişimi göstermek için hangi grafik türü uygundur; neden?
-5. Dikey ekseni 45'ten başlayan bir sütun grafiği okuyucuyu nasıl yanıltır?
+5. Dikey ekseni sıfırdan başlamayan bir sütun grafiği hangi durumda yanıltıcı olur, hangi durumda olmaz?
 6. Elinizde bir grafik olduğunda ilk bakacağınız üç şey nedir?
 7. Bir CSV dosyası hangi bilgileri taşımaz?
 8. Koşullu biçimlendirme hücrenin değerini değiştirir mi; neyi değiştirir?
