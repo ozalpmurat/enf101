@@ -501,7 +501,7 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 Özet tablo (pivot table), alanları sürükleyip bırakarak veriyi gruplayıp özetler.
 
-**Grupla:** alanı satırlara · **Topla/Say:** değeri "Değerler"e · ham veri değişmez.
+**Grupla:** "Alıcı" → satırlara, **Tutar** → "Değerler"e (ham veri değişmez)
 
 ```{=latex}
 \begin{center}
