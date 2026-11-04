@@ -530,6 +530,6 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
 - **Gapminder** — veri okuryazarlığı ve yanıltıcı grafikler üzerine ücretsiz eğitim materyalleri. (gapminder.org)
 - **Our World in Data** — açık erişimli veri görselleştirme örnekleri. (ourworldindata.org)
-- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri tarafımızca eklenmiştir. Özet tablo adımları görseli, Excel ekran görüntüsü üzerine eklenen numaralı işaretler ve oklarla tarafımızca hazırlanmıştır. Bu haftanın diyagramları (grafik türleri, yanıltma şeması) kendi çizimimizdir.
+- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri tarafımızca eklenmiştir. Özet tablo adımları görseli, Excel ekran görüntüsü üzerine eklenen numaralı işaretler ve oklarla tarafımızca hazırlanmıştır. Bu haftanın diyagramları (grafik türleri, yanıltma şeması) kendi çizimimizdir; sunudaki "VS" karşılaştırma görseli yapay zekâ ile üretilmiştir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

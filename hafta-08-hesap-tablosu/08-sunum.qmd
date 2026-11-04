@@ -621,7 +621,7 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 ```{=latex}
 \vfill
 \begin{center}
-\includegraphics[height=3.8cm,keepaspectratio]{gorseller/diagram-tasarim-yaniltma.png}
+\includegraphics[height=2.7cm,keepaspectratio]{gorseller/diagram-tasarim-yaniltma.png}
 \end{center}
 ```
 
