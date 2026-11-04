@@ -452,7 +452,7 @@ Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinde
 
 ## Diğer grafik türleri
 
-Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır. Bu şekilde onlarca farklı grafik türü kullanılabilir. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
+Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır. Bu türlerin çoğu hesap tablosu uygulamalarının hazır grafik listesinde yer almaz; çizmek için eklenti, ayrı bir araç ya da kod gerekir. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
 
 ![Farklı grafik türleri: Sankey diyagramı, kelime bulutu, harita, ısı haritası ve ağaç haritası](gorseller/diagram-farkli-grafik-turleri.jpg){width=95%}
 
