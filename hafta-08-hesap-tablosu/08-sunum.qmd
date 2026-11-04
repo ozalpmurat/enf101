@@ -259,7 +259,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \hline
 \textbf{2} & Ayşe & Yılmaz & 00TR1234\\
 \hline
-\textbf{3} & Berk & Demir & 16BK0457\\
+\textbf{3} & Berk & Demir & 99TR5678\\
 \hline
 \end{tabular}}
 \end{center}
