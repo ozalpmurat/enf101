@@ -89,7 +89,12 @@ def zaman_araligi(fig):
     ust = fig.add_axes([SOL[2], 0.618, 0.23, 0.30])
     alt = fig.add_axes([SOL[2], 0.18, 0.23, 0.30])
 
-    ust.plot(range(len(SERI)), SERI, color=MAVI, lw=1.3, marker="o", ms=1.6)
+    # seçilen pencere: 4–7 aralığı açık kırmızı bir bantla işaretlenir
+    ust.axvspan(3.5, 7.5, color=YANILTICI, alpha=0.11, lw=0, zorder=0)
+    for sinir in (3.5, 7.5):
+        ust.axvline(sinir, color=YANILTICI, lw=1.0, zorder=1)
+
+    ust.plot(range(len(SERI)), SERI, color=MAVI, lw=1.3, marker="o", ms=1.6, zorder=3)
     susle(ust, [50, 55, 60, 65], (49, 66.5), xticks=range(len(SERI)), xsize=4.2)
 
     alt.plot(range(4, 8), SERI[4:8], color=YANILTICI, lw=1.3, marker="o", ms=1.6)
