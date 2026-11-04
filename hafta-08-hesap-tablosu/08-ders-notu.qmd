@@ -388,7 +388,13 @@ Temel mantığı üç adımdır:
 2. **Topla/Say:** Hangi değerin hesaplanacağını seçin (ör. satış tutarı, adet).
 3. **Yerleştir:** Alanları satır, sütun ve değer bölgelerine sürükleyin.
 
-![Microsoft Excel'de özet tablo kurulumu: **Alıcı** "Satırlar"a, **Tutar** "Değerler"e sürüklenir; kaynak tablo değişmez, sonuç alıcı başına toplamdır](gorseller/ekran-pivot-adimlari.png){width=80%}
+![Microsoft Excel'de özet tablo kullanımı](gorseller/ekran-pivot-adimlari.png){width=80%}
+
+```{=latex}
+\needspace{7\baselineskip}
+```
+
+Yukarıdaki görselde Microsoft Excel'de özet tablo kurulumu gösterilmiştir. Tarih, harcayan, tür ve tutar sütunlarından oluşan bir tablodan ihtiyaca göre özet tablo oluşturulmuştur. Kaynak tablodaki **Alıcı** alanı "Satırlar"a, **Tutar** alanı "Değerler"e sürüklenmiş ve asıl tablonun altında görülen özet tablo elde edilmiştir. İhtiyaca göre kaynak tablodaki veri sütunları farklı yerlere sürüklenip bırakılarak anında farklı özetler oluşturulabilir. Özet tablo oluşturulunca kaynak tablo değişmez; ayrı bir tablo oluşturulur.
 
 Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur; ancak ham veriyi değiştirmediği için yanlış gruplama yapıldığında yanıltıcı sonuçlar verebilir. Oluşturduğunuz özeti her zaman ham veriyle karşılaştırarak doğrulayın.
 
