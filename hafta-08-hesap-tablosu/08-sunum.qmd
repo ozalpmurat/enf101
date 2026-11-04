@@ -128,7 +128,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \end{center}
 ```
 
-# Temel İşlevler
+# İşlevler
 
 ## Örnek Veri: TOPLA, ORTALAMA, MAK, MİN
 
@@ -184,7 +184,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 
 **Girmedi** bir metindir: TOPLA, ORTALAMA, MAK ve MİN onu hesaba katmaz. Ortalama 450 ÷ **6** = **75** olur.
 
-## Örnek Veri: EĞERSAY, EĞER, SAY
+## Örnek Veri: EĞERSAY, SAY
 
 ::: {.columns}
 ::: {.column width="46%"}
@@ -228,8 +228,6 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \begin{tabular}{@{}l@{\hspace{5mm}}r@{}}
 \texttt{=EĞERSAY(B2:B8;">=70")} & \textbf{4}\\[1mm]
 \texttt{=EĞERSAY(B2:B8;"Girmedi")} & \textbf{1}\\[1.5mm]
-\texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & \textbf{Geçti}\\[1mm]
-\texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & \textbf{Kaldı}\\[1.5mm]
 \texttt{=SAY(B2:B8)} & \textbf{6}\\[1mm]
 \texttt{=SAY(A2:A8)} & \textbf{0}\\
 \end{tabular}}
@@ -238,7 +236,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 :::
 :::
 
-70, 80, 90 ve 100 → **4**. Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer. C3'teki 45 eşiğin altında olduğu için **Kaldı** çıkar. A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
+70, 80, 90 ve 100 → **4**. Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer. A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
 
 ## Metin İşlevleri
 
@@ -256,9 +254,9 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \hline
 \textbf{1} & \textbf{Ad} & \textbf{Soyad} & \textbf{Kod}\\
 \hline
-\textbf{2} & Ayşe & Yılmaz & TR-34-1234\\
+\textbf{2} & Ayşe & Yılmaz & 00TR1234\\
 \hline
-\textbf{3} & Berk & Demir & TR-16-0457\\
+\textbf{3} & Berk & Demir & 16BK0457\\
 \hline
 \end{tabular}}
 \end{center}
@@ -273,17 +271,19 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 {\small
 \begin{tabular}{@{}l@{\hspace{4mm}}r@{}}
 \texttt{=BİRLEŞTİR(A2;"~";B2)} & \textbf{Ayşe Yılmaz}\\[1mm]
-\texttt{=SOLDAN(C2;2)} & \textbf{TR}\\[1mm]
-\texttt{=PARÇAAL(C2;4;2)} & \textbf{34}\\[1mm]
+\texttt{=SOLDAN(C2;2)} & \textbf{00}\\[1mm]
+\texttt{=PARÇAAL(C2;3;2)} & \textbf{TR}\\[1mm]
 \texttt{=SAĞDAN(C2;4)} & \textbf{1234}\\[1mm]
-\texttt{=UZUNLUK(C2)} & \textbf{10}\\
+\texttt{=UZUNLUK(C2)} & \textbf{8}\\
 \end{tabular}}
 ```
 
 :::
 :::
 
-Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç işlevle parçalanır; `&` işareti `BİRLEŞTİR` ile aynı işi yapar. Fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` temizler.
+- Sabit genişlikli veriler (plaka, öğrenci no, telefon no gibi) bu üç işlevle ayrıştırılabilir.
+- `&` işareti `BİRLEŞTİR` ile aynı işi yapar.
+- Fazla boşlukları `KIRP` ile temizleyebilir, harf düzeni `BÜYÜKHARF` ile standardize edilebilir.
 
 ## Mantıksal İşlevler
 
@@ -351,7 +351,7 @@ Formülde bir sorun olduğunda hücreye bir hata kodu yazılır. Kodu tanımak, 
 
 Türkçe arayüzde `#BAŞV!`, İngilizce arayüzde `#REF!`; çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve düzeltin.
 
-## Tarih ve Zaman İşlevleri
+## Tarih ve Saat İşlevleri
 
 ::: {.columns}
 ::: {.column width="46%"}

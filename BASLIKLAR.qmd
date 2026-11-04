@@ -216,8 +216,12 @@ format:
 - Formüller ve Hücre Başvuruları
   - Formül nasıl yazılır
   - Göreli ve mutlak başvuru
-- Temel İşlevler
-  - Metin, mantıksal ve tarih işlevleri
+- İşlevler
+  - Matematik ve sayma işlevleri
+  - Metin işlevleri
+  - Mantıksal işlevler
+  - Hata kodları ve çözümleri
+  - Tarih ve saat işlevleri
   - Yapay zekâ destekli işlevler
 - Biçimlendirme
   - Sayı, tarih ve hücre biçimleri

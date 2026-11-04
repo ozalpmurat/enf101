@@ -143,9 +143,11 @@ Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Ö
 
 Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` olur: pay göreli olduğu için kayar, toplam hücresinde satır kilitli olduğu için sabit kalır. Satır kilidi kaldırılsaydı ikinci satırda toplam hücresi `B10`'a kayar ve oran yanlış çıkardı.
 
-# Temel İşlevler
+# İşlevler
 
-İşlevler, tek tek hücre yazmak yerine bir aralığı topluca işleyen hazır formüllerdir.
+İşlevler, belirli bir hesaplamayı yapan hazır formüllerdir. Bir işlev, adı ve parantez içindeki argümanlarıyla yazılır; argüman bir hücre, aralık ya da sabit değer olabilir.
+
+## Matematik ve sayma işlevleri
 
 | İşlev | Ne yapar | Örnek |
 |:---|:---|:---|
@@ -153,7 +155,6 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 | `ORTALAMA` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
 | `MAK` / `MİN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
 | `EĞERSAY` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
-| `EĞER` | Koşula göre iki farklı sonuç döndürür | `=EĞER(B2>=70;"Geçti";"Kaldı")` |
 | `SAY` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
 
 İşlev adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
@@ -205,8 +206,6 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 \texttt{=MİN(B2:B8)} & 50 & En düşük vize notu \\
 \texttt{=EĞERSAY(B2:B8;">=70")} & 4 & 70 ve üzeri alanlar \\
 \texttt{=EĞERSAY(B2:B8;"Girmedi")} & 1 & ``Girmedi'' yazan hücre \\
-\texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
-\texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & Kaldı & C3'teki 45 eşiğin altında \\
 \texttt{=SAY(B2:B8)} & 6 & Sayı içeren hücreler \\
 \texttt{=SAY(A2:A8)} & 0 & Adlar metindir, sayı değil \\
 \bottomrule[0.3pt]
@@ -214,19 +213,72 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 \end{center}
 ```
 
-`TOPLA`, `ORTALAMA`, `MAK` ve `MİN` metni yok sayar: toplam altı sayının toplamıdır, ortalama 450 ÷ **6** = 75 olur — yedi hücreye değil, altı sayıya bölünür. `SAY` yalnızca sayı içeren hücreleri saydığı için B sütununda **6**, A sütununda **0** verir. `EĞERSAY` koşula uyanı sayar; ölçüt sayı (`">=70"`) ya da metin (`"Girmedi"`) olabilir. `EĞER` ise iki daldan birini seçer: `=EĞER(C2>=50;…)` "Geçti", `=EĞER(C3>=50;…)` ise "Kaldı" verir.
+`TOPLA`, `ORTALAMA`, `MAK` ve `MİN` metni yok sayar: toplam altı sayının toplamıdır, ortalama 450 ÷ **6** = 75 olur — yedi hücreye değil, altı sayıya bölünür. `SAY` yalnızca sayı içeren hücreleri saydığı için B sütununda **6**, A sütununda **0** verir. `EĞERSAY` koşula uyanı sayar; ölçüt sayı (`">=70"`) ya da metin (`"Girmedi"`) olabilir.
 
-Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=EĞER(B2>=70;"Geçti";"Kaldı")`.
+Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=TOPLA(B2:B10;C2:C10)`.
 
-## Metin, mantıksal ve tarih işlevleri
+## Metin işlevleri
 
-Yukarıdaki altı işlev toplam, ortalama ve koşullu sayım işlerini çözer. Günlük kullanımda metin ve tarih işleri de sık gerekir; bu üç grubu tanımak "hangi iş için hangi işlev" sorusunu büyük ölçüde çözer.
+Metni parçalar, birleştirir ve temizler. Sabit genişlikli veriler (plaka, öğrenci no, telefon no gibi) tipik kullanım alanıdır.
 
-**Metin işlevleri** metni parçalar, birleştirir ve temizler. Sabit genişlikli kodlar — plaka, öğrenci numarası, telefon — tipik kullanım alanıdır. `TR-34-1234` kodunda `=SOLDAN(A2;2)` "TR", `=PARÇAAL(A2;4;2)` "34", `=SAĞDAN(A2;4)` "1234" verir; `=UZUNLUK(A2)` kodun 10 karakter olduğunu söyler. İki hücreyi birleştirmek için `=BİRLEŞTİR(A2;" ";B2)` ya da `&` işareti kullanılır: `=A2&" "&B2`. Başka bir yerden kopyalanan metinlerdeki fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` düzeltir.
+```{=latex}
+\begin{center}
+{\small
+\setlength{\arrayrulewidth}{0.3pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{2.2cm}|>{\raggedright\arraybackslash}p{2.2cm}|>{\raggedright\arraybackslash}p{2.6cm}|}
+\hline
+ & \multicolumn{1}{>{\centering\arraybackslash}p{2.2cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{2.2cm}|}{\textbf{B}} & \multicolumn{1}{>{\centering\arraybackslash}p{2.6cm}|}{\textbf{C}}\\
+\hline
+\textbf{1} & \textbf{Ad} & \textbf{Soyad} & \textbf{Kod}\\
+\hline
+\textbf{2} & Ayşe & Yılmaz & 00TR1234\\
+\hline
+\textbf{3} & Berk & Demir & 16BK0457\\
+\hline
+\end{tabular}}
+\end{center}
 
-**Mantıksal işlevler** birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece `=EĞER(VE(B2>=50;C2>=50);"Geçti";"Kaldı")` vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce `=EĞER(VE(B3>=50;C3>=50);"Geçti";"Bütünleme")` yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir.
+\begin{center}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.2cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{4.8cm}@{}}
+\textbf{Formül} & \textbf{Sonuç} & \textbf{Ne yapar}\\
+\midrule[0.3pt]
+\texttt{=BİRLEŞTİR(A2;" ";B2)} & Ayşe Yılmaz & Ad ve soyadı birleştirir \\
+\texttt{=SOLDAN(C2;2)} & 00 & İlk iki karakter \\
+\texttt{=PARÇAAL(C2;3;2)} & TR & 3. karakterden iki harf \\
+\texttt{=SAĞDAN(C2;4)} & 1234 & Son dört karakter \\
+\texttt{=UZUNLUK(C2)} & 8 & Karakter sayısı \\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
+Fazla boşlukları `KIRP` ile temizleyebilir, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` ile standardize edebilirsiniz.
 
-**Hata kodları ve çözümleri.** Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
+## Mantıksal işlevler
+
+Birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece \texttt{=EĞER(VE(B2>=50;C2>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Kaldı")} vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce \texttt{=EĞER(VE(B3>=50;C3>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Bütünleme")} yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir. Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
+
+```{=latex}
+\begin{center}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.4cm}>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
+\textbf{Formül} & \textbf{Sonuç} & \textbf{Ne yapar}\\
+\midrule[0.3pt]
+\texttt{=VE(B2>=50;C2>=50)} & DOĞRU & İki koşul da sağlanıyor \\
+\texttt{=YADA(B3<50;C3<50)} & DOĞRU & En az biri sağlanıyor \\
+\texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
+\texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & Kaldı & C3'teki 45 eşiğin altında \\
+\texttt{=EĞER(VE(B3>=50;C3>=50);\newline\hspace*{1.1em}"Geçti";"Bütünleme")} & Bütünleme & İki koşula göre sonuç \\
+\texttt{=EĞERHATA((C8-B8)/B8;\newline\hspace*{1.1em}"Vize yok")} & Vize yok & Hatayı metinle gizler \\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
+
+## Hata kodları ve çözümleri
+
+Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
 
 | Hata Kodu | Anlamı | Yaygın Nedeni | Çözümü |
 |:---|:---|:---|:---|
@@ -237,7 +289,41 @@ Yukarıdaki altı işlev toplam, ortalama ve koşullu sayım işlerini çözer. 
 
 Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
 
-**Tarih ve zaman işlevleri** tarihin sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+## Tarih ve saat işlevleri
+
+Tarih, sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+
+```{=latex}
+\begin{center}
+{\small
+\setlength{\arrayrulewidth}{0.3pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedleft\arraybackslash}p{2.6cm}|>{\raggedleft\arraybackslash}p{2.6cm}|}
+\hline
+ & \multicolumn{1}{>{\centering\arraybackslash}p{2.6cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{2.6cm}|}{\textbf{B}}\\
+\hline
+\textbf{1} & \textbf{Doğum} & \textbf{Teslim}\\
+\hline
+\textbf{2} & 15.03.2007 & 20.11.2026\\
+\hline
+\end{tabular}}
+\end{center}
+
+\begin{center}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{5.8cm}@{}}
+\textbf{Formül} & \textbf{Sonuç} & \textbf{Ne yapar}\\
+\midrule[0.3pt]
+\texttt{=BUGÜN()} & bugünün tarihi & Açılışta güncellenir \\
+\texttt{=B2-BUGÜN()} & kalan gün & Teslime kalan gün sayısı \\
+\texttt{=GÜNSAY(BUGÜN();B2)} & kalan gün & İki tarih arasındaki gün \\
+\texttt{=YIL(A2)} & 2007 & Doğum yılı \\
+\texttt{=AY(A2)} & 3 & Doğum ayı \\
+\texttt{=GÜN(A2)} & 15 & Doğum günü \\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
 
 ## Yapay zekâ destekli işlevler
 
