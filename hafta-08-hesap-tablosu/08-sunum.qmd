@@ -237,8 +237,8 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 :::
 :::
 
-- 70, 80, 90 ve 100 → **4**
-- Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer.
+- EĞERSAY ile 70'ten büyük ve eşit olanlar: 70, 80, 90 ve 100 → **4**
+- EĞERSAY işlevinde ölçüt metin de olabilir: "Girmedi" tek hücrede geçer.
 - A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
 
 ## Metin İşlevleri
@@ -284,7 +284,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 :::
 :::
 
-- Sabit genişlikli veriler (plaka, öğrenci no, telefon no gibi) bu üç işlevle ayrıştırılabilir.
+- Sabit genişlikli veriler (plaka, öğrenci no, telefon no gibi) bu işlevlerle ayrıştırılabilir.
 - `&` işareti `BİRLEŞTİR` ile aynı işi yapar.
 - Fazla boşlukları `KIRP` ile temizleyebilir, harf düzeni `BÜYÜKHARF` ile standardize edilebilir.
 
@@ -339,20 +339,9 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 :::
 :::
 
-`VE` bütün koşullar sağlanınca, `YADA` en az biri sağlanınca DOĞRU verir. Üç sonuç gerektiğinde `EĞER` iç içe yazılır; parantez çoğaldıkça okunaksızlaştığı için ara sonucu ayrı hücrede tutmak yeğlenir.
-
-## Hata Kodları ve Çözümleri
-
-Formülde bir sorun olduğunda hücreye bir hata kodu yazılır. Kodu tanımak, sorunu çözmenin ilk adımıdır.
-
-| Hata Kodu (TR / EN) | Anlamı | Çözümü |
-|:---|:---|:---|
-| `#BAŞV!` / `#REF!` | Geçersiz başvuru | Silinen hücre adresini güncelleyin |
-| `#DEĞER!` / `#VALUE!` | Geçersiz tür | Sayı beklenen yerdeki metni düzeltin |
-| `#SAYI!` / `#NUM!` | Geçersiz sayı | Girdi değerlerini kontrol edin |
-| `#AD?` / `#NAME?` | Tanınmayan ad | İşlev adının yazımını kontrol edin |
-
-Türkçe arayüzde `#BAŞV!`, İngilizce arayüzde `#REF!`; çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve düzeltin.
+- `VE` bütün koşullar sağlanınca DOĞRU verir.
+- `YADA` en az biri sağlanınca DOĞRU verir.
+- Üç sonuç gerektiğinde `EĞER` iç içe yazılır; ara sonucu ayrı hücrede tutmak yeğlenir.
 
 ## Tarih ve Saat İşlevleri
 
@@ -386,7 +375,6 @@ Türkçe arayüzde `#BAŞV!`, İngilizce arayüzde `#REF!`; çözüm yolu aynıd
 \begin{tabular}{@{}l@{\hspace{4mm}}r@{}}
 \texttt{=BUGÜN()} & \textbf{02.11.2026}\\[1mm]
 \texttt{=B2-BUGÜN()} & \textbf{18}\\[1mm]
-\texttt{=GÜNSAY(BUGÜN();B2)} & \textbf{18}\\[1mm]
 \texttt{=YIL(A2)} & \textbf{2007}\\[1mm]
 \texttt{=AY(A2)} & \textbf{3}\\[1mm]
 \texttt{=GÜN(A2)} & \textbf{15}\\
@@ -407,6 +395,21 @@ Tarih aslında bir sayıdır (1 = 01.01.1900); bu yüzden iki tarihin farkı gü
 ```
 
 Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` (sürüme göre `=AI(...)`) formülü, A2:C2 aralığındaki ürün, hedef ve kitle hedefi bilgisini reklam metnine çeviriyor. Kullanılabilirliği ve kullanım sınırları hesaba ve plana göre değişebilir; bazı hesaplarda hiç görünmeyebilir.
+
+## Hata Kodları ve Çözümleri
+
+Formülde bir sorun olduğunda hücreye bir hata kodu yazılır. Kodu tanımak, sorunu çözmenin ilk adımıdır.
+
+::: {tbl-colwidths="[27,25,48]"}
+| Hata Kodu | Anlamı | Çözümü |
+|:---|:---|:---|
+| `#BAŞV!` / `#REF!` | Geçersiz başvuru | Silinen hücre adresini güncelleyin |
+| `#DEĞER!` / `#VALUE!` | Geçersiz tür | Sayı beklenen yerdeki metni düzeltin |
+| `#SAYI!` / `#NUM!` | Geçersiz sayı | Girdi değerlerini kontrol edin |
+| `#AD?` / `#NAME?` | Tanınmayan ad | İşlev adının yazımını kontrol edin |
+:::
+
+Türkçe arayüzde `#BAŞV!`, İngilizce arayüzde `#REF!`; çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve düzeltin.
 
 # Biçimlendirme
 
@@ -450,10 +453,11 @@ Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki `=GEMINI(...)` (sür
 ```{=latex}
 \begin{minipage}[c][5.9cm][c]{\linewidth}
 \raggedright
+\small
 \hyphenpenalty=10000
 ```
 
-Koşullu biçimlendirme, bir hücrenin görünüşünü içindeki **değere** bağlar: koşul sağlanınca hücre kendiliğinden renklenir.
+Koşullu biçimlendirme, bir hücrenin görünüşünü içindeki **değere** bağlar: koşul sağlanınca hücre kendiliğinden renklenir. Aşağıda bazı örnek kullanım alanları verilmiştir.
 
 - 50'nin altındaki notlar kırmızı
 - En küçük kırmızı, en büyük yeşil — renk ölçeği
@@ -502,17 +506,28 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Veriyi Gruplama ve Özetleme
 
-Özet tablo (pivot table), alanları sürükleyip bırakarak veriyi gruplayıp özetler.
-
-**Grupla:** "Alıcı" → satırlara, **Tutar** → "Değerler"e (ham veri değişmez)
+::: {.columns}
+::: {.column width="56%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=6.3cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
+\includegraphics[height=5.8cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
 \end{center}
 ```
 
-Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
+:::
+
+::: {.column width="42%"}
+
+Özet tablo (pivot table), alanları sürükleyip bırakarak veriyi gruplayıp özetler.
+
+- **Grupla:** "Alıcı" → satırlara
+- **Topla/Say:** "Tutar" → "Değerler"e
+
+Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz. **Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.**
+
+:::
+:::
 
 # Grafik
 
@@ -602,7 +617,7 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 \end{center}
 ```
 
-## Yanıltma Taktipleri: Üç Kritik Örnek
+## Yanıltma Taktikleri: Üç Kritik Örnek
 
 ```{=latex}
 \begin{center}
@@ -647,8 +662,8 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 - **CSV** değerleri taşır, biçimlendirmeyi taşımaz.
 - **Biçimlendirme** görünüşü değiştirir, değeri değil.
 - **Sıralama** düzenler, **filtreleme** gösterir.
-- **Grafik türü** veriye göre seçilir: kategori → sütun, zaman → çizgi, pay → pasta.
-- Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
+- **Grafik türü** veriye göre seçilir; **özet tablo** veriyi sürükle-bırakla gruplayıp özetler.
+- Grafiklerde yanıltmak için bazı taktikler kullanılabilmektedir.
 
 ## Gelecek Hafta
 

@@ -319,26 +319,11 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 \end{center}
 ```
 
-## Hata kodları ve çözümleri
-
-Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
-
-::: {tbl-colwidths="[22,22,56]"}
-| Hata Kodu | Anlamı | Yaygın Nedeni |
-|:---|:---|:---|
-| `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış |
-| `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var |
-| `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) |
-| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış |
-:::
-
-Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
-
 ## Tarih ve saat işlevleri
 
 Tarih, programın içinde bir **sayı** olarak saklanır: 1 = 01.01.1900, sonraki her gün sayıyı bir artırır. Bu yüzden iki tarihi birbirinden çıkarınca aradaki **gün sayısı** çıkar.
 
-`BUGÜN()` bugünün tarihini verir ve dosya her açıldığında yenilenir; bu yüzden `=B2-BUGÜN()` teslime kalan günü kendiliğinden günceller. Aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+`BUGÜN()` bugünün tarihini verir ve dosya her açıldığında yenilenir; bu yüzden `=B2-BUGÜN()` teslime kalan günü kendiliğinden günceller. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
 
 ```{=latex}
 \begin{center}
@@ -363,7 +348,6 @@ Tarih, programın içinde bir **sayı** olarak saklanır: 1 = 01.01.1900, sonrak
 \midrule[0.3pt]
 \texttt{=BUGÜN()} & bugünün tarihi & Açılışta güncellenir \\
 \texttt{=B2-BUGÜN()} & kalan gün & Teslime kalan gün sayısı \\
-\texttt{=GÜNSAY(BUGÜN();B2)} & kalan gün & İki tarih arasındaki gün \\
 \texttt{=YIL(A2)} & 2007 & Doğum yılı \\
 \texttt{=AY(A2)} & 3 & Doğum ayı \\
 \texttt{=GÜN(A2)} & 15 & Doğum günü \\
@@ -377,6 +361,21 @@ Tarih, programın içinde bir **sayı** olarak saklanır: 1 = 01.01.1900, sonrak
 Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Sheets'te `=GEMINI("…")` ya da `=AI("…")` formülü, verilen aralıktaki veriyi okuyup metin üretebiliyor: aşağıdaki örnekte ürün, hedef ve kitle hedefi hücrelerinden bir reklam metni yazılmış. İşlevin kullanılabilirliği ve kullanım sınırları hesaba ve plana göre değişebilir; bazı hesaplarda hiç görünmeyebilir. Yapay zekâyı 12 ve 13. haftalarda ayrıca ele alacağız.
 
 ![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün, hedef ve kitle hedefi bilgisini reklam metnine çeviriyor.](gorseller/ekran-sheets-gemini.png){width=65%}
+
+## Hata kodları ve çözümleri
+
+Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
+
+::: {tbl-colwidths="[22,22,56]"}
+| Hata Kodu | Anlamı | Yaygın Nedeni |
+|:---|:---|:---|
+| `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış |
+| `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var |
+| `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) |
+| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış |
+:::
+
+Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
 
 # Biçimlendirme
 

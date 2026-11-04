@@ -220,9 +220,9 @@ format:
   - Matematik ve sayma işlevleri
   - Metin işlevleri
   - Mantıksal işlevler
-  - Hata kodları ve çözümleri
   - Tarih ve saat işlevleri
   - Yapay zekâ destekli işlevler
+  - Hata kodları ve çözümleri
 - Biçimlendirme
   - Sayı, tarih ve hücre biçimleri
   - Koşullu biçimlendirme
