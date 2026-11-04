@@ -61,12 +61,12 @@ C) Filtreleme veriyi siler, sıralama silmez\
 D) Sıralama yalnızca sayısal sütunlarda çalışır\
 E) Filtreleme satırların yerini kalıcı olarak değiştirir
 
-**5.** Bir oranın %20'den %25'e çıkması durumunda aşağıdakilerden hangisi doğrudur?\
-A) 5 yüzde puan artmıştır; göreli olarak %25 artış demektir\
-B) %5 artmıştır; göreli değişim yoktur\
-C) %25 puan artmıştır\
-D) Bu verilerle değişim hesaplanamaz\
-E) Göreli artış %100'dür
+**5.** Bir özet tablo (pivot table) oluşturulduğunda kaynak tablo ne olur?\
+A) Sıralanır\
+B) Biçimlendirilir\
+C) Değişmez; ayrı bir özet görünüm oluşur\
+D) Silinir\
+E) Formüle dönüşür
 
 **6.** Dikey ekseni sıfırdan başlamayan bir sütun grafiğinde hangi yanıltma taktiği kullanılmıştır?\
 A) Çift eksen\
@@ -107,7 +107,7 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | 2 | B | Zaman içindeki değişim çizgi grafiğiyle gösterilir. Sütun kategorileri, pasta bütün içindeki payı, histogram dağılımı, saçılım ise iki değişken arasındaki ilişkiyi gösterir. |
 | 3 | C | Puanlar 60–95 arasında dağılmış, uç değer yok; ortalama 78,5 olur ve sınıfın genel başarısını tek sayıyla anlatır. MAK ve MİN yalnızca tek bir uç puanı verir, TOPLA toplamı, EĞERSAY ise puanların adedini sayar. |
 | 4 | A | Sıralama satırların yerini kalıcı olarak değiştirir; filtreleme veriyi silmeden yalnızca uygun satırları gösterir. |
-| 5 | A | 5 puanlık artış yüzde puan olarak 5, göreli değişim olarak 5 ÷ 20 = %25'tir. İki ifade farklı büyüklükler anlatır. |
+| 5 | C | Özet tablo kaynak veriyi değiştirmez; ayrı bir özet görünüm üretir. Kaynak tablodaki değişiklikler özete yansır, ama özet tablo kaynağı değiştirmez. |
 | 6 | E | Dikey eksenin sıfırdan başlamaması kesilmiş eksendir; küçük farkı olduğundan büyük gösterir. |
 | 7 | D | `SOLDAN(metin;n)` metnin başından n karakter alır. `SAĞDAN` sondan, `PARÇAAL` belirtilen konumdan itibaren alır; `UZUNLUK` ise karakter sayısını verir. |
 | 8 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` bugünden doğum tarihine kadar geçen süreyi sayar. |

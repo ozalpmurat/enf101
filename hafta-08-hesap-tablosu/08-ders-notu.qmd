@@ -29,7 +29,6 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
 - Veri türüne uygun grafiği seçer ve grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
-- Yüzde değişim ile yüzde puan ayrımını doğru kullanır.
 
 # Hesap Tablosu Nedir?
 
@@ -492,12 +491,9 @@ En sık karşılaşılabilecek bazı yanıltma yöntemleri aşağıda özetlenmi
 1. Eksen sıfırdan mı başlıyor?
 2. Birimler ve ölçek yazılı mı?
 3. Kaynak ve tarih var mı?
-4. Kayıp veri gizlenmiş mi?
-5. Başlık veriyle uyumlu mu?
-6. Karşılaştırma grubu adil mi?
-7. Renkler bir şey ima ediyor mu?
-8. Tam veriye erişilebiliyor mu?
-9. Grafik, metinle aynı şeyi mi söylüyor?
+4. Renkler bir şey ima ediyor mu?
+5. Tam veriye erişilebiliyor mu?
+6. Metin ve grafik başlığı, grafik ile uyumlu mu?
 
 
 # Uygulama: Kendiniz Üretin
@@ -508,25 +504,23 @@ Bu hafta öğrendiğiniz araçla küçük bir veri kümesi girin; bir kez **kast
 
 - Hesap tablosu, hücreler arasında **formüllerle ilişki kuran** bir yazılımdır; girdi değişince sonuç kendiliğinden güncellenir.
 - Formüller `=` ile başlar; **göreli** başvuru kopyalanınca kayar, **mutlak** başvuru (`$A$1`) sabit kalır.
-- **Yüzde puan** ile **göreli yüzde değişim** farklı şeylerdir; karıştırıldığında değişim olduğundan büyük görünür.
 - **CSV** değerleri taşır, biçimlendirmeyi taşımaz; bu yüzden programlar arasında ortak biçimdir.
 - **Biçimlendirme** veriyi değil görünüşü değiştirir; koşullu biçimlendirme değere göre kendini günceller.
 - **Sıralama** veriyi yeniden düzenler, **filtreleme** yalnızca gösterir.
 - **Grafik türü** verinin türüne göre seçilir: kategoriler için sütun, zaman için çizgi, pay için pasta.
 - Yanıltma taktikleri dört grupta toplanır: eksen, ölçek ve oran, seçme ve gizleme, tasarım.
-- Grafiğe her bakışta sorulacak dokuz soruluk bir kontrol listesi vardır.
+- Grafiğe her bakışta sorulacak altı soruluk bir kontrol listesi vardır.
 
 # Kendini Sınama Soruları
 
 1. Bir formülü bir satır aşağı kopyaladığınızda `A1` ve `$A$1` başvuruları nasıl davranır?
-2. Bir oranın %40'tan %50'ye çıkması yüzde puan ve göreli değişim olarak nasıl ifade edilir?
-3. `SAY` ile `EĞERSAY` arasındaki fark nedir?
-4. Sıralama ile filtreleme arasındaki temel fark nedir; hangisi veriyi kalıcı olarak değiştirir?
-5. Zaman içindeki değişimi göstermek için hangi grafik türü uygundur; neden?
-6. Dikey ekseni 45'ten başlayan bir sütun grafiği okuyucuyu nasıl yanıltır?
-7. Elinizde bir grafik olduğunda ilk bakacağınız üç şey nedir?
-8. Bir CSV dosyası hangi bilgileri taşımaz?
-9. Koşullu biçimlendirme hücrenin değerini değiştirir mi; neyi değiştirir?
+2. `SAY` ile `EĞERSAY` arasındaki fark nedir?
+3. Sıralama ile filtreleme arasındaki temel fark nedir; hangisi veriyi kalıcı olarak değiştirir?
+4. Zaman içindeki değişimi göstermek için hangi grafik türü uygundur; neden?
+5. Dikey ekseni 45'ten başlayan bir sütun grafiği okuyucuyu nasıl yanıltır?
+6. Elinizde bir grafik olduğunda ilk bakacağınız üç şey nedir?
+7. Bir CSV dosyası hangi bilgileri taşımaz?
+8. Koşullu biçimlendirme hücrenin değerini değiştirir mi; neyi değiştirir?
 
 # Kaynaklar
 
