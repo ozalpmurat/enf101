@@ -596,7 +596,7 @@ Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca g�
 
 ![](gorseller/diagram-farkli-grafik-turleri.jpg){width=90%}
 
-Çoğu hesap tablosunda hazır değil; ayrı araç ya da kod gerekir.
+Bu tarz grafikler çoğu hesap tablosunda bulunmaz; ayrı araç ya da kod gerekir.
 
 ## Üretici Yapay Zekâ ile Grafik Çizme
 
