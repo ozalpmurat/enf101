@@ -506,25 +506,25 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Veriyi Gruplama ve Özetleme
 
-Özet tablolar, formül yazmadan kolayca özet rapor üretmenin en hızlı yoludur.
-
 ::: {.columns}
-::: {.column width="55%"}
+::: {.column width="58%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=5.9cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
+\includegraphics[height=6.2cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
 \end{center}
 ```
 
 :::
 
-::: {.column width="43%"}
+::: {.column width="40%"}
+
+Özet tablolar, formül yazmadan kolayca özet rapor üretmenin en hızlı yoludur.
 
 Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
 
-**Grupla:** "Alıcı" → satırlara\
-**Topla/Say:** "Tutar" → "Değerler"e
+"Alıcı" → satırlara\
+"Tutar" → "Değerler"e
 
 :::
 :::
