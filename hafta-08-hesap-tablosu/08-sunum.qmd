@@ -600,7 +600,6 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 ## Yanıltma Taktipleri: Üç Kritik Örnek
 
 ```{=latex}
-\vspace*{2mm}
 \begin{center}
 \scriptsize
 \begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}

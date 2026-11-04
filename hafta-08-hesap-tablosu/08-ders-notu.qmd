@@ -475,35 +475,17 @@ Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza k
 Bir grafik, **tercihlerle kurulmuş bir iddiadır**. Onu hazırlayan kişi hangi veriyi alacağına, hangi aralığı göstereceğine, ekseni nereden başlatacağına ve neyi vurgulayacağına karar verir. Bu kararların bir kısmı bilgisizlikten, bir kısmı okuyanı yönlendirmek amacıyla alınır.
 :::
 
-Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramaz. Dört grupta toplanır; en sık karşılaşılan üç örnek **kesilmiş eksen**, **alan ve hacim yanılsaması** ile **seçilmiş zaman aralığıdır**. Üç örneğin doğru ve yanıltıcı sürümü aşağıdaki şemada yan yana durur.
+En sık karşılaşılabilecek bazı yanıltma yöntemleri aşağıda özetlenmiştir.
 
-## Eksen kaynaklı yanıltmalar
+**Eksen kaynaklı yanıltmalar:** Şekil 13'ün (a) sütununda aynı dört değer iki kez çizilmiştir. Üstteki doğru grafikte dikey eksen sıfırdan başlar; 96, 98, 97 ve 99 değerleri neredeyse aynı yükseklikte durur. Alttaki yanıltıcı grafikte eksen 95'ten başlatılır ve aynı 1–2 puanlık fark devasa görünür.
 
-**Kesilmiş eksen.** Dikey eksen sıfırdan başlamaz. 96, 98, 97 ve 99 değerleri 0–100 aralığında neredeyse aynı yükseklikteyken, eksen 95'ten başlatılınca aralarındaki 1–2 puanlık fark devasa görünür.
+**Ölçek ve oran kaynaklı yanıltmalar:** Şekil 13'ün (b) sütununda değerler 10, 20 ve 30'dur. Üstteki doğru grafikte dairenin **alanı** değerle orantılıdır; alttaki yanıltıcı grafikte **çapı** büyütülür. İki kat değer dört kat büyük görünür, çünkü alan çapın karesiyle büyür.
 
-Bu grupta ayrıca **ters çevrilmiş eksen** (değerler büyürken grafiğin aşağı inmesi) ve **eşit olmayan aralıklı eksen** (etiketlerin 0, 10, 20, 50 gibi düzensiz yerleştirilmesi) de okuyucuyu yanıltır.
+**Seçme ve gizleme kaynaklı yanıltmalar:** Şekil 13'ün (c) sütununda bütün seri 52'den 65'e yükselir. Alttaki grafikte aradan yalnızca 4–7 aralığı seçilmiştir; o aralıkta çizgi düşer ve eğilim tersine dönmüş görünür.
 
-## Ölçek ve oran kaynaklı yanıltmalar
+**Tasarım kaynaklı yanıltmalar:** Grafiğin görünüşü de yanıltır. Dört çubuk aynı veriyi taşır; yalnızca biri canlı renkle çizilirse göz ona gider. Gereksiz ızgara ve çerçeve kalabalığı asıl veriyi geri plana atar. Düşen bir çizginin üstüne "artış" başlığı konursa okuyucu grafiğe değil başlığa inanır.
 
-**Alan ve hacim yanılsaması.** Değerler 10, 20 ve 30'dur. Doğru grafikte dairenin **alanı** değerle orantılıdır; yanıltıcı grafikte ise **çapı** büyütülür. İkinci durumda iki kat değer dört kat büyük görünür, çünkü alan çapın karesiyle büyür.
-
-Bu grupta **üç boyutlu efekt** (perspektifin uzak dilimleri küçültmesi) ve **çift eksen kullanımı** (ilgisiz iki serinin aynı yönde yükseliyormuş gibi gösterilmesi) da yanıltıcı sonuçlar doğurur.
-
-## Seçme ve gizleme kaynaklı yanıltmalar
-
-**Seçilmiş zaman aralığı.** Bütün seri 52'den 65'e yükselirken aradan seçilen 4–7 aralığı düşüyor; yalnızca o aralık gösterildiğinde eğilim tersine dönmüş görünür.
-
-Bunun yanında **eksik veri** (kararsızların veya cevap vermeyenlerin grafikten çıkarılarak yüzdelerin yeniden hesaplanması) ve **seçilmiş karşılaştırma grubu** (dört grup içinden yalnızca istenen sonucu destekleyenlerin gösterilmesi) da sık başvurulan yanıltma yöntemleridir.
-
-![Üç kritik yanıltma örneği: solda kesilmiş eksen, ortada alan ve hacim yanılsaması, sağda seçilmiş zaman aralığı. Her sütunda üstte doğru, altta yanıltıcı grafik](gorseller/diagram-yaniltma-3-ornek.png){width=95%}
-
-## Tasarım kaynaklı yanıltmalar
-
-**Renk ve vurgu.** Dört çubuk aynı veriyi taşır. Yalnızca biri canlı, ötekiler soluk çizilince göz istenen çubuğa gider; veri değişmemiştir.
-
-**Kalabalık gösterim.** Grafiğe gereksiz ızgara çizgileri, çerçeveler ve ayrıntılar eklendiğinde göz süslemeye takılır, asıl veri geri planda kalır.
-
-**Başlıkla verinin uyuşmaması.** Düşen bir çizginin üstüne "artış" başlığı konursa okuyucu grafiğe değil başlığa inanır.
+![Üç kritik yanıltma örneği: (a) kesilmiş eksen, (b) alan ve hacim yanılsaması, (c) seçilmiş zaman aralığı. Her sütunda üstte doğru, altta yanıltıcı grafik](gorseller/diagram-yaniltma-3-ornek.png){width=95%}
 
 Yanıltma yalnızca grafikte olmaz; yüzdeler de aynı farkı iki farklı büyüklükte gösterebilir.
 

@@ -109,6 +109,11 @@ def ciz(hedef):
         alt.text(0.02, -0.17, ipucu, transform=alt.transAxes, fontsize=5.4,
                  color=YANILTICI, style="italic", va="top")
 
+    # sütun etiketleri: ders notunda künye ve metin bunlara atıf yapar
+    for sol, etiket in zip(SOL, ["(a)", "(b)", "(c)"]):
+        fig.text(sol + 0.115, 0.008, etiket, ha="center", va="bottom",
+                 fontsize=7.5, color=LACIVERT)
+
     fig.add_artist(plt.Line2D([0.035, 0.965], [0.549, 0.549], transform=fig.transFigure,
                               color="black", linewidth=1.0))
     fig.savefig(hedef, facecolor="white")
