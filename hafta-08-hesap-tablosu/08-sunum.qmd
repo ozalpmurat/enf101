@@ -341,7 +341,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 
 - `VE` bütün koşullar sağlanınca DOĞRU verir.
 - `YADA` en az biri sağlanınca DOĞRU verir.
-- Üç sonuç gerektiğinde `EĞER` iç içe yazılır; ara sonucu ayrı hücrede tutmak yeğlenir.
+- İhtiyaca göre, çok sayıda `EĞER` işlevi iç içe yazılabilir.
 
 ## Tarih ve Saat İşlevleri
 
