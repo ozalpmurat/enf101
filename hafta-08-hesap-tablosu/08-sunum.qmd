@@ -618,6 +618,13 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 - **Kalabalık gösterim.** Gereksiz ızgara ve çerçeve asıl veriyi geri plana atar.
 - **Başlıkla veri uyuşmazlığı.** Düşen çizgiye "artış" başlığı: okuyucu grafiğe değil başlığa inanır.
 
+```{=latex}
+\vfill
+\begin{center}
+\includegraphics[height=3.8cm,keepaspectratio]{gorseller/diagram-tasarim-yaniltma.png}
+\end{center}
+```
+
 ## Uygulama: Kendiniz Üretin
 
 1. Küçük bir veri kümesi girin.
