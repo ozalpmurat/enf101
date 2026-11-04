@@ -472,7 +472,7 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 :::
 
-::: {.column width="39%"}
+::: {.column width="43%"}
 
 ```{=latex}
 \begin{center}
@@ -506,20 +506,20 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Veriyi Gruplama ve Özetleme
 
-Özet tablo (pivot table), alanları sürükleyip bırakarak veriyi gruplayıp özetler. Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
+Özet tablolar, formül yazmadan kolayca özet rapor üretmenin en hızlı yoludur.
 
 ::: {.columns}
-::: {.column width="52%"}
+::: {.column width="55%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=5.4cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
+\includegraphics[height=5.9cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
 \end{center}
 ```
 
 :::
 
-::: {.column width="46%"}
+::: {.column width="43%"}
 
 Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
 
