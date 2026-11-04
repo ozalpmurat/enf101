@@ -509,7 +509,7 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 Özet tablo (pivot table), alanları sürükleyip bırakarak veriyi gruplayıp özetler. Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
 
 ::: {.columns}
-::: {.column width="56%"}
+::: {.column width="52%"}
 
 ```{=latex}
 \begin{center}
@@ -519,12 +519,12 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 :::
 
-::: {.column width="42%"}
+::: {.column width="46%"}
 
 Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
 
-- **Grupla:** "Alıcı" → satırlara
-- **Topla/Say:** "Tutar" → "Değerler"e
+**Grupla:** "Alıcı" → satırlara\
+**Topla/Say:** "Tutar" → "Değerler"e
 
 :::
 :::
