@@ -487,40 +487,17 @@ En sık karşılaşılabilecek bazı yanıltma yöntemleri aşağıda özetlenmi
 
 ![Üç kritik yanıltma örneği: (a) kesilmiş eksen, (b) alan ve hacim yanılsaması, (c) seçilmiş zaman aralığı. Her sütunda üstte doğru, altta yanıltıcı grafik](gorseller/diagram-yaniltma-3-ornek.png){width=95%}
 
-Yanıltma yalnızca grafikte olmaz; yüzdeler de aynı farkı iki farklı büyüklükte gösterebilir.
+**Kontrol listesi:** Bir grafiğe her bakışta şu soruları sorun:
 
-## Yüzde puan ve göreli değişim
-
-İki değer arasındaki değişimi anlatmanın iki yolu vardır ve karıştırılmaları yaygındır.
-
-- **Yüzde puan farkı:** iki oran arasındaki doğrudan çıkarma. %20'den %25'e çıkış **5 puan**dır.
-- **Göreli değişim:** farkın başlangıç değerine bölünmesi. Aynı çıkış, 5 ÷ 20 = **%25 artış**tır.
-
-::: {#fig-yuzde-puan layout-ncol=2}
-![Şema: aynı 5 puan iki farklı tabanda](gorseller/diagram-yuzde-puan-goreli.png){width=98%}
-
-![Microsoft Excel'de aynı örnek](gorseller/ekran-yuzde-formulleri.png){width=98%}
-
-Aynı 5 puanlık fark iki farklı tabanda: taban %20 iken 5 ÷ 20 = %25, taban %50 iken 5 ÷ 50 = %10 büyüme. Sağda aynı örnek, Microsoft Excel'de iki ayrı formülle hesaplanmış.
-:::
-
-Aynı 5 puan; taban %20 iken %25, taban %50 iken %10'luk bir artış demektir: taban küçüldükçe, aynı puan farkının etkisi büyür. Bu yüzden oran içeren bir haberde ilk soru şu olmalıdır: **neyin yüzde kaçı, tabanı kaç?** Küçük tabanda etki daha da çarpıcıdır: 2 vakadan 6 vakaya çıkış "%200 arttı" demektir; ama arada yalnızca 4 vaka var. Sayılar bu kadar küçükken birkaç vaka artışı, artışın süreceği anlamına gelmez.
-
-Hesap tablosunda ikisi **iki ayrı formül** olur: puan farkı için `=B2-A2`, göreli değişim için `=(B2-A2)/A2`. Birincisi **sayı**, ikincisi **yüzde** biçiminde gösterilir; aynı tabloya iki farklı biçim vermek kavramların karışmasını önler.
-
-## Kontrol listesi
-
-Bir grafiğe her baktığınızda şu dokuz soruyu hızlıca gözden geçirmek çoğu yanıltmayı yakalar:
-
-1. Sütun ve alan grafiğinde eksen sıfırdan mı başlıyor?
+1. Eksen sıfırdan mı başlıyor?
 2. Birimler ve ölçek yazılı mı?
 3. Kaynak ve tarih var mı?
-4. Kaç veri noktası var; kayıp veri gizlenmiş mi?
-5. Grafik başlığı verinin söylediğiyle uyumlu mu?
+4. Kayıp veri gizlenmiş mi?
+5. Başlık veriyle uyumlu mu?
 6. Karşılaştırma grubu adil mi?
-7. Renkler bir şey mi ima ediyor?
-8. Tam veri kümesine erişilebiliyor mu?
-9. Grafik, eşlik ettiği metinle aynı şeyi mi söylüyor?
+7. Renkler bir şey ima ediyor mu?
+8. Tam veriye erişilebiliyor mu?
+9. Grafik, metinle aynı şeyi mi söylüyor?
 
 
 # Uygulama: Kendiniz Üretin

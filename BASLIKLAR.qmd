@@ -233,8 +233,6 @@ format:
   - Diğer grafik türleri
   - Yapay zekâ ile grafik çizme
 - Grafiklerin ve Sayıların Doğru Okunması
-  - Yüzde puan ve göreli değişim
-  - Kontrol listesi
 - Uygulama: Kendiniz Üretin
 - Özet
 - Kendini Sınama Soruları
