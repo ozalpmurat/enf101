@@ -329,8 +329,7 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç işlevle parçalan�
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.7cm}r@{}}
 \texttt{=VE(B2>=50;C2>=50)} & \textbf{DOĞRU}\\[1mm]
 \texttt{=YADA(B3<50;C3<50)} & \textbf{DOĞRU}\\[6mm]
-\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\hspace*{1.1em}"Geçti";"Bütünleme")} & \textbf{Bütünleme}\\[6mm]
-\texttt{=EĞERHATA((C8-B8)/B8;}\newline\texttt{\hspace*{1.1em}"Vize yok")} & \textbf{Vize yok}\\
+\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\hspace*{1.1em}"Geçti";"Bütünleme")} & \textbf{Bütünleme}\\
 \end{tabular}}
 ```
 
@@ -338,6 +337,19 @@ Sabit genişlikli kod (plaka, öğrenci no, telefon) bu üç işlevle parçalan�
 :::
 
 `VE` bütün koşullar sağlanınca, `YADA` en az biri sağlanınca DOĞRU verir. Üç sonuç gerektiğinde `EĞER` iç içe yazılır; parantez çoğaldıkça okunaksızlaştığı için ara sonucu ayrı hücrede tutmak yeğlenir.
+
+## Hata Kodları ve Çözümleri
+
+Formülde bir sorun olduğunda hücreye bir hata kodu yazılır. Kodu tanımak, sorunu çözmenin ilk adımıdır.
+
+| Hata Kodu (TR / EN) | Anlamı | Çözümü |
+|:---|:---|:---|
+| `#BAŞV!` / `#REF!` | Geçersiz başvuru | Silinen hücre adresini güncelleyin |
+| `#DEĞER!` / `#VALUE!` | Geçersiz tür | Sayı beklenen yerdeki metni düzeltin |
+| `#SAYI!` / `#NUM!` | Geçersiz sayı | Girdi değerlerini kontrol edin |
+| `#AD?` / `#NAME?` | Tanınmayan ad | İşlev adının yazımını kontrol edin |
+
+Türkçe arayüzde `#BAŞV!`, İngilizce arayüzde `#REF!`; çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve düzeltin.
 
 ## Tarih ve Zaman İşlevleri
 
@@ -483,6 +495,26 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 **Birleştirilmiş hücreler sıralama ve filtrelemeyi bozar**, formül aralıklarını şaşırtır; bu yüzden yalnızca gerçekten gerektiğinde kullanılmalıdır.
 :::
 
+# Özet Tablolar
+
+## Veriyi Gruplama ve Özetleme
+
+Özet tablo (pivot table), büyük veri kümelerini sürükle-bırak yöntemiyle gruplayıp özetleyen bir araçtır.
+
+- **Grupla:** Hangi değişkene göre özetleneceğini seçin (bölge, ay, kategori).
+- **Topla/Say:** Hangi değerin hesaplanacağını seçin (satış tutarı, adet).
+- **Yerleştir:** Alanları satır, sütun ve değer bölgelerine sürükleyin.
+
+Ham veri değişmez; yalnızca özet bir görünüm oluşturulur.
+
+```{=latex}
+\begin{center}
+\includegraphics[height=6.2cm,keepaspectratio]{gorseller/ekran-excel-ozet-tablo.png}
+\end{center}
+```
+
+Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
+
 # Grafik
 
 ## Grafik Oluşturmanın Üç Adımı
@@ -569,7 +601,7 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 \end{center}
 ```
 
-## Yanıltma: Eksen Kaynaklı
+## Yanıltma Taktipleri: Üç Kritik Örnek
 
 ```{=latex}
 \vspace*{2mm}
@@ -577,54 +609,14 @@ Grafik, tarafsız bir resim değil, **tercihlerle kurulmuş bir iddiadır**. Gra
 \scriptsize
 \begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
 {\centering\textbf{Kesilmiş eksen}\par Dikey eksen sıfırdan başlamaz; küçük fark devasa görünür.\par} &
-{\centering\textbf{Ters çevrilmiş eksen}\par Artış aşağı doğru gösterilir.\par} &
-{\centering\textbf{Eşit olmayan aralıklı eksen}\par Etiket aralıkları eşit sanılır.\par} \\
-\end{tabular}
-
-\vspace{0.3mm}
-\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-eksen.png}
-\end{center}
-```
-
-## Yanıltma: Ölçek ve Oran
-
-```{=latex}
-\vspace*{2mm}
-\begin{center}
-\scriptsize
-\begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
 {\centering\textbf{Alan ve hacim yanılsaması}\par İki kat büyük değer, iki boyutta büyütülünce dört kat görünür.\par} &
-{\centering\textbf{Üç boyutlu efekt}\par Perspektif uzaktaki dilimi küçültür.\par} &
-{\centering\textbf{Çift eksen}\par İlgisiz iki seri, olmayan bir ilişki varmış gibi görünür.\par} \\
+{\centering\textbf{Seçilmiş zaman aralığı}\par Başlangıç ve bitiş noktası özenle seçilir.\par} \\
 \end{tabular}
 
 \vspace{0.3mm}
-\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-olcek.png}
+\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-3-ornek.png}
 \end{center}
 ```
-
-## Yanıltma: Seçme ve Gizleme
-
-```{=latex}
-\vspace*{2mm}
-\begin{center}
-\scriptsize
-\begin{tabular}{@{}p{4.46cm}@{}p{4.46cm}@{}p{4.46cm}@{}}
-{\centering\textbf{Seçilmiş zaman aralığı}\par Başlangıç ve bitiş noktası özenle seçilir.\par} &
-{\centering\textbf{Eksik veri ve ``diğer'' kovası}\par Kayıp noktalar gizlenir.\par} &
-{\centering\textbf{Seçilmiş karşılaştırma grubu}\par Sonucu belirleyen, kiminle karşılaştırıldığıdır.\par} \\
-\end{tabular}
-
-\vspace{0.3mm}
-\includegraphics[width=13.4cm]{gorseller/diagram-yaniltma-karsilastirma.png}
-\end{center}
-```
-
-## Yanıltma: Tasarım Kaynaklı
-
-- **Renk ve vurgu:** İstenen seri canlı, diğerleri soluk çizilir.
-- **Kalabalık gösterim:** Süsleme, asıl veriyi görünmez kılar.
-- **Başlıkla verinin uyuşmaması:** Okuyucu başlığa güvenir, grafiğin ayrıntısına bakmaz.
 
 ## Yüzde Puan ve Göreli Değişim
 

@@ -224,7 +224,18 @@ Yukarıdaki altı işlev toplam, ortalama ve koşullu sayım işlerini çözer. 
 
 **Metin işlevleri** metni parçalar, birleştirir ve temizler. Sabit genişlikli kodlar — plaka, öğrenci numarası, telefon — tipik kullanım alanıdır. `TR-34-1234` kodunda `=SOLDAN(A2;2)` "TR", `=PARÇAAL(A2;4;2)` "34", `=SAĞDAN(A2;4)` "1234" verir; `=UZUNLUK(A2)` kodun 10 karakter olduğunu söyler. İki hücreyi birleştirmek için `=BİRLEŞTİR(A2;" ";B2)` ya da `&` işareti kullanılır: `=A2&" "&B2`. Başka bir yerden kopyalanan metinlerdeki fazla boşlukları `KIRP`, harf düzenini `BÜYÜKHARF` ve `KÜÇÜKHARF` düzeltir.
 
-**Mantıksal işlevler** birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece `=EĞER(VE(B2>=50;C2>=50);"Geçti";"Kaldı")` vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce `=EĞER(VE(B3>=50;C3>=50);"Geçti";"Bütünleme")` yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir. Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
+**Mantıksal işlevler** birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece `=EĞER(VE(B2>=50;C2>=50);"Geçti";"Kaldı")` vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce `=EĞER(VE(B3>=50;C3>=50);"Geçti";"Bütünleme")` yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir.
+
+**Hata kodları ve çözümleri.** Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
+
+| Hata Kodu | Anlamı | Yaygın Nedeni | Çözümü |
+|:---|:---|:---|:---|
+| `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış | Silinen hücrenin adresini formülde güncelleyin |
+| `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var | İlgili hücredeki metni sayıya çevirin veya formülü düzeltin |
+| `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) | Girdi değerlerini kontrol edin |
+| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış | İşlev adının yazımını kontrol edin |
+
+Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
 
 **Tarih ve zaman işlevleri** tarihin sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
 
@@ -279,6 +290,21 @@ Sıralama yaparken **bütün tabloyu** seçmek şarttır; yalnızca bir sütunu 
 
 Görsel olarak düzenli görünse de birleştirilmiş hücreler **sıralama ve filtrelemeyi bozar**; formüllerin aralıklarını da şaşırtır. Bu yüzden yalnızca gerçekten gerektiğinde kullanılmalıdır.
 :::
+
+# Özet Tablolar (Pivot Table)
+
+Veri miktarı arttıkça, satır satır formül yazmak veya filtre uygulamak yetersiz kalır. **Özet tablo** (pivot table), büyük bir veri kümesini sürükle-bırak yöntemiyle gruplayıp özetlemeye yarayan bir araçtır.
+
+Örneğin yüzlerce satırlık bir satış tablosunda, her bölgenin toplam satışını görmek istediğinizi düşünün. Özet tablo, tek bir tıklamayla bölgeleri satırlara, ürünleri sütunlara yerleştirir ve kesişimlerine toplamları yazar. Ham veri değişmez; yalnızca özet bir görünüm oluşturulur.
+
+Temel mantığı üç adımdır:
+1. **Grupla:** Hangi değişkene göre özetleneceğini seçin (ör. bölge, ay, kategori).
+2. **Topla/Say:** Hangi değerin hesaplanacağını seçin (ör. satış tutarı, adet).
+3. **Yerleştir:** Alanları satır, sütun ve değer bölgelerine sürükleyin.
+
+Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur; ancak ham veriyi değiştirmediği için yanlış gruplama yapıldığında yanıltıcı sonuçlar verebilir. Oluşturduğunuz özeti her zaman ham veriyle karşılaştırarak doğrulayın.
+
+![Excel'de özet tablo: sol panelde alanlar, ortada bölge ve ürün kırılımında satış toplamları](gorseller/ekran-excel-ozet-tablo.png){width=68%}
 
 # Grafik Oluşturma
 
@@ -357,37 +383,25 @@ Grafiği üretmeyi öğrendik. Şimdi diğer yönüne geçiyoruz: karşımıza k
 Bir grafik, **tercihlerle kurulmuş bir iddiadır**. Onu hazırlayan kişi hangi veriyi alacağına, hangi aralığı göstereceğine, ekseni nereden başlatacağına ve neyi vurgulayacağına karar verir. Bu kararların bir kısmı bilgisizlikten, bir kısmı okuyanı yönlendirmek amacıyla alınır.
 :::
 
-Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramaz. Dört grupta toplanır; aşağıda her grup üç örnekle gösteriliyor. Şekillerde üst satır doğru, alt satır yanıltıcı grafiği verir.
+Yanıltma yöntemleri sınırlı sayıdadır ve tanındıklarında bir daha işe yaramaz. Dört grupta toplanır; en sık karşılaşılan üç örnek **kesilmiş eksen**, **alan ve hacim yanılsaması** ile **seçilmiş zaman aralığıdır**. Sunumda bu üç örnek görsel olarak karşılaştırılır.
 
 ## Eksen kaynaklı yanıltmalar
 
-![Eksen kaynaklı yanıltmalar: (a) kesilmiş eksen, (b) ters çevrilmiş eksen, (c) eşit olmayan aralıklı eksen](gorseller/diagram-yaniltma-eksen-not.png){width=95%}
-
 **Kesilmiş eksen.** Dikey eksen sıfırdan başlamaz. 96, 98, 97 ve 99 değerleri 0–100 aralığında neredeyse aynı yükseklikteyken, eksen 95'ten başlatılınca aralarındaki 1–2 puanlık fark devasa görünür.
 
-**Ters çevrilmiş eksen.** Eksen alışılmadık yönde, 20'den 0'a çizilir. 10'dan 18'e yükselen seri grafikte aşağı iniyormuş gibi okunur.
-
-**Eşit olmayan aralıklı eksen.** Değerler 2, 8, 12, 18 ve 45'tir. Doğru grafikte son sıçrama açıkça görülür; ama dikey eksene 0, 10, 20 ve 50 etiketleri eşit aralıklarla yerleştirilince 18'den 45'e giden 27 puanlık sıçrama, 12'den 18'e giden 6 puanlık artış kadar küçük görünür.
+Bu grupta ayrıca **ters çevrilmiş eksen** (değerler büyürken grafiğin aşağı inmesi) ve **eşit olmayan aralıklı eksen** (etiketlerin 0, 10, 20, 50 gibi düzensiz yerleştirilmesi) de okuyucuyu yanıltır.
 
 ## Ölçek ve oran kaynaklı yanıltmalar
 
-![Ölçek ve oran: (a) alan ve hacim yanılsaması, (b) üç boyutlu efekt, (c) çift eksen](gorseller/diagram-yaniltma-olcek-not.png){width=95%}
+**Alan ve hacim yanılsaması.** Değerler 10, 20 ve 30'dur. Doğru grafikte dairenin **alanı** değerle orantılıdır; yanıltıcı grafikte ise **çapı** büyütülür. İkinci durumda iki kat değer dört kat büyük görünür, çünkü alan çapın karesiyle büyür.
 
-**Alan ve hacim yanılsaması.** Değerler 10, 20 ve 30'dur. Üstteki grafikte dairenin alanı değerle orantılıdır; alttaki grafikte ise çapı. İkinci durumda iki kat değer dört kat büyük görünür, çünkü alan çapın karesiyle büyür.
-
-**Üç boyutlu efekt.** Eşit dört dilimli bir pasta eğik bakışla çizilince dilimler eşit görünmez; perspektif uzaktaki dilimleri küçültür.
-
-**Çift eksen.** İki seri tek eksende ilişkisiz dururken, ikinci bir dikey eksen eklendiğinde ikisi de aynı yönde yükseliyormuş gibi görünür. Sol eksen iki grafikte de 0–250'dir; yanıltıcıdaki sağ eksen (10–18) küçük seriyi tüm yüksekliğe yayar.
+Bu grupta **üç boyutlu efekt** (perspektifin uzak dilimleri küçültmesi) ve **çift eksen kullanımı** (ilgisiz iki serinin aynı yönde yükseliyormuş gibi gösterilmesi) da yanıltıcı sonuçlar doğurur.
 
 ## Seçme ve gizleme kaynaklı yanıltmalar
 
-![Seçme ve gizleme: (a) seçilmiş zaman aralığı, (b) eksik veri, (c) seçilmiş karşılaştırma grubu](gorseller/diagram-yaniltma-ornekler.png){width=95%}
-
 **Seçilmiş zaman aralığı.** Bütün seri 52'den 65'e yükselirken aradan seçilen 4–7 aralığı düşüyor; yalnızca o aralık gösterildiğinde eğilim tersine dönmüş görünür.
 
-**Eksik veri, "diğer" kovası.** Oylamaya 100 kişi katılmıştır: Evet %55, Hayır %25, Kararsız %10, cevap vermeyen %10. Doğru grafik bu dört kalemi olduğu gibi gösterir. Yanıltıcı grafikte ise kararsızlar ve cevap vermeyenler tümden atılır; yüzdeler yalnızca 80 oy üzerinden yeniden hesaplanınca Evet %69'a (55/80), Hayır %31'e (25/80) çıkar.
-
-**Seçilmiş karşılaştırma grubu.** Dört grup içinden yalnızca 70 ve 75 seçilip dikey eksen 60'tan başlatılınca aradaki 5 puanlık fark, grafiğin büyük bir bölümünü kaplar.
+Bunun yanında **eksik veri** (kararsızların veya cevap vermeyenlerin grafikten çıkarılarak yüzdelerin yeniden hesaplanması) ve **seçilmiş karşılaştırma grubu** (dört grup içinden yalnızca istenen sonucu destekleyenlerin gösterilmesi) da sık başvurulan yanıltma yöntemleridir.
 
 ## Tasarım kaynaklı yanıltmalar
 

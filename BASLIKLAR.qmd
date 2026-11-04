@@ -223,6 +223,7 @@ format:
   - Sayı, tarih ve hücre biçimleri
   - Koşullu biçimlendirme
 - Sıralama ve Filtreleme
+- Özet Tablolar (Pivot Table)
 - Grafik Oluşturma
   - Çokça kullanılan grafik türleri
   - Diğer grafik türleri
