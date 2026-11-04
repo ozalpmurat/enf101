@@ -519,6 +519,12 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ::: {.column width="28%"}
 
+```{=latex}
+\begin{minipage}[c][6.9cm][c]{\linewidth}
+\raggedright
+\hyphenpenalty=10000
+```
+
 Özet tablolar, formül yazmadan kolayca özet rapor üretmenin en hızlı yoludur.
 
 ```{=latex}
@@ -526,6 +532,10 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 ```
 
 Görselde, özet tablo sayesinde kişilerin toplam yaptığı harcama kolayca görülebilmektedir. Farklı alanları farklı bölgelere taşıyarak değişik özetler elde edebilirsiniz.
+
+```{=latex}
+\end{minipage}
+```
 
 :::
 :::
