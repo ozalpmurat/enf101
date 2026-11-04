@@ -237,7 +237,9 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 :::
 :::
 
-70, 80, 90 ve 100 → **4**. Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer. A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
+- 70, 80, 90 ve 100 → **4**
+- Ölçüt metin de olabilir: "Girmedi" tek hücrede geçer.
+- A sütunu tümüyle metin olduğundan `=SAY(A2:A8)` **0** verir; B sütununda 6 sayı var.
 
 ## Metin İşlevleri
 
