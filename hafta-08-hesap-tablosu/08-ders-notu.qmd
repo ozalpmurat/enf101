@@ -32,11 +32,11 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 # Hesap Tablosu Nedir?
 
-Hesap tablosu, verinin satır ve sütunların kesiştiği hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** bir yazılımdır. Asıl gücü şurada: bir hücreye yazdığınız formül, başka hücrelerdeki değerleri girdi olarak kullanır; girdi değiştiğinde sonuç kendiliğinden güncellenir.
+Hesap tablosu, verinin satır ve sütunların kesiştiği hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki kurulabildiği** bir yazılımdır. Bir hücreye yazdığınız formül, başka hücrelerdeki değerleri girdi olarak kullanır; girdi değiştiğinde sonuç kendiliğinden güncellenir.
 
 ![LibreOffice Calc penceresi: üstte sütun harfleri, solda satır numaraları](gorseller/ekran-libreoffice-calc.png){width=32%}
 
-Hesap tablosu yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri tabanı** ve **görselleştirme** aracıdır. Günlük ve mesleki hayatta en sık karşılaşacağınız kullanım alanları:
+Hesap tablosu yalnızca hesaplama aracı değildir; aynı zamanda küçük bir **veri tabanı** ve **görselleştirme** aracıdır. Günlük ve mesleki hayatta karşılaşabileceğiniz bazı kullanım alanları:
 
 - Bütçe ve harcama takibi
 - Not, puan ve karne dökümü
@@ -44,11 +44,13 @@ Hesap tablosu yalnızca hesaplama aracı değildir; aynı zamanda küçük bir *
 - Stok ve envanter listeleri
 - Deney veya ölçüm verilerinin karşılaştırılması
 
-Hesap tablosu uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın.
+En yaygın hesap tablosu uygulamaları **Microsoft Excel** (bilgisayara kurulan, ücretli), **Google Sheets** (tarayıcıda çalışan, ücretsiz), **LibreOffice Calc** (bilgisayara kurulan, ücretsiz ve açık kaynaklı) ve **Apple Numbers**'tır (Apple cihazlarda gelir). Menü yerleri, işlev adları ve dosya uzantıları uygulamadan uygulamaya değişse de mantık aynıdır: hücre, formül, aralık ve grafik kavramları hepsinde karşılık bulur.
+
+Kurulan ve tarayıcıda çalışan **çevrimiçi** sürümler arasındaki farklar için 7. haftadaki karşılaştırmaya bakın.
 
 # Temel Kavramlar
 
-![Google Sheets'te temel kavramların ekrandaki karşılığı: hücre (A10), satır (10), sütun (C), aralık (C5:E7) ve çalışma sayfası (Bahar dönemi)](gorseller/ekran-google-sheets-hucre-aralik.png){width=52%}
+![Google Sheets'te temel kavramların ekrandaki karşılığı: hücre (A10), satır (10), sütun (C), aralık (C5:E7) ve çalışma sayfası (Bahar dönemi)](gorseller/ekran-google-sheets-hucre-aralik.png){width=64%}
 
 | Kavram | Ne demek | Örnek |
 |:---|:---|:---|
@@ -59,7 +61,7 @@ Hesap tablosu uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışa
 | Sayfa | Aynı dosya içindeki ayrı tablo yüzeyi | Sayfa1, Sayfa2 |
 | Çalışma kitabı | Hesap tablosu dosyasının tamamı | `butce.xlsx` |
 
-Hücre adresi **sütun harfi + satır numarası** olarak yazılır: `C5`, C sütunu ile 5. satırın kesişimidir. Aralık yazarken iki adres iki nokta ile birleştirilir: `A2:A20`, A2'den A20'ye kadar olan bütün hücreleri kapsar.
+Hücre adresi **sütun harfi + satır numarası** olarak yazılır: `C5` hücresi, C sütunu ile 5. satırın kesişimidir. Aralık yazarken iki adres iki nokta ile birleştirilir: `A2:A20`, A2'den A20'ye kadar olan bütün hücreleri kapsar.
 
 # Veri Girişi ve Veri Türleri
 
@@ -83,19 +85,21 @@ Formül & \texttt{=A1+A2} & Eşittir işaretiyle başlar\\
 \end{center}
 ```
 
-Türkçede ondalık ayraç **virgüldür**: pi sayısını tabloya çoğunlukla `3,14` olarak yazarız. Bu ayraç bilgisayarın **bölge ayarından** gelir; İngilizce hazırlanmış belgelerde ve İngilizce bölgeli programlarda nokta kullanılır. Bölgesi Türkçe bir tabloda `3.14` yazarsanız program onu sayı değil **metin** sayar — hücrenin sola yaslanmasından bunu hemen fark edersiniz.
+Türkçede ondalık ayraç **virgüldür**: pi sayısını tabloya çoğunlukla `3,14` olarak yazarız. Bu ayraç bilgisayarın **bölge ayarından** gelir; İngilizce hazırlanmış belgelerde ve İngilizce bölgeli programlarda nokta kullanılır. Bölgesel ayarları Türkçe olarak yapılandırılmış bir uygulamada `3.14` yazarsanız program onu sayı değil **metin** sayar — hücrenin sola yaslanmasından bunu hemen fark edersiniz.
 
 ::: {.callout-tip}
 ## Hizalama bir ipucudur
 
-Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır. Mantıksal değerlerde (DOĞRU / YANLIŞ) hizalama programdan programa değişir; bu ipucu onlar için güvenilir değildir. Formülde hizalamayı formülün kendisi değil **sonucunun türü** belirler: sayı üreten formül sağa, metin üreten formül sola yaslanır.
+Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
 :::
 
 # Veri Alışverişi: CSV
 
-Hesap tablolarını başka programlara aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül konur.
+Hesap tablosu uygulamaları ile başka uygulamalar arasında **veri** aktarmanın en yaygın yolu **CSV**'dir (İngilizce *comma-separated values*, virgülle ayrılmış değerler). Bir CSV dosyası aslında **düz metindir**: her satır bir kaydı, satırdaki her alan bir sütunu temsil eder; alanların arasına virgül konur.
 
-Türkçe bölge ayarında ondalık ayraç virgül olduğu için alanları **noktalı virgül** ayırır:
+Türkçe bölge ayarında virgül (,) karakteri ondalık ayraç olduğu için, CSV dosyasındaki alanları **noktalı virgül** ayırır:
+
+Aşağıdaki örnekte dört alan (Ad, Yaş, Not, Şehir) ve iki kayıt vardır:
 
 ```text
 Ad;Yaş;Not;Şehir
@@ -136,18 +140,19 @@ Bir formülü başka bir hücreye kopyaladığınızda başvurular nasıl davran
 - **Göreli başvuru (`A1`):** Kopyalandığı yöne göre adres kayar. Bir satır aşağı kopyalarsanız `A1` → `A2` olur; iki hücre sağa kopyalarsanız `A1` → `C1` olur.
 - **Mutlak başvuru (`$A$1`):** Kopyalansa bile adres sabit kalır. `$` işareti sütunu veya satırı kilitler (`$A1` yalnızca sütunu, `A$1` yalnızca satırı kilitler).
 
-Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Örneğin her ürünün toplam içindeki payını hesaplarken toplam hücresinin satırı kilitlenir: `=B2/B$9`. Formül sağa doğru da kopyalanacaksa sütunun da kilitlenmesi gerekir: `=B2/$B$9`.
-
 ![Hesap tablosu uygulamasında göreli ve mutlak başvuru kullanımı](gorseller/ekran-excel-oran.png){width=65%}
 
-Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` olur: pay göreli olduğu için kayar, toplam hücresinde satır kilitli olduğu için sabit kalır. Satır kilidi kaldırılsaydı ikinci satırda toplam hücresi `B10`'a kayar ve oran yanlış çıkardı.
+Bu ayrım özellikle **sabit bir değere göre oranlama** yaparken kritiktir. Örneğin her ürünün toplam içindeki payını hesaplarken toplam hücresinin satırı kilitlenir: `=B2/B$9`. Formül sağa doğru da kopyalanacaksa sütunun da kilitlenmesi gerekir: `=B2/$B$9`.
 
-# İşlevler
+Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` olur: pay göreli olduğu için kayar (B3 → B4, B5, B6 diye devam eder), payda kısmındaki toplam hücresinde (B9) satır kilitli olduğu için ($ işaretinden dolayı) B9 sabit kalır. Satır kilidi kaldırılsaydı ikinci satırda toplam hücresi `B10`'a kayar ve oran yanlış çıkardı.
+
+# İşlevler (fonksiyonlar)
 
 İşlevler, belirli bir hesaplamayı yapan hazır formüllerdir. Bir işlev, adı ve parantez içindeki argümanlarıyla yazılır; argüman bir hücre, aralık ya da sabit değer olabilir.
 
 ## Matematik ve sayma işlevleri
 
+::: {tbl-colwidths="[16,44,40]"}
 | İşlev | Ne yapar | Örnek |
 |:---|:---|:---|
 | `TOPLA` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
@@ -155,16 +160,17 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 | `MAK` / `MİN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
 | `EĞERSAY` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
 | `SAY` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
+:::
 
 İşlev adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
 
 ::: {.callout-note}
 ## Aralık mı, tek tek değer mi?
 
-**İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılır: `=TOPLA(B2:B10;C2:C10)`.
+**İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılabilir: `=TOPLA(B2:B10;C2:D10;A6)` şeklinde yazıldığında B2-B10 ve C2-D10 arasındaki hücreler ile A6 hücresi toplanır.
 :::
 
-İşlevleri somut bir tabloda deneyelim. A sütununda öğrenci adı, B sütununda vize notu, C sütununda final notu var. Gökhan vizeye girmediği için B8 hücresine sayı değil **metin** yazılmıştır.
+İşlevleri somut bir tablo üzerinde görelim. A sütununda öğrenci adı, B sütununda vize notu, C sütununda final notu var. Gökhan vizeye girmediği için B8 hücresine sayı değil **metin** yazılmıştır.
 
 ```{=latex}
 \begin{center}
@@ -214,11 +220,9 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 
 `TOPLA`, `ORTALAMA`, `MAK` ve `MİN` metni yok sayar: toplam altı sayının toplamıdır, ortalama 450 ÷ **6** = 75 olur — yedi hücreye değil, altı sayıya bölünür. `SAY` yalnızca sayı içeren hücreleri saydığı için B sütununda **6**, A sütununda **0** verir. `EĞERSAY` koşula uyanı sayar; ölçüt sayı (`">=70"`) ya da metin (`"Girmedi"`) olabilir.
 
-Türkçe bölge ayarında ondalık ayraç virgül olduğu için formülde argümanları ayıran işaret **noktalı virgüldür**: `=TOPLA(B2:B10;C2:C10)`.
-
 ## Metin işlevleri
 
-Metni parçalar, birleştirir ve temizler. Sabit genişlikli veriler (plaka, öğrenci no, telefon no gibi) tipik kullanım alanıdır.
+Metni parçalar, birleştirir ve temizler. Sabit genişlikli veriler (plaka, öğrenci no, telefon no gibi) tipik kullanım alanıdır. Aşağıda yaygın kullanılan metin işlevleri örneklerle gösterilmiştir.
 
 ```{=latex}
 \begin{center}
@@ -233,7 +237,7 @@ Metni parçalar, birleştirir ve temizler. Sabit genişlikli veriler (plaka, ö�
 \hline
 \textbf{2} & Ayşe & Yılmaz & 00TR1234\\
 \hline
-\textbf{3} & Berk & Demir & 16BK0457\\
+\textbf{3} & Berk & Demir & 99TR5678\\
 \hline
 \end{tabular}}
 \end{center}
@@ -243,7 +247,7 @@ Metni parçalar, birleştirir ve temizler. Sabit genişlikli veriler (plaka, ö�
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.2cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{4.8cm}@{}}
 \textbf{Formül} & \textbf{Sonuç} & \textbf{Ne yapar}\\
 \midrule[0.3pt]
-\texttt{=BİRLEŞTİR(A2;" ";B2)} & Ayşe Yılmaz & Ad ve soyadı birleştirir \\
+\texttt{=BİRLEŞTİR(A2;" ";B2)} & Ayşe Yılmaz & Ad ve soyadı boşluk karakteri ekleyerek birleştirir \\
 \texttt{=SOLDAN(C2;2)} & 00 & İlk iki karakter \\
 \texttt{=PARÇAAL(C2;3;2)} & TR & 3. karakterden iki harf \\
 \texttt{=SAĞDAN(C2;4)} & 1234 & Son dört karakter \\
@@ -256,7 +260,47 @@ Fazla boşlukları `KIRP` ile temizleyebilir, harf düzenini `BÜYÜKHARF` ve `K
 
 ## Mantıksal işlevler
 
-Birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, `YADA` en az biri doğruysa DOĞRU verir; `DEĞİL` sonucu tersine çevirir. Böylece \texttt{=EĞER(VE(B2>=50;C2>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Kaldı")} vizeden de finalden de geçmeyi tek koşulda arar. Üç sonuç gerektiğinde `EĞER` iç içe yazılır: önce \texttt{=EĞER(VE(B3>=50;C3>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Bütünleme")} yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı hücrede tutmak daha iyidir. Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
+Mantıksal işlevler, koşulları birleştirip tek bir karar üretir. Üçü birlikte kullanılır:
+
+- **VE:** bütün koşullar doğruysa DOĞRU verir.
+- **YADA:** koşullardan en az biri doğruysa DOĞRU verir.
+- **DEĞİL:** verilen sonucun tersini verir.
+
+Bu işlevler çoğunlukla `EĞER` ile birlikte yazılır: \texttt{=EĞER(VE(B2>=50;C2>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Kaldı")} hem vizeden hem finalden 50 ve üzeri alan öğrenciye "Geçti" yazar. Üç sonuç gerektiğinde `EĞER` içe içe kullanılır: önce \texttt{=EĞER(VE(B3>=50;C3>=50);}\allowbreak\texttt{"Geçti";}\allowbreak\texttt{"Bütünleme")} yazılır, kalanlar için ikinci bir `EĞER` eklenir. Parantez çoğaldıkça formül okunaksızlaştığı için ara sonucu ayrı bir hücrede tutmak daha iyidir.
+
+Beklenmeyen hata iletilerini gizlemek için `EĞERHATA` kullanılır: `=EĞERHATA((C8-B8)/B8;"Vize yok")`, vizeye girilmemişse `#DEĞER!` yerine "Vize yok" yazar.
+
+Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla çalışır:
+
+```{=latex}
+\begin{center}
+{\small
+\setlength{\arrayrulewidth}{0.3pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{|>{\centering\arraybackslash}p{0.6cm}|>{\raggedright\arraybackslash}p{2.6cm}|r|r|}
+\hline
+ & \textbf{A} & \textbf{B} & \textbf{C}\\
+\hline
+\textbf{1} & \textbf{Öğrenci} & \textbf{Vize} & \textbf{Final}\\
+\hline
+\textbf{2} & Ayşe & 60 & 70\\
+\hline
+\textbf{3} & Berk & 70 & 45\\
+\hline
+\textbf{4} & Ceren & 80 & 90\\
+\hline
+\textbf{5} & Deniz & 90 & 55\\
+\hline
+\textbf{6} & Efe & 50 & 40\\
+\hline
+\textbf{7} & Fatma & 100 & 85\\
+\hline
+\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
+\hline
+\end{tabular}}
+\end{center}
+```
+
 
 ```{=latex}
 \begin{center}
@@ -279,18 +323,20 @@ Birden çok koşulu tek kararda birleştirir. `VE` bütün koşullar doğruysa, 
 
 Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
 
-| Hata Kodu | Anlamı | Yaygın Nedeni | Çözümü |
-|:---|:---|:---|:---|
-| `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış | Silinen hücrenin adresini formülde güncelleyin |
-| `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var | İlgili hücredeki metni sayıya çevirin veya formülü düzeltin |
-| `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) | Girdi değerlerini kontrol edin |
-| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış | İşlev adının yazımını kontrol edin |
+| Hata Kodu | Anlamı | Yaygın Nedeni |
+|:---|:---|:---|
+| `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış |
+| `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var |
+| `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) |
+| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış |
 
 Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
 
 ## Tarih ve saat işlevleri
 
-Tarih, sayı olarak saklandığı gerçeğine dayanır: 1 = 01.01.1900. Bu yüzden iki tarih birbirinden çıkarılınca **gün farkı** çıkar; `=B2-BUGÜN()` teslime kalan günü verir, aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. `BUGÜN()` ve `ŞİMDİ()` her açılışta yenilendiği için "kalan gün" hücresi kendiliğinden değişir. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+Tarih, programın içinde bir **sayı** olarak saklanır: 1 = 01.01.1900, sonraki her gün sayıyı bir artırır. Bu yüzden iki tarihi birbirinden çıkarınca aradaki **gün sayısı** çıkar.
+
+`BUGÜN()` bugünün tarihini verir ve dosya her açıldığında yenilenir; bu yüzden `=B2-BUGÜN()` teslime kalan günü kendiliğinden günceller. Aynı işi `=GÜNSAY(BUGÜN();B2)` de yapar. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
 
 ```{=latex}
 \begin{center}
@@ -452,7 +498,15 @@ Pasta grafikler için bir uyarı: yalnızca **az sayıda dilim** ve **birbirinde
 
 ## Diğer grafik türleri
 
-Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır. Bu türlerin çoğu hesap tablosu uygulamalarının hazır grafik listesinde yer almaz; çizmek için eklenti, ayrı bir araç ya da kod gerekir. İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
+Yukarıda bahsedilen grafikler en sık kullanılanlardır; seçenek bunlarla sınırlı değildir. İki aşama arasındaki akışı göstermek için **Sankey diyagramı**, metinlerde en sık geçen sözcükleri öne çıkarmak için **kelime bulutu**, iki değişkenin kesişimini yoğunlukla göstermek için **ısı haritası**, parça–bütün ilişkisini alanla göstermek için **ağaç haritası (treemap)**, coğrafi dağılımı göstermek için **harita** kullanılır.
+
+::: {.callout-note}
+## Hazır grafik listesinde yok
+
+Bu türlerin çoğu hesap tablosu uygulamalarının hazır grafik listesinde yer almaz; çizmek için eklenti, ayrı bir araç ya da kod gerekir.
+:::
+
+İhtiyaca göre en iyi grafik türünü tespit etmek için farklı denemeler yapabilirsiniz.
 
 ![Farklı grafik türleri: Sankey diyagramı, kelime bulutu, harita, ısı haritası ve ağaç haritası](gorseller/diagram-farkli-grafik-turleri.jpg){width=95%}
 

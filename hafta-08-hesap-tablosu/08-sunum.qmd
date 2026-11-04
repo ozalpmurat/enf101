@@ -31,6 +31,8 @@ Verinin hücrelerde tutulduğu ve bu hücreler arasında **formüllerle ilişki 
 
 Kullanım alanları: bütçe takibi, not dökümü, anket sonuçları, stok listeleri, ölçüm karşılaştırmaları.
 
+En yaygın uygulamalar: **Excel**, **Google Sheets**, **LibreOffice Calc**, **Apple Numbers**.
+
 :::
 
 ::: {.column width="32%"}
@@ -127,7 +129,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \end{center}
 ```
 
-# İşlevler
+# İşlevler (Fonksiyonlar)
 
 ## Örnek Veri: TOPLA, ORTALAMA, MAK, MİN
 
@@ -574,7 +576,9 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Farklı Grafik Türleri
 
-![](gorseller/diagram-farkli-grafik-turleri.jpg){width=100%}
+![](gorseller/diagram-farkli-grafik-turleri.jpg){width=90%}
+
+Çoğu hesap tablosunda hazır değil; ayrı araç ya da kod gerekir.
 
 ## Üretici Yapay Zekâ ile Grafik Çizme
 

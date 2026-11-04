@@ -216,7 +216,7 @@ format:
 - Formüller ve Hücre Başvuruları
   - Formül nasıl yazılır
   - Göreli ve mutlak başvuru
-- İşlevler
+- İşlevler (fonksiyonlar)
   - Matematik ve sayma işlevleri
   - Metin işlevleri
   - Mantıksal işlevler
