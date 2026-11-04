@@ -150,6 +150,12 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 
 İşlevler, belirli bir hesaplamayı yapan hazır formüllerdir. Bir işlev, adı ve parantez içindeki argümanlarıyla yazılır; argüman bir hücre, aralık ya da sabit değer olabilir.
 
+::: {.callout-note}
+## Aralık mı, tek tek değer mi?
+
+**İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılabilir: `=TOPLA(B2:B10;C2:D10;A6)` şeklinde yazıldığında B2-B10 ve C2-D10 arasındaki hücreler ile A6 hücresi toplanır.
+:::
+
 ## Matematik ve sayma işlevleri
 
 ::: {tbl-colwidths="[16,44,40]"}
@@ -163,12 +169,6 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 :::
 
 İşlev adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
-
-::: {.callout-note}
-## Aralık mı, tek tek değer mi?
-
-**İki nokta üst üste (`:`)** aralık belirtir: `B2:B50`, B2'den B50'ye kadar bütün hücreleri tek bir bütün olarak verir. **Noktalı virgül (`;`)** ise hücreleri tek tek, ayrı ayrı değerlendirir: `=TOPLA(B2;B4;B6)` yalnızca bu üç hücreyi toplar, aradakileri (B3, B5) hesaba katmaz. İkisi birlikte de kullanılabilir: `=TOPLA(B2:B10;C2:D10;A6)` şeklinde yazıldığında B2-B10 ve C2-D10 arasındaki hücreler ile A6 hücresi toplanır.
-:::
 
 İşlevleri somut bir tablo üzerinde görelim. A sütununda öğrenci adı, B sütununda vize notu, C sütununda final notu var. Gökhan vizeye girmediği için B8 hücresine sayı değil **metin** yazılmıştır.
 
@@ -359,6 +359,10 @@ Bazı uygulamalarda yapay zekâ desteği de kullanılmaya başladı. Google Shee
 
 ![Google Sheets'te yapay zekâ entegrasyonu: D2 hücresindeki formül, A2:C2 aralığındaki ürün, hedef ve kitle hedefi bilgisini reklam metnine çeviriyor.](gorseller/ekran-sheets-gemini.png){width=65%}
 
+```{=latex}
+\needspace{12\baselineskip}
+```
+
 ## Hata kodları ve çözümleri
 
 Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu tanımak, sorunu gizlemek yerine çözmenin ilk adımıdır. En sık karşılaşılan dört hata kodu şunlardır:
@@ -368,8 +372,8 @@ Formüllerde bir sorun olduğunda program hücreye bir hata kodu yazar. Bu kodu 
 |:---|:---|:---|
 | `#BAŞV!` (`#REF!`) | Geçersiz başvuru | Formüldeki bir hücre silinmiş veya taşınmış |
 | `#DEĞER!` (`#VALUE!`) | Geçersiz değer türü | Sayı beklenen yerde metin var |
-| `#SAYI!` (`#NUM!`) | Geçersiz sayı | Matematiksel olarak imkânsız işlem (ör. negatif sayının karekökü) |
-| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış yazılmış veya tanımsız aralık adı kullanılmış |
+| `#SAYI!` (`#NUM!`) | Geçersiz sayı | İmkânsız işlem (ör. negatif sayının karekökü) |
+| `#AD?` (`#NAME?`) | Tanınmayan ad | İşlev adı yanlış veya aralık adı tanımsız |
 :::
 
 Türkçe arayüzlü LibreOffice Calc'ta hata kodları `#BAŞV!`, `#DEĞER!`, `#SAYI!` ve `#AD?` biçimindedir. Aynı hatalar İngilizce arayüzlü Excel ve Google Sheets'te sırasıyla `#REF!`, `#VALUE!`, `#NUM!` ve `#NAME?` olarak görünür. Hata kodu ne olursa olsun çözüm yolu aynıdır: kodu okuyun, kaynağını bulun ve girdiyi düzeltin.
