@@ -499,17 +499,13 @@ Koşul bir kez tanımlanır; değer değiştikçe biçim kendini günceller.
 
 ## Veriyi Gruplama ve Özetleme
 
-Özet tablo (pivot table), büyük veri kümelerini sürükle-bırak yöntemiyle gruplayıp özetleyen bir araçtır.
+Özet tablo (pivot table), alanları sürükleyip bırakarak veriyi gruplayıp özetler.
 
-- **Grupla:** Hangi değişkene göre özetleneceğini seçin (bölge, ay, kategori).
-- **Topla/Say:** Hangi değerin hesaplanacağını seçin (satış tutarı, adet).
-- **Yerleştir:** Alanları satır, sütun ve değer bölgelerine sürükleyin.
-
-Ham veri değişmez; yalnızca özet bir görünüm oluşturulur.
+**Grupla:** alanı satırlara · **Topla/Say:** değeri "Değerler"e · ham veri değişmez.
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=6.2cm,keepaspectratio]{gorseller/ekran-excel-ozet-tablo.png}
+\includegraphics[height=6.3cm,keepaspectratio]{gorseller/ekran-pivot-adimlari.png}
 \end{center}
 ```
 

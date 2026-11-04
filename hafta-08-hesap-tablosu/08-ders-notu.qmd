@@ -388,9 +388,9 @@ Temel mantığı üç adımdır:
 2. **Topla/Say:** Hangi değerin hesaplanacağını seçin (ör. satış tutarı, adet).
 3. **Yerleştir:** Alanları satır, sütun ve değer bölgelerine sürükleyin.
 
-Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur; ancak ham veriyi değiştirmediği için yanlış gruplama yapıldığında yanıltıcı sonuçlar verebilir. Oluşturduğunuz özeti her zaman ham veriyle karşılaştırarak doğrulayın.
+![Microsoft Excel'de özet tablo kurulumu: **Alıcı** "Satırlar"a, **Toplam Tutar** "Değerler"e sürüklenir; kaynak tablo değişmez, sonuç alıcı başına toplamdır](gorseller/ekran-pivot-adimlari.png){width=80%}
 
-![Excel'de özet tablo: sol panelde alanlar, ortada bölge ve ürün kırılımında satış toplamları](gorseller/ekran-excel-ozet-tablo.png){width=68%}
+Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur; ancak ham veriyi değiştirmediği için yanlış gruplama yapıldığında yanıltıcı sonuçlar verebilir. Oluşturduğunuz özeti her zaman ham veriyle karşılaştırarak doğrulayın.
 
 # Grafik Oluşturma
 
@@ -571,6 +571,6 @@ Bu haftanın konularını destekleyen, kamuya açık kaynaklar:
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
 - **Gapminder** — veri okuryazarlığı ve yanıltıcı grafikler üzerine ücretsiz eğitim materyalleri. (gapminder.org)
 - **Our World in Data** — açık erişimli veri görselleştirme örnekleri. (ourworldindata.org)
-- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri tarafımızca eklenmiştir. Bu haftanın diyagramları (grafik türleri, yanıltma şeması) kendi çizimimizdir.
+- **Görsel kaynakları:** Ekran görüntüleri LibreOffice Calc, Google Sheets ve Microsoft Excel uygulamalarından alınmıştır; Google Sheets görselindeki kavram etiketleri tarafımızca eklenmiştir. Özet tablo adımları görseli, Excel ekran görüntüsü üzerine eklenen numaralı işaretler ve oklarla tarafımızca hazırlanmıştır. Bu haftanın diyagramları (grafik türleri, yanıltma şeması) kendi çizimimizdir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
