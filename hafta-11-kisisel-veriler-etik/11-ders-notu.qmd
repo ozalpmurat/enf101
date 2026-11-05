@@ -149,7 +149,7 @@ Bir eser üretildiği anda **telif hakkı** doğar. Bu hak, eseri kimin hangi ko
 - **Görsel:** İnternet'ten bulunan fotoğrafı ödevde kullanmak — kaynak göstermek **kullanım hakkı vermez**.
 - **Metin:** Uzun bir bölümü alıntılayıp kaynak belirtmemek.
 - **Yazılım:** Korsan yazılım kullanmak — hem hukuka aykırı hem güvenlik riski.
-- **Müzik/video:** Sunumda telifli müzik kullanmak.
+- **Müzik/video:** Sunuda telifli müzik kullanmak.
 
 **Doğru yol:** lisansı uygun kaynakları tercih etmek ve her zaman kaynak göstermek.
 :::
@@ -172,7 +172,7 @@ Teknolojiyi kullanmak bir **sorumluluk** getirir.
 - **İzinsiz erişmeyin.** Başkasının hesabına, dosyasına, cihazına izinsiz girmek suçtur.
 - **Zarar vermeyin.** Kişileri hedef göstermek, taciz etmek, iftira etmek.
 - **Gizliliğe saygı gösterin.** Başkalarının özel bilgilerini paylaşmayın.
-- **Erişilebilirliği düşünün.** Hazırladığınız belge ve sunumlar herkes için erişilebilir olsun.
+- **Erişilebilirliği düşünün.** Hazırladığınız belge ve sunular herkes için erişilebilir olsun.
 
 # Uygulama: Dijital Ayak İzinizi İnceleyin
 
@@ -190,7 +190,7 @@ Bir hesabınızın gizlilik ayarlarını açın: profil görünürlüğü, konum
 
 ## Adım 4 — Bir lisansı inceleyin
 
-Ödev ya da sunumda kullanmayı düşündüğünüz bir görsel bulun. Lisansını kontrol edin: kullanabilir misiniz? Atıf gerekli mi?
+Ödev ya da sunuda kullanmayı düşündüğünüz bir görsel bulun. Lisansını kontrol edin: kullanabilir misiniz? Atıf gerekli mi?
 
 ::: {.callout-tip}
 ## Teslim ve değerlendirme

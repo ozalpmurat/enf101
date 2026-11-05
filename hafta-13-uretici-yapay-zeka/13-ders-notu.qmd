@@ -37,7 +37,7 @@ Yapay zekâyı iyi kullanmak, **iyi soru sormak** ve **çıktıyı doğrulamak**
 | Tür | Ne üretir | Kullanım örneği |
 |:---|:---|:---|
 | **Metin** | Yazı, özet, liste | Taslak yazma, özetleme |
-| **Görsel** | Fotoğraf, çizim | Sunum görseli, tasarım fikri |
+| **Görsel** | Fotoğraf, çizim | Sunu görseli, tasarım fikri |
 | **Ses** | Konuşma, müzik | Seslendirme |
 | **Video** | Kısa video, animasyon | Tanıtım materyali |
 | **Kod** | Program kodu | Öğrenme, hata ayıklama |

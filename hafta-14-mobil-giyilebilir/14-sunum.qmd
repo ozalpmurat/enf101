@@ -230,7 +230,7 @@ Notla değerlendirilmez.
 ## Dönemin Özeti
 
 - **1–6:** Temel kavramlar, donanım, yazılım, dosya, ağ, İnternet pratikleri
-- **7–9:** Üretim araçları — kelime işlemci, tablo, sunum
+- **7–9:** Üretim araçları — kelime işlemci, tablo, sunu
 - **10–14:** Sorumluluk — güvenlik, kişisel veriler, yapay zekâ, mobil ve toplumsal etki
 
 ## Son Söz

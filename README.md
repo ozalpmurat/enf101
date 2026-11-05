@@ -16,7 +16,7 @@ Bütün PDF'ler tek bir ZIP dosyasında toplanır. ZIP **elle çıkarılan sür�
 Sürüm sayfasında, her sürümde bir öncekine göre neyin değiştiği tarihli başlıklar altında listelenir;
 ZIP'i indirmeden önce nelerin değiştiğine bakabilirsiniz. Sürüm numarası kullanılmaz.
 
-İçinde 14 haftanın ders notu, sunum ve alıştırma PDF'leri; ayrıca izlence, başlık listesi ve değişiklik
+İçinde 14 haftanın ders notu, sunu ve alıştırma PDF'leri; ayrıca izlence, başlık listesi ve değişiklik
 günlüğü. (`ornekler/` klasöründeki Quarto başvuru belgeleri ile hocalar için hazırlanan Quarto kurulum
 kılavuzu ders içeriği sayılmadığı için ZIP'e alınmaz.) ZIP'i açtığınızda, sürüm kimliğini taşıyan tek bir
 klasör çıkar: `enf101-2026092901/`. Hafta klasörleri ile `DEGISIKLIKLER.md` bu klasörün içindedir; yani
@@ -41,7 +41,7 @@ git sparse-checkout set --no-cone '*.pdf'
   `03-alistirma.pdf`). Adlar ASCII'dir; Türkçe karakter kullanılmaz.
 - **`tema/notlar.tex` ve `tema/sunum.tex`** — ders notu/izlence ve sunumun ortak görünüm dosyaları.
   Haftalık **ders notu ve alıştırma** belgeleri ayrıca `tema/notlar-hafta.tex` katmanını kullanır
-  (üst/alt bilgi ve giriş logosu). Amblem: `tema/logo.png` (kapak/giriş), `tema/logobeyaz.png` (sunum kenar çubuğu).
+  (üst/alt bilgi ve giriş logosu). Amblem: `tema/logo.png` (kapak/giriş), `tema/logobeyaz.png` (sunu kenar çubuğu).
 - **`ornekler/`** — Quarto özelliklerine ilişkin başvuru belgeleri (ders içeriği değildir).
 - **`KILAVUZ_Quarto_Kurulum_ve_Kullanim.qmd` / `.pdf`** — Quarto kurulum ve kullanım kılavuzu.
 - **`AGENTS.md`** — proje kuralları, üretim talimatları ve geçmiş hatalardan çıkarılan uyarılar.

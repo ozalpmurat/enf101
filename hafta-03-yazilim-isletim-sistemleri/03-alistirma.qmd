@@ -33,7 +33,7 @@ Cevap anahtarı en son sayfadadır. Soruları önce anahtara bakmadan yanıtlama
 A) İşletim sistemi\
 B) Kelime işlemci\
 C) Tarayıcı\
-D) Sunum programı\
+D) Sunu uygulaması\
 E) Hesap tablosu programı
 
 **2.** Kaynak kodu herkese açık olan ve isteyen herkesin inceleyip değiştirebildiği yazılım türü hangisidir?\

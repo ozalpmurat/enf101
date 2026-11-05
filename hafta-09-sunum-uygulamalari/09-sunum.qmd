@@ -1,5 +1,5 @@
 ---
-title: "Sunum Uygulamaları"
+title: "Sunu Uygulamaları"
 subtitle: "9. Hafta"
 author: "ENF101 · Temel Bilgi Teknolojileri"
 format: beamer
@@ -9,43 +9,106 @@ format: beamer
 
 ## Öğrenme Çıktıları
 
-- Sunumun yapısını planlar.
-- Slaytta metin yoğunluğunu ayarlar.
+- Sunu yazılımında slayt oluşturur; düzenini, dosya biçimini ve dışa aktarmayı seçer.
+- Sununun yapısını (açılış, gövde, kapanış) planlar.
+- Slaytta metin yoğunluğunu ve okunabilirliği ayarlar.
 - Görselleri telif kurallarına uygun kullanır.
-- Tasarım tutarlılığını sağlar.
-- Tablo ve grafiği uygun yerleştirir.
-- Etkili sunum tekniklerini uygular.
-- Erişilebilir sunum hazırlar.
+- Tasarım tutarlılığını sağlar; tablo ve grafiği uygun yerleştirir.
+- Etkili bir sunum yapar; erişilebilir bir sunu hazırlar.
 
-# Sunumun Yapısı
+# Sunu Yazılımı
 
-## Üç Bölüm
+## Sunu Yazılımı Nedir?
 
-![](gorseller/diagram-sunumyapi.png){width=74%}
+Sunu yazılımı, slaytları hazırlayıp sırayla göstermek için kullanılan **uygulama yazılımıdır**.
 
-## Süre Payları
+- **Slayt:** Sununun tek ekranı; **tuval:** tasarım alanı.
+- **Düzen:** Hazır yerleşim; **yer tutucu:** metin/görsel alanı.
+- **Ana slayt:** Ortak yazı tipi, renk ve logoyu belirler.
+- **Konuşmacı notu:** Slaytta görünmez; **konuşmacı görünümü:** sıradaki slayt ve süre.
 
-| Bölüm | Ne yapar | Pay |
+Örnekler: **Google Slides**, **LibreOffice Impress**, **PowerPoint**, **Keynote**; ayrıca **Prezi** ve **Canva**.
+
+## Masaüstü mü, Çevrimiçi mi?
+
+| | Masaüstü sürüm | Çevrimiçi sürüm |
 |:---|:---|:---|
-| Açılış | Konu ve amaç, dikkat | ~%10 |
-| Gövde | Ana mesajlar | ~%80 |
-| Kapanış | Özet ve çağrı | ~%10 |
+| Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
+| İnternet | Sunum sırasında gerekmez | Genellikle gerekir |
+| Erişim | Yalnızca o bilgisayardan | Hesabınızın olduğu her cihazdan |
+| Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
+| Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucuları |
+
+Çevrimiçi sürümde sunu dosyası, hizmet sağlayıcının sunucusunda tutulur; yerel bir kopya ve PDF de bulundurun.
+
+## Dosya Biçimleri ve Dışa Aktarma
+
+| Biçim | Ne için? | Dikkat |
+|:---|:---|:---|
+| `.pptx` | PowerPoint'in en yaygın biçimi | Yazı tipi ve video uyumu değişebilir |
+| `.odp` | Açık kaynak paketlerin biçimi | Her uygulama tam desteklemeyebilir |
+| `.pdf` | Sabit görünüm, teslim ve yedek | Video, animasyon ve geçiş efektleri çalışmaz |
+
+**Asıl dosyayı ve PDF’i birlikte taşıyın.** Videolu sunuda videoyu ayrıca bulundurun.
+
+## Sunu Yazılımı Turu
+
+1. Uygulamayı açın; slayt paneli, tuval ve düzen panelini tanıyın.
+2. Ekran oranını seçin: çoğu ekran için 16:9, bazı ekranlarda 4:3.
+3. Tema, ana slayt ve düzeni seçin.
+4. Slayt ekleyin; başlık ve içerik yer tutucularını doldurun.
+5. Konuşmacı notlarını yazın; konuşmacı görünümünü deneyin.
+6. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
+
+## Ekran Oranı: 4:3 ve 16:9
+
+![](gorseller/diagram-ekran-oranlari.png){width=82%}
+
+4:3 daha dar, 16:9 daha geniştir; sunum yapılacak ortamın oranına göre seçin.
+
+## Ekran Görüntüleri
+
+![](gorseller/ekran-yer-tutucu-libreoffice-impress.png){width=48%} ![](gorseller/ekran-yer-tutucu-google-slides.png){width=48%}
+
+Solda LibreOffice Impress, sağda Google Slides: slayt paneli, tuval ve notlar.
+
+# Sununun Yapısı
+
+## Kime, Ne Amaçla, Ne Kadar Sürede?
+
+| Soru | Neye karar verir |
+|:---|:---|
+| **Kime?** | Dil, örnek, ayrıntı düzeyi |
+| **Ne amaçla?** | Bilgilendirme, ikna, savunma, karar |
+| **Ne kadar sürede?** | Slayt sayısı, prova, kapanış |
+
+Süre, sunum sırasında **sunuya ayrılan zamandır**. Kesin slayt sayısını **prova** belirler.
+
+## Üç Bölüm ve Süre Payları
+
+![](gorseller/diagram-sunumyapi.png){width=76%}
+
+İyi bir sunu genellikle üç bölümden oluşur; süre payları kesin kural değil, tavsiyedir.
+
+**Süre payı:** Açılış ~%10 · Gövde ~%80 · Kapanış ~%10
 
 ## Açılış
 
-Dinleyici ilk **30 saniyede** karar verir: dinleyecek mi?
+Önce **bugün ne anlatacağınızı** söyleyin; doğrudan ayrıntıya girmeyin.
 
-İyi açılış: konuyu tanıtır, **neden önemli** olduğunu söyler.
+İyi açılış: konuyu tanıtır, **neden önemli** olduğunu söyler; bir soru ya da çarpıcı bir veriyle başlar.
+
+Kendini tanıtmakla sınırlı bir giriş yeterli değildir.
 
 ## Gövde
 
-Ana mesajlar burada işlenir. En sık hata: çok fazla mesaj.
+Ana mesajlar burada işlenir. Sık hata: çok fazla mesaj.
 
-**Üç ana mesaj** kuralı: dinleyici üçten fazlasını hatırlamaz.
+**Üç ana mesaj** kuralı, dinleyicinin ana hattı izlemesini kolaylaştırır. Çok fazla mesaj verirseniz, hangi birkaç mesajın akılda kalacağını seçemezsiniz.
 
 ## Kapanış
 
-Sunumun en çok atlanan ama en etkili kısmı.
+Sununun en çok atlanan ama en etkili kısmı.
 
 Ana mesajları hatırlatır ve **ne yapılması gerektiğini** söyler.
 
@@ -55,21 +118,22 @@ Ana mesajları hatırlatır ve **ne yapılması gerektiğini** söyler.
 
 ## Metin Yoğunluğu
 
-![](gorseller/diagram-slaytanatomi.png){width=78%}
+![](gorseller/diagram-slaytanatomi.png){width=80%}
 
 ## Slayt Kuralları
 
 - **Madde madde yazın**, paragraf yazmayın
 - **Anahtar kelimeler** kullanın
 - Satır başına **6–8 kelime**, slayt başına **6 madde**
-- **Punto büyük olsun** — arkadan okunmalı
-- **Boşluk bırakın**
+- Gövde metni **en az 24 punto**; başlık daha büyük
+- **Sade ve sakin olun:** Boşluk bırakın; hareketli efekt ve ses yerine durağan slaytlar
+- Salon büyüdükçe puntoyu artırın
 
 ## Slaytı Okumayın
 
-Slaytta yazanı kelimesi kelimesine okumak, sunumun **en sık hatasıdır**.
+Slaytta yazanı kelimesi kelimesine okumak, sunumda **sık yapılan bir hatadır**.
 
-Dinleyici zaten okuyabiliyor. Konuşmacının işi **açıklamak**.
+Dinleyici zaten okuyabiliyor. Konuşmacının işi **açıklamak**; notlarınızdan veya kısa not kâğıtlarından yararlanın.
 
 **Ölçü:** Slayda bakmadan anlatabiliyor musunuz? "Hayır" ise fazla yazı var.
 
@@ -78,34 +142,31 @@ Dinleyici zaten okuyabiliyor. Konuşmacının işi **açıklamak**.
 - **Renk paleti:** en fazla iki üç renk
 - **Yazı tipi:** tüm slaytlarda aynı
 - **Yerleşim:** başlık hep aynı yerde
-- **Görsel dil:** aynı tür görseller
+- **Slayt numarası:** numara ve toplam sayı görünsün (4 / 12)
+- **Görsel dil:** aynı üslup; fotoğraf ve şema bir arada olabilir
 
-**Şablon kullanın.** Renk ve yazı tipini değiştirmek yeterlidir.
+Ders sunularımız buna örnektir: aynı renk paleti, aynı başlık düzeni, kurumsal renkler.
 
-# Görsel Kullanımı
+# Görsel Kullanımı ve Telif
 
 ## Görsel Seçimi
 
 - **İlgili olmalı** — süs değil
 - **Kaliteli olmalı** — bulanık görsel içeriği de zayıflatır
-- **Bir mesajı desteklemeli**
+- **Bir işlevi olmalı** — bilgi, örnek veya atmosfer; dikkat dağıtıyorsa çıkarın
 - **Metni tekrarlamamalı**
 
 ## Telif ve Lisans
 
-![](gorseller/diagram-telifsiz.png){width=74%}
-
-| Kaynak | Kullanım |
-|:---|:---|
-| Kamu malı | Serbest |
-| Creative Commons | Lisans şartı; genellikle atıf |
-| Telifli | İzin gerekir |
+- Ücretsiz stok: **Pexels**, **Unsplash**, **Pixabay**
+- **Wikimedia Commons**
+- CC lisansları genellikle atıf gerektirir; ayrıntı 11. haftada
 
 ## Kaynak Göstermek Telifi Çözmez
 
 Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez.
 
-**Lisansı uygun olan** görselleri seçin.
+**Lisansı uygun olan** görselleri seçin; atıf ayrı bir yükümlülüktür.
 
 ::: {.callout-warning}
 **Ücretsiz stok siteleri kamu malı değildir.** Pexels, Unsplash gibi siteler ücretsiz kullanım verir; ancak içerik teliflidir ve lisans koşulları vardır.
@@ -116,75 +177,86 @@ Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez.
 ## Slayt İçin Basitleştirin
 
 - **Tabloda az satır:** yalnızca vurgulamak istedikleriniz
-- **Grafikte büyük punto:** eksenler arkadan okunmalı
-- **Tek mesaj:** her grafik bir şey göstersin
+- **Grafikte büyük punto:** eksen etiketleri projeksiyonda arkadan okunmalı
+- **Tek mesaj:** her grafik tek bir karşılaştırma; üç eğriyi üst üste koymayın
 - **Vurgulama:** istediğiniz değeri belirtin
+- **Kaynak ve tarih:** grafiğin kaynağı ve kaynağın tarihi
 
-Geçen haftanın **yanıltıcı grafikler** konusunu hatırlayın — kendi grafiğiniz de yanıltıcı olabilir.
+Size ait grafiklerde eksenlerin değiştirildiği ya da kesildiği durumlarda bunu açıkça belirtin.
 
 # Etkili Sunum Teknikleri
 
 ## Sunmadan Önce
 
 - **Prova yapın:** yüksek sesle, ayakta, süre tutarak
-- **Süreyi ölçün:** aşmak en sık hatadır
-- **Teknik kontrol:** projeksiyon, ses, dosya biçimi
-- **Yedek kopya:** PDF olarak da taşıyın
+- **Süreyi ölçün:** aşmak sık karşılaşılan bir hatadır
+- **Teknik kontrol:** projeksiyon, ses, dosya biçimi, 4:3/16:9
+- **Yedek kopya:** PDF ve asıl dosya; PDF video/animasyon taşımaz
 
-![](gorseller/foto-projeksiyon.jpg){width=32%} ![](gorseller/foto-mikrofon.png){width=30%}
+![](gorseller/foto-projeksiyon.jpg){width=32%} ![](gorseller/foto-mikrofon.jpg){width=30%}
 
 ## Sunarken
 
 - **Dinleyiciye bakın**, slayta değil
 - **Yavaş ve net** konuşun
 - **Sesiniz arka sıradan** duyulsun
-- **Slaytı okumayın**
+- **Slaytı okumayın**; notlarınızdan yararlanın
 - **Geçişleri planlayın:** "bir sonraki slaytta…"
 
 ## Soru-Cevap
+
+Soru-cevap genellikle sonda; gerektiğinde sunum sırasında da alınabilir.
 
 - **"Bilmiyorum" demekten çekinmeyin** — uydurmaktan iyidir
 - **Soruyu tekrar edin:** herkes duyar, siz düşünürsünüz
 - **Kısa yanıtlayın**
 
-## En İyi Prova Duyulmaktır
+## Uzaktan Sunum
 
-Sunumu bir arkadaşınıza yapın.
+Google Meet, Zoom, Microsoft Teams gibi platformlarda:
 
-Nerede takıldığınızı en iyi o zaman görürsünüz.
+- **Ekran paylaşımı:** yalnızca sunum penceresi; bildirimleri kapatın
+- **Kamera:** ışık önde, göz hizası; zorunlu değil
+- **Mikrofon:** kulaklık veya yaka mikrofonu; yankıyı azaltın
+- **Sohbet:** soruları izleyin; gerekirse moderatör
+- **Kayıt:** katılımcıları bilgilendirin; amacı dışında saklamayın
+- **Yedek:** kablosuz ağı ve telefon internetini önceden kontrol edin
 
 # Erişilebilirlik
 
-## Sunumunuz Herkes İçin
+## Sununuz Herkes İçin
 
-- **Okunabilir punto**
-- **Yeterli kontrast**
-- **Yalnızca renkle anlatmayın**
-- **Görsellere alternatif metin**
-- **Anlamlı slayt başlıkları:** "Slayt 5" değil, "Sonuçlar"
+- **Sunuyu erişilebilir hazırlayın:** alt metin, anlamlı başlık, okuma sırası
+- **Sunum sırasında:** okunabilir punto, yeterli kontrast
+- **Renk:** yalnızca renkle anlatmayın
+- **Video ve hareket:** altyazı, animasyonu azaltın
+
+Paylaşmadan önce uygulamanın **erişilebilirlik denetleyicisini** çalıştırabilirsiniz.
 
 # Kapanış
 
-## Uygulama: Kısa Bir Sunum Hazırlayın
+## Uygulama: Kısa Bir Sunu Hazırlayın
 
 **Hangi araçla:** Google Slides gibi çevrimiçi bir araç ya da LibreOffice Impress gibi kurulabilen bir paket.
 
-1. Konu seçin, **üç ana mesaj** yazın
-2. Açılış–gövde–kapanış planı yapın
-3. Slaytları hazırlayın: az metin, bir görsel (lisansı uygun), altyazı + alt metin
-4. Yüksek sesle, süre tutarak **prova** yapın
+1. Kime, ne amaçla, ne kadar sürede? **Üç ana mesajı** yazın
+2. Açılış–gövde–kapanış planı yapın; başlıkları taslak olarak sıralayın
+3. Ana slayt/düzeni ve ekran oranını (16:9 veya 4:3) seçin; az metin, bir görsel, altyazı + alt metin
+4. Konuşmacı notlarını yazın; yüksek sesle, süre tutarak **prova** yapın
+5. **PDF**’e aktarın; asıl dosyayı ve videoyu ayrıca saklayın
+
+Taslak için yapay zekâdan yararlanabilirsiniz; doğrulama sizde.
 
 Notla değerlendirilmez.
 
 ## Özet
 
-- **Açılış – gövde – kapanış**: %10 – %80 – %10
-- **Slayt vitrindir, depo değil**
-- Slaytı okumak en sık hatadır
-- **Tasarım tutarlılığı**: renk, yazı tipi, yerleşim
-- Görsellerde **lisans** kontrolü; kaynak göstermek yetmez
-- Tablo ve grafikler **basitleştirilmeli**
-- Etkili sunum **prova** ister
+- **Sunu yazılımı**: slayt, ana slayt, düzen, notlar
+- **`.pptx`/`.odp`** düzenlenebilir; **PDF** sabit görünüm, video yok
+- **Açılış – gövde – kapanış**: ~%10 – %80 – %10
+- **Az metin**, 6 madde, en az 24 punto
+- Görsellerde **lisans**; kaynak göstermek yetmez
+- Tablo/grafik sade; **prova**, yedek ve uzaktan hazırlık
 
 ## Gelecek Hafta
 

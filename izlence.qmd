@@ -34,7 +34,7 @@ Dersi başarıyla tamamlayan öğrenci aşağıdaki çıktılara ulaşır:
 - **K4 —** Bilgisayar ağlarının ve İnternet'in çalışma mantığını, kablolu ve kablosuz bağlantı teknolojilerini ve güvenli kullanım ilkelerini açıklar; elektronik posta, bulut ve ortak çalışma araçları ile dijital kamu hizmetlerini uygun biçimde kullanır; çevrimiçi bilgiyi değerlendirir ve dezenformasyonu fark eder.
 - **K5 —** Kelime işlemci yazılımıyla biçimli, düzenli, erişilebilir ve akademik ölçütlere uygun (kaynak göstermeli) belge üretir.
 - **K6 —** Hesap tablosu yazılımıyla veri girer, düzenler, işlevlerle işler ve uygun grafiklerle görselleştirir; karşılaştığı grafikleri eleştirel biçimde okur.
-- **K7 —** Sunum yazılımıyla görsel iletişim ilkelerine uygun sunum materyali hazırlar ve etkili biçimde sunar.
+- **K7 —** Sunu yazılımıyla görsel iletişim ilkelerine uygun sunu hazırlar ve etkili biçimde sunar.
 - **K8 —** Bilgi güvenliği, kişisel verilerin korunması ve dijital etik konularında farkındalık gösterir; dijital kaynakları sorumlu biçimde kullanır.
 - **K9 —** Yapay zekâ, mobil ve giyilebilir teknolojiler gibi güncel teknolojileri tanır; **algoritma kavramını ve makine öğrenmesinin ondan farkını açıklar**; sundukları olanakları, sınırlarını ve gizlilik ile etik risklerini değerlendirir.
 
@@ -52,7 +52,7 @@ Ders 14 hafta sürer. Ara sınav (vize), üniversitenin akademik takvimine göre
 | 6 | İnternet pratikleri, e-posta ve dijital kamu hizmetleri: etkili arama ve kaynak değerlendirme, dezenformasyon ve sahte haber, e-posta kullanımı ve kurumsal yazışma, e-posta güvenliği, dijital kamu hizmetleri ve e-Devlet, e-imza ve türleri | K4 |
 | 7 | Kelime işlemci: belge oluşturma ve kaydetme, metin ve paragraf biçimlendirme, stiller, tablo ve görsel ekleme, sayfa düzeni, uzun belge yönetimi (içindekiler, dipnot, kaynakça), akademik dürüstlük ve kaynak gösterme, kaynak yönetimi araçları, erişilebilirlik, PDF'e aktarma | K5 |
 | 8 | Hesap tablosu ve grafik okuma: hücre ve formül mantığı, göreli ve mutlak başvuru, işlevler, biçimlendirme, sıralama ve filtreleme, grafik oluşturma, grafiklerin doğru okunması ve yanıltıcı görseller | K6 |
-| 9 | Sunum uygulamaları: slayt yapısı, metin yoğunluğu ve okunabilirlik, erişilebilirlik, görsel kullanımı ve telifsiz kaynaklar, tasarım tutarlılığı, etkili sunum teknikleri | K7 |
+| 9 | Sunu uygulamaları: sunu yazılımı ve dosya biçimleri, slayt yapısı, metin yoğunluğu ve okunabilirlik, erişilebilirlik, görsel kullanımı ve telifsiz kaynaklar, tasarım tutarlılığı, etkili ve uzaktan sunum teknikleri | K7 |
 | 10 | Bilgi güvenliği: gizlilik–bütünlük–erişilebilirlik, parola yönetimi ve iki adımlı doğrulama, oltalama, zararlı yazılımlar, güncelleme ve yedekleme, cihaz ve hesap güvenliği, sosyal mühendislik, zombi bilgisayarlar, güvenlik duvarı ve varsayılan ayarlar, güvenli alışveriş ve ödeme, doğru bilinen yanlışlar | K8 |
 | 11 | Kişisel veriler ve dijital etik: kişisel veri nedir, KVKK farkındalığı ve ilgili kişinin hakları, dijital ayak izi ve gizlilik ayarları, telif hakkı ve lisanslar, açık kaynak ve kaynak gösterme, verinin etik kullanımı, dijital nezaket | K8 |
 | 12 | Yapay zekâ okuryazarlığı: yapay zekâ nedir ve ne değildir, günlük yaşamda kullanım alanları, algoritma kavramı ve akış diyagramı, nasıl öğrenir (veri–model–eğitim), büyük veri, sınırlar ve yanılgılar, etik sorular ve gizlilik | K9 |
@@ -64,7 +64,7 @@ Ders 14 hafta sürer. Ara sınav (vize), üniversitenin akademik takvimine göre
 Ders, uzaktan ve karma (blended) öğretim esasına göre yürütülür. Yöntem üç bileşene dayanır:
 
 - **Çevrimiçi ders oturumu:** Haftalık konunun anlatıldığı, soru-cevapla desteklenen; canlı izlenebilen ya da kayıttan erişilebilen oturum.
-- **Ders notu ve sunum:** Her hafta için hazırlanan yazılı ders notu ve slayt destesi.
+- **Ders notu ve sunu:** Her hafta için hazırlanan yazılı ders notu ve slayt destesi.
 - **Haftalık alıştırma:** Konunun pekiştirilmesi amacıyla hazırlanan 10 soruluk alıştırma; notla değerlendirilmez.
 
 Uygulamalar, öğrencinin kendi cihazında (bilgisayar, tablet veya telefon) ve platformdan bağımsız olarak yapılabilecek biçimde tasarlanmıştır.
@@ -91,7 +91,7 @@ Alıştırmalar başarı notuna doğrudan etki etmez; ancak sınav sorularının
 
 # Kaynaklar ve Yararlanılabilecek Kurumsal Yayınlar
 
-Dersin temel materyali, her hafta paylaşılan ders notları ve sunumlardır. Bunları destekleyen, kamuya açık ve güncel kaynaklar şunlardır:
+Dersin temel materyali, her hafta paylaşılan ders notları ve sunulardır. Bunları destekleyen, kamuya açık ve güncel kaynaklar şunlardır:
 
 - **Bilgi Teknolojileri ve İletişim Kurumu (BTK)** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayın ve rehberler. (btk.gov.tr)
 - **Kişisel Verileri Koruma Kurumu (KVKK)** — kişisel verilerin korunmasına yönelik farkındalık yayınları. (kvkk.gov.tr)
@@ -99,13 +99,13 @@ Dersin temel materyali, her hafta paylaşılan ders notları ve sunumlardır. Bu
 - **TÜBİTAK BİLGEM** — bilişim güvenliği ve siber güvenlik farkındalık yayınları. (tubitak.gov.tr)
 - **Pardus** — yerli ve açık kaynak işletim sistemi; kullanım kılavuzları. (pardus.org.tr)
 - **Türkiye İstatistik Kurumu (TÜİK)** — resmî istatistikler ve verilerin okunmasına ilişkin yayınlar. (tuik.gov.tr)
-- **Ofis yazılımlarının resmî kullanıcı kılavuzları** — kelime işlemci, hesap tablosu ve sunum uygulamalarının üretici belgeleri.
+- **Ofis yazılımlarının resmî kullanıcı kılavuzları** — kelime işlemci, hesap tablosu ve sunu uygulamalarının üretici belgeleri.
 
 Hafta bazında önerilen ek okuma ve bağlantılar, ilgili haftanın ders notunda ve dersin çevrimiçi ortamında ayrıca listelenir.
 
 # Öğrenciden Beklenenler
 
-- Her haftanın ders notunu ve sunumunu gözden geçirmek, haftalık alıştırmayı zamanında tamamlamak.
+- Her haftanın ders notunu ve sunusunu gözden geçirmek, haftalık alıştırmayı zamanında tamamlamak.
 - Uygulamaları kendi cihazında yaparak beceriyi pekiştirmek.
 - Ödev ve uygulamalarda kaynak gösterme kurallarına ve dijital etik ilkelerine uymak.
 - İnternet'ten alınan içeriği olduğu gibi kullanmamak; kaynağı belirtmek ve intihalden kaçınmak.

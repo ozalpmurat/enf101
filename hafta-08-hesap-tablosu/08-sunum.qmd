@@ -678,4 +678,4 @@ Kendi elinizle yanıltıcı bir grafik çizmek, o taktikleri bir daha unutmayaca
 
 ## Gelecek Hafta
 
-**Sunum uygulamaları** — bir sunumun yapısı, slayt tasarımı, görsel seçimi ve telif, etkili sunum teknikleri.
+**Sunu uygulamaları** — bir sunumun yapısı, slayt tasarımı, görsel seçimi ve telif, etkili sunum teknikleri.

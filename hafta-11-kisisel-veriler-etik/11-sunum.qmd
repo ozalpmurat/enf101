@@ -130,7 +130,7 @@ Kurum sitelerinde "Aydınlatma Metni" ve "Başvuru Formu" bulunur.
 - **Görsel:** İnternet'ten alınan fotoğrafı kullanmak
 - **Metin:** Uzun alıntıyı kaynaksız almak
 - **Yazılım:** Korsan kullanmak
-- **Müzik/video:** Sunumda telifli müzik
+- **Müzik/video:** Sunuda telifli müzik
 
 ## Kritik Ayrım
 

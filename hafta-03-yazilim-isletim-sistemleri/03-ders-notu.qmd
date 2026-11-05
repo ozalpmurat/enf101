@@ -38,7 +38,7 @@ Donanım gövdedir, yazılım ise ona ne yapacağını söyleyen akıldır. İki
 
 **Sistem yazılımı**, bilgisayarın kendisini çalıştırmakla ilgilenir. İşletim sistemi bunun en bilinen örneğidir; donanımı yönetir, diğer yazılımlara zemin hazırlar.
 
-**Uygulama yazılımı** ise kullanıcının belirli bir işini yapmasını sağlar: belge yazmak, tablo hesaplamak, sunum hazırlamak, fotoğraf düzenlemek.
+**Uygulama yazılımı** ise kullanıcının belirli bir işini yapmasını sağlar: belge yazmak, tablo hesaplamak, sunu hazırlamak, fotoğraf düzenlemek.
 
 | Tür | Ne yapar | Örnekler |
 |:---|:---|:---|

@@ -76,13 +76,13 @@ Bu tarz uygulamaların bazıları kendi **bilgisayarınıza kurularak** kullanı
 \vspace*{5mm}
 ```
 
-Hesap tablosu ve sunum uygulaması gibi programlarla **bir arada** sunulan yazılımlara **ofis uygulamaları** (ofis paketi) denir. **Kelime işlemci** bu paketin bir parçasıdır; 8. hafta **hesap tablosunu**, 9. hafta **sunumu** ele alacağız.
+Hesap tablosu ve sunu uygulaması gibi programlarla **bir arada** sunulan yazılımlara **ofis uygulamaları** (ofis paketi) denir. **Kelime işlemci** bu paketin bir parçasıdır; 8. hafta **hesap tablosunu**, 9. hafta **sunuyu** ele alacağız.
 
 | Uygulama | Microsoft | LibreOffice | Google | Apple |
 |:---|:---|:---|:---|:---|
 | **Kelime işlemci** | Word | Writer | Docs | Pages |
 | **Hesap tablosu** | Excel | Calc | Sheets | Numbers |
-| **Sunum** | PowerPoint | Impress | Slides | Keynote |
+| **Sunu** | PowerPoint | Impress | Slides | Keynote |
 
 ```{=latex}
 \begin{center}

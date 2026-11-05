@@ -9,7 +9,7 @@ format: beamer
 
 - **Değerlendirme ölçütleri** ve ağırlıkları **ÖBS** üzerinden görülebilir.
 - **Yoklama** alınır; **devamsızlık** takibi ÖBS'den izlenir.
-- Her hafta **üç PDF** paylaşılır: **ders notu**, **sunum**, **alıştırma**. Sınavlar için bunların dışında kaynak gerekmez.
+- Her hafta **üç PDF** paylaşılır: **ders notu**, **sunu**, **alıştırma**. Sınavlar için bunların dışında kaynak gerekmez.
 - **Sınava hazırlık:** Ders notlarını ücretsiz **Google NotebookLM**'e yükleyerek çalışabilirsiniz — sesli podcast, çalışma soruları, çalışma kartları.
 - **Canlı dersler** sonradan **kayıttan** izlenebilir.
 - **Başarı notu:** ara sınav (vize), **kısa sınav** ve **dönem sonu sınavı (final)** notlarının **ortalaması**; haftalık **alıştırmalar** notla değerlendirilmez.
@@ -24,7 +24,7 @@ format: beamer
 6. İnternet, e-posta ve e-Devlet
 7. Kelime işlemci
 8. Hesap tablosu
-9. Sunum uygulamaları
+9. Sunu uygulamaları
 10. Bilgi güvenliği
 11. Kişisel veriler ve dijital etik
 12. Yapay zekâ okuryazarlığı

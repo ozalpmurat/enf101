@@ -69,7 +69,7 @@ A) Anlamadığınız bir konuyu yapay zekâya sorup öğrenmek\
 B) Ödevi baştan sona yapay zekâya yazdırıp teslim etmek\
 C) Üretilen metni kendi çalışmanız gibi sunmak\
 D) Kaynak göstermeden çeviri yaptırmak\
-E) Yapay zekâdan aldığınız metni doğrudan sunuma koymak
+E) Yapay zekâdan aldığınız metni doğrudan sunuya koymak
 
 **7.** Aşağıdakilerden hangisi yapay zekâ aracına yazılmamalıdır?\
 A) Anlamadığınız bir kavramın adı\

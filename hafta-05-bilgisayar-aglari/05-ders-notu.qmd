@@ -296,6 +296,6 @@ Bu uygulama notla değerlendirilmez. Amacı, günlük kablosuz kullanımınızı
 
 Yönlendirici, Ethernet kablosu ve erişim noktası fotoğrafları için kaynak gösterme zorunludur; ağ kartı karesi kamu malı olduğu için zorunlu değildir.
 
-Sunum ve notlardaki **şemalar** (ağın sağladıkları, ağ türleri kartları, ev ağı, WiFi bağlantı adımları, güvenlik karşılaştırması, sahte erişim noktası, DNS çözümleme, HTTP–HTTPS) dersin yazarı tarafından **yapay zekâ desteğiyle** hazırlanmıştır. **Ekran görüntüleri** (Windows'ta ağ paylaşım sorusu, telefonda Bluetooth eşleştirme isteği ve görünürlük ayarı) dersin yazarı tarafından alınmıştır.
+Sunu ve notlardaki **şemalar** (ağın sağladıkları, ağ türleri kartları, ev ağı, WiFi bağlantı adımları, güvenlik karşılaştırması, sahte erişim noktası, DNS çözümleme, HTTP–HTTPS) dersin yazarı tarafından **yapay zekâ desteğiyle** hazırlanmıştır. **Ekran görüntüleri** (Windows'ta ağ paylaşım sorusu, telefonda Bluetooth eşleştirme isteği ve görünürlük ayarı) dersin yazarı tarafından alınmıştır.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

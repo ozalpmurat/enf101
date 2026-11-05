@@ -3,7 +3,13 @@
 Bu dosya, bu klasörde çalışan yapay zekâ ajanları ve içerik üreten kişiler için hazırlanmıştır.
 Projenin nasıl kurulduğunu, hangi kurallara uyulduğunu ve hangi tuzaklara düşülmemesi gerektiğini anlatır.
 
-Son güncelleme: 15.10.2026
+Son güncelleme: 05.11.2026
+
+**Genel editoryal ilkeler.** Bu dosya projeye özel, bağlayıcı kuralları içerir. Ders
+malzemelerinin dili, kapsamı, görselleri ve yerleşimi için daha genel ilkeler kök dizindeki
+[`DÜZENLEME.md`](DÜZENLEME.md) dosyasındadır. İki dosya birbirinin yerine geçmez: çelişki
+durumunda bu dosyadaki proje-özel kural geçerlidir. `DÜZENLEME.md`'ye yeni bir ilke eklemeden
+önce kullanıcıya sorun.
 
 ---
 
@@ -548,6 +554,10 @@ sorusunu, fotoğraf "gerçekte nasıl görünür" sorusunu yanıtlar.
   gibi** anlatmak ve öğrenciden menü ezberi beklemektir; örnek olarak göstermek serbesttir.
   (Kullanıcı kararı, 2026-09-30 — 4. haftadaki biçimlendirme ekran görüntüsü vesilesiyle.)
 - **Sade dil.** Hedef kitle teknik olmayan bölümlerden geliyor. Jargon ilk kullanımda tanımlanır.
+- **Sunu ve sunum ayrımı.** **Sunu**, slaytlardan oluşan görsel dosyadır; **sunum**, konuşmacının
+  sesi, beden dili ve izleyiciyle etkileşimiyle gerçekleştirdiği etkinliktir. Yazılım **sunu
+  yazılımı**dır; "sunum yazılımı" kullanılmaz. Tek tek ürünler için **sunu uygulaması**, tek sayfa
+  için **slayt**, bütün materyaller için **sunum materyali** denir.
 - **Aşırı teknik ayrıntıdan kaçınılır.** İşlemci mimarisi, önbellek katmanları, DDR nesilleri,
   protokol başlık yapıları gibi konular 1. sınıf için gereksizdir; "kısaca değinmek yeter" düzeyinde kalır.
 - **Uygulamaya bağlama.** Her konu günlük hayattan bir örnekle veya somut bir alıştırmayla bağlanır.
@@ -571,8 +581,11 @@ Her hafta için üç belge:
 | Belge         | İçerik                                                                                                     |
 |:------------- |:---------------------------------------------------------------------------------------------------------- |
 | **ders-notu** | Kurumsal kapak yok; başlık bloğu. Öğrenme çıktıları, ana içerik, uygulama, özet, kendini sınama, kaynaklar |
-| **sunum**     | Bölüm ayraçları + slaytlar. Öğrenme çıktılarıyla başlar, "gelecek hafta" ile biter                         |
+| **sunu**      | Bölüm ayraçları + slaytlar. Öğrenme çıktılarıyla başlar, "gelecek hafta" ile biter                         |
 | **alıştırma** | 8 çoktan seçmeli (beş şıklı) + 2 doğru-yanlış; cevap anahtarı ayrı sayfada, kısa gerekçeli                 |
+
+Dosya adları geriye dönük uyumluluk için `NN-sunum.qmd` / `NN-sunum.pdf` olarak kalmıştır; metin
+içinde bu belgeye **sunu** denir.
 
 Üçünde de aynı başlık yapısı ve aynı görsel dil kullanılır; haftalar arası tutarlılık esastır.
 

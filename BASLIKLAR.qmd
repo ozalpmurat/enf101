@@ -238,11 +238,19 @@ format:
 - Kendini Sınama Soruları
 - Kaynaklar
 
-# 9. Hafta — Sunum Uygulamaları
+# 9. Hafta — Sunu Uygulamaları
 
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
-- Bir Sunumun Yapısı
+- Sunu Yazılımı
+  - Sunu yazılımı ne yapar?
+  - Masaüstü sürüm, çevrimiçi sürüm
+  - Dosya biçimleri ve dışa aktarma
+  - Slayt düzeni, notlar ve konuşmacı görünümü
+  - Sunu yazılımı turu
+- Sununun Yapısı
+  - Kime, ne amaçla, ne kadar sürede?
+  - Üç bölüm ve süre payları
   - Açılış
   - Gövde
   - Kapanış
@@ -257,12 +265,11 @@ format:
   - Sunmadan önce
   - Sunarken
   - Soru-cevap
-- Erişilebilir Sunum
-- Uygulama: Kısa Bir Sunum Hazırlayın
-  - Adım 1 — Konu ve mesaj seçin
-  - Adım 2 — Yapıyı kurun
-  - Adım 3 — Slaytları hazırlayın
-  - Adım 4 — Prova yapın
+  - Uzaktan sunum
+- Erişilebilir Sunu
+  - Sunuyu erişilebilir hazırlayın
+  - Sunum sırasında erişilebilirlik
+- Uygulama: Kısa Bir Sunu Hazırlayın
 - Özet
 - Kendini Sınama Soruları
 - Kaynaklar
