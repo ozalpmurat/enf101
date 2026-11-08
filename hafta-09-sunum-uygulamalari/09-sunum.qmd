@@ -22,9 +22,9 @@ format: beamer
 
 Sunu yazılımı, slaytları hazırlayıp sırayla göstermek için kullanılan **uygulama yazılımıdır**.
 
-- **Slayt:** Sununun tek ekranı; **tuval:** tasarım alanı.
+- **Slayt:** Sununun tek ekranı; **çalışma alanı:** tasarım alanı.
 - **Düzen:** Hazır yerleşim; **yer tutucu:** metin/görsel alanı.
-- **Ana slayt:** Ortak yazı tipi, renk ve logoyu belirler.
+- **Ana slayt (asıl slayt, master slide):** Ortak yazı tipi, renk ve logoyu belirler.
 - **Konuşmacı notu:** Slaytta görünmez; **konuşmacı görünümü:** sıradaki slayt ve süre.
 
 Örnekler: **Google Slides**, **LibreOffice Impress**, **PowerPoint**, **Keynote**; ayrıca **Prezi** ve **Canva**.
@@ -41,6 +41,29 @@ Sunu yazılımı, slaytları hazırlayıp sırayla göstermek için kullanılan 
 
 Çevrimiçi sürümde sunu dosyası, hizmet sağlayıcının sunucusunda tutulur; yerel bir kopya ve PDF de bulundurun.
 
+## Ana Slayt
+
+![](gorseller/ekran-powerpoint-ana-slayt.png){width=78%}
+
+Ortak başlık, metin ve alt bilgi yer tutucuları; ana slayt bütün slaytların görünümünü belirler.
+
+## Ekran Oranı: 4:3 ve 16:9
+
+![](gorseller/diagram-ekran-oranlari.png){width=82%}
+
+4:3 daha dar, 16:9 daha geniştir; sunum yapılacak ortamın oranına göre seçin.
+
+## Animasyon ve Geçiş Efektleri
+
+![](gorseller/ekran-google-slides-animasyon.jpg){width=62%}
+
+- **Animasyon:** Bir öğeyi sırayla gösterme veya vurgulama.
+- **Geçiş efekti:** Slaytlar arasında geçerken kullanılan görsel efekt.
+
+## Konuşmacı Görünümü
+
+![](gorseller/ekran-konusmaci-gorunumu.jpg){width=78%}
+
 ## Dosya Biçimleri ve Dışa Aktarma
 
 | Biçim | Ne için? | Dikkat |
@@ -51,26 +74,14 @@ Sunu yazılımı, slaytları hazırlayıp sırayla göstermek için kullanılan 
 
 **Asıl dosyayı ve PDF’i birlikte taşıyın.** Videolu sunuda videoyu ayrıca bulundurun.
 
-## Sunu Yazılımı Turu
+## Bir Sunuyu Oluşturma
 
-1. Uygulamayı açın; slayt paneli, tuval ve düzen panelini tanıyın.
-2. Ekran oranını seçin: çoğu ekran için 16:9, bazı ekranlarda 4:3.
-3. Tema, ana slayt ve düzeni seçin.
+1. Uygulamayı açın; boş sunu oluşturun.
+2. Ekran oranını seçin: çoğu ekran için **16:9**, bazı ekranlarda **4:3**.
+3. Tema, ana slayt ve düzeni seçin; hazır şablonlardan yararlanın.
 4. Slayt ekleyin; başlık ve içerik yer tutucularını doldurun.
 5. Konuşmacı notlarını yazın; konuşmacı görünümünü deneyin.
 6. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
-
-## Ekran Oranı: 4:3 ve 16:9
-
-![](gorseller/diagram-ekran-oranlari.png){width=82%}
-
-4:3 daha dar, 16:9 daha geniştir; sunum yapılacak ortamın oranına göre seçin.
-
-## Ekran Görüntüleri
-
-![](gorseller/ekran-yer-tutucu-libreoffice-impress.png){width=48%} ![](gorseller/ekran-yer-tutucu-google-slides.png){width=48%}
-
-Solda LibreOffice Impress, sağda Google Slides: slayt paneli, tuval ve notlar.
 
 # Sununun Yapısı
 
@@ -158,7 +169,7 @@ Ders sunularımız buna örnektir: aynı renk paleti, aynı başlık düzeni, ku
 
 ## Telif ve Lisans
 
-- Ücretsiz stok: **Pexels**, **Unsplash**, **Pixabay**
+- Ücretsiz stok: **Pexels**, **Unsplash**, **Pixabay**; bunlar kamu malı değildir, site lisansına bakın
 - **Wikimedia Commons**
 - CC lisansları genellikle atıf gerektirir; ayrıntı 11. haftada
 
@@ -166,11 +177,7 @@ Ders sunularımız buna örnektir: aynı renk paleti, aynı başlık düzeni, ku
 
 Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez.
 
-**Lisansı uygun olan** görselleri seçin; atıf ayrı bir yükümlülüktür.
-
-::: {.callout-warning}
-**Ücretsiz stok siteleri kamu malı değildir.** Pexels, Unsplash gibi siteler ücretsiz kullanım verir; ancak içerik teliflidir ve lisans koşulları vardır.
-:::
+Atıf ayrı bir yükümlülüktür; lisansı uygun görseli seçin.
 
 # Tablo ve Grafik
 

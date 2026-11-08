@@ -243,11 +243,12 @@ format:
 - Giriş
 - Bu Haftanın Öğrenme Çıktıları
 - Sunu Yazılımı
-  - Sunu yazılımı ne yapar?
-  - Masaüstü sürüm, çevrimiçi sürüm
+  - Temel kavramlar ve arayüz
+  - Slayt düzeni ve ana slayt
+  - Animasyon ve geçiş efektleri
+  - Konuşmacı notları ve konuşmacı görünümü
   - Dosya biçimleri ve dışa aktarma
-  - Slayt düzeni, notlar ve konuşmacı görünümü
-  - Sunu yazılımı turu
+  - Bir sunuyu baştan sona oluşturma
 - Sununun Yapısı
   - Kime, ne amaçla, ne kadar sürede?
   - Üç bölüm ve süre payları

@@ -13,7 +13,7 @@ format:
 
 Üniversite hayatınızda ve iş hayatında fikirlerinizi **anlatmanız** gerekecek: sınıfta bir ödevi sunmak, bir projeyi tanıtmak, bir öneriyi savunmak. Sunu yazılımları bu iş için araçtır — ama iyi bir sunum, iyi bir slayttan fazlasıdır.
 
-Sunu uygulamalarının da bilgisayara kurulan ve tarayıcıda çalışan **çevrimiçi** sürümleri vardır; aradaki farklar için 7. haftadaki karşılaştırmaya bakın. Bu derste **sunu**, slaytlardan oluşan görsel dosya; **sunum** ise konuşmacının sesi, beden dili ve izleyiciyle etkileşimiyle gerçekleştirdiği etkinliktir. Sunu yazılımı sunuyu hazırlar; sunumu konuşmacı yapar.
+Bu derste **sunu**, slaytlardan oluşan görsel dosya; **sunum** ise konuşmacının sesi, beden dili ve izleyiciyle etkileşimiyle gerçekleştirdiği etkinliktir. Sunu yazılımı sunuyu hazırlar; sunumu konuşmacı yapar.
 
 Bu haftanın temel iddiası şu: **slayt, konuşmanın yerini almaz; onu destekler.** Az metin, aynı mesajı izleyiciye daha kolay ulaştırır; slaytı okumaya başlayan dinleyici ise konuşmacıyı dinlemeyi bırakır.
 
@@ -36,43 +36,18 @@ Slayt bir **vitrindir**, depo değil. Üzerinde anahtar kelimeler olur; ayrınt�
 
 Sunu yazılımı, slaytları hazırlamak ve sırayla göstermek için kullanılan **uygulama yazılımıdır**. Kelime işlemcide sayfa, hesap tablosunda **çalışma sayfası** neyse sunuda **slayt** odur: fikirlerin tek tek ekranlara yerleştirildiği birim.
 
-Slaytları tek tek biçimlendirmek yerine **ana slayt** ve **düzen** ile ortak görünüm kurulur. Bu, 7. haftadaki **stillerle** aynı mantıktır: bir kez ayarlanır, bütün slaytlara uygulanır.
+Popüler sunu uygulamaları şunlardır:
 
-Öne çıkan uygulamalar iki grupta toplanır: tarayıcıda çalışan **Google Slides**, bilgisayara kurulan **LibreOffice Impress**, **Microsoft PowerPoint** ve Apple cihazlarda gelen **Keynote**. **Prezi** ve **Canva** gibi çevrimiçi araçlar da sunu hazırlamak için kullanılır; Prezi doğrusal olmayan bir tuval, Canva ise hazır şablonlar ve sürükle-bırak düzen sunar. İkisinin de ücretsiz sürümleri vardır. Menü adları ve yerleri değişse de slayt, düzen, not ve sunu kavramları hepsinde vardır.
+- **Google Slides (çevrimiçi):** Tarayıcıda çalışır; ücretsizdir ve ortak çalışmaya uygundur.
+- **LibreOffice Impress:** Bilgisayara kurulur; ücretsiz ve açık kaynaklıdır.
+- **Microsoft PowerPoint:** Microsoft'un ofis paketinde yer alır; yaygın ama ücretli ve kapalı kaynaklıdır.
+- **Apple Keynote:** Apple cihazlarda gelir; sade arayüzüyle öne çıkar.
+- **Prezi (çevrimiçi):** Doğrusal olmayan, yakınlaştırmalı bir tuval kullanır; sunum akışını farklı kurar.
+- **Canva (çevrimiçi):** Hazır şablonlar ve sürükle-bırak tasarım sunar; ücretsiz sürümü vardır.
 
-## Sunu yazılımı ne yapar?
+Menü adları ve yerleri değişse de slayt, düzen, not ve sunu kavramları hepsinde vardır.
 
-```{=latex}
-\begin{center}
-\setlength{\arrayrulewidth}{0.3pt}%
-\renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{11.0cm}@{}}
-\toprule
-\textbf{Kavram} & \textbf{Anlamı}\\
-\midrule
-Slayt & Sununun tek bir ekranı\\
-Tuval & Slaytın üzerinde tasarım yapılan alan\\
-Düzen & Başlık + içerik, iki sütun gibi hazır yerleşim\\
-Yer tutucu & Metin, görsel veya tablo için ayrılmış alan\\
-Ana slayt & Bütün slaytların ortak yazı tipi, renk ve logosunu belirleyen katman\\
-Konuşmacı notu & Slaytta görünmeyen, konuşmacının kendisine ayırdığı ayrıntı\\
-Konuşmacı görünümü & Sıradaki slaytı, notları ve süreyi gösteren ikinci ekran\\
-\bottomrule
-\end{tabular}
-\end{center}
-```
-
-::: {#fig-sunum-ekran layout-ncol=2}
-![LibreOffice Impress: slayt paneli, çalışma alanı ve konuşmacı notları](gorseller/ekran-yer-tutucu-libreoffice-impress.png){width=95%}
-
-![Google Slides: slayt listesi, tuval ve düzen paneli](gorseller/ekran-yer-tutucu-google-slides.png){width=95%}
-
-İki sunu uygulamasında aynı bölümler; menü adları ve yerleri değişir.
-:::
-
-## Masaüstü sürüm, çevrimiçi sürüm
-
-Sunu uygulamalarının bazıları bilgisayara **kurulur**, bazıları doğrudan **tarayıcıda** çalışır. İkisi de benzer temel işlevleri sunar; farklar erişim, işbirliği ve dosyanın nerede tutulduğuyla ilgilidir.
+Sunu uygulamaları iki biçimde kullanılır: **masaüstü** (bilgisayara kurulur) ve **çevrimiçi** (tarayıcıda çalışır). İkisi de benzer temel işlevleri sunar; farklar erişim, işbirliği ve dosyanın nerede tutulduğuyla ilgilidir.
 
 ```{=latex}
 \begin{center}
@@ -94,11 +69,60 @@ Verinin yeri & Kendi bilgisayarınız & Hizmeti sunan şirketin sunucuları\\
 
 Çevrimiçi sürümler, grup ödevlerinde aynı sunu üzerinde birlikte çalışırken ve okul ile ev arasında geçiş yaparken kolaylık sağlar. Ancak **sunu dosyası**, hizmeti sağlayan şirketin sunucularında tutulur; kişisel veya gizli bilgi içeren sunu dosyalarında dikkatli olun (11. hafta) ve yerel bir kopya bulundurun (4. hafta).
 
+## Temel kavramlar ve arayüz
+
+![Google Slides: slayt küçük resimleri paneli, çalışma alanı, yer tutucu ve düzen menüsü](gorseller/ekran-google-slides-kavramlar.jpg){width=90%}
+
+```{=latex}
+\begin{center}
+\setlength{\arrayrulewidth}{0.3pt}%
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{11.0cm}@{}}
+\toprule
+\textbf{Kavram} & \textbf{Anlamı}\\
+\midrule
+Slayt & Sununun tek bir ekranı\\
+Çalışma alanı & Slaytın üzerinde tasarım yapılan alan\\
+Düzen & Başlık + içerik, iki sütun gibi hazır yerleşim\\
+Yer tutucu & Metin, görsel veya tablo için ayrılmış alan\\
+Ana slayt & Bütün slaytların ortak yazı tipi, renk ve logosunu belirleyen katman\\
+Konuşmacı notu & Slaytta görünmeyen, konuşmacının kendisine ayırdığı ayrıntı\\
+Konuşmacı görünümü & Sıradaki slaytı, notları ve süreyi gösteren ikinci ekran\\
+\bottomrule
+\end{tabular}
+\end{center}
+```
+
+Çoğu uygulamada slayt paneli solda, çalışma alanı ortada, düzen/özellikler paneli sağda; konuşmacı notları slaytın altında yer alır.
+
+## Slayt düzeni ve ana slayt
+
+![PowerPoint: Ana Slayt görünümü; ortak başlık, metin ve alt bilgi yer tutucuları](gorseller/ekran-powerpoint-ana-slayt.png){width=90%}
+
+**Ana slayt** (asıl slayt, master slide) ve **düzen**, sununun görsel omurgasıdır. Ana slaytta yazı tipi, renk, logo ve alt bilgi bir kez ayarlanır; böylece her slaytta aynı görünüm korunur. Bu, 7. haftadaki **stillerle** aynı mantıktır: bir kez ayarlanır, bütün slaytlara uygulanır. Yeni bir sunu oluştururken hazır **şablonlardan** da yararlanabilirsiniz; sunu uygulamalarıyla birlikte gelen şablonlar renk, yazı tipi ve düzeni birlikte getirir. **16:9** oranı çoğu ekran için uygundur; sunum yapılacak ortamdaki ekranın veya perdenin oranı farklıysa **4:3** de kullanılabilir.
+
+![Aynı yükseklikte 4:3 ve 16:9 ekran oranları; 16:9 daha geniştir](gorseller/diagram-ekran-oranlari.png){width=72%}
+
+## Animasyon ve geçiş efektleri
+
+- **Animasyon:** Slayttaki bir öğeyi (metin, görsel) belirli bir sırayla göstermek veya vurgulamak için kullanılır.
+- **Geçiş efekti:** Bir slayttan sonrakine geçerken kullanılan görsel efektir.
+
+Abartılı efektler dinleyicinin dikkatini dağıtır. Animasyon ve geçiş efektleri PDF’e aktarıldığında çalışmaz.
+
+![Google Slides: Slayt Geçişi ve Nesne Animasyonları panelleri](gorseller/ekran-google-slides-animasyon.jpg){width=90%}
+
+## Konuşmacı notları ve konuşmacı görünümü
+
+**Konuşmacı notu**, slaytta yazmayan ayrıntıyı saklar. **Konuşmacı görünümü** ise sunum sırasında sıradaki slaytı, notları ve geçen süreyi gösterir; genellikle ikinci bir ekran gerektirir. Bu sayede kendi ekranınızda konuşmacı notlarını yalnızca siz görürsünüz; perdede ise normal slayt görünür. İki ekran kullanıldığında kendi ekranınızda aşağıdakine benzer bir görünüm olur.
+
+![Konuşmacı görünümü: aktif slayt, sonraki slayt, konuşmacı notları ve kontrol düğmeleri](gorseller/ekran-konusmaci-gorunumu.jpg){width=90%}
+
 ## Dosya biçimleri ve dışa aktarma
 
 Sununun düzenlenebilir dosyası ile paylaşılan kopyası aynı şey değildir.
 
-- **`.pptx`:** PowerPoint'in biçimi; en yaygın düzenlenebilir sunu biçimidir. Çoğu sunu uygulaması açar; yazı tipi ve video uyumu değişebilir.
+- **`.pptx`:** PowerPoint'in biçimi; en yaygın düzenlenebilir sunu biçimidir. Çoğu sunu uygulaması bunu açabilir ve düzenleyebilir; yazı tipi ve video uyumu değişebilir.
 - **`.odp`:** LibreOffice gibi açık kaynak paketlerin biçimi. Her uygulama tam desteklemeyebilir.
 - **`.pdf`:** Görünümü sabitler; teslim ve yedek için uygundur. Video, animasyon ve geçiş efektleri çalışmaz.
 
@@ -106,30 +130,24 @@ Düzenlemeye devam edecekseniz `.pptx` ya da `.odp`; karşı tarafa göndereceks
 
 Sunuyu hazırladıktan sonra başka bir bilgisayarda açıp prova yapın; yazı tipleri, görseller ve videolar beklediğiniz gibi görünmüyorsa düzeltin.
 
-## Slayt düzeni, notlar ve konuşmacı görünümü
+## Bir sunuyu baştan sona oluşturma
 
-**Ana slayt** ve **düzen**, sununun görsel omurgasıdır. Ana slaytta yazı tipi, renk, logo ve alt bilgi bir kez ayarlanır; böylece her slaytta aynı görünüm korunur. **16:9** oranı çoğu ekran için uygundur; sunum yapılacak ortamdaki ekranın veya perdenin oranı farklıysa **4:3** de kullanılabilir.
+Bir sunuyu baştan sona oluştururken şu adımları izleyin; ayrıntılar yukarıdaki başlıklarda.
 
-![Aynı yükseklikte 4:3 ve 16:9 ekran oranları; 16:9 daha geniştir](gorseller/diagram-ekran-oranlari.png){width=72%}
-
-**Konuşmacı notu**, slaytta yazmayan ayrıntıyı saklar. **Konuşmacı görünümü** ise sunum sırasında sıradaki slaytı, notları ve geçen süreyi gösterir; genellikle ikinci bir ekran gerektirir. Bu görünüm, slayta bakmadan konuşmayı kolaylaştırır.
-
-**Animasyon ve geçiş efektleri** sırayı göstermek veya bir noktayı vurgulamak için kullanılır; abartılı efektler dinleyicinin dikkatini dağıtır ve PDF’e aktarıldığında çalışmaz.
-
-## Sunu yazılımı turu
-
-Bir sunu hazırlarken izlenecek temel adımlar şunlardır. Çoğu uygulamada slayt paneli solda, tuval ortada, düzen/özellikler paneli sağda; konuşmacı notları slaytın altında yer alır.
-
-1. Uygulamayı açın; slayt paneli, tuval ve düzen panelini tanıyın; boş bir sunu oluşturun.
+1. Uygulamayı açın; boş bir sunu oluşturun.
 2. Ekran oranını seçin: çoğu ekran için **16:9**, bazı ekranlarda **4:3**.
-3. Bir **tema**, **ana slayt** ve **düzen** seçin.
+3. Bir **tema**, **ana slayt** ve **düzen** seçin; hazır **şablonlardan** yararlanın.
 4. Slayt ekleyin; başlık ve içerik yer tutucularını doldurun.
 5. **Konuşmacı notlarını** yazın; **konuşmacı görünümünü** deneyin.
 6. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
 
 # Sununun Yapısı
 
-Bu bölümde **süre** ile, sunum sırasında sunuya ayrılan zamanı kastediyoruz. Dersin odağı sunumun tamamı değil, onun bir parçası olan **sununun hazırlanmasıdır.**
+Bu bölümde **süre** ile, sunum sırasında sunuya ayrılan zamanı kastediyoruz.
+
+```{=latex}
+\needspace{8\baselineskip}
+```
 
 ## Kime, ne amaçla, ne kadar sürede?
 
@@ -230,14 +248,12 @@ Görseller sunuyu güçlendirir — ama yalnızca doğru kullanıldığında.
 
 ## Telif ve lisans
 
-Ücretsiz stok siteleri (**Pexels**, **Unsplash**, **Pixabay**) ve **Wikimedia Commons**, lisansı uygun görseller için iyi başlangıçlardır. Creative Commons lisansları genellikle atıf gerektirir; ayrıntılar 11. haftada ele alınacak.
+Görselin kullanım hakkı **lisansından** gelir. Ücretsiz stok siteleri (**Pexels**, **Unsplash**, **Pixabay**) ve **Wikimedia Commons**, lisansı uygun görseller için iyi başlangıçlardır; yine de sitenin lisans sayfasını okuyun. Creative Commons lisansları genellikle atıf gerektirir; ayrıntılar 11. haftada ele alınacak.
 
 ::: {.callout-warning}
 ## Kaynak göstermek telif sorununu çözmez
 
-Bir görselin altına kaynak yazmak, onu kullanma hakkını vermez. **Lisansı uygun olan** görselleri seçin; kaynak gösterme ayrı bir yükümlülüktür.
-
-Ücretsiz stok sitelerini, Wikimedia Commons’ı ve Creative Commons arama araçlarını tercih edin; yine de sitenin lisans sayfasını okuyun.
+Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez; kaynak gösterme ayrı bir yükümlülüktür.
 :::
 
 # Tablo ve Grafik Yerleştirme
@@ -379,6 +395,6 @@ Bu uygulama notla değerlendirilmez. Teslimden önce kime, ne amaçla ve ne kada
   (help.libreoffice.org)
 - **Google Slides Yardım** — sunu oluşturma, erişilebilirlik ve dışa aktarma.\
   (support.google.com/docs)
-- **Görsel kaynakları:** Projeksiyon cihazı — *InFocus IN34*, Dave Pape, kamu malı. Yaka mikrofonu — *Technology-g9f60c2df6 1920*, Florian-Media, CC0. Bu haftanın şemaları ve ekran görüntüsü yer tutucuları bu ders için hazırlanmıştır. Ekran görüntüleri LibreOffice Impress ve Google Slides uygulamalarından alınacaktır.
+- **Görsel kaynakları:** Projeksiyon cihazı — *InFocus IN34*, Dave Pape, kamu malı. Yaka mikrofonu — *Technology-g9f60c2df6 1920*, Florian-Media, CC0. Bu haftanın şemaları ve ekran görüntüsü yer tutucuları bu ders için hazırlanmıştır. Google Slides arayüzü ve animasyon paneli görselleri Google Slides uygulamasından, PowerPoint ana slayt görünümü Microsoft PowerPoint uygulamasından alınmış ve bu ders için etiketlenmiştir. Konuşmacı görünümü görseli bir sunu uygulamasından alınmış ve bu ders için etiketlenmiştir; diğer ekran görüntüleri eklendiğinde künye güncellenecektir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
