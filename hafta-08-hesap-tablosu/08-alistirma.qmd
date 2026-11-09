@@ -110,7 +110,7 @@ Aşağıdaki tablo, her sorunun doğru yanıtını ve kısa gerekçesini içerir
 | 5 | C | Özet tablo kaynak veriyi değiştirmez; ayrı bir özet görünüm üretir. Kaynak tablodaki değişiklikler özete yansır, ama özet tablo kaynağı değiştirmez. |
 | 6 | E | Eksen 95'ten başlayınca 96–99 arası 100 birimlik ölçeğin yalnızca son 5 birimine sığar; 1–2 puanlık fark çubuklarda devasa görünür. Eksenin nereden başladığı tek başına yanıltma değildir; yanıltıcı olan, küçük farkı büyük göstermesidir. |
 | 7 | D | `SOLDAN(metin;n)` metnin başından n karakter alır. `SAĞDAN` sondan, `PARÇAAL` belirtilen konumdan itibaren alır; `UZUNLUK` ise karakter sayısını verir. |
-| 8 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` bugünden doğum tarihine kadar geçen süreyi sayar. |
+| 8 | E | Tarihler sayı olarak saklandığı için iki tarihin çıkarılması aradaki gün sayısını verir. `YIL`, `AY` ve `GÜN` yalnızca ilgili parçayı verir; `BUGÜN()-A2` iki tarih arasındaki farkı değil, bugün ile A2 arasındaki gün sayısını verir. |
 | 9 | Doğru | CSV yalnızca ham veriyi taşır; renk, kalın yazı, birleştirilmiş hücre, formül ve grafik aktarılmaz. |
 | 10 | Yanlış | Koşullu biçimlendirme yalnızca görünüşü değiştirir; hücrenin değeri aynı kalır. |
 

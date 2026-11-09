@@ -25,7 +25,7 @@ Bir tablo ya da grafik, ham veriyi değil, **birinin seçtiği hâlini** göster
 
 - Hesap tablosunun temel kavramlarını (hücre, satır, sütun, aralık, sayfa) tanır.
 - Formül yazar; göreli ve mutlak başvuru arasındaki farkı açıklar.
-- Temel işlevleri (topla, ortalama, mak, min, eğer, eğersay, say) ve metin, mantıksal, tarih işlevlerini amaca uygun kullanır.
+- Temel işlevleri (topla, ortalama, mak, min, say, eğersay, eğer) ve metin, mantıksal, tarih işlevlerini amaca uygun kullanır.
 - Veriyi biçimlendirir, sıralar ve filtreler; ikisi arasındaki farkı açıklar.
 - Veri türüne uygun grafiği seçer ve grafik oluşturur.
 - Bir grafiği eleştirel biçimde okur; yanıltıcı görselleri teşhis eder.
@@ -90,7 +90,7 @@ Türkçede ondalık ayraç **virgüldür**: pi sayısını tabloya çoğunlukla 
 ::: {.callout-tip}
 ## Hizalama bir ipucudur
 
-Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **hesaba katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
+Girdiğiniz değer sağa yaslanıyorsa program onu sayı olarak algılamıştır; sola yaslanıyorsa metin olarak. Bir sayı sola yaslanıyorsa büyük olasılıkla içinde boşluk ya da harf vardır ve **sayısal hesaplamalara katılmayacaktır**. Bunu fark etmenin en hızlı yolu, sütunun toplamını alıp beklenen sonuçla karşılaştırmaktır.
 :::
 
 # Veri Alışverişi: CSV
@@ -164,8 +164,8 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 | `TOPLA` | Aralıktaki sayıları toplar | `=TOPLA(B2:B50)` |
 | `ORTALAMA` | Aritmetik ortalamayı verir | `=ORTALAMA(B2:B50)` |
 | `MAK` / `MİN` | En büyük ve en küçük değeri verir | `=MAK(B2:B50)` |
-| `EĞERSAY` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
 | `SAY` | Sayı içeren hücreleri sayar | `=SAY(B2:B50)` |
+| `EĞERSAY` | Koşulu sağlayan hücreleri sayar | `=EĞERSAY(C2:C50;">=70")` |
 :::
 
 İşlev adları arayüzün diline göre değişir: İngilizce arayüzlü uygulamalarda aynı işlevlerin İngilizce adları görülebilir; işlevleri değişmez.
@@ -195,7 +195,7 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 \hline
 \textbf{7} & Fatma & 100 & 85\\
 \hline
-\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
+\textbf{8} & Gökhan & \multicolumn{1}{l|}{Girmedi} & 60\\
 \hline
 \end{tabular}}
 \end{center}
@@ -209,10 +209,10 @@ Görseldeki formül `=B3/B$9` bir satır aşağı kopyalandığında `=B4/B$9` o
 \texttt{=ORTALAMA(B2:B8)} & 75 & 450 ÷ 6 \\
 \texttt{=MAK(B2:B8)} & 100 & En yüksek vize notu \\
 \texttt{=MİN(B2:B8)} & 50 & En düşük vize notu \\
-\texttt{=EĞERSAY(B2:B8;">=70")} & 4 & 70 ve üzeri alanlar \\
-\texttt{=EĞERSAY(B2:B8;"Girmedi")} & 1 & ``Girmedi'' yazan hücre \\
 \texttt{=SAY(B2:B8)} & 6 & Sayı içeren hücreler \\
 \texttt{=SAY(A2:A8)} & 0 & Adlar metindir, sayı değil \\
+\texttt{=EĞERSAY(B2:B8;">=70")} & 4 & 70 ve üzeri alanlar \\
+\texttt{=EĞERSAY(B2:B8;"Girmedi")} & 1 & ``Girmedi'' yazan hücre \\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
@@ -293,7 +293,7 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 \hline
 \textbf{7} & Fatma & 100 & 85\\
 \hline
-\textbf{8} & Gökhan & \emph{Girmedi} & 60\\
+\textbf{8} & Gökhan & \multicolumn{1}{l|}{Girmedi} & 60\\
 \hline
 \end{tabular}}
 \end{center}
@@ -310,7 +310,7 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 \texttt{=YADA(B3<50;C3<50)} & DOĞRU & En az biri sağlanıyor \\
 \texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
 \texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & Kaldı & C3'teki 45 eşiğin altında \\
-\texttt{=EĞER(VE(B3>=50;C3>=50);\newline\hspace*{1.1em}"Geçti";"Bütünleme")} & Bütünleme & İki koşula göre sonuç \\
+\texttt{=EĞER(VE(B3>=50;C3>=50);\newline\hspace*{1.1em}"Geçti";\newline\hspace*{1.1em}"Bütünleme")} & Bütünleme & İki koşula göre sonuç \\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
@@ -320,7 +320,7 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 
 Tarih, programın içinde bir **sayı** olarak saklanır: 1 = 01.01.1900, sonraki her gün sayıyı bir artırır. Bu yüzden iki tarihi birbirinden çıkarınca aradaki **gün sayısı** çıkar.
 
-`BUGÜN()` bugünün tarihini verir ve dosya her açıldığında yenilenir; bu yüzden `=B2-BUGÜN()` teslime kalan günü kendiliğinden günceller. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 15.03.2007 için sırasıyla 2007, 3 ve 15. Yaş hesabında `=YIL(BUGÜN())-YIL(A2)` yalnızca yıl farkını verir; doğum günü henüz gelmediyse sonuç bir fazla çıkar.
+`BUGÜN()` bugünün tarihini verir ve dosya her açıldığında yenilenir; bu yüzden `=B2-BUGÜN()` çıkışa kalan günü kendiliğinden günceller. Tarihin parçaları `YIL`, `AY` ve `GÜN` ile alınır: 20.11.2026 için sırasıyla 2026, 11 ve 20. `=YIL(BUGÜN())-YIL(A2)` ise yalnızca yıl farkını verir; ay ve gün hesaba katılmadığı için sonuç bir fazla çıkabilir.
 
 ```{=latex}
 \begin{center}
@@ -331,23 +331,24 @@ Tarih, programın içinde bir **sayı** olarak saklanır: 1 = 01.01.1900, sonrak
 \hline
  & \multicolumn{1}{>{\centering\arraybackslash}p{2.6cm}|}{\textbf{A}} & \multicolumn{1}{>{\centering\arraybackslash}p{2.6cm}|}{\textbf{B}}\\
 \hline
-\textbf{1} & \textbf{Doğum} & \textbf{Teslim}\\
+\textbf{1} & \textbf{Giriş} & \textbf{Çıkış}\\
 \hline
-\textbf{2} & 15.03.2007 & 20.11.2026\\
+\textbf{2} & 20.11.2026 & 23.11.2026\\
 \hline
 \end{tabular}}
 \end{center}
 
 \begin{center}
 {\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{5.8cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{5.8cm}@{}}
 \textbf{Formül} & \textbf{Sonuç} & \textbf{Ne yapar}\\
 \midrule[0.3pt]
 \texttt{=BUGÜN()} & bugünün tarihi & Açılışta güncellenir \\
-\texttt{=B2-BUGÜN()} & kalan gün & Teslime kalan gün sayısı \\
-\texttt{=YIL(A2)} & 2007 & Doğum yılı \\
-\texttt{=AY(A2)} & 3 & Doğum ayı \\
-\texttt{=GÜN(A2)} & 15 & Doğum günü \\
+\texttt{=B2-A2} & 3 & Giriş ile çıkış arasındaki gün sayısı \\
+\texttt{=B2-BUGÜN()} & çıkışa kalan gün & Çıkışa kalan gün sayısı \\
+\texttt{=YIL(A2)} & 2026 & Giriş yılı \\
+\texttt{=AY(A2)} & 11 & Giriş ayı \\
+\texttt{=GÜN(A2)} & 20 & Giriş günü \\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
@@ -443,7 +444,7 @@ Temel mantığı üç adımdır:
 \needspace{7\baselineskip}
 ```
 
-Yukarıdaki görselde Microsoft Excel'de özet tablo kullanımı gösterilmiştir. Tarih, harcayan, tür ve tutar sütunlarından oluşan bir tablodan ihtiyaca göre özet tablo oluşturulmuştur. Kaynak tablodaki **Alıcı** alanı "Satırlar"a, **Tutar** alanı "Değerler"e sürüklenmiş ve asıl tablonun altında görülen özet tablo elde edilmiştir. İhtiyaca göre kaynak tablodaki veri sütunları farklı yerlere sürüklenip bırakılarak anında farklı özetler oluşturulabilir. Özet tablo oluşturulunca kaynak tablo değişmez; ayrı bir tablo oluşturulur. Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
+Yukarıdaki görselde Microsoft Excel'de özet tablo kullanımı gösterilmiştir. Tarih, alıcı, tür ve tutar sütunlarından oluşan bir tablodan ihtiyaca göre özet tablo oluşturulmuştur. Kaynak tablodaki **Alıcı** sütunu "Satırlar"a, **Tutar** sütunu "Değerler"e sürüklenmiş ve asıl tablonun altında görülen özet tablo elde edilmiştir. İhtiyaca göre kaynak tablodaki veri sütunları farklı yerlere sürüklenip bırakılarak anında farklı özetler oluşturulabilir. Özet tablo oluşturulunca kaynak tablo değişmez; ayrı bir tablo oluşturulur. Özet tablolar, formül yazmadan saniyeler içinde rapor üretmenin en hızlı yoludur.
 
 # Grafik Oluşturma
 
