@@ -332,7 +332,7 @@ Sabit bir değere göre oranlarken toplam hücresinin satırı kilitlenir: `=B2/
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.7cm}r@{}}
 \texttt{=VE(B2>=50;C2>=50)} & \textbf{DOĞRU}\\[1mm]
 \texttt{=YADA(B3<50;C3<50)} & \textbf{DOĞRU}\\[3mm]
-\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\hspace*{1.1em}"Geçti";}\newline\texttt{\hspace*{1.1em}"Bütünleme")} & \textbf{Bütünleme}\\
+\texttt{=EĞER(VE(B3>=50;C3>=50);}\newline\texttt{\phantom{=EĞER(}"Geçti";}\newline\texttt{\phantom{=EĞER(}"Bütünleme")} & \textbf{Bütünleme}\\
 \end{tabular}}
 ```
 

@@ -310,7 +310,7 @@ Aşağıdaki örnekler, önceki bölümdeki öğrenci tablosunun satırlarıyla 
 \texttt{=YADA(B3<50;C3<50)} & DOĞRU & En az biri sağlanıyor \\
 \texttt{=EĞER(C2>=50;"Geçti";"Kaldı")} & Geçti & C2'deki 70 eşiği geçiyor \\
 \texttt{=EĞER(C3>=50;"Geçti";"Kaldı")} & Kaldı & C3'teki 45 eşiğin altında \\
-\texttt{=EĞER(VE(B3>=50;C3>=50);\newline\hspace*{1.1em}"Geçti";\newline\hspace*{1.1em}"Bütünleme")} & Bütünleme & İki koşula göre sonuç \\
+\texttt{=EĞER(VE(B3>=50;C3>=50);\newline\phantom{=EĞER(}"Geçti";\newline\phantom{=EĞER(}"Bütünleme")} & Bütünleme & İki koşula göre sonuç \\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
