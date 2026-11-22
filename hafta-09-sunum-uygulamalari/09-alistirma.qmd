@@ -43,7 +43,7 @@ C) Slaytların renkli olması gerektiğini\
 D) Slaytların yazdırılması gerektiğini\
 E) Slaytlarda yalnızca grafik kullanılması gerektiğini
 
-**3.** Bir sunuyu, video ve animasyonlar kaybolsa da her cihazda aynı görünmesi için hangi biçimde dışa aktarmak uygun?\
+**3.** Bir sununun, video ve animasyonlar kaybolsa da her cihazda aynı görünmesi için hangi biçimde dışa aktarılması uygun?\
 A) `.pptx`\
 B) `.odp`\
 C) `.pdf`\

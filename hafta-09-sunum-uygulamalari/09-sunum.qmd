@@ -22,66 +22,106 @@ format: beamer
 
 Sunu yazılımı, slaytları hazırlayıp sırayla göstermek için kullanılan **uygulama yazılımıdır**.
 
-- **Slayt:** Sununun tek ekranı; **çalışma alanı:** tasarım alanı.
-- **Düzen:** Hazır yerleşim; **yer tutucu:** metin/görsel alanı.
-- **Ana slayt (asıl slayt, master slide):** Ortak yazı tipi, renk ve logoyu belirler.
-- **Konuşmacı notu:** Slaytta görünmez; **konuşmacı görünümü:** sıradaki slayt ve süre.
+:::: {.columns}
 
-Örnekler: **Google Slides**, **LibreOffice Impress**, **PowerPoint**, **Keynote**; ayrıca **Prezi** ve **Canva**.
+::: {.column width="40%"}
+- **Slayt:** tek ekran; **çalışma alanı:** tasarım alanı
+- **Düzen / yer tutucu:** hazır yerleşim, boş alan
+- **Ana (asıl) slayt:** ortak yazı tipi, renk, logo
+- **Konuşmacı notu:** perdede çıkmaz, yalnızca siz görürsünüz
+:::
+
+::: {.column width="60%"}
+![](gorseller/ekran-google-slides-kavramlar.png)
+:::
+
+::::
+
+Örnekler: **Google Slides**, **LibreOffice Impress**, **PowerPoint**, **Keynote**, **Prezi**, **Canva**; ayrıca **yapay zekâ destekli araçlar**.
 
 ## Masaüstü mü, Çevrimiçi mi?
 
 | | Masaüstü sürüm | Çevrimiçi sürüm |
-|:---|:---|:---|
+|:-----|:-----------|:-----------|
 | Kurulum | Gerekir | Gerekmez; tarayıcı yeter |
 | İnternet | Sunum sırasında gerekmez | Genellikle gerekir |
-| Erişim | Yalnızca o bilgisayardan | Hesabınızın olduğu her cihazdan |
+| Erişim | Yalnızca o bilgisayardan | Hesabınıza girebildiğiniz her cihazdan |
 | Ortak çalışma | Sınırlı | Aynı anda birden çok kişi |
 | Verinin yeri | Kendi bilgisayarınız | Sağlayıcının sunucuları |
 
 Çevrimiçi sürümde sunu dosyası, hizmet sağlayıcının sunucusunda tutulur; yerel bir kopya ve PDF de bulundurun.
 
-## Ana Slayt
+## Ana (Asıl) Slayt
 
-![](gorseller/ekran-powerpoint-ana-slayt.png){width=78%}
+:::: {.columns}
 
-Ortak başlık, metin ve alt bilgi yer tutucuları; ana slayt bütün slaytların görünümünü belirler.
+::: {.column width="60%"}
+![](gorseller/ekran-powerpoint-ana-slayt.png)
+
+*PowerPoint: Asıl Slayt görünümü.*
+:::
+
+::: {.column width="40%"}
+**Ana (asıl) slayt**, bütün slaytların ortak görünümünü belirler: yazı tipi, renk, logo ve alt bilgi.
+
+Bir kez ayarlanır, bütün slaytlara uygulanır — 7. haftadaki **stiller** gibi.
+:::
+
+::::
 
 ## Ekran Oranı: 4:3 ve 16:9
 
 ![](gorseller/diagram-ekran-oranlari.png){width=82%}
 
-4:3 daha dar, 16:9 daha geniştir; sunum yapılacak ortamın oranına göre seçin.
+16:9 günümüzde varsayılan orandır; 4:3 yalnızca eski cihazlarla uyumluluk için seçilir.
 
 ## Animasyon ve Geçiş Efektleri
 
-![](gorseller/ekran-google-slides-animasyon.jpg){width=62%}
+:::: {.columns}
 
-- **Animasyon:** Bir öğeyi sırayla gösterme veya vurgulama.
-- **Geçiş efekti:** Slaytlar arasında geçerken kullanılan görsel efekt.
+::: {.column width="36%"}
+**Animasyon:** Slayttaki öğeleri belirli bir sırayla gösterme veya vurgulama.
+
+**Geçiş efekti:** Slaytlar arasında geçerken kullanılan görsel efekt.
+
+Abartılı efektler dikkati dağıtır; **ölçülü** kullanın.
+:::
+
+::: {.column width="64%"}
+![](gorseller/ekran-google-slides-animasyon.png)
+:::
+
+::::
 
 ## Konuşmacı Görünümü
 
-![](gorseller/ekran-konusmaci-gorunumu.jpg){width=78%}
+:::: {.columns}
+
+::: {.column width="64%"}
+![](gorseller/ekran-konusmaci-gorunumu.png)
+:::
+
+::: {.column width="36%"}
+Sunum sırasında **sıradaki slaytı**, **notları** ve **geçen süreyi** gösterir.
+
+Genellikle **ikinci bir ekran** gerektirir; notları yalnızca siz görürsünüz.
+:::
+
+::::
 
 ## Dosya Biçimleri ve Dışa Aktarma
 
 | Biçim | Ne için? | Dikkat |
-|:---|:---|:---|
+|:---|:-----------|:-----------|
 | `.pptx` | PowerPoint'in en yaygın biçimi | Yazı tipi ve video uyumu değişebilir |
 | `.odp` | Açık kaynak paketlerin biçimi | Her uygulama tam desteklemeyebilir |
 | `.pdf` | Sabit görünüm, teslim ve yedek | Video, animasyon ve geçiş efektleri çalışmaz |
 
-**Asıl dosyayı ve PDF’i birlikte taşıyın.** Videolu sunuda videoyu ayrıca bulundurun.
+**Asıl dosyayı ve PDF'i birlikte taşıyın.** Çoğu durumda sunu doğrudan PDF belgesinden de gösterilebilir. Videolu sunuda videoyu ayrıca bulundurun.
 
 ## Bir Sunuyu Oluşturma
 
-1. Uygulamayı açın; boş sunu oluşturun.
-2. Ekran oranını seçin: çoğu ekran için **16:9**, bazı ekranlarda **4:3**.
-3. Tema, ana slayt ve düzeni seçin; hazır şablonlardan yararlanın.
-4. Slayt ekleyin; başlık ve içerik yer tutucularını doldurun.
-5. Konuşmacı notlarını yazın; konuşmacı görünümünü deneyin.
-6. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
+![](gorseller/diagram-sunum-olusturma.png)
 
 # Sununun Yapısı
 
@@ -90,10 +130,10 @@ Ortak başlık, metin ve alt bilgi yer tutucuları; ana slayt bütün slaytları
 | Soru | Neye karar verir |
 |:---|:---|
 | **Kime?** | Dil, örnek, ayrıntı düzeyi |
-| **Ne amaçla?** | Bilgilendirme, ikna, savunma, karar |
+| **Ne amaçla?** | Bilgilendirme, ikna, savunma, karar aldırma |
 | **Ne kadar sürede?** | Slayt sayısı, prova, kapanış |
 
-Süre, sunum sırasında **sunuya ayrılan zamandır**. Kesin slayt sayısını **prova** belirler.
+Süre, sunum boyunca **sunuya (sunu gösterimine) ayrılan zamandır**. Kesin slayt sayısını **prova** belirler.
 
 ## Üç Bölüm ve Süre Payları
 
@@ -110,6 +150,8 @@ Süre, sunum sırasında **sunuya ayrılan zamandır**. Kesin slayt sayısını 
 İyi açılış: konuyu tanıtır, **neden önemli** olduğunu söyler; bir soru ya da çarpıcı bir veriyle başlar.
 
 Kendini tanıtmakla sınırlı bir giriş yeterli değildir.
+
+- Sorular sunum sırasında mı, sonunda mı? Sunu belgesi paylaşılacak mı? Bunları açılışta belirtin.
 
 ## Gövde
 
@@ -142,21 +184,17 @@ Ana mesajları hatırlatır ve **ne yapılması gerektiğini** söyler.
 
 ## Slaytı Okumayın
 
-Slaytta yazanı kelimesi kelimesine okumak, sunumda **sık yapılan bir hatadır**.
+![](gorseller/diagram-slayt-okuma-olcut.png){width=88%}
 
-Dinleyici zaten okuyabiliyor. Konuşmacının işi **açıklamak**; notlarınızdan veya kısa not kâğıtlarından yararlanın.
-
-**Ölçü:** Slayda bakmadan anlatabiliyor musunuz? "Hayır" ise fazla yazı var.
+Slaytta yazanı kelimesi kelimesine okumak, sunumda **sık yapılan bir hata**. Konuşmacının işi **açıklamak**; konuşmacı notlarınızdan veya elinizdeki kısa notlardan yararlanın.
 
 ## Tasarım Tutarlılığı
 
-- **Renk paleti:** en fazla iki üç renk
+- **Renk paleti:** en fazla iki-üç renk
 - **Yazı tipi:** tüm slaytlarda aynı
 - **Yerleşim:** başlık hep aynı yerde
-- **Slayt numarası:** numara ve toplam sayı görünsün (4 / 12)
-- **Görsel dil:** aynı üslup; fotoğraf ve şema bir arada olabilir
-
-Ders sunularımız buna örnektir: aynı renk paleti, aynı başlık düzeni, kurumsal renkler.
+- **Slayt numarası:** numara ve toplam sayı görünsün
+- **Görsel dil:** aynı üslup
 
 # Görsel Kullanımı ve Telif
 
@@ -169,27 +207,33 @@ Ders sunularımız buna örnektir: aynı renk paleti, aynı başlık düzeni, ku
 
 ## Telif ve Lisans
 
-- Ücretsiz stok: **Pexels**, **Unsplash**, **Pixabay**; bunlar kamu malı değildir, site lisansına bakın
-- **Wikimedia Commons**
-- CC lisansları genellikle atıf gerektirir; ayrıntı 11. haftada
+- Lisansı uygun görsel seçin: **Wikimedia Commons**, **Pexels**, **Unsplash**, **Pixabay**
+- Bunlar **kamu malı değildir**; sitenin lisans sayfasına bakın
+- **Kaynak yazmak izin vermez:** atıf ayrı bir yükümlülüktür
 
-## Kaynak Göstermek Telifi Çözmez
-
-Bir görselin altına kaynak yazmak, onu kullanma hakkı vermez.
-
-Atıf ayrı bir yükümlülüktür; lisansı uygun görseli seçin.
+CC lisansları genellikle atıf gerektirir; ayrıntı 11. haftada.
 
 # Tablo ve Grafik
 
 ## Slayt İçin Basitleştirin
 
-- **Tabloda az satır:** yalnızca vurgulamak istedikleriniz
-- **Grafikte büyük punto:** eksen etiketleri projeksiyonda arkadan okunmalı
-- **Tek mesaj:** her grafik tek bir karşılaştırma; üç eğriyi üst üste koymayın
-- **Vurgulama:** istediğiniz değeri belirtin
-- **Kaynak ve tarih:** grafiğin kaynağı ve kaynağın tarihi
+:::: {.columns}
 
-Size ait grafiklerde eksenlerin değiştirildiği ya da kesildiği durumlarda bunu açıkça belirtin.
+::: {.column width="46%"}
+- **Tabloda az satır:** yalnızca vurgulamak istedikleriniz
+- **Grafikte büyük punto:** arkadan okunmalı
+- **Tek mesaj:** her grafik tek karşılaştırma
+- **Vurgulama:** istediğiniz değeri belirtin
+- **Kaynak ve tarih:** grafiğin kaynağı ve tarihi
+:::
+
+::: {.column width="54%"}
+![](gorseller/diagram-grafik-sadelestirme.png)
+
+Eksenlerin değiştirildiği durumlarda bunu açıkça belirtin.
+:::
+
+::::
 
 # Etkili Sunum Teknikleri
 
@@ -204,18 +248,30 @@ Size ait grafiklerde eksenlerin değiştirildiği ya da kesildiği durumlarda bu
 
 ## Sunarken
 
+:::: {.columns}
+
+::: {.column width="56%"}
 - **Dinleyiciye bakın**, slayta değil
 - **Yavaş ve net** konuşun
 - **Sesiniz arka sıradan** duyulsun
 - **Slaytı okumayın**; notlarınızdan yararlanın
 - **Geçişleri planlayın:** "bir sonraki slaytta…"
+:::
+
+::: {.column width="44%"}
+![](gorseller/foto-sunum-salonu.jpg)
+
+*Bir derslikte sunum.*
+:::
+
+::::
 
 ## Soru-Cevap
 
 Soru-cevap genellikle sonda; gerektiğinde sunum sırasında da alınabilir.
 
 - **"Bilmiyorum" demekten çekinmeyin** — uydurmaktan iyidir
-- **Soruyu tekrar edin:** herkes duyar, siz düşünürsünüz
+- **Soruyu tekrar edin:** herkes duyar, düşünmek için zaman kazanırsınız
 - **Kısa yanıtlayın**
 
 ## Uzaktan Sunum
@@ -248,9 +304,9 @@ Paylaşmadan önce uygulamanın **erişilebilirlik denetleyicisini** çalıştı
 
 1. Kime, ne amaçla, ne kadar sürede? **Üç ana mesajı** yazın
 2. Açılış–gövde–kapanış planı yapın; başlıkları taslak olarak sıralayın
-3. Ana slayt/düzeni ve ekran oranını (16:9 veya 4:3) seçin; az metin, bir görsel, altyazı + alt metin
+3. Ana slayt/düzeni ve ekran oranını (çoğu ekranda 16:9) seçin; az metin, bir görsel, altyazı + alt metin
 4. Konuşmacı notlarını yazın; yüksek sesle, süre tutarak **prova** yapın
-5. **PDF**’e aktarın; asıl dosyayı ve videoyu ayrıca saklayın
+5. **PDF**'e aktarın; asıl dosyayı ve videoyu ayrıca saklayın
 
 Taslak için yapay zekâdan yararlanabilirsiniz; doğrulama sizde.
 
@@ -258,7 +314,7 @@ Notla değerlendirilmez.
 
 ## Özet
 
-- **Sunu yazılımı**: slayt, ana slayt, düzen, notlar
+- **Sunu yazılımı:** slayt, ana slayt, düzen, notlar
 - **`.pptx`/`.odp`** düzenlenebilir; **PDF** sabit görünüm, video yok
 - **Açılış – gövde – kapanış**: ~%10 – %80 – %10
 - **Az metin**, 6 madde, en az 24 punto

@@ -244,7 +244,7 @@ format:
 - Bu Haftanın Öğrenme Çıktıları
 - Sunu Yazılımı
   - Temel kavramlar ve arayüz
-  - Slayt düzeni ve ana slayt
+  - Slayt düzeni ve ana (asıl) slayt
   - Animasyon ve geçiş efektleri
   - Konuşmacı notları ve konuşmacı görünümü
   - Dosya biçimleri ve dışa aktarma

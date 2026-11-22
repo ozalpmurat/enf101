@@ -29,7 +29,7 @@ Slayt bir **vitrindir**, depo değil. Üzerinde anahtar kelimeler olur; ayrınt�
 - Sununun yapısını (açılış, gövde, kapanış) planlar.
 - Slaytta metin yoğunluğunu ve okunabilirliği ayarlar.
 - Görselleri telif kurallarına uygun biçimde kullanır.
-- Tasarım tutarlılığını sağlar; tablo ve grafiği slayda uygun biçimde yerleştirir.
+- Tasarım tutarlılığını sağlar; tablo ve grafiği slayta uygun biçimde yerleştirir.
 - Etkili bir sunum yapar; erişilebilir bir sunu hazırlar.
 
 # Sunu Yazılımı
@@ -41,19 +41,21 @@ Popüler sunu uygulamaları şunlardır:
 - **Google Slides (çevrimiçi):** Tarayıcıda çalışır; ücretsizdir ve ortak çalışmaya uygundur.
 - **LibreOffice Impress:** Bilgisayara kurulur; ücretsiz ve açık kaynaklıdır.
 - **Microsoft PowerPoint:** Microsoft'un ofis paketinde yer alır; yaygın ama ücretli ve kapalı kaynaklıdır.
-- **Apple Keynote:** Apple cihazlarda gelir; sade arayüzüyle öne çıkar.
+- **Apple Keynote:** Apple cihazlarla birlikte gelir; sade arayüzüyle öne çıkar.
 - **Prezi (çevrimiçi):** Doğrusal olmayan, yakınlaştırmalı bir tuval kullanır; sunum akışını farklı kurar.
 - **Canva (çevrimiçi):** Hazır şablonlar ve sürükle-bırak tasarım sunar; ücretsiz sürümü vardır.
 
+Son yıllarda **yapay zekâ destekli sunu araçları** da yaygınlaştı (ör. **Gamma**, **Canva AI**, **Microsoft Copilot**). Bir konu başlığından slayt taslağı, düzen ve görsel önerisi üretebilirler; ancak üretilen metni, sayıları ve kaynakları doğrulamak yine size kalır. Bu araçlar 13. haftada ayrıntılı ele alınacaktır.
+
 Menü adları ve yerleri değişse de slayt, düzen, not ve sunu kavramları hepsinde vardır.
 
-Sunu uygulamaları iki biçimde kullanılır: **masaüstü** (bilgisayara kurulur) ve **çevrimiçi** (tarayıcıda çalışır). İkisi de benzer temel işlevleri sunar; farklar erişim, işbirliği ve dosyanın nerede tutulduğuyla ilgilidir.
+Sunu uygulamaları iki biçimde kullanılır: **masaüstü** (bilgisayara kurulur) veya **çevrimiçi** (tarayıcıda çalışır). İkisi de benzer temel işlevleri sunar; farklar erişim, işbirliği ve dosyanın nerede tutulduğuyla ilgilidir.
 
 ```{=latex}
 \begin{center}
 \setlength{\arrayrulewidth}{0.3pt}%
 \renewcommand{\arraystretch}{1.15}%
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{5.4cm}>{\raggedright\arraybackslash}p{5.4cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}p{6.6cm}@{}}
 \toprule
  & \textbf{Masaüstü sürüm} & \textbf{Çevrimiçi sürüm}\\
 \midrule
@@ -71,7 +73,7 @@ Verinin yeri & Kendi bilgisayarınız & Hizmeti sunan şirketin sunucuları\\
 
 ## Temel kavramlar ve arayüz
 
-![Google Slides: slayt küçük resimleri paneli, çalışma alanı, yer tutucu ve düzen menüsü](gorseller/ekran-google-slides-kavramlar.jpg){width=90%}
+![Google Slides: slayt küçük resimleri paneli, çalışma alanı, yer tutucu ve düzen menüsü](gorseller/ekran-google-slides-kavramlar.png){width=90%}
 
 ```{=latex}
 \begin{center}
@@ -85,7 +87,7 @@ Slayt & Sununun tek bir ekranı\\
 Çalışma alanı & Slaytın üzerinde tasarım yapılan alan\\
 Düzen & Başlık + içerik, iki sütun gibi hazır yerleşim\\
 Yer tutucu & Metin, görsel veya tablo için ayrılmış alan\\
-Ana slayt & Bütün slaytların ortak yazı tipi, renk ve logosunu belirleyen katman\\
+Ana (asıl) slayt & Bütün slaytların ortak yazı tipi, renk ve logosunu belirleyen katman\\
 Konuşmacı notu & Slaytta görünmeyen, konuşmacının kendisine ayırdığı ayrıntı\\
 Konuşmacı görünümü & Sıradaki slaytı, notları ve süreyi gösteren ikinci ekran\\
 \bottomrule
@@ -95,28 +97,32 @@ Konuşmacı görünümü & Sıradaki slaytı, notları ve süreyi gösteren ikin
 
 Çoğu uygulamada slayt paneli solda, çalışma alanı ortada, düzen/özellikler paneli sağda; konuşmacı notları slaytın altında yer alır.
 
-## Slayt düzeni ve ana slayt
+## Slayt düzeni ve ana (asıl) slayt
 
-![PowerPoint: Ana Slayt görünümü; ortak başlık, metin ve alt bilgi yer tutucuları](gorseller/ekran-powerpoint-ana-slayt.png){width=90%}
+![PowerPoint: Asıl Slayt görünümü; ortak başlık, metin ve alt bilgi yer tutucuları](gorseller/ekran-powerpoint-ana-slayt.png){width=90%}
 
-**Ana slayt** (asıl slayt, master slide) ve **düzen**, sununun görsel omurgasıdır. Ana slaytta yazı tipi, renk, logo ve alt bilgi bir kez ayarlanır; böylece her slaytta aynı görünüm korunur. Bu, 7. haftadaki **stillerle** aynı mantıktır: bir kez ayarlanır, bütün slaytlara uygulanır. Yeni bir sunu oluştururken hazır **şablonlardan** da yararlanabilirsiniz; sunu uygulamalarıyla birlikte gelen şablonlar renk, yazı tipi ve düzeni birlikte getirir. **16:9** oranı çoğu ekran için uygundur; sunum yapılacak ortamdaki ekranın veya perdenin oranı farklıysa **4:3** de kullanılabilir.
+**Ana (asıl) slayt** (master slide) ve **düzen**, sununun görsel omurgasıdır. Ana slaytta yazı tipi, renk, logo ve alt bilgi bir kez ayarlanır; böylece her slaytta aynı görünüm korunur. Bu, 7. haftadaki **stillerle** aynı mantıktır: bir kez ayarlanır, bütün slaytlara uygulanır. Yeni bir sunu oluştururken hazır **şablonlardan** da yararlanabilirsiniz; sunu uygulamalarıyla birlikte gelen şablonlar renk, yazı tipi ve düzeni birlikte getirir.
 
-![Aynı yükseklikte 4:3 ve 16:9 ekran oranları; 16:9 daha geniştir](gorseller/diagram-ekran-oranlari.png){width=72%}
+Günümüzde ekranların ve projeksiyon cihazlarının çoğu **16:9** (geniş ekran) oranındadır; bu yüzden **16:9** varsayılan seçimdir. **4:3** ise yalnızca eski bir perde veya cihazla uyumluluk gerektiğinde kullanılır.
+
+![Aynı yükseklikte 4:3 ve 16:9 ekran oranları; 16:9 daha geniştir](gorseller/diagram-ekran-oranlari.png){width=64%}
 
 ## Animasyon ve geçiş efektleri
 
-- **Animasyon:** Slayttaki bir öğeyi (metin, görsel) belirli bir sırayla göstermek veya vurgulamak için kullanılır.
+- **Animasyon:** Bir slayttaki öğeleri (metin, görsel) belirli bir sırayla göstermek veya vurgulamak için kullanılır.
 - **Geçiş efekti:** Bir slayttan sonrakine geçerken kullanılan görsel efektir.
 
-Abartılı efektler dinleyicinin dikkatini dağıtır. Animasyon ve geçiş efektleri PDF’e aktarıldığında çalışmaz.
+Abartılı efektler dinleyicinin dikkatini dağıtır. Animasyon ve geçiş efektleri PDF'e aktarıldığında çalışmaz.
 
-![Google Slides: Slayt Geçişi ve Nesne Animasyonları panelleri](gorseller/ekran-google-slides-animasyon.jpg){width=90%}
+![Google Slides: Slayt Geçişi ve Nesne Animasyonları panelleri](gorseller/ekran-google-slides-animasyon.png){width=90%}
 
 ## Konuşmacı notları ve konuşmacı görünümü
 
-**Konuşmacı notu**, slaytta yazmayan ayrıntıyı saklar. **Konuşmacı görünümü** ise sunum sırasında sıradaki slaytı, notları ve geçen süreyi gösterir; genellikle ikinci bir ekran gerektirir. Bu sayede kendi ekranınızda konuşmacı notlarını yalnızca siz görürsünüz; perdede ise normal slayt görünür. İki ekran kullanıldığında kendi ekranınızda aşağıdakine benzer bir görünüm olur.
+**Konuşmacı notu**, sunu gösteriminde görülmeyecek olan ayrıntıyı saklar. **Konuşmacı görünümü** ise sunum sırasında sıradaki slaytı, notları ve geçen süreyi gösterir; genellikle ikinci bir ekran gerektirir. Bu sayede kendi ekranınızda konuşmacı notlarını yalnızca siz görürsünüz; perdede ise normal slayt görünür. İki ekran kullanıldığında kendi ekranınızda aşağıdakine benzer bir görünüm olur.
 
-![Konuşmacı görünümü: aktif slayt, sonraki slayt, konuşmacı notları ve kontrol düğmeleri](gorseller/ekran-konusmaci-gorunumu.jpg){width=90%}
+![Konuşmacı görünümü: aktif slayt, sonraki slayt, konuşmacı notları ve kontrol düğmeleri](gorseller/ekran-konusmaci-gorunumu.png){width=90%}
+
+Şekil 5'te konuşmacı görünümü gösterilmiştir. Görselde "Aktif Slayt" olarak görülen kısım, sunu sırasında perdede görülen kısımdır. Dinleyiciler perdede yalnızca aktif slaytı görür. Konuşmacı görünümünde ise aktif slaytın yanı sıra sonraki slaytın küçük görünümü, konuşmacı notları ve gösterim kontrol düğmeleri gibi özellikler bulunabilir.
 
 ## Dosya biçimleri ve dışa aktarma
 
@@ -126,7 +132,7 @@ Sununun düzenlenebilir dosyası ile paylaşılan kopyası aynı şey değildir.
 - **`.odp`:** LibreOffice gibi açık kaynak paketlerin biçimi. Her uygulama tam desteklemeyebilir.
 - **`.pdf`:** Görünümü sabitler; teslim ve yedek için uygundur. Video, animasyon ve geçiş efektleri çalışmaz.
 
-Düzenlemeye devam edecekseniz `.pptx` ya da `.odp`; karşı tarafa gönderecekseniz **PDF** uygun olur. PDF, yazı tiplerini büyük ölçüde gömer ve slaytların görünümünü korur; ancak **video, animasyon ve geçiş efektlerini taşımaz.** Sunuda video varsa asıl dosyayı ve videoyu ayrıca yanınızda bulundurun.
+Düzenlemeye devam edecekseniz `.pptx` ya da `.odp`; karşı tarafa gönderecekseniz **PDF** uygun olur. PDF, yazı tiplerini büyük ölçüde belgeye gömer (dahil eder) ve slaytların görünümünü korur; ancak **video, animasyon ve geçiş efektlerini taşımaz.** Çoğu durumda sunu gösterimi doğrudan PDF belgesinden de yapılabilir. Sunuda video varsa asıl dosyayı ve videoyu ayrıca yanınızda bulundurun.
 
 Sunuyu hazırladıktan sonra başka bir bilgisayarda açıp prova yapın; yazı tipleri, görseller ve videolar beklediğiniz gibi görünmüyorsa düzeltin.
 
@@ -141,9 +147,11 @@ Bir sunuyu baştan sona oluştururken şu adımları izleyin; ayrıntılar yukar
 5. **Konuşmacı notlarını** yazın; **konuşmacı görünümünü** deneyin.
 6. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
 
+![Bir sununun oluşturulma adımları](gorseller/diagram-sunum-olusturma.png){width=88%}
+
 # Sununun Yapısı
 
-Bu bölümde **süre** ile, sunum sırasında sunuya ayrılan zamanı kastediyoruz.
+Bu bölümde **süre** kavramı, sunum boyunca sunuya (sunu gösterimine) ayrılan zamanı ifade etmektedir.
 
 ```{=latex}
 \needspace{8\baselineskip}
@@ -185,7 +193,7 @@ Ders sunularımızda olduğu gibi, kısa sunularda açılış ve kapanış birer
 
 ## Açılış
 
-Sununun ilk slaytlarında **bugün ne anlatacağınızı** söyleyin; doğrudan ayrıntıya girmeyin. İyi bir açılış konuyu tanıtır, **neden önemli olduğunu** söyler ve genellikle bir soru ya da çarpıcı bir veriyle başlar. Kendini tanıtmakla sınırlı kalan bir giriş, dinleyicinin ilgisini toplamaya yetmez.
+Sununun ilk slaytlarında **bugün ne anlatacağınızı** söyleyin; doğrudan ayrıntıya girmeyin. İyi bir açılış konuyu tanıtır, **neden önemli olduğunu** söyler ve genellikle bir soru ya da çarpıcı bir veriyle başlar. Kendini tanıtmakla sınırlı kalan bir giriş, dinleyicinin ilgisini toplamaya yetmez. Açılışta ayrıca akışa dair beklenti de kurulabilir: soruları sunum sırasında mı yoksa sonunda mı alacağınızı ve sunu belgesini dinleyicilerle paylaşıp paylaşmayacağınızı belirtmek, dinleyicinin ne olacağını bilmesini sağlar.
 
 ## Gövde
 
@@ -209,10 +217,14 @@ Bir slaytta uyulacak basit kurallar:
 - **Punto büyük olsun:** gövde metni için 24 punto iyi bir alt sınırdır; başlık daha büyük olmalı. Salon büyüdükçe puntoyu artırın.
 - **Sade ve sakin olun:** Boşluk bırakın; hareketli efekt ve ses yerine durağan slaytları tercih edin.
 
+```{=latex}
+\needspace{13\baselineskip}
+```
+
 ::: {.callout-warning}
 ## Slaytı okumayın
 
-Slaytta yazanı kelimesi kelimesine okumak, sunumda sık yapılan bir hatadır. Dinleyici zaten okuyabiliyor. Konuşmacının işi **okunanı açıklamak**, tekrar etmek değil. Konuşmacı notlarınızdan veya elinizdeki kısa notlardan yararlanabilirsiniz.
+Slaytta yazanı kelimesi kelimesine okumak, sunumda sık yapılan bir hatadır. Dinleyici zaten okuyabiliyor. Konuşmacının işi **açıklamak**, slayttakini tekrar etmek değil. Konuşmacı notlarınızdan veya elinizdeki kısa notlardan yararlanabilirsiniz.
 
 **Pratik ölçü:** Slaytı, üzerindeki yazıyı okumadan anlatabiliyor musunuz? Cevap "hayır" ise slaytta fazla yazı var demektir.
 :::
@@ -221,7 +233,7 @@ Slaytta yazanı kelimesi kelimesine okumak, sunumda sık yapılan bir hatadır. 
 
 Tutarlılık, profesyonel görünümün temelidir:
 
-- **Renk paleti:** En fazla iki üç renk. Kurumsal renk varsa ona sadık kalın.
+- **Renk paleti:** En fazla iki-üç renk. Kurumsal renk varsa ona sadık kalın.
 - **Yazı tipi:** Tüm slaytlarda aynı yazı tipi ve punto düzeni.
 - **Yerleşim:** Başlık hep aynı yerde, gövde hep aynı hizada.
 - **Slayt numarası:** Her slaytta numara ve toplam sayı görünsün (ör. 4 / 12); izleyici nerede olduğunu ve ne kadar kaldığını bilir.
@@ -272,20 +284,24 @@ Geçen hafta gördüğümüz **yanıltıcı grafikler** konusunu hatırlayın. S
 
 Slayt hazırlamak işin yarısıdır; sunmak diğer yarısı.
 
+::: {#fig-sunum-donanim layout-ncol=2}
+![Projeksiyon cihazı](gorseller/foto-projeksiyon.jpg){height=4.2cm}
+
+![Yaka mikrofonu](gorseller/foto-mikrofon.jpg){height=4.2cm}
+
+Sunum için kullanılan projeksiyon ve mikrofon cihazları.
+:::
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 ## Sunmadan önce
 
 - **Prova yapın.** Yüksek sesle, ayakta, süre tutarak.
 - **Süreyi ölçün.** Verilen süreyi aşmak, sunumda sık karşılaşılan bir hatadır.
-- **Teknik kontrol yapın.** Projeksiyon, ses, dosya biçimi ve 4:3/16:9 oranı — önceden deneyin.
-- **Yedek kopya taşıyın.** PDF’in yanında asıl dosyayı da bulundurun; PDF video ve animasyonları taşımaz.
-
-::: {#fig-sunum-donanim layout-ncol=2}
-![Projeksiyon cihazı](gorseller/foto-projeksiyon.jpg){width=90%}
-
-![Yaka mikrofonu](gorseller/foto-mikrofon.jpg){width=90%}
-
-Sunum için kullanılan projeksiyon ve mikrofon cihazları.
-:::
+- **Teknik kontrol yapın.** Projeksiyon, ses, dosya biçimi ve ekran oranı — önceden deneyin.
+- **Yedek kopya taşıyın.** PDF'in yanında asıl dosyayı da bulundurun; PDF video ve animasyonları taşımaz.
 
 ## Sunarken
 
@@ -350,11 +366,11 @@ Birçok sunu uygulamasında **erişilebilirlik denetleyicisi** vardır; sunuyu p
 
 2. **Yapıyı kurun.** Açılış, gövde ve kapanış için kaçar slayt kullanacağınızı planlayın. Sunuda kullanacağınız başlıkları taslak olarak sıralayın; hangi akışı izleyeceğinizi yazın. Kapanışta ne söyleyeceğinizi şimdiden yazın.
 
-3. **Slaytları hazırlayın.** Bir **ana slayt** ve **düzen** seçin. Ekran oranını ortama göre belirleyin; çoğu ekran için 16:9, bazı ekranlarda 4:3 uygundur. Her slaytta en fazla altı madde ve az metin kullanın. Bir görsel ekleyin — lisansı uygun olan. Görsele altyazı ve alternatif metin yazın.
+3. **Slaytları hazırlayın.** Bir **ana slayt** ve **düzen** seçin. Ekran oranını ortama göre belirleyin; çoğu ekran için 16:9 uygundur, 4:3 yalnızca eski cihazlarla uyumluluk içindir. Her slaytta en fazla altı madde ve az metin kullanın. Bir görsel ekleyin — lisansı uygun olan. Görsele altyazı ve alternatif metin yazın.
 
 4. **Notları yazın ve prova yapın.** Konuşmacı notlarını yazın; konuşmacı görünümünü deneyin. Sunumu yüksek sesle, süre tutarak bir kez baştan sona anlatın. Nerede takıldınız?
 
-5. **Dışa aktarın ve kontrol edin.** Sunuyu **PDF** olarak dışa aktarın; asıl dosyayı da saklayın. Videolu bir sunudaysanız videoyu ayrıca taşıyın. PDF’i başka bir cihazda açıp yazı tiplerinin ve görsellerin yerinde olduğunu kontrol edin.
+5. **Dışa aktarın ve kontrol edin.** Sunuyu **PDF** olarak dışa aktarın; asıl dosyayı da saklayın. Sunuda video varsa videoyu ayrıca taşıyın. PDF'i başka bir cihazda açıp yazı tiplerinin ve görsellerin yerinde olduğunu kontrol edin.
 
 Bu uygulama notla değerlendirilmez. Teslimden önce kime, ne amaçla ve ne kadar sürede sunacağınızı; üç ana mesajı; altı madde sınırını; görselin lisansını ve alternatif metnini; PDF ile asıl dosyanın yedeğini kontrol edin.
 
@@ -362,22 +378,22 @@ Bu uygulama notla değerlendirilmez. Teslimden önce kime, ne amaçla ve ne kada
 
 - **Sunu yazılımı**, slaytları hazırlayıp sırayla gösteren uygulama yazılımıdır; **ana slayt** ve **düzen** ortak görünümü kurar.
 - **`.pptx` ve `.odp`** düzenlenebilir; **`.pdf`** görünümü sabitler ama video, animasyon ve geçiş efektlerini taşımaz.
-- Sunu **açılış, gövde ve kapanış**tan oluşur; paylar yaklaşık %10 – %80 – %10’dur.
+- Sunu **açılış, gövde ve kapanış**tan oluşur; paylar yaklaşık %10 – %80 – %10'dur.
 - Slaytta **az metin, anahtar kelime ve en fazla altı madde** kullanılır; gövde metni en az 24 punto olmalıdır.
 - Görsellerin **lisansı** kontrol edilir; kaynak göstermek tek başına kullanım hakkı vermez.
-- Tablo ve grafikler **basitleştirilir**; sütun grafiğinde özel bir neden yoksa eksen sıfırdan başlar.
+- Tablo ve grafikler **basitleştirilir**; eksenlerin değiştirildiği durumlar açıkça belirtilir.
 - **Prova** ve **uzaktan hazırlık**: yüksek sesle prova, ses, bildirim ve yedek bağlantı.
 
 # Kendini Sınama Soruları
 
 1. Sunu yazılımında **ana slayt** ve **düzen** ne işe yarar?
 2. `.pptx`, `.odp` ve `.pdf` arasındaki fark nedir; hangi durumda hangisi kullanılır?
-3. PDF’e aktarılan bir sunuda hangi öğeler çalışmaz?
+3. PDF'e aktarılan bir sunuda hangi öğeler çalışmaz?
 4. Bir sununun üç bölümü ve yaklaşık süre payları nedir?
 5. Slaytta metin yoğunluğu için hangi pratik ölçü kullanılabilir?
 6. Creative Commons lisanslı bir görseli kullanırken ne yapmak gerekir?
 7. Kaynak göstermek neden telif sorununu tek başına çözmez?
-8. Sunum öncesi yapılması gereken üç hazırlık nedir?
+8. Sunum öncesi yapılması gereken hazırlıklardan üçünü yazın.
 9. Uzaktan sunumda sesin ve bağlantının sorunsuz olması için üç önlem yazın.
 10. Soru-cevap bölümünde bilmediğiniz bir soru gelirse ne yapmalısınız?
 
@@ -395,6 +411,6 @@ Bu uygulama notla değerlendirilmez. Teslimden önce kime, ne amaçla ve ne kada
   (help.libreoffice.org)
 - **Google Slides Yardım** — sunu oluşturma, erişilebilirlik ve dışa aktarma.\
   (support.google.com/docs)
-- **Görsel kaynakları:** Projeksiyon cihazı — *InFocus IN34*, Dave Pape, kamu malı. Yaka mikrofonu — *Technology-g9f60c2df6 1920*, Florian-Media, CC0. Bu haftanın şemaları ve ekran görüntüsü yer tutucuları bu ders için hazırlanmıştır. Google Slides arayüzü ve animasyon paneli görselleri Google Slides uygulamasından, PowerPoint ana slayt görünümü Microsoft PowerPoint uygulamasından alınmış ve bu ders için etiketlenmiştir. Konuşmacı görünümü görseli bir sunu uygulamasından alınmış ve bu ders için etiketlenmiştir; diğer ekran görüntüleri eklendiğinde künye güncellenecektir.
+- **Görsel kaynakları:** Projeksiyon cihazı — *InFocus IN34*, Dave Pape, kamu malı. Yaka mikrofonu — *Technology-g9f60c2df6 1920*, Florian-Media, CC0 (Wikimedia Commons). Derslik — *BI Norwegian Business School Auditorium*, Johannessorger, CC BY-SA 4.0. Bu haftanın şemaları bu ders için hazırlanmıştır. Google Slides arayüzü ve animasyon paneli görselleri Google Slides uygulamasından, PowerPoint asıl slayt görünümü Microsoft PowerPoint uygulamasından, konuşmacı görünümü görseli bir sunu uygulamasından alınmış ve bu ders için etiketlenmiştir.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
