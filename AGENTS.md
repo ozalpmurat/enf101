@@ -91,7 +91,7 @@ hafta-03-yazilim-isletim-sistemleri` çalışmaz.
 Tam projeyi tek komutta derlemek 3 dakikayı aştığı için uzun işlerde hafta hafta derlemek gerekir.
 
 **Önerilen yol: `araclar/derle.sh`.** Yukarıdaki komutlar yerine bu sarmalayıcı kullanılabilir; çalışma
-ağacına geçici `.tex/.aux/.log/.out` bırakmaz ve ders notlarında altbilgiyi garanti eder:
+ağacına geçici `.tex/.aux/.log/.out/.toc` bırakmaz ve ders notlarında altbilgiyi garanti eder:
 
 ```bash
 bash araclar/derle.sh hafta-03-yazilim-isletim-sistemleri   # klasördeki bütün .qmd

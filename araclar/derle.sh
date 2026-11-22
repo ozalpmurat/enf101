@@ -21,7 +21,7 @@
 #   bash araclar/derle.sh .                 # bütün depo
 #
 # Gereksinimler: quarto, xelatex (TinyTeX), pdfinfo ve pdftotext (poppler-utils).
-# Üretilen .tex/.aux/.log/.out dosyaları iş bitince silinir (.gitignore'da da yok sayılır).
+# Üretilen .tex/.aux/.log/.out/.toc dosyaları iş bitince silinir (.gitignore'da da yok sayılır).
 # ===============================================================
 set -euo pipefail
 
