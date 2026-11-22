@@ -96,7 +96,7 @@ for qmd in "${hedefler[@]}"; do
     fi
   fi
 
-  rm -f "$tex" "$dizin/$taban.aux" "$dizin/$taban.log" "$dizin/$taban.out"
+  rm -f "$tex" "$dizin/$taban.aux" "$dizin/$taban.log" "$dizin/$taban.out" "$dizin/$taban.toc"
 done
 
 echo "bitti."
