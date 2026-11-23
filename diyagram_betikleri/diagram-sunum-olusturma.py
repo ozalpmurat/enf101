@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Bir sunuyu baştan sona oluşturmanın altı adımını gösteren akış şeması.
+"""Bir sunuyu baştan sona oluşturmanın dört adımını gösteren akış şeması.
 
 Çıktı: hafta-09-sunum-uygulamalari/gorseller/diagram-sunum-olusturma.png
 
 Şemaya başlık gömülmez; başlık ders notunda şekil altyazısı, sunumda slayt
 başlığıdır. Adımlar ders notundaki "Bir sunuyu baştan sona oluşturma" listesiyle
-birebir aynıdır; akış iki satırda yılan biçiminde ilerler (1-2-3, sonra 4-5-6
-sağdan sola).
+birebir aynıdır; akış iki satırda yılan biçiminde ilerler (1-2 üstte soldan sağa,
+sonra 3-4 altta sağdan sola).
 
 Kullanım:
     python3 diyagram_betikleri/diagram-sunum-olusturma.py
@@ -31,26 +31,22 @@ ACIK = "#EDF2F9"
 GRI = "#595959"
 
 ADIMLAR = [
-    "Uygulamayı aç,\nboş sunu",
-    "Ekran oranını\nseç (16:9)",
-    "Tema, ana slayt,\ndüzen seç",
+    "Uygulamayı aç,\nhazır şablon seç",
     "Slayt ekle,\ndoldur",
     "Notları yaz,\nprova yap",
     "Göster, PDF\nolarak ver",
 ]
 
 # Kart konumları: ilk satır soldan sağa, ikinci satır sağdan sola (yılan).
-X = [0.7, 6.5, 12.3]
-Y1, Y2 = 4.5, 0.8
-W, H, BANT = 5.0, 3.0, 0.9
+X = [0.9, 7.5]
+Y1, Y2 = 4.3, 0.7
+W, H, BANT = 5.6, 3.0, 0.9
 
 YER = {
     1: (X[0], Y1),
     2: (X[1], Y1),
-    3: (X[2], Y1),
-    4: (X[2], Y2),
-    5: (X[1], Y2),
-    6: (X[0], Y2),
+    3: (X[1], Y2),
+    4: (X[0], Y2),
 }
 
 
@@ -114,10 +110,10 @@ def ok(ax, p0, p1):
 
 
 def ciz():
-    fig = plt.figure(figsize=(18 / 2.54, 8.1 / 2.54), dpi=200)
+    fig = plt.figure(figsize=(13.6 / 2.54, 7.9 / 2.54), dpi=200)
     ax = fig.add_axes([0, 0, 1, 1])
-    ax.set_xlim(0, 18)
-    ax.set_ylim(0, 8.1)
+    ax.set_xlim(0, 13.6)
+    ax.set_ylim(0, 7.9)
     ax.axis("off")
 
     gruplar = []
@@ -128,9 +124,7 @@ def ciz():
     orta1 = Y1 + H / 2
     orta2 = Y2 + H / 2
     ok(ax, (X[0] + W + 0.05, orta1), (X[1] - 0.05, orta1))
-    ok(ax, (X[1] + W + 0.05, orta1), (X[2] - 0.05, orta1))
-    ok(ax, (X[2] + W / 2, Y1 - 0.05), (X[2] + W / 2, Y2 + H + 0.05))
-    ok(ax, (X[2] - 0.05, orta2), (X[1] + W + 0.05, orta2))
+    ok(ax, (X[1] + W / 2, Y1 - 0.05), (X[1] + W / 2, Y2 + H + 0.05))
     ok(ax, (X[1] - 0.05, orta2), (X[0] + W + 0.05, orta2))
 
     return fig, gruplar

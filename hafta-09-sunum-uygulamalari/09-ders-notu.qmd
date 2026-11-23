@@ -118,7 +118,7 @@ Abartılı efektler dinleyicinin dikkatini dağıtır. Animasyon ve geçiş efek
 
 ## Konuşmacı notları ve konuşmacı görünümü
 
-**Konuşmacı notu**, sunu gösteriminde görülmeyecek olan ayrıntıyı saklar. **Konuşmacı görünümü** ise sunum sırasında sıradaki slaytı, notları ve geçen süreyi gösterir; genellikle ikinci bir ekran gerektirir. Bu sayede kendi ekranınızda konuşmacı notlarını yalnızca siz görürsünüz; perdede ise normal slayt görünür. İki ekran kullanıldığında kendi ekranınızda aşağıdakine benzer bir görünüm olur.
+**Konuşmacı notu**, sunu gösteriminde görülmeyecek olan ayrıntıyı saklar. **Konuşmacı görünümü** ise sunum sırasında sıradaki slaytı, notları ve geçen süreyi gösterir; genellikle ikinci bir ekran gerektirir. Bu sayede kendi ekranınızda konuşmacı notlarını yalnızca siz görürsünüz; perdede ise normal slayt görünür. Bu özellik her sunu uygulamasında bulunmayabilir; bulunduğunda da görünümü uygulamaya göre değişebilir. İki ekran kullanıldığında kendi ekranınızda aşağıdakine benzer bir görünüm olur.
 
 ![Konuşmacı görünümü: aktif slayt, sonraki slayt, konuşmacı notları ve kontrol düğmeleri](gorseller/ekran-konusmaci-gorunumu.png){width=90%}
 
@@ -140,12 +140,10 @@ Sunuyu hazırladıktan sonra başka bir bilgisayarda açıp prova yapın; yazı 
 
 Bir sunuyu baştan sona oluştururken şu adımları izleyin; ayrıntılar yukarıdaki başlıklarda.
 
-1. Uygulamayı açın; boş bir sunu oluşturun.
-2. Ekran oranını seçin: çoğu ekran için **16:9**, bazı ekranlarda **4:3**.
-3. Bir **tema**, **ana slayt** ve **düzen** seçin; hazır **şablonlardan** yararlanın.
-4. Slayt ekleyin; başlık ve içerik yer tutucularını doldurun.
-5. **Konuşmacı notlarını** yazın; **konuşmacı görünümünü** deneyin.
-6. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
+1. Uygulamayı açın; **uygulamayla birlikte gelen hazır bir şablon** seçin (ya da boş bir sunu oluşturun). Tema, ana slayt ve düzen şablonla birlikte gelir.
+2. Slayt ekleyin; başlık ve içerik yer tutucularını doldurun.
+3. **Konuşmacı notlarını** yazın; **konuşmacı görünümünü** deneyin.
+4. Slayt gösterisini başlatın; sunuyu **PDF** olarak dışa aktarın.
 
 ![Bir sununun oluşturulma adımları](gorseller/diagram-sunum-olusturma.png){width=88%}
 
@@ -356,7 +354,7 @@ Sununuz hem paylaşıldığında okunabilmeli hem de sunum sırasında izlenebil
 - **Videolara altyazı ekleyin.**
 - **Animasyonu azaltın:** Hareket, bazı dinleyiciler için dikkat dağıtıcı olabilir.
 
-Birçok sunu uygulamasında **erişilebilirlik denetleyicisi** vardır; sunuyu paylaşmadan önce çalıştırabilirsiniz.
+Kullanılan sunu uygulamasında bu özellik varsa, sunuyu paylaşmadan önce **erişilebilirlik denetleyicisini** çalıştırabilirsiniz.
 
 # Uygulama: Kısa Bir Sunu Hazırlayın
 
@@ -382,7 +380,7 @@ Bu uygulama notla değerlendirilmez. Teslimden önce kime, ne amaçla ve ne kada
 - Slaytta **az metin, anahtar kelime ve en fazla altı madde** kullanılır; gövde metni en az 24 punto olmalıdır.
 - Görsellerin **lisansı** kontrol edilir; kaynak göstermek tek başına kullanım hakkı vermez.
 - Tablo ve grafikler **basitleştirilir**; eksenlerin değiştirildiği durumlar açıkça belirtilir.
-- **Prova** ve **uzaktan hazırlık**: yüksek sesle prova, ses, bildirim ve yedek bağlantı.
+- **Prova** ve **çevrimiçi sunuma hazırlık**: yüksek sesle prova, ses, bildirim ve yedek bağlantı.
 
 # Kendini Sınama Soruları
 

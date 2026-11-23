@@ -25,10 +25,10 @@ Sunu yazılımı, slaytları hazırlayıp sırayla göstermek için kullanılan 
 :::: {.columns}
 
 ::: {.column width="40%"}
-- **Slayt:** tek ekran; **çalışma alanı:** tasarım alanı
-- **Düzen / yer tutucu:** hazır yerleşim, boş alan
-- **Ana (asıl) slayt:** ortak yazı tipi, renk, logo
-- **Konuşmacı notu:** perdede çıkmaz, yalnızca siz görürsünüz
+- **Slayt:** sununun tek ekranı
+- **Çalışma alanı:** slaytı tasarladığınız alan
+- **Düzen:** başlık + içerik gibi hazır yerleşim
+- **Yer tutucu:** metin veya görsel için boş alan
 :::
 
 ::: {.column width="60%"}
@@ -105,6 +105,8 @@ Abartılı efektler dikkati dağıtır; **ölçülü** kullanın.
 Sunum sırasında **sıradaki slaytı**, **notları** ve **geçen süreyi** gösterir.
 
 Genellikle **ikinci bir ekran** gerektirir; notları yalnızca siz görürsünüz.
+
+Bu özellik her uygulamada bulunmayabilir; bulunduğunda da görünümü uygulamaya göre değişir.
 :::
 
 ::::
@@ -294,7 +296,7 @@ Google Meet, Zoom, Microsoft Teams gibi platformlarda:
 - **Renk:** yalnızca renkle anlatmayın
 - **Video ve hareket:** altyazı, animasyonu azaltın
 
-Paylaşmadan önce uygulamanın **erişilebilirlik denetleyicisini** çalıştırabilirsiniz.
+Kullanılan sunu uygulamasında bu özellik varsa, paylaşmadan önce **erişilebilirlik denetleyicisini** çalıştırabilirsiniz.
 
 # Kapanış
 
@@ -319,7 +321,7 @@ Notla değerlendirilmez.
 - **Açılış – gövde – kapanış**: ~%10 – %80 – %10
 - **Az metin**, 6 madde, en az 24 punto
 - Görsellerde **lisans**; kaynak göstermek yetmez
-- Tablo/grafik sade; **prova**, yedek ve uzaktan hazırlık
+- Tablo/grafik sade; **prova**, yedek ve **çevrimiçi sunuma hazırlık**
 
 ## Gelecek Hafta
 
