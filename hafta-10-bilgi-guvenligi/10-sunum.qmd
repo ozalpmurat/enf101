@@ -13,7 +13,7 @@ format: beamer
 - Güçlü parola oluşturur, parola yöneticisi kullanır.
 - Çok adımlı doğrulamanın (MFA) önemini açıklar.
 - Oltalama saldırılarını tanır.
-- Zararlı yazılım türlerini bilir.
+- Zararlı yazılımların yaygın davranışlarını bilir.
 - Güncelleme ve yedekleme alışkanlığı geliştirir.
 
 # Güvenliğin Üç Temeli
@@ -160,27 +160,11 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 
 # Zararlı Yazılımlar
 
-## Türler
+## Yaygın Davranışlar
 
-::: {.columns}
-::: {.column width="54%"}
+![](gorseller/diagram-zararli.png){width=84%}
 
-![](gorseller/diagram-zararli.png)
-
-:::
-
-::: {.column width="42%"}
-
-| Tür | Ne yapar |
-|:---|:---|
-| Virüs | Dosyayla yayılır |
-| Truva atı | Arka kapı açar |
-| Fidye yazılımı | Dosyaları şifreler |
-| Casus yazılım | İzler, bilgi toplar |
-| Solucan | Kendiliğinden yayılır |
-
-:::
-:::
+Bu adlar kesin türler değil, **davranışlardır**; bir yazılım birkaçını birlikte gösterebilir.
 
 ## Zombi Bilgisayarlar
 

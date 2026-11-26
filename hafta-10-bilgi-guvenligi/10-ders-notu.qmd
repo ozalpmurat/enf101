@@ -27,7 +27,7 @@ Güvenlikte en zayıf halka teknoloji değil, **insandır**. Sistemleri kırmak 
 - Güçlü parola oluşturur ve parola yöneticisi kullanır.
 - Çok adımlı doğrulamayı (MFA) ve en yaygın biçimi olan iki adımlı doğrulamayı (2FA) açıklar.
 - Oltalama saldırılarını tanır ve doğru davranır.
-- Zararlı yazılım türlerini ve bulaşma yollarını bilir.
+- Zararlı yazılımların yaygın davranışlarını ve bulaşma yollarını bilir.
 - Güncelleme ve yedekleme alışkanlığı geliştirir.
 - Cihaz ve hesap güvenliği için doğru ayarları uygular.
 
@@ -55,7 +55,7 @@ Parola, hesabınızın kapısıdır. Ne var ki çoğu kişi aynı parolayı bird
 Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise verinin okunamaz hâle getirilmesidir; şifreli bir ZIP dosyası ya da `https` bağlantısı gibi şeyler şifreleme ile korunur. Günlük dilde ikisine de "şifre" dendiği sıkça görülmektedir. Ders notlarımızda; erişim için **parola**, verinin karmaşıklaştırılarak korunması için **şifreleme** kelimeleri kullanılır.
 :::
 
-![Açık anahtarlı şifreleme: mesaj, alıcının açık anahtarıyla şifrelenir ve yalnızca alıcının özel anahtarıyla çözülür.](gorseller/diagram-sifreleme.png){width=92%}
+![Şifreleme: mesaj iletilirken anahtarla okunamaz hâle getirilir; mesajı yalnızca doğru anahtara sahip taraf çözebilir.](gorseller/gorsel-sifreleme.jpg){width=68%}
 
 ## Güçlü parola nasıl olur?
 
@@ -162,17 +162,19 @@ Oltalama mesajlarının tipik işaretleri:
 
 **Zararlı yazılım**, cihaza zarar vermek ya da bilgi çalmak amacıyla yazılmış programdır. İngilizce *malicious software* (kötü amaçlı yazılım) tamlamasının kısaltması olan **malware** de aynı anlamda kullanılır.
 
-![Zararlı yazılım türleri](gorseller/diagram-zararli.png){width=80%}
+![Zararlı yazılımların yaygın davranışları](gorseller/diagram-zararli.png){width=82%}
 
-| Tür | Ne yapar |
+Zararlı yazılımları adlandırırken kullanılan terimler **kesin türler değil, yaygın davranışlardır**. Tek bir zararlı yazılım bunlardan birkaçını birlikte gösterebilir.
+
+| Ad | Ne yapar |
 |:---|:---|
-| **Virüs** | Bulaştığı dosyayla yayılır, diğer dosyaları bozar |
-| **Truva atı** | Yararlı program gibi görünür, arka kapı açar |
+| **Virüs** | Kendini başka bir dosyaya ekler; o dosya çalıştıkça bulaşır |
+| **Solucan** | Bir taşıyıcı dosyaya ihtiyaç duymadan, kendi başına ağda yayılır |
+| **Truva atı** | Yararlı bir program gibi görünür; açılınca sisteme arka kapı açar |
 | **Fidye yazılımı** | Dosyaları şifreler, açmak için para ister |
-| **Casus yazılım** | Kullanımı izler, parola ve bilgi toplar |
-| **Solucan** | Kullanıcı bir şey yapmadan ağda yayılır |
+| **Casus yazılım** | Kullanımı izler; parola ve kişisel bilgi toplar |
 
-Bu türler kesin sınırlarla ayrılmaz; bir zararlı yazılım birden çok türün özelliğini taşıyabilir (örneğin hem yayılan hem fidye isteyen bir program). Kategoriler, zararlı yazılımın **ne yaptığını** anlatmak için kullanılır.
+Bu adlar bir programın **ne yaptığını** anlatır; aralarındaki sınır kesin değildir. Bir virüs de bilgi toplayabilir, bir truva atı da dosyaları kilitleyebilir. Bu nedenle aynı zararlı yazılım için birden çok ad birlikte kullanılabilir.
 
 ## Zombi bilgisayarlar
 
@@ -350,7 +352,7 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 3. Parola yöneticisi nasıl çalışır; hangi tek bilgiyi hatırlamak yeterlidir?
 4. Çok adımlı doğrulama (MFA) ile iki adımlı doğrulama (2FA) arasındaki ilişki nedir? 2FA neyi korur ve hangi hesapta mutlaka açık olmalıdır?
 5. Oltalama saldırılarının en belirgin ortak özelliği nedir?
-6. Truva atı ile virüs arasındaki fark nedir?
+6. Virüs ile solucan arasındaki temel fark nedir? Bu adlar neden kesin türler değildir?
 7. Fidye yazılımına karşı en etkili savunma nedir ve neden?
 8. "Antivirüs varsa güvendeyim" inanışı neden yanlıştır?
 
@@ -360,6 +362,6 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **TÜBİTAK BİLGEM** — bilişim güvenliği farkındalık yayınları. (tubitak.gov.tr)
 - **Kullanılan işletim sistemi ve tarayıcının resmî güvenlik sayfaları.**
-- **Görsel kaynakları:** Donanım OTP cihazı — *RSA SecurID SID800*, Alexander Klink, CC BY 3.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bilgi güvenliğinin üç temeli şeması — Napkin (napkin.ai) ile üretilmiştir. Ekran görüntüleri Proton Pass (Firefox eklentisi), e-Devlet Kapısı, VirusTotal, Windows Update, Pardus Güncelleyici, Windows Yedekleme ve Windows Güvenliği uygulamalarından alınmıştır. Bu haftanın diğer şemaları (şifreleme akışı, parola gücü, çok adımlı doğrulama akışı, oltalama e-postası örneği, zararlı yazılım türleri, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
+- **Görsel kaynakları:** Donanım OTP cihazı — *RSA SecurID SID800*, Alexander Klink, CC BY 3.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bilgi güvenliğinin üç temeli şeması — Napkin (napkin.ai) ile üretilmiştir. Şifreleme görseli — yapay zekâ ile üretilmiştir. Ekran görüntüleri Proton Pass (Firefox eklentisi), e-Devlet Kapısı, VirusTotal, Windows Update, Pardus Güncelleyici, Windows Yedekleme ve Windows Güvenliği uygulamalarından alınmıştır. Bu haftanın diğer şemaları (parola gücü, çok adımlı doğrulama akışı, oltalama e-postası örneği, zararlı yazılım davranışları, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
