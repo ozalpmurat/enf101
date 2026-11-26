@@ -79,6 +79,8 @@ Bütün parolaları akılda tutmak mümkün değildir. **Parola yöneticisi** ya
 - Yalnızca **bir ana parolayı** hatırlamanız yeterlidir
 - Parolaları siteye otomatik doldurur
 
+![Örnek parola yöneticisi penceresi (yer tutucu)](gorseller/ekran-parola-yoneticisi.png){width=62%}
+
 ## İki adımlı doğrulama (2FA) — çok adımlı doğrulamanın (MFA) en yaygın biçimi
 
 Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmandır: **bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı).
@@ -100,6 +102,8 @@ Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmand�
 
 Kısa mesajla gelen kod, hiç yoktan iyidir; ancak **uygulama tabanlı** kod üreten yöntemler daha güvenlidir.
 :::
+
+![İki adımlı doğrulama kurulum ekranı (yer tutucu)](gorseller/ekran-2fa-kurulum.png){width=60%}
 
 # Sosyal Mühendislik
 
@@ -206,6 +210,8 @@ Güncellemeler yalnızca yeni özellik eklemez; **bilinen güvenlik açıkların
 - Tarayıcı ve eklentileri güncel tutun.
 - Kullandığınız uygulamaları güncelleyin.
 
+![İşletim sistemi güncelleme ekranı (yer tutucu)](gorseller/ekran-guncelleme.png){width=62%}
+
 ## Yedekleme: fidye yazılımına karşı en iyi savunma
 
 Fidye yazılımı dosyalarınızı şifrelediğinde, **yedek varsa** fidye ödemenize gerek kalmaz — dosyaları yedekten geri yüklersiniz. 4. haftada gördüğümüz **3-2-1 kuralı** burada da geçerlidir.
@@ -215,6 +221,8 @@ Fidye yazılımı dosyalarınızı şifrelediğinde, **yedek varsa** fidye ödem
 
 Fidye yazılımları bağlı olan yedek diskleri de şifreler. Bu yüzden **harici yedeği işiniz bittiğinde çıkarın**; bulut yedeği ise sürüm geçmişi tutuyorsa daha güvenlidir.
 :::
+
+![Yedekleme / sürüm geçmişi ekranı (yer tutucu)](gorseller/ekran-yedekleme.png){width=62%}
 
 # Cihaz ve Hesap Güvenliği
 
@@ -234,6 +242,8 @@ Günlük hayatta uygulanacak pratik önlemler:
 
 Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan bir kullanıcı için genellikle **yeterlidir**. Yeni bir "güvenlik yazılımı" indirmeye gerek yoktur; gerekli olan açık olan korumayı kapatmamak ve güncel tutmaktır.
 
+![Sistem güvenlik ayarları paneli (yer tutucu)](gorseller/ekran-guvenlik-ayarlari.png){width=62%}
+
 ## Güvenli alışveriş ve ödeme
 
 İnternet'ten alışveriş ve bankacılık, bilgisayarınıza saldırılmasını gerektirmez: bilgilerinizi **siz** yanlış yere yazarsanız kaybolurlar.
@@ -245,6 +255,8 @@ Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan b
 - **Ödemeleri hesap özetinden doğrulayın.** Beklemediğiniz bir harcama görürseniz bankanıza bildirin.
 
 ![Adres çubuğunda güvenli ve şüpheli bağlantı (temsilî çizim)](gorseller/diagram-guvenli-baglanti.png){width=88%}
+
+![Gerçek tarayıcı adres çubuğu: kilit simgesi ve https (yer tutucu)](gorseller/ekran-adres-kilit.png){width=58%}
 
 # Doğru Bilinen Yanlışlar
 

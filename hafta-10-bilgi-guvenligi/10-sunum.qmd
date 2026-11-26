@@ -66,10 +66,22 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ## Parola Yöneticisi
 
+::: {.columns}
+::: {.column width="52%"}
+
 - Her hesap için **rastgele** parola üretir
 - Şifreli bir **kasada** saklar
 - Tek bir **ana parola** hatırlamanız yeter
 - Otomatik doldurur
+
+:::
+
+::: {.column width="44%"}
+
+![](gorseller/ekran-parola-yoneticisi.png)
+
+:::
+:::
 
 ## İki Adımlı Doğrulama (2FA)
 
@@ -90,12 +102,7 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ::: {.column width="36%"}
 
-```{=latex}
-\begin{center}
-\includegraphics[width=\linewidth,height=0.64\textheight,keepaspectratio]{gorseller/foto-guvenlik-anahtari.jpg}\\[-1mm]
-{\scriptsize\emph{Donanım güvenlik anahtarı}}
-\end{center}
-```
+![](gorseller/ekran-2fa-kurulum.png)
 
 :::
 :::
@@ -216,17 +223,41 @@ Korsan yazılımın bedeli parayla değil, **verilerinizle** ödenir.
 
 ## Güncelleme Neden Önemli?
 
+::: {.columns}
+::: {.column width="52%"}
+
 Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**.
 
 Saldırganlar güncellenmemiş sistemleri hedefler.
 
+:::
+
+::: {.column width="44%"}
+
+![](gorseller/ekran-guncelleme.png)
+
+:::
+:::
+
 ## Yedekleme: Fidyeye Karşı En İyi Savunma
+
+::: {.columns}
+::: {.column width="52%"}
 
 Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez.
 
 4\. haftanın **3-2-1 kuralı** burada da geçerli.
 
 Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifreler.
+
+:::
+
+::: {.column width="44%"}
+
+![](gorseller/ekran-yedekleme.png)
+
+:::
+:::
 
 # Cihaz ve Hesap Güvenliği
 
@@ -242,20 +273,42 @@ Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifrele
 
 ## Güvenlik Duvarı ve Varsayılan Ayarlar
 
+::: {.columns}
+::: {.column width="52%"}
+
 - **Güvenlik duvarı:** Gelen-giden trafiği denetler, izin verilmeyeni engeller
 - İşletim sistemlerinde **hazır ve açık** gelir; kapatmayın
 - Çoğu sistemde antivirüs de yerleşik gelir
 
 Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
 
+:::
+
+::: {.column width="44%"}
+
+![](gorseller/ekran-guvenlik-ayarlari.png)
+
+:::
+:::
+
 ## İnternet'ten Alışveriş ve Bankacılık
+
+::: {.columns}
+::: {.column width="52%"}
 
 - **`https` ve kilit simgesini** kontrol edin; adresi **kendiniz yazın**
 - Bankacılık parolanızı **kimseyle paylaşmayın**
 - **Sanal kart** kullanın (düşük limitli)
 - Ödemeleri **hesap özetinden** doğrulayın
 
-![](gorseller/diagram-guvenli-baglanti.png){width=82%}
+:::
+
+::: {.column width="44%"}
+
+![](gorseller/ekran-adres-kilit.png)
+
+:::
+:::
 
 # Doğru Bilinen Yanlışlar
 
