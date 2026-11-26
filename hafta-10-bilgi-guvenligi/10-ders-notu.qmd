@@ -25,7 +25,7 @@ Güvenlikte en zayıf halka teknoloji değil, **insandır**. Sistemleri kırmak 
 
 - Bilgi güvenliğinin üç temel ilkesini açıklar.
 - Güçlü parola oluşturur ve parola yöneticisi kullanır.
-- İki adımlı doğrulamayı etkinleştirir ve önemini açıklar.
+- Çok adımlı doğrulamayı (MFA) ve en yaygın biçimi olan iki adımlı doğrulamayı (2FA) açıklar.
 - Oltalama saldırılarını tanır ve doğru davranır.
 - Zararlı yazılım türlerini ve bulaşma yollarını bilir.
 - Güncelleme ve yedekleme alışkanlığı geliştirir.
@@ -47,19 +47,21 @@ Bu üç ilkeden biri bozulduğunda güvenlik ihlali vardır.
 
 # Parola Yönetimi
 
-Parola, hesabınızın kapısıdır. Ama çoğu kişi aynı parolayı birden çok yerde kullanır — ve bu, tek bir sızıntının **bütün hesaplarınızı** ele geçirmesi anlamına gelir.
+Parola, hesabınızın kapısıdır. Ne var ki çoğu kişi aynı parolayı birden çok yerde kullanır; bu durumda **tek bir sızıntı**, o parolayı kullandığınız bütün hesapları ele geçirmeye yeter.
 
 ::: {.callout-note}
 ## "Parola" ile "şifreleme" farkı
 
-Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise verinin okunamaz hâle getirilmesidir; parola yöneticinizin kasası ya da `https` bağlantısı gibi şeyler şifreleme ile korunur. Günlük dilde ikisine de "şifre" denir; bu metinde erişim için **parola**, verinin korunması için **şifreleme** kelimeleri kullanılır.
+Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise verinin okunamaz hâle getirilmesidir; şifreli bir ZIP dosyası ya da `https` bağlantısı gibi şeyler şifreleme ile korunur. Günlük dilde ikisine de "şifre" dendiği sıkça görülmektedir. Ders notlarımızda; erişim için **parola**, verinin karmaşıklaştırılarak korunması için **şifreleme** kelimeleri kullanılır.
 :::
 
-![Parola gücü](gorseller/diagram-parola.png){width=78%}
+![Açık anahtarlı şifreleme: mesaj, alıcının açık anahtarıyla şifrelenir ve yalnızca alıcının özel anahtarıyla çözülür.](gorseller/diagram-sifreleme.png){width=92%}
 
 ## Güçlü parola nasıl olur?
 
-- **Uzunluk önemlidir:** Uzun bir parola, karmaşık ama kısa bir paroladan daha güçlüdür.
+![Parola gücü](gorseller/diagram-parola.png){width=78%}
+
+- **Karakter sayısı önemlidir:** Uzun bir parola, karmaşık ama kısa bir paroladan daha güçlüdür.
 - **Her hesap için farklı olmalıdır.** Bir sızıntı diğerlerine bulaşmasın.
 - **Kişisel bilgi içermemelidir:** doğum tarihi, isim, plaka, takım adı — bunlar tahmin edilebilir.
 - **Tahmin edilebilir kalıplar kullanmayın:** `123456`, `qwerty`, `parola`, `Ahmet2010!`.
@@ -69,7 +71,7 @@ Erişim için girdiğiniz gizli dizeye **parola** denir. **Şifreleme** ise veri
 
 Birbirinden ilgisiz birkaç kelimeyi birleştirmek, hem akılda kolay kalır hem de tahmin edilmesi çok zordur.
 
-Örnek yapı: `mavi-kahve-sandalye-41` gibi. Uzun, özgün ve tahmin edilemez. **Kendi örneğinizi üretin; buradaki örneği kullanmayın.**
+Örnek yapı: `mavi-tohum-sandalye-41!` gibi. Uzun, özgün ve tahmin edilemez. **Kendi örneğinizi üretin; buradaki örneği kullanmayın.**
 :::
 
 ## Parola yöneticisi
@@ -81,17 +83,17 @@ Bütün parolaları akılda tutmak mümkün değildir. **Parola yöneticisi** ya
 - Yalnızca **bir ana parolayı** hatırlamanız yeterlidir
 - Parolaları siteye otomatik doldurur
 
-![Örnek parola yöneticisi penceresi (yer tutucu)](gorseller/ekran-parola-yoneticisi.png){width=62%}
+![Ücretsiz bir parola yöneticisi (Proton Pass, Firefox eklentisi): kayıtlı hesaplar ve şifreli kasası.](gorseller/ekran-parola-yoneticisi.png){width=62%}
 
-## İki adımlı doğrulama (2FA) — çok adımlı doğrulamanın (MFA) en yaygın biçimi
+## Çok adımlı doğrulama (MFA)
 
-Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmandır: **bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı).
+Girişte parolanın yanı sıra ikinci bir adım istenir: **bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı). Parolanız çalınsa bile hesabınızı koruyan bu ikinci katmandır.
 
-**Çok adımlı doğrulama** (İngilizce *multi-factor authentication*, MFA), ikiden fazla adım da içerebilen şemsiye terimdir; günlük kullanımda en yaygın biçimi **iki adımlı doğrulamadır** (İngilizce *two-factor authentication*, 2FA). Bu derste ağırlıklı olarak iki adımlı biçimi görüyoruz.
+**Çok adımlı doğrulama** (İngilizce *multi-factor authentication*, MFA) ikiden fazla adım da içerebilen şemsiye terimdir; günlük kullanımda en yaygın biçimi **iki adımlı doğrulamadır** (İngilizce *two-factor authentication*, 2FA). Bu derste ağırlıklı olarak iki adımlı biçimi görüyoruz.
 
-![İki adımlı doğrulama akışı: parola (bildiğiniz bir şey) ve tek kullanımlık kod (sahip olduğunuz bir şey)](gorseller/diagram-2fa.png){width=92%}
+![Çok adımlı doğrulama akışı: parola (bildiğiniz bir şey) ve tek kullanımlık kod (sahip olduğunuz bir şey)](gorseller/diagram-2fa.png){width=92%}
 
-![Donanım güvenlik anahtarı: iki adımlı doğrulamada "sahip olduğunuz şey"](gorseller/foto-guvenlik-anahtari.jpg){width=42%}
+![Örnek bir donanım OTP cihazı: ekranındaki tek kullanımlık kod, girişte ikinci adım olarak kullanılır.](gorseller/foto-otp-cihazi.jpg){width=52%}
 
 ::: {.callout-warning}
 ## İki adımlı doğrulamayı açın
@@ -105,11 +107,11 @@ Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmand�
 Kısa mesajla gelen kod, hiç yoktan iyidir; ancak **uygulama tabanlı** kod üreten yöntemler daha güvenlidir.
 :::
 
-![İki adımlı doğrulama kurulum ekranı (yer tutucu)](gorseller/ekran-2fa-kurulum.png){width=60%}
+![e-Devlet'te çok adımlı giriş: paroladan sonra kayıtlı cihaza gelen bildirimle onay istenir.](gorseller/ekran-2fa-kurulum.png){width=62%}
 
 # Sosyal Mühendislik
 
-Saldırganların çoğu teknik bir açıklık aramaz; **insanı** hedefler. İnsanların güvenme, yardım etme ve acele etme eğilimini kullanarak güvenlik önlemlerini atlatmaya **sosyal mühendislik** denir.
+Saldırganların çoğu teknik bir açıklık aramaz; **insanı** hedefler. İnsanların güvenme, yardım etme ve acele etme gibi eğilimlerini kullanarak güvenlik önlemlerini atlatmaya **sosyal mühendislik** denir.
 
 Sık kullanılan yöntemler:
 
@@ -125,7 +127,12 @@ Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. 
 
 **Oltalama**, sizi kandırarak parola veya kişisel bilgi vermeye ikna etme saldırısıdır. E-posta, kısa mesaj, telefon araması ya da sahte web sitesiyle yapılabilir.
 
-![Oltalama işaretleri](gorseller/diagram-oltalama.png){width=78%}
+Oltalama mesajlarının tipik işaretleri:
+
+- **Acele ettirir:** "Hemen", "son saatler", "hesabınız kapatılacak" gibi baskı kuran ifadeler.
+- **Beklenmedik ek:** Tanımadığınız göndericiden gelen ve açmanız istenen dosya.
+- **Adres uyuşmazlığı:** Gönderen ya da bağlantı adresi gerçek kuruma benzemez.
+- **Bilgi veya parola ister:** Kurumlar e-posta ya da mesajla parola, kart bilgisi istemez.
 
 ![Örnek bir oltalama e-postası: numaralı işaretler şüpheli noktaları gösterir. Adresler ve metin kurgudur.](gorseller/diagram-oltalama-eposta.png){width=95%}
 
@@ -136,6 +143,7 @@ Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. 
 | **E-posta oltalaması** | Kurumdan gelmiş gibi görünen sahte e-posta |
 | **SMS oltalaması (smishing)** | Kargo, banka, fatura bildirimi görünümlü mesaj |
 | **Telefon oltalaması (vishing)** | Kendini banka görevlisi olarak tanıtan arama |
+| **Mesajlaşma uygulamaları** | WhatsApp, Facebook gibi uygulamalardan tanıdık görünen hesaptan gelen bağlantı veya dosya |
 | **Sahte web sitesi** | Gerçek sitenin birebir kopyası |
 
 ::: {.callout-warning}
@@ -143,7 +151,7 @@ Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. 
 
 **1. Acele ettiren her mesaj şüphelidir.** "Hemen", "son saatler", "hesabınız kapatılacak" gibi ifadeler baskı kurmaya yöneliktir.
 
-**2. Bağlantıya tıklamayın.** Bunun yerine siteye kendiniz, adresini yazarak gidin.
+**2. Bağlantıya tıklamayın.** Bunun yerine siteye kendiniz, doğru adresi yazarak gidin.
 
 **3. Göndereni başka kanaldan doğrulayın.** Kurumdan geldiğini düşündüğünüz bir mesaj varsa, kurumu bilinen numarasından arayın.
 
@@ -152,7 +160,7 @@ Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. 
 
 # Zararlı Yazılımlar
 
-**Zararlı yazılım (malware)**, cihaza zarar vermek ya da bilgi çalmak amacıyla yazılmış programdır.
+**Zararlı yazılım**, cihaza zarar vermek ya da bilgi çalmak amacıyla yazılmış programdır. İngilizce *malicious software* (kötü amaçlı yazılım) tamlamasının kısaltması olan **malware** de aynı anlamda kullanılır.
 
 ![Zararlı yazılım türleri](gorseller/diagram-zararli.png){width=80%}
 
@@ -164,11 +172,13 @@ Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. 
 | **Casus yazılım** | Kullanımı izler, parola ve bilgi toplar |
 | **Solucan** | Kullanıcı bir şey yapmadan ağda yayılır |
 
+Bu türler kesin sınırlarla ayrılmaz; bir zararlı yazılım birden çok türün özelliğini taşıyabilir (örneğin hem yayılan hem fidye isteyen bir program). Kategoriler, zararlı yazılımın **ne yaptığını** anlatmak için kullanılır.
+
 ## Zombi bilgisayarlar
 
-Bazı zararlı yazılımlar bilgisayarınızda hemen bir şey bozmaz. Sessizce çalışır, uzaktaki bir **komut merkezine** bağlanır ve oradan gelen emirleri uygular. Böyle bir bilgisayara **zombi bilgisayar**, bu bilgisayarlardan oluşan ağa **botnet** denir.
+Bazı zararlı yazılımlar bilgisayarınızda hemen bir şey bozmaz. Sessizce çalışır, uzaktaki bir **komut merkezine** bağlanır ve oradan gelen emirleri uygular. Böyle bir bilgisayara **zombi bilgisayar**, bu cihazların oluşturduğu ağa **botnet** (İngilizce *robot network*) denir.
 
-Zombi bilgisayarlar genellikle topluca hareket eder: bir siteyi çökertmek, spam göndermek ya da başka sistemlere saldırmak için kullanılırlar. Kullanıcı çoğu zaman hiçbir şey fark etmez; bilgisayar normal çalışmaya devam eder.
+Zombi bilgisayarlar genellikle topluca hareket eder: bir siteyi devre dışı bırakmak, spam göndermek ya da başka sistemlere saldırmak için kullanılırlar. Kullanıcı çoğu zaman hiçbir şey fark etmez; bilgisayar normal çalışmaya devam eder.
 
 Bu yüzden "bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez" demek yanlıştır: cihazınız farkında olmadan bir saldırganın işini görmeye başlayabilir ve bunun hukuki sonuçları olabilir.
 
@@ -180,7 +190,9 @@ Bu yüzden "bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez" 
 - **Takılan USB bellekler**
 - **Güncellenmemiş yazılımlardaki açıklar**
 
-![Tanımadığınız bir USB belleği takmak da yaygın bulaşma yollarından biridir](gorseller/foto-usb-bellek.jpg){width=38%}
+Bulaşma yollarından biri de **tanımadığınız bir USB belleği** cihaza takmaktır: bellekte zararlı yazılım bulunabilir.
+
+![USB bellek](gorseller/foto-usb-bellek.jpg){width=38%}
 
 ::: {.callout-tip}
 ## Yazılımı kaynağından indirin
@@ -195,6 +207,8 @@ Korsan yazılım, bedava görünür; ama ödediğiniz bedel parayla değil, **ve
 [VirusTotal](https://www.virustotal.com), şüpheli bir dosyayı, bağlantıyı (URL) veya dosya özeti değerini (hash) birçok farklı antivirüs motoruyla aynı anda tarayarak sonuç veren ücretsiz bir hizmettir.
 
 Kendi antivirüs yazılımınız bir dosyayı temiz olarak işaretlese bile, şüphe duyduğunuz durumlarda VirusTotal ile **ikinci bir görüş** almak mümkün olabilir.
+
+![VirusTotal'de şüpheli bir dosya yüklenirken: dosya birçok antivirüs motoruyla aynı anda taranır.](gorseller/ekran-virustotal.png){width=54%}
 
 ::: {.callout-warning}
 ## Gizlilik uyarısı
@@ -212,11 +226,17 @@ Güncellemeler yalnızca yeni özellik eklemez; **bilinen güvenlik açıkların
 - Tarayıcı ve eklentileri güncel tutun.
 - Kullandığınız uygulamaları güncelleyin.
 
-![İşletim sistemi güncelleme ekranı (yer tutucu)](gorseller/ekran-guncelleme.png){width=62%}
+::: {#fig-guncelleme layout-ncol=2}
+![Windows Update: güncelleştirme durumu](gorseller/ekran-guncelleme-windows.png){width=95%}
+
+![Pardus Güncelleyici: bekleyen güncellemeler](gorseller/ekran-guncelleme-pardus.png){width=80%}
+
+Farklı işletim sistemlerinde güncelleme ekranları.
+:::
 
 ## Yedekleme: fidye yazılımına karşı en iyi savunma
 
-Fidye yazılımı dosyalarınızı şifrelediğinde, **yedek varsa** fidye ödemenize gerek kalmaz — dosyaları yedekten geri yüklersiniz. 4. haftada gördüğümüz **3-2-1 kuralı** burada da geçerlidir.
+Fidye yazılımı dosyalarınızı şifrelediğinde, **yedek varsa** fidye ödemenize gerek kalmaz — dosyaları yedekten geri yüklersiniz. 4. haftada gördüğümüz **3-2-1 kuralını hatırlayın**.
 
 ::: {.callout-tip}
 ## Yedeği bağlı tutmayın
@@ -224,7 +244,13 @@ Fidye yazılımı dosyalarınızı şifrelediğinde, **yedek varsa** fidye ödem
 Fidye yazılımları bağlı olan yedek diskleri de şifreler. Bu yüzden **harici yedeği işiniz bittiğinde çıkarın**; bulut yedeği ise sürüm geçmişi tutuyorsa daha güvenlidir.
 :::
 
-![Yedekleme / sürüm geçmişi ekranı (yer tutucu)](gorseller/ekran-yedekleme.png){width=62%}
+::: {#fig-yedekleme-koruma layout-ncol=2}
+![Windows Yedekleme: "Bu bilgisayarı yedekle"](gorseller/ekran-yedekleme.png){width=95%}
+
+![Windows Güvenliği: fidye yazılımına karşı koruma ve denetimli klasör erişimi](gorseller/ekran-fidye-koruma.png){width=95%}
+
+Yedekleme aracı ve işletim sisteminin fidye yazılımına karşı koruma ayarı.
+:::
 
 # Cihaz ve Hesap Güvenliği
 
@@ -233,7 +259,7 @@ Günlük hayatta uygulanacak pratik önlemler:
 - **Ekran kilidi kullanın:** Telefon ve bilgisayarda parola, desen veya biyometrik kilit.
 - **Otomatik kilitleme süresini kısaltın:** Bilgisayardan uzaklaştığınızda kilitlenmeli.
 - **Ortak bilgisayarda oturumu kapatın:** Sekmeyi kapatmak yetmez; "çıkış yap" demek gerekir.
-- **Tarayıcıya parola kaydetmeyin:** Ortak cihazlarda özellikle.
+- **Tarayıcıya parola kaydetmeyin:** Özellikle ortak cihazlarda dikkat edin.
 - **Genel WiFi ağlarında hassas işlem yapmayın** (5. hafta).
 - **Kullanmadığınız hesapları kapatın:** Her hesap bir risk yüzeyidir.
 - **Veri ihlali bildirimlerini takip edin:** Bir hizmet sızarsa parolanızı değiştirin.
@@ -242,13 +268,24 @@ Günlük hayatta uygulanacak pratik önlemler:
 
 **Güvenlik duvarı**, ağdan gelen ve giden trafiği denetleyen, izin verilmeyen bağlantıları engelleyen korumadır. İşletim sistemlerinin çoğunda **hazır olarak açık** gelir; kapatmak korumayı zayıflatır. Benzer şekilde çoğu sistemde bir antivirüs de yerleşik gelir.
 
-Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan bir kullanıcı için genellikle **yeterlidir**. Yeni bir "güvenlik yazılımı" indirmeye gerek yoktur; gerekli olan açık olan korumayı kapatmamak ve güncel tutmaktır.
+Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan bir kullanıcı için genellikle **yeterlidir**. Yeni bir "güvenlik yazılımı" indirmeye gerek yoktur; gerekli olan, açık olan korumayı kapatmamak ve güncel tutmaktır.
 
-![Sistem güvenlik ayarları paneli (yer tutucu)](gorseller/ekran-guvenlik-ayarlari.png){width=62%}
+Güncel işletim sistemleri güvenlik yapılandırmaları **etkin** olarak gelir. Kullandığınız sistemin güvenlik özelliklerini öğrenmek ve ara sıra kontrol etmekte fayda vardır. Windows 11'deki bazı önemli güvenlik özellikleri şunlardır:
+
+- **Microsoft Defender Antivirus** — yerleşik antivirüs koruması.
+- **Windows Güvenlik Duvarı** — ağ trafiğini denetler.
+- **Microsoft Defender SmartScreen** — zararlı site ve indirmeleri engeller.
+- **Kullanıcı Hesabı Denetimi (UAC)** — sistem değişikliklerinde onay ister.
+- **Windows Update** — güvenlik güncellemelerini otomatik kurar.
+- **Exploit Protection** — bilinen saldırı tekniklerine karşı korur.
+- **Tamper Protection (Kurcalamaya Karşı Koruma)** — güvenlik ayarlarının izinsiz değiştirilmesini engeller.
+- **Denetimli Klasör Erişimi (Controlled Folder Access)** — önemli klasörleri yetkisiz değişikliklerden korur (varsayılan: kapalı).
+
+![Windows Güvenliği: güvenlik duvarı ve ağ koruması.](gorseller/ekran-guvenlik-ayarlari.png){width=62%}
 
 ## Güvenli alışveriş ve ödeme
 
-İnternet'ten alışveriş ve bankacılık, bilgisayarınıza saldırılmasını gerektirmez: bilgilerinizi **siz** yanlış yere yazarsanız kaybolurlar.
+İnternet'ten alışveriş ve bankacılıkta, bilgisayarınıza bir saldırı olmasına gerek yoktur: bilgilerinizi **siz** yanlış bir yere yazarsanız kaybolurlar.
 
 - **Adresi ve kilidi kontrol edin.** Ödeme sayfası `https` olmalı ve adres çubuğunda kilit simgesi bulunmalıdır.
 - **Adresi kendiniz yazın.** E-postadan ya da başka bir siteden gelen bağlantıya tıklamak yerine kurumun adresini doğrudan yazın.
@@ -257,8 +294,6 @@ Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan b
 - **Ödemeleri hesap özetinden doğrulayın.** Beklemediğiniz bir harcama görürseniz bankanıza bildirin.
 
 ![Adres çubuğunda güvenli ve şüpheli bağlantı (temsilî çizim)](gorseller/diagram-guvenli-baglanti.png){width=88%}
-
-![Gerçek tarayıcı adres çubuğu: kilit simgesi ve https (yer tutucu)](gorseller/ekran-adres-kilit.png){width=58%}
 
 # Doğru Bilinen Yanlışlar
 
@@ -311,7 +346,7 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 # Kendini Sınama Soruları
 
 1. Bilgi güvenliğinin üç temel ilkesini yazın ve birer ihlal örneği verin.
-2. Uzun bir parola neden karmaşık ama kısa bir paroladan daha güçlüdür?
+2. Karakter sayısı fazla olan bir parola neden karmaşık ama kısa bir paroladan daha güçlüdür?
 3. Parola yöneticisi nasıl çalışır; hangi tek bilgiyi hatırlamak yeterlidir?
 4. Çok adımlı doğrulama (MFA) ile iki adımlı doğrulama (2FA) arasındaki ilişki nedir? 2FA neyi korur ve hangi hesapta mutlaka açık olmalıdır?
 5. Oltalama saldırılarının en belirgin ortak özelliği nedir?
@@ -325,6 +360,6 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **TÜBİTAK BİLGEM** — bilişim güvenliği farkındalık yayınları. (tubitak.gov.tr)
 - **Kullanılan işletim sistemi ve tarayıcının resmî güvenlik sayfaları.**
-- **Görsel kaynakları:** Donanım güvenlik anahtarı — *Yubikey USB 2FA U2F Security Token*, Tony Webster, CC BY 2.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bilgi güvenliğinin üç temeli şeması — Napkin (napkin.ai) ile üretilmiştir. Bu haftanın diğer şemaları (parola gücü, iki adımlı doğrulama akışı, oltalama işaretleri, oltalama e-postası örneği, zararlı yazılım türleri, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
+- **Görsel kaynakları:** Donanım OTP cihazı — *RSA SecurID SID800*, Alexander Klink, CC BY 3.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bilgi güvenliğinin üç temeli şeması — Napkin (napkin.ai) ile üretilmiştir. Ekran görüntüleri Proton Pass (Firefox eklentisi), e-Devlet Kapısı, VirusTotal, Windows Update, Pardus Güncelleyici, Windows Yedekleme ve Windows Güvenliği uygulamalarından alınmıştır. Bu haftanın diğer şemaları (şifreleme akışı, parola gücü, çok adımlı doğrulama akışı, oltalama e-postası örneği, zararlı yazılım türleri, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.

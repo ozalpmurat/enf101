@@ -11,7 +11,7 @@ format: beamer
 
 - Bilgi güvenliğinin üç ilkesini açıklar.
 - Güçlü parola oluşturur, parola yöneticisi kullanır.
-- İki adımlı doğrulamanın önemini açıklar.
+- Çok adımlı doğrulamanın (MFA) önemini açıklar.
 - Oltalama saldırılarını tanır.
 - Zararlı yazılım türlerini bilir.
 - Güncelleme ve yedekleme alışkanlığı geliştirir.
@@ -59,7 +59,7 @@ Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
 
 ## Güçlü Parola Kuralları
 
-- **Uzunluk** önemlidir
+- **Karakter sayısı** önemlidir
 - **Her hesap için farklı** parola
 - **Kişisel bilgi içermesin** — doğum tarihi, isim, plaka
 - **Kalıp kullanmayın** — `123456`, `qwerty`, `Ahmet2010!`
@@ -72,7 +72,7 @@ Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
 
 Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edilemez.
 
-`mavi-kahve-sandalye-41` gibi bir **yapı** — ama kendi örneğinizi üretin.
+`mavi-tohum-sandalye-41!` gibi bir **yapı** — ama kendi örneğinizi üretin.
 
 ## Parola Yöneticisi
 
@@ -93,7 +93,7 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 :::
 :::
 
-## İki Adımlı Doğrulama (2FA)
+## Çok Adımlı Doğrulama (MFA)
 
 **Çok adımlı doğrulama (MFA)** şemsiye terimdir; **2FA** bunun en yaygın biçimidir. **Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı). Parolanız çalınsa bile hesabınız korunur; **uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
 
@@ -146,12 +146,13 @@ E-posta, SMS, telefon araması ya da sahte siteyle yapılır.
 | E-posta | Kurumdan gelmiş gibi görünür |
 | SMS | Kargo, banka, fatura bildirimi |
 | Telefon | Kendini banka görevlisi tanıtır |
+| Mesajlaşma | WhatsApp, Facebook'ta tanıdık görünen hesaptan gelen bağlantı |
 | Sahte site | Gerçek sitenin kopyası |
 
 ## Dört Altın Kural
 
 1. **Acele ettiren mesaj şüphelidir**
-2. **Bağlantıya tıklamayın** — adresi kendiniz yazın
+2. **Bağlantıya tıklamayın** — doğru adresi kendiniz yazın
 3. **Başka kanaldan doğrulayın**
 4. **Parolanızı kimseye vermeyin**
 
@@ -185,7 +186,7 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 
 - Bilgisayar sessizce bir **komut merkezine** bağlanır
 - Oradan gelen emirleri uygular; kullanıcı fark etmez
-- Bu makinelerden oluşan ağa **botnet** denir
+- Bu cihazların oluşturduğu ağa **botnet** denir
 
 Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir — "bende önemli veri yok" demek yanlıştır.
 
@@ -244,7 +245,7 @@ Saldırganlar güncellenmemiş sistemleri hedefler.
 
 ::: {.column width="44%"}
 
-![](gorseller/ekran-guncelleme.png)
+![](gorseller/ekran-guncelleme-windows.png)
 
 :::
 :::
@@ -256,7 +257,7 @@ Saldırganlar güncellenmemiş sistemleri hedefler.
 
 Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez.
 
-4\. haftanın **3-2-1 kuralı** burada da geçerli.
+4\. haftanın **3-2-1 kuralını hatırlayın**.
 
 Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifreler.
 
@@ -315,7 +316,7 @@ Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
 
 ::: {.column width="44%"}
 
-![](gorseller/ekran-adres-kilit.png)
+![](gorseller/diagram-guvenli-baglanti.png)
 
 :::
 :::
@@ -350,7 +351,7 @@ Notla değerlendirilmez.
 ## Özet
 
 - **Gizlilik · bütünlük · erişilebilirlik**
-- Parola: **uzun, her hesapta farklı**; parola yöneticisi kullanın
+- Parola: **karakter sayısı fazla, her hesapta farklı**; parola yöneticisi kullanın
 - **2FA** e-posta ve e-Devlet'te mutlaka açık
 - **Oltalama** acele ettirir; tıklamayın, doğrulayın
 - **Yazılımı kaynağından indirin**
