@@ -73,21 +73,32 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ## İki Adımlı Doğrulama (2FA)
 
-**Çok adımlı doğrulama (MFA)** şemsiye terimdir; **2FA** bunun en yaygın biçimidir.
+**Çok adımlı doğrulama (MFA)** şemsiye terimdir; **2FA** bunun en yaygın biçimidir. **Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı). Parolanız çalınsa bile hesabınız korunur; **uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
 
-**Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, kod, anahtar).
-
-Parolanız çalınsa bile hesabınız korunur.
-
-**Uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
-
-![](gorseller/foto-guvenlik-anahtari.jpg){width=36%}
+![](gorseller/diagram-2fa.png){width=94%}
 
 ## Nerede Mutlaka Açık Olmalı?
+
+::: {.columns}
+::: {.column width="60%"}
 
 - **E-posta** — diğer bütün parolalar oraya sıfırlanır
 - **e-Devlet ve bankacılık**
 - **Sosyal medya hesapları**
+
+:::
+
+::: {.column width="36%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.64\textheight,keepaspectratio]{gorseller/foto-guvenlik-anahtari.jpg}\\[-1mm]
+{\scriptsize\emph{Donanım güvenlik anahtarı}}
+\end{center}
+```
+
+:::
+:::
 
 # Sosyal Mühendislik
 
@@ -133,7 +144,25 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 
 ## Türler
 
-![](gorseller/diagram-zararli.png){width=78%}
+::: {.columns}
+::: {.column width="54%"}
+
+![](gorseller/diagram-zararli.png)
+
+:::
+
+::: {.column width="42%"}
+
+| Tür | Ne yapar |
+|:---|:---|
+| Virüs | Dosyayla yayılır |
+| Truva atı | Arka kapı açar |
+| Fidye yazılımı | Dosyaları şifreler |
+| Casus yazılım | İzler, bilgi toplar |
+| Solucan | Kendiliğinden yayılır |
+
+:::
+:::
 
 ## Zombi Bilgisayarlar
 
@@ -145,13 +174,28 @@ Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir —
 
 ## Nasıl Bulaşır?
 
+::: {.columns}
+::: {.column width="60%"}
+
 - **Beklenmedik ekler** (`.exe`, `.zip`)
 - **Sahte indirme siteleri**
 - **Korsan / kırılmış yazılımlar**
 - **Takılan USB bellekler**
 - **Güncellenmemiş yazılım açıkları**
 
-![](gorseller/foto-usb-bellek.jpg){width=32%}
+:::
+
+::: {.column width="36%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{gorseller/foto-usb-bellek.jpg}\\[-1mm]
+{\scriptsize\emph{Tanımadığınız USB belleği takmayın}}
+\end{center}
+```
+
+:::
+:::
 
 ## Yazılımı Kaynağından İndirin
 
@@ -206,11 +250,12 @@ Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
 
 ## İnternet'ten Alışveriş ve Bankacılık
 
-- **`https` ve kilit simgesini** kontrol edin
-- Adresi **kendiniz yazın**; bağlantıya tıklamayın
+- **`https` ve kilit simgesini** kontrol edin; adresi **kendiniz yazın**
 - Bankacılık parolanızı **kimseyle paylaşmayın**
 - **Sanal kart** kullanın (düşük limitli)
 - Ödemeleri **hesap özetinden** doğrulayın
+
+![](gorseller/diagram-guvenli-baglanti.png){width=82%}
 
 # Doğru Bilinen Yanlışlar
 
@@ -222,12 +267,15 @@ Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
 | "Beni hedef almazlar" | Saldırılar otomatiktir |
 | "Gizli moddayım, güvendeyim" | Gizli mod anonim yapmaz |
 | "Parolam karmaşık" | Aynı parolayı her yerde kullanıyorsanız risk var |
+| "Sadece güvenli sitelere giriyorum" | Güvenli bir sitenin reklamı ya da eklentisi zararlı olabilir |
 | "Mac/Linux'a virüs bulaşmaz" | Bulaşır, hedef daha seyrek |
 | "Dosyayı sildim, gitti" | Geri dönüşüm kutusu boşaltılmadıysa döner |
 
 # Kapanış
 
 ## Uygulama: Kendi Güvenliğinizi Denetleyin
+
+**Hangi araçla:** hesap güvenlik ayarları (e-posta sağlayıcınızın güvenlik sayfası, e-Devlet) ve cihazınızın güncelleme ayarları; adımlar çoğu sistemde benzerdir.
 
 1. Kaç hesapta **aynı** parolayı kullanıyorsunuz? İki hesap için yenisini belirleyin.
 2. E-posta ve e-Devlet'te **iki adımlı doğrulamayı** açın.

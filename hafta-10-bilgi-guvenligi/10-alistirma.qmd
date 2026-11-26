@@ -37,9 +37,9 @@ D) Parola, kullanıcı adı, kimlik\
 E) Hız, maliyet, kullanılabilirlik
 
 **2.** Aşağıdaki parolalardan hangisi en güçlüdür?\
-A) `123456`\
+A) `kirmizi-bisiklet-bulut-72`\
 B) `Ahmet2010!`\
-C) `mavi-kahve-sandalye-41`\
+C) `123456`\
 D) `parola`\
 E) `ankara1234`
 
@@ -102,7 +102,7 @@ E) Bilgisayarı her gün yeniden başlatmak
 | Soru | Cevap | Kısa gerekçe |
 |:-----|:------|:----------------------------------------------------------------------------------------------------------------------------------|
 | 1 | A | Gizlilik, bütünlük ve erişilebilirlik bilgi güvenliğinin üç temel ilkesidir. |
-| 2 | C | Birbirinden ilgisiz kelimelerden oluşan uzun söz öbeği hem akılda kalır hem tahmin edilemez. Diğer seçenekler tahmin edilebilir kalıplardır. |
+| 2 | A | Birbirinden ilgisiz kelimelerden oluşan uzun söz öbeği hem akılda kalır hem tahmin edilemez. Diğer seçenekler tahmin edilebilir kalıplardır. |
 | 3 | B | Parola yöneticisi her hesap için rastgele ve güçlü parola üretir, bunları şifreli kasada saklar. |
 | 4 | E | Doğru ifade E seçeneğindedir: çok adımlı doğrulama (MFA), parola ele geçse bile ikinci bir adım gerektiği için hesabı korur. |
 | 5 | E | Doğru cevap E seçeneğindedir: e-posta hesabı diğer bütün hesapların kurtarma yoludur; ele geçirilirse tek tek bütün hesaplar riske girer. |

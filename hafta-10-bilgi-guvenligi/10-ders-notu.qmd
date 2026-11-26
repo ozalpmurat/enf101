@@ -85,6 +85,8 @@ Parolanız çalınsa bile hesabınızın korunmasını sağlayan ikinci katmand�
 
 **Çok adımlı doğrulama** (İngilizce *multi-factor authentication*, MFA), ikiden fazla adım da içerebilen şemsiye terimdir; günlük kullanımda en yaygın biçimi **iki adımlı doğrulamadır** (İngilizce *two-factor authentication*, 2FA). Bu derste ağırlıklı olarak iki adımlı biçimi görüyoruz.
 
+![İki adımlı doğrulama akışı: parola (bildiğiniz bir şey) ve tek kullanımlık kod (sahip olduğunuz bir şey)](gorseller/diagram-2fa.png){width=92%}
+
 ![Donanım güvenlik anahtarı: iki adımlı doğrulamada "sahip olduğunuz şey"](gorseller/foto-guvenlik-anahtari.jpg){width=42%}
 
 ::: {.callout-warning}
@@ -118,6 +120,8 @@ Bu yöntemlerin ortak yanı, sizi **düşünmeden hareket etmeye** itmeleridir. 
 **Oltalama**, sizi kandırarak parola veya kişisel bilgi vermeye ikna etme saldırısıdır. E-posta, kısa mesaj, telefon araması ya da sahte web sitesiyle yapılabilir.
 
 ![Oltalama işaretleri](gorseller/diagram-oltalama.png){width=78%}
+
+![Örnek bir oltalama e-postası: numaralı işaretler şüpheli noktaları gösterir. Adresler ve metin kurgudur.](gorseller/diagram-oltalama-eposta.png){width=95%}
 
 ## En sık görülen biçimler
 
@@ -240,6 +244,8 @@ Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan b
 - **Sanal kart kullanın.** Alışverişe özel, limiti düşük bir sanal kart, asıl kart bilgilerinizin açığa çıkma riskini azaltır.
 - **Ödemeleri hesap özetinden doğrulayın.** Beklemediğiniz bir harcama görürseniz bankanıza bildirin.
 
+![Adres çubuğunda güvenli ve şüpheli bağlantı (temsilî çizim)](gorseller/diagram-guvenli-baglanti.png){width=88%}
+
 # Doğru Bilinen Yanlışlar
 
 | Yanlış inanış | Gerçek |
@@ -253,6 +259,8 @@ Buradan çıkan pratik sonuç şudur: varsayılan güvenlik ayarları sıradan b
 | "Dosyayı sildim, gitti" | Geri dönüşüm kutusu boşaltılmadıkça geri alınabilir; kalıcı silme farklı işlemdir |
 
 # Uygulama: Kendi Güvenliğinizi Denetleyin
+
+**Hangi araçla:** hesaplarınızın güvenlik ayarları (e-posta sağlayıcınızın güvenlik sayfası, e-Devlet) ve cihazınızın güncelleme ayarları. Adımlar çoğu sistemde benzerdir.
 
 ## Adım 1 — Parola alışkanlığınızı değerlendirin
 
@@ -303,10 +311,6 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **TÜBİTAK BİLGEM** — bilişim güvenliği farkındalık yayınları. (tubitak.gov.tr)
 - **Kullanılan işletim sistemi ve tarayıcının resmî güvenlik sayfaları.**
-
-**Görsel kaynakları.** Bu haftanın notlarındaki fotoğraflar Wikimedia Commons'tan alınmıştır. Aşağıdaki iki fotoğraf için kaynak gösterme zorunludur:
-
-- Donanım güvenlik anahtarı — *Yubikey USB 2FA U2F Security Token*, Tony Webster, CC BY 2.0.
-- USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0.
+- **Görsel kaynakları:** Donanım güvenlik anahtarı — *Yubikey USB 2FA U2F Security Token*, Tony Webster, CC BY 2.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bu haftanın şemaları (üç temel, parola gücü, iki adımlı doğrulama akışı, oltalama işaretleri, oltalama e-postası örneği, zararlı yazılım türleri, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
