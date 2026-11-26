@@ -20,13 +20,23 @@ format: beamer
 
 ## Gizlilik · Bütünlük · Erişilebilirlik
 
-![](gorseller/diagram-cia.png){width=76%}
+::: {.columns}
+::: {.column width="50%"}
+
+![](gorseller/gorsel-cia.png)
+
+:::
+
+::: {.column width="46%"}
 
 | İlke | İhlal örneği |
 |:---|:---|
 | Gizlilik | Hesabın ele geçirilmesi |
 | Bütünlük | Notların değiştirilmesi |
 | Erişilebilirlik | Fidye yazılımı |
+
+:::
+:::
 
 ## En Zayıf Halka İnsandır
 

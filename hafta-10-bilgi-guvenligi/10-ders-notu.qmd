@@ -33,13 +33,15 @@ Güvenlikte en zayıf halka teknoloji değil, **insandır**. Sistemleri kırmak 
 
 # Bilgi Güvenliğinin Üç Temeli
 
-![Bilgi güvenliğinin üç temeli](gorseller/diagram-cia.png){width=78%}
+![Bilgi güvenliğinin üç temeli](gorseller/gorsel-cia.png){width=64%}
 
+::: {tbl-colwidths="[16,45,39]"}
 | İlke | Ne demek | İhlal örneği |
 |:---|:---|:---|
 | **Gizlilik** | Bilgiye yalnızca yetkili kişiler erişir | Hesabınızın ele geçirilmesi |
 | **Bütünlük** | Bilgi doğrudur ve değiştirilmemiştir | Notlarınızın değiştirilmesi |
 | **Erişilebilirlik** | Bilgiye ihtiyaç anında ulaşılır | Fidye yazılımı dosyaları kilitler |
+:::
 
 Bu üç ilkeden biri bozulduğunda güvenlik ihlali vardır.
 
@@ -323,6 +325,6 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 - **BTK** — İnternet'in bilinçli ve güvenli kullanımına ilişkin yayınlar. (btk.gov.tr)
 - **TÜBİTAK BİLGEM** — bilişim güvenliği farkındalık yayınları. (tubitak.gov.tr)
 - **Kullanılan işletim sistemi ve tarayıcının resmî güvenlik sayfaları.**
-- **Görsel kaynakları:** Donanım güvenlik anahtarı — *Yubikey USB 2FA U2F Security Token*, Tony Webster, CC BY 2.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bu haftanın şemaları (üç temel, parola gücü, iki adımlı doğrulama akışı, oltalama işaretleri, oltalama e-postası örneği, zararlı yazılım türleri, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
+- **Görsel kaynakları:** Donanım güvenlik anahtarı — *Yubikey USB 2FA U2F Security Token*, Tony Webster, CC BY 2.0 (Wikimedia Commons). USB bellek — *Supertalent USB-Stick*, Afrank99, CC BY-SA 3.0 (Wikimedia Commons). Bilgi güvenliğinin üç temeli şeması — Napkin (napkin.ai) ile üretilmiştir. Bu haftanın diğer şemaları (parola gücü, iki adımlı doğrulama akışı, oltalama işaretleri, oltalama e-postası örneği, zararlı yazılım türleri, güvenli bağlantı) bu ders için hazırlanmıştır; oltalama örneğindeki adresler ve metinler kurgudur.
 
 Haftaya özel ek okuma önerileri ve güncel bağlantılar, dersin çevrimiçi ortamında ayrıca paylaşılır.
