@@ -223,13 +223,11 @@ Casus yazılım & İzler, bilgi toplar\\
 
 ## Zombi Bilgisayarlar
 
-- Genellikle bir **truva atı** ya da güncellenmemiş yazılım açığıyla bulaşır
-- Cihaz sessizce bir **komut merkezine** bağlanır; gelen talimatları uygular
-- Kullanıcı çoğu zaman ele geçirildiğini fark etmez
-- Bu cihazların oluşturduğu ağa **botnet** denir
-- Toplu hâlde kullanılır: site devre dışı bırakma, spam, **kripto madenciliği**, saldırı
+**Truva atı** ya da güncellenmemiş yazılım açığıyla sessizce ele geçirilir; uzaktaki **komut merkezinden** talimat alır. Bu cihazların oluşturduğu ağa **botnet** denir.
 
-Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir — "bende önemli veri yok" demek yanlıştır. Bu durum hukuki sorunlara yol açabilir.
+![](gorseller/gorsel-botnet.jpg){width=86%}
+
+Toplu hâlde kullanılır: siteyi devre dışı bırakma, spam, **kripto para madenciliği**, saldırı. Farkında olmadan başkalarına hizmet eder; hukuki sorun çıkarabilir.
 
 ## Nasıl Bulaşır?
 
