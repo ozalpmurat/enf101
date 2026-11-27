@@ -21,27 +21,23 @@ format: beamer
 
 ## Gizlilik · Bütünlük · Erişilebilirlik
 
-::: {.columns}
-::: {.column width="50%"}
+![](gorseller/gorsel-cia.png){width=54%}
 
-![](gorseller/gorsel-cia.png)
-
-:::
-
-::: {.column width="46%"}
-
-| İlke | İhlal örneği |
-|:---|:---|
-| Gizlilik | Hesabın ele geçirilmesi |
-| Bütünlük | Notların değiştirilmesi |
-| Erişilebilirlik | Fidye yazılımı |
-
-:::
-:::
+```{=latex}
+\begin{center}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{4.6cm}>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\textbf{İlke} & \textbf{Ne demek} & \textbf{İhlal örneği}\\
+\midrule[0.3pt]
+Gizlilik & Yetkili kişiler erişir & Hesabın ele geçirilmesi\\
+Bütünlük & Doğru ve değiştirilmemiş & Notların değiştirilmesi\\
+Erişilebilirlik & İhtiyaç anında ulaşılır & Fidye yazılımı\\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
 
 ## En Zayıf Halka İnsandır
-
-En değerli varlığınız **hesaplarınız ve verilerinizdir**; bir hesabın kaybı, ona bağlı her şeyi riske atar.
 
 Sistemleri kırmak zor, **insanı ikna etmek kolaydır**. Saldırıların büyük kısmı teknik değil, **ikna** yoluyla yapılır.
 
@@ -49,26 +45,18 @@ Sistemleri kırmak zor, **insanı ikna etmek kolaydır**. Saldırıların büyü
 
 ## Parola mı, Şifreleme mi?
 
-::: {.columns}
-::: {.column width="52%"}
+![](gorseller/gorsel-sifreleme.jpg){width=70%}
 
 - **Parola:** Erişim için girdiğiniz gizli dize
 - **Şifreleme:** Verinin okunamaz hâle getirilmesi
 
 Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
 
-:::
-
-::: {.column width="44%"}
-
-![](gorseller/gorsel-sifreleme.jpg)
-
-:::
-:::
-
 ## Parola Gücü
 
-![](gorseller/diagram-parola.png){width=76%}
+![](gorseller/diagram-parola.png){width=100%}
+
+Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edilemez. `mavi-tohum-sandalye-41!` gibi bir **yapı** — ama kendi örneklerinizi üretin.
 
 ## Güçlü Parola Kuralları
 
@@ -81,30 +69,12 @@ Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
 **Aynı parolayı birden fazla hesapta kullanmayın.** Tek bir sızıntı, o parolayı kullandığınız bütün hesapları ele geçirir.
 :::
 
-## Parola Yerine Söz Öbeği
-
-Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edilemez.
-
-`mavi-tohum-sandalye-41!` gibi bir **yapı** — ama kendi örneğinizi üretin.
-
 ## Parola Yöneticisi
 
-::: {.columns}
-::: {.column width="52%"}
+![](gorseller/ekran-parola-yoneticisi.png){width=56%}
 
-- Her hesap için **rastgele** parola üretir
-- Şifreli bir **kasada** saklar
-- Tek bir **ana parola** hatırlamanız yeter
-- Otomatik doldurur
-
-:::
-
-::: {.column width="44%"}
-
-![](gorseller/ekran-parola-yoneticisi.png)
-
-:::
-:::
+- Her hesap için **rastgele** parola üretir; bunları şifreli bir **kasada** saklar
+- Tek bir **ana parola** hatırlamanız yeter; parolaları siteye otomatik doldurur
 
 ## Çok Adımlı Doğrulama (MFA)
 
@@ -131,21 +101,11 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ## Nerede Mutlaka Açık Olmalı?
 
-::: {.columns}
-::: {.column width="60%"}
+![](gorseller/ekran-2fa-kurulum.png){width=58%}
 
 - **E-posta** — diğer bütün parolalar oraya sıfırlanır
 - **e-Devlet ve bankacılık**
 - **Sosyal medya hesapları**
-
-:::
-
-::: {.column width="36%"}
-
-![](gorseller/ekran-2fa-kurulum.png)
-
-:::
-:::
 
 # Sosyal Mühendislik
 
@@ -167,17 +127,24 @@ Ortak yanı: sizi **düşünmeden hareket etmeye** itmeleri.
 
 E-posta, SMS, telefon araması ya da sahte siteyle yapılır. Aşağıdaki kurgusal örnekte numaralı işaretler şüpheli noktaları gösterir.
 
-![](gorseller/diagram-oltalama-eposta.png){width=94%}
+![](gorseller/diagram-oltalama-eposta.png){width=100%}
 
 ## Biçimler
 
-| Biçim | Nasıl işler |
-|:---|:---|
-| E-posta | Kurumdan gelmiş gibi görünür |
-| SMS | Kargo, banka, fatura bildirimi |
-| Telefon | Kendini banka görevlisi tanıtır |
-| Mesajlaşma | WhatsApp, Facebook'ta tanıdık görünen hesaptan gelen bağlantı |
-| Sahte site | Gerçek sitenin kopyası |
+```{=latex}
+\begin{center}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{7.8cm}@{}}
+\textbf{Biçim} & \textbf{Nasıl işler}\\
+\midrule[0.3pt]
+E-posta & Kurumdan gelmiş gibi görünür\\
+SMS & Kargo, banka, fatura bildirimi\\
+Telefon & Kendini banka görevlisi tanıtır\\
+Mesajlaşma & Tanıdık görünen hesaptan gelen bağlantı\\
+Sahte site & Gerçek sitenin birebir kopyası\\
+\bottomrule[0.3pt]
+\end{tabular}
+\end{center}
+```
 
 ## Dört Altın Kural
 
@@ -194,23 +161,16 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 
 **Zararlı yazılım** (İngilizce *malicious software* → **malware**): bir cihaza zarar vermek, bilgi çalmak ya da cihazı kötü amaçlarla kullanmak için yazılmış program.
 
-::: {.columns}
-::: {.column width="50%"}
-
-![](gorseller/diagram-zararli.png)
-
-:::
-
-::: {.column width="46%"}
+![](gorseller/diagram-zararli.png){width=54%}
 
 ```{=latex}
 \begin{center}
-{\scriptsize
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{2.9cm}@{}}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}p{8.6cm}@{}}
 \textbf{Tür} & \textbf{Temel özelliği}\\
 \midrule[0.3pt]
-Virüs ve solucan & Dosya/ağ ile yayılır\\
-Truva atı & Kandırarak sızar\\
+Virüs ve solucan & Dosyalara bulaşır, ağda kendiliğinden yayılır\\
+Truva atı & Yararlı görünüp kandırır\\
 Fidye yazılımı & Dosyaları şifreler\\
 Casus yazılım & İzler, bilgi toplar\\
 \bottomrule[0.3pt]
@@ -218,18 +178,17 @@ Casus yazılım & İzler, bilgi toplar\\
 \end{center}
 ```
 
-:::
-:::
-
 ## Zombi Bilgisayarlar
 
-**Truva atı** ya da güncellenmemiş yazılım açığıyla sessizce ele geçirilir; uzaktaki **komut merkezinden** talimat alır. Bu cihazların oluşturduğu ağa **botnet** denir.
+**Kötü kişiler** tarafından ele geçirilen bilgisayar, uzaktaki **komut merkezinden** talimat alır; bu cihazların oluşturduğu ağa **botnet** denir.
 
 ![](gorseller/gorsel-botnet.jpg){width=86%}
 
 Toplu hâlde kullanılır: siteyi devre dışı bırakma, spam, **kripto para madenciliği**, saldırı. Farkında olmadan başkalarına hizmet eder; hukuki sorun çıkarabilir.
 
 ## Nasıl Bulaşır?
+
+Truva atı ya da güncellenmemiş yazılım açığıyla sessizce ele geçirilir.
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -246,7 +205,7 @@ Toplu hâlde kullanılır: siteyi devre dışı bırakma, spam, **kripto para ma
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{gorseller/foto-usb-bellek.jpg}\\[-1mm]
+\includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{gorseller/foto-usb-bellek.jpg}\\[-1mm]
 {\scriptsize\emph{Tanımadığınız USB belleği takmayın}}
 \end{center}
 ```
@@ -256,11 +215,9 @@ Toplu hâlde kullanılır: siteyi devre dışı bırakma, spam, **kripto para ma
 
 ## Yazılımı Kaynağından İndirin
 
-Yalnızca **üreticinin sitesinden** veya resmî mağazalardan.
-
-Arama sonuçlarındaki **reklam bağlantıları** sahte olabilir.
-
-Korsan yazılımın bedeli parayla değil, **verilerinizle** ödenir.
+- Yalnızca **üreticinin sitesinden** veya resmî mağazalardan indirin.
+- Arama sonuçlarındaki **reklam bağlantıları** sahte olabilir.
+- Korsan yazılımın bedeli parayla değil, **verilerinizle** ödenir.
 
 ## VirusTotal ile İkinci Bir Görüş
 
@@ -285,15 +242,14 @@ Korsan yazılımın bedeli parayla değil, **verilerinizle** ödenir.
 
 ## Güncelleme Neden Önemli?
 
-Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. Saldırganlar güncellenmemiş sistemleri hedefler.
+Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. Saldırganlar güncellenmemiş sistemleri hedefler; aşağıda Windows ve Pardus güncelleme ekranları.
 
 ::: {.columns}
 ::: {.column width="48%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{gorseller/ekran-guncelleme-windows.png}\\[-1mm]
-{\scriptsize\emph{Windows Update}}
+\includegraphics[width=\linewidth,height=5.0cm,keepaspectratio]{gorseller/ekran-guncelleme-windows.png}
 \end{center}
 ```
 
@@ -303,8 +259,7 @@ Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{gorseller/ekran-guncelleme-pardus.png}\\[-1mm]
-{\scriptsize\emph{Pardus Güncelleyici}}
+\includegraphics[width=\linewidth,height=5.0cm,keepaspectratio]{gorseller/ekran-guncelleme-pardus.png}
 \end{center}
 ```
 
@@ -314,31 +269,29 @@ Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. 
 ## Yedekleme: Fidyeye Karşı En İyi Savunma
 
 ::: {.columns}
-::: {.column width="38%"}
+::: {.column width="34%"}
 
 Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez.
 
 4\. haftanın **3-2-1 kuralını hatırlayın**.
 
-Yedeği **bağlı tutmayın**.
-
 :::
 
-::: {.column width="29%"}
+::: {.column width="32%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=4.3cm,keepaspectratio]{gorseller/ekran-yedekleme.png}
+\includegraphics[width=\linewidth,height=5.2cm,keepaspectratio]{gorseller/ekran-yedekleme.png}
 \end{center}
 ```
 
 :::
 
-::: {.column width="29%"}
+::: {.column width="32%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=4.3cm,keepaspectratio]{gorseller/ekran-fidye-koruma.png}
+\includegraphics[width=\linewidth,height=5.2cm,keepaspectratio]{gorseller/ekran-fidye-koruma.png}
 \end{center}
 ```
 
@@ -360,55 +313,57 @@ Yedeği **bağlı tutmayın**.
 ## Güvenlik Duvarı ve Varsayılan Ayarlar
 
 ::: {.columns}
-::: {.column width="54%"}
+::: {.column width="56%"}
 
 - **Güvenlik duvarı:** Gelen-giden trafiği denetler, izin verilmeyeni engeller
 - İşletim sistemlerinde **hazır ve açık** gelir; kapatmayın
 - Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**
 
-**Windows 11 güvenlik özellikleri:** Defender Antivirus, Güvenlik Duvarı, SmartScreen, UAC, Windows Update, Exploit Protection, Tamper Protection, Denetimli Klasör Erişimi.
+**Diğer bazı Windows güvenlik özellikleri:** Defender, Kullanıcı Hesabı Denetimi, Kurcalama Koruması, Denetimli Klasör Erişimi.
 
 :::
 
-::: {.column width="42%"}
+::: {.column width="40%"}
 
-![](gorseller/ekran-guvenlik-ayarlari.png)
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=5.4cm,keepaspectratio]{gorseller/ekran-guvenlik-ayarlari.png}
+\end{center}
+```
 
 :::
 :::
 
 ## İnternet'ten Alışveriş ve Bankacılık
 
-::: {.columns}
-::: {.column width="52%"}
-
 - **`https` ve kilit simgesini** kontrol edin; adresi **kendiniz yazın**
 - Bankacılık parolanızı **kimseyle paylaşmayın**
 - **Sanal kart** kullanın (düşük limitli)
 - Ödemeleri **hesap özetinden** doğrulayın
 
-:::
-
-::: {.column width="44%"}
-
-![](gorseller/diagram-guvenli-baglanti.png)
-
-:::
-:::
+![](gorseller/diagram-guvenli-baglanti.png){width=86%}
 
 # Doğru Bilinen Yanlışlar
 
 ## Yaygın Yanlış İnanışlar
 
-| Yanlış inanış | Gerçek |
-|:---|:---|
-| "Antivirüs varsa güvendeyim" | Tek başına yetmez; zayıf halka insan |
-| "Beni hedef almazlar" | Saldırılar otomatiktir |
-| "Gizli moddayım, güvendeyim" | Gizli mod anonim yapmaz |
-| "Parolam karmaşık" | Aynı parolayı her yerde kullanıyorsanız risk var |
-| "Sadece güvenli sitelere giriyorum" | Güvenli bir sitenin reklamı ya da eklentisi zararlı olabilir |
-| "Mac/Linux'a virüs bulaşmaz" | Bulaşır, hedef daha seyrek |
-| "Dosyayı sildim, gitti" | Geri dönüşüm kutusu boşaltılmadıysa döner |
+```{=latex}
+\begin{center}
+{\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.4cm}>{\raggedright\arraybackslash}p{7.6cm}@{}}
+\textbf{Yanlış inanış} & \textbf{Gerçek}\\
+\midrule[0.3pt]
+"Antivirüs varsa güvendeyim" & Tek başına yetmez; zayıf halka insan\\
+"Beni hedef almazlar" & Saldırılar otomatiktir\\
+"Gizli moddayım, güvendeyim" & Gizli mod anonim yapmaz\\
+"Parolam karmaşık" & Aynı parolayı her yerde kullanırsanız risk var\\
+"Sadece güvenli sitelere giriyorum" & Reklamı veya eklentisi zararlı olabilir\\
+"Mac/Linux'a virüs bulaşmaz" & Bulaşır, hedef daha seyrek\\
+"Dosyayı sildim, gitti" & Geri dönüşüm kutusu boşaltılmadıysa döner\\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
 
 # Kapanış
 
