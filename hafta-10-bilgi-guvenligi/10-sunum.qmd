@@ -21,10 +21,11 @@ format: beamer
 
 ## Gizlilik · Bütünlük · Erişilebilirlik
 
-![](gorseller/gorsel-cia.png){width=62%}
-
 ```{=latex}
 \begin{center}
+\includegraphics[width=0.62\linewidth]{gorseller/gorsel-cia.png}
+
+\vspace{2mm}
 {\small
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{5.4cm}@{}}
 \textbf{İlke} & \textbf{İhlal örneği}\\
@@ -43,13 +44,11 @@ Erişilebilirlik & Fidye yazılımı\\
 
 ```{=latex}
 \begin{center}
-\includegraphics[trim=0 34 0 34, clip, width=0.84\linewidth]{gorseller/gorsel-sifreleme.jpg}
+\includegraphics[trim=0 34 0 34, clip, width=0.80\linewidth]{gorseller/gorsel-sifreleme.jpg}
 \end{center}
 ```
 
-- **Parola:** erişim için girdiğiniz gizli dize · **Şifreleme:** verinin okunamaz hâle getirilmesi
-
-Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
+- **Parola:** erişim için girdiğiniz gizli dize · **Şifreleme:** verinin okunamaz hâle getirilmesi. Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
 
 ## Parola Gücü
 
@@ -79,13 +78,13 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ::: {.column width="42%"}
 
-Ücretsiz bir parola yöneticisi: **Proton Pass** (Firefox eklentisi). Soldaki pencerede kayıtlı hesaplar ve şifreli kasa görülüyor.
-
-:::
-:::
-
 - Her hesap için **rastgele** parola üretir; bunları şifreli bir **kasada** saklar
 - Tek bir **ana parola** hatırlamanız yeter; parolaları siteye otomatik doldurur
+
+:::
+:::
+
+Ücretsiz bir parola yöneticisi: **Proton Pass** (Firefox eklentisi). Soldaki pencerede kayıtlı hesaplar ve şifreli kasa görülüyor.
 
 ## Çok Adımlı Doğrulama (MFA)
 
