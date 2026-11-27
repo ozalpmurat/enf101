@@ -160,7 +160,7 @@ Oltalama mesajlarının tipik işaretleri:
 
 # Zararlı Yazılımlar
 
-**Zararlı yazılım**, cihaza zarar vermek ya da bilgi çalmak amacıyla yazılmış programdır. İngilizce *malicious software* (kötü amaçlı yazılım) tamlamasının kısaltması olan **malware** de aynı anlamda kullanılır.
+**Zararlı yazılım**, bir cihaza zarar vermek, cihazdaki bilgileri çalmak ya da cihazı kötü amaçlarla (örneğin başka sistemlere saldırmak veya kripto para madenciliği yapmak için) kullanmak üzere yazılmış programdır. İngilizce *malicious software* (kötü amaçlı yazılım) tamlamasının kısaltması olan **malware** de aynı anlamda kullanılır.
 
 ![Zararlı yazılım türleri](gorseller/diagram-zararli.png){width=82%}
 
