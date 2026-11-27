@@ -1,6 +1,5 @@
-# 10. hafta: zararlı yazılım türleri — üç grup.
-# Kartlar: bulaşma ve yayılma amaçlı (virüs, solucan, truva atı),
-# fidye yazılımı (ransomware) ve casus yazılım (spyware).
+# 10. hafta: zararlı yazılım türleri — dört kart (2x2).
+# Virüs ve solucan · Truva atı · Fidye yazılımı · Casus yazılım.
 #
 # Kullanım:
 #   python3 diyagram_betikleri/diagram-zararli.py            # PNG üretir
@@ -9,7 +8,7 @@
 # Çıktı: hafta-10-bilgi-guvenligi/gorseller/diagram-zararli.png
 #
 # Şemanın içine başlık yazılmaz (AGENTS.md §8). Metinler ders notundaki
-# üç satırlı tabloyu izler.
+# dört satırlı tabloyu izler.
 
 import sys
 from pathlib import Path
@@ -30,27 +29,24 @@ GRI = "#595959"
 
 plt.rcParams["font.family"] = "DejaVu Sans"
 
-G, Y = 20.0, 5.2
-M, ARA = 0.5, 0.6
-KUTU_W = (G - 2 * M - 2 * ARA) / 3
-KUTU_H = 4.0
-Y0 = (Y - KUTU_H) / 2
+G, Y = 18.0, 9.0
+M, ARA_X, ARA_Y = 0.4, 0.6, 0.6
+KUTU_W = (G - 2 * M - ARA_X) / 2
+KUTU_H = 3.6
 
-BASLIK_FS, ALT_FS, GOVDE_FS = 11.5, 10.5, 9.8
-IC_PAY = 0.3
+BASLIK_FS, ALT_FS, GOVDE_FS = 12.5, 10.5, 9.5
+IC_PAY = 0.35
 
-# (başlık satırları, alt başlık, [(gövde satırı, kalın mı)])
+# (başlık, alt başlık, gövde satırları) — sıra: sol üst, sağ üst, sol alt, sağ alt
 KARTLAR = [
-    (["BULAŞMA VE YAYILMA", "AMAÇLI"], None,
-     [("Virüs · Solucan · Truva atı", True),
-      ("Sisteme girer ve yayılır", False)]),
+    (["VİRÜS VE SOLUCAN"], None,
+     ["Dosyalara bulaşarak ya da ağ üzerinden", "kendiliğinden yayılarak başka", "sistemlere ulaşır."]),
+    (["TRUVA ATI"], "(Trojan)",
+     ["Yararlı veya zararsız bir program gibi", "görünerek kullanıcıyı kandırır;", "zararlı faaliyet yürütür."]),
     (["FİDYE YAZILIMI"], "(Ransomware)",
-     [("Dosyaları şifreler veya", False),
-      ("erişimi engeller;", False),
-      ("fidye talep eder", False)]),
+     ["Dosyaları şifreleyerek veya erişimi", "engelleyerek fidye talep eder."]),
     (["CASUS YAZILIM"], "(Spyware)",
-     [("Gizlice izler; parola ve", False),
-      ("kişisel bilgileri toplar", False)]),
+     ["Kullanıcıyı gizlice izleyerek", "parola ve kişisel bilgileri toplar."]),
 ]
 
 
@@ -64,18 +60,15 @@ def metin_olc(fig, ax, metin, fs, bold):
     return x2 - x1
 
 
-def kart(ax, x, basliklar, alt, govde):
-    ax.add_patch(FancyBboxPatch((x, Y0), KUTU_W, KUTU_H,
+def kart(ax, x, y0, basliklar, alt, govde):
+    ax.add_patch(FancyBboxPatch((x, y0), KUTU_W, KUTU_H,
                  boxstyle="round,pad=0.02,rounding_size=0.16",
                  linewidth=1.6, edgecolor=LAC, facecolor=ZEMIN, zorder=2))
-    # satırları topla: (metin, puntosu, kalın, renk, satır payı)
-    satirlar = [(s, BASLIK_FS, True, LAC, 0.55) for s in basliklar]
-    satirlar.append((alt or "", ALT_FS, False, MAVI, 0.58 if alt else 0.3))
-    for i, (s, kalin) in enumerate(govde):
-        satirlar.append((s, GOVDE_FS, kalin, LAC if kalin else GRI,
-                         0.5 if i == 0 else 0.46))
+    satirlar = [(s, BASLIK_FS, True, LAC, 0.6) for s in basliklar]
+    satirlar.append((alt or "", ALT_FS, False, MAVI, 0.5 if alt else 0.28))
+    satirlar += [(s, GOVDE_FS, False, GRI, 0.48) for s in govde]
     toplam = sum(s[4] for s in satirlar)
-    y = Y0 + KUTU_H / 2 + toplam / 2
+    y = y0 + KUTU_H / 2 + toplam / 2
     for metin, fs, kalin, renk, pay in satirlar:
         y -= pay / 2
         if metin:
@@ -91,8 +84,13 @@ def kur():
     ax.set_xlim(0, G)
     ax.set_ylim(0, Y)
     ax.axis("off")
-    for i, (basliklar, alt, govde) in enumerate(KARTLAR):
-        kart(ax, M + i * (KUTU_W + ARA), basliklar, alt, govde)
+    y_alt = (Y - (2 * KUTU_H + ARA_Y)) / 2
+    y_ust = y_alt + KUTU_H + ARA_Y
+    x_sol = M
+    x_sag = M + KUTU_W + ARA_X
+    yerler = [(x_sol, y_ust), (x_sag, y_ust), (x_sol, y_alt), (x_sag, y_alt)]
+    for (x, y0), (basliklar, alt, govde) in zip(yerler, KARTLAR):
+        kart(ax, x, y0, basliklar, alt, govde)
     return fig, ax
 
 
@@ -110,8 +108,8 @@ def kontrol(fig, ax):
             if g > sinir:
                 print(f"TAŞIYOR  alt başlık: {g:.2f} > {sinir:.2f}  ({alt})")
                 sorun += 1
-        for satir, kalin in govde:
-            g = metin_olc(fig, ax, satir, GOVDE_FS, kalin)
+        for satir in govde:
+            g = metin_olc(fig, ax, satir, GOVDE_FS, False)
             if g > sinir:
                 print(f"TAŞIYOR  gövde: {g:.2f} > {sinir:.2f}  ({satir})")
                 sorun += 1

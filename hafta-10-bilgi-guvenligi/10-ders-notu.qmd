@@ -168,7 +168,8 @@ Zararlı yazılımlar farklı amaçlarla çalışabilir. Bir yazılım birden fa
 
 | Tür | Temel özelliği |
 |:---|:---|
-| **Bulaşma ve yayılma amaçlı** | Virüs, solucan ve Truva atı gibi zararlı yazılımlar. |
+| **Virüs ve solucan** | Dosyalara bulaşarak veya ağ üzerinden kendiliğinden yayılarak başka sistemlere ulaşır. |
+| **Truva atı (Trojan)** | Yararlı veya zararsız bir program gibi görünerek kullanıcıyı kandırır ve zararlı faaliyet yürütür. |
 | **Fidye yazılımı (Ransomware)** | Dosyaları şifreleyerek veya erişimi engelleyerek fidye talep eder. |
 | **Casus yazılım (Spyware)** | Kullanıcıyı gizlice izleyerek parola ve kişisel bilgiler gibi verileri toplar. |
 
