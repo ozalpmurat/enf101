@@ -39,7 +39,7 @@ IC_PAY = 0.35
 
 # (başlık, alt başlık, gövde satırları) — sıra: sol üst, sağ üst, sol alt, sağ alt
 KARTLAR = [
-    (["VİRÜS VE SOLUCAN"], None,
+    (["VİRÜS VE SOLUCAN"], "(Virus, Worm)",
      ["Dosyalara bulaşarak ya da ağ üzerinden", "kendiliğinden yayılarak başka", "sistemlere ulaşır."]),
     (["TRUVA ATI"], "(Trojan)",
      ["Yararlı veya zararsız bir program gibi", "görünerek kullanıcıyı kandırır;", "zararlı faaliyet yürütür."]),
