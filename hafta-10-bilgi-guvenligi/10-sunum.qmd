@@ -27,7 +27,7 @@ format: beamer
 
 \vspace{2mm}
 {\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{5.4cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.8cm}@{\hspace{5mm}}>{\raggedright\arraybackslash}p{3.9cm}@{}}
 \textbf{İlke} & \textbf{İhlal örneği}\\
 \midrule[0.3pt]
 Gizlilik & Hesabın ele geçirilmesi\\
