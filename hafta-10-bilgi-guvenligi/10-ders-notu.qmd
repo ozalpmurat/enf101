@@ -27,7 +27,7 @@ Güvenlikte en zayıf halka teknoloji değil, **insandır**. Sistemleri kırmak 
 - Güçlü parola oluşturur ve parola yöneticisi kullanır.
 - Çok adımlı doğrulamayı (MFA) ve en yaygın biçimi olan iki adımlı doğrulamayı (2FA) açıklar.
 - Oltalama saldırılarını tanır ve doğru davranır.
-- Zararlı yazılımların yaygın davranışlarını ve bulaşma yollarını bilir.
+- Zararlı yazılım türlerini ve bulaşma yollarını bilir.
 - Güncelleme ve yedekleme alışkanlığı geliştirir.
 - Cihaz ve hesap güvenliği için doğru ayarları uygular.
 
@@ -162,19 +162,15 @@ Oltalama mesajlarının tipik işaretleri:
 
 **Zararlı yazılım**, cihaza zarar vermek ya da bilgi çalmak amacıyla yazılmış programdır. İngilizce *malicious software* (kötü amaçlı yazılım) tamlamasının kısaltması olan **malware** de aynı anlamda kullanılır.
 
-![Zararlı yazılımların yaygın davranışları](gorseller/diagram-zararli.png){width=82%}
+![Zararlı yazılım türleri](gorseller/diagram-zararli.png){width=82%}
 
-Zararlı yazılımları adlandırırken kullanılan terimler **kesin türler değil, yaygın davranışlardır**. Tek bir zararlı yazılım bunlardan birkaçını birlikte gösterebilir.
+Zararlı yazılımlar farklı amaçlarla çalışabilir. Bir yazılım birden fazla zararlı özelliği aynı anda gösterebilir.
 
-| Ad | Ne yapar |
+| Tür | Temel özelliği |
 |:---|:---|
-| **Virüs** | Kendini başka bir dosyaya ekler; o dosya çalıştıkça bulaşır |
-| **Solucan** | Bir taşıyıcı dosyaya ihtiyaç duymadan, kendi başına ağda yayılır |
-| **Truva atı** | Yararlı bir program gibi görünür; açılınca sisteme arka kapı açar |
-| **Fidye yazılımı** | Dosyaları şifreler, açmak için para ister |
-| **Casus yazılım** | Kullanımı izler; parola ve kişisel bilgi toplar |
-
-Bu adlar bir programın **ne yaptığını** anlatır; aralarındaki sınır kesin değildir. Bir virüs de bilgi toplayabilir, bir truva atı da dosyaları kilitleyebilir. Bu nedenle aynı zararlı yazılım için birden çok ad birlikte kullanılabilir.
+| **Bulaşma ve yayılma amaçlı** | Virüs, solucan ve Truva atı gibi zararlı yazılımlar. |
+| **Fidye yazılımı (Ransomware)** | Dosyaları şifreleyerek veya erişimi engelleyerek fidye talep eder. |
+| **Casus yazılım (Spyware)** | Kullanıcıyı gizlice izleyerek parola ve kişisel bilgiler gibi verileri toplar. |
 
 ## Zombi bilgisayarlar
 
@@ -352,7 +348,7 @@ Bu uygulama notla değerlendirilmez. Amacı, güvenlik alışkanlıklarınızı 
 3. Parola yöneticisi nasıl çalışır; hangi tek bilgiyi hatırlamak yeterlidir?
 4. Çok adımlı doğrulama (MFA) ile iki adımlı doğrulama (2FA) arasındaki ilişki nedir? 2FA neyi korur ve hangi hesapta mutlaka açık olmalıdır?
 5. Oltalama saldırılarının en belirgin ortak özelliği nedir?
-6. Virüs ile solucan arasındaki temel fark nedir? Bu adlar neden kesin türler değildir?
+6. Virüs ile solucan arasındaki temel fark nedir?
 7. Fidye yazılımına karşı en etkili savunma nedir ve neden?
 8. "Antivirüs varsa güvendeyim" inanışı neden yanlıştır?
 
