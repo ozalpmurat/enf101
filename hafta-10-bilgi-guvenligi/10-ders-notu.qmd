@@ -174,11 +174,11 @@ Zararlı yazılımlar farklı amaçlarla çalışabilir. Bir yazılım birden fa
 
 ## Zombi bilgisayarlar
 
-Bazı zararlı yazılımlar bilgisayarınızda hemen bir şey bozmaz. Sessizce çalışır, uzaktaki bir **komut merkezine** bağlanır ve oradan gelen emirleri uygular. Böyle bir bilgisayara **zombi bilgisayar**, bu cihazların oluşturduğu ağa **botnet** (İngilizce *robot network*) denir.
+Bazı zararlı yazılımlar bilgisayarınızda hemen fark edilebilir bir değişikliğe neden olmaz. Sessizce çalışır ve uzaktaki bir saldırgandan veya komut merkezinden gelen talimatları uygular. Bu şekilde ele geçirilmiş bilgisayarlara **zombi bilgisayar**, bu bilgisayarların oluşturduğu ağa ise **botnet** (İngilizce *robot network*) denir.
 
-Zombi bilgisayarlar genellikle topluca hareket eder: bir siteyi devre dışı bırakmak, spam göndermek ya da başka sistemlere saldırmak için kullanılırlar. Kullanıcı çoğu zaman hiçbir şey fark etmez; bilgisayar normal çalışmaya devam eder.
+Zombi bilgisayarlar genellikle toplu hâlde kullanılır. Bir İnternet sitesini devre dışı bırakmak, spam göndermek veya başka sistemlere saldırmak bu kullanım amaçlarından bazılarıdır. Kullanıcı çoğu zaman bilgisayarının ele geçirildiğini fark etmez; cihaz normal çalışmaya devam edebilir.
 
-Bu yüzden "bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez" demek yanlıştır: cihazınız farkında olmadan bir saldırganın işini görmeye başlayabilir ve bunun hukuki sonuçları olabilir.
+Bu nedenle "Bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez." demek yanlıştır. Bilgisayarınız, farkında olmadan başkalarına yönelik saldırılarda kullanılabilir ve bu durum hukuki sorunlara yol açabilir.
 
 ## Nasıl bulaşır?
 
