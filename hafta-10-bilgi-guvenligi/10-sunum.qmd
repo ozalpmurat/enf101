@@ -15,6 +15,7 @@ format: beamer
 - Oltalama saldırılarını tanır.
 - Zararlı yazılım türlerini bilir.
 - Güncelleme ve yedekleme alışkanlığı geliştirir.
+- Cihaz ve hesap güvenliği için doğru ayarları uygular.
 
 # Güvenliğin Üç Temeli
 
@@ -40,18 +41,30 @@ format: beamer
 
 ## En Zayıf Halka İnsandır
 
-Sistemleri kırmak zor, **insanı ikna etmek kolaydır**.
+En değerli varlığınız **hesaplarınız ve verilerinizdir**; bir hesabın kaybı, ona bağlı her şeyi riske atar.
 
-Saldırıların büyük kısmı teknik değil, **ikna** yoluyla yapılır.
+Sistemleri kırmak zor, **insanı ikna etmek kolaydır**. Saldırıların büyük kısmı teknik değil, **ikna** yoluyla yapılır.
 
 # Parola Yönetimi
 
 ## Parola mı, Şifreleme mi?
 
+::: {.columns}
+::: {.column width="52%"}
+
 - **Parola:** Erişim için girdiğiniz gizli dize
 - **Şifreleme:** Verinin okunamaz hâle getirilmesi
 
 Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
+
+:::
+
+::: {.column width="44%"}
+
+![](gorseller/gorsel-sifreleme.jpg)
+
+:::
+:::
 
 ## Parola Gücü
 
@@ -95,9 +108,26 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ## Çok Adımlı Doğrulama (MFA)
 
-**Çok adımlı doğrulama (MFA)** şemsiye terimdir; **2FA** bunun en yaygın biçimidir. **Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı). Parolanız çalınsa bile hesabınız korunur; **uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
+::: {.columns}
+::: {.column width="56%"}
 
-![](gorseller/diagram-2fa.png){width=94%}
+**MFA** şemsiye terimdir; **2FA** bunun en yaygın biçimidir. **Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı). Parolanız çalınsa bile hesabınız korunur; **uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
+
+:::
+
+::: {.column width="42%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=3.2cm,keepaspectratio]{gorseller/foto-otp-cihazi.jpg}\\[-1mm]
+{\scriptsize\emph{Donanım OTP cihazı}}
+\end{center}
+```
+
+:::
+:::
+
+![](gorseller/diagram-2fa.png){width=90%}
 
 ## Nerede Mutlaka Açık Olmalı?
 
@@ -135,9 +165,9 @@ Ortak yanı: sizi **düşünmeden hareket etmeye** itmeleri.
 
 ## Sizi Kandırarak Bilgi Almak
 
-E-posta, SMS, telefon araması ya da sahte siteyle yapılır.
+E-posta, SMS, telefon araması ya da sahte siteyle yapılır. Aşağıdaki kurgusal örnekte numaralı işaretler şüpheli noktaları gösterir.
 
-![](gorseller/diagram-oltalama.png){width=76%}
+![](gorseller/diagram-oltalama-eposta.png){width=94%}
 
 ## Biçimler
 
@@ -162,9 +192,34 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 
 ## Zararlı Yazılım Türleri
 
-![](gorseller/diagram-zararli.png){width=84%}
+**Zararlı yazılım** (İngilizce *malicious software* → **malware**): bir cihaza zarar vermek, bilgi çalmak ya da cihazı kötü amaçlarla kullanmak için yazılmış program.
 
-Zararlı yazılımlar farklı amaçlarla çalışır; bir yazılım birden fazla özelliği aynı anda gösterebilir.
+::: {.columns}
+::: {.column width="50%"}
+
+![](gorseller/diagram-zararli.png)
+
+:::
+
+::: {.column width="46%"}
+
+```{=latex}
+\begin{center}
+{\scriptsize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{2.9cm}@{}}
+\textbf{Tür} & \textbf{Temel özelliği}\\
+\midrule[0.3pt]
+Virüs ve solucan & Dosya/ağ ile yayılır\\
+Truva atı & Kandırarak sızar\\
+Fidye yazılımı & Dosyaları şifreler\\
+Casus yazılım & İzler, bilgi toplar\\
+\bottomrule[0.3pt]
+\end{tabular}}
+\end{center}
+```
+
+:::
+:::
 
 ## Zombi Bilgisayarlar
 
@@ -174,7 +229,7 @@ Zararlı yazılımlar farklı amaçlarla çalışır; bir yazılım birden fazla
 - Bu cihazların oluşturduğu ağa **botnet** denir
 - Toplu hâlde kullanılır: site devre dışı bırakma, spam, **kripto madenciliği**, saldırı
 
-Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir — "bende önemli veri yok" demek yanlıştır.
+Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir — "bende önemli veri yok" demek yanlıştır. Bu durum hukuki sorunlara yol açabilir.
 
 ## Nasıl Bulaşır?
 
@@ -211,27 +266,49 @@ Korsan yazılımın bedeli parayla değil, **verilerinizle** ödenir.
 
 ## VirusTotal ile İkinci Bir Görüş
 
+::: {.columns}
+::: {.column width="52%"}
+
 - **Ne işe yarar?** Şüpheli dosya/bağlantıyı birçok antivirüs motoruyla tarar
 - **Ne zaman kullanılır?** Antivirüse rağmen şüphe duyduğunuzda
 - **Gizlilik:** Hassas dosyaları yüklemekten kaçının; mümkünse **hash** ile sorgulayın
 - **Adres:** [virustotal.com](https://www.virustotal.com)
 
-# Güncelleme ve Yedekleme
-
-## Güncelleme Neden Önemli?
-
-::: {.columns}
-::: {.column width="52%"}
-
-Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**.
-
-Saldırganlar güncellenmemiş sistemleri hedefler.
-
 :::
 
 ::: {.column width="44%"}
 
-![](gorseller/ekran-guncelleme-windows.png)
+![](gorseller/ekran-virustotal.png)
+
+:::
+:::
+
+# Güncelleme ve Yedekleme
+
+## Güncelleme Neden Önemli?
+
+Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. Saldırganlar güncellenmemiş sistemleri hedefler.
+
+::: {.columns}
+::: {.column width="48%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{gorseller/ekran-guncelleme-windows.png}\\[-1mm]
+{\scriptsize\emph{Windows Update}}
+\end{center}
+```
+
+:::
+
+::: {.column width="48%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=4.2cm,keepaspectratio]{gorseller/ekran-guncelleme-pardus.png}\\[-1mm]
+{\scriptsize\emph{Pardus Güncelleyici}}
+\end{center}
+```
 
 :::
 :::
@@ -239,19 +316,33 @@ Saldırganlar güncellenmemiş sistemleri hedefler.
 ## Yedekleme: Fidyeye Karşı En İyi Savunma
 
 ::: {.columns}
-::: {.column width="52%"}
+::: {.column width="38%"}
 
 Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez.
 
 4\. haftanın **3-2-1 kuralını hatırlayın**.
 
-Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifreler.
+Yedeği **bağlı tutmayın**.
 
 :::
 
-::: {.column width="44%"}
+::: {.column width="29%"}
 
-![](gorseller/ekran-yedekleme.png)
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=4.3cm,keepaspectratio]{gorseller/ekran-yedekleme.png}
+\end{center}
+```
+
+:::
+
+::: {.column width="29%"}
+
+```{=latex}
+\begin{center}
+\includegraphics[width=\linewidth,height=4.3cm,keepaspectratio]{gorseller/ekran-fidye-koruma.png}
+\end{center}
+```
 
 :::
 :::
@@ -271,17 +362,17 @@ Yedeği **bağlı tutmayın** — fidye yazılımı bağlı diskleri de şifrele
 ## Güvenlik Duvarı ve Varsayılan Ayarlar
 
 ::: {.columns}
-::: {.column width="52%"}
+::: {.column width="54%"}
 
 - **Güvenlik duvarı:** Gelen-giden trafiği denetler, izin verilmeyeni engeller
 - İşletim sistemlerinde **hazır ve açık** gelir; kapatmayın
-- Çoğu sistemde antivirüs de yerleşik gelir
+- Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**
 
-Varsayılan ayarlar sıradan bir kullanıcı için genellikle **yeterlidir**.
+**Windows 11 güvenlik özellikleri:** Defender Antivirus, Güvenlik Duvarı, SmartScreen, UAC, Windows Update, Exploit Protection, Tamper Protection, Denetimli Klasör Erişimi.
 
 :::
 
-::: {.column width="44%"}
+::: {.column width="42%"}
 
 ![](gorseller/ekran-guvenlik-ayarlari.png)
 
