@@ -21,34 +21,33 @@ format: beamer
 
 ## Gizlilik · Bütünlük · Erişilebilirlik
 
-![](gorseller/gorsel-cia.png){width=54%}
+![](gorseller/gorsel-cia.png){width=62%}
 
 ```{=latex}
 \begin{center}
 {\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{4.6cm}>{\raggedright\arraybackslash}p{4.4cm}@{}}
-\textbf{İlke} & \textbf{Ne demek} & \textbf{İhlal örneği}\\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{5.4cm}@{}}
+\textbf{İlke} & \textbf{İhlal örneği}\\
 \midrule[0.3pt]
-Gizlilik & Yetkili kişiler erişir & Hesabın ele geçirilmesi\\
-Bütünlük & Doğru ve değiştirilmemiş & Notların değiştirilmesi\\
-Erişilebilirlik & İhtiyaç anında ulaşılır & Fidye yazılımı\\
+Gizlilik & Hesabın ele geçirilmesi\\
+Bütünlük & Notların değiştirilmesi\\
+Erişilebilirlik & Fidye yazılımı\\
 \bottomrule[0.3pt]
 \end{tabular}}
 \end{center}
 ```
 
-## En Zayıf Halka İnsandır
-
-Sistemleri kırmak zor, **insanı ikna etmek kolaydır**. Saldırıların büyük kısmı teknik değil, **ikna** yoluyla yapılır.
-
 # Parola Yönetimi
 
 ## Parola mı, Şifreleme mi?
 
-![](gorseller/gorsel-sifreleme.jpg){width=70%}
+```{=latex}
+\begin{center}
+\includegraphics[trim=0 34 0 34, clip, width=0.84\linewidth]{gorseller/gorsel-sifreleme.jpg}
+\end{center}
+```
 
-- **Parola:** Erişim için girdiğiniz gizli dize
-- **Şifreleme:** Verinin okunamaz hâle getirilmesi
+- **Parola:** erişim için girdiğiniz gizli dize · **Şifreleme:** verinin okunamaz hâle getirilmesi
 
 Günlük dilde ikisine de "şifre" denir; teknik olarak farklıdır.
 
@@ -71,7 +70,19 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ## Parola Yöneticisi
 
-![](gorseller/ekran-parola-yoneticisi.png){width=56%}
+::: {.columns}
+::: {.column width="54%"}
+
+![](gorseller/ekran-parola-yoneticisi.png)
+
+:::
+
+::: {.column width="42%"}
+
+Ücretsiz bir parola yöneticisi: **Proton Pass** (Firefox eklentisi). Soldaki pencerede kayıtlı hesaplar ve şifreli kasa görülüyor.
+
+:::
+:::
 
 - Her hesap için **rastgele** parola üretir; bunları şifreli bir **kasada** saklar
 - Tek bir **ana parola** hatırlamanız yeter; parolaları siteye otomatik doldurur
@@ -80,6 +91,10 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ::: {.columns}
 ::: {.column width="56%"}
+
+```{=latex}
+\vspace*{5mm}
+```
 
 **MFA** şemsiye terimdir; **2FA** bunun en yaygın biçimidir. **Bildiğiniz bir şey** (parola) + **sahip olduğunuz bir şey** (telefon, uygulama kodu, donanım anahtarı). Parolanız çalınsa bile hesabınız korunur; **uygulama tabanlı kodlar**, SMS kodundan daha güvenlidir.
 
@@ -99,7 +114,7 @@ Birbirinden ilgisiz kelimeleri birleştirmek hem akılda kalır hem tahmin edile
 
 ![](gorseller/diagram-2fa.png){width=90%}
 
-## Nerede Mutlaka Açık Olmalı?
+## 2FA nerede çok önemli?
 
 ![](gorseller/ekran-2fa-kurulum.png){width=58%}
 
@@ -161,22 +176,7 @@ Hiçbir kurum e-posta veya telefonla parola istemez.
 
 **Zararlı yazılım** (İngilizce *malicious software* → **malware**): bir cihaza zarar vermek, bilgi çalmak ya da cihazı kötü amaçlarla kullanmak için yazılmış program.
 
-![](gorseller/diagram-zararli.png){width=54%}
-
-```{=latex}
-\begin{center}
-{\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}p{8.6cm}@{}}
-\textbf{Tür} & \textbf{Temel özelliği}\\
-\midrule[0.3pt]
-Virüs ve solucan & Dosyalara bulaşır, ağda kendiliğinden yayılır\\
-Truva atı & Yararlı görünüp kandırır\\
-Fidye yazılımı & Dosyaları şifreler\\
-Casus yazılım & İzler, bilgi toplar\\
-\bottomrule[0.3pt]
-\end{tabular}}
-\end{center}
-```
+![](gorseller/diagram-zararli.png){width=84%}
 
 ## Zombi Bilgisayarlar
 
@@ -242,14 +242,14 @@ Truva atı ya da güncellenmemiş yazılım açığıyla sessizce ele geçirilir
 
 ## Güncelleme Neden Önemli?
 
-Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. Saldırganlar güncellenmemiş sistemleri hedefler; aşağıda Windows ve Pardus güncelleme ekranları.
+Bilinen güvenlik açıklarını kapatır. Saldırganlar güncellenmemiş sistemleri hedefler; aşağıda Windows ve Pardus güncelleme ekranları görülüyor.
 
 ::: {.columns}
 ::: {.column width="48%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=5.0cm,keepaspectratio]{gorseller/ekran-guncelleme-windows.png}
+\includegraphics[width=\linewidth,height=5.6cm,keepaspectratio]{gorseller/ekran-guncelleme-windows.png}
 \end{center}
 ```
 
@@ -259,7 +259,7 @@ Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=5.0cm,keepaspectratio]{gorseller/ekran-guncelleme-pardus.png}
+\includegraphics[width=\linewidth,height=5.6cm,keepaspectratio]{gorseller/ekran-guncelleme-pardus.png}
 \end{center}
 ```
 
@@ -269,34 +269,28 @@ Yalnızca yeni özellik eklemez; **bilinen güvenlik açıklarını kapatır**. 
 ## Yedekleme: Fidyeye Karşı En İyi Savunma
 
 ::: {.columns}
-::: {.column width="34%"}
-
-Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez.
-
-4\. haftanın **3-2-1 kuralını hatırlayın**.
-
-:::
-
-::: {.column width="32%"}
+::: {.column width="48%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=5.2cm,keepaspectratio]{gorseller/ekran-yedekleme.png}
+\includegraphics[width=\linewidth,height=5.4cm,keepaspectratio]{gorseller/ekran-yedekleme.png}
 \end{center}
 ```
 
 :::
 
-::: {.column width="32%"}
+::: {.column width="48%"}
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=\linewidth,height=5.2cm,keepaspectratio]{gorseller/ekran-fidye-koruma.png}
+\includegraphics[width=\linewidth,height=5.4cm,keepaspectratio]{gorseller/ekran-fidye-koruma.png}
 \end{center}
 ```
 
 :::
 :::
+
+Dosyalar şifrelendiğinde **yedek varsa** fidye ödemek gerekmez. 4\. haftanın **3-2-1 kuralını hatırlayın**.
 
 # Cihaz ve Hesap Güvenliği
 
