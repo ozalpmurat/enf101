@@ -166,18 +166,22 @@ Oltalama mesajlarının tipik işaretleri:
 
 Zararlı yazılımlar farklı amaçlarla çalışabilir. Bir yazılım birden fazla zararlı özelliği aynı anda gösterebilir.
 
+::: {tbl-colwidths="[38,62]"}
 | Tür | Temel özelliği |
 |:---|:---|
-| **Virüs ve solucan** | Dosyalara bulaşarak veya ağ üzerinden kendiliğinden yayılarak başka sistemlere ulaşır. |
+| **Virüs ve solucan (Virus, Worm)** | Dosyalara bulaşarak veya ağ üzerinden kendiliğinden yayılarak başka sistemlere ulaşır. |
 | **Truva atı (Trojan)** | Yararlı veya zararsız bir program gibi görünerek kullanıcıyı kandırır ve zararlı faaliyet yürütür. |
 | **Fidye yazılımı (Ransomware)** | Dosyaları şifreleyerek veya erişimi engelleyerek fidye talep eder. |
 | **Casus yazılım (Spyware)** | Kullanıcıyı gizlice izleyerek parola ve kişisel bilgiler gibi verileri toplar. |
+:::
 
 ## Zombi bilgisayarlar
 
 Bazı zararlı yazılımlar bilgisayarınızda hemen fark edilebilir bir değişikliğe neden olmaz. Sessizce çalışır ve uzaktaki bir saldırgandan veya komut merkezinden gelen talimatları uygular. Bu şekilde ele geçirilmiş bilgisayarlara **zombi bilgisayar**, bu bilgisayarların oluşturduğu ağa ise **botnet** (İngilizce *robot network*) denir.
 
-Zombi bilgisayarlar genellikle toplu hâlde kullanılır. Bir İnternet sitesini devre dışı bırakmak, spam göndermek veya başka sistemlere saldırmak bu kullanım amaçlarından bazılarıdır. Kullanıcı çoğu zaman bilgisayarının ele geçirildiğini fark etmez; cihaz normal çalışmaya devam edebilir.
+Bu tür yazılımlar genellikle bir **truva atı** ya da güncellenmemiş bir yazılımdaki güvenlik açığı üzerinden bulaşır: kullanıcı yararlı görünen bir programı çalıştırdığında zararlı yazılım sessizce kurulur ve arka planda çalışmaya başlar.
+
+Zombi bilgisayarlar genellikle toplu hâlde kullanılır. Bir İnternet sitesini devre dışı bırakmak, spam göndermek, kripto para madenciliği yapmak veya başka sistemlere saldırmak bu kullanım amaçlarından bazılarıdır. Kullanıcı çoğu zaman bilgisayarının ele geçirildiğini fark etmez; cihaz normal çalışmaya devam edebilir.
 
 Bu nedenle "Bilgisayarımda önemli bir veri yok, güvenlik beni ilgilendirmez." demek yanlıştır. Bilgisayarınız, farkında olmadan başkalarına yönelik saldırılarda kullanılabilir ve bu durum hukuki sorunlara yol açabilir.
 

@@ -168,10 +168,11 @@ Zararlı yazılımlar farklı amaçlarla çalışır; bir yazılım birden fazla
 
 ## Zombi Bilgisayarlar
 
+- Genellikle bir **truva atı** ya da güncellenmemiş yazılım açığıyla bulaşır
 - Cihaz sessizce bir **komut merkezine** bağlanır; gelen talimatları uygular
 - Kullanıcı çoğu zaman ele geçirildiğini fark etmez
 - Bu cihazların oluşturduğu ağa **botnet** denir
-- Toplu hâlde kullanılır: siteyi devre dışı bırakma, spam gönderme, saldırı
+- Toplu hâlde kullanılır: site devre dışı bırakma, spam, **kripto madenciliği**, saldırı
 
 Cihazınız farkında olmadan başkalarına saldırmak için kullanılabilir — "bende önemli veri yok" demek yanlıştır.
 
